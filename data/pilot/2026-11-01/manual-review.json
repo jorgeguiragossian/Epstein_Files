@@ -1,0 +1,44 @@
+{
+  "review_scope": "Four selected pages visually compared with extracted page text. This is a spot check, not an extraction accuracy estimate or review of all redactions.",
+  "reviews": [
+    {
+      "dataset": 3,
+      "file_id": "EFTA00004105",
+      "pdf_page": 2,
+      "document_type_observation": "Photograph page with visible redactions and an EFTA stamp",
+      "finding": "Sparse extracted text is consistent with the photographic content; a low-text flag alone does not demonstrate failed OCR."
+    },
+    {
+      "dataset": 4,
+      "file_id": "EFTA00005705",
+      "pdf_page": 1,
+      "document_type_observation": "FBI reporting form",
+      "finding": "The extracted text preserves visible report and contact date labels. Identifying fields are visibly redacted.",
+      "reviewed_date_evidence": [
+        {"value": "2010-12-10", "role": "report_date", "visible_label": "Date of Report"},
+        {"value": "2010-12-10", "role": "contact_date", "visible_label": "Date of Contact"}
+      ]
+    },
+    {
+      "dataset": 6,
+      "file_id": "EFTA00008529",
+      "pdf_page": 1,
+      "document_type_observation": "Grand jury transcript cover",
+      "finding": "Page contains multiple dates and transcript line numbers. Extracted text has recognition artifacts. A document date cannot be chosen by taking the first date match.",
+      "reviewed_date_evidence": [
+        {"value": "2019-06-18", "role": "transcript_session_date", "visible_label": "June 18, 2019"},
+        {"value": "2018-08-23", "role": "other_cover_date_requires_context", "visible_label": "August 23, 2018 Additional"}
+      ]
+    },
+    {
+      "dataset": 11,
+      "file_id": "EFTA02212905",
+      "pdf_page": 1,
+      "document_type_observation": "Email layout with To, From and Subject labels, redacted participant fields, and an inline date",
+      "finding": "The strict From-then-To-plus-Date-or-Sent detector returns zero candidates. This is a known false negative caused by header order and an inline date; redacted identities cannot be reconstructed from these labels.",
+      "reviewed_date_evidence": [
+        {"value": "2017-05-18", "role": "inline_email_date_candidate", "visible_label": "May 18, 2017 1:00 PM", "timezone": null}
+      ]
+    }
+  ]
+}

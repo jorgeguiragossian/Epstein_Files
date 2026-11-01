@@ -1,0 +1,13 @@
+"dataset","listing_url","listing_pages","first_page_files","last_page_files","pagination_implied_files","count_status","unique_file_urls_observed","first_listed_filename","last_listed_filename","extensions_observed","document_bytes","document_pages","document_dates","ocr_quality","document_hashes"
+"1","https://www.justice.gov/epstein/doj-disclosures/data-set-1-files","63","50",,,"last_page_unavailable_total_unknown","50","EFTA00000001.pdf",,".pdf",,,,,
+"2","https://www.justice.gov/epstein/doj-disclosures/data-set-2-files","12","49",,,"last_page_unavailable_total_unknown","49","EFTA00003159.pdf",,".pdf",,,,,
+"3","https://www.justice.gov/epstein/doj-disclosures/data-set-3-files","2","49",,,"last_page_unavailable_total_unknown","49","EFTA00003380.pdf",,".pdf",,,,,
+"4","https://www.justice.gov/epstein/doj-disclosures/data-set-4-files","4","49",,,"last_page_unavailable_total_unknown","49","EFTA00005705.pdf",,".pdf",,,,,
+"5","https://www.justice.gov/epstein/doj-disclosures/data-set-5-files","3","49",,,"last_page_unavailable_total_unknown","49","EFTA00008409.pdf",,".pdf",,,,,
+"6","https://www.justice.gov/epstein/doj-disclosures/data-set-6-files","1","13","13","13","all_listing_pages_observed","13","EFTA00008529.pdf","EFTA00008998.pdf",".pdf",,,,,
+"7","https://www.justice.gov/epstein/doj-disclosures/data-set-7-files","1","17","17","17","all_listing_pages_observed","17","EFTA00009016.pdf","EFTA00009664.pdf",".pdf",,,,,
+"8","https://www.justice.gov/epstein/doj-disclosures/data-set-8-files","221","49",,,"last_page_unavailable_total_unknown","49","EFTA00009676.pdf",,".pdf",,,,,
+"9","https://www.justice.gov/epstein/doj-disclosures/data-set-9-files","10675","50",,,"last_page_unavailable_total_unknown","50","EFTA00039025.pdf",,".pdf",,,,,
+"10","https://www.justice.gov/epstein/doj-disclosures/data-set-10-files","10081","50",,,"last_page_unavailable_total_unknown","50","EFTA01262782.pdf",,".pdf",,,,,
+"11","https://www.justice.gov/epstein/doj-disclosures/data-set-11-files","6634","50",,,"last_page_unavailable_total_unknown","50","EFTA02209722.pdf",,".pdf",,,,,
+"12","https://www.justice.gov/epstein/doj-disclosures/data-set-12-files","4","50",,,"last_page_unavailable_total_unknown","50","EFTA02730265.pdf",,".pdf",,,,,

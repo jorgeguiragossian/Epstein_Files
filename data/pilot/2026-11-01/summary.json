@@ -1,0 +1,22 @@
+{
+  "sample_documents": 100,
+  "datasets": 12,
+  "downloaded_bytes": 284273900,
+  "minimum_document_bytes": 12090,
+  "maximum_document_bytes": 39755125,
+  "pdf_pages": 1787,
+  "pages_processed": 1787,
+  "low_text_pages": 249,
+  "zero_alphanumeric_text_pages": 0,
+  "documents_with_low_text_pages": 52,
+  "documents_with_only_low_text_pages": 25,
+  "date_candidate_occurrences": 1200,
+  "documents_with_date_candidates": 62,
+  "email_header_candidate_blocks": 103,
+  "documents_with_email_header_candidates": 12,
+  "exact_duplicate_sha256_groups": 0,
+  "word_tokens_english_regex": 237893,
+  "ocr_performed": false,
+  "source_hashes_and_page_evidence_verified": true,
+  "scope_warning": "Non-random, first-page-biased sample. Low text is a review flag, not an OCR diagnosis. Dates and header blocks are unvalidated; header counts are not contact counts."
+}

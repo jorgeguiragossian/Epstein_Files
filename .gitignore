@@ -1,0 +1,6 @@
+# Originals and unreviewed text stay local during the extraction pilot.
+data/pilot/*/cache/
+data/pilot/*/extractions/
+tmp/
+__pycache__/
+*.pyc
