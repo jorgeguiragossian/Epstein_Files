@@ -1,0 +1,264 @@
+const $ = (selector) => document.querySelector(selector);
+const params = new URL(location.href).searchParams;
+const state = { q: params.get('q') || '', dataset: params.get('dataset') || '', quality: params.get('quality') || 'all', resultPage: Number(params.get('rpage')) || 1, selected: '', pdfPage: 1, results: [], matches: [], searchVersion: 0, documentVersion: 0 };
+const initialDocument = params.get('doc');
+const initialPage = Number(params.get('pdfpage')) || 1;
+const format = (number) => Number(number).toLocaleString('en-US');
+
+function node(tag, className, text) {
+  const element = document.createElement(tag);
+  if (className) element.className = className;
+  if (text !== undefined) element.textContent = text;
+  return element;
+}
+
+async function api(path) {
+  const response = await fetch(path, { cache: 'no-store' });
+  const body = await response.json();
+  if (!response.ok) throw new Error(body.error || 'The local server could not complete this request.');
+  return body;
+}
+
+function highlighted(element, text) {
+  element.replaceChildren();
+  const words = state.q.match(/[\p{L}\p{N}_]+/gu) || [];
+  if (!words.length || /^EFTA\d{8}$/i.test(state.q.trim())) {
+    element.textContent = text;
+    return;
+  }
+  const alternatives = words.map((word) => word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|');
+  const pattern = new RegExp(`(?<![\\p{L}\\p{N}_])(?:${alternatives})(?![\\p{L}\\p{N}_])`, 'giu');
+  let index = 0;
+  for (const match of text.matchAll(pattern)) {
+    element.append(document.createTextNode(text.slice(index, match.index)), node('mark', '', match[0]));
+    index = match.index + match[0].length;
+  }
+  element.append(document.createTextNode(text.slice(index)));
+}
+
+function updateLocation() {
+  const url = new URL(location.href);
+  url.search = '';
+  if (state.q) url.searchParams.set('q', state.q);
+  if (state.dataset) url.searchParams.set('dataset', state.dataset);
+  if (state.quality !== 'all') url.searchParams.set('quality', state.quality);
+  if (state.resultPage > 1) url.searchParams.set('rpage', state.resultPage);
+  if (state.selected) {
+    url.searchParams.set('doc', state.selected);
+    url.searchParams.set('pdfpage', state.pdfPage);
+  }
+  history.replaceState(null, '', url);
+}
+
+function updateDatasetButtons() {
+  for (const button of document.querySelectorAll('[data-dataset]')) {
+    const selected = button.dataset.dataset === state.dataset;
+    button.classList.toggle('active', selected);
+    button.setAttribute('aria-pressed', String(selected));
+  }
+}
+
+function clearReader() {
+  state.selected = '';
+  state.matches = [];
+  state.documentVersion += 1;
+  $('#reader').hidden = true;
+  $('#empty-reader').hidden = false;
+}
+
+function renderResults() {
+  $('#results').replaceChildren();
+  for (const result of state.results) {
+    const button = node('button', 'result');
+    button.type = 'button';
+    button.classList.toggle('selected', state.selected === result.id);
+    button.setAttribute('aria-pressed', String(state.selected === result.id));
+    button.setAttribute('aria-label', `Read ${result.id}, dataset ${result.dataset}, ${result.page_count} PDF pages`);
+    const head = node('span', 'result-head');
+    head.append(node('span', 'result-id', result.id), node('span', 'result-arrow', '↗'));
+    const meta = node('span', 'result-meta');
+    meta.append(node('span', '', `DATASET ${String(result.dataset).padStart(2, '0')}`), node('span', '', '·'), node('span', '', `${result.page_count} PDF ${result.page_count === 1 ? 'page' : 'pages'}`));
+    const excerpt = node('span', 'result-snippet');
+    highlighted(excerpt, result.snippet || 'Little text was extracted. Open the PDF to inspect this document.');
+    const badges = node('span', 'badges');
+    if (result.low_text_pages) badges.append(node('span', 'badge review', `${result.low_text_pages} low-text ${result.low_text_pages === 1 ? 'page' : 'pages'}`));
+    if (result.email_headers) badges.append(node('span', 'badge', `${result.email_headers} email header ${result.email_headers === 1 ? 'candidate' : 'candidates'}`));
+    if (state.q) badges.append(node('span', 'badge', `${result.matching_pages.length} matching ${result.matching_pages.length === 1 ? 'page' : 'pages'}`));
+    button.append(head, meta, excerpt, badges);
+    button.addEventListener('click', () => {
+      state.matches = state.q ? result.matching_pages : [];
+      openDocument(result.id, result.first_page, true);
+    });
+    $('#results').append(button);
+  }
+}
+
+async function search({ resetPage = true, keepReader = false } = {}) {
+  const version = ++state.searchVersion;
+  if (resetPage) state.resultPage = 1;
+  if (!keepReader) clearReader();
+  state.q = $('#search').value.trim();
+  state.quality = $('#quality').value;
+  updateDatasetButtons();
+  updateLocation();
+  $('#results-status').classList.remove('error');
+  $('#results-status').textContent = 'Searching the local pilot…';
+  $('#results').setAttribute('aria-busy', 'true');
+  $('#prev-results').disabled = true;
+  $('#next-results').disabled = true;
+  try {
+    const query = new URLSearchParams({ q: state.q, dataset: state.dataset, quality: state.quality, page: state.resultPage });
+    const result = await api(`/api/search?${query}`);
+    if (version !== state.searchVersion) return;
+    state.results = result.results;
+    renderResults();
+    $('#results-title').textContent = state.q ? 'Search results' : state.dataset ? `Dataset ${String(state.dataset).padStart(2, '0')}` : 'Pilot documents';
+    $('#results-status').textContent = `${format(result.total_documents)} ${result.total_documents === 1 ? 'document' : 'documents'}${state.q ? ` · ${format(result.total_matching_pages)} matching pages` : ' in the pilot sample'} · ordered by dataset and file ID`;
+    $('#reset').hidden = !state.q && !state.dataset && state.quality === 'all';
+    const maxPage = Math.max(1, Math.ceil(result.total_documents / result.page_size));
+    $('#result-page').textContent = `Page ${state.resultPage} of ${maxPage}`;
+    $('#prev-results').disabled = state.resultPage <= 1;
+    $('#next-results').disabled = state.resultPage >= maxPage;
+    if (!result.results.length) {
+      const empty = node('div', 'empty-results');
+      empty.append(node('h3', '', 'No documents found.'), node('p', '', 'Try fewer words or a different dataset. This pilot covers a small sample; missing results do not establish that a person or topic is absent from the full collection.'));
+      $('#results').append(empty);
+    }
+  } catch (error) {
+    if (version !== state.searchVersion) return;
+    $('#results').replaceChildren();
+    $('#results-status').textContent = error.message;
+    $('#results-status').classList.add('error');
+    $('#result-page').textContent = '';
+  } finally {
+    if (version === state.searchVersion) $('#results').removeAttribute('aria-busy');
+  }
+}
+
+function sourceDetail(label, text) {
+  $('#source-details').append(node('dt', '', label), node('dd', '', text));
+}
+
+async function openDocument(id, page, focus = false) {
+  const version = ++state.documentVersion;
+  state.selected = id;
+  state.pdfPage = page;
+  updateLocation();
+  renderResults();
+  $('#empty-reader').hidden = true;
+  $('#reader').hidden = false;
+  $('#reader-title').textContent = id;
+  $('#reader-dataset').textContent = 'LOADING DOCUMENT';
+  $('#page-text').textContent = 'Loading page text…';
+  $('#pdf-link').removeAttribute('href');
+  $('#doj-link').removeAttribute('href');
+  $('#prev-page').disabled = true;
+  $('#next-page').disabled = true;
+  $('#page-warning').hidden = true;
+  $('#matching-pages').hidden = true;
+  $('#date-list').replaceChildren();
+  $('#source-details').replaceChildren();
+  try {
+    const record = await api(`/api/documents/${encodeURIComponent(id)}?page=${page}`);
+    if (version !== state.documentVersion) return;
+    $('#reader-dataset').textContent = `DATASET ${String(record.dataset).padStart(2, '0')} / SOURCE DOCUMENT`;
+    $('#pdf-link').href = `/pdf/${encodeURIComponent(id)}#page=${page}`;
+    $('#pdf-link').textContent = `Open PDF · page ${page} ↗`;
+    $('#doj-link').href = `${record.url}#page=${page}`;
+    $('#page-number').value = page;
+    $('#page-number').max = record.page_count;
+    $('#page-total').textContent = `of ${record.page_count}`;
+    $('#prev-page').disabled = page <= 1;
+    $('#next-page').disabled = page >= record.page_count;
+    $('#page-warning').hidden = !record.page.low_text;
+    highlighted($('#page-text'), record.page.text || 'No text was extracted from this page. Inspect the original PDF.');
+    $('#page-text').scrollTop = 0;
+    $('#reader-status').textContent = `Loaded ${id}, PDF page ${page} of ${record.page_count}.`;
+    const matches = $('#matching-pages');
+    matches.replaceChildren(document.createTextNode('Matching PDF pages: '));
+    // Render a bounded set of match links, retaining navigation to every PDF page.
+    const shown = state.matches.slice(0, 30);
+    for (const number of shown) {
+      const button = node('button', number === page ? 'current' : '', String(number));
+      button.type = 'button';
+      button.setAttribute('aria-label', `Read matching PDF page ${number}`);
+      button.addEventListener('click', () => openDocument(id, number));
+      matches.append(button);
+    }
+    if (state.matches.length > shown.length) matches.append(document.createTextNode(` + ${state.matches.length - shown.length} more; use page navigation`));
+    matches.hidden = !state.matches.length;
+    const dateKeys = new Set();
+    for (const candidate of record.page.date_candidates) {
+      const key = `${candidate.line}:${candidate.raw}`;
+      if (dateKeys.has(key)) continue;
+      dateKeys.add(key);
+      $('#date-list').append(node('li', '', `${candidate.raw} · extracted line ${candidate.line} · unverified mention`));
+    }
+    if (!dateKeys.size) $('#date-list').append(node('li', '', 'No date strings detected on this page.'));
+    sourceDetail('Document date', 'Unverified / unassigned');
+    sourceDetail('Text coverage', `${record.page_count} of ${record.page_count} pages processed; ${record.low_text_pages} flagged low-text`);
+    sourceDetail('Email headers', `${record.email_headers} unverified candidates in this file; not unique messages or contacts`);
+    sourceDetail('File size', `${(record.bytes / 1048576).toFixed(2)} MiB`);
+    sourceDetail('SHA-256', record.sha256);
+    if (focus) {
+      $('#reader-title').focus({ preventScroll: true });
+      if (matchMedia('(max-width: 850px)').matches) $('.inspector').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  } catch (error) {
+    if (version !== state.documentVersion) return;
+    $('#reader-dataset').textContent = 'DOCUMENT UNAVAILABLE';
+    $('#page-text').textContent = error.message;
+    $('#reader-status').textContent = error.message;
+  }
+}
+
+async function init() {
+  $('#search').value = state.q;
+  $('#quality').value = ['all', 'review', 'substantial'].includes(state.quality) ? state.quality : 'all';
+  $('#all-datasets').dataset.dataset = '';
+  $('#all-datasets').addEventListener('click', () => { state.dataset = ''; search(); });
+  $('#search-form').addEventListener('submit', (event) => { event.preventDefault(); search(); });
+  $('#quality').addEventListener('change', () => search());
+  $('#reset').addEventListener('click', () => {
+    state.dataset = '';
+    $('#search').value = '';
+    $('#quality').value = 'all';
+    search();
+  });
+  $('#prev-results').addEventListener('click', () => { state.resultPage -= 1; search({ resetPage: false }); });
+  $('#next-results').addEventListener('click', () => { state.resultPage += 1; search({ resetPage: false }); });
+  $('#prev-page').addEventListener('click', () => openDocument(state.selected, state.pdfPage - 1));
+  $('#next-page').addEventListener('click', () => openDocument(state.selected, state.pdfPage + 1));
+  $('#page-form').addEventListener('submit', (event) => {
+    event.preventDefault();
+    const input = $('#page-number');
+    if (input.reportValidity()) openDocument(state.selected, Number(input.value));
+  });
+  try {
+    const overview = await api('/api/overview');
+    $('#stat-docs').textContent = format(overview.documents);
+    $('#stat-pages').textContent = format(overview.pages);
+    $('#stat-datasets').textContent = overview.datasets.length;
+    $('#stat-review').textContent = format(overview.low_text_pages);
+    $('#all-count').textContent = overview.documents;
+    for (const dataset of overview.datasets) {
+      const button = node('button', 'dataset');
+      button.type = 'button';
+      button.dataset.dataset = String(dataset.dataset);
+      button.append(node('span', 'dataset-number', String(dataset.dataset).padStart(2, '0')), node('span', '', `Dataset ${dataset.dataset}`), node('span', 'count', dataset.documents));
+      button.addEventListener('click', () => { state.dataset = String(dataset.dataset); search(); });
+      $('#datasets').append(button);
+    }
+    await search({ resetPage: false, keepReader: true });
+    if (initialDocument) {
+      const result = state.results.find((r) => r.id === initialDocument);
+      state.matches = state.q && result ? result.matching_pages : [];
+      await openDocument(initialDocument, initialPage);
+    }
+  } catch (error) {
+    $('#results-status').textContent = `Cannot load the local pilot: ${error.message}`;
+    $('#results-status').classList.add('error');
+  }
+}
+
+init();

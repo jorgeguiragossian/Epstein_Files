@@ -49,7 +49,7 @@ The sample consists of all 13 visible files in dataset 6 and all 17 in dataset 7
 
 ## Storage and openness
 
-The small manifests, measurements, source URLs, hashes, code, and review notes are in the repository workspace. PDFs (`cache/`), raw extracted text/contact values (`extractions/`), and QA images (`tmp/`) remain local and are ignored by Git while we review quality and redactions. Nothing has been pushed or published.
+The small manifests, measurements, source URLs, hashes, code, and review notes are in the repository. PDFs (`cache/`), raw extracted text/contact values (`extractions/`), and QA images (`tmp/`) remain local and are ignored by Git while we review quality and redactions. Publishing the source and manifests does not publish those local caches.
 
 Keep provenance and processing code in ordinary Git. Defer the full original-document storage decision until we have complete corpus sizes and a publication policy; this biased 271 MiB pilot cannot establish total storage or processing cost. We also have not measured full OCR expense, AI expense, or a hosting budget.
 

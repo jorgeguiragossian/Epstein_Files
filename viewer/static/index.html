@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A local research workspace for a 100-document pilot of the DOJ Epstein Files.">
+  <title>Epstein Files — Document explorer</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#workspace">Skip to documents</a>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Epstein Files home"><span class="monogram">EF<span>.</span></span><span>EPSTEIN FILES<small>A SOURCE-FIRST RESEARCH PROJECT</small></span></a>
+    <div class="toplinks"><span class="local"><i></i> LOCAL WORKSPACE</span><a href="https://github.com/jorgeguiragossian/Epstein_Files" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a></div>
+  </header>
+  <div class="shell">
+    <aside class="sidebar" aria-label="Dataset filters">
+      <div class="side-label">COLLECTION</div>
+      <button id="all-datasets" class="dataset active" type="button" aria-pressed="true"><span class="dataset-icon">▤</span><span>All pilot documents</span><span class="count" id="all-count">—</span></button>
+      <div class="side-label dataset-heading">DOJ DATASETS <span>01 — 12</span></div>
+      <nav id="datasets" aria-label="Choose a dataset"></nav>
+      <div class="scope-note"><span class="small-cross">+</span><h3>A sample, with sources.</h3><p>This workspace contains 100 pilot documents. It does not cover the full DOJ release.</p><a href="https://www.justice.gov/epstein/doj-disclosures" target="_blank" rel="noopener noreferrer">Official DOJ collection ↗</a></div>
+      <div class="side-bottom">PUBLIC RECORDS · OPEN METHODS</div>
+    </aside>
+    <main id="workspace">
+      <section class="intro">
+        <div class="eyebrow">RESEARCH WORKSPACE <span>/</span> PILOT 01</div>
+        <div class="intro-heading"><h1>Explore the record.</h1><span class="pilot-tag">100-DOCUMENT PILOT</span></div>
+        <p class="intro-copy">Search the documents. Read the context. Follow every finding to its source.</p>
+        <div class="stats" aria-label="Pilot coverage">
+          <div><strong id="stat-docs">100</strong><span>DOCUMENTS</span></div>
+          <div><strong id="stat-pages">1,787</strong><span>PDF PAGES</span></div>
+          <div><strong id="stat-datasets">12</strong><span>DATASETS</span></div>
+          <div class="review-stat"><strong id="stat-review">249</strong><span>LOW-TEXT PAGES <abbr title="Pages with fewer than 80 substantive alphanumeric characters. Some are photographs; this is not an OCR diagnosis.">ⓘ</abbr></span></div>
+        </div>
+      </section>
+      <form id="search-form" class="search-form" role="search">
+        <div class="search-line"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m16 16 5 5"></path></svg><label class="sr-only" for="search">Search document text or an exact document ID</label><input id="search" name="q" type="search" maxlength="200" placeholder="Search a name, a topic, or an EFTA document ID…" autocomplete="off"><button class="primary" type="submit">Search <span aria-hidden="true">↗</span></button></div>
+        <div class="search-options"><span>Matches all words within a page. Names are text matches, not verified identities.</span><label for="quality">Text quality <select id="quality"><option value="all">All documents</option><option value="review">Includes low-text pages</option><option value="substantial">Has substantial text</option></select></label></div>
+      </form>
+      <div class="content-grid">
+        <section class="results-panel" aria-label="Search results">
+          <div class="panel-heading"><div><span class="eyebrow">DOCUMENT INDEX</span><h2 id="results-title">Pilot documents</h2></div><button type="button" id="reset" class="text-button" hidden>Reset filters ↺</button></div>
+          <div id="results-status" class="results-status" role="status" aria-live="polite">Loading local collection…</div>
+          <div id="results" class="results"></div>
+          <div class="pagination"><button id="prev-results" type="button" class="outline">← Previous</button><span id="result-page"></span><button id="next-results" type="button" class="outline">Next →</button></div>
+        </section>
+        <section class="inspector" aria-label="Document page reader">
+          <div id="empty-reader" class="empty-reader"><span class="reader-glyph" aria-hidden="true">▤</span><span class="eyebrow">THE SOURCE COMES FIRST</span><h2>Open a document.<br>Look a little closer.</h2><p>Select a result to read its extracted text, inspect page references, and open the original PDF.</p><div class="reader-rule"></div><small>A mention in a record does not establish wrongdoing or a relationship.</small></div>
+          <div id="reader" hidden>
+            <div class="reader-top"><span class="eyebrow" id="reader-dataset"></span><span class="reader-mode">EXTRACTED TEXT</span></div>
+            <h2 id="reader-title" tabindex="-1"></h2>
+            <div class="reader-links"><a class="primary" id="pdf-link" target="_blank" rel="noopener noreferrer">Open PDF · page 1 ↗</a><a id="doj-link" target="_blank" rel="noopener noreferrer">DOJ original ↗</a></div>
+            <div class="page-controls"><button id="prev-page" type="button" class="outline" aria-label="Previous PDF page">←</button><form id="page-form"><label for="page-number">PDF page</label><input id="page-number" type="number" min="1" value="1" aria-label="PDF page number"><span id="page-total"></span><button class="text-button" type="submit">Go</button></form><button id="next-page" type="button" class="outline" aria-label="Next PDF page">→</button></div>
+            <div id="matching-pages" class="matching-pages" hidden></div>
+            <div id="page-warning" class="page-warning" hidden>Low text on this page. It may be a photograph, a sparse page, or require OCR. Check the PDF.</div>
+            <div id="reader-status" class="sr-only" role="status" aria-live="polite"></div>
+            <pre id="page-text" class="page-text" tabindex="0" aria-label="Extracted page text"></pre>
+            <details class="evidence"><summary>Dates & source details <span aria-hidden="true">+</span></summary><p class="evidence-note">No verified document date is assigned. Dates below are unverified text matches on this page.</p><ul id="date-list"></ul><dl id="source-details"></dl></details>
+            <p class="reader-footnote">PDF page numbers refer to file order, not printed or stamped page numbers. Text may contain recognition errors or omit redacted content.</p>
+          </div>
+        </section>
+      </div>
+      <footer><span>EPSTEIN FILES <b>/</b> INDEPENDENT RESEARCH WORKSPACE</span><span>Source: U.S. Department of Justice · Pilot sample only</span></footer>
+    </main>
+  </div>
+</body>
+</html>
