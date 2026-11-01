@@ -34,7 +34,8 @@ Pass `--age-confirmed` only after confirming eligibility for DOJ's age gate. The
 - Filter by dataset and by whether a document includes low-text pages or has at least one page with substantial text. These quality filters apply to the document; an individual matching page may have different quality.
 - Read extracted page text, highlighted search terms, matching-page links, and previous/next or direct page navigation.
 - Open the local original PDF at the selected file page or follow the official DOJ source link. A browser PDF viewer may vary in whether it honors `#page=`. DOJ may require its own age verification.
-- Inspect page date-string candidates, extraction coverage, email-header candidate counts, and source SHA-256. No document date is automatically assigned.
+- Filter by reviewed primary date with inclusive From/Through bounds; browse uncertain, reviewed-undated, and unreviewed documents separately. See [date review and filter semantics](date-review.md). The current pilot has 17 reviewed dates, 3 uncertain records, and 80 unreviewed records.
+- Inspect page date-string candidates, extraction coverage, email-header candidate counts, source SHA-256, and primary-date evidence/rationale. Primary dates come from separate source-based editorial reviews, not automatic promotion of every date mention.
 - Reopen the current view using its URL, including search/filter values, document ID, and PDF page.
 
 Search results are ordered by dataset, document ID, and PDF page, rather than by relevance. A text match for a person's name is not a verified person filter and does not establish wrongdoing or a relationship. OCR errors, redactions, and missing text affect matches. No new OCR, AI summaries, contact rankings, or public hosting is included in this step.

@@ -9,6 +9,7 @@ import json
 import re
 import sqlite3
 from contextlib import closing
+from datetime import date
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, urlsplit
@@ -26,10 +27,38 @@ def load(path):
     return json.loads(path.read_text(encoding='utf-8'))
 
 
+def iso_day(value, label='Date'):
+    if not re.fullmatch(r'\d{4}-\d{2}-\d{2}',value):
+        raise ValueError(f'{label} must use YYYY-MM-DD.')
+    try: date.fromisoformat(value)
+    except ValueError: raise ValueError(f'{label} must be a real calendar date.') from None
+    return value
+
+
+def validate_review(review, metric, extracted):
+    if review['status'] not in ('dated','uncertain','undated'):
+        raise ValueError('Unknown date review status.')
+    if review['source_sha256'] != metric['sha256']:
+        raise ValueError('Date review refers to different source bytes.')
+    page = integer(review['evidence_page'],1,metric['page_count'],'Evidence page')
+    if not review['evidence_quote'] or review['evidence_quote'] not in extracted['pages'][page-1]['text']:
+        raise ValueError('Date evidence is absent from the cited page.')
+    if review['status']=='dated':
+        iso_day(review['primary_date'])
+        if review['date_type'] not in ('email_sent','report','transcript_session') or review['precision']!='day':
+            raise ValueError('A dated record requires a supported date type and day precision.')
+    elif review['primary_date'] is not None or review['date_type'] is not None:
+        raise ValueError('Uncertain and undated reviews cannot assign a primary date.')
+
+
 def build_index(pilot=PILOT, database=DB):
     downloads = {r['url']: r for r in load(pilot / 'downloads.json')['files']}
     metrics = load(pilot / 'metrics.json')['files']
     selected = load(pilot / 'selection.json')['files']
+    review_rows = load(pilot / 'date-reviews.json')['reviews']
+    reviews = {r['file_id']:r for r in review_rows}
+    if len(reviews)!=len(review_rows) or not set(reviews).issubset({m['file_id'] for m in metrics}):
+        raise ValueError('Duplicate or unknown date review document.')
     if {r['url'] for r in metrics} != {r['url'] for r in selected} or any(r['status'] != 'extracted' for r in metrics):
         raise ValueError('Pilot extraction is incomplete. Finish the pilot before starting the viewer.')
     prepared = []
@@ -46,6 +75,7 @@ def build_index(pilot=PILOT, database=DB):
             raise ValueError(f"Cache checksum mismatch for {metric['file_id']}; regenerate the pilot extraction.")
         if len(extracted['pages']) != metric['page_count']:
             raise ValueError('Page coverage mismatch')
+        if metric['file_id'] in reviews: validate_review(reviews[metric['file_id']],metric,extracted)
         prepared.append((metric, item, extracted, pdf))
     if not prepared:
         raise ValueError('No extracted pilot documents available.')
@@ -55,18 +85,24 @@ def build_index(pilot=PILOT, database=DB):
             DROP TABLE IF EXISTS search;
             DROP TABLE IF EXISTS pages;
             DROP TABLE IF EXISTS documents;
+            DROP TABLE IF EXISTS document_dates;
             CREATE TABLE documents (id TEXT PRIMARY KEY, dataset INTEGER, page_count INTEGER,
                 low_text_pages INTEGER, bytes INTEGER, date_count INTEGER, email_headers INTEGER,
                 url TEXT, sha256 TEXT, pdf_path TEXT);
             CREATE TABLE pages (id INTEGER PRIMARY KEY, document_id TEXT, number INTEGER,
                 text TEXT, low_text INTEGER, date_candidates TEXT, UNIQUE(document_id, number));
             CREATE VIRTUAL TABLE search USING fts5(text, tokenize='unicode61');
+            CREATE TABLE document_dates(document_id TEXT PRIMARY KEY,status TEXT,primary_date TEXT,date_type TEXT,review_json TEXT);
         ''')
         for metric, item, extracted, pdf in prepared:
             connection.execute('INSERT INTO documents VALUES (?,?,?,?,?,?,?,?,?,?)',
                 (metric['file_id'], metric['dataset'], metric['page_count'], metric['low_text_pages'],
                  item['bytes'], metric['date_candidate_count'], metric['email_header_candidate_count'],
                  metric['url'], item['sha256'], str(pdf.resolve())))
+            review = reviews.get(metric['file_id'])
+            if review:
+                connection.execute('INSERT INTO document_dates VALUES (?,?,?,?,?)',
+                    (metric['file_id'],review['status'],review['primary_date'],review['date_type'],json.dumps(review)))
             for page in extracted['pages']:
                 cursor = connection.execute('INSERT INTO pages(document_id,number,text,low_text,date_candidates) VALUES (?,?,?,?,?)',
                     (metric['file_id'], page['page'], page['text'], int(page['low_text_candidate']), json.dumps(page['date_candidates'])))
@@ -107,14 +143,31 @@ class Catalog:
             return {'documents': c.execute('SELECT COUNT(*) FROM documents').fetchone()[0],
                 'pages': c.execute('SELECT COUNT(*) FROM pages').fetchone()[0],
                 'low_text_pages': c.execute('SELECT COUNT(*) FROM pages WHERE low_text=1').fetchone()[0],
+                'date_status_counts': {r['status']:r['count'] for r in c.execute("SELECT COALESCE(v.status,'unreviewed') AS status,COUNT(*) AS count FROM documents d LEFT JOIN document_dates v ON v.document_id=d.id GROUP BY COALESCE(v.status,'unreviewed')")},
                 'datasets': [dict(r) for r in c.execute('SELECT dataset,COUNT(*) AS documents,SUM(page_count) AS pages FROM documents GROUP BY dataset ORDER BY dataset')]}
 
-    def search(self, q='', dataset='', quality='all', page=1):
+    def search(self, q='', dataset='', quality='all', page=1, date_from='', date_to='', date_status='all'):
         q = q.strip()
         if len(q) > 200:
             raise ValueError('Keep search text to 200 characters or fewer.')
         page = integer(page, 1, 10000, 'Result page')
         where, params = [], []
+        if date_status not in ('all','dated','uncertain','undated','unreviewed'):
+            raise ValueError('Unknown date status.')
+        if date_from: iso_day(date_from,'Start date')
+        if date_to: iso_day(date_to,'End date')
+        if date_from and date_to and date_from>date_to:
+            raise ValueError('Start date must be on or before end date.')
+        if (date_from or date_to) and date_status not in ('all','dated'):
+            raise ValueError('Date ranges apply only to reviewed dated documents. Clear the range to browse other statuses.')
+        if date_status!='all':
+            where.append("COALESCE(v.status,'unreviewed')=?")
+            params.append(date_status)
+        if date_from or date_to: where.append("v.status='dated'")
+        if date_from:
+            where.append('v.primary_date>=?');params.append(date_from)
+        if date_to:
+            where.append('v.primary_date<=?');params.append(date_to)
         words = re.findall(r'\w+', q, flags=re.UNICODE)
         if q:
             if not words:
@@ -134,7 +187,9 @@ class Catalog:
         if quality == 'review': where.append('d.low_text_pages>0')
         if quality == 'substantial': where.append('d.low_text_pages<d.page_count')
         sql = '''SELECT d.id,d.dataset,d.page_count,d.low_text_pages,d.bytes,d.date_count,d.email_headers,
-            p.number,p.text,p.low_text FROM pages p JOIN documents d ON d.id=p.document_id'''
+            COALESCE(v.status,'unreviewed') AS date_status,v.primary_date,v.date_type,
+            p.number,p.text,p.low_text FROM pages p JOIN documents d ON d.id=p.document_id
+            LEFT JOIN document_dates v ON v.document_id=d.id'''
         if where: sql += ' WHERE ' + ' AND '.join(where)
         sql += ' ORDER BY d.dataset,d.id,p.number'
         groups = {}
@@ -143,7 +198,7 @@ class Catalog:
             for row in c.execute(sql, params):
                 hit_pages += 1
                 if row['id'] not in groups:
-                    groups[row['id']] = {k:row[k] for k in ('id','dataset','page_count','low_text_pages','bytes','date_count','email_headers')}
+                    groups[row['id']] = {k:row[k] for k in ('id','dataset','page_count','low_text_pages','bytes','date_count','email_headers','date_status','primary_date','date_type')}
                     groups[row['id']].update(first_page=row['number'], snippet=snippet(row['text'], words), matching_pages=[])
                 groups[row['id']]['matching_pages'].append(row['number'])
         documents = list(groups.values())
@@ -160,6 +215,8 @@ class Catalog:
             text = c.execute('SELECT number,text,low_text,date_candidates FROM pages WHERE document_id=? AND number=?', (document_id,page)).fetchone()
             document['page'] = dict(text)
             document['page']['date_candidates'] = json.loads(text['date_candidates'])
+            review = c.execute('SELECT review_json FROM document_dates WHERE document_id=?',(document_id,)).fetchone()
+            document['date_review'] = json.loads(review['review_json']) if review else {'status':'unreviewed','primary_date':None,'date_type':None,'notes':'This document has not yet had a primary-date review.'}
             return document
 
     def pdf(self, document_id):
@@ -216,7 +273,7 @@ class Handler(BaseHTTPRequestHandler):
                 self.wfile.write(data)
             elif url.path == '/api/overview': self.json(200,self.catalog.overview())
             elif url.path == '/api/search':
-                self.json(200,self.catalog.search(query.get('q',''),query.get('dataset',''),query.get('quality','all'),query.get('page',1)))
+                self.json(200,self.catalog.search(query.get('q',''),query.get('dataset',''),query.get('quality','all'),query.get('page',1),query.get('date_from',''),query.get('date_to',''),query.get('date_status','all')))
             elif re.fullmatch(r'/api/documents/EFTA\d{8}', url.path):
                 self.json(200,self.catalog.document(url.path.rsplit('/',1)[-1],query.get('page',1)))
             elif re.fullmatch(r'/pdf/EFTA\d{8}', url.path):

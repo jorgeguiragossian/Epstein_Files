@@ -3,6 +3,11 @@ const params = new URL(location.href).searchParams;
 const state = { q: params.get('q') || '', dataset: params.get('dataset') || '', quality: params.get('quality') || 'all', resultPage: Number(params.get('rpage')) || 1, selected: '', pdfPage: 1, results: [], matches: [], searchVersion: 0, documentVersion: 0 };
 const initialDocument = params.get('doc');
 const initialPage = Number(params.get('pdfpage')) || 1;
+state.dateFrom = params.get('date_from') || '';
+state.dateTo = params.get('date_to') || '';
+state.dateStatus = params.get('date_status') || 'all';
+const dateLabels = {dated:'Reviewed date',uncertain:'Uncertain date',undated:'Reviewed · undated',unreviewed:'Not yet reviewed'};
+const dateTypes = {email_sent:'Email sent date',report:'Report date',transcript_session:'Transcript session date'};
 const format = (number) => Number(number).toLocaleString('en-US');
 
 function node(tag, className, text) {
@@ -42,6 +47,9 @@ function updateLocation() {
   if (state.q) url.searchParams.set('q', state.q);
   if (state.dataset) url.searchParams.set('dataset', state.dataset);
   if (state.quality !== 'all') url.searchParams.set('quality', state.quality);
+  if (state.dateFrom) url.searchParams.set('date_from',state.dateFrom);
+  if (state.dateTo) url.searchParams.set('date_to',state.dateTo);
+  if (state.dateStatus !== 'all') url.searchParams.set('date_status',state.dateStatus);
   if (state.resultPage > 1) url.searchParams.set('rpage', state.resultPage);
   if (state.selected) {
     url.searchParams.set('doc', state.selected);
@@ -81,6 +89,7 @@ function renderResults() {
     const excerpt = node('span', 'result-snippet');
     highlighted(excerpt, result.snippet || 'Little text was extracted. Open the PDF to inspect this document.');
     const badges = node('span', 'badges');
+    badges.append(node('span','badge date-badge',result.primary_date ? `${result.primary_date} · ${dateTypes[result.date_type]}` : dateLabels[result.date_status]));
     if (result.low_text_pages) badges.append(node('span', 'badge review', `${result.low_text_pages} low-text ${result.low_text_pages === 1 ? 'page' : 'pages'}`));
     if (result.email_headers) badges.append(node('span', 'badge', `${result.email_headers} email header ${result.email_headers === 1 ? 'candidate' : 'candidates'}`));
     if (state.q) badges.append(node('span', 'badge', `${result.matching_pages.length} matching ${result.matching_pages.length === 1 ? 'page' : 'pages'}`));
@@ -99,6 +108,9 @@ async function search({ resetPage = true, keepReader = false } = {}) {
   if (!keepReader) clearReader();
   state.q = $('#search').value.trim();
   state.quality = $('#quality').value;
+  state.dateFrom = $('#date-from').value;
+  state.dateTo = $('#date-to').value;
+  state.dateStatus = $('#date-status').value;
   updateDatasetButtons();
   updateLocation();
   $('#results-status').classList.remove('error');
@@ -107,14 +119,14 @@ async function search({ resetPage = true, keepReader = false } = {}) {
   $('#prev-results').disabled = true;
   $('#next-results').disabled = true;
   try {
-    const query = new URLSearchParams({ q: state.q, dataset: state.dataset, quality: state.quality, page: state.resultPage });
+    const query = new URLSearchParams({ q: state.q, dataset: state.dataset, quality: state.quality, page: state.resultPage, date_from:state.dateFrom,date_to:state.dateTo,date_status:state.dateStatus });
     const result = await api(`/api/search?${query}`);
     if (version !== state.searchVersion) return;
     state.results = result.results;
     renderResults();
     $('#results-title').textContent = state.q ? 'Search results' : state.dataset ? `Dataset ${String(state.dataset).padStart(2, '0')}` : 'Pilot documents';
     $('#results-status').textContent = `${format(result.total_documents)} ${result.total_documents === 1 ? 'document' : 'documents'}${state.q ? ` · ${format(result.total_matching_pages)} matching pages` : ' in the pilot sample'} · ordered by dataset and file ID`;
-    $('#reset').hidden = !state.q && !state.dataset && state.quality === 'all';
+    $('#reset').hidden = !state.q && !state.dataset && state.quality === 'all' && !state.dateFrom && !state.dateTo && state.dateStatus==='all';
     const maxPage = Math.max(1, Math.ceil(result.total_documents / result.page_size));
     $('#result-page').textContent = `Page ${state.resultPage} of ${maxPage}`;
     $('#prev-results').disabled = state.resultPage <= 1;
@@ -158,6 +170,7 @@ async function openDocument(id, page, focus = false) {
   $('#matching-pages').hidden = true;
   $('#date-list').replaceChildren();
   $('#source-details').replaceChildren();
+  $('#primary-date').replaceChildren();
   try {
     const record = await api(`/api/documents/${encodeURIComponent(id)}?page=${page}`);
     if (version !== state.documentVersion) return;
@@ -195,7 +208,18 @@ async function openDocument(id, page, focus = false) {
       $('#date-list').append(node('li', '', `${candidate.raw} · extracted line ${candidate.line} · unverified mention`));
     }
     if (!dateKeys.size) $('#date-list').append(node('li', '', 'No date strings detected on this page.'));
-    sourceDetail('Document date', 'Unverified / unassigned');
+    const review = record.date_review;
+    const primary = $('#primary-date');
+    primary.append(node('strong','',review.primary_date ? `${review.primary_date} · ${dateTypes[review.date_type]}` : dateLabels[review.status]));
+    primary.append(node('p','',review.notes));
+    if (review.evidence_page) {
+      const evidence = node('button','text-button',`View date evidence · PDF page ${review.evidence_page} ↗`);
+      evidence.type='button';
+      evidence.addEventListener('click',()=>openDocument(id,review.evidence_page));
+      primary.append(evidence);
+      sourceDetail('Date evidence',`PDF page ${review.evidence_page}: ${review.evidence_quote}`);
+    }
+    sourceDetail('Primary date', review.primary_date ? `${review.primary_date} (${dateTypes[review.date_type]}; reviewed assignment)` : dateLabels[review.status]);
     sourceDetail('Text coverage', `${record.page_count} of ${record.page_count} pages processed; ${record.low_text_pages} flagged low-text`);
     sourceDetail('Email headers', `${record.email_headers} unverified candidates in this file; not unique messages or contacts`);
     sourceDetail('File size', `${(record.bytes / 1048576).toFixed(2)} MiB`);
@@ -215,6 +239,22 @@ async function openDocument(id, page, focus = false) {
 async function init() {
   $('#search').value = state.q;
   $('#quality').value = ['all', 'review', 'substantial'].includes(state.quality) ? state.quality : 'all';
+  $('#date-status').value=['all','dated','uncertain','undated','unreviewed'].includes(state.dateStatus) ? state.dateStatus : 'all';
+  $('#date-from').value=state.dateFrom;
+  $('#date-to').value=state.dateTo;
+  function syncDates() {
+    const disabled=!['all','dated'].includes($('#date-status').value);
+    $('#date-from').disabled=disabled;
+    $('#date-to').disabled=disabled;
+    if(disabled) {$('#date-from').value='';$('#date-to').value='';}
+  }
+  syncDates();
+  $('#date-status').addEventListener('change',()=>{syncDates();search();});
+  $('#date-from').addEventListener('change',()=>search());
+  $('#date-to').addEventListener('change',()=>search());
+  $('#clear-dates').addEventListener('click',()=>{
+    $('#date-status').value='all';$('#date-from').value='';$('#date-to').value='';syncDates();search();
+  });
   $('#all-datasets').dataset.dataset = '';
   $('#all-datasets').addEventListener('click', () => { state.dataset = ''; search(); });
   $('#search-form').addEventListener('submit', (event) => { event.preventDefault(); search(); });
@@ -223,6 +263,7 @@ async function init() {
     state.dataset = '';
     $('#search').value = '';
     $('#quality').value = 'all';
+    $('#date-status').value='all';$('#date-from').value='';$('#date-to').value='';syncDates();
     search();
   });
   $('#prev-results').addEventListener('click', () => { state.resultPage -= 1; search({ resetPage: false }); });
@@ -241,6 +282,11 @@ async function init() {
     $('#stat-datasets').textContent = overview.datasets.length;
     $('#stat-review').textContent = format(overview.low_text_pages);
     $('#all-count').textContent = overview.documents;
+    const counts=overview.date_status_counts;
+    $('#date-coverage').textContent=`${counts.dated||0} reviewed dates · ${counts.uncertain||0} uncertain · ${counts.undated||0} reviewed undated · ${counts.unreviewed||0} not yet reviewed. Ranges include reviewed dates only, with inclusive endpoints; dates mentioned in the body do not control the filter.`;
+    for(const option of $('#date-status').options) {
+      if(option.value!=='all') option.textContent=`${dateLabels[option.value]} (${counts[option.value]||0})`;
+    }
     for (const dataset of overview.datasets) {
       const button = node('button', 'dataset');
       button.type = 'button';
