@@ -1,6 +1,7 @@
 """Integration smoke check against a running local pilot viewer."""
 import json
 import argparse
+from pathlib import Path
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 
@@ -30,7 +31,10 @@ def main():
     assert get('/api/search?date_from=2014-01-01&date_to=2014-01-01&q=EFTA02730265')['total_documents']==0
     assert get('/api/documents/EFTA00039806')['date_review']['evidence_page']==2
     people=get('/api/people')['people']
-    assert len(people)==8
+    snapshot=json.loads((Path(__file__).resolve().parents[1]/'data/pilot/2026-11-01/people-coverage.json').read_text(encoding='utf-8'))
+    assert len(people)==len(snapshot['people'])==22
+    fields=('id','label','documents','pages','occurrences')
+    assert sorted([{k:p[k] for k in fields} for p in people],key=lambda p:p['id'])==sorted(snapshot['people'],key=lambda p:p['id'])
     names={p['id']:p for p in people}
     assert names['ghislaine-maxwell']['documents']==19 and names['ghislaine-maxwell']['pages']==102
     person=get('/api/search?person=ghislaine-maxwell&date_from=2020-06-29&date_to=2020-06-29')
@@ -39,6 +43,10 @@ def main():
     page=get('/api/documents/EFTA00008631?page=1')
     assert any(m['id']=='ghislaine-maxwell' for m in page['page']['name_mentions'])
     assert get('/api/search?person=ghislaine-maxwell&dataset=1')['total_documents']==0
+    expanded=get('/api/search?person=alan-dershowitz')
+    assert expanded['total_documents']==1 and expanded['results'][0]['first_page']==14
+    assert expanded['results'][0]['matching_pages']==[14]
+    assert get('/api/search?person=ken-starr')['total_documents']==4
     for path, status in [('/api/documents/EFTA00008529?page=0',400),('/README.md',404),('/pdf/../../README.md',404),('/api/search?date_from=2021-02-29',400),('/api/search?date_from=2020-01-01&date_to=2019-01-01',400),('/api/search?person=unknown',400)]:
         try: get(path)
         except HTTPError as exc: assert exc.code == status, (path,exc.code)

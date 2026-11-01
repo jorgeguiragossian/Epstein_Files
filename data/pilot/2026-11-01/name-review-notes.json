@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "scope": "Source-observed forms intentionally not merged with selected vocabulary entries. These are review decisions, not established aliases.",
+  "decisions": [
+    {
+      "observed_form": "Jeffery Epstein",
+      "status": "deferred_not_in_filter",
+      "reason": "A different spelling from the selected Jeffrey Epstein phrase. No automatic spelling or identity merge.",
+      "evidence": {
+        "file_id": "EFTA00008529",
+        "pdf_page": 1,
+        "quote": "JEFFERY EPSTEIN",
+        "source_sha256": "28e401a4867497402833ed3f5d4277a85bc81bf299840e700694abd22325976d"
+      }
+    },
+    {
+      "observed_form": "Lillian Sanchez",
+      "status": "deferred_not_in_filter",
+      "reason": "Different phrase from Lilly Ann Sanchez. Possible variant requires separate alias evidence; keep it out of that filter.",
+      "evidence": {
+        "file_id": "EFTA00009329",
+        "pdf_page": 14,
+        "quote": "Lillian Sanchez",
+        "source_sha256": "7f113fabbb5f76cde9e5addee29a0f6b8c0eb785dc7357b5b1128c12e143229e"
+      }
+    },
+    {
+      "observed_form": "Darren K. Indyke",
+      "status": "deferred_not_in_filter",
+      "reason": "Middle-initial form is distinct from the selected Darren Indyke phrase. It is not silently merged.",
+      "evidence": {
+        "file_id": "EFTA01263156",
+        "pdf_page": 1,
+        "quote": "Darren K. Indyke",
+        "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01"
+      }
+    }
+  ]
+}

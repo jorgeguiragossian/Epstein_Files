@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "vocabulary_sha256": "a60168ced918755a31f27c65c5c95ad53e76f40c686f22e41e6758ef14ca4cc0",
+  "metrics_sha256": "0d82178ea58a4a95520af9bf71d370e0a3d821f607c71091eb68008e86139232",
+  "selection_sha256": "57393d7ef23143c0c3551a5309ac569f45eb0891665d6ab64c3d0a841110b5da",
+  "pilot_documents": 100,
+  "pilot_pages": 1787,
+  "scope": "Full-name lexical coverage in the non-random 100-document pilot. Occurrences include repetitions and quoted threads; not identities, contacts, or relationships.",
+  "people": [
+    {
+      "id": "alan-dershowitz",
+      "label": "Alan Dershowitz",
+      "documents": 1,
+      "pages": 1,
+      "occurrences": 1
+    },
+    {
+      "id": "alexander-acosta",
+      "label": "Alexander Acosta",
+      "documents": 2,
+      "pages": 3,
+      "occurrences": 5
+    },
+    {
+      "id": "audrey-strauss",
+      "label": "Audrey Strauss",
+      "documents": 4,
+      "pages": 5,
+      "occurrences": 5
+    },
+    {
+      "id": "barry-krischer",
+      "label": "Barry Krischer",
+      "documents": 1,
+      "pages": 2,
+      "occurrences": 2
+    },
+    {
+      "id": "bill-gates",
+      "label": "Bill Gates",
+      "documents": 1,
+      "pages": 1,
+      "occurrences": 1
+    },
+    {
+      "id": "boris-nikolic",
+      "label": "Boris Nikolic",
+      "documents": 1,
+      "pages": 2,
+      "occurrences": 3
+    },
+    {
+      "id": "darren-indyke",
+      "label": "Darren Indyke",
+      "documents": 1,
+      "pages": 40,
+      "occurrences": 69
+    },
+    {
+      "id": "gerald-lefcourt",
+      "label": "Gerald Lefcourt",
+      "documents": 1,
+      "pages": 1,
+      "occurrences": 1
+    },
+    {
+      "id": "ghislaine-maxwell",
+      "label": "Ghislaine Maxwell",
+      "documents": 19,
+      "pages": 102,
+      "occurrences": 146
+    },
+    {
+      "id": "guy-lewis",
+      "label": "Guy Lewis",
+      "documents": 1,
+      "pages": 1,
+      "occurrences": 1
+    },
+    {
+      "id": "jay-lefkowitz",
+      "label": "Jay Lefkowitz",
+      "documents": 3,
+      "pages": 8,
+      "occurrences": 10
+    },
+    {
+      "id": "jeanne-christensen",
+      "label": "Jeanne Christensen",
+      "documents": 1,
+      "pages": 1,
+      "occurrences": 3
+    },
+    {
+      "id": "jeffrey-epstein",
+      "label": "Jeffrey Epstein",
+      "documents": 34,
+      "pages": 189,
+      "occurrences": 299
+    },
+    {
+      "id": "ken-starr",
+      "label": "Ken Starr",
+      "documents": 4,
+      "pages": 15,
+      "occurrences": 17
+    },
+    {
+      "id": "larry-cohen",
+      "label": "Larry Cohen",
+      "documents": 1,
+      "pages": 1,
+      "occurrences": 1
+    },
+    {
+      "id": "leon-black",
+      "label": "Leon Black",
+      "documents": 2,
+      "pages": 6,
+      "occurrences": 9
+    },
+    {
+      "id": "lilly-ann-sanchez",
+      "label": "Lilly Ann Sanchez",
+      "documents": 2,
+      "pages": 7,
+      "occurrences": 8
+    },
+    {
+      "id": "prince-andrew",
+      "label": "Prince Andrew",
+      "documents": 3,
+      "pages": 4,
+      "occurrences": 8
+    },
+    {
+      "id": "reid-weingarten",
+      "label": "Reid Weingarten",
+      "documents": 1,
+      "pages": 1,
+      "occurrences": 1
+    },
+    {
+      "id": "richard-kahn",
+      "label": "Richard Kahn",
+      "documents": 1,
+      "pages": 2,
+      "occurrences": 5
+    },
+    {
+      "id": "roy-black",
+      "label": "Roy Black",
+      "documents": 2,
+      "pages": 2,
+      "occurrences": 3
+    },
+    {
+      "id": "sigrid-mccawley",
+      "label": "Sigrid McCawley",
+      "documents": 1,
+      "pages": 3,
+      "occurrences": 10
+    }
+  ]
+}

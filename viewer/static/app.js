@@ -8,7 +8,7 @@ state.dateTo = params.get('date_to') || '';
 state.dateStatus = params.get('date_status') || 'all';
 state.person=params.get('person')||'';
 state.people=[];
-const dateLabels = {dated:'Reviewed date',uncertain:'Uncertain date',undated:'Reviewed · undated',unreviewed:'Not yet reviewed'};
+const dateLabels = {dated:'Reviewed date',uncertain:'Uncertain date',undated:'Reviewed · undated',unreviewed:'Date not yet reviewed'};
 const dateTypes = {email_sent:'Email sent date',report:'Report date',transcript_session:'Transcript session date'};
 const format = (number) => Number(number).toLocaleString('en-US');
 
@@ -118,7 +118,7 @@ async function search({ resetPage = true, keepReader = false } = {}) {
   state.dateStatus = $('#date-status').value;
   state.person=$('#person').value;
   const selectedPerson=state.people.find(p=>p.id===state.person);
-  $('#person-scope').textContent=selectedPerson ? `${selectedPerson.label}: ${selectedPerson.documents} documents / ${selectedPerson.pages} pages across the full pilot. Text mentions are not verified identities or relationships.` : `${state.people.length} curated names, not a complete person index. Full-name text matches do not establish identity, a relationship, or wrongdoing.`;
+  $('#person-scope').textContent=selectedPerson ? `${selectedPerson.label}: ${selectedPerson.documents} ${selectedPerson.documents===1?'document':'documents'} / ${selectedPerson.pages} ${selectedPerson.pages===1?'page':'pages'} across the full pilot. Text mentions are not verified identities or relationships.` : `${state.people.length} curated names, not a complete person index. Full-name text matches do not establish identity, a relationship, or wrongdoing.`;
   updateDatasetButtons();
   updateLocation();
   $('#results-status').classList.remove('error');
@@ -133,7 +133,7 @@ async function search({ resetPage = true, keepReader = false } = {}) {
     state.results = result.results;
     renderResults();
     $('#results-title').textContent = selectedPerson ? `Mentions: ${selectedPerson.label}` : state.q ? 'Search results' : state.dataset ? `Dataset ${String(state.dataset).padStart(2, '0')}` : 'Pilot documents';
-    $('#results-status').textContent = `${format(result.total_documents)} ${result.total_documents === 1 ? 'document' : 'documents'}${state.q||state.person ? ` · ${format(result.total_matching_pages)} matching pages` : ' in the pilot sample'} · ordered by dataset and file ID`;
+    $('#results-status').textContent = `${format(result.total_documents)} ${result.total_documents === 1 ? 'document' : 'documents'}${state.q||state.person ? ` · ${format(result.total_matching_pages)} matching ${result.total_matching_pages===1?'page':'pages'}` : ' in the pilot sample'} · ordered by dataset and file ID`;
     $('#reset').hidden = !state.q && !state.dataset && !state.person && state.quality === 'all' && !state.dateFrom && !state.dateTo && state.dateStatus==='all';
     const maxPage = Math.max(1, Math.ceil(result.total_documents / result.page_size));
     $('#result-page').textContent = `Page ${state.resultPage} of ${maxPage}`;

@@ -3,6 +3,8 @@ import importlib.util
 import sqlite3
 import tempfile
 import unittest
+import json
+import hashlib
 from contextlib import closing
 from pathlib import Path
 
@@ -153,6 +155,33 @@ class CatalogTests(unittest.TestCase):
         for evidence in ({'source_sha256':'changed'},{'quote':'Bob Person'},{'pdf_page':2}):
             with self.subTest(evidence=evidence),self.assertRaises(ValueError):
                 viewer.validate_people([dict(person,evidence=dict(person['evidence'],**evidence))],prepared)
+
+
+class VocabularyArtifactTests(unittest.TestCase):
+    def test_coverage_is_bound_to_sources_and_vocabulary(self):
+        pilot=ROOT/'data/pilot/2026-11-01'
+        vocabulary=json.loads((pilot/'people.json').read_text(encoding='utf-8'))['people']
+        coverage=json.loads((pilot/'people-coverage.json').read_text(encoding='utf-8'))
+        for key,filename in [('vocabulary_sha256','people.json'),('metrics_sha256','metrics.json'),('selection_sha256','selection.json')]:
+            self.assertEqual(coverage[key],hashlib.sha256((pilot/filename).read_bytes()).hexdigest())
+        self.assertEqual({p['id'] for p in vocabulary},{p['id'] for p in coverage['people']})
+        self.assertEqual(len(vocabulary),22)
+        metrics={r['file_id']:r for r in json.loads((pilot/'metrics.json').read_text(encoding='utf-8'))['files']}
+        for person in vocabulary:
+            evidence=person['evidence'];source=metrics[evidence['file_id']]
+            self.assertEqual(evidence['source_sha256'],source['sha256'])
+            self.assertTrue(1<=evidence['pdf_page']<=source['page_count'])
+        alan=next(p for p in vocabulary if p['id']=='alan-dershowitz')
+        self.assertEqual((alan['evidence']['file_id'],alan['evidence']['pdf_page']),('EFTA00009329',14))
+
+    def test_deferred_spelling_and_initial_forms_are_not_silently_merged(self):
+        pilot=ROOT/'data/pilot/2026-11-01'
+        notes=json.loads((pilot/'name-review-notes.json').read_text(encoding='utf-8'))['decisions']
+        pairs={'Jeffery Epstein':'Jeffrey Epstein','Lillian Sanchez':'Lilly Ann Sanchez','Darren K. Indyke':'Darren Indyke'}
+        self.assertEqual({n['observed_form'] for n in notes},set(pairs))
+        for note in notes:
+            self.assertEqual(note['status'],'deferred_not_in_filter')
+            self.assertEqual(viewer.name_occurrences(note['evidence']['quote'],[pairs[note['observed_form']]]),[])
 
 
 if __name__ == '__main__': unittest.main()

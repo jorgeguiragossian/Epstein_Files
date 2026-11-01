@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "scope": "Eight curated name strings; incomplete pilot vocabulary. No initials, surnames alone, email-address aliases, or fuzzy identity matching.",
+  "scope": "22 curated name strings; incomplete pilot vocabulary. No initials, surnames alone, email-address aliases, or fuzzy identity matching.",
   "people": [
     {
       "id": "jeffrey-epstein",
@@ -14,7 +14,7 @@
         "quote": "JEFFREY EPSTEIN",
         "source_sha256": "0a0c09b234b58e7d113fa0cf938304c098bfa2e76833015ef0facf100e8ae985"
       },
-      "review_method": "Name string checked against a previously visually reviewed pilot page; matches elsewhere are lexical candidates, not confirmed identity assertions."
+      "review_method": "Cited PDF page visually reviewed and name quote checked against extracted text. Matches elsewhere are lexical candidates, not confirmed identity assertions."
     },
     {
       "id": "ghislaine-maxwell",
@@ -28,7 +28,7 @@
         "quote": "GHISLAINE MAXWELL",
         "source_sha256": "ce91ee3e7e23acd15f1c99eefd0ab9af1fda3fe1d8b5e9e0ea8a66706d3cfbe6"
       },
-      "review_method": "Name string checked against a previously visually reviewed pilot page; matches elsewhere are lexical candidates, not confirmed identity assertions."
+      "review_method": "Cited PDF page visually reviewed and name quote checked against extracted text. Matches elsewhere are lexical candidates, not confirmed identity assertions."
     },
     {
       "id": "sigrid-mccawley",
@@ -42,7 +42,7 @@
         "quote": "Sigrid McCawley",
         "source_sha256": "4c13c335b0b1c00c584181b89f1bcef485a85f632629d41f4aaa7888f4311f63"
       },
-      "review_method": "Name string checked against a previously visually reviewed pilot page; matches elsewhere are lexical candidates, not confirmed identity assertions."
+      "review_method": "Cited PDF page visually reviewed and name quote checked against extracted text. Matches elsewhere are lexical candidates, not confirmed identity assertions."
     },
     {
       "id": "richard-kahn",
@@ -56,7 +56,7 @@
         "quote": "Richard Kahn",
         "source_sha256": "b520dad0e407fdd3d375e7472f1e3bb332410bed3164cff9385fda7083e345be"
       },
-      "review_method": "Name string checked against a previously visually reviewed pilot page; matches elsewhere are lexical candidates, not confirmed identity assertions."
+      "review_method": "Cited PDF page visually reviewed and name quote checked against extracted text. Matches elsewhere are lexical candidates, not confirmed identity assertions."
     },
     {
       "id": "boris-nikolic",
@@ -70,7 +70,7 @@
         "quote": "Boris Nikolic",
         "source_sha256": "4ffdabbb392f3126224b15047081c2aa6acc0b813d73943a8fc3792d40f28901"
       },
-      "review_method": "Name string checked against a previously visually reviewed pilot page; matches elsewhere are lexical candidates, not confirmed identity assertions."
+      "review_method": "Cited PDF page visually reviewed and name quote checked against extracted text. Matches elsewhere are lexical candidates, not confirmed identity assertions."
     },
     {
       "id": "leon-black",
@@ -84,7 +84,7 @@
         "quote": "Leon Black",
         "source_sha256": "8203a023de0bb84fd77728af4ea5840f9d651addedf8cec2803b632a26f9fb03"
       },
-      "review_method": "Name string checked against a previously visually reviewed pilot page; matches elsewhere are lexical candidates, not confirmed identity assertions."
+      "review_method": "Cited PDF page visually reviewed and name quote checked against extracted text. Matches elsewhere are lexical candidates, not confirmed identity assertions."
     },
     {
       "id": "bill-gates",
@@ -98,7 +98,7 @@
         "quote": "Bill Gates",
         "source_sha256": "4ffdabbb392f3126224b15047081c2aa6acc0b813d73943a8fc3792d40f28901"
       },
-      "review_method": "Name string checked against a previously visually reviewed pilot page; matches elsewhere are lexical candidates, not confirmed identity assertions."
+      "review_method": "Cited PDF page visually reviewed and name quote checked against extracted text. Matches elsewhere are lexical candidates, not confirmed identity assertions."
     },
     {
       "id": "prince-andrew",
@@ -112,7 +112,203 @@
         "quote": "Prince Andrew",
         "source_sha256": "4d8719325cb2540fef6b22bf3c531f11010cf4a8f348e2ec627d0ca4ae5763e5"
       },
-      "review_method": "Name string checked against a previously visually reviewed pilot page; matches elsewhere are lexical candidates, not confirmed identity assertions."
+      "review_method": "Cited PDF page visually reviewed and name quote checked against extracted text. Matches elsewhere are lexical candidates, not confirmed identity assertions."
+    },
+    {
+      "id": "alan-dershowitz",
+      "label": "Alan Dershowitz",
+      "forms": [
+        "Alan Dershowitz"
+      ],
+      "evidence": {
+        "file_id": "EFTA00009329",
+        "pdf_page": 14,
+        "quote": "Alan Dershowitz",
+        "source_sha256": "7f113fabbb5f76cde9e5addee29a0f6b8c0eb785dc7357b5b1128c12e143229e"
+      },
+      "review_method": "Cited PDF page visually reviewed and name quote checked against extracted text. Matches elsewhere are lexical candidates, not confirmed identity assertions."
+    },
+    {
+      "id": "alexander-acosta",
+      "label": "Alexander Acosta",
+      "forms": [
+        "Alexander Acosta"
+      ],
+      "evidence": {
+        "file_id": "EFTA00009229",
+        "pdf_page": 1,
+        "quote": "ALEXANDER ACOSTA",
+        "source_sha256": "3703cbb62d6af5d6a037bdac89413cdf3adab5f733a47ae5a07db94245925991"
+      },
+      "review_method": "Cited PDF page visually reviewed and name quote checked against extracted text. Matches elsewhere are lexical candidates, not confirmed identity assertions."
+    },
+    {
+      "id": "darren-indyke",
+      "label": "Darren Indyke",
+      "forms": [
+        "Darren Indyke"
+      ],
+      "evidence": {
+        "file_id": "EFTA01263156",
+        "pdf_page": 1,
+        "quote": "Darren Indyke",
+        "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01"
+      },
+      "review_method": "Cited PDF page visually reviewed and name quote checked against extracted text. Matches elsewhere are lexical candidates, not confirmed identity assertions."
+    },
+    {
+      "id": "reid-weingarten",
+      "label": "Reid Weingarten",
+      "forms": [
+        "Reid Weingarten"
+      ],
+      "evidence": {
+        "file_id": "EFTA00009658",
+        "pdf_page": 5,
+        "quote": "Reid Weingarten",
+        "source_sha256": "8e88155e518f85933c76f5698b0340a389ca44a9edd2ec1cce8785003636d1a1"
+      },
+      "review_method": "Cited PDF page visually reviewed and name quote checked against extracted text. Matches elsewhere are lexical candidates, not confirmed identity assertions."
+    },
+    {
+      "id": "larry-cohen",
+      "label": "Larry Cohen",
+      "forms": [
+        "Larry Cohen"
+      ],
+      "evidence": {
+        "file_id": "EFTA02730265",
+        "pdf_page": 1,
+        "quote": "Larry Cohen",
+        "source_sha256": "4ffdabbb392f3126224b15047081c2aa6acc0b813d73943a8fc3792d40f28901"
+      },
+      "review_method": "Cited PDF page visually reviewed and name quote checked against extracted text. Matches elsewhere are lexical candidates, not confirmed identity assertions."
+    },
+    {
+      "id": "audrey-strauss",
+      "label": "Audrey Strauss",
+      "forms": [
+        "Audrey Strauss"
+      ],
+      "evidence": {
+        "file_id": "EFTA00008874",
+        "pdf_page": 18,
+        "quote": "AUDREY STRAUSS",
+        "source_sha256": "da562b204e8a04a1a9f27b155011cd8b12bc80776231944de7739ad8b3604f92"
+      },
+      "review_method": "Cited PDF page visually reviewed and name quote checked against extracted text. Matches elsewhere are lexical candidates, not confirmed identity assertions."
+    },
+    {
+      "id": "barry-krischer",
+      "label": "Barry Krischer",
+      "forms": [
+        "Barry Krischer"
+      ],
+      "evidence": {
+        "file_id": "EFTA00009229",
+        "pdf_page": 37,
+        "quote": "Barry Krischer",
+        "source_sha256": "3703cbb62d6af5d6a037bdac89413cdf3adab5f733a47ae5a07db94245925991"
+      },
+      "review_method": "Cited PDF page visually reviewed and name quote checked against extracted text. Matches elsewhere are lexical candidates, not confirmed identity assertions."
+    },
+    {
+      "id": "jay-lefkowitz",
+      "label": "Jay Lefkowitz",
+      "forms": [
+        "Jay Lefkowitz"
+      ],
+      "evidence": {
+        "file_id": "EFTA00009016",
+        "pdf_page": 67,
+        "quote": "Jay Lefkowitz",
+        "source_sha256": "96c34df552b30a4dd46176c1818468e9bbddb64bb0a5c9dd7d56bbdc5c444465"
+      },
+      "review_method": "Cited PDF page visually reviewed and name quote checked against extracted text. Matches elsewhere are lexical candidates, not confirmed identity assertions."
+    },
+    {
+      "id": "ken-starr",
+      "label": "Ken Starr",
+      "forms": [
+        "Ken Starr"
+      ],
+      "evidence": {
+        "file_id": "EFTA00009016",
+        "pdf_page": 34,
+        "quote": "Ken Starr",
+        "source_sha256": "96c34df552b30a4dd46176c1818468e9bbddb64bb0a5c9dd7d56bbdc5c444465"
+      },
+      "review_method": "Cited PDF page visually reviewed and name quote checked against extracted text. Matches elsewhere are lexical candidates, not confirmed identity assertions."
+    },
+    {
+      "id": "roy-black",
+      "label": "Roy Black",
+      "forms": [
+        "Roy Black"
+      ],
+      "evidence": {
+        "file_id": "EFTA00009329",
+        "pdf_page": 14,
+        "quote": "Roy Black",
+        "source_sha256": "7f113fabbb5f76cde9e5addee29a0f6b8c0eb785dc7357b5b1128c12e143229e"
+      },
+      "review_method": "Cited PDF page visually reviewed and name quote checked against extracted text. Matches elsewhere are lexical candidates, not confirmed identity assertions."
+    },
+    {
+      "id": "gerald-lefcourt",
+      "label": "Gerald Lefcourt",
+      "forms": [
+        "Gerald Lefcourt"
+      ],
+      "evidence": {
+        "file_id": "EFTA00009329",
+        "pdf_page": 14,
+        "quote": "Gerald Lefcourt",
+        "source_sha256": "7f113fabbb5f76cde9e5addee29a0f6b8c0eb785dc7357b5b1128c12e143229e"
+      },
+      "review_method": "Cited PDF page visually reviewed and name quote checked against extracted text. Matches elsewhere are lexical candidates, not confirmed identity assertions."
+    },
+    {
+      "id": "guy-lewis",
+      "label": "Guy Lewis",
+      "forms": [
+        "Guy Lewis"
+      ],
+      "evidence": {
+        "file_id": "EFTA00009329",
+        "pdf_page": 29,
+        "quote": "Guy Lewis",
+        "source_sha256": "7f113fabbb5f76cde9e5addee29a0f6b8c0eb785dc7357b5b1128c12e143229e"
+      },
+      "review_method": "Cited PDF page visually reviewed and name quote checked against extracted text. Matches elsewhere are lexical candidates, not confirmed identity assertions."
+    },
+    {
+      "id": "lilly-ann-sanchez",
+      "label": "Lilly Ann Sanchez",
+      "forms": [
+        "Lilly Ann Sanchez"
+      ],
+      "evidence": {
+        "file_id": "EFTA00009329",
+        "pdf_page": 23,
+        "quote": "Lilly Ann Sanchez",
+        "source_sha256": "7f113fabbb5f76cde9e5addee29a0f6b8c0eb785dc7357b5b1128c12e143229e"
+      },
+      "review_method": "Cited PDF page visually reviewed and name quote checked against extracted text. Matches elsewhere are lexical candidates, not confirmed identity assertions."
+    },
+    {
+      "id": "jeanne-christensen",
+      "label": "Jeanne Christensen",
+      "forms": [
+        "Jeanne Christensen"
+      ],
+      "evidence": {
+        "file_id": "EFTA02731485",
+        "pdf_page": 1,
+        "quote": "Jeanne Christensen",
+        "source_sha256": "8203a023de0bb84fd77728af4ea5840f9d651addedf8cec2803b632a26f9fb03"
+      },
+      "review_method": "Cited PDF page visually reviewed and name quote checked against extracted text. Matches elsewhere are lexical candidates, not confirmed identity assertions."
     }
   ]
 }

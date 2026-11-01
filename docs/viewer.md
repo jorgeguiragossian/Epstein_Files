@@ -31,7 +31,7 @@ Pass `--age-confirmed` only after confirming eligibility for DOJ's age gate. The
 
 - Search all words within the same extracted PDF page. Results group matching pages by document and show the first matching page. Search is case-insensitive and uses SQLite's Unicode tokenizer. It does not do fuzzy matching, stemming, entity resolution, or boolean query syntax.
 - Find an exact EFTA document ID, such as `EFTA00008529`.
-- Filter by one of eight curated person-name phrases and inspect matching PDF pages and highlighted text. See [person-name matching and limits](person-filter.md). These are lexical mentions, not verified identity or relationship assertions.
+- Filter by one of 22 curated person-name phrases and inspect matching PDF pages and highlighted text. See [person-name matching and limits](person-filter.md), including source review, deferred variants, and a reproducible coverage snapshot. These are lexical mentions, not verified identity or relationship assertions.
 - Filter by dataset and by whether a document includes low-text pages or has at least one page with substantial text. These quality filters apply to the document; an individual matching page may have different quality.
 - Read extracted page text, highlighted search terms, matching-page links, and previous/next or direct page navigation.
 - Open the local original PDF at the selected file page or follow the official DOJ source link. A browser PDF viewer may vary in whether it honors `#page=`. DOJ may require its own age verification.
