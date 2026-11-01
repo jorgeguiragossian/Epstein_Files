@@ -29,14 +29,24 @@ def main():
     assert get('/api/search?date_status=unreviewed')['total_documents']==80
     assert get('/api/search?date_from=2014-01-01&date_to=2014-01-01&q=EFTA02730265')['total_documents']==0
     assert get('/api/documents/EFTA00039806')['date_review']['evidence_page']==2
-    for path, status in [('/api/documents/EFTA00008529?page=0',400),('/README.md',404),('/pdf/../../README.md',404),('/api/search?date_from=2021-02-29',400),('/api/search?date_from=2020-01-01&date_to=2019-01-01',400)]:
+    people=get('/api/people')['people']
+    assert len(people)==8
+    names={p['id']:p for p in people}
+    assert names['ghislaine-maxwell']['documents']==19 and names['ghislaine-maxwell']['pages']==102
+    person=get('/api/search?person=ghislaine-maxwell&date_from=2020-06-29&date_to=2020-06-29')
+    assert person['total_documents']==1 and person['results'][0]['id']=='EFTA00008631'
+    assert person['results'][0]['matching_pages'][0]==1
+    page=get('/api/documents/EFTA00008631?page=1')
+    assert any(m['id']=='ghislaine-maxwell' for m in page['page']['name_mentions'])
+    assert get('/api/search?person=ghislaine-maxwell&dataset=1')['total_documents']==0
+    for path, status in [('/api/documents/EFTA00008529?page=0',400),('/README.md',404),('/pdf/../../README.md',404),('/api/search?date_from=2021-02-29',400),('/api/search?date_from=2020-01-01&date_to=2019-01-01',400),('/api/search?person=unknown',400)]:
         try: get(path)
         except HTTPError as exc: assert exc.code == status, (path,exc.code)
         else: raise AssertionError(f'Expected HTTP {status} for {path}')
     with urlopen(Request(BASE + '/pdf/EFTA00008529',headers={'Range':'bytes=0-7'}),timeout=10) as response:
         body = response.read()
         assert response.status == 206 and len(body) == 8 and body.startswith(b'%PDF-')
-    print('HTTP smoke passed: coverage, real search, filters, page text, input errors, file-route isolation, and PDF byte ranges.')
+    print('HTTP smoke passed: coverage, real search, person/date filters, page evidence, input errors, file-route isolation, and PDF byte ranges.')
 
 
 if __name__ == '__main__':

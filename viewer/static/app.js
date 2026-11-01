@@ -6,6 +6,8 @@ const initialPage = Number(params.get('pdfpage')) || 1;
 state.dateFrom = params.get('date_from') || '';
 state.dateTo = params.get('date_to') || '';
 state.dateStatus = params.get('date_status') || 'all';
+state.person=params.get('person')||'';
+state.people=[];
 const dateLabels = {dated:'Reviewed date',uncertain:'Uncertain date',undated:'Reviewed · undated',unreviewed:'Not yet reviewed'};
 const dateTypes = {email_sent:'Email sent date',report:'Report date',transcript_session:'Transcript session date'};
 const format = (number) => Number(number).toLocaleString('en-US');
@@ -26,12 +28,14 @@ async function api(path) {
 
 function highlighted(element, text) {
   element.replaceChildren();
-  const words = state.q.match(/[\p{L}\p{N}_]+/gu) || [];
-  if (!words.length || /^EFTA\d{8}$/i.test(state.q.trim())) {
+  const words = /^EFTA\d{8}$/i.test(state.q.trim()) ? [] : state.q.match(/[\p{L}\p{N}_]+/gu) || [];
+  const forms=state.people.find(p=>p.id===state.person)?.forms||[];
+  const terms=[...forms,...words];
+  if (!terms.length) {
     element.textContent = text;
     return;
   }
-  const alternatives = words.map((word) => word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|');
+  const alternatives = terms.map((word) => word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g,'\\s+')).join('|');
   const pattern = new RegExp(`(?<![\\p{L}\\p{N}_])(?:${alternatives})(?![\\p{L}\\p{N}_])`, 'giu');
   let index = 0;
   for (const match of text.matchAll(pattern)) {
@@ -50,6 +54,7 @@ function updateLocation() {
   if (state.dateFrom) url.searchParams.set('date_from',state.dateFrom);
   if (state.dateTo) url.searchParams.set('date_to',state.dateTo);
   if (state.dateStatus !== 'all') url.searchParams.set('date_status',state.dateStatus);
+  if(state.person) url.searchParams.set('person',state.person);
   if (state.resultPage > 1) url.searchParams.set('rpage', state.resultPage);
   if (state.selected) {
     url.searchParams.set('doc', state.selected);
@@ -92,10 +97,10 @@ function renderResults() {
     badges.append(node('span','badge date-badge',result.primary_date ? `${result.primary_date} · ${dateTypes[result.date_type]}` : dateLabels[result.date_status]));
     if (result.low_text_pages) badges.append(node('span', 'badge review', `${result.low_text_pages} low-text ${result.low_text_pages === 1 ? 'page' : 'pages'}`));
     if (result.email_headers) badges.append(node('span', 'badge', `${result.email_headers} email header ${result.email_headers === 1 ? 'candidate' : 'candidates'}`));
-    if (state.q) badges.append(node('span', 'badge', `${result.matching_pages.length} matching ${result.matching_pages.length === 1 ? 'page' : 'pages'}`));
+    if (state.q||state.person) badges.append(node('span', 'badge', `${result.matching_pages.length} matching ${result.matching_pages.length === 1 ? 'page' : 'pages'}`));
     button.append(head, meta, excerpt, badges);
     button.addEventListener('click', () => {
-      state.matches = state.q ? result.matching_pages : [];
+      state.matches = state.q||state.person ? result.matching_pages : [];
       openDocument(result.id, result.first_page, true);
     });
     $('#results').append(button);
@@ -111,6 +116,9 @@ async function search({ resetPage = true, keepReader = false } = {}) {
   state.dateFrom = $('#date-from').value;
   state.dateTo = $('#date-to').value;
   state.dateStatus = $('#date-status').value;
+  state.person=$('#person').value;
+  const selectedPerson=state.people.find(p=>p.id===state.person);
+  $('#person-scope').textContent=selectedPerson ? `${selectedPerson.label}: ${selectedPerson.documents} documents / ${selectedPerson.pages} pages across the full pilot. Text mentions are not verified identities or relationships.` : `${state.people.length} curated names, not a complete person index. Full-name text matches do not establish identity, a relationship, or wrongdoing.`;
   updateDatasetButtons();
   updateLocation();
   $('#results-status').classList.remove('error');
@@ -119,14 +127,14 @@ async function search({ resetPage = true, keepReader = false } = {}) {
   $('#prev-results').disabled = true;
   $('#next-results').disabled = true;
   try {
-    const query = new URLSearchParams({ q: state.q, dataset: state.dataset, quality: state.quality, page: state.resultPage, date_from:state.dateFrom,date_to:state.dateTo,date_status:state.dateStatus });
+    const query = new URLSearchParams({ q: state.q, dataset: state.dataset, quality: state.quality, page: state.resultPage, date_from:state.dateFrom,date_to:state.dateTo,date_status:state.dateStatus,person:state.person });
     const result = await api(`/api/search?${query}`);
     if (version !== state.searchVersion) return;
     state.results = result.results;
     renderResults();
-    $('#results-title').textContent = state.q ? 'Search results' : state.dataset ? `Dataset ${String(state.dataset).padStart(2, '0')}` : 'Pilot documents';
-    $('#results-status').textContent = `${format(result.total_documents)} ${result.total_documents === 1 ? 'document' : 'documents'}${state.q ? ` · ${format(result.total_matching_pages)} matching pages` : ' in the pilot sample'} · ordered by dataset and file ID`;
-    $('#reset').hidden = !state.q && !state.dataset && state.quality === 'all' && !state.dateFrom && !state.dateTo && state.dateStatus==='all';
+    $('#results-title').textContent = selectedPerson ? `Mentions: ${selectedPerson.label}` : state.q ? 'Search results' : state.dataset ? `Dataset ${String(state.dataset).padStart(2, '0')}` : 'Pilot documents';
+    $('#results-status').textContent = `${format(result.total_documents)} ${result.total_documents === 1 ? 'document' : 'documents'}${state.q||state.person ? ` · ${format(result.total_matching_pages)} matching pages` : ' in the pilot sample'} · ordered by dataset and file ID`;
+    $('#reset').hidden = !state.q && !state.dataset && !state.person && state.quality === 'all' && !state.dateFrom && !state.dateTo && state.dateStatus==='all';
     const maxPage = Math.max(1, Math.ceil(result.total_documents / result.page_size));
     $('#result-page').textContent = `Page ${state.resultPage} of ${maxPage}`;
     $('#prev-results').disabled = state.resultPage <= 1;
@@ -171,6 +179,7 @@ async function openDocument(id, page, focus = false) {
   $('#date-list').replaceChildren();
   $('#source-details').replaceChildren();
   $('#primary-date').replaceChildren();
+  $('#page-people').replaceChildren();
   try {
     const record = await api(`/api/documents/${encodeURIComponent(id)}?page=${page}`);
     if (version !== state.documentVersion) return;
@@ -186,6 +195,20 @@ async function openDocument(id, page, focus = false) {
     $('#page-warning').hidden = !record.page.low_text;
     highlighted($('#page-text'), record.page.text || 'No text was extracted from this page. Inspect the original PDF.');
     $('#page-text').scrollTop = 0;
+    const firstHighlight=$('#page-text mark');
+    if(firstHighlight) $('#page-text').scrollTop=Math.max(0,firstHighlight.getBoundingClientRect().top-$('#page-text').getBoundingClientRect().top-60);
+    for(const mention of record.page.name_mentions) {
+      const item=node('p','name-mention',`${mention.label} · ${mention.occurrences} text ${mention.occurrences===1?'occurrence':'occurrences'}`);
+      const entry=state.people.find(p=>p.id===mention.id);
+      if(entry) {
+        const link=node('button','text-button','View name-list source ↗');
+        link.type='button';
+        link.addEventListener('click',()=>{state.matches=[];openDocument(entry.evidence.file_id,entry.evidence.pdf_page);});
+        item.append(document.createTextNode(' '),link);
+      }
+      $('#page-people').append(item);
+    }
+    if(!record.page.name_mentions.length) $('#page-people').append(node('p','evidence-note','No names from the curated list matched this page. This does not establish that no people are named here.'));
     $('#reader-status').textContent = `Loaded ${id}, PDF page ${page} of ${record.page_count}.`;
     const matches = $('#matching-pages');
     matches.replaceChildren(document.createTextNode('Matching PDF pages: '));
@@ -259,10 +282,12 @@ async function init() {
   $('#all-datasets').addEventListener('click', () => { state.dataset = ''; search(); });
   $('#search-form').addEventListener('submit', (event) => { event.preventDefault(); search(); });
   $('#quality').addEventListener('change', () => search());
+  $('#person').addEventListener('change',()=>search());
   $('#reset').addEventListener('click', () => {
     state.dataset = '';
     $('#search').value = '';
     $('#quality').value = 'all';
+    $('#person').value='';
     $('#date-status').value='all';$('#date-from').value='';$('#date-to').value='';syncDates();
     search();
   });
@@ -276,7 +301,14 @@ async function init() {
     if (input.reportValidity()) openDocument(state.selected, Number(input.value));
   });
   try {
-    const overview = await api('/api/overview');
+    const [overview,vocabulary]=await Promise.all([api('/api/overview'),api('/api/people')]);
+    state.people=vocabulary.people;
+    for(const person of state.people) {
+      const option=node('option','',`${person.label} (${person.documents} pilot ${person.documents===1?'document':'documents'})`);
+      option.value=person.id;$('#person').append(option);
+    }
+    if(state.person&&!state.people.some(p=>p.id===state.person)) throw new Error('Unknown person-name filter in URL. Remove the person parameter to continue.');
+    $('#person').value=state.person;
     $('#stat-docs').textContent = format(overview.documents);
     $('#stat-pages').textContent = format(overview.pages);
     $('#stat-datasets').textContent = overview.datasets.length;
@@ -298,7 +330,7 @@ async function init() {
     await search({ resetPage: false, keepReader: true });
     if (initialDocument) {
       const result = state.results.find((r) => r.id === initialDocument);
-      state.matches = state.q && result ? result.matching_pages : [];
+      state.matches = (state.q||state.person) && result ? result.matching_pages : [];
       await openDocument(initialDocument, initialPage);
     }
   } catch (error) {

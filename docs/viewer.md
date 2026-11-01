@@ -31,6 +31,7 @@ Pass `--age-confirmed` only after confirming eligibility for DOJ's age gate. The
 
 - Search all words within the same extracted PDF page. Results group matching pages by document and show the first matching page. Search is case-insensitive and uses SQLite's Unicode tokenizer. It does not do fuzzy matching, stemming, entity resolution, or boolean query syntax.
 - Find an exact EFTA document ID, such as `EFTA00008529`.
+- Filter by one of eight curated person-name phrases and inspect matching PDF pages and highlighted text. See [person-name matching and limits](person-filter.md). These are lexical mentions, not verified identity or relationship assertions.
 - Filter by dataset and by whether a document includes low-text pages or has at least one page with substantial text. These quality filters apply to the document; an individual matching page may have different quality.
 - Read extracted page text, highlighted search terms, matching-page links, and previous/next or direct page navigation.
 - Open the local original PDF at the selected file page or follow the official DOJ source link. A browser PDF viewer may vary in whether it honors `#page=`. DOJ may require its own age verification.
@@ -38,7 +39,7 @@ Pass `--age-confirmed` only after confirming eligibility for DOJ's age gate. The
 - Inspect page date-string candidates, extraction coverage, email-header candidate counts, source SHA-256, and primary-date evidence/rationale. Primary dates come from separate source-based editorial reviews, not automatic promotion of every date mention.
 - Reopen the current view using its URL, including search/filter values, document ID, and PDF page.
 
-Search results are ordered by dataset, document ID, and PDF page, rather than by relevance. A text match for a person's name is not a verified person filter and does not establish wrongdoing or a relationship. OCR errors, redactions, and missing text affect matches. No new OCR, AI summaries, contact rankings, or public hosting is included in this step.
+Search results are ordered by dataset, document ID, and PDF page, rather than by relevance. Person filtering currently uses a small curated name vocabulary and does not verify identities, wrongdoing, or relationships. OCR errors, redactions, and missing text affect matches. No new OCR, AI summaries, contact rankings, or public hosting is included in this step.
 
 ## Local scope
 

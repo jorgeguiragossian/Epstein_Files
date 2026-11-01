@@ -51,6 +51,40 @@ def validate_review(review, metric, extracted):
         raise ValueError('Uncertain and undated reviews cannot assign a primary date.')
 
 
+def name_pattern(form):
+    return r'(?<!\w)' + r'\s+'.join(re.escape(word) for word in form.split()) + r'(?!\w)'
+
+
+def name_occurrences(text, forms):
+    spans={}
+    for form in forms:
+        for match in re.finditer(name_pattern(form),text,re.I):
+            spans[(match.start(),match.end())]={'start':match.start(),'end':match.end(),'text':match.group(0)}
+    return [spans[key] for key in sorted(spans)]
+
+
+def validate_people(people, prepared):
+    sources={metric['file_id']:(metric,extracted) for metric,item,extracted,pdf in prepared}
+    seen_ids,seen_forms=set(),set()
+    for person in people:
+        if not re.fullmatch(r'[a-z][a-z-]{1,60}',person['id']) or person['id'] in seen_ids:
+            raise ValueError('Duplicate or invalid person vocabulary ID.')
+        seen_ids.add(person['id'])
+        evidence=person['evidence']
+        if evidence['file_id'] not in sources: raise ValueError('Unknown person-evidence document.')
+        metric,extracted=sources[evidence['file_id']]
+        if evidence['source_sha256']!=metric['sha256']: raise ValueError('Stale person-evidence source hash.')
+        page=integer(evidence['pdf_page'],1,metric['page_count'],'Person evidence page')
+        if not evidence['quote'] or evidence['quote'] not in extracted['pages'][page-1]['text']:
+            raise ValueError('Name evidence is absent from cited page.')
+        # This pilot vocabulary allows one literal full-name form per entry.
+        if person['forms']!=[person['label']] or len(person['label'])>100 or not re.fullmatch(name_pattern(person['label']),evidence['quote'],re.I):
+            raise ValueError('Name form requires matching source evidence.')
+        normalized=' '.join(person['label'].casefold().split())
+        if normalized in seen_forms: raise ValueError('Duplicate name form across vocabulary entries.')
+        seen_forms.add(normalized)
+
+
 def build_index(pilot=PILOT, database=DB):
     downloads = {r['url']: r for r in load(pilot / 'downloads.json')['files']}
     metrics = load(pilot / 'metrics.json')['files']
@@ -79,6 +113,8 @@ def build_index(pilot=PILOT, database=DB):
         prepared.append((metric, item, extracted, pdf))
     if not prepared:
         raise ValueError('No extracted pilot documents available.')
+    people=load(pilot/'people.json')['people']
+    validate_people(people,prepared)
     database.parent.mkdir(parents=True, exist_ok=True)
     with closing(sqlite3.connect(database)) as connection:
         connection.executescript('''
@@ -86,6 +122,8 @@ def build_index(pilot=PILOT, database=DB):
             DROP TABLE IF EXISTS pages;
             DROP TABLE IF EXISTS documents;
             DROP TABLE IF EXISTS document_dates;
+            DROP TABLE IF EXISTS people;
+            DROP TABLE IF EXISTS name_mentions;
             CREATE TABLE documents (id TEXT PRIMARY KEY, dataset INTEGER, page_count INTEGER,
                 low_text_pages INTEGER, bytes INTEGER, date_count INTEGER, email_headers INTEGER,
                 url TEXT, sha256 TEXT, pdf_path TEXT);
@@ -93,7 +131,12 @@ def build_index(pilot=PILOT, database=DB):
                 text TEXT, low_text INTEGER, date_candidates TEXT, UNIQUE(document_id, number));
             CREATE VIRTUAL TABLE search USING fts5(text, tokenize='unicode61');
             CREATE TABLE document_dates(document_id TEXT PRIMARY KEY,status TEXT,primary_date TEXT,date_type TEXT,review_json TEXT);
+            CREATE TABLE people(id TEXT PRIMARY KEY,label TEXT,forms_json TEXT,evidence_json TEXT);
+            CREATE TABLE name_mentions(page_id INTEGER,person_id TEXT,occurrences INTEGER,hits_json TEXT,PRIMARY KEY(page_id,person_id));
+            CREATE INDEX mentions_person ON name_mentions(person_id,page_id);
         ''')
+        for person in people:
+            connection.execute('INSERT INTO people VALUES (?,?,?,?)',(person['id'],person['label'],json.dumps(person['forms']),json.dumps(person['evidence'])))
         for metric, item, extracted, pdf in prepared:
             connection.execute('INSERT INTO documents VALUES (?,?,?,?,?,?,?,?,?,?)',
                 (metric['file_id'], metric['dataset'], metric['page_count'], metric['low_text_pages'],
@@ -107,6 +150,10 @@ def build_index(pilot=PILOT, database=DB):
                 cursor = connection.execute('INSERT INTO pages(document_id,number,text,low_text,date_candidates) VALUES (?,?,?,?,?)',
                     (metric['file_id'], page['page'], page['text'], int(page['low_text_candidate']), json.dumps(page['date_candidates'])))
                 connection.execute('INSERT INTO search(rowid,text) VALUES (?,?)', (cursor.lastrowid, page['text']))
+                for person in people:
+                    hits=name_occurrences(page['text'],person['forms'])
+                    if hits:
+                        connection.execute('INSERT INTO name_mentions VALUES (?,?,?,?)',(cursor.lastrowid,person['id'],len(hits),json.dumps(hits)))
         connection.commit()
     return len(prepared)
 
@@ -122,7 +169,7 @@ def integer(value, minimum, maximum, label):
 
 
 def snippet(text, words):
-    matches = [re.search(r'\b' + re.escape(word) + r'\b', text, re.I) for word in words]
+    matches = [re.search(name_pattern(word), text, re.I) for word in words]
     positions = [match.start() for match in matches if match]
     start = max(0, min(positions) - 75) if positions else 0
     compact = re.sub(r'\s+', ' ', text[start:start + 300]).strip()
@@ -146,12 +193,30 @@ class Catalog:
                 'date_status_counts': {r['status']:r['count'] for r in c.execute("SELECT COALESCE(v.status,'unreviewed') AS status,COUNT(*) AS count FROM documents d LEFT JOIN document_dates v ON v.document_id=d.id GROUP BY COALESCE(v.status,'unreviewed')")},
                 'datasets': [dict(r) for r in c.execute('SELECT dataset,COUNT(*) AS documents,SUM(page_count) AS pages FROM documents GROUP BY dataset ORDER BY dataset')]}
 
-    def search(self, q='', dataset='', quality='all', page=1, date_from='', date_to='', date_status='all'):
+    def people(self):
+        with self.connect() as c:
+            rows=c.execute('''SELECT n.id,n.label,n.forms_json,n.evidence_json,COUNT(DISTINCT p.document_id) AS documents,
+                COUNT(m.page_id) AS pages,COALESCE(SUM(m.occurrences),0) AS occurrences FROM people n
+                LEFT JOIN name_mentions m ON m.person_id=n.id LEFT JOIN pages p ON p.id=m.page_id
+                GROUP BY n.id ORDER BY n.label COLLATE NOCASE''')
+            return {'scope':'Curated full-name text matches in this pilot; not verified identities or relationship counts.',
+                'people':[{'id':r['id'],'label':r['label'],'forms':json.loads(r['forms_json']),
+                    'evidence':json.loads(r['evidence_json']),'documents':r['documents'],'pages':r['pages'],'occurrences':r['occurrences']} for r in rows]}
+
+    def search(self, q='', dataset='', quality='all', page=1, date_from='', date_to='', date_status='all',person=''):
         q = q.strip()
         if len(q) > 200:
             raise ValueError('Keep search text to 200 characters or fewer.')
         page = integer(page, 1, 10000, 'Result page')
         where, params = [], []
+        person_forms=[]
+        if person:
+            with self.connect() as c:
+                entry=c.execute('SELECT forms_json FROM people WHERE id=?',(person,)).fetchone()
+            if not entry: raise ValueError('Unknown person-name filter.')
+            person_forms=json.loads(entry['forms_json'])
+            where.append('p.id IN (SELECT page_id FROM name_mentions WHERE person_id=?)')
+            params.append(person)
         if date_status not in ('all','dated','uncertain','undated','unreviewed'):
             raise ValueError('Unknown date status.')
         if date_from: iso_day(date_from,'Start date')
@@ -199,7 +264,7 @@ class Catalog:
                 hit_pages += 1
                 if row['id'] not in groups:
                     groups[row['id']] = {k:row[k] for k in ('id','dataset','page_count','low_text_pages','bytes','date_count','email_headers','date_status','primary_date','date_type')}
-                    groups[row['id']].update(first_page=row['number'], snippet=snippet(row['text'], words), matching_pages=[])
+                    groups[row['id']].update(first_page=row['number'], snippet=snippet(row['text'], person_forms+words), matching_pages=[])
                 groups[row['id']]['matching_pages'].append(row['number'])
         documents = list(groups.values())
         page_size = 15
@@ -215,6 +280,7 @@ class Catalog:
             text = c.execute('SELECT number,text,low_text,date_candidates FROM pages WHERE document_id=? AND number=?', (document_id,page)).fetchone()
             document['page'] = dict(text)
             document['page']['date_candidates'] = json.loads(text['date_candidates'])
+            document['page']['name_mentions']=[{'id':r['person_id'],'label':r['label'],'occurrences':r['occurrences'],'hits':json.loads(r['hits_json'])} for r in c.execute('''SELECT m.person_id,n.label,m.occurrences,m.hits_json FROM name_mentions m JOIN people n ON n.id=m.person_id JOIN pages p ON p.id=m.page_id WHERE p.document_id=? AND p.number=? ORDER BY n.label''',(document_id,page))]
             review = c.execute('SELECT review_json FROM document_dates WHERE document_id=?',(document_id,)).fetchone()
             document['date_review'] = json.loads(review['review_json']) if review else {'status':'unreviewed','primary_date':None,'date_type':None,'notes':'This document has not yet had a primary-date review.'}
             return document
@@ -272,8 +338,9 @@ class Handler(BaseHTTPRequestHandler):
                 self.send_headers(200,mime,len(data))
                 self.wfile.write(data)
             elif url.path == '/api/overview': self.json(200,self.catalog.overview())
+            elif url.path == '/api/people': self.json(200,self.catalog.people())
             elif url.path == '/api/search':
-                self.json(200,self.catalog.search(query.get('q',''),query.get('dataset',''),query.get('quality','all'),query.get('page',1),query.get('date_from',''),query.get('date_to',''),query.get('date_status','all')))
+                self.json(200,self.catalog.search(query.get('q',''),query.get('dataset',''),query.get('quality','all'),query.get('page',1),query.get('date_from',''),query.get('date_to',''),query.get('date_status','all'),query.get('person','')))
             elif re.fullmatch(r'/api/documents/EFTA\d{8}', url.path):
                 self.json(200,self.catalog.document(url.path.rsplit('/',1)[-1],query.get('page',1)))
             elif re.fullmatch(r'/pdf/EFTA\d{8}', url.path):

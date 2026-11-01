@@ -25,14 +25,16 @@ class CatalogTests(unittest.TestCase):
                 CREATE TABLE pages(id INTEGER PRIMARY KEY,document_id TEXT,number INTEGER,text TEXT,low_text INTEGER,date_candidates TEXT);
                 CREATE VIRTUAL TABLE search USING fts5(text,tokenize='unicode61');
                 CREATE TABLE document_dates(document_id TEXT PRIMARY KEY,status TEXT,primary_date TEXT,date_type TEXT,review_json TEXT);
+                CREATE TABLE people(id TEXT PRIMARY KEY,label TEXT,forms_json TEXT,evidence_json TEXT);
+                CREATE TABLE name_mentions(page_id INTEGER,person_id TEXT,occurrences INTEGER,hits_json TEXT,PRIMARY KEY(page_id,person_id));
             ''')
             c.executemany('INSERT INTO documents VALUES (?,?,?,?,?,?,?,?,?,?)', [
                 ('EFTA00000001',1,2,1,100,1,0,'https://www.justice.gov/example.pdf','abc','fixture.pdf'),
                 ('EFTA00000002',2,1,0,200,0,0,'https://www.justice.gov/example2.pdf','def','fixture2.pdf'),
                 ('EFTA00000003',3,1,0,200,0,0,'https://www.justice.gov/3.pdf','ghi','3.pdf'),
                 ('EFTA00000004',4,1,0,200,0,0,'https://www.justice.gov/4.pdf','jkl','4.pdf')])
-            rows = [(1,'EFTA00000001',1,'A report about a meeting in New York.',0,'[]'),
-                (2,'EFTA00000001',2,'New York meeting continued on another page.',1,'[]'),
+            rows = [(1,'EFTA00000001',1,'Alice Example and Bob Person: a report about a meeting in New York.',0,'[]'),
+                (2,'EFTA00000001',2,'Alice\nExample: New York meeting continued on another page. Alice Example.',1,'[]'),
                 (3,'EFTA00000002',1,'A different meeting in London.',0,'[]'),
                 (4,'EFTA00000003',1,'Undated fixture.',0,'[]'),(5,'EFTA00000004',1,'Unreviewed fixture.',0,'[]')]
             c.executemany('INSERT INTO pages VALUES (?,?,?,?,?,?)',rows)
@@ -41,6 +43,14 @@ class CatalogTests(unittest.TestCase):
                 ('EFTA00000001','dated','2019-06-18','transcript_session','{"status":"dated","primary_date":"2019-06-18"}'),
                 ('EFTA00000002','uncertain',None,None,'{"status":"uncertain"}'),
                 ('EFTA00000003','undated',None,None,'{"status":"undated"}')])
+            c.executemany('INSERT INTO people VALUES (?,?,?,?)',[
+                ('alice-example','Alice Example','["Alice Example"]','{}'),('bob-person','Bob Person','["Bob Person"]','{}')])
+            for row in rows:
+                for key,name in [('alice-example','Alice Example'),('bob-person','Bob Person')]:
+                    hits=viewer.name_occurrences(row[3],[name])
+                    if hits:
+                        import json
+                        c.execute('INSERT INTO name_mentions VALUES (?,?,?,?)',(row[0],key,len(hits),json.dumps(hits)))
             c.commit()
         cls.catalog = viewer.Catalog(cls.db)
 
@@ -111,6 +121,38 @@ class CatalogTests(unittest.TestCase):
         viewer.validate_review(record,metric,extracted)
         for changes in ({'source_sha256':'changed'},{'evidence_page':2},{'evidence_quote':'not present'},{'status':'uncertain'}):
             with self.subTest(changes=changes),self.assertRaises(ValueError): viewer.validate_review(dict(record,**changes),metric,extracted)
+
+    def test_person_matches_are_page_scoped_and_combine_with_dates(self):
+        response=self.catalog.search(person='alice-example')
+        self.assertEqual(response['total_documents'],1)
+        self.assertEqual(response['results'][0]['matching_pages'],[1,2])
+        self.assertEqual(self.catalog.search(person='bob-person',q='continued')['total_documents'],0)
+        self.assertEqual(self.catalog.search(person='alice-example',date_from='2019-06-18',date_to='2019-06-18')['total_documents'],1)
+        self.assertEqual(self.catalog.search(person='alice-example',dataset='2')['total_documents'],0)
+        with self.assertRaises(ValueError):self.catalog.search(person="' OR 1=1")
+
+    def test_name_occurrences_are_not_contact_counts(self):
+        people={p['id']:p for p in self.catalog.people()['people']}
+        self.assertEqual((people['alice-example']['documents'],people['alice-example']['pages'],people['alice-example']['occurrences']),(1,2,3))
+        mentions=self.catalog.document('EFTA00000001',2)['page']['name_mentions']
+        self.assertEqual(mentions[0]['occurrences'],2)
+
+    def test_full_names_boundaries_linebreaks_and_overlapping_forms(self):
+        text='JEFFREY\nEPSTEIN; Jeffrey Epsteins; notJeffrey Epstein; JE; Epstein.'
+        hits=viewer.name_occurrences(text,['Jeffrey Epstein','JEFFREY EPSTEIN'])
+        self.assertEqual(len(hits),1)
+        self.assertEqual(text[hits[0]['start']:hits[0]['end']],'JEFFREY\nEPSTEIN')
+        self.assertEqual(len(viewer.name_occurrences('João\nSilva',['João Silva'])),1)
+
+    def test_person_vocabulary_requires_source_evidence(self):
+        person={'id':'alice-example','label':'Alice Example','forms':['Alice Example'],
+            'evidence':{'file_id':'example','pdf_page':1,'quote':'Alice Example','source_sha256':'abc'}}
+        prepared=[({'file_id':'example','sha256':'abc','page_count':1},{},{'pages':[{'text':'Alice Example was named.'}]},None)]
+        viewer.validate_people([person],prepared)
+        with self.assertRaises(ValueError):viewer.validate_people([person,person],prepared)
+        for evidence in ({'source_sha256':'changed'},{'quote':'Bob Person'},{'pdf_page':2}):
+            with self.subTest(evidence=evidence),self.assertRaises(ValueError):
+                viewer.validate_people([dict(person,evidence=dict(person['evidence'],**evidence))],prepared)
 
 
 if __name__ == '__main__': unittest.main()
