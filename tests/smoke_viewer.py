@@ -47,14 +47,24 @@ def main():
     assert expanded['total_documents']==1 and expanded['results'][0]['first_page']==14
     assert expanded['results'][0]['matching_pages']==[14]
     assert get('/api/search?person=ken-starr')['total_documents']==4
-    for path, status in [('/api/documents/EFTA00008529?page=0',400),('/README.md',404),('/pdf/../../README.md',404),('/api/search?date_from=2021-02-29',400),('/api/search?date_from=2020-01-01&date_to=2019-01-01',400),('/api/search?person=unknown',400)]:
+    email_metadata=json.loads((Path(__file__).resolve().parents[1]/'data/pilot/2026-11-01/email-summary.json').read_text(encoding='utf-8'))
+    email_review=get('/api/emails')
+    assert email_review['summary']==email_metadata['summary']
+    assert email_review['summary']['unique_messages'] is None
+    assert get('/api/emails?filter=repeats')['total_groups']==0
+    inline=get('/api/emails?document=EFTA02212905')
+    assert inline['total_groups']==1
+    assert 'date_missing' in inline['results'][0]['representative']['flags']
+    assert inline['results'][0]['representative']['parsed_timestamp_candidate'] is None
+    assert 'May 18, 2017' in inline['results'][0]['representative']['body']
+    for path, status in [('/api/documents/EFTA00008529?page=0',400),('/README.md',404),('/pdf/../../README.md',404),('/api/search?date_from=2021-02-29',400),('/api/search?date_from=2020-01-01&date_to=2019-01-01',400),('/api/search?person=unknown',400),('/api/emails?filter=invented',400),('/api/emails?document=../../README.md',400),('/api/emails?page=0',400)]:
         try: get(path)
         except HTTPError as exc: assert exc.code == status, (path,exc.code)
         else: raise AssertionError(f'Expected HTTP {status} for {path}')
     with urlopen(Request(BASE + '/pdf/EFTA00008529',headers={'Range':'bytes=0-7'}),timeout=10) as response:
         body = response.read()
         assert response.status == 206 and len(body) == 8 and body.startswith(b'%PDF-')
-    print('HTTP smoke passed: coverage, real search, person/date filters, page evidence, input errors, file-route isolation, and PDF byte ranges.')
+    print('HTTP smoke passed: coverage, search, person/date filters, email review, page evidence, input errors, file-route isolation, and PDF byte ranges.')
 
 
 if __name__ == '__main__':

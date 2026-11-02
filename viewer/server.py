@@ -13,12 +13,18 @@ from datetime import date
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, urlsplit
+try:
+    from .email_parser import build_email_catalog,review_page
+except ImportError:
+    from email_parser import build_email_catalog,review_page
 
 ROOT = Path(__file__).resolve().parents[1]
 PILOT = ROOT / 'data/pilot/2026-11-01'
 STATIC = Path(__file__).resolve().parent / 'static'
 DB = ROOT / 'data/viewer/pilot.sqlite'
 ASSETS = {'/': ('index.html', 'text/html; charset=utf-8'),
+           '/emails': ('emails.html', 'text/html; charset=utf-8'),
+           '/emails.js': ('emails.js', 'text/javascript; charset=utf-8'),
            '/app.js': ('app.js', 'text/javascript; charset=utf-8'),
            '/style.css': ('style.css', 'text/css; charset=utf-8')}
 
@@ -124,6 +130,7 @@ def build_index(pilot=PILOT, database=DB):
             DROP TABLE IF EXISTS document_dates;
             DROP TABLE IF EXISTS people;
             DROP TABLE IF EXISTS name_mentions;
+            DROP TABLE IF EXISTS email_catalog;
             CREATE TABLE documents (id TEXT PRIMARY KEY, dataset INTEGER, page_count INTEGER,
                 low_text_pages INTEGER, bytes INTEGER, date_count INTEGER, email_headers INTEGER,
                 url TEXT, sha256 TEXT, pdf_path TEXT);
@@ -134,6 +141,7 @@ def build_index(pilot=PILOT, database=DB):
             CREATE TABLE people(id TEXT PRIMARY KEY,label TEXT,forms_json TEXT,evidence_json TEXT);
             CREATE TABLE name_mentions(page_id INTEGER,person_id TEXT,occurrences INTEGER,hits_json TEXT,PRIMARY KEY(page_id,person_id));
             CREATE INDEX mentions_person ON name_mentions(person_id,page_id);
+            CREATE TABLE email_catalog(payload TEXT);
         ''')
         for person in people:
             connection.execute('INSERT INTO people VALUES (?,?,?,?)',(person['id'],person['label'],json.dumps(person['forms']),json.dumps(person['evidence'])))
@@ -154,6 +162,7 @@ def build_index(pilot=PILOT, database=DB):
                     hits=name_occurrences(page['text'],person['forms'])
                     if hits:
                         connection.execute('INSERT INTO name_mentions VALUES (?,?,?,?)',(cursor.lastrowid,person['id'],len(hits),json.dumps(hits)))
+        connection.execute('INSERT INTO email_catalog VALUES (?)',(json.dumps(build_email_catalog(prepared)),))
         connection.commit()
     return len(prepared)
 
@@ -202,6 +211,11 @@ class Catalog:
             return {'scope':'Curated full-name text matches in this pilot; not verified identities or relationship counts.',
                 'people':[{'id':r['id'],'label':r['label'],'forms':json.loads(r['forms_json']),
                     'evidence':json.loads(r['evidence_json']),'documents':r['documents'],'pages':r['pages'],'occurrences':r['occurrences']} for r in rows]}
+
+    def emails(self,filter_name='all',document='',page=1):
+        with self.connect() as c:
+            catalog=json.loads(c.execute('SELECT payload FROM email_catalog').fetchone()['payload'])
+        return review_page(catalog,filter_name,document,page)
 
     def search(self, q='', dataset='', quality='all', page=1, date_from='', date_to='', date_status='all',person=''):
         q = q.strip()
@@ -339,6 +353,7 @@ class Handler(BaseHTTPRequestHandler):
                 self.wfile.write(data)
             elif url.path == '/api/overview': self.json(200,self.catalog.overview())
             elif url.path == '/api/people': self.json(200,self.catalog.people())
+            elif url.path == '/api/emails':self.json(200,self.catalog.emails(query.get('filter','all'),query.get('document',''),query.get('page',1)))
             elif url.path == '/api/search':
                 self.json(200,self.catalog.search(query.get('q',''),query.get('dataset',''),query.get('quality','all'),query.get('page',1),query.get('date_from',''),query.get('date_to',''),query.get('date_status','all'),query.get('person','')))
             elif re.fullmatch(r'/api/documents/EFTA\d{8}', url.path):

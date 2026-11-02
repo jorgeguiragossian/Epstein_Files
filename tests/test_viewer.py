@@ -5,10 +5,12 @@ import tempfile
 import unittest
 import json
 import hashlib
+import sys
 from contextlib import closing
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT/'viewer'))
 spec = importlib.util.spec_from_file_location('viewer_server', ROOT / 'viewer/server.py')
 viewer = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(viewer)

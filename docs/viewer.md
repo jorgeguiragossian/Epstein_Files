@@ -38,6 +38,7 @@ Pass `--age-confirmed` only after confirming eligibility for DOJ's age gate. The
 - Filter by reviewed primary date with inclusive From/Through bounds; browse uncertain, reviewed-undated, and unreviewed documents separately. See [date review and filter semantics](date-review.md). The current pilot has 17 reviewed dates, 3 uncertain records, and 80 unreviewed records.
 - Inspect page date-string candidates, extraction coverage, email-header candidate counts, source SHA-256, and primary-date evidence/rationale. Primary dates come from separate source-based editorial reviews, not automatic promotion of every date mention.
 - Reopen the current view using its URL, including search/filter values, document ID, and PDF page.
+- Open **Email review** in the header to inspect parsed email candidates, unresolved fields, detected body segments, and visible-copy groups with source-page links. See [parsing, grouping, and limits](email-review.md). This is a review workspace, not a contact-ranking feature.
 
 Search results are ordered by dataset, document ID, and PDF page, rather than by relevance. Person filtering currently uses a small curated name vocabulary and does not verify identities, wrongdoing, or relationships. OCR errors, redactions, and missing text affect matches. No new OCR, AI summaries, contact rankings, or public hosting is included in this step.
 

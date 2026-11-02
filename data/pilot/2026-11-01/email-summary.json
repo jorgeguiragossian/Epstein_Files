@@ -1,0 +1,3090 @@
+{
+  "summary": {
+    "parser_version": "email-pilot-1",
+    "documents_scanned": 100,
+    "candidate_occurrences": 114,
+    "documents_with_candidates": 18,
+    "visible_groups": 114,
+    "repeat_groups": 0,
+    "exact_visible_copy_groups": 0,
+    "possible_repeat_groups": 0,
+    "unique_messages": null,
+    "contact_rankings_ready": false,
+    "flag_counts": {
+      "body_boundary_unverified": 114,
+      "candidate_not_verified_message": 114,
+      "date_ambiguous_numeric": 4,
+      "date_missing": 8,
+      "date_timezone_unspecified": 25,
+      "date_unparsed": 69,
+      "header_fragments_unresolved": 5,
+      "later_or_nested_header": 96,
+      "recipient_address_unresolved": 113,
+      "sender_address_unresolved": 103,
+      "subject_missing": 14
+    },
+    "scope": "Unverified email-layout candidates and visible-copy groups. Every source occurrence is retained. No identity resolution or unique-message/contact claims."
+  },
+  "metrics_sha256": "0d82178ea58a4a95520af9bf71d370e0a3d821f607c71091eb68008e86139232",
+  "groups": [
+    {
+      "id": "104654dd996e2c5e302c",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "022880aeabb821e3cb47"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "022880aeabb821e3cb47",
+          "file_id": "EFTA00009823",
+          "source_sha256": "4d8719325cb2540fef6b22bf3c531f11010cf4a8f348e2ec627d0ca4ae5763e5",
+          "source_page": 1,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "97eb600a167b5cb4019b",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "66eff07cc17a5fd96448"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "66eff07cc17a5fd96448",
+          "file_id": "EFTA00009823",
+          "source_sha256": "4d8719325cb2540fef6b22bf3c531f11010cf4a8f348e2ec627d0ca4ae5763e5",
+          "source_page": 1,
+          "source_line": 8,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_timezone_unspecified",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bc51fc679bf80ccb1a07",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "6bf18e2f12fd90426c42"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "6bf18e2f12fd90426c42",
+          "file_id": "EFTA00009823",
+          "source_sha256": "4d8719325cb2540fef6b22bf3c531f11010cf4a8f348e2ec627d0ca4ae5763e5",
+          "source_page": 1,
+          "source_line": 20,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_timezone_unspecified",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fd7fe20da17bf4814db2",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "5cfa5b370c0bc48d0f58"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "5cfa5b370c0bc48d0f58",
+          "file_id": "EFTA00009823",
+          "source_sha256": "4d8719325cb2540fef6b22bf3c531f11010cf4a8f348e2ec627d0ca4ae5763e5",
+          "source_page": 1,
+          "source_line": 27,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_timezone_unspecified",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved",
+            "subject_missing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f284a87ce1ad6dd2f2ab",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "229b0912ae9c1a3d0c0f"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "229b0912ae9c1a3d0c0f",
+          "file_id": "EFTA00009853",
+          "source_sha256": "2ab03a41c925e7916148964e7f12003d23766a9c7d756f8906eb5988cac53f39",
+          "source_page": 1,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4b48a704cdb61cd0750f",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "ca7aba4de49390514990"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "ca7aba4de49390514990",
+          "file_id": "EFTA00009865",
+          "source_sha256": "4c13c335b0b1c00c584181b89f1bcef485a85f632629d41f4aaa7888f4311f63",
+          "source_page": 1,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ffaf6e392234f5ac0e99",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "dcdfb98c39e661acdd56"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "dcdfb98c39e661acdd56",
+          "file_id": "EFTA00009865",
+          "source_sha256": "4c13c335b0b1c00c584181b89f1bcef485a85f632629d41f4aaa7888f4311f63",
+          "source_page": 1,
+          "source_line": 13,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_timezone_unspecified",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0ea53ca73e924fb29480",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "bea9a420b2163bebf321"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "bea9a420b2163bebf321",
+          "file_id": "EFTA00009865",
+          "source_sha256": "4c13c335b0b1c00c584181b89f1bcef485a85f632629d41f4aaa7888f4311f63",
+          "source_page": 1,
+          "source_line": 23,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_timezone_unspecified",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9cbc86e4ce9b1adba5ca",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "d5854f1cfc605aeed1d1"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "d5854f1cfc605aeed1d1",
+          "file_id": "EFTA00009865",
+          "source_sha256": "4c13c335b0b1c00c584181b89f1bcef485a85f632629d41f4aaa7888f4311f63",
+          "source_page": 2,
+          "source_line": 2,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_timezone_unspecified",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cbd0516ca7b61ea1b4c8",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "c798a9eaea11eb5c32c0"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "c798a9eaea11eb5c32c0",
+          "file_id": "EFTA00009865",
+          "source_sha256": "4c13c335b0b1c00c584181b89f1bcef485a85f632629d41f4aaa7888f4311f63",
+          "source_page": 2,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_timezone_unspecified",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1cd9a000908dd6ed4ba1",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "cb028137229099c414b0"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "cb028137229099c414b0",
+          "file_id": "EFTA00009865",
+          "source_sha256": "4c13c335b0b1c00c584181b89f1bcef485a85f632629d41f4aaa7888f4311f63",
+          "source_page": 2,
+          "source_line": 20,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_timezone_unspecified",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "45f449966089bbb79799",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "11eecac9a796472952ff"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "11eecac9a796472952ff",
+          "file_id": "EFTA00009882",
+          "source_sha256": "2681a773b34592dce3ca314e905c83e9b1352d0a600882e1dcc7a2b21f3386b1",
+          "source_page": 1,
+          "source_line": 2,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "05a531036e5f8eb6b00c",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "59a4ffec2970fcaa5f43"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "59a4ffec2970fcaa5f43",
+          "file_id": "EFTA00009882",
+          "source_sha256": "2681a773b34592dce3ca314e905c83e9b1352d0a600882e1dcc7a2b21f3386b1",
+          "source_page": 1,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "header_fragments_unresolved",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e4c52e45d8be999d16c3",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "19aa0f3f34706fc3d55c"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "19aa0f3f34706fc3d55c",
+          "file_id": "EFTA00009890",
+          "source_sha256": "ee13b6d7b1609b3c267da58b3b5969968336a22e92ace49eea4e5a1c3a582f42",
+          "source_page": 1,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ae805fc4f43b2df286a7",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "fb61f87c39749a7119f6"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "fb61f87c39749a7119f6",
+          "file_id": "EFTA00009890",
+          "source_sha256": "ee13b6d7b1609b3c267da58b3b5969968336a22e92ace49eea4e5a1c3a582f42",
+          "source_page": 1,
+          "source_line": 11,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "06bafd58c55f0b086fe6",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "483ab91c287adab14175"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "483ab91c287adab14175",
+          "file_id": "EFTA00009890",
+          "source_sha256": "ee13b6d7b1609b3c267da58b3b5969968336a22e92ace49eea4e5a1c3a582f42",
+          "source_page": 2,
+          "source_line": 27,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "65fa48ba9e34953692d5",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "23e0f7a7c07662fd36b3"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "23e0f7a7c07662fd36b3",
+          "file_id": "EFTA00009890",
+          "source_sha256": "ee13b6d7b1609b3c267da58b3b5969968336a22e92ace49eea4e5a1c3a582f42",
+          "source_page": 3,
+          "source_line": 2,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "008f7c6d4419a9c49a11",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "87e21ad0e5586444e2a5"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "87e21ad0e5586444e2a5",
+          "file_id": "EFTA00009890",
+          "source_sha256": "ee13b6d7b1609b3c267da58b3b5969968336a22e92ace49eea4e5a1c3a582f42",
+          "source_page": 4,
+          "source_line": 12,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eb2972f6d238715f0365",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "2bfc50c1f44c7b6a75ae"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "2bfc50c1f44c7b6a75ae",
+          "file_id": "EFTA00039419",
+          "source_sha256": "d5e231ff64593a43ca3d6a129dbeb87cec515f7d011bdb0e72cef9adaeaf05e9",
+          "source_page": 1,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b5cd4db1154f5a94bc18",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "593293562bc919b11538"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "593293562bc919b11538",
+          "file_id": "EFTA00039419",
+          "source_sha256": "d5e231ff64593a43ca3d6a129dbeb87cec515f7d011bdb0e72cef9adaeaf05e9",
+          "source_page": 1,
+          "source_line": 6,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_timezone_unspecified",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0afef428b393a8c9283a",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "e9da69973d30a4f07596"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "e9da69973d30a4f07596",
+          "file_id": "EFTA00039790",
+          "source_sha256": "84e0325c529a8b8d6918dc99c3dee784ce36c325fe91d28c784c9503ee84d568",
+          "source_page": 1,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bd6e3f058ce6dc299aab",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "b9ff80e2590d56273c86"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "b9ff80e2590d56273c86",
+          "file_id": "EFTA00039806",
+          "source_sha256": "3b9dd70e7f0f5b41b0ea8a62508b77b3609a6bf55782c4e61cbb96ff5adb7689",
+          "source_page": 2,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_timezone_unspecified",
+            "header_fragments_unresolved",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7f9b3b4cacb64bd86743",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "579aea33f4b2a17ced01"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "579aea33f4b2a17ced01",
+          "file_id": "EFTA00039806",
+          "source_sha256": "3b9dd70e7f0f5b41b0ea8a62508b77b3609a6bf55782c4e61cbb96ff5adb7689",
+          "source_page": 2,
+          "source_line": 14,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5f375d687f227f1f1de4",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "6d008ade69ab073e2af3"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "6d008ade69ab073e2af3",
+          "file_id": "EFTA00039806",
+          "source_sha256": "3b9dd70e7f0f5b41b0ea8a62508b77b3609a6bf55782c4e61cbb96ff5adb7689",
+          "source_page": 2,
+          "source_line": 19,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_timezone_unspecified",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8a42e0c9328d0ebafa48",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "a15b3664651d1ba8662a"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "a15b3664651d1ba8662a",
+          "file_id": "EFTA00039806",
+          "source_sha256": "3b9dd70e7f0f5b41b0ea8a62508b77b3609a6bf55782c4e61cbb96ff5adb7689",
+          "source_page": 2,
+          "source_line": 25,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ff7cde2fdc743f7a2c5a",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "388ffd1fe06f04125bc9"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "388ffd1fe06f04125bc9",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 1,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "75b90d21f8805a2d23cf",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "9bb8c3740897e64ccced"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "9bb8c3740897e64ccced",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 1,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_timezone_unspecified",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "361a94a29ec1a311fdf6",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "4a89c25307350c1085a7"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "4a89c25307350c1085a7",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 2,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "43283e7d89f75cb420a1",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "6b4eb42a89955d8aafd5"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "6b4eb42a89955d8aafd5",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 2,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_timezone_unspecified",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5f130800872e14dc2c55",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "d11254618e69e1247d98"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "d11254618e69e1247d98",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 3,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "867772098f27868f72e8",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "d91ef0939970474f0e65"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "d91ef0939970474f0e65",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 3,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "header_fragments_unresolved",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2c201e849a65bc8cf1a8",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "3951acc432e1413789aa"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "3951acc432e1413789aa",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 4,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "446fb9138492d0c2b2b5",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "c291eeac30d73cc90e11"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "c291eeac30d73cc90e11",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 4,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ee41168fc21efffc4f93",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "26910fe446e00652b2aa"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "26910fe446e00652b2aa",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 5,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_missing",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f8cea7752a27f4aae676",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "c8ae0d938c81d8f82cbb"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "c8ae0d938c81d8f82cbb",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 5,
+          "source_line": 12,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "subject_missing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "96eeabf044acb1962ee1",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "537dcba35be2110b5ec0"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "537dcba35be2110b5ec0",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 6,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "731ee1bdf379749efccf",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "0695bb4eaad9e9f39eb0"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "0695bb4eaad9e9f39eb0",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 6,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d2f11f1d72ff72849622",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "4f2d15eaeafab1e2c750"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "4f2d15eaeafab1e2c750",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 7,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "744678f7be9565ecb1fc",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "c8c67b680760ec40f222"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "c8c67b680760ec40f222",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 7,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_timezone_unspecified",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0ff192fc39ff1a958b4e",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "0f05a0cd2479fd36b1bc"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "0f05a0cd2479fd36b1bc",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 8,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aa4e0c17df6a9d437c69",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "9cf5407ca855a7a4d363"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "9cf5407ca855a7a4d363",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 8,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "subject_missing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7f1c5d6787651f189d8b",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "3cb4593b8b5a050c48d8"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "3cb4593b8b5a050c48d8",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 9,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved",
+            "subject_missing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4a0ec4e8a7144548de19",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "e13447c87449af4edeab"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "e13447c87449af4edeab",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 9,
+          "source_line": 12,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_timezone_unspecified",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "subject_missing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eeb8338f4e88d1c9171b",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "7b6fdbb731c6df4fe673"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "7b6fdbb731c6df4fe673",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 10,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_missing",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved",
+            "subject_missing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6329c9bb77b9553f55f7",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "ba0df19da4a9090cc8a4"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "ba0df19da4a9090cc8a4",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 10,
+          "source_line": 13,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "48c92257d87eba089b22",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "3bad85372d4a4ad771de"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "3bad85372d4a4ad771de",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 11,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "49c539810a47988ad447",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "ab0a503da83cba1cc31c"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "ab0a503da83cba1cc31c",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 12,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b02f278ee1055eef55dd",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "c113eadf84991dea0f24"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "c113eadf84991dea0f24",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 13,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b2c01ada193172e2071b",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "28984839a8f9503eef64"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "28984839a8f9503eef64",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 13,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_timezone_unspecified",
+            "later_or_nested_header",
+            "recipient_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1bf5ba8eb7596c629710",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "d2dcfcddffe7c47222b0"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "d2dcfcddffe7c47222b0",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 14,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5db4689e249c3169e841",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "361c5d78d23def630a5e"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "361c5d78d23def630a5e",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 14,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_timezone_unspecified",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1c2b35a1003627b36f83",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "4e11f479891dec689245"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "4e11f479891dec689245",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 15,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "67e15c8000f2557d7d6a",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "194c5439a3112fafc567"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "194c5439a3112fafc567",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 15,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "subject_missing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7c2f9210a4153562723d",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "f3adef87e34274edbaa7"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "f3adef87e34274edbaa7",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 16,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_missing",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved",
+            "subject_missing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "81d7394a2fcd14a16a0f",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "ec75f35adf47d4dd6fa6"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "ec75f35adf47d4dd6fa6",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 16,
+          "source_line": 12,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "218addc54b1344424db0",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "941888239b6fdf006f3a"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "941888239b6fdf006f3a",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 17,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8be4ed553117e5022277",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "d7a4b1f3b49ba15dba28"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "d7a4b1f3b49ba15dba28",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 17,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_timezone_unspecified",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c8a68e9ce214665ddab3",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "d4f0cc867c5e26c3b1ac"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "d4f0cc867c5e26c3b1ac",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 18,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d2ec22a2a91ed4a72df8",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "0c27c1633f5144049f0f"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "0c27c1633f5144049f0f",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 18,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_timezone_unspecified",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "909d81cea06668947c37",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "d874037c920724a20793"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "d874037c920724a20793",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 19,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5ea71e1761f00cd9e6da",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "3c15b5fcf663334d0eac"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "3c15b5fcf663334d0eac",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 19,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1475fdfbe125b6bcfe50",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "0aadabf61461754f1842"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "0aadabf61461754f1842",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 20,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c4f1571e4aa1744412d4",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "ea8adcd4888a622bf3b2"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "ea8adcd4888a622bf3b2",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 20,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "871c6270c411aa8957c2",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "1bdfd9e8eaf307ac1c7c"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "1bdfd9e8eaf307ac1c7c",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 21,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "74f900e352b71438539e",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "ee8a81581bde204113c2"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "ee8a81581bde204113c2",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 21,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_timezone_unspecified",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7b3a0f3a86b41cbb042e",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "d16a086d1e680f9b69d1"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "d16a086d1e680f9b69d1",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 22,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fecdadf77dbe39b2e52b",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "05984251a62712241895"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "05984251a62712241895",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 22,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8672eae322357d763036",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "221b518bcff7f05cc878"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "221b518bcff7f05cc878",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 23,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9a078d6a69a465d4482c",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "205ac9945eeeca0ba06b"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "205ac9945eeeca0ba06b",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 23,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "header_fragments_unresolved",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a6bfd687a7cea9baba55",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "b4ec47f8f4614cf53e71"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "b4ec47f8f4614cf53e71",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 24,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_timezone_unspecified",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4907ab121e731072d846",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "9c5b5741502acde752b3"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "9c5b5741502acde752b3",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 24,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8ad538aade6d2b3e66e1",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "e8162112b483d9e0d244"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "e8162112b483d9e0d244",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 25,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_missing",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved",
+            "subject_missing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "035d0aa23a0ddb896f77",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "660e0dd9e03db8685564"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "660e0dd9e03db8685564",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 25,
+          "source_line": 12,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_timezone_unspecified",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "subject_missing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24d25e06ce7926f55c7e",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "e2c4917ca28f7fd93ae0"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "e2c4917ca28f7fd93ae0",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 26,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9f35aee04c783b0b21c5",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "8bb3b4c04c20f996f907"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "8bb3b4c04c20f996f907",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 26,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b2602e004522fed266d0",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "18ecfc99ce5802bfc92b"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "18ecfc99ce5802bfc92b",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 27,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7ea9b41e41c03d696945",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "82133ccb2a72e269e411"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "82133ccb2a72e269e411",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 27,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dadd0ddf652c66423a63",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "e9475510c1cee8573c3f"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "e9475510c1cee8573c3f",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 28,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aa8e3e80ea8089a2062b",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "10556f8c3610197a0cb3"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "10556f8c3610197a0cb3",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 28,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d659029a24b53a8b0e81",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "bc388267615506069d1a"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "bc388267615506069d1a",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 29,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "620e4f3299cd250e6a63",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "d1b462159206cb62a2f3"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "d1b462159206cb62a2f3",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 29,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "417eeb7acdb657895d01",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "1afe1e4b316b60fa9d92"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "1afe1e4b316b60fa9d92",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 30,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "82618eb5f83e978d3db0",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "1ce8d38737c61d940c16"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "1ce8d38737c61d940c16",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 31,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_missing",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved",
+            "subject_missing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2f5a8e09d4edf5b12ab3",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "37ffd993a7aab835bc22"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "37ffd993a7aab835bc22",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 31,
+          "source_line": 13,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d432f8e7aca471bc0fbe",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "0e57946cf5621792b5bb"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "0e57946cf5621792b5bb",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 32,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8fd7f92b92adb39734c2",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "3e1eefa742aec2e5304a"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "3e1eefa742aec2e5304a",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 32,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_timezone_unspecified",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e85d407d6cd66e7a0519",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "681372d29d81392b395b"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "681372d29d81392b395b",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 33,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved",
+            "subject_missing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "30143b16b2e214b9ba1b",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "c294dce446615da69557"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "c294dce446615da69557",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 33,
+          "source_line": 9,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9707da741096d11d40eb",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "10bfbbdc2833d9f1703a"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "10bfbbdc2833d9f1703a",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 34,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved",
+            "subject_missing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1d76bc47f6da2e663074",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "128e937ffebf7ecff153"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "128e937ffebf7ecff153",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 34,
+          "source_line": 9,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "02388032eabafebf6565",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "51b6ae5c44586ec909a8"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "51b6ae5c44586ec909a8",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 35,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "207c352ac1348f1e8aa6",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "641278ed66291e75c62d"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "641278ed66291e75c62d",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 35,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cb7b69bc5770a145b12b",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "4c521478b42b3bcef4c6"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "4c521478b42b3bcef4c6",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 37,
+          "source_line": 13,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "548e8c3729558802ccd0",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "153d98c26750a680f2fa"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "153d98c26750a680f2fa",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 38,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_missing",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved",
+            "subject_missing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7bfd006d7d72da185913",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "31fcacb50eef97b18f43"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "31fcacb50eef97b18f43",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 38,
+          "source_line": 13,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fee67052759c6eb0869f",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "a8b57dc0c8d4bf1c2d24"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "a8b57dc0c8d4bf1c2d24",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 39,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f6c34dbf561c69252b3b",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "c463b58a16ac2931d17d"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "c463b58a16ac2931d17d",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 39,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "13b58ef613ad5c153874",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "cc124a9f148a0c3e63c9"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "cc124a9f148a0c3e63c9",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 40,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b4b4bd7fc5d82309eba4",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "9b3242f5ccf2c621d275"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "9b3242f5ccf2c621d275",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 40,
+          "source_line": 10,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7e1a6fa1a6b39810523b",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "5682f5acd435dd8f48b6"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "5682f5acd435dd8f48b6",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 41,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d7b9b47150a2698e2930",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "7dab2b293a200a370c58"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "7dab2b293a200a370c58",
+          "file_id": "EFTA01263156",
+          "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+          "source_page": 41,
+          "source_line": 13,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "header_fragments_unresolved",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5d05a95ac0ce2bb228a7",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "1b356869537054b44603"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "1b356869537054b44603",
+          "file_id": "EFTA02209722",
+          "source_sha256": "32a8c2f1ffc864059b6348bccfb2319ffef21e178fe66b6465802e15c198d1b4",
+          "source_page": 1,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_ambiguous_numeric",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c7adb1b9ec8b01a0e4aa",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "c669ce63be2e9e4248b8"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "c669ce63be2e9e4248b8",
+          "file_id": "EFTA02212894",
+          "source_sha256": "decb542e4008201b0d025d59716b12542a50700c563a28ef25455e7800a1afa5",
+          "source_page": 1,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_ambiguous_numeric",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9329ecbcfe2753a870a2",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "07a75fa3cb927f8462f2"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "07a75fa3cb927f8462f2",
+          "file_id": "EFTA02212905",
+          "source_sha256": "7d37ef6b33e7c7da6fb65a9b38e356dcc3143bb25e314d76a5a733a596028e0b",
+          "source_page": 1,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_missing",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "834c4f1267c6d24d6ef9",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "91f790caeb30aa66bf06"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "91f790caeb30aa66bf06",
+          "file_id": "EFTA02212924",
+          "source_sha256": "a77eb633e1692b9ea01b147b17e86fed418b61cb4043d936ecf694349609a7b0",
+          "source_page": 1,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_missing",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "396cd2eb693fe9ca98b2",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "99401e883858025e2c23"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "99401e883858025e2c23",
+          "file_id": "EFTA02212946",
+          "source_sha256": "3cb8ba0d0ca4a2d4bf7ec7b01f300488f5d64cf08373c5633a6832b85b87c441",
+          "source_page": 1,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_ambiguous_numeric",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3f45e5a688ed7786ef57",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "997943e85ddc97fd238f"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "997943e85ddc97fd238f",
+          "file_id": "EFTA02212961",
+          "source_sha256": "36cf352734b5ecd4a43b2ac5d7717f279bc1c3d36f840f4029133ec1039f2fae",
+          "source_page": 1,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6d831ed4c21b907bf850",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "d96e7b11d461cd95865e"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "d96e7b11d461cd95865e",
+          "file_id": "EFTA02212972",
+          "source_sha256": "b520dad0e407fdd3d375e7472f1e3bb332410bed3164cff9385fda7083e345be",
+          "source_page": 1,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_ambiguous_numeric",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "184491402697ddd728f2",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "753db62ec7c78cb9166b"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "753db62ec7c78cb9166b",
+          "file_id": "EFTA02212972",
+          "source_sha256": "b520dad0e407fdd3d375e7472f1e3bb332410bed3164cff9385fda7083e345be",
+          "source_page": 1,
+          "source_line": 16,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2b64e10744056a5a9892",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "4cb9069cf27fc96220af"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "4cb9069cf27fc96220af",
+          "file_id": "EFTA02212972",
+          "source_sha256": "b520dad0e407fdd3d375e7472f1e3bb332410bed3164cff9385fda7083e345be",
+          "source_page": 1,
+          "source_line": 27,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c053a5818ec61ec0c354",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "2892ff7d0d642ac60543"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "2892ff7d0d642ac60543",
+          "file_id": "EFTA02730265",
+          "source_sha256": "4ffdabbb392f3126224b15047081c2aa6acc0b813d73943a8fc3792d40f28901",
+          "source_page": 1,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f4df9fa4c8eb75d3b46f",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "e158e5711ea1a7e5ec98"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "e158e5711ea1a7e5ec98",
+          "file_id": "EFTA02730265",
+          "source_sha256": "4ffdabbb392f3126224b15047081c2aa6acc0b813d73943a8fc3792d40f28901",
+          "source_page": 1,
+          "source_line": 7,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_timezone_unspecified",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2f31eb264540e317be76",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "13f7e4c60b42a1597702"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "13f7e4c60b42a1597702",
+          "file_id": "EFTA02730265",
+          "source_sha256": "4ffdabbb392f3126224b15047081c2aa6acc0b813d73943a8fc3792d40f28901",
+          "source_page": 1,
+          "source_line": 12,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_unparsed",
+            "later_or_nested_header",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fa3d8ea61fe50b93eefc",
+      "kind": "single_occurrence",
+      "record_ids": [
+        "d79029b99b16df494822"
+      ],
+      "occurrences": 1,
+      "distinct_documents": 1,
+      "status": "unreviewed_visible_copy_group_not_a_unique_message",
+      "sources": [
+        {
+          "id": "d79029b99b16df494822",
+          "file_id": "EFTA02731485",
+          "source_sha256": "8203a023de0bb84fd77728af4ea5840f9d651addedf8cec2803b632a26f9fb03",
+          "source_page": 1,
+          "source_line": 1,
+          "flags": [
+            "body_boundary_unverified",
+            "candidate_not_verified_message",
+            "date_timezone_unspecified",
+            "recipient_address_unresolved",
+            "sender_address_unresolved"
+          ]
+        }
+      ]
+    }
+  ]
+}

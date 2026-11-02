@@ -1,0 +1,9 @@
+{
+  "scope": "Limited source-assisted spot checks, not a precision/recall estimate or review of all candidates. Codex compared parser behavior with previously rendered pilot pages.",
+  "cases": [
+    {"file_id":"EFTA00009823","pdf_page":1,"finding":"A top-level Date header and several nested From/Sent headers are visible. Treat them as separate source occurrences; participant redactions prevent a contact ranking."},
+    {"file_id":"EFTA01263156","pdf_page":1,"finding":"The visible source shows a date header more clearly than the native extraction. Damaged extracted month text remains unparsed rather than being silently repaired. Repeated wrappers in the file are not automatically unique messages."},
+    {"file_id":"EFTA02212905","pdf_page":1,"finding":"An inline date in the body is not a labeled sent date. The parser retains the body date as text and flags date_missing."},
+    {"file_id":"EFTA00039806","pdf_page":2,"finding":"Scrambled extracted header labels and short fragments require conservative reconstruction. The outer Date value is preserved, quoted earlier headers stay separate, and fragment/body-boundary flags remain visible."}
+  ]
+}
