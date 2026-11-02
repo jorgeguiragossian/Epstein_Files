@@ -1,5 +1,6 @@
 """Export an explicitly authorized public pilot to a buildless GitHub Pages site."""
 import argparse
+import hashlib
 import json
 import re
 import sys
@@ -48,6 +49,13 @@ def build(out,base):
     emailjs=emailjs.replace('`/?doc=',f'`{base}?doc=').replace('Open PDF ↗','DOJ PDF ↗').replace('local email','published email').replace('local review','published review').replace('local email cache','published email data')
     (out/'emails.js').write_text(emailjs,encoding='utf-8')
     for name in ['style.css','static-api.js']:(out/name).write_bytes((STATIC/name).read_bytes())
+    # Pages caches assets independently; bind HTML to the exact built asset bytes.
+    for name in ['index.html','emails.html']:
+        html=(out/name).read_text(encoding='utf-8')
+        for asset in ['app.js','emails.js','static-api.js','style.css']:
+            digest=hashlib.sha256((out/asset).read_bytes()).hexdigest()[:12]
+            html=html.replace(f'{base}{asset}"',f'{base}{asset}?v={digest}"')
+        (out/name).write_text(html,encoding='utf-8')
     (out/'.nojekyll').write_text('',encoding='utf-8')
     manifest={'source_revision':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'base_path':base,'documents':len(documents),'pages':sum(len(r['pages']) for r in documents.values()),'name_phrases':len(data['people']['people']),'email_candidates':emails['summary']['candidate_occurrences'],'data_bytes':(out/'data/pilot.json').stat().st_size,'publication':'public full pilot; no source PDF copies or credentials'}
     (out/'build-info.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')

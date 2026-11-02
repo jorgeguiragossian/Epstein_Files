@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import vm from 'node:vm';
 import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
 const data=JSON.parse(fs.readFileSync('site-dist/data/pilot.json','utf8'));
 const golden=JSON.parse(fs.readFileSync('tmp/pages-golden.json','utf8'));
 const context={window:{fetch:async()=>new Response(JSON.stringify(data))},document:{currentScript:{src:'http://localhost/Epstein_Files/static-api.js'}},URL,Response,console};
@@ -19,7 +20,8 @@ await api.load();
 assert.equal(api.pdfUrl('EFTA00008529',2),data.documents.EFTA00008529.url+'#page=2');
 for(const name of ['index.html','emails.html']){
  const html=fs.readFileSync('site-dist/'+name,'utf8');
- assert(html.includes('src="/Epstein_Files/static-api.js"'));
+ const digest=createHash('sha256').update(fs.readFileSync('site-dist/static-api.js')).digest('hex').slice(0,12);
+ assert(html.includes(`src="/Epstein_Files/static-api.js?v=${digest}"`));
  assert(!/\b(?:href|src)="\/(?!Epstein_Files\/)/.test(html),name+' has a broken project-root link');
 }
 assert(!fs.readFileSync('site-dist/app.js','utf8').includes('`/pdf/'));
