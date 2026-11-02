@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "parser_version": "email-pilot-1",
+  "method": "Codex editorial partitions of previously visually inspected PDF pages, bound to exact extraction ranges. Quoted spans are not new verified messages; participant/date extraction is not inferred from these spans.",
+  "annotations": [
+    {
+      "record_id": "66eff07cc17a5fd96448",
+      "file_id": "EFTA00009823",
+      "source_sha256": "4d8719325cb2540fef6b22bf3c531f11010cf4a8f348e2ec627d0ca4ae5763e5",
+      "visible_fingerprint": "97eb600a167b5cb4019bfef597f8d520575b5404f2c0e017e3dfe84dd95cc613",
+      "spans": [
+        {
+          "id": "66eff07cc17a5fd96448-p1-l13-13",
+          "parent_record_id": "66eff07cc17a5fd96448",
+          "page": 1,
+          "line_start": 13,
+          "line_end": 13,
+          "kind": "uncertain_header_continuation",
+          "text": "Jeffrey Epstein in Prank Phone Call\"",
+          "text_sha256": "3910d88160dda2ee392947f24b6c2ae32e98ffc51fb2f9ca5844be7e37353616"
+        },
+        {
+          "id": "66eff07cc17a5fd96448-p1-l14-15",
+          "parent_record_id": "66eff07cc17a5fd96448",
+          "page": 1,
+          "line_start": 14,
+          "line_end": 15,
+          "kind": "authored_text_candidate",
+          "text": "Nothing that I recall even comes close. For context, a really important WSJ or Times articles average about\nS250-500k.",
+          "text_sha256": "51978b45a7775c4a5f9408a442ecdd281b26428fba57571cea6c003d86664365"
+        },
+        {
+          "id": "66eff07cc17a5fd96448-p1-l16-16",
+          "parent_record_id": "66eff07cc17a5fd96448",
+          "page": 1,
+          "line_start": 16,
+          "line_end": 16,
+          "kind": "signature",
+          "text": "Sent from my iPhone",
+          "text_sha256": "5740eef812dd396c9ed1b6c5851fc8f25f16a810ac4c8311d4ec9c5015701bbe"
+        },
+        {
+          "id": "66eff07cc17a5fd96448-p1-l17-19",
+          "parent_record_id": "66eff07cc17a5fd96448",
+          "page": 1,
+          "line_start": 17,
+          "line_end": 19,
+          "kind": "inline_quote",
+          "text": "On Mar 11, 2020, at 6:48 PM, > wrote:\nHas any other article come close to that? An estimated 231,333,672 readers.\nYahoo Lifestyle - \"Prince Harry Comments on Prince Andrew's Friendship with",
+          "text_sha256": "16859d99669b1a52867eeb19994f3226aa481a6024f96f2178cd6f16da777404"
+        }
+      ],
+      "following_quoted_candidate_id": null,
+      "review_status": "editorial_partition_not_verified_messages"
+    },
+    {
+      "record_id": "b9ff80e2590d56273c86",
+      "file_id": "EFTA00039806",
+      "source_sha256": "3b9dd70e7f0f5b41b0ea8a62508b77b3609a6bf55782c4e61cbb96ff5adb7689",
+      "visible_fingerprint": "bd6e3f058ce6dc299aab859ccd2bb147c8926854d3a666e9576b488a89651674",
+      "spans": [
+        {
+          "id": "b9ff80e2590d56273c86-p2-l7-7",
+          "parent_record_id": "b9ff80e2590d56273c86",
+          "page": 2,
+          "line_start": 7,
+          "line_end": 7,
+          "kind": "signature",
+          "text": "Sent from my iPhone",
+          "text_sha256": "5740eef812dd396c9ed1b6c5851fc8f25f16a810ac4c8311d4ec9c5015701bbe"
+        },
+        {
+          "id": "b9ff80e2590d56273c86-p2-l8-13",
+          "parent_record_id": "b9ff80e2590d56273c86",
+          "page": 2,
+          "line_start": 8,
+          "line_end": 13,
+          "kind": "forwarded_quote",
+          "text": "Begin forwarded message:\nFrom:\nDat  • March 3 ?016 at 5:09.55 PM EST\nTo:\nSubject: RE: Next week - meet re: Jeffrey Epstein\nCool. Talk to you then.",
+          "text_sha256": "1d8b9bc5f05d5ba9a55ebd476582cd4f984acbda526bf5a4df58abe42d4898a9"
+        }
+      ],
+      "following_quoted_candidate_id": null,
+      "review_status": "editorial_partition_not_verified_messages"
+    },
+    {
+      "record_id": "d96e7b11d461cd95865e",
+      "file_id": "EFTA02212972",
+      "source_sha256": "b520dad0e407fdd3d375e7472f1e3bb332410bed3164cff9385fda7083e345be",
+      "visible_fingerprint": "6d831ed4c21b907bf8501b33e01fffc63e5557dc24b3f7257a4774fd1ca4064a",
+      "spans": [
+        {
+          "id": "d96e7b11d461cd95865e-p1-l6-6",
+          "parent_record_id": "d96e7b11d461cd95865e",
+          "page": 1,
+          "line_start": 6,
+          "line_end": 6,
+          "kind": "authored_text_candidate",
+          "text": "ah thanks! I will keep as well for just in case!",
+          "text_sha256": "4ecfaa293696a2173e4937cb92bf45c6df91c3e6df287fd63259f6fa80916d35"
+        },
+        {
+          "id": "d96e7b11d461cd95865e-p1-l7-14",
+          "parent_record_id": "d96e7b11d461cd95865e",
+          "page": 1,
+          "line_start": 7,
+          "line_end": 14,
+          "kind": "inline_quote",
+          "text": "On May I, 2017, at 2:41 PM, Richard Kahn < > wrote:\nreceived from jee\nthanks\nFYR\nRichard Kahn\nHBRK Associates Inc.\n575 Lexington Avenue 4th Floor\nNew York, NY 10022",
+          "text_sha256": "eecd191f364d175601cbe4c00f4e03098555b28a42a5e5760970585075b5393d"
+        }
+      ],
+      "following_quoted_candidate_id": null,
+      "review_status": "editorial_partition_not_verified_messages"
+    },
+    {
+      "record_id": "753db62ec7c78cb9166b",
+      "file_id": "EFTA02212972",
+      "source_sha256": "b520dad0e407fdd3d375e7472f1e3bb332410bed3164cff9385fda7083e345be",
+      "visible_fingerprint": "184491402697ddd728f22c1d11913dfd0cb7e5fb4f8073bf3db7bc8ad2618f04",
+      "spans": [
+        {
+          "id": "753db62ec7c78cb9166b-p1-l21-23",
+          "parent_record_id": "753db62ec7c78cb9166b",
+          "page": 1,
+          "line_start": 21,
+          "line_end": 23,
+          "kind": "authored_text_candidate",
+          "text": "Hi Rich,\nHere is their store contact info. Thank you.\n<Screen Shot 2017-05-01 at 2.26.04 PM.png>",
+          "text_sha256": "22c396b50110c5014528ea9109ea83cd58cf7784c473bbc4675b39f770715686"
+        },
+        {
+          "id": "753db62ec7c78cb9166b-p1-l24-25",
+          "parent_record_id": "753db62ec7c78cb9166b",
+          "page": 1,
+          "line_start": 24,
+          "line_end": 25,
+          "kind": "inline_quote_header_only",
+          "text": "On May I, 2017, at 2:15 PM, jeffrey E.\n<ieevacation@gmail.com> wrote:",
+          "text_sha256": "2fa993bfb441c53a6e021ad1ecfe795fd9e584a127738ce5512d3a2428099f9a"
+        }
+      ],
+      "following_quoted_candidate_id": "4cb9069cf27fc96220af",
+      "review_status": "editorial_partition_not_verified_messages"
+    },
+    {
+      "record_id": "e158e5711ea1a7e5ec98",
+      "file_id": "EFTA02730265",
+      "source_sha256": "4ffdabbb392f3126224b15047081c2aa6acc0b813d73943a8fc3792d40f28901",
+      "visible_fingerprint": "f4df9fa4c8eb75d3b46fd60f4d0a470c02a704c6f20f58b431d5e379de96acb3",
+      "spans": [
+        {
+          "id": "e158e5711ea1a7e5ec98-p1-l11-11",
+          "parent_record_id": "e158e5711ea1a7e5ec98",
+          "page": 1,
+          "line_start": 11,
+          "line_end": 11,
+          "kind": "forwarding_wrapper",
+          "text": "Forwarded n",
+          "text_sha256": "de203b028066be353a20dd636fccd36fc3d35d19db77997dbb08bb93fbac72c8"
+        }
+      ],
+      "following_quoted_candidate_id": "13f7e4c60b42a1597702",
+      "review_status": "editorial_partition_not_verified_messages"
+    }
+  ]
+}

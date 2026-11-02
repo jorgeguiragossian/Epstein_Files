@@ -31,6 +31,13 @@
       "observed_address_associations": 3,
       "verified_unique_messages": null,
       "contact_rankings_ready": false
+    },
+    "body_partitions": {
+      "annotated_candidates": 5,
+      "quoted_spans": 4,
+      "new_message_candidates": 0,
+      "grouping_changed": false,
+      "contact_rankings_ready": false
     }
   },
   "metrics_sha256": "0d82178ea58a4a95520af9bf71d370e0a3d821f607c71091eb68008e86139232",

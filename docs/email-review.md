@@ -58,3 +58,5 @@ Review more header/body boundaries against PDFs, resolve date formats without gu
 ## Source-assisted validation
 
 A subsequent [15-candidate review](email-validation.md) adds source-bound annotations and three observed header associations. Raw parsing and grouping remain unchanged; contact rankings remain pending.
+
+The five flagged boundary cases now include [source-linked body breakdowns](email-boundaries.md), preserving every original detected body and group while separating quoted text for inspection.

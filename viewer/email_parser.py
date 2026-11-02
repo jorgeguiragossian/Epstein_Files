@@ -143,7 +143,7 @@ def group_records(records):
     return sorted(result,key=lambda group:(-group['occurrences'],min((by_id[key]['file_id'],by_id[key]['source_page'],by_id[key]['source_line']) for key in group['record_ids']),group['id']))
 
 
-def build_email_catalog(prepared,validation=None):
+def build_email_catalog(prepared,validation=None,boundaries=None):
     records=[]
     for metric,item,extracted,pdf in prepared:
         records+=parse_document(extracted,metric['file_id'],metric['dataset'],metric['sha256'])
@@ -161,6 +161,10 @@ def build_email_catalog(prepared,validation=None):
         try:from .email_validation import apply_validation
         except ImportError:from email_validation import apply_validation
         apply_validation(catalog,validation,prepared)
+    if boundaries is not None:
+        try:from .email_boundaries import apply_boundaries
+        except ImportError:from email_boundaries import apply_boundaries
+        apply_boundaries(catalog,boundaries,prepared)
     return catalog
 
 
