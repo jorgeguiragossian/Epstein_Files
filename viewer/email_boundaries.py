@@ -2,7 +2,7 @@
 import hashlib
 
 KINDS={'uncertain_header_continuation','authored_text_candidate','signature','inline_quote',
-       'forwarded_quote','inline_quote_header_only','forwarding_wrapper'}
+       'forwarded_quote','inline_quote_header_only','forwarding_wrapper','disclaimer'}
 
 
 def apply_boundaries(catalog,boundaries,prepared):
@@ -53,6 +53,29 @@ def apply_boundaries(catalog,boundaries,prepared):
         record['body_partition']=dict(annotation)
         if child_id:
             record['body_partition']['following_quoted_source']={k:child[k] for k in ('id','file_id','source_page','source_line')}
-    catalog['summary']['body_partitions']={'annotated_candidates':len(seen),'quoted_spans':quoted,
+    checked=set()
+    for check in boundaries.get('continuation_checks',[]):
+        key=check['record_id'];record=records.get(key);neighbor=records.get(check['neighbor_record_id'])
+        if key in checked or not record or not neighbor:raise ValueError('Missing or duplicate continuation check.')
+        checked.add(key)
+        if record.get('source_review',{}).get('boundary_status')!='continuation_unverified':
+            raise ValueError('Continuation check needs the original incomplete-body review.')
+        for field in ('file_id','source_sha256','visible_fingerprint'):
+            if check[field]!=record[field]:raise ValueError('Stale continuation parent evidence.')
+        if (neighbor['file_id']!=record['file_id'] or neighbor['source_sha256']!=record['source_sha256']
+            or neighbor['visible_fingerprint']!=check['neighbor_fingerprint']
+            or check['next_page']!=max(record['body_pages'])+1
+            or neighbor['source_page']!=check['next_page'] or neighbor['source_line']!=check['line_start']
+            or check['finding']!='adjacent_page_is_different_message'):
+            raise ValueError('Stale or invalid adjacent-page evidence.')
+        metric,extraction=sources[record['file_id']]
+        if metric['sha256']!=check['source_sha256']:raise ValueError('Continuation PDF hash changed.')
+        lines=extraction['pages'][check['next_page']-1]['text'].splitlines()
+        if not 1<=check['line_start']<=check['line_end']<=len(lines):raise ValueError('Invalid continuation source range.')
+        text='\n'.join(line.strip() for line in lines[check['line_start']-1:check['line_end']])
+        if text!=check['header_text'] or hashlib.sha256(text.encode()).hexdigest()!=check['header_sha256']:
+            raise ValueError('Continuation source header changed.')
+        record['continuation_review']=dict(check)
+    catalog['summary']['body_partitions']={'annotated_candidates':len(seen),'quoted_spans':quoted,'adjacent_page_checks':len(checked),
         'new_message_candidates':0,'grouping_changed':False,'contact_rankings_ready':False}
     return catalog

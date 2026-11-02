@@ -64,3 +64,5 @@ The five flagged boundary cases now include [source-linked body breakdowns](emai
 A [second 15-candidate batch](email-review-batch-2.md) brings coverage to 30 candidates and 13 source-bound header associations. Ten candidates now need body/quote-boundary attention; these observations remain ineligible for contact rankings.
 
 The subsequent [AM/PM parser correction](email-date-parser.md) fixes nine derived timestamps and leaves one previously parsed damaged date unresolved. All five source-reviewed clocks now match. Raw evidence and grouping remain unchanged.
+
+A [boundary follow-up](email-boundary-followup.md) adds two multi-span breakdowns and three adjacent-page source checks. The incomplete notices remain separate from the different messages on their neighboring pages.

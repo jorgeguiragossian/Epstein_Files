@@ -162,6 +162,173 @@
       ],
       "following_quoted_candidate_id": "13f7e4c60b42a1597702",
       "review_status": "editorial_partition_not_verified_messages"
+    },
+    {
+      "record_id": "229b0912ae9c1a3d0c0f",
+      "file_id": "EFTA00009853",
+      "source_sha256": "2ab03a41c925e7916148964e7f12003d23766a9c7d756f8906eb5988cac53f39",
+      "visible_fingerprint": "f284a87ce1ad6dd2f2ab4becdb9638f0aaa80ee2174271ee27a5c5c3f9bb334b",
+      "spans": [
+        {
+          "id": "229b0912ae9c1a3d0c0f-p1-l6-6",
+          "parent_record_id": "229b0912ae9c1a3d0c0f",
+          "page": 1,
+          "line_start": 6,
+          "line_end": 6,
+          "kind": "authored_text_candidate",
+          "text": "You said for 10/31",
+          "text_sha256": "adf2d5cb171c6fa3313065019902326ae4f8c888d775db45b6258197d149006b"
+        },
+        {
+          "id": "229b0912ae9c1a3d0c0f-p1-l7-7",
+          "parent_record_id": "229b0912ae9c1a3d0c0f",
+          "page": 1,
+          "line_start": 7,
+          "line_end": 7,
+          "kind": "signature",
+          "text": "Sent from my iPhone",
+          "text_sha256": "5740eef812dd396c9ed1b6c5851fc8f25f16a810ac4c8311d4ec9c5015701bbe"
+        },
+        {
+          "id": "229b0912ae9c1a3d0c0f-p1-l8-10",
+          "parent_record_id": "229b0912ae9c1a3d0c0f",
+          "page": 1,
+          "line_start": 8,
+          "line_end": 10,
+          "kind": "inline_quote",
+          "text": "On Oct 28, 2019, at 3:12 PM, wrote:\nHi\nAre you en route? Thanks.",
+          "text_sha256": "f2a2c900e62911aa07a61df1d2e7c5c3a33c3ddb61814bd06076b27f3218adf1"
+        },
+        {
+          "id": "229b0912ae9c1a3d0c0f-p1-l11-14",
+          "parent_record_id": "229b0912ae9c1a3d0c0f",
+          "page": 1,
+          "line_start": 11,
+          "line_end": 14,
+          "kind": "inline_quote",
+          "text": "On Oct 24, 2019, at 10:55 AM, wrote:\nWe are confirmed for a meeting at 3:00 p.m. on Monday at See you then. Thanks.\nAssistant United States Attorney\nSouthern District of New York",
+          "text_sha256": "4c9808b2221862f27d77f462db3b815b2d2b771bac0e5ee0ccc52f9df277c458"
+        }
+      ],
+      "following_quoted_candidate_id": null,
+      "review_status": "editorial_partition_not_verified_messages"
+    },
+    {
+      "record_id": "4cb9069cf27fc96220af",
+      "file_id": "EFTA02212972",
+      "source_sha256": "b520dad0e407fdd3d375e7472f1e3bb332410bed3164cff9385fda7083e345be",
+      "visible_fingerprint": "2b64e10744056a5a9892a159d2091aa28279e2966174d8908f911f9235bc199a",
+      "spans": [
+        {
+          "id": "4cb9069cf27fc96220af-p2-l2-3",
+          "parent_record_id": "4cb9069cf27fc96220af",
+          "page": 2,
+          "line_start": 2,
+          "line_end": 3,
+          "kind": "authored_text_candidate",
+          "text": "can you please send his contact info as lesley does not have it\nthank you",
+          "text_sha256": "cea3cac7aec76998cb918a3a73b27683669f4a82a9656845a62da26968e2d0e6"
+        },
+        {
+          "id": "4cb9069cf27fc96220af-p2-l4-10",
+          "parent_record_id": "4cb9069cf27fc96220af",
+          "page": 2,
+          "line_start": 4,
+          "line_end": 10,
+          "kind": "signature",
+          "text": "Richard Kahn\nHBRK Associates Inc.\n575 Lexington Avenue 4th Floor\nNew York, NY 10022\ntel 212-971-1306\nfax 212-320-0381\ncell 917-414-7584",
+          "text_sha256": "9ef91116920624dddca588753ebad30371dbae80cb421c086f30616b0b3d842a"
+        },
+        {
+          "id": "4cb9069cf27fc96220af-p2-l11-15",
+          "parent_record_id": "4cb9069cf27fc96220af",
+          "page": 2,
+          "line_start": 11,
+          "line_end": 15,
+          "kind": "inline_quote",
+          "text": "On May I, 2017, at 1:57 PM, jeffrey E.\nleevacation@gmailsom>  wrote:\ncall christtphcr hyland ask for christoper get the exact name of the\nmet opera charity and send 50k from\ngratitude TODAY if possible",
+          "text_sha256": "6b697a6dd45a9e7c78b9605ee1668e8b17e488dfebb02b53733233168b4f7e76"
+        },
+        {
+          "id": "4cb9069cf27fc96220af-p2-l16-28",
+          "parent_record_id": "4cb9069cf27fc96220af",
+          "page": 2,
+          "line_start": 16,
+          "line_end": 28,
+          "kind": "disclaimer",
+          "text": "please note\nThe information contained in this communication is\nconfidential, may be attorney-client privileged, may\nconstitute inside information, and is intended only for\nthe use of the addressee. It is the property of\nJEE\nUnauthorized use, disclosure or copying of this\ncommunication or any part thereof is strictly prohibited\nand may be unlawful. If you have received this\ncommunication in error, please notify us immediately by\nreturn e-mail or by e-mail to jeevacation@gmail,com, and\ndestroy this communication and all copies thereof,\nincluding all attachments. copyright -all rights reserved",
+          "text_sha256": "1ee1aff819efc8a5a15820b5515cc6ecf5d537091310e15227ff2bc4e18e5484"
+        },
+        {
+          "id": "4cb9069cf27fc96220af-p2-l29-30",
+          "parent_record_id": "4cb9069cf27fc96220af",
+          "page": 2,
+          "line_start": 29,
+          "line_end": 30,
+          "kind": "disclaimer",
+          "text": "please note\nThe information contained in this communication is",
+          "text_sha256": "7b71ee0e2cbd30e1940a4339030f3f539e24619a19ca99affb44176abbf30170"
+        },
+        {
+          "id": "4cb9069cf27fc96220af-p3-l1-11",
+          "parent_record_id": "4cb9069cf27fc96220af",
+          "page": 3,
+          "line_start": 1,
+          "line_end": 11,
+          "kind": "disclaimer",
+          "text": "confidential, may be attorney-client privileged, may\nconstitute inside information, and is intended only for\nthe use of the addressee. It is the property of\nJEE\nUnauthorized use, disclosure or copying of this\ncommunication or any part thereof is strictly prohibited\nand may be unlawful. If you have received this\ncommunication in error, please notify us immediately by\nreturn e-mail or by e-mail to jeevacation@amail.com, and\ndestroy this communication and all copies thereof,\nincluding all attachments. copyright -all rights reserved",
+          "text_sha256": "58ba76729ff3d7bd6fa601bc26b71ec7ba362a4cb4fa820b96ae56c9d45b5b03"
+        }
+      ],
+      "following_quoted_candidate_id": null,
+      "review_status": "editorial_partition_not_verified_messages"
+    }
+  ],
+  "continuation_checks": [
+    {
+      "record_id": "c8ae0d938c81d8f82cbb",
+      "file_id": "EFTA01263156",
+      "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+      "visible_fingerprint": "f8cea7752a27f4aae6764d972782e9986fb11f7a2ab567c688da434a1ece728f",
+      "next_page": 6,
+      "neighbor_record_id": "0695bb4eaad9e9f39eb0",
+      "neighbor_fingerprint": "731ee1bdf379749efccfd161f34f5cda2ffee18a4b9f4e4fef5b44e4f8239df6",
+      "line_start": 10,
+      "line_end": 14,
+      "header_text": "From: Darren Indyke (mailto\nSent: Wednesday, Se tember 12 2018 12:24 PM\nTo: < >, <->\nCc: Darren Indyke < >\nSubject: Mr. Jeffrey Epstein",
+      "header_sha256": "cf93522169daf03133efb69bbd07c8b17f742a728bcf95434e920024b271fe5a",
+      "finding": "adjacent_page_is_different_message",
+      "notes": "September 20 notice ends mid-sentence on PDF page 5. Page 6 contains a separate September 12 notice beneath a new forwarding header; it does not supply the missing continuation."
+    },
+    {
+      "record_id": "194c5439a3112fafc567",
+      "file_id": "EFTA01263156",
+      "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+      "visible_fingerprint": "67e15c8000f2557d7d6a90a14c901ef65f6b95016eb99e0850042104966476bc",
+      "next_page": 16,
+      "neighbor_record_id": "ec75f35adf47d4dd6fa6",
+      "neighbor_fingerprint": "81d7394a2fcd14a16a0fabac6c2f72d61c5b5ffb54a3d02f284c01578da65031",
+      "line_start": 12,
+      "line_end": 16,
+      "header_text": "From: Darren Indyke (mantra\nSent: Tuesda , June 26, 2018 12:00 PM\nTo:\nCc: Darren Indyke <\nSubject: Mr. Jeffrey Epstein",
+      "header_sha256": "b3136b35699e3efa7e54feca8df50a34757c49f65c68bba8b3b811c913c82593",
+      "finding": "adjacent_page_is_different_message",
+      "notes": "July 10 notice ends mid-sentence on PDF page 15. Page 16 contains a separate June 26 notice beneath a new forwarding header; it does not supply the missing continuation."
+    },
+    {
+      "record_id": "660e0dd9e03db8685564",
+      "file_id": "EFTA01263156",
+      "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+      "visible_fingerprint": "035d0aa23a0ddb896f77212d3d551ca1401e376a3325feb4af68edf5fd26186a",
+      "next_page": 26,
+      "neighbor_record_id": "8bb3b4c04c20f996f907",
+      "neighbor_fingerprint": "9f35aee04c783b0b21c5a9dfa354995eca1f1080b4302402dbd67837f2de0c6d",
+      "line_start": 10,
+      "line_end": 14,
+      "header_text": "From: Darren Indyke [mailto\nSent: Monday March 26, 2018 11.38 AM\nTo:\nCc: Darren Indyke <\nSubject: Privileged and Confidential",
+      "header_sha256": "e7221c9f0823134d4a7067dbf4d076471510b138f133d47365d484cb0cd90baf",
+      "finding": "adjacent_page_is_different_message",
+      "notes": "March 27 notice ends mid-sentence on PDF page 25. Page 26 contains a separate March 26 notice beneath a new forwarding header; it does not supply the missing continuation."
     }
   ]
 }

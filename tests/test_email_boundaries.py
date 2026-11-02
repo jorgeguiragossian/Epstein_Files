@@ -55,5 +55,36 @@ class BoundaryTests(unittest.TestCase):
         with self.assertRaises(ValueError):apply_boundaries(catalog,self.overlay,self.prepared)
         value=copy.deepcopy(self.overlay);value['annotations']*=2
         with self.assertRaises(ValueError):apply_boundaries(copy.deepcopy(self.catalog),value,self.prepared)
+
+    def test_adjacent_page_check_preserves_body_and_rejects_stale_neighbor(self):
+        pages=[{'page':1,'text':'From: a@example.org\nTo: b@example.org\nSubject: One\nIncomplete body'},
+               {'page':2,'text':'From: b@example.org\nTo: a@example.org\nSubject: Different\nDifferent body'}]
+        prepared=[({'file_id':'EFTA00000001','dataset':1,'sha256':'hash'},None,{'pages':pages},None)]
+        catalog=build_email_catalog(prepared);parent,neighbor=catalog['records']
+        parent['source_review']={'boundary_status':'continuation_unverified'}
+        text='\n'.join(pages[1]['text'].splitlines()[:3])
+        check=dict(record_id=parent['id'],file_id=parent['file_id'],source_sha256='hash',visible_fingerprint=parent['visible_fingerprint'],
+            next_page=2,neighbor_record_id=neighbor['id'],neighbor_fingerprint=neighbor['visible_fingerprint'],line_start=1,line_end=3,
+            header_text=text,header_sha256=hashlib.sha256(text.encode()).hexdigest(),finding='adjacent_page_is_different_message')
+        overlay=dict(parser_version=catalog['summary']['parser_version'],annotations=[],continuation_checks=[check])
+        result=apply_boundaries(copy.deepcopy(catalog),overlay,prepared)
+        self.assertEqual(result['records'][0]['body'],parent['body'])
+        self.assertEqual(result['groups'],catalog['groups'])
+        self.assertEqual(result['summary']['body_partitions']['adjacent_page_checks'],1)
+        for field,value in [('neighbor_fingerprint','stale'),('header_text','changed'),('next_page',1),('line_end',100)]:
+            modified=copy.deepcopy(overlay);modified['continuation_checks'][0][field]=value
+            with self.subTest(field=field),self.assertRaises(ValueError):apply_boundaries(copy.deepcopy(catalog),modified,prepared)
+
+    def test_partition_can_cross_pages_without_absorbing_next_header(self):
+        pages=[{'page':1,'text':'From: a@example.org\nTo: b@example.org\nSubject: One\nFirst body'},
+               {'page':2,'text':'Continued quote\nDisclaimer\nFrom: b@example.org\nTo: a@example.org\nSubject: Two\nSecond body'}]
+        prepared=[({'file_id':'EFTA00000001','dataset':1,'sha256':'hash'},None,{'pages':pages},None)]
+        catalog=build_email_catalog(prepared);parent=catalog['records'][0];parent['source_review']={'status':'fixture'}
+        spans=[]
+        for page,start,kind,text in [(1,4,'authored_text_candidate','First body'),(2,1,'inline_quote','Continued quote'),(2,2,'disclaimer','Disclaimer')]:
+            spans.append(dict(id=f'{page}-{start}',parent_record_id=parent['id'],page=page,line_start=start,line_end=start,kind=kind,text=text,text_sha256=hashlib.sha256(text.encode()).hexdigest()))
+        overlay=dict(parser_version=catalog['summary']['parser_version'],annotations=[dict(record_id=parent['id'],file_id=parent['file_id'],source_sha256='hash',visible_fingerprint=parent['visible_fingerprint'],spans=spans)])
+        result=apply_boundaries(catalog,overlay,prepared)
+        self.assertEqual(result['records'][0]['body'],'First body\nContinued quote\nDisclaimer')
         value=copy.deepcopy(self.overlay);value['annotations'][0]['following_quoted_candidate_id']=value['annotations'][0]['record_id']
         with self.assertRaises(ValueError):apply_boundaries(copy.deepcopy(self.catalog),value,self.prepared)

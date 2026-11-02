@@ -34,8 +34,9 @@
       "contact_rankings_ready": false
     },
     "body_partitions": {
-      "annotated_candidates": 5,
-      "quoted_spans": 4,
+      "annotated_candidates": 7,
+      "quoted_spans": 7,
+      "adjacent_page_checks": 3,
       "new_message_candidates": 0,
       "grouping_changed": false,
       "contact_rankings_ready": false
