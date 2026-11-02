@@ -1,4 +1,4 @@
-"""Reproduce 15 curated, visually checked email-candidate reviews."""
+"""Reproduce curated, visually checked email-candidate reviews in two batches."""
 import json
 from pathlib import Path
 
@@ -28,6 +28,40 @@ ASSOCIATIONS=[
  ('richard-kahn-header','753db62ec7c78cb9166b','to','Richard Kahn','richardkahn12@gmail.com',True,'Richard Kahn <richardkahn12@gmail.com>')
 ]
 
+# Batch 2: prioritize unreviewed candidates with address-like headers, then
+# document/page/line order. This deliberately favors readable material.
+SECOND_CASES=[
+ ('c291eeac30d73cc90e11','supported_segment','September 29, 2018','Quoted travel-notice header and visible body are supported. Recipient addresses are redacted; source stamps remain in native body text.'),
+ ('c8ae0d938c81d8f82cbb','continuation_unverified','September 20, 2018','Quoted header is readable, but the detected body ends mid-sentence on this PDF page. Continuation is not established by this review.'),
+ ('9cf5407ca855a7a4d363','supported_segment','August 28, 2018','Quoted header and visible travel-notice body are supported. A visible recipient name does not recover its redacted address.'),
+ ('e13447c87449af4edeab','supported_segment','August 25, 2018','Visible header supports the displayed sender label and date; native extraction damages the sender address. Redacted recipients remain unresolved.'),
+ ('ab0a503da83cba1cc31c','supported_segment','July 27, 2018','Quoted From/Sent header and travel-notice body are visible. Redacted To and Cc addresses remain unresolved.'),
+ ('28984839a8f9503eef64','supported_segment','July 18, 2018','Quoted header and visible travel-notice body are supported; the source date reading does not replace the parser timestamp.'),
+ ('194c5439a3112fafc567','continuation_unverified','July 10, 2018','Visible quoted header is supported, but the detected body ends mid-sentence at the page boundary; full continuation remains unverified.'),
+ ('660e0dd9e03db8685564','continuation_unverified','March 27, 2018','Visible quoted header is supported; native extraction damages its sender address. Body ends mid-sentence and continuation remains unverified.'),
+ ('82133ccb2a72e269e411','supported_segment','March 12, 2018','Quoted header, body and closing signature are visible. Repeated sender/address observations are not additional unique contacts.'),
+ ('4cb9069cf27fc96220af','contains_unseparated_quote','May 1, 2017','Forwarded header begins on PDF page 1 and its recipient/body continue on pages 2 and 3. Body includes another inline quote and duplicated disclaimer text; unique message and boundaries remain unverified.'),
+ ('6bf18e2f12fd90426c42','supported_segment','March 11, 2020','Distinct forwarded header and short body are visible before the next From block. Wrapped subject text is misplaced in the native body; no participant is reconstructed.'),
+ ('5cfa5b370c0bc48d0f58','supported_segment','March 11, 2020','Critical Mention alert header on page 1 and alert content on page 2 are visible. Sender extraction is damaged; this automated alert is not evidence of a personal correspondent.'),
+ ('229b0912ae9c1a3d0c0f','contains_unseparated_quote','October 28, 2019','Top-level header is visible, but body contains two inline quoted replies. Sender and recipient addresses are redacted.'),
+ ('bea9a420b2163bebf321','supported_segment','December 15, 2020','Quoted sender name, Sent header and short reply are visible. Signature continues on page 2 before the next From header; email addresses remain redacted.'),
+ ('d5854f1cfc605aeed1d1','supported_segment','December 15, 2020','Quoted header and short body are supported by the PDF layout. Recipient name is visible but the address is redacted.')
+]
+CASES += [(key,boundary,'visual_source_reading',day,notes) for key,boundary,day,notes in SECOND_CASES]
+# Explicit PDF clock readings where the existing parsed candidate has lost PM.
+CLOCK_CONFLICTS={
+ '66eff07cc17a5fd96448':'7:03 PM',
+ 'e13447c87449af4edeab':'7:30 PM',
+ '28984839a8f9503eef64':'2:32 PM',
+ '6bf18e2f12fd90426c42':'6:25 PM',
+ '5cfa5b370c0bc48d0f58':'6:02 PM',
+}
+for key in ('c291eeac30d73cc90e11','ab0a503da83cba1cc31c','28984839a8f9503eef64','82133ccb2a72e269e411'):
+    ASSOCIATIONS.append((f'darren-header-{key}',key,'from','Darren Indyke','dkiesq@aol.com',False,'Darren Indyke [mailto:dkiesq@aol.com]'))
+for key in ('c8ae0d938c81d8f82cbb','9cf5407ca855a7a4d363','e13447c87449af4edeab','194c5439a3112fafc567','660e0dd9e03db8685564'):
+    ASSOCIATIONS.append((f'jeffrey-e-header-{key}',key,'from','jeffrey E.','jeevacation@gmail.com',key in ('e13447c87449af4edeab','660e0dd9e03db8685564'),'jeffrey E. [mailto:jeevacation@gmail.com]'))
+ASSOCIATIONS.append(('richard-forwarded-header','4cb9069cf27fc96220af','from','Richard Kahn','richardkahn12@gmail.com',True,'Richard Kahn <richardkahn12@gmail.com>'))
+
 
 def main():
     catalog=json.loads((ROOT/'data/viewer/emails.json').read_text(encoding='utf-8'))
@@ -43,6 +77,9 @@ def main():
             'header_status':'source_layout_supported','boundary_status':boundary,'date_status':date_status,
             'source_day_reading':source_day,'notes':notes,'review_status':'source_assisted_editorial_review',
             'unique_message_verified':False,'contact_count_eligible':False})
+        if key in CLOCK_CONFLICTS:
+            reviews[-1]['source_clock_reading']=CLOCK_CONFLICTS[key]
+            reviews[-1]['parsed_clock_conflict']=True
     associations=[]
     for key,record,field,name,address,corrected,quote in ASSOCIATIONS:
         r=records[record]
@@ -52,7 +89,7 @@ def main():
             'visual_correction':corrected,'status':'observed_name_address_association',
             'ownership_verified':False,'apply_globally':False})
     output={'schema_version':1,'parser_version':catalog['summary']['parser_version'],
-        'review_method':'Codex visually compared 15 purposively selected candidates with 10 rendered PDF pages, including enlarged header crops. This is not human verification, authentication, or a corpus-wide accuracy estimate.',
+        'review_method':'Codex visually compared two purposive batches of 15 candidates each with rendered PDF pages, including enlarged header crops and selected body continuations. Batch 2 prioritizes readable address-like headers, then document/page/line order. This is not human verification, authentication, or a corpus-wide accuracy estimate.',
         'scope':'Raw parser fields and flags are preserved. Reviews do not establish unique messages, account ownership, address aliases elsewhere, or contact rankings.',
         'reviews':reviews,'address_associations':associations}
     (PILOT/'email-validation.json').write_text(json.dumps(output,indent=2)+'\n',encoding='utf-8')

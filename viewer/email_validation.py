@@ -19,7 +19,7 @@ def apply_validation(catalog,validation,prepared):
         try:anchor=extraction['pages'][review['source_page']-1]['text'].splitlines()[review['source_line']-1].strip()
         except IndexError:raise ValueError('Email review source anchor is out of range.') from None
         if anchor!=review['extracted_anchor']:raise ValueError('Email review source text changed.')
-        if review['boundary_status'] not in ('supported_segment','contains_unseparated_quote','forwarding_wrapper_only'):
+        if review['boundary_status'] not in ('supported_segment','contains_unseparated_quote','forwarding_wrapper_only','continuation_unverified'):
             raise ValueError('Unknown reviewed boundary status.')
         if review['unique_message_verified'] or review['contact_count_eligible']:
             raise ValueError('Pilot source review cannot silently enable contact rankings.')

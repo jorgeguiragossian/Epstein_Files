@@ -24,6 +24,7 @@ function render(group){
   const review=r.source_review,panel=node('section','email-notice');
   panel.append(node('h4','','Source-assisted editorial review by Codex'),node('p','',review.boundary_status.replaceAll('_',' ')),node('p','',review.notes));
   if(review.source_day_reading)panel.append(node('p','',`Source date reading: ${review.source_day_reading}`));
+  if(review.parsed_clock_conflict)panel.append(node('p','email-flags',`Timestamp discrepancy: the PDF reads ${review.source_clock_reading}; the parsed candidate above lost the PM marker. Use the source reading pending parser correction. Timezone is not inferred.`));
   for(const pair of r.reviewed_address_associations||[]){
    panel.append(node('p','',`${pair.field.toUpperCase()} header reading: ${pair.display_name} <${pair.address}>${pair.visual_correction?' · extraction correction from PDF':''}`));
   }

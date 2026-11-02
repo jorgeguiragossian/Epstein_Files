@@ -44,3 +44,10 @@ class ValidationTests(unittest.TestCase):
     def test_changed_raw_header_association_rejected(self):
         self.validation['address_associations'][0]['raw_extracted_field']='repaired text'
         with self.assertRaises(ValueError):build_email_catalog(self.prepared,self.validation)
+
+    def test_unverified_continuation_stays_in_boundary_review(self):
+        self.validation['reviews'][0]['boundary_status']='continuation_unverified'
+        result=build_email_catalog(self.prepared,self.validation)
+        self.assertEqual(review_page(result,'boundary')['total_groups'],1)
+        self.assertEqual(result['summary']['source_review']['boundary_attention'],1)
+        self.assertFalse(result['summary']['contact_rankings_ready'])
