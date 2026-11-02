@@ -1,0 +1,13 @@
+# Broader correspondence review
+
+Codex visually reviewed 15 more candidates from 12 documents using 19 rendered PDF pages. Selection takes the first unreviewed candidate in source order from each document outside `EFTA01263156`, then a second pass through those documents, stopping at 15. This reduces concentration in the travel-notice PDF but remains a purposive pilot sample, not a random sample or accuracy estimate. The pinned candidate IDs, source hashes and extraction fingerprints are recorded in [email-validation.json](../data/pilot/2026-11-01/email-validation.json) and reproduced by `scripts/prepare-email-validation.py`.
+
+The batch includes nine legal/investigative items, four scheduling/logistics chains, one reminder-like item and one forwarded document. These are editorial descriptions of visible material. They do not authenticate statements, prove meetings/travel occurred, establish legal findings or identify a named person as a correspondent merely because their name appears in text. Referenced attachments were not authenticated by this review.
+
+Four scheduling/logistics candidates contain inline or forwarded quoted replies requiring further separation. Other supported segments may still include signatures, embedded statements, disclaimers and source artifacts. A reminder's May 23 event time is not assigned as a sent timestamp, and an incomplete date on the forwarded document remains unresolved. Source date readings remain separate from parsed timestamps and document date reviews.
+
+Most addresses remain redacted. One additional source-bound recipient header observation brings the total to 14 observed name/address associations, with repeated observations retained individually. This is not 14 contacts or verified account ownership. Visible display names with redacted addresses remain unresolved.
+
+Combined coverage is now **45 of 114 candidates**, with at least one reviewed candidate in each of the pilot's **18 documents containing email candidates**. That does not mean all messages or every page in those documents were reviewed. Thirty-one candidates have supported visible segments; 14 need body/quote-boundary attention. Seven source-linked body breakdowns and three adjacent-page checks remain available. All original parser fields, timestamps, IDs and copy groups remain unchanged; contact rankings remain pending.
+
+Next: use the broadened reviewed set to evaluate quote separation and correspondence classification. Continue to distinguish authored correspondence, automated/reminder material, quoted statements and referenced attachments before counting messages or ranking contacts.

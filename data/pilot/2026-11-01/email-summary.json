@@ -26,10 +26,11 @@
     },
     "scope": "Unverified email-layout candidates and visible-copy groups. Every source occurrence is retained. No identity resolution or unique-message/contact claims.",
     "source_review": {
-      "reviewed_candidates": 30,
-      "supported_segments": 20,
-      "boundary_attention": 10,
-      "observed_address_associations": 13,
+      "reviewed_candidates": 45,
+      "documents_with_reviewed_candidates": 18,
+      "supported_segments": 31,
+      "boundary_attention": 14,
+      "observed_address_associations": 14,
       "verified_unique_messages": null,
       "contact_rankings_ready": false
     },

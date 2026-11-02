@@ -1,6 +1,6 @@
 # Source-assisted email review
 
-This page records the first batch. See the [second batch](email-review-batch-2.md) for current combined coverage: 30 reviewed candidates, 10 needing boundary attention, and 13 observed header associations.
+This page records the first batch. See the [third batch](email-review-batch-3.md) for current combined coverage: 45 reviewed candidates, 14 needing boundary attention, and 14 observed header associations.
 
 Fifteen purposively selected candidates were compared by Codex with ten rendered source PDF pages and enlarged header crops. This editorial review is not human verification, document authentication, or a representative accuracy estimate.
 

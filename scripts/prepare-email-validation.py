@@ -1,4 +1,4 @@
-"""Reproduce curated, visually checked email-candidate reviews in two batches."""
+"""Reproduce three curated, visually checked email-candidate review batches."""
 import json
 from pathlib import Path
 
@@ -62,6 +62,30 @@ for key in ('c8ae0d938c81d8f82cbb','9cf5407ca855a7a4d363','e13447c87449af4edeab'
     ASSOCIATIONS.append((f'jeffrey-e-header-{key}',key,'from','jeffrey E.','jeevacation@gmail.com',key in ('e13447c87449af4edeab','660e0dd9e03db8685564'),'jeffrey E. [mailto:jeevacation@gmail.com]'))
 ASSOCIATIONS.append(('richard-forwarded-header','4cb9069cf27fc96220af','from','Richard Kahn','richardkahn12@gmail.com',True,'Richard Kahn <richardkahn12@gmail.com>'))
 
+# Batch 3: one unreviewed candidate per non-travel-notice document in source
+# order, then a second pass through documents, stopping at fifteen candidates.
+THIRD_CASES=[
+ ('c798a9eaea11eb5c32c0','supported_segment','December 15, 2020','legal_or_investigative','Quoted header and body are distinct from neighboring emails. Recipient display name Sigrid McCawley is visible; participant addresses remain redacted.'),
+ ('11eecac9a796472952ff','supported_segment','February 26, 2019','legal_or_investigative','Top-level header and short body are visible before an Original Message block. Native extraction damages the subject; redacted coordinator contact details remain unresolved.'),
+ ('fb61f87c39749a7119f6','supported_segment','April 20, 2021','legal_or_investigative','Quoted header and body continue from PDF page 1 onto page 2 before the next header. Visible Sent time is 2:05 PM; extraction joins the year and time. Attachments are referenced, not authenticated.'),
+ ('593293562bc919b11538','supported_segment','April 14, 2021','legal_or_investigative','Quoted header and referral body are visible. Allegations in the body are not findings verified by this layout review; redacted participants and contact details remain unresolved.'),
+ ('579aea33f4b2a17ced01','supported_segment','March 3, 2016','legal_or_investigative','Visible quoted header has a March 3, 2016 5:05 PM Sent value and a short reply before the next header. OCR damages the date and subject; source reading stays separate.'),
+ ('1b356869537054b44603','contains_unseparated_quote','April 6, 2017','scheduling_or_logistics','Top-level To label Larry Visoski is visible but address is redacted. Several inline replies with increasing quote markers remain in the detected body. Textual April 6 dates support this source-specific reading of 4/6.'),
+ ('c669ce63be2e9e4248b8','contains_unseparated_quote','May 3, 2017','scheduling_or_logistics','Visible recipient label Melanie Spinella is absent from native To extraction. Body contains inline and Original Message quotes on page 1 and repeated disclaimers on page 2. Redacted addresses are not reconstructed.'),
+ ('91f790caeb30aa66bf06','supported_segment',None,'reminder','Visible item is a reminder-like Alert with a May 23, 2017 2:00 PM event in its body. No labeled sent date is visible; the event date is not assigned as a message timestamp or proof of a completed call.'),
+ ('99401e883858025e2c23','contains_unseparated_quote','May 3, 2017','scheduling_or_logistics','Top-level From Oliver Lloyd and To Lesley Groff labels are visible; addresses remain redacted. Body spans three PDF pages with inline replies and a forwarded message. Mentioned names do not establish direct correspondence with those people.'),
+ ('997943e85ddc97fd238f','contains_unseparated_quote','May 16, 2017','scheduling_or_logistics','Visible Sent header reads Tuesday 5/16/2017 2:13:52 PM; extraction loses much of it and a From field. Body includes an inline quoted reply. Flight text does not verify that travel occurred.'),
+ ('13f7e4c60b42a1597702','supported_segment',None,'forwarded_document','Forwarded header and document-like body span two PDF pages. Date is partly obscured or damaged; no full sent date is assigned. Different visible signature labels and disclaimer text are retained without attributing authorship or authenticating the apparent terms.'),
+ ('d79029b99b16df494822','supported_segment','June 12, 2023','legal_or_investigative','Visible header, body and listed attachment filenames are supported. Participants are redacted; names in the subject or body are not inferred to be correspondents. Referenced attachments and underlying allegations are not authenticated.'),
+ ('cb028137229099c414b0','supported_segment','December 14, 2020','legal_or_investigative','Quoted email begins on PDF page 2 and continues onto page 3 with an embedded statement, closing signature and disclaimer. The statement is quoted document content, not an independently counted email or verified factual account.'),
+ ('59a4ffec2970fcaa5f43','supported_segment','February 26, 2019','legal_or_investigative','Original Message header and short request are visible. The source shows a To label omitted by native parsing, but its value and participant addresses remain redacted.'),
+ ('483ab91c287adab14175','supported_segment','April 19, 2021','legal_or_investigative','Quoted header on PDF page 2 reads Monday April 19, 2021 8:27 PM. Short body and closing continue onto page 3 before the next header; damaged raw date remains unchanged.')
+]
+CASES += [(key,boundary,'sent_date_unresolved' if day is None else 'visual_source_reading',day,notes)
+          for key,boundary,day,kind,notes in THIRD_CASES]
+THIRD_KINDS={key:kind for key,boundary,day,kind,notes in THIRD_CASES}
+ASSOCIATIONS.append(('jeffrey-recipient-forwarded-points','13f7e4c60b42a1597702','to','Jeffrey Epstein','jeevacation@gmail.com',True,'Jeffrey Epstein <jeevacation@gmail.com>'))
+
 
 def main():
     catalog=json.loads((ROOT/'data/viewer/emails.json').read_text(encoding='utf-8'))
@@ -80,6 +104,9 @@ def main():
         if key in CLOCK_CONFLICTS:
             reviews[-1]['source_clock_reading']=CLOCK_CONFLICTS[key]
             reviews[-1]['parsed_clock_conflict']=True
+        if key in THIRD_KINDS:
+            reviews[-1]['review_batch']='batch-3-broader-correspondence'
+            reviews[-1]['correspondence_kind']=THIRD_KINDS[key]
     associations=[]
     for key,record,field,name,address,corrected,quote in ASSOCIATIONS:
         r=records[record]
@@ -89,7 +116,7 @@ def main():
             'visual_correction':corrected,'status':'observed_name_address_association',
             'ownership_verified':False,'apply_globally':False})
     output={'schema_version':1,'parser_version':catalog['summary']['parser_version'],
-        'review_method':'Codex visually compared two purposive batches of 15 candidates each with rendered PDF pages, including enlarged header crops and selected body continuations. Batch 2 prioritizes readable address-like headers, then document/page/line order. This is not human verification, authentication, or a corpus-wide accuracy estimate.',
+        'review_method':'Codex visually compared three purposive batches of 15 candidates each with rendered PDF pages and selected body continuations. Batch 2 prioritizes readable address-like headers; batch 3 samples across non-travel-notice documents in source order. This is not human verification, authentication, or a corpus-wide accuracy estimate.',
         'scope':'Raw parser fields and flags are preserved. Reviews do not establish unique messages, account ownership, address aliases elsewhere, or contact rankings.',
         'reviews':reviews,'address_associations':associations}
     (PILOT/'email-validation.json').write_text(json.dumps(output,indent=2)+'\n',encoding='utf-8')

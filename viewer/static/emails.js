@@ -23,6 +23,7 @@ function render(group){
  if(r.source_review){
   const review=r.source_review,panel=node('section','email-notice');
   panel.append(node('h4','','Source-assisted editorial review by Codex'),node('p','',review.boundary_status.replaceAll('_',' ')),node('p','',review.notes));
+  if(review.correspondence_kind)panel.append(node('p','evidence-note',`Source context: ${review.correspondence_kind.replaceAll('_',' ')} · editorial description, not a verified relationship.`));
   if(review.source_day_reading)panel.append(node('p','',`Source date reading: ${review.source_day_reading}`));
   if(review.parsed_clock_conflict)panel.append(node('p','email-flags',`Timestamp discrepancy: the PDF reads ${review.source_clock_reading}; the parsed candidate above lost the PM marker. Use the source reading pending parser correction. Timezone is not inferred.`));
   else if(review.source_clock_matches_candidate)panel.append(node('p','evidence-note',`Clock check: parsed candidate now matches the PDF reading of ${review.source_clock_reading}. Timezone is not inferred.`));
@@ -65,7 +66,7 @@ async function refresh(reset=true){
   const summary=data.summary;$('#email-occurrences').textContent=summary.candidate_occurrences;$('#email-documents').textContent=summary.documents_with_candidates;$('#email-repeats').textContent=summary.repeat_groups;
   const reviewed=summary.source_review;
   const partitions=summary.body_partitions;
-  $('#email-review-coverage').textContent=reviewed?`${reviewed.reviewed_candidates} candidates source-reviewed · ${reviewed.boundary_attention} flagged boundary cases${partitions?`, ${partitions.annotated_candidates} with source-linked breakdowns and ${partitions.adjacent_page_checks||0} adjacent-page checks`:''} · ${reviewed.observed_address_associations} observed name/address associations. This purposive sample is not an accuracy estimate.`:'Source review pending.';
+  $('#email-review-coverage').textContent=reviewed?`${reviewed.reviewed_candidates} candidates source-reviewed across ${reviewed.documents_with_reviewed_candidates} sampled documents · ${reviewed.boundary_attention} flagged boundary cases${partitions?`, ${partitions.annotated_candidates} with source-linked breakdowns and ${partitions.adjacent_page_checks||0} adjacent-page checks`:''} · ${reviewed.observed_address_associations} observed name/address associations. Document coverage is partial; this purposive sample is not an accuracy estimate.`:'Source review pending.';
   const allOption=node('option','','All source documents');allOption.value='';$('#email-document').replaceChildren(allOption);
   for(const id of data.documents){const option=node('option','',id);option.value=id;$('#email-document').append(option);}
   if(doc&&!data.documents.includes(doc)){const option=node('option','',`${doc} (no candidates)`);option.value=doc;$('#email-document').append(option);}

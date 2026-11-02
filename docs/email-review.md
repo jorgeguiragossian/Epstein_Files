@@ -66,3 +66,5 @@ A [second 15-candidate batch](email-review-batch-2.md) brings coverage to 30 can
 The subsequent [AM/PM parser correction](email-date-parser.md) fixes nine derived timestamps and leaves one previously parsed damaged date unresolved. All five source-reviewed clocks now match. Raw evidence and grouping remain unchanged.
 
 A [boundary follow-up](email-boundary-followup.md) adds two multi-span breakdowns and three adjacent-page source checks. The incomplete notices remain separate from the different messages on their neighboring pages.
+
+The [third review batch](email-review-batch-3.md) broadens coverage to 45 candidates, sampling across all 18 pilot documents with email candidates. Document coverage remains partial; contact rankings remain pending.

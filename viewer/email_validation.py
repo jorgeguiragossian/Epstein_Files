@@ -46,6 +46,7 @@ def apply_validation(catalog,validation,prepared):
             raise ValueError('Observed header pairs cannot be promoted to verified ownership or global aliases.')
         record.setdefault('reviewed_address_associations',[]).append(dict(association))
     catalog['summary']['source_review']={'reviewed_candidates':len(seen),
+        'documents_with_reviewed_candidates':len({records[key]['file_id'] for key in seen}),
         'supported_segments':sum(r['boundary_status']=='supported_segment' for r in validation['reviews']),
         'boundary_attention':sum(r['boundary_status']!='supported_segment' for r in validation['reviews']),
         'observed_address_associations':len(association_ids),'verified_unique_messages':None,'contact_rankings_ready':False}
