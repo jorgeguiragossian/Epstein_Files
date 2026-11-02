@@ -23,7 +23,15 @@
       "sender_address_unresolved": 103,
       "subject_missing": 14
     },
-    "scope": "Unverified email-layout candidates and visible-copy groups. Every source occurrence is retained. No identity resolution or unique-message/contact claims."
+    "scope": "Unverified email-layout candidates and visible-copy groups. Every source occurrence is retained. No identity resolution or unique-message/contact claims.",
+    "source_review": {
+      "reviewed_candidates": 15,
+      "supported_segments": 10,
+      "boundary_attention": 5,
+      "observed_address_associations": 3,
+      "verified_unique_messages": null,
+      "contact_rankings_ready": false
+    }
   },
   "metrics_sha256": "0d82178ea58a4a95520af9bf71d370e0a3d821f607c71091eb68008e86139232",
   "groups": [

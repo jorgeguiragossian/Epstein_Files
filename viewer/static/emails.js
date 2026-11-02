@@ -18,7 +18,18 @@ function render(group){
  const rawHeaders=node('pre','email-raw',r.header_evidence.map(h=>`PDF p${h.page}, line ${h.line} · ${h.field}: ${h.value}`).join('\n'));
  const body=node('pre','email-raw',r.body||'No body text detected.');
  raw.append(node('p','evidence-note','Header values are raw extracted text. Address-like strings are not verified identities. This body segment can contain signatures, quotes, attachments, or extraction artifacts.'),rawHeaders,node('h4','',`Detected body segment · PDF ${r.body_pages.length===1?'page':'pages'} ${r.body_pages.join(', ')||'not established'}`),body);
- card.append(head,title,headers,flags,sources,raw);return card;
+ card.append(head,title,headers,flags,sources);
+ if(r.source_review){
+  const review=r.source_review,panel=node('section','email-notice');
+  panel.append(node('h4','','Source-assisted editorial review by Codex'),node('p','',review.boundary_status.replaceAll('_',' ')),node('p','',review.notes));
+  if(review.source_day_reading)panel.append(node('p','',`Source date reading: ${review.source_day_reading}`));
+  for(const pair of r.reviewed_address_associations||[]){
+   panel.append(node('p','',`${pair.field.toUpperCase()} header reading: ${pair.display_name} <${pair.address}>${pair.visual_correction?' · extraction correction from PDF':''}`));
+  }
+  panel.append(node('p','evidence-note','Observed header associations do not establish account ownership. Raw extraction is preserved below. This review does not verify a unique message or enable contact counts.'));
+  card.append(panel);
+ }
+ card.append(raw);return card;
 }
 async function refresh(reset=true){
  if(reset)currentPage=1;const token=++version;
@@ -28,6 +39,8 @@ async function refresh(reset=true){
  try{
   const response=await fetch(`/api/emails?${new URLSearchParams({filter,document:doc,page:currentPage})}`,{cache:'no-store'});const data=await response.json();if(!response.ok)throw new Error(data.error||'Could not read the local email cache.');if(token!==version)return;
   const summary=data.summary;$('#email-occurrences').textContent=summary.candidate_occurrences;$('#email-documents').textContent=summary.documents_with_candidates;$('#email-repeats').textContent=summary.repeat_groups;
+  const reviewed=summary.source_review;
+  $('#email-review-coverage').textContent=reviewed?`${reviewed.reviewed_candidates} candidates source-reviewed · ${reviewed.boundary_attention} need boundary review · ${reviewed.observed_address_associations} observed name/address associations. This purposive sample is not an accuracy estimate.`:'Source review pending.';
   const allOption=node('option','','All source documents');allOption.value='';$('#email-document').replaceChildren(allOption);
   for(const id of data.documents){const option=node('option','',id);option.value=id;$('#email-document').append(option);}
   if(doc&&!data.documents.includes(doc)){const option=node('option','',`${doc} (no candidates)`);option.value=doc;$('#email-document').append(option);}
@@ -39,7 +52,7 @@ async function refresh(reset=true){
  }catch(error){if(token===version){$('#email-status').textContent=error.message;$('#email-results').replaceChildren();$('#email-page').textContent='';}}
 }
 async function init(){
- $('#email-filter').value=['all','unresolved','repeats'].includes(params.get('filter'))?params.get('filter'):'all';
+ $('#email-filter').value=['all','unresolved','repeats','reviewed','boundary'].includes(params.get('filter'))?params.get('filter'):'all';
  if(params.get('document')){const option=node('option','',params.get('document'));option.value=params.get('document');$('#email-document').append(option);$('#email-document').value=option.value;}
  $('#email-filters').addEventListener('submit',e=>{e.preventDefault();refresh();});$('#email-prev').addEventListener('click',()=>{currentPage--;refresh(false);});$('#email-next').addEventListener('click',()=>{currentPage++;refresh(false);});await refresh(false);
 }

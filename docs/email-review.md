@@ -54,3 +54,7 @@ The API `/api/emails` supports `filter=all`, `filter=unresolved`, or `filter=rep
 ## Before contact rankings
 
 Review more header/body boundaries against PDFs, resolve date formats without guessing, and create source-backed address-to-person mappings. Epstein-specific To/From analysis must distinguish his verified accounts from mentions of his name, later DOJ correspondence, redacted participants, and nested quoted messages. Until those checks exist, the workspace deliberately reports candidate occurrences and visible groups, with `unique_messages: null` and `contact_rankings_ready: false`.
+
+## Source-assisted validation
+
+A subsequent [15-candidate review](email-validation.md) adds source-bound annotations and three observed header associations. Raw parsing and grouping remain unchanged; contact rankings remain pending.

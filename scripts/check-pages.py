@@ -8,7 +8,7 @@ sys.path.insert(0,str(ROOT/'viewer'))
 from server import Catalog
 
 catalog=Catalog()
-paths=['/api/overview','/api/people','/api/documents/EFTA00039806?page=2','/api/emails?document=EFTA02212905','/api/emails?filter=repeats',
+paths=['/api/overview','/api/people','/api/documents/EFTA00039806?page=2','/api/emails?document=EFTA02212905','/api/emails?filter=repeats','/api/emails?filter=reviewed','/api/emails?filter=boundary',
  '/api/search','/api/search?q=grand%20jury&dataset=6','/api/search?person=ghislaine-maxwell&date_from=2020-06-29&date_to=2020-06-29',
  '/api/search?q=EFTA00008529','/api/search?q=Epstein&quality=review','/api/search?q=SDNY_GM','/api/search?date_status=unreviewed','/api/search?person=alan-dershowitz']
 rows=[]

@@ -21,7 +21,7 @@ def main():
         if extracted['source_sha256']!=metric['sha256'] or hashlib.sha256(pdf.read_bytes()).hexdigest()!=metric['sha256']:
             raise ValueError('Source hash mismatch; rebuild pilot before parsing email candidates.')
         prepared.append((metric,item,extracted,pdf))
-    catalog=build_email_catalog(prepared)
+    catalog=build_email_catalog(prepared,json.loads((pilot/'email-validation.json').read_text(encoding='utf-8')))
     folder=ROOT/'data/viewer';folder.mkdir(parents=True,exist_ok=True)
     (folder/'emails.json').write_text(json.dumps(catalog,indent=2)+'\n',encoding='utf-8')
     records={r['id']:r for r in catalog['records']}

@@ -143,7 +143,7 @@ def group_records(records):
     return sorted(result,key=lambda group:(-group['occurrences'],min((by_id[key]['file_id'],by_id[key]['source_page'],by_id[key]['source_line']) for key in group['record_ids']),group['id']))
 
 
-def build_email_catalog(prepared):
+def build_email_catalog(prepared,validation=None):
     records=[]
     for metric,item,extracted,pdf in prepared:
         records+=parse_document(extracted,metric['file_id'],metric['dataset'],metric['sha256'])
@@ -156,11 +156,16 @@ def build_email_catalog(prepared):
         'possible_repeat_groups':sum(g['kind']=='possible_repeat_incomplete' for g in groups),
         'unique_messages':None,'contact_rankings_ready':False,'flag_counts':flags,
         'scope':'Unverified email-layout candidates and visible-copy groups. Every source occurrence is retained. No identity resolution or unique-message/contact claims.'}
-    return {'summary':summary,'records':records,'groups':groups}
+    catalog={'summary':summary,'records':records,'groups':groups}
+    if validation is not None:
+        try:from .email_validation import apply_validation
+        except ImportError:from email_validation import apply_validation
+        apply_validation(catalog,validation,prepared)
+    return catalog
 
 
 def review_page(catalog,filter_name='all',document='',page=1):
-    if filter_name not in ('all','unresolved','repeats'):raise ValueError('Unknown email review filter.')
+    if filter_name not in ('all','unresolved','repeats','reviewed','boundary'):raise ValueError('Unknown email review filter.')
     if document and not re.fullmatch(r'EFTA\d{8}',document):raise ValueError('Invalid email source document ID.')
     try:page=int(page)
     except (TypeError,ValueError):raise ValueError('Email result page must be a whole number.') from None
@@ -173,6 +178,8 @@ def review_page(catalog,filter_name='all',document='',page=1):
         if document and not any(r['file_id']==document for r in members):continue
         if filter_name=='repeats' and group['occurrences']<2:continue
         if filter_name=='unresolved' and not any(unresolved.intersection(r['flags']) for r in members):continue
+        if filter_name=='reviewed' and not any(r.get('source_review') for r in members):continue
+        if filter_name=='boundary' and not any(r.get('source_review',{}).get('boundary_status') in ('contains_unseparated_quote','forwarding_wrapper_only') for r in members):continue
         representative=next((r for r in members if r['file_id']==document),members[0])
         rows.append(dict(group,representative=representative,sources=[{k:r[k] for k in ('id','file_id','source_page','source_line','flags')} for r in members]))
     return {'summary':catalog['summary'],'documents':sorted({r['file_id'] for r in catalog['records']}),

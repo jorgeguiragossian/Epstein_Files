@@ -43,13 +43,15 @@
  }
  function emails(data,p){
   const filter=p.get('filter')||'all',doc=p.get('document')||'',page=integer(p.get('page')||1,1,10000,'Email result page');
-  if(!['all','unresolved','repeats'].includes(filter))throw new Error('Unknown email review filter.');
+  if(!['all','unresolved','repeats','reviewed','boundary'].includes(filter))throw new Error('Unknown email review filter.');
   if(doc&&!/^EFTA\d{8}$/.test(doc))throw new Error('Invalid email source document ID.');
   const catalog=data.emails,records=new Map(catalog.records.map(r=>[r.id,r])),unresolved=new Set(['sender_address_unresolved','recipient_address_unresolved','date_missing','date_unparsed','date_ambiguous_numeric']);
   const rows=[];
   for(const group of catalog.groups){
    const members=group.record_ids.map(id=>records.get(id));if(doc&&!members.some(r=>r.file_id===doc))continue;
    if(filter==='repeats'&&group.occurrences<2)continue;if(filter==='unresolved'&&!members.some(r=>r.flags.some(f=>unresolved.has(f))))continue;
+   if(filter==='reviewed'&&!members.some(r=>r.source_review))continue;
+   if(filter==='boundary'&&!members.some(r=>['contains_unseparated_quote','forwarding_wrapper_only'].includes(r.source_review?.boundary_status)))continue;
    rows.push({...group,representative:members.find(r=>r.file_id===doc)||members[0],sources:members.map(r=>({id:r.id,file_id:r.file_id,source_page:r.source_page,source_line:r.source_line,flags:r.flags}))});
   }
   return{summary:catalog.summary,documents:[...new Set(catalog.records.map(r=>r.file_id))].sort(),total_groups:rows.length,page,page_size:12,results:rows.slice((page-1)*12,page*12)};

@@ -162,7 +162,7 @@ def build_index(pilot=PILOT, database=DB):
                     hits=name_occurrences(page['text'],person['forms'])
                     if hits:
                         connection.execute('INSERT INTO name_mentions VALUES (?,?,?,?)',(cursor.lastrowid,person['id'],len(hits),json.dumps(hits)))
-        connection.execute('INSERT INTO email_catalog VALUES (?)',(json.dumps(build_email_catalog(prepared)),))
+        connection.execute('INSERT INTO email_catalog VALUES (?)',(json.dumps(build_email_catalog(prepared,load(pilot/'email-validation.json'))),))
         connection.commit()
     return len(prepared)
 
