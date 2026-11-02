@@ -78,7 +78,7 @@ async function refresh(reset=true){
  }catch(error){if(token===version){$('#email-status').textContent=error.message;$('#email-results').replaceChildren();$('#email-page').textContent='';}}
 }
 async function init(){
- $('#email-filter').value=['all','unresolved','repeats','reviewed','boundary'].includes(params.get('filter'))?params.get('filter'):'all';
+ $('#email-filter').value=['all','unresolved','repeats','reviewed','unreviewed','boundary','sender','recipient','date'].includes(params.get('filter'))?params.get('filter'):'all';
  if(params.get('document')){const option=node('option','',params.get('document'));option.value=params.get('document');$('#email-document').append(option);$('#email-document').value=option.value;}
  $('#email-filters').addEventListener('submit',e=>{e.preventDefault();refresh();});$('#email-prev').addEventListener('click',()=>{currentPage--;refresh(false);});$('#email-next').addEventListener('click',()=>{currentPage++;refresh(false);});await refresh(false);
 }
