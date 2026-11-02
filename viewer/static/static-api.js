@@ -43,7 +43,7 @@
  }
  function emails(data,p){
   const filter=p.get('filter')||'all',doc=p.get('document')||'',page=integer(p.get('page')||1,1,10000,'Email result page');
-  if(!['all','unresolved','repeats','reviewed','boundary'].includes(filter))throw new Error('Unknown email review filter.');
+  if(!['all','unresolved','repeats','reviewed','unreviewed','boundary','sender','recipient','date'].includes(filter))throw new Error('Unknown email review filter.');
   if(doc&&!/^EFTA\d{8}$/.test(doc))throw new Error('Invalid email source document ID.');
   const catalog=data.emails,records=new Map(catalog.records.map(r=>[r.id,r])),unresolved=new Set(['sender_address_unresolved','recipient_address_unresolved','date_missing','date_unparsed','date_ambiguous_numeric']);
   const rows=[];
@@ -51,6 +51,9 @@
    const members=group.record_ids.map(id=>records.get(id));if(doc&&!members.some(r=>r.file_id===doc))continue;
    if(filter==='repeats'&&group.occurrences<2)continue;if(filter==='unresolved'&&!members.some(r=>r.flags.some(f=>unresolved.has(f))))continue;
    if(filter==='reviewed'&&!members.some(r=>r.source_review))continue;
+   if(filter==='unreviewed'&&!members.some(r=>!r.source_review))continue;
+   const focus={sender:['sender_address_unresolved'],recipient:['recipient_address_unresolved'],date:['date_missing','date_unparsed','date_ambiguous_numeric']}[filter];
+   if(focus&&!members.some(r=>r.flags.some(f=>focus.includes(f))))continue;
    if(filter==='boundary'&&!members.some(r=>['contains_unseparated_quote','forwarding_wrapper_only','continuation_unverified'].includes(r.source_review?.boundary_status)))continue;
    rows.push({...group,representative:members.find(r=>r.file_id===doc)||members[0],sources:members.map(r=>({id:r.id,file_id:r.file_id,source_page:r.source_page,source_line:r.source_line,flags:r.flags}))});
   }
@@ -60,6 +63,7 @@
   const url=new URL(input,'https://static.invalid'),p=url.searchParams;
   if(url.pathname==='/api/overview')return data.overview;
   if(url.pathname==='/api/people')return data.people;
+  if(url.pathname==='/api/coverage')return data.coverage;
   if(url.pathname==='/api/search')return search(data,p);
   if(url.pathname==='/api/emails')return emails(data,p);
   const match=url.pathname.match(/^\/api\/documents\/(EFTA\d{8})$/);

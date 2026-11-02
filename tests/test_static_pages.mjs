@@ -18,7 +18,7 @@ for(const item of golden){
 for(const path of ['/api/search?date_from=2021-02-29','/api/search?person=unknown','/api/search?q=***','/api/emails?filter=bad','/api/documents/EFTA00008529?page=0'])assert.throws(()=>api.dispatch(data,path),path);
 await api.load();
 assert.equal(api.pdfUrl('EFTA00008529',2),data.documents.EFTA00008529.url+'#page=2');
-for(const name of ['index.html','emails.html']){
+for(const name of ['index.html','emails.html','coverage.html']){
  const html=fs.readFileSync('site-dist/'+name,'utf8');
  const digest=createHash('sha256').update(fs.readFileSync('site-dist/static-api.js')).digest('hex').slice(0,12);
  assert(html.includes(`src="/Epstein_Files/static-api.js?v=${digest}"`));
@@ -27,4 +27,6 @@ for(const name of ['index.html','emails.html']){
 assert(!fs.readFileSync('site-dist/app.js','utf8').includes('`/pdf/'));
 assert(!fs.readFileSync('site-dist/emails.js','utf8').includes('`/?doc='));
 assert(!fs.readFileSync('site-dist/emails.js','utf8').includes('`/pdf/'));
+assert(!fs.readFileSync('site-dist/coverage.js','utf8').includes("'/emails?"));
+assert(!fs.readFileSync('site-dist/coverage.js','utf8').includes("'/?doc="));
 console.log(`Static Pages checks passed: ${golden.length} Python/browser-adapter comparisons, invalid inputs, DOJ PDF links, and project subpaths.`);

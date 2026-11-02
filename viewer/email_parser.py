@@ -174,7 +174,7 @@ def build_email_catalog(prepared,validation=None,boundaries=None):
 
 
 def review_page(catalog,filter_name='all',document='',page=1):
-    if filter_name not in ('all','unresolved','repeats','reviewed','boundary'):raise ValueError('Unknown email review filter.')
+    if filter_name not in ('all','unresolved','repeats','reviewed','unreviewed','boundary','sender','recipient','date'):raise ValueError('Unknown email review filter.')
     if document and not re.fullmatch(r'EFTA\d{8}',document):raise ValueError('Invalid email source document ID.')
     try:page=int(page)
     except (TypeError,ValueError):raise ValueError('Email result page must be a whole number.') from None
@@ -188,6 +188,10 @@ def review_page(catalog,filter_name='all',document='',page=1):
         if filter_name=='repeats' and group['occurrences']<2:continue
         if filter_name=='unresolved' and not any(unresolved.intersection(r['flags']) for r in members):continue
         if filter_name=='reviewed' and not any(r.get('source_review') for r in members):continue
+        if filter_name=='unreviewed' and not any(not r.get('source_review') for r in members):continue
+        if filter_name in ('sender','recipient','date'):
+            required={'sender':{'sender_address_unresolved'},'recipient':{'recipient_address_unresolved'},'date':{'date_missing','date_unparsed','date_ambiguous_numeric'}}[filter_name]
+            if not any(required.intersection(r['flags']) for r in members):continue
         if filter_name=='boundary' and not any(r.get('source_review',{}).get('boundary_status') in ('contains_unseparated_quote','forwarding_wrapper_only','continuation_unverified') for r in members):continue
         representative=next((r for r in members if r['file_id']==document),members[0])
         rows.append(dict(group,representative=representative,sources=[{k:r[k] for k in ('id','file_id','source_page','source_line','flags')} for r in members]))

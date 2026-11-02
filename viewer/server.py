@@ -15,14 +15,18 @@ from pathlib import Path
 from urllib.parse import parse_qs, urlsplit
 try:
     from .email_parser import build_email_catalog,review_page
+    from .email_coverage import review_coverage
 except ImportError:
     from email_parser import build_email_catalog,review_page
+    from email_coverage import review_coverage
 
 ROOT = Path(__file__).resolve().parents[1]
 PILOT = ROOT / 'data/pilot/2026-11-01'
 STATIC = Path(__file__).resolve().parent / 'static'
 DB = ROOT / 'data/viewer/pilot.sqlite'
 ASSETS = {'/': ('index.html', 'text/html; charset=utf-8'),
+           '/coverage': ('coverage.html', 'text/html; charset=utf-8'),
+           '/coverage.js': ('coverage.js', 'text/javascript; charset=utf-8'),
            '/emails': ('emails.html', 'text/html; charset=utf-8'),
            '/emails.js': ('emails.js', 'text/javascript; charset=utf-8'),
            '/app.js': ('app.js', 'text/javascript; charset=utf-8'),
@@ -217,6 +221,12 @@ class Catalog:
             catalog=json.loads(c.execute('SELECT payload FROM email_catalog').fetchone()['payload'])
         return review_page(catalog,filter_name,document,page)
 
+    def coverage(self):
+        with self.connect() as c:
+            catalog=json.loads(c.execute('SELECT payload FROM email_catalog').fetchone()['payload'])
+            documents=[dict(r) for r in c.execute('SELECT id,dataset FROM documents')]
+        return review_coverage(catalog,documents)
+
     def search(self, q='', dataset='', quality='all', page=1, date_from='', date_to='', date_status='all',person=''):
         q = q.strip()
         if len(q) > 200:
@@ -354,6 +364,7 @@ class Handler(BaseHTTPRequestHandler):
             elif url.path == '/api/overview': self.json(200,self.catalog.overview())
             elif url.path == '/api/people': self.json(200,self.catalog.people())
             elif url.path == '/api/emails':self.json(200,self.catalog.emails(query.get('filter','all'),query.get('document',''),query.get('page',1)))
+            elif url.path == '/api/coverage':self.json(200,self.catalog.coverage())
             elif url.path == '/api/search':
                 self.json(200,self.catalog.search(query.get('q',''),query.get('dataset',''),query.get('quality','all'),query.get('page',1),query.get('date_from',''),query.get('date_to',''),query.get('date_status','all'),query.get('person','')))
             elif re.fullmatch(r'/api/documents/EFTA\d{8}', url.path):
