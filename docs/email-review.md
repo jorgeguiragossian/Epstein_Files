@@ -2,6 +2,8 @@
 
 This pilot adds an **Email review** workspace at `/emails`, linked from the document explorer. It shows extracted sender/recipient headers, raw dates, parsed timestamp candidates, uncertainty flags, detected body segments, and source PDF/page/line references. It does not produce contact rankings.
 
+The repository owner subsequently authorized a [full GitHub Pages export](github-pages.md), including raw parsed email data. The local cache details below describe storage on `main`; the generated export on `gh-pages` is public and downloadable. The static Email review page is `emails.html` under the project URL.
+
 ## Pilot results
 
 The final parser pass over 100 PDFs found **114 candidate header occurrences in 18 documents**. These are unverified email-layout candidates, not 114 independently established emails. A limited source-assisted spot check is recorded in [`email-review-notes.json`](../data/pilot/2026-11-01/email-review-notes.json); no corpus-wide precision or recall estimate is available.

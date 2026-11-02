@@ -2,6 +2,8 @@
 
 The first viewer searches the 100-document pilot, not the full DOJ collection. It runs on your computer and uses the PDFs and page text already downloaded during the pilot.
 
+A [GitHub Pages version](github-pages.md) also publishes the full authorized pilot text/email export for browser-only use. The instructions below describe the original local Python application; raw caches remain ignored on `main`, while the generated public export lives on `gh-pages`.
+
 ## Run
 
 From the repository root:

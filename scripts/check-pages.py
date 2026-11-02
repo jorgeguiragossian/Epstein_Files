@@ -1,0 +1,25 @@
+"""Write local Python API reference responses for the static-adapter tests."""
+import json
+import sys
+from pathlib import Path
+from urllib.parse import urlsplit,parse_qs
+ROOT=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT/'viewer'))
+from server import Catalog
+
+catalog=Catalog()
+paths=['/api/overview','/api/people','/api/documents/EFTA00039806?page=2','/api/emails?document=EFTA02212905','/api/emails?filter=repeats',
+ '/api/search','/api/search?q=grand%20jury&dataset=6','/api/search?person=ghislaine-maxwell&date_from=2020-06-29&date_to=2020-06-29',
+ '/api/search?q=EFTA00008529','/api/search?q=Epstein&quality=review','/api/search?q=SDNY_GM','/api/search?date_status=unreviewed','/api/search?person=alan-dershowitz']
+rows=[]
+for path in paths:
+    url=urlsplit(path);q={k:v[0] for k,v in parse_qs(url.query).items()}
+    if url.path=='/api/overview':result=catalog.overview()
+    elif url.path=='/api/people':result=catalog.people()
+    elif url.path.startswith('/api/documents/'):result=catalog.document(url.path.rsplit('/',1)[-1],q.get('page',1))
+    elif url.path=='/api/emails':result=catalog.emails(q.get('filter','all'),q.get('document',''),q.get('page',1))
+    else:result=catalog.search(**q)
+    rows.append({'path':path,'result':result})
+(ROOT/'tmp').mkdir(exist_ok=True)
+(ROOT/'tmp/pages-golden.json').write_text(json.dumps(rows,ensure_ascii=False),encoding='utf-8')
+print(f'Prepared {len(rows)} reference responses.')

@@ -1,6 +1,10 @@
 # Epstein_Files
 A repo to explore and analyze the Epstein files
 
+## Public pilot website
+
+[Open the GitHub Pages pilot](https://jorgeguiragossian.github.io/Epstein_Files/). The public static build contains the pilot's extracted text and parsed email data, with original PDF links pointing to DOJ. See [publication scope and deployment instructions](docs/github-pages.md).
+
 Start with the [DOJ dataset inventory](docs/data-inventory.md), observed November 1, 2026.
 
 The [inventory data](data/inventory/2026-11-01/) contains source listing snapshots and metadata, not the document collection. The [PowerShell inventory script](scripts/inventory-doj.ps1) reads public listing pages without downloading linked documents.
