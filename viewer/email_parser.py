@@ -9,6 +9,7 @@ from datetime import datetime
 from email.utils import parsedate_to_datetime
 
 VERSION='email-pilot-1'
+DATE_VERSION='email-date-2'
 ADDRESS=re.compile(r'(?<![\w.+-])[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}(?![\w.-])')
 FIELD=re.compile(r'^\s*(From|To|Cc|Bcc|Date|Sent|Subject|Message-ID)\s*:\s*(.*)$',re.I)
 LOOSE=re.compile(r'^\s*(Sent|Subject)\b\s*:?[ \t]*(.*)$',re.I)
@@ -31,15 +32,19 @@ def parse_date(raw):
     numeric=re.search(r'\b(\d{1,2})/(\d{1,2})/(\d{4})\b',raw)
     if numeric and int(numeric[1])<=12 and int(numeric[2])<=12:
         return None,['date_ambiguous_numeric']
+    cleaned=re.sub(r'^(?:Mon\w*|Tue\w*|Wed\w*|Thu\w*|Fri\w*|Sat\w*|Sun\w*)[,.]?\s*','',raw,flags=re.I)
+    for fmt in ('%B %d, %Y %I:%M %p','%B %d %Y %I:%M %p','%B %d, %Y %I:%M:%S %p',
+                '%b %d, %Y %I:%M %p','%b %d %Y %I:%M %p','%b %d, %Y %I:%M:%S %p',
+                '%m/%d/%Y %I:%M %p','%m/%d/%Y %I:%M:%S %p'):
+        try:return datetime.strptime(cleaned,fmt).isoformat(),['date_timezone_unspecified']
+        except ValueError:pass
+    # The RFC parser can accept a 12-hour string while silently discarding PM.
+    # Only use it for strings without a meridiem marker; unsupported forms stay unresolved.
+    if re.search(r'\b(?:AM|PM)\b',raw,re.I):return None,['date_unparsed']
     try:
         value=parsedate_to_datetime(raw)
         if value:return value.isoformat(),([] if value.tzinfo else ['date_timezone_unspecified'])
     except (ValueError,TypeError,OverflowError):pass
-    cleaned=re.sub(r'^(?:Mon\w*|Tue\w*|Wed\w*|Thu\w*|Fri\w*|Sat\w*|Sun\w*)[,.]?\s*','',raw,flags=re.I)
-    for fmt in ('%B %d, %Y %I:%M %p','%B %d %Y %I:%M %p','%B %d, %Y %I:%M:%S %p',
-                '%m/%d/%Y %I:%M %p','%m/%d/%Y %I:%M:%S %p'):
-        try:return datetime.strptime(cleaned,fmt).isoformat(),['date_timezone_unspecified']
-        except ValueError:pass
     return None,['date_unparsed']
 
 
@@ -124,7 +129,7 @@ def parse_document(extracted,file_id,dataset,source_sha256):
             'headers':fields,'sender_addresses':sender,'recipient_addresses':recipients,'raw_date':raw_date,
             'parsed_timestamp_candidate':timestamp,'body':body,
             'body_pages':sorted({row['page'] for row in body_lines}),'flags':sorted(set(flags)),
-            'visible_fingerprint':fingerprint,'strong_visible_key':eligible,'parser_version':VERSION})
+            'visible_fingerprint':fingerprint,'strong_visible_key':eligible,'parser_version':VERSION,'date_parser_version':DATE_VERSION})
     return records
 
 
@@ -149,7 +154,7 @@ def build_email_catalog(prepared,validation=None,boundaries=None):
         records+=parse_document(extracted,metric['file_id'],metric['dataset'],metric['sha256'])
     groups=group_records(records)
     flags={flag:sum(flag in r['flags'] for r in records) for flag in sorted({f for r in records for f in r['flags']})}
-    summary={'parser_version':VERSION,'documents_scanned':len(prepared),'candidate_occurrences':len(records),
+    summary={'parser_version':VERSION,'date_parser_version':DATE_VERSION,'documents_scanned':len(prepared),'candidate_occurrences':len(records),
         'documents_with_candidates':len({r['file_id'] for r in records}),'visible_groups':len(groups),
         'repeat_groups':sum(g['occurrences']>1 for g in groups),
         'exact_visible_copy_groups':sum(g['kind']=='exact_visible_copies' for g in groups),

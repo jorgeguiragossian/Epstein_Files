@@ -13,6 +13,21 @@ def extract(pages,key='fixture'):
 
 
 class EmailTests(unittest.TestCase):
+    def test_meridiem_is_preserved_including_noon_and_midnight(self):
+        for clock,hour in [('7:03 PM',19),('7:03 AM',7),('12:03 PM',12),('12:03 AM',0)]:
+            with self.subTest(clock=clock):
+                stamp,flags=emails.parse_date('Wednesday, March 11, 2020 '+clock)
+                self.assertEqual(stamp,f'2020-03-11T{hour:02}:03:00')
+                self.assertEqual(flags,['date_timezone_unspecified'])
+        self.assertEqual(emails.parse_date('March 11, 2020 6:25:42 PM')[0],'2020-03-11T18:25:42')
+        self.assertEqual(emails.parse_date('Wednesday, Jul 18 2018 2:32 PM')[0],'2018-07-18T14:32:00')
+
+    def test_unsupported_meridiem_forms_do_not_fall_through_to_rfc(self):
+        for raw in ['March 11, 2020 19:03 PM','March 11, 2020 7:03 PM EDT','cipher 10, 2018 4:37 PM']:
+            with self.subTest(raw=raw):self.assertEqual(emails.parse_date(raw),(None,['date_unparsed']))
+        self.assertEqual(emails.parse_date('Mon 5/1/2017 6:43 PM'),(None,['date_ambiguous_numeric']))
+        self.assertEqual(emails.parse_date('Wed, 11 Mar 2020 23:04:47 +0000')[0],'2020-03-11T23:04:47+00:00')
+
     def test_header_order_date_context_and_redacted_values(self):
         rows=extract(['To:\nFrom:\nSubject: Meeting\nMay 18, 2017 1:00 PM: a date in the body\nEFTA00000001'])
         self.assertEqual(len(rows),1)

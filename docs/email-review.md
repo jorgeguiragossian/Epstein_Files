@@ -62,3 +62,5 @@ A subsequent [15-candidate review](email-validation.md) adds source-bound annota
 The five flagged boundary cases now include [source-linked body breakdowns](email-boundaries.md), preserving every original detected body and group while separating quoted text for inspection.
 
 A [second 15-candidate batch](email-review-batch-2.md) brings coverage to 30 candidates and 13 source-bound header associations. Ten candidates now need body/quote-boundary attention; these observations remain ineligible for contact rankings.
+
+The subsequent [AM/PM parser correction](email-date-parser.md) fixes nine derived timestamps and leaves one previously parsed damaged date unresolved. All five source-reviewed clocks now match. Raw evidence and grouping remain unchanged.

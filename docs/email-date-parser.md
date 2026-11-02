@@ -1,0 +1,9 @@
+# AM/PM timestamp correction
+
+The date parser now processes supported 12-hour clock formats before the RFC email-date parser. The RFC parser had accepted some human-readable dates while silently ignoring PM, turning 7:03 PM into 07:03. Noon, midnight, seconds, full/abbreviated month names and existing numeric-date ambiguity handling have regression checks. Unsupported strings containing AM/PM remain unresolved rather than falling through to that permissive parser. Timezones are not invented.
+
+The complete 114-candidate comparison changes ten parsed values: nine PM hours are corrected and one damaged weekday string (`hursday, March 03, 2011 10:24 AM`) becomes unresolved. The remaining 104 timestamps are unchanged. All five source-reviewed PDF clock readings now match their parsed candidates. The other four hour corrections follow explicit PM in the raw extraction; they are not additional visual source reviews.
+
+Raw headers, raw dates, bodies, provenance, candidate IDs, review evidence, body partitions and copy groups remain unchanged. Separately versioned `date_parser_version: email-date-2` identifies this derived-field correction; the layout parser version and source-derived IDs remain stable. No unique-message or contact-ranking claims are enabled. Document date reviews and the document date filter are unaffected.
+
+The [migration report](../data/pilot/2026-11-01/email-date-migration.json) records each changed value and the five source clock checks. To reproduce the comparison, supply the previous full email catalog to `scripts/check-email-date-migration.py --baseline PATH` after rebuilding with `scripts/prepare-emails.py`. The old public catalog is available from the preceding `gh-pages` commit `b4858eb` inside `data/pilot.json` under `emails`. The checker rejects changes to non-date evidence, candidate identities or copy groups.

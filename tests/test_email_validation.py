@@ -51,3 +51,13 @@ class ValidationTests(unittest.TestCase):
         self.assertEqual(review_page(result,'boundary')['total_groups'],1)
         self.assertEqual(result['summary']['source_review']['boundary_attention'],1)
         self.assertFalse(result['summary']['contact_rankings_ready'])
+
+    def test_clock_review_is_reconciled_against_current_candidate(self):
+        from email_validation import apply_validation
+        self.validation['reviews'][0].update(source_clock_reading='7:03 PM',parsed_clock_conflict=True)
+        for stamp,conflict in [('2020-03-11T19:03:00',False),('2020-03-11T07:03:00',True),(None,True)]:
+            catalog=copy.deepcopy(self.base);catalog['records'][0]['parsed_timestamp_candidate']=stamp
+            result=apply_validation(catalog,self.validation,self.prepared)
+            review=result['records'][0]['source_review']
+            self.assertEqual(review['parsed_clock_conflict'],conflict)
+            self.assertEqual(review['source_clock_matches_candidate'],not conflict)

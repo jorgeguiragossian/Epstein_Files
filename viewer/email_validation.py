@@ -1,5 +1,6 @@
 """Source-bound review overlays. Never overwrite parsed fields or merge messages."""
 import re
+from datetime import datetime
 
 
 def apply_validation(catalog,validation,prepared):
@@ -24,6 +25,12 @@ def apply_validation(catalog,validation,prepared):
         if review['unique_message_verified'] or review['contact_count_eligible']:
             raise ValueError('Pilot source review cannot silently enable contact rankings.')
         record['source_review']=dict(review)
+        if review.get('source_clock_reading'):
+            expected=datetime.strptime(review['source_clock_reading'],'%I:%M %p').time()
+            parsed=record.get('parsed_timestamp_candidate')
+            actual=datetime.fromisoformat(parsed).time() if parsed else None
+            record['source_review']['parsed_clock_conflict']=actual!=expected
+            record['source_review']['source_clock_matches_candidate']=actual==expected
     association_ids=set()
     for association in validation['address_associations']:
         key=association['record_id']

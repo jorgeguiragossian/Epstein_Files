@@ -1,0 +1,126 @@
+{
+  "date_parser_version": "email-date-2",
+  "candidate_occurrences": 114,
+  "changed_timestamps": 10,
+  "unchanged_timestamps": 104,
+  "raw_evidence_and_groups_unchanged": true,
+  "changes": [
+    {
+      "id": "66eff07cc17a5fd96448",
+      "file_id": "EFTA00009823",
+      "source_page": 1,
+      "source_line": 8,
+      "raw_date": "Wednesday, March 11, 2020 7:03 PM",
+      "before": "2020-03-11T07:03:00",
+      "after": "2020-03-11T19:03:00"
+    },
+    {
+      "id": "6bf18e2f12fd90426c42",
+      "file_id": "EFTA00009823",
+      "source_page": 1,
+      "source_line": 20,
+      "raw_date": "Wednesday, March 11, 2020 6:25 PM",
+      "before": "2020-03-11T06:25:00",
+      "after": "2020-03-11T18:25:00"
+    },
+    {
+      "id": "5cfa5b370c0bc48d0f58",
+      "file_id": "EFTA00009823",
+      "source_page": 1,
+      "source_line": 27,
+      "raw_date": "Wednesday, March 11, 2020 6:02 PM",
+      "before": "2020-03-11T06:02:00",
+      "after": "2020-03-11T18:02:00"
+    },
+    {
+      "id": "cb028137229099c414b0",
+      "file_id": "EFTA00009865",
+      "source_page": 2,
+      "source_line": 20,
+      "raw_date": "Monday, December 14, 2020 8:39 PM",
+      "before": "2020-12-14T08:39:00",
+      "after": "2020-12-14T20:39:00"
+    },
+    {
+      "id": "6d008ade69ab073e2af3",
+      "file_id": "EFTA00039806",
+      "source_page": 2,
+      "source_line": 19,
+      "raw_date": "hursday, March 03, 2011 10:24 AM",
+      "before": "2011-03-03T10:24:00",
+      "after": null
+    },
+    {
+      "id": "e13447c87449af4edeab",
+      "file_id": "EFTA01263156",
+      "source_page": 9,
+      "source_line": 12,
+      "raw_date": "Saturday, August 25, 2018 7:30 PM",
+      "before": "2018-08-25T07:30:00",
+      "after": "2018-08-25T19:30:00"
+    },
+    {
+      "id": "28984839a8f9503eef64",
+      "file_id": "EFTA01263156",
+      "source_page": 13,
+      "source_line": 10,
+      "raw_date": "Wednesday, Jul 18 2018 2:32 PM",
+      "before": "2018-07-18T02:32:00",
+      "after": "2018-07-18T14:32:00"
+    },
+    {
+      "id": "361c5d78d23def630a5e",
+      "file_id": "EFTA01263156",
+      "source_page": 14,
+      "source_line": 10,
+      "raw_date": "Thursday, July 12, 2018 3:17 PM",
+      "before": "2018-07-12T03:17:00",
+      "after": "2018-07-12T15:17:00"
+    },
+    {
+      "id": "b4ec47f8f4614cf53e71",
+      "file_id": "EFTA01263156",
+      "source_page": 24,
+      "source_line": 1,
+      "raw_date": "October 10, 2018 4:32 PM",
+      "before": "2018-10-10T04:32:00",
+      "after": "2018-10-10T16:32:00"
+    },
+    {
+      "id": "3e1eefa742aec2e5304a",
+      "file_id": "EFTA01263156",
+      "source_page": 32,
+      "source_line": 10,
+      "raw_date": "Monday, February 26, 2018 2:19 PM",
+      "before": "2018-02-26T02:19:00",
+      "after": "2018-02-26T14:19:00"
+    }
+  ],
+  "reviewed_clock_checks": [
+    {
+      "id": "66eff07cc17a5fd96448",
+      "source_clock_reading": "7:03 PM",
+      "matches": true
+    },
+    {
+      "id": "6bf18e2f12fd90426c42",
+      "source_clock_reading": "6:25 PM",
+      "matches": true
+    },
+    {
+      "id": "5cfa5b370c0bc48d0f58",
+      "source_clock_reading": "6:02 PM",
+      "matches": true
+    },
+    {
+      "id": "e13447c87449af4edeab",
+      "source_clock_reading": "7:30 PM",
+      "matches": true
+    },
+    {
+      "id": "28984839a8f9503eef64",
+      "source_clock_reading": "2:32 PM",
+      "matches": true
+    }
+  ]
+}

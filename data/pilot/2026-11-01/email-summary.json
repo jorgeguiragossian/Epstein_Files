@@ -1,6 +1,7 @@
 {
   "summary": {
     "parser_version": "email-pilot-1",
+    "date_parser_version": "email-date-2",
     "documents_scanned": 100,
     "candidate_occurrences": 114,
     "documents_with_candidates": 18,
@@ -15,8 +16,8 @@
       "candidate_not_verified_message": 114,
       "date_ambiguous_numeric": 4,
       "date_missing": 8,
-      "date_timezone_unspecified": 25,
-      "date_unparsed": 69,
+      "date_timezone_unspecified": 24,
+      "date_unparsed": 70,
       "header_fragments_unresolved": 5,
       "later_or_nested_header": 96,
       "recipient_address_unresolved": 113,
@@ -670,7 +671,7 @@
           "flags": [
             "body_boundary_unverified",
             "candidate_not_verified_message",
-            "date_timezone_unspecified",
+            "date_unparsed",
             "later_or_nested_header",
             "recipient_address_unresolved",
             "sender_address_unresolved"
