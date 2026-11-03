@@ -73,12 +73,20 @@
   const terms=[...totals].sort((a,b)=>b[1]-a[1]||(a[0]<b[0]?-1:a[0]>b[0]?1:0)).slice(0,50).map(([term,count])=>({term,count,documents:new Set(sources.get(term).map(r=>r.file_id)).size,sources:sources.get(term).sort((a,b)=>a.file_id.localeCompare(b.file_id)||a.page-b.page)}));
   return{version:index.version,stop_words:index.stop_words,scope_documents:scope.length,eligible_dated_documents:dated.length,excluded_without_reviewed_date:scope.length-dated.length,documents_in_date_range:within.length,selected_documents:documents,selected_pages:pages,total_tokens:[...totals.values()].reduce((a,b)=>a+b,0),distinct_terms:totals.size,terms};
  }
+ function timeframes(data,p){
+  const index=data.timeframe_index,from=p.get('date_from')||'',to=p.get('date_to')||'',dataset=p.get('dataset')||'',person=p.get('person')||'';
+  if(from)day(from);if(to)day(to);if(from&&to&&from>to)throw new Error('Start date must be on or before end date.');
+  const set=dataset?integer(dataset,1,12,'Dataset'):null;if(person&&!data.people.people.some(r=>r.id===person))throw new Error('Unknown person-name filter.');
+  const scope=index.documents.filter(r=>!set||r.dataset===set),dated=scope.filter(r=>r.date_status==='dated'&&r.primary_date),within=dated.filter(r=>(!from||r.primary_date>=from)&&(!to||r.primary_date<=to)),selected=within.filter(r=>!person||r.people.includes(person)).sort((a,b)=>b.primary_date.localeCompare(a.primary_date)||b.id.localeCompare(a.id));
+  return{version:index.version,scope_documents:scope.length,eligible_dated_documents:dated.length,excluded_without_reviewed_date:scope.length-dated.length,documents_in_date_range:within.length,selected_documents:selected.length,prepared_briefs:selected.filter(r=>r.brief).length,date_evidence_only:selected.filter(r=>!r.brief).length,results:selected};
+ }
  function dispatch(data,input){
   const url=new URL(input,'https://static.invalid'),p=url.searchParams;
   if(url.pathname==='/api/overview')return data.overview;
   if(url.pathname==='/api/people')return data.people;
   if(url.pathname==='/api/coverage')return data.coverage;
   if(url.pathname==='/api/words')return wordCloud(data,p);
+  if(url.pathname==='/api/timeframes')return timeframes(data,p);
   if(url.pathname==='/api/search')return search(data,p);
   if(url.pathname==='/api/emails')return emails(data,p);
   const match=url.pathname.match(/^\/api\/documents\/(EFTA\d{8})$/);
