@@ -59,11 +59,26 @@
   }
   return{summary:catalog.summary,documents:[...new Set(catalog.records.map(r=>r.file_id))].sort(),total_groups:rows.length,page,page_size:12,results:rows.slice((page-1)*12,page*12)};
  }
+ function wordCloud(data,p){
+  const index=data.word_index,from=p.get('date_from')||'',to=p.get('date_to')||'',dataset=p.get('dataset')||'',person=p.get('person')||'',exclude=p.get('exclude')||'';
+  if(from)day(from);if(to)day(to);if(from&&to&&from>to)throw new Error('Start date must be on or before end date.');
+  const selectedDataset=dataset?integer(dataset,1,12,'Dataset'):null;
+  if(person&&!data.people.people.some(r=>r.id===person))throw new Error('Unknown person-name filter.');
+  if(exclude.length>300)throw new Error('Keep extra exclusions to 300 characters or fewer.');
+  const excluded=new Set(exclude.normalize('NFD').replace(/\p{M}/gu,'').toLowerCase().match(/[a-z]+/g)||[]),totals=new Map(),sources=new Map();let documents=0,pages=0;
+  const scope=index.documents.filter(r=>!selectedDataset||r.dataset===selectedDataset),dated=scope.filter(r=>r.date_status==='dated'&&r.primary_date),within=dated.filter(r=>(!from||r.primary_date>=from)&&(!to||r.primary_date<=to));
+  for(const doc of within){const selected=doc.pages.filter(r=>!person||r.people.includes(person));if(!selected.length)continue;documents++;pages+=selected.length;
+   for(const page of selected)for(const [term,count] of Object.entries(page.terms)){if(excluded.has(term))continue;totals.set(term,(totals.get(term)||0)+count);if(!sources.has(term))sources.set(term,[]);sources.get(term).push({file_id:doc.id,page:page.number,count});}
+  }
+  const terms=[...totals].sort((a,b)=>b[1]-a[1]||(a[0]<b[0]?-1:a[0]>b[0]?1:0)).slice(0,50).map(([term,count])=>({term,count,documents:new Set(sources.get(term).map(r=>r.file_id)).size,sources:sources.get(term).sort((a,b)=>a.file_id.localeCompare(b.file_id)||a.page-b.page)}));
+  return{version:index.version,stop_words:index.stop_words,scope_documents:scope.length,eligible_dated_documents:dated.length,excluded_without_reviewed_date:scope.length-dated.length,documents_in_date_range:within.length,selected_documents:documents,selected_pages:pages,total_tokens:[...totals.values()].reduce((a,b)=>a+b,0),distinct_terms:totals.size,terms};
+ }
  function dispatch(data,input){
   const url=new URL(input,'https://static.invalid'),p=url.searchParams;
   if(url.pathname==='/api/overview')return data.overview;
   if(url.pathname==='/api/people')return data.people;
   if(url.pathname==='/api/coverage')return data.coverage;
+  if(url.pathname==='/api/words')return wordCloud(data,p);
   if(url.pathname==='/api/search')return search(data,p);
   if(url.pathname==='/api/emails')return emails(data,p);
   const match=url.pathname.match(/^\/api\/documents\/(EFTA\d{8})$/);
