@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "prepared_on": "2026-11-02",
+  "method": "Prepared by Codex from cited native page text with source-context checks. Editorial AI-assisted drafts, not human-verified findings. Filtering selects existing briefs; no live AI call or cross-document narrative generation.",
+  "briefs": [
+    {
+      "file_id": "EFTA00039826",
+      "source_sha256": "27587c2d3f3429a1be02eb23ceda80a66266b4706cc55277d7fcdad51b16e65c",
+      "title": "Request for filing redactions",
+      "scope": "PDF page 1 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "The government letter requests redactions of third-party identifying information in filings concerning a proposed Rule 17(c) subpoena.",
+          "limitation": "This summarizes a request in the letter, not a court ruling that the request was granted.",
+          "citations": [
+            {
+              "page": 1,
+              "quote": "respectfully requests that the Court permit the redaction of the names and identifying information",
+              "page_text_sha256": "d6455f5d1a64a287e261377e122615098e441086c8c95723570fbcbe45295901"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00039881",
+      "source_sha256": "55bcc95f274cd7492877b36cceb596ad690355c1c5e1fd8be51acc09b46c7526",
+      "title": "Discovery-media access correspondence",
+      "scope": "PDF page 1 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "The letter to the detention center legal department discusses access credentials for discovery materials concerning Ghislaine Maxwell.",
+          "limitation": "Credential values are redacted; the brief does not reconstruct them or establish delivery.",
+          "citations": [
+            {
+              "page": 1,
+              "quote": "the password for the CD containing discovery materials pertinent to Ghislaine Maxwell is",
+              "page_text_sha256": "3c1270abf45072e05f8e45de78f2c03063aecaaace98e21c5f8dd3f6968fafb4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00009865",
+      "source_sha256": "4c13c335b0b1c00c584181b89f1bcef485a85f632629d41f4aaa7888f4311f63",
+      "title": "Filing schedule discussion",
+      "scope": "PDF page 1 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "A quoted email says the filing is due the next day and proposes aiming for around 5 p.m. Eastern, with flexibility later in the evening.",
+          "limitation": "This is a quoted scheduling statement within the document; it does not establish that a filing occurred at that time.",
+          "citations": [
+            {
+              "page": 1,
+              "quote": "The filing is due tomorrow, and we will likely aim to file it around 5pm ET, but we can file it later in the evening if needed.",
+              "page_text_sha256": "6fd5a66e68bfb3e714f92128bf29037e77c8cdfa175fbc6b220f5dde5bdec124"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00039419",
+      "source_sha256": "d5e231ff64593a43ca3d6a129dbeb87cec515f7d011bdb0e72cef9adaeaf05e9",
+      "title": "Response to a reported lead",
+      "scope": "PDF page 1 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "The top-level reply says the information will be passed to the FBI.",
+          "limitation": "The reply expresses an intended referral; it does not verify the quoted allegations or establish that follow-up occurred.",
+          "citations": [
+            {
+              "page": 1,
+              "quote": "We will pass this on to the FBI.",
+              "page_text_sha256": "0f76b2d745b28620fd1e082ae95bb14fee9eda673c6f3ef2eb8b325ad63423d6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA02212946",
+      "source_sha256": "3cb8ba0d0ca4a2d4bf7ec7b01f300488f5d64cf08373c5633a6832b85b87c441",
+      "title": "Proposed call participants",
+      "scope": "PDF page 1 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "The top-level message says Sir Nicholas Lloyd and John Watts will join the proposed call.",
+          "limitation": "This reports what the sender wrote; it does not establish that the call occurred or that the listed people participated.",
+          "citations": [
+            {
+              "page": 1,
+              "quote": "Please be advised that in addition to myself, Sir Nicholas Lloyd (Chairman) and John Watts (BLJDirector and former senior adviser to Prime Minister Blair) will be on the call.",
+              "page_text_sha256": "ebc39e96eea9adff047b8a645250984be6d37aea9015b0f200ecaf9efecdce38"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA02209722",
+      "source_sha256": "32a8c2f1ffc864059b6348bccfb2319ffef21e178fe66b6465802e15c198d1b4",
+      "title": "Quoted flight-booking discussion",
+      "scope": "PDF page 1 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "A quoted reply says another flight booked the previous night was canceled.",
+          "limitation": "This is a statement in a quoted chain, not independent confirmation of a booking, cancellation or completed travel.",
+          "citations": [
+            {
+              "page": 1,
+              "quote": "done-canceled other flight I booked last night",
+              "page_text_sha256": "efc96a8aae223240facb95296e401aad323b9997a1b5012cc725d5d650716b44"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA02730477",
+      "source_sha256": "ed228324eb39978c4780d013b97b7de93533ee79450dc287a7daa9e4296a7871",
+      "title": "Report on potential defense-witness research",
+      "scope": "PDF page 1 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "The report says FBI New York researched suspected defense witnesses to identify individuals and information relating to them.",
+          "limitation": "This attributes the description to the report. It does not authenticate its findings or establish the truth of allegations about any person.",
+          "citations": [
+            {
+              "page": 1,
+              "quote": "FBI New York conducted research on suspected defense witnesses in order to identify the individuals and any derogatory information related to the individuals.",
+              "page_text_sha256": "4e363b9c024d51261fbabda3946312628959b1baea2584524c6071dd1b4c65e6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA02212894",
+      "source_sha256": "decb542e4008201b0d025d59716b12542a50700c563a28ef25455e7800a1afa5",
+      "title": "Quoted meeting inquiry",
+      "scope": "PDF page 1 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "A quoted message asks whether Leon might come to see Jeffrey later that day or the next day.",
+          "limitation": "The brief preserves the names as written and does not expand their identities or establish that a meeting occurred.",
+          "citations": [
+            {
+              "page": 1,
+              "quote": "Hi Melanie. Anything from Leon re coming to see Jeffrey either late today or sometime tomorrow?",
+              "page_text_sha256": "dbfbef4d1a35f39468cbca2774beee53c928a3ad52b5bb2277476ed08bdbc24e"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

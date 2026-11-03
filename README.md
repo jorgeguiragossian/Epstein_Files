@@ -20,3 +20,5 @@ The [date-review milestone](docs/date-review.md) adds primary-date ranges and se
 The [person-name filter](docs/person-filter.md) now includes 22 curated, source-cited name phrases and highlights their matching pages. Reproducible coverage counts and deferred spelling/initial variants are saved with the pilot metadata. These are text mentions, not verified identities or relationships.
 
 The [email review workspace](docs/email-review.md), available at `/emails`, adds page-cited header/body candidates and conservative visible-copy grouping. Incomplete participants and dates remain flagged; contact rankings are not yet enabled.
+
+The [timeframe briefs](docs/timeframe-briefs.md) view selects eight prepared AI-assisted, page-scoped drafts with citations. Twenty-eight other dated documents have date evidence only; this static view does not generate live AI summaries.

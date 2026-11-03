@@ -11,6 +11,7 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'viewer'))
 from server import build_index,Catalog,STATIC,load
 from wordcloud import build_word_index
+from timeframes import validate_briefs,timeframe_index
 
 
 def replace_once(text,old,new):
@@ -34,9 +35,11 @@ def build(out,base):
     out.mkdir(parents=True,exist_ok=True);(out/'data').mkdir(exist_ok=True)
     data['coverage']=catalog.coverage()
     data['word_index']=build_word_index(documents.values())
+    briefs=validate_briefs(load(pilot/'timeframe-briefs.json'),{key:dict(sha256=d['sha256'],pages={p['number']:p['text'] for p in d['pages']}) for key,d in documents.items()})
+    data['timeframe_index']=timeframe_index(data['word_index'],{key:d['date_review'] for key,d in documents.items()},briefs)
     (out/'data/pilot.json').write_text(json.dumps(data,separators=(',',':'),ensure_ascii=False),encoding='utf-8')
-    mapping={'/':base,'/emails':base+'emails.html','/coverage':base+'coverage.html','/words':base+'words.html'}
-    for name in ['index.html','emails.html','coverage.html','words.html']:
+    mapping={'/':base,'/emails':base+'emails.html','/coverage':base+'coverage.html','/words':base+'words.html','/timeframes':base+'timeframes.html'}
+    for name in ['index.html','emails.html','coverage.html','words.html','timeframes.html']:
         html=(STATIC/name).read_text(encoding='utf-8')
         html=re.sub(r'((?:href|src)=")(/[^"#]*)(")',lambda m:m[1]+mapping.get(m[2],base+m[2].lstrip('/'))+m[3],html)
         html=html.replace('<script src=',f'<script src="{base}static-api.js" defer></script><script src=',1)
@@ -54,11 +57,12 @@ def build(out,base):
     coveragejs=(STATIC/'coverage.js').read_text(encoding='utf-8').replace("'/emails?",f"'{base}emails.html?").replace("'/?doc=",f"'{base}?doc=")
     (out/'coverage.js').write_text(coveragejs,encoding='utf-8')
     (out/'words.js').write_text((STATIC/'words.js').read_text(encoding='utf-8').replace("'/?doc=",f"'{base}?doc="),encoding='utf-8')
+    (out/'timeframes.js').write_text((STATIC/'timeframes.js').read_text(encoding='utf-8').replace("'/?doc=",f"'{base}?doc="),encoding='utf-8')
     for name in ['style.css','static-api.js']:(out/name).write_bytes((STATIC/name).read_bytes())
     # Pages caches assets independently; bind HTML to the exact built asset bytes.
-    for name in ['index.html','emails.html','coverage.html','words.html']:
+    for name in ['index.html','emails.html','coverage.html','words.html','timeframes.html']:
         html=(out/name).read_text(encoding='utf-8')
-        for asset in ['app.js','emails.js','coverage.js','words.js','static-api.js','style.css']:
+        for asset in ['app.js','emails.js','coverage.js','words.js','timeframes.js','static-api.js','style.css']:
             digest=hashlib.sha256((out/asset).read_bytes()).hexdigest()[:12]
             html=html.replace(f'{base}{asset}"',f'{base}{asset}?v={digest}"')
         (out/name).write_text(html,encoding='utf-8')

@@ -17,16 +17,20 @@ try:
     from .email_parser import build_email_catalog,review_page
     from .email_coverage import review_coverage
     from .wordcloud import build_word_index,word_cloud
+    from .timeframes import validate_briefs,timeframe_index,select_timeframe
 except ImportError:
     from email_parser import build_email_catalog,review_page
     from email_coverage import review_coverage
     from wordcloud import build_word_index,word_cloud
+    from timeframes import validate_briefs,timeframe_index,select_timeframe
 
 ROOT = Path(__file__).resolve().parents[1]
 PILOT = ROOT / 'data/pilot/2026-11-01'
 STATIC = Path(__file__).resolve().parent / 'static'
 DB = ROOT / 'data/viewer/pilot.sqlite'
 ASSETS = {'/': ('index.html', 'text/html; charset=utf-8'),
+           '/timeframes': ('timeframes.html', 'text/html; charset=utf-8'),
+           '/timeframes.js': ('timeframes.js', 'text/javascript; charset=utf-8'),
            '/words': ('words.html', 'text/html; charset=utf-8'),
            '/words.js': ('words.js', 'text/javascript; charset=utf-8'),
            '/coverage': ('coverage.html', 'text/html; charset=utf-8'),
@@ -243,6 +247,17 @@ class Catalog:
     def words(self,**query):
         return word_cloud(self.word_index(),[r['id'] for r in self.people()['people']],**query)
 
+    def timeframe_index(self):
+        with self.connect() as c:
+            sources={r['id']:dict(sha256=r['sha256'],pages={}) for r in c.execute('SELECT id,sha256 FROM documents')}
+            for r in c.execute('SELECT document_id,number,text FROM pages'):sources[r['document_id']]['pages'][r['number']]=r['text']
+            reviews={r['document_id']:json.loads(r['review_json']) for r in c.execute('SELECT document_id,review_json FROM document_dates')}
+        briefs=validate_briefs(load(PILOT/'timeframe-briefs.json'),sources)
+        return timeframe_index(self.word_index(),reviews,briefs)
+
+    def timeframes(self,**query):
+        return select_timeframe(self.timeframe_index(),[r['id'] for r in self.people()['people']],**query)
+
     def search(self, q='', dataset='', quality='all', page=1, date_from='', date_to='', date_status='all',person=''):
         q = q.strip()
         if len(q) > 200:
@@ -382,6 +397,7 @@ class Handler(BaseHTTPRequestHandler):
             elif url.path == '/api/emails':self.json(200,self.catalog.emails(query.get('filter','all'),query.get('document',''),query.get('page',1)))
             elif url.path == '/api/coverage':self.json(200,self.catalog.coverage())
             elif url.path == '/api/words':self.json(200,self.catalog.words(**{k:query.get(k,'') for k in ('date_from','date_to','dataset','person','exclude')}))
+            elif url.path == '/api/timeframes':self.json(200,self.catalog.timeframes(**{k:query.get(k,'') for k in ('date_from','date_to','dataset','person')}))
             elif url.path == '/api/search':
                 self.json(200,self.catalog.search(query.get('q',''),query.get('dataset',''),query.get('quality','all'),query.get('page',1),query.get('date_from',''),query.get('date_to',''),query.get('date_status','all'),query.get('person','')))
             elif re.fullmatch(r'/api/documents/EFTA\d{8}', url.path):

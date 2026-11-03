@@ -15,11 +15,13 @@ rows=[]
 paths+=['/api/coverage','/api/emails?filter=unreviewed','/api/emails?filter=sender','/api/emails?filter=recipient','/api/emails?filter=date']
 paths+=['/api/words','/api/words?date_from=2020-01-01&date_to=2020-12-31','/api/words?dataset=6','/api/words?person=ghislaine-maxwell','/api/words?exclude=epstein%2Ccourt','/api/words?date_from=1900-01-01&date_to=1900-01-02']
 paths+=['/api/words?date_from=2018-10-10&date_to=2018-10-10&dataset=10','/api/search?date_status=uncertain&q=EFTA02212924','/api/documents/EFTA02730477?page=1']
+paths+=['/api/timeframes','/api/timeframes?date_from=2021-04-01&date_to=2021-04-30','/api/timeframes?dataset=6','/api/timeframes?person=ghislaine-maxwell','/api/timeframes?date_from=1900-01-01&date_to=1900-01-02','/api/timeframes?date_from=2017-05-23&date_to=2017-05-23']
 for path in paths:
     url=urlsplit(path);q={k:v[0] for k,v in parse_qs(url.query).items()}
     if url.path=='/api/overview':result=catalog.overview()
     elif url.path=='/api/coverage':result=catalog.coverage()
     elif url.path=='/api/words':result=catalog.words(**q)
+    elif url.path=='/api/timeframes':result=catalog.timeframes(**q)
     elif url.path=='/api/people':result=catalog.people()
     elif url.path.startswith('/api/documents/'):result=catalog.document(url.path.rsplit('/',1)[-1],q.get('page',1))
     elif url.path=='/api/emails':result=catalog.emails(q.get('filter','all'),q.get('document',''),q.get('page',1))
