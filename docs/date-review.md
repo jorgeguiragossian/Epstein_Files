@@ -1,5 +1,7 @@
 # Primary-date review and timeframe filters
 
+This page records the original milestone. The [second batch](date-review-batch-2.md) expands current coverage to 36 dated documents, four uncertain and 60 unreviewed. The preparation script now regenerates all 40 reviewed records.
+
 Review date: November 1, 2026 (America/Los_Angeles).
 
 Twenty pilot documents were selected purposively to cover transcript covers, a reporting form, email threads, an exhibit containing forwarded correspondence, and compilations with unclear dates. Each cited PDF page was rendered and visually compared with its extracted text. This is a Codex editorial review, not human verification, authentication of the underlying document, or a representative sample.

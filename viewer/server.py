@@ -59,7 +59,7 @@ def validate_review(review, metric, extracted):
         raise ValueError('Date evidence is absent from the cited page.')
     if review['status']=='dated':
         iso_day(review['primary_date'])
-        if review['date_type'] not in ('email_sent','report','transcript_session') or review['precision']!='day':
+        if review['date_type'] not in ('email_sent','report','transcript_session','letter','presentation') or review['precision']!='day':
             raise ValueError('A dated record requires a supported date type and day precision.')
     elif review['primary_date'] is not None or review['date_type'] is not None:
         raise ValueError('Uncertain and undated reviews cannot assign a primary date.')

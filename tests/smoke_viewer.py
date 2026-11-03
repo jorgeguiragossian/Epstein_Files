@@ -22,12 +22,17 @@ def main():
     assert page['page']['number'] == 2 and page['page']['text']
     assert get('/api/search?quality=review')['total_documents'] == 52
     assert get('/api/search?q=zzznomatchpilot')['total_documents'] == 0
-    assert overview['date_status_counts']=={'dated':17,'uncertain':3,'unreviewed':80}
+    assert overview['date_status_counts']=={'dated':36,'uncertain':4,'unreviewed':60}
+    words=get('/api/words')
+    assert (words['eligible_dated_documents'],words['excluded_without_reviewed_date'])==(36,64)
+    assert get('/api/documents/EFTA00039826')['date_review']['date_type']=='letter'
+    assert get('/api/documents/EFTA00008892')['date_review']['date_type']=='presentation'
+    assert get('/api/documents/EFTA02212924')['date_review']['primary_date'] is None
     dated=get('/api/search?date_from=2019-06-18&date_to=2019-06-18')
     assert dated['total_documents']==1 and dated['results'][0]['id']=='EFTA00008529'
-    assert get('/api/search?date_status=uncertain')['total_documents']==3
+    assert get('/api/search?date_status=uncertain')['total_documents']==4
     assert get('/api/search?date_status=undated')['total_documents']==0
-    assert get('/api/search?date_status=unreviewed')['total_documents']==80
+    assert get('/api/search?date_status=unreviewed')['total_documents']==60
     assert get('/api/search?date_from=2014-01-01&date_to=2014-01-01&q=EFTA02730265')['total_documents']==0
     assert get('/api/documents/EFTA00039806')['date_review']['evidence_page']==2
     people=get('/api/people')['people']
@@ -38,7 +43,7 @@ def main():
     names={p['id']:p for p in people}
     assert names['ghislaine-maxwell']['documents']==19 and names['ghislaine-maxwell']['pages']==102
     person=get('/api/search?person=ghislaine-maxwell&date_from=2020-06-29&date_to=2020-06-29')
-    assert person['total_documents']==1 and person['results'][0]['id']=='EFTA00008631'
+    assert person['total_documents']==3 and {r['id'] for r in person['results']}=={'EFTA00008631','EFTA00008892','EFTA00008920'}
     assert person['results'][0]['matching_pages'][0]==1
     page=get('/api/documents/EFTA00008631?page=1')
     assert any(m['id']=='ghislaine-maxwell' for m in page['page']['name_mentions'])

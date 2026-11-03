@@ -1,6 +1,6 @@
 # Word cloud by reviewed document date
 
-The Word cloud page is `/words` locally and `words.html` under the public project URL. It supports inclusive start/end dates, a dataset, a curated person-name page filter, and optional extra word exclusions. With no range, it still includes only documents whose primary document dates have been reviewed as dated: currently 17 of the 100 pilot PDFs. The other 83 have uncertain or unreviewed dates and remain excluded. Counts show the date-eligible scope and the pages actually contributing after the name filter.
+The Word cloud page is `/words` locally and `words.html` under the public project URL. It supports inclusive start/end dates, a dataset, a curated person-name page filter, and optional extra word exclusions. With no range, it still includes only documents whose primary document dates have been reviewed as dated: currently 36 of the 100 pilot PDFs after the second date-review batch. The other 64 have uncertain or unreviewed dates and remain excluded. Counts show the date-eligible scope and the pages actually contributing after the name filter.
 
 The date refers to the reviewed primary date of a document, not the date of every quote, attachment or event inside it. A person selection includes only pages with a curated literal-name match, matching the explorer's page-level name semantics. It does not identify account owners or imply relationships. Review scope remains a small pilot rather than the full 12 datasets.
 

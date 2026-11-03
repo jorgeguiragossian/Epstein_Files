@@ -1,4 +1,4 @@
-"""Reproduce the curated 20-document date review and optional local QA sheets."""
+"""Reproduce two curated 20-document date review batches and optional QA sheets."""
 import argparse
 import json
 from pathlib import Path
@@ -29,6 +29,29 @@ REVIEWS = [
  ('EFTA02730265','dated','2013-08-24','email_sent',1,'Date: Sat, 24 Aug 2013 14:02:57 +0000','Top-level email header date; dates in the quoted agreement are not selected.'),
  ('EFTA02731485','dated','2023-06-12','email_sent',1,'Sent: Monda June 12 2023 1:53 PM','Visible Sent header supports June 12, 2023 despite recognition loss in the weekday; attachment dates are separate.')
 ]
+SECOND_REVIEWS=[
+ ('EFTA00008892','dated','2020-06-29','presentation',1,'June 29, 2020 Grand Jury Presentation','Date printed on the presentation cover. Dates depicted within slides are not assigned to the whole document.'),
+ ('EFTA00008920','dated','2020-06-29','transcript_session',1,'June 29, 2020','Session date below courthouse address. November 19, 2019 Additional is a separate jury designation.'),
+ ('EFTA00009229','dated','2019-10-18','transcript_session',1,'Friday, October 18, 2019','Date of the OPR interview session on the transcript cover, not the date of historical events discussed.'),
+ ('EFTA00009440','dated','2007-05-08','transcript_session',1,'May 8, 2007','Grand jury testimony session date on the cover; 07-103 is a jury identifier.'),
+ ('EFTA00009448','dated','2007-02-27','transcript_session',1,'February 27, 2007','Grand jury testimony session date on the cover.'),
+ ('EFTA00009478','dated','2007-03-20','transcript_session',1,'Tuesday, March 20, 2007','Session date below the courthouse location; COPY and ORIGINAL stamps are not dates.'),
+ ('EFTA00009502','dated','2007-04-24','transcript_session',1,'Tuesday, April 24, 2007','Grand jury session date on the transcript cover.'),
+ ('EFTA00009512','dated','2007-05-15','transcript_session',1,'Tuesday, May 15, 2007','Grand jury testimony session date on the cover.'),
+ ('EFTA00009586','dated','2007-04-24','transcript_session',1,'April 24, 2007','Transcript date visible on the rotated cover. Preserve native extraction and do not infer another document assembly date.'),
+ ('EFTA00009632','dated','2007-02-06','transcript_session',1,'Tuesday, February 6, 2007','Grand jury session date printed below the location.'),
+ ('EFTA00039826','dated','2021-04-23','letter',1,'April 23, 2021','Letter date above the delivery method; April 21 court order and April 19 correspondence are references within its text.'),
+ ('EFTA00039881','dated','2020-11-18','letter',1,'November 18, 2020','Date printed at the top of the letter. This does not establish when delivery occurred.'),
+ ('EFTA02209722','dated','2017-04-06','email_sent',1,'Sent Thur 4/6/2017 1:14:59 PM','Top-level Sent header. Repeated textual Apr 6, 2017 dates in the chain support this source-specific month/day interpretation.'),
+ ('EFTA02212894','dated','2017-05-03','email_sent',1,'Wed 5/3/2017 12:40:05 PM','Top-level header date printed beside Sent. Textual May 3, 2017 quoted headers support this source-specific month/day reading.'),
+ ('EFTA02212924','uncertain',None,None,1,'May 23, 2017 2:00 PM','Reminder event date in the body; no labeled sent or creation date is visible. Keep the document outside primary-date range analysis.'),
+ ('EFTA02212946','dated','2017-05-03','email_sent',1,'Sent Wed 5/3/2017 12:42:47 PM','Top-level Sent header. Quoted May 2 correspondence and tomorrow context support May 3; quoted dates are not selected as primary.'),
+ ('EFTA02212961','dated','2017-05-16','email_sent',1,'Sent all i2:13:52 PM','Visible PDF header reads Tue 5/16/2017 2:13:52 PM, despite severe extraction loss in the date. Use the displayed calendar day; raw extraction remains unchanged.'),
+ ('EFTA02730477','dated','2022-01-19','report',1,'19 January 2022','Report issue date at upper right. Template effective 10-1-2021 and historical dates in the report are not its primary date. This date review does not authenticate report claims.'),
+ ('EFTA01263156','dated','2018-10-10','email_sent',1,'Sent: cipher 10, 2018 4:37 PM','Visible outer Sent header reads Wednesday October 10, 2018 4:37 PM. Native month recognition is damaged. Quoted September 30 notice and travel-plan dates are not the primary outer email date; exhibit assembly date is unknown.'),
+ ('EFTA01263272','dated','2019-04-09','transcript_session',1,'April 9, 2019','Conference session date under New York, N.Y. on the transcript cover; 19 Misc. 149 is a case identifier.')
+]
+REVIEWS+=SECOND_REVIEWS
 
 
 def main(render=False):
@@ -44,8 +67,9 @@ def main(render=False):
             'evidence_page':page,'evidence_quote':quote,'notes':note,
             'review_method':'Codex visual comparison of cited PDF page with extracted text; editorial date assignment, not independent authentication',
             'timezone_policy':'Use calendar day as displayed in source; do not infer or convert an unspecified timezone.'})
+        if any(r[0]==doc for r in SECOND_REVIEWS):records[-1]['reviewed_on']='2026-11-02'
     path = PILOT/'date-reviews.json'
-    path.write_text(json.dumps({'schema_version':1,'reviewed_on':'2026-11-01','scope':'20 purposively selected documents; all other pilot documents remain unreviewed. Only primary dates with status dated participate in range filters.','reviews':records},indent=2)+'\n',encoding='utf-8')
+    path.write_text(json.dumps({'schema_version':1,'reviewed_on':'2026-11-02','scope':'40 purposively selected documents in two batches; all other pilot documents remain unreviewed. Only primary dates with status dated participate in range filters.','reviews':records},indent=2)+'\n',encoding='utf-8')
     print(f'Prepared {len(records)} date reviews.')
     if render:
         import pypdfium2 as pdfium
