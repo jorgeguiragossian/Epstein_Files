@@ -16,15 +16,19 @@ from urllib.parse import parse_qs, urlsplit
 try:
     from .email_parser import build_email_catalog,review_page
     from .email_coverage import review_coverage
+    from .wordcloud import build_word_index,word_cloud
 except ImportError:
     from email_parser import build_email_catalog,review_page
     from email_coverage import review_coverage
+    from wordcloud import build_word_index,word_cloud
 
 ROOT = Path(__file__).resolve().parents[1]
 PILOT = ROOT / 'data/pilot/2026-11-01'
 STATIC = Path(__file__).resolve().parent / 'static'
 DB = ROOT / 'data/viewer/pilot.sqlite'
 ASSETS = {'/': ('index.html', 'text/html; charset=utf-8'),
+           '/words': ('words.html', 'text/html; charset=utf-8'),
+           '/words.js': ('words.js', 'text/javascript; charset=utf-8'),
            '/coverage': ('coverage.html', 'text/html; charset=utf-8'),
            '/coverage.js': ('coverage.js', 'text/javascript; charset=utf-8'),
            '/emails': ('emails.html', 'text/html; charset=utf-8'),
@@ -227,6 +231,18 @@ class Catalog:
             documents=[dict(r) for r in c.execute('SELECT id,dataset FROM documents')]
         return review_coverage(catalog,documents)
 
+    def word_index(self):
+        with self.connect() as c:
+            docs={r['id']:dict(id=r['id'],dataset=r['dataset'],date_review={'status':r['status'],'primary_date':r['primary_date']},pages=[]) for r in c.execute("SELECT d.id,d.dataset,COALESCE(v.status,'unreviewed') status,v.primary_date FROM documents d LEFT JOIN document_dates v ON v.document_id=d.id ORDER BY d.dataset,d.id")}
+            names={}
+            for r in c.execute('SELECT page_id,person_id FROM name_mentions'):names.setdefault(r['page_id'],[]).append({'id':r['person_id']})
+            for r in c.execute("SELECT p.id,p.document_id,p.number,p.text FROM pages p JOIN document_dates v ON v.document_id=p.document_id WHERE v.status='dated' ORDER BY p.document_id,p.number"):
+                docs[r['document_id']]['pages'].append(dict(number=r['number'],text=r['text'],name_mentions=names.get(r['id'],[])))
+        return build_word_index(docs.values())
+
+    def words(self,**query):
+        return word_cloud(self.word_index(),[r['id'] for r in self.people()['people']],**query)
+
     def search(self, q='', dataset='', quality='all', page=1, date_from='', date_to='', date_status='all',person=''):
         q = q.strip()
         if len(q) > 200:
@@ -365,6 +381,7 @@ class Handler(BaseHTTPRequestHandler):
             elif url.path == '/api/people': self.json(200,self.catalog.people())
             elif url.path == '/api/emails':self.json(200,self.catalog.emails(query.get('filter','all'),query.get('document',''),query.get('page',1)))
             elif url.path == '/api/coverage':self.json(200,self.catalog.coverage())
+            elif url.path == '/api/words':self.json(200,self.catalog.words(**{k:query.get(k,'') for k in ('date_from','date_to','dataset','person','exclude')}))
             elif url.path == '/api/search':
                 self.json(200,self.catalog.search(query.get('q',''),query.get('dataset',''),query.get('quality','all'),query.get('page',1),query.get('date_from',''),query.get('date_to',''),query.get('date_status','all'),query.get('person','')))
             elif re.fullmatch(r'/api/documents/EFTA\d{8}', url.path):

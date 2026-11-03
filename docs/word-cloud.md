@@ -1,0 +1,13 @@
+# Word cloud by reviewed document date
+
+The Word cloud page is `/words` locally and `words.html` under the public project URL. It supports inclusive start/end dates, a dataset, a curated person-name page filter, and optional extra word exclusions. With no range, it still includes only documents whose primary document dates have been reviewed as dated: currently 17 of the 100 pilot PDFs. The other 83 have uncertain or unreviewed dates and remain excluded. Counts show the date-eligible scope and the pages actually contributing after the name filter.
+
+The date refers to the reviewed primary date of a document, not the date of every quote, attachment or event inside it. A person selection includes only pages with a curated literal-name match, matching the explorer's page-level name semantics. It does not identify account owners or imply relationships. Review scope remains a small pilot rather than the full 12 datasets.
+
+Words are English alphabetic tokens of three or more letters, lowercased with accents normalized. The fixed common-word list is available in the interface. Common words, header terms, month/day names, recognized document stamps, digit-bearing identifiers, URLs and addresses are excluded. Additional exclusions are normalized in the same way. Raw extraction stays unchanged. OCR errors, repeated quotes, copies and boilerplate remain possible sources of frequency bias; no deduplication or AI interpretation is applied.
+
+Recognized repeated transcript-vendor footer lines (Free State Reporting, its transcription label, and D.C./Baltimore/Annapolis phone lines) are excluded as whole lines. Ordinary body uses of words such as reporting remain countable. Other boilerplate may remain; the extra exclusions field can help inspect its effect.
+
+The top 50 terms sort by descending frequency with alphabetical ties. Display size uses a square-root frequency scale. Selecting a word displays every contributing PDF/page with its token count and a link to the source page. Counts are word occurrences, not unique communications, people or events. The full contributing-page list supports all displayed terms; it is not a sample of their occurrences.
+
+`viewer/wordcloud.py` produces deterministic per-page token counts and the local `/api/words` response. The static build exports the same precomputed token index; the browser filters and aggregates it without retokenizing. Local/static API comparisons cover the default cloud, date ranges, dataset and person selection, exclusions, and empty results. Synthetic tests cover token artifacts, source totals, inclusive date bounds and invalid input. No raw documents, parsed email fields or review decisions are modified.

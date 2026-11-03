@@ -1,0 +1,25 @@
+const $=s=>document.querySelector(s);const initial=new URL(location.href).searchParams;let version=0;
+function node(tag,text){const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n;}
+function inspect(entry){
+ $('#word-evidence-title').textContent=`“${entry.term}” · ${entry.count} occurrences in ${entry.documents} documents`;
+ const list=node('ul');list.className='word-source-list';
+ for(const source of entry.sources){const li=node('li'),a=node('a',`${source.file_id} · PDF page ${source.page} · ${source.count} occurrences`);a.href='/?doc='+encodeURIComponent(source.file_id)+'&pdfpage='+source.page;li.append(a);list.append(li);}
+ $('#word-sources').replaceChildren(list);for(const b of document.querySelectorAll('.word-cloud button'))b.setAttribute('aria-pressed',String(b.dataset.term===entry.term));
+}
+async function refresh(){
+ const token=++version;const params=new URLSearchParams();for(const [key,id] of [['date_from','word-from'],['date_to','word-to'],['dataset','word-dataset'],['person','word-person'],['exclude','word-exclude']])if($('#'+id).value)params.set(key,$('#'+id).value);
+ const url=new URL(location.href);url.search=params.toString();history.replaceState(null,'',url);$('#word-status').textContent='Counting source text…';$('#word-cloud').replaceChildren();$('#word-sources').replaceChildren();$('#word-stats').replaceChildren();$('#word-scope').textContent='';$('#word-evidence-title').textContent='Select a word to inspect its evidence.';
+ try{const response=await fetch('/api/words?'+params,{cache:'no-store'}),data=await response.json();if(!response.ok)throw new Error(data.error||'Could not generate word cloud.');if(token!==version)return;
+ $('#word-status').textContent=data.terms.length?`${data.distinct_terms} distinct words after exclusions · top ${data.terms.length} shown.`:'No eligible words match these filters. Try another date range, dataset or name.';
+ $('#word-stopwords').textContent=data.stop_words.join(', ');
+ $('#word-scope').textContent=`${data.eligible_dated_documents} of ${data.scope_documents} pilot documents in this dataset scope have a usable reviewed date; ${data.excluded_without_reviewed_date} are excluded without one. ${data.documents_in_date_range} dated documents fall in the selected range; ${data.selected_documents} contribute pages after the name filter. This is partial pilot coverage.`;
+ for(const [value,label] of [[data.selected_documents,'CONTRIBUTING DOCUMENTS'],[data.selected_pages,'SELECTED PAGES'],[data.total_tokens,'WORD OCCURRENCES'],[data.excluded_without_reviewed_date,'EXCLUDED WITHOUT REVIEWED DATE']]){const d=node('div');d.append(node('strong',value),node('span',label));$('#word-stats').append(d);}
+ const max=data.terms[0]?.count||1,min=data.terms.at(-1)?.count||1;
+ for(const entry of data.terms){const button=node('button',entry.term);button.type='button';button.dataset.term=entry.term;button.setAttribute('aria-pressed','false');button.setAttribute('aria-label',`${entry.term}: ${entry.count} occurrences in ${entry.documents} documents; inspect source pages`);button.title=`${entry.count} occurrences`;button.style.fontSize=(1+2*(Math.sqrt(entry.count)-Math.sqrt(min))/Math.max(1,Math.sqrt(max)-Math.sqrt(min)))+'rem';button.addEventListener('click',()=>inspect(entry));$('#word-cloud').append(button);}
+ }catch(error){if(token===version)$('#word-status').textContent=error.message;}
+}
+async function init(){try{const response=await fetch('/api/people'),people=await response.json();if(!response.ok)throw new Error('Could not load name filters.');for(let i=1;i<=12;i++){const o=node('option',`Dataset ${i}`);o.value=i;$('#word-dataset').append(o);}for(const p of people.people){const o=node('option',p.label);o.value=p.id;$('#word-person').append(o);}
+ for(const [key,id] of [['date_from','word-from'],['date_to','word-to'],['dataset','word-dataset'],['person','word-person'],['exclude','word-exclude']])if(initial.has(key))$('#'+id).value=initial.get(key);
+ $('#word-filters').addEventListener('submit',e=>{e.preventDefault();refresh();});await refresh();
+ }catch(error){$('#word-status').textContent=error.message;}}
+init();

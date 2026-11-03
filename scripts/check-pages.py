@@ -13,10 +13,12 @@ paths=['/api/overview','/api/people','/api/documents/EFTA00039806?page=2','/api/
  '/api/search?q=EFTA00008529','/api/search?q=Epstein&quality=review','/api/search?q=SDNY_GM','/api/search?date_status=unreviewed','/api/search?person=alan-dershowitz']
 rows=[]
 paths+=['/api/coverage','/api/emails?filter=unreviewed','/api/emails?filter=sender','/api/emails?filter=recipient','/api/emails?filter=date']
+paths+=['/api/words','/api/words?date_from=2020-01-01&date_to=2020-12-31','/api/words?dataset=6','/api/words?person=ghislaine-maxwell','/api/words?exclude=epstein%2Ccourt','/api/words?date_from=1900-01-01&date_to=1900-01-02']
 for path in paths:
     url=urlsplit(path);q={k:v[0] for k,v in parse_qs(url.query).items()}
     if url.path=='/api/overview':result=catalog.overview()
     elif url.path=='/api/coverage':result=catalog.coverage()
+    elif url.path=='/api/words':result=catalog.words(**q)
     elif url.path=='/api/people':result=catalog.people()
     elif url.path.startswith('/api/documents/'):result=catalog.document(url.path.rsplit('/',1)[-1],q.get('page',1))
     elif url.path=='/api/emails':result=catalog.emails(q.get('filter','all'),q.get('document',''),q.get('page',1))
