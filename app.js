@@ -9,7 +9,7 @@ state.dateStatus = params.get('date_status') || 'all';
 state.person=params.get('person')||'';
 state.people=[];
 const dateLabels = {dated:'Reviewed date',uncertain:'Uncertain date',undated:'Reviewed · undated',unreviewed:'Date not yet reviewed'};
-const dateTypes = {email_sent:'Email sent date',report:'Report date',transcript_session:'Transcript session date'};
+const dateTypes = {email_sent:'Email sent date',report:'Report date',transcript_session:'Transcript session date',letter:'Letter date',presentation:'Presentation date'};
 const format = (number) => Number(number).toLocaleString('en-US');
 
 function node(tag, className, text) {
