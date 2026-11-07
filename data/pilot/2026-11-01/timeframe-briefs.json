@@ -1,6 +1,7 @@
 {
   "schema_version": 1,
   "prepared_on": "2026-11-02",
+  "updated_on": "2026-11-07",
   "method": "Prepared by Codex from cited native page text with source-context checks. Editorial AI-assisted drafts, not human-verified findings. Filtering selects existing briefs; no live AI call or cross-document narrative generation.",
   "briefs": [
     {
@@ -16,7 +17,12 @@
           "citations": [
             {
               "page": 1,
-              "quote": "respectfully requests that the Court permit the redaction of the names and identifying information",
+              "quote": "the Government seeks a limited number of redactions, which are narrowly tailored to protect the privacy interests of third parties.",
+              "page_text_sha256": "d6455f5d1a64a287e261377e122615098e441086c8c95723570fbcbe45295901"
+            },
+            {
+              "page": 1,
+              "quote": "contained in filings regarding the defense's proposed Rule 17(c) subpoena.",
               "page_text_sha256": "d6455f5d1a64a287e261377e122615098e441086c8c95723570fbcbe45295901"
             }
           ]
@@ -37,6 +43,11 @@
             {
               "page": 1,
               "quote": "the password for the CD containing discovery materials pertinent to Ghislaine Maxwell is",
+              "page_text_sha256": "3c1270abf45072e05f8e45de78f2c03063aecaaace98e21c5f8dd3f6968fafb4"
+            },
+            {
+              "page": 1,
+              "quote": "MDC\u2014Metropolitan Detention Center Legal Department",
               "page_text_sha256": "3c1270abf45072e05f8e45de78f2c03063aecaaace98e21c5f8dd3f6968fafb4"
             }
           ]
@@ -158,6 +169,211 @@
               "page": 1,
               "quote": "Hi Melanie. Anything from Leon re coming to see Jeffrey either late today or sometime tomorrow?",
               "page_text_sha256": "dbfbef4d1a35f39468cbca2774beee53c928a3ad52b5bb2277476ed08bdbc24e"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00005705",
+      "source_sha256": "f0706bcbb26996637869487cf88c1111a787dceb8041e45b785139c16b591ae1",
+      "title": "Report on photographs received",
+      "scope": "PDF page 1 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "The report records receipt of eight photographs and says they will be forwarded separately.",
+          "limitation": "This summarizes what the report records; subjects and senders are redacted, and receipt or later forwarding is not independently confirmed.",
+          "citations": [
+            {
+              "page": 1,
+              "quote": "Source also has received 8 current photographs of that were forwarded by to ATP-Jacksonville recently.These will be forwarded to MM under separate cover.",
+              "page_text_sha256": "adb38dbea66fa468e461264c09f1cf639c7af681265c9fcb084b9ef6b29d14c5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00009823",
+      "source_sha256": "4d8719325cb2540fef6b22bf3c531f11010cf4a8f348e2ec627d0ca4ae5763e5",
+      "title": "Quoted publicity-value estimate",
+      "scope": "PDF page 1 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "A quoted email estimates the article discussed in the chain has more than $4 million in publicity value.",
+          "limitation": "The figure is attributed to a quoted message. Its calculation, readership and monetary value are not verified by this brief.",
+          "citations": [
+            {
+              "page": 1,
+              "quote": "This article is estimated to have over $4M in publicity value. Insane.",
+              "page_text_sha256": "f17bebac8adb32c3f8a0a6bf2c1eb03286c17baa8cbb48dedf8d0963148b3e82"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00009853",
+      "source_sha256": "2ab03a41c925e7916148964e7f12003d23766a9c7d756f8906eb5988cac53f39",
+      "title": "Quoted meeting arrangements",
+      "scope": "PDF page 1 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "A quoted message states that a meeting is confirmed for 3 p.m. on Monday.",
+          "limitation": "This preserves the quoted scheduling statement. It does not identify redacted participants or locations, establish the meeting occurred, or resolve the outer reply mentioning 10/31.",
+          "citations": [
+            {
+              "page": 1,
+              "quote": "We are confirmed for a meeting at 3:00 p.m. on Monday at See you then. Thanks.",
+              "page_text_sha256": "cc67d645b01e252d0825caea1d946b89a7f3b73a6b0691095e1ac52e5f8b652d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00009882",
+      "source_sha256": "2681a773b34592dce3ca314e905c83e9b1352d0a600882e1dcc7a2b21f3386b1",
+      "title": "Request for coordinator contact information",
+      "scope": "PDF page 1 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "A quoted message requests contact information for a national trafficking coordinator who had reached out the previous day.",
+          "limitation": "This is a request within a quoted exchange. Redacted identities and contact details are not reconstructed.",
+          "citations": [
+            {
+              "page": 1,
+              "quote": "Can you send us contact info for the National trafficking coordinator who reached out to you yesterday?",
+              "page_text_sha256": "0acb0b314f86c648798bb999fa65bec23adce85f93868eb2706e5d3677affcb4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00009890",
+      "source_sha256": "ee13b6d7b1609b3c267da58b3b5969968336a22e92ace49eea4e5a1c3a582f42",
+      "title": "Intended filing of an attached letter",
+      "scope": "PDF page 1 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "The top-level sender says an attached letter is planned for filing that evening.",
+          "limitation": "The brief reports an intention in the email; it does not authenticate the attachment or establish that the filing occurred.",
+          "citations": [
+            {
+              "page": 1,
+              "quote": "As discussed, attached is the letter that I plan to file this evening.",
+              "page_text_sha256": "eb873e613ca1e15ec96f5c323992295f622a89b21a89f095c4dcba25ad34815e"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00039790",
+      "source_sha256": "84e0325c529a8b8d6918dc99c3dee784ce36c325fe91d28c784c9503ee84d568",
+      "title": "Circulation of an opinion on pretrial motions",
+      "scope": "PDF page 1 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "The sender says Judge Nathan\u2019s opinion on most of Maxwell\u2019s pretrial motions is attached.",
+          "limitation": "This summarizes the cover email. The attached opinion and the sender\u2019s account of its rulings have not been independently checked in this brief.",
+          "citations": [
+            {
+              "page": 1,
+              "quote": "Judge Nathan's opinion on the majority of Maxwell's pretrial motions is attached.",
+              "page_text_sha256": "07e8b03e20f23938e9a15aff6b0fb7be842f4521ce7f18beaac699a9977eab26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00039806",
+      "source_sha256": "3b9dd70e7f0f5b41b0ea8a62508b77b3609a6bf55782c4e61cbb96ff5adb7689",
+      "title": "Quoted proposal for a Tuesday meeting",
+      "scope": "PDF page 2 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "A reply within the forwarded chain says Tuesday at four is suitable.",
+          "limitation": "The reply is part of an older quoted chain inside a reproduced outer email dated February 24, 2019. It does not establish that a meeting took place on that outer date.",
+          "citations": [
+            {
+              "page": 2,
+              "quote": "Tuesday at 4 is good. Thanks.",
+              "page_text_sha256": "f9979149ce09802a9dbbc143af22247e7187fbf1a49edaa95cc60d2bae593403"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA01263156",
+      "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+      "title": "Quoted change to travel plans",
+      "scope": "PDF page 1 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "A quoted notice says the Paris trip was canceled and describes planned travel from New York to Palm Beach.",
+          "limitation": "This is the quoted notice\u2019s account and plan. The containing outer email is dated October 10, 2018; this brief does not verify completed travel or assign that date to the quoted events.",
+          "citations": [
+            {
+              "page": 1,
+              "quote": "Mr. Epstein's trip to Paris has been canceled. He will travel today from his vacation home in New York, New York to his vacation home in Palm Beach, Florida",
+              "page_text_sha256": "7092fa621f0138a6f324d3c427b9126eb0dd704548530a608310ea563fb2429c"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00008892",
+      "source_sha256": "2189bf6a337dcf122e242611998c9561c66e53733ee55d7a0c396d304971215a",
+      "title": "Older letter reproduced in a presentation",
+      "scope": "PDF page 12 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "A reproduced letter says an envelope found while cleaning the Epstein Lodge is enclosed.",
+          "limitation": "The embedded letter is dated December 23, 1994, while the containing presentation is dated June 29, 2020. The envelope\u2019s contents and provenance are not authenticated by this brief.",
+          "citations": [
+            {
+              "page": 12,
+              "quote": "Enclosed is the envelope we recently found in cleaning the Epstein Lodge.",
+              "page_text_sha256": "67607925d315e41d08c2ae128278ff231004aca700897dd7f80df60a0c4b33b9"
+            },
+            {
+              "page": 12,
+              "quote": "December 23, 1994",
+              "page_text_sha256": "67607925d315e41d08c2ae128278ff231004aca700897dd7f80df60a0c4b33b9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA01263272",
+      "source_sha256": "d4ae0d904c352df4c9210e00b7b6be33433e59573d07fb3b2a3c3275bdde8e52",
+      "title": "Question about contacts before a subpoena",
+      "scope": "PDF page 2 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "The court asks about contacts between the U.S. Attorney\u2019s Office and Boies Schiller before issuance of the subpoena.",
+          "limitation": "This describes a question recorded in the conference transcript. It is not a finding about improper contact or the merits of the subpoena.",
+          "citations": [
+            {
+              "page": 2,
+              "quote": "I would like to know about contacts between the United States Attorney's Office and the Boies Schiller firm prior to the issuance of the subpoena on the subject of your investigation.",
+              "page_text_sha256": "dcbf71c132f0fc8dd064053ea7b5c9aef8f7c4804a387fc4e2e2610bbacf4556"
             }
           ]
         }

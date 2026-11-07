@@ -233,7 +233,7 @@ class Catalog:
         with self.connect() as c:
             catalog=json.loads(c.execute('SELECT payload FROM email_catalog').fetchone()['payload'])
             documents=[dict(r) for r in c.execute('SELECT id,dataset FROM documents')]
-        return review_coverage(catalog,documents)
+        return review_coverage(catalog,documents,self.timeframe_index())
 
     def word_index(self):
         with self.connect() as c:
@@ -252,7 +252,7 @@ class Catalog:
             sources={r['id']:dict(sha256=r['sha256'],pages={}) for r in c.execute('SELECT id,sha256 FROM documents')}
             for r in c.execute('SELECT document_id,number,text FROM pages'):sources[r['document_id']]['pages'][r['number']]=r['text']
             reviews={r['document_id']:json.loads(r['review_json']) for r in c.execute('SELECT document_id,review_json FROM document_dates')}
-        briefs=validate_briefs(load(PILOT/'timeframe-briefs.json'),sources)
+        briefs=validate_briefs(load(PILOT/'timeframe-briefs.json'),sources,load(PILOT/'timeframe-brief-reviews.json'))
         return timeframe_index(self.word_index(),reviews,briefs)
 
     def timeframes(self,**query):

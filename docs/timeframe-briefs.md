@@ -1,5 +1,7 @@
 # Prepared timeframe briefs with citations
 
+This page describes the initial eight-brief milestone. The [November 7 evaluation](brief-evaluation-2026-11-07.md) records source checks for those eight, strengthens two citation sets, and expands current coverage to 18 prepared briefs and 18 date-evidence-only documents. Source checks remain editorial checks by the same assistant.
+
 The first timeframe view is `/timeframes` locally and `timeframes.html` on GitHub Pages. It selects prepared, AI-assisted editorial drafts by inclusive reviewed primary document dates, dataset and optional curated name. It does not call an AI API at runtime, generate a new cross-document narrative, or send source text to another service. GitHub Pages remains static and contains no credentials.
 
 Eight initial briefs summarize limited content on explicitly cited PDF pages. They were prepared by Codex from native page text and source context; they are not human-verified findings or full-document summaries. Each point has a source-attributed statement, a separate limitation, and an exact extracted quotation with a page citation. Statements about proposed calls, intended referrals, flight discussions, filing schedules and report claims do not establish that an event occurred or an allegation is true. Redacted identities and credentials are not reconstructed.

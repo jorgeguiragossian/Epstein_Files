@@ -1,11 +1,13 @@
 """Citations fail closed on changed sources; date scope excludes uncertain files."""
 import copy
 import hashlib
+import importlib.util
+import json
 from pathlib import Path
 import sys
 import unittest
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'viewer'))
-from timeframes import validate_briefs,timeframe_index,select_timeframe
+from timeframes import validate_briefs,timeframe_index,select_timeframe,brief_fingerprint
 
 
 class TimeframeTests(unittest.TestCase):
@@ -43,3 +45,28 @@ class TimeframeTests(unittest.TestCase):
         self.assertEqual(select_timeframe(index,[],date_to='1900-01-01')['results'],[])
         for query in [dict(date_from='2020-02-30'),dict(dataset='13'),dict(person='unknown'),dict(date_from='2021-01-01',date_to='2020-01-01')]:
             with self.subTest(query=query),self.assertRaises(ValueError):select_timeframe(index,[],**query)
+
+    def test_editorial_check_expires_when_statement_or_citations_change(self):
+        brief=self.prepared['briefs'][0]
+        review=dict(file_id='one',source_sha256='pdf-hash',brief_sha256=brief_fingerprint(brief),reviewer='Codex',reviewed_on='2026-11-07',result='supported_as_scoped',checks=dict(statement_support=True,attribution=True,page_scope=True,limitations=True))
+        result=validate_briefs(self.prepared,self.sources,{'reviews':[review]})
+        self.assertIn('editorial_review',result['one'])
+        self.assertNotIn('editorial_review',brief)
+        for field in ('statement','citation'):
+            changed=copy.deepcopy(self.prepared)
+            if field=='statement':changed['briefs'][0]['points'][0]['statement']='An altered claim.'
+            else:changed['briefs'][0]['points'][0]['citations'][0]['quote']='Further context.'
+            with self.subTest(field=field),self.assertRaises(ValueError):validate_briefs(changed,self.sources,{'reviews':[review]})
+        false_check=copy.deepcopy(review);false_check['checks']['attribution']=False
+        with self.assertRaises(ValueError):validate_briefs(self.prepared,self.sources,{'reviews':[false_check]})
+        injected=copy.deepcopy(self.prepared);injected['briefs'][0]['editorial_review']=review
+        with self.assertRaises(ValueError):validate_briefs(injected,self.sources)
+
+    def test_regeneration_cannot_renew_an_edited_briefs_review(self):
+        root=Path(__file__).resolve().parents[1]
+        spec=importlib.util.spec_from_file_location('prepare_briefs',root/'scripts/prepare-timeframe-briefs.py')
+        module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+        rows=json.loads((root/'data/pilot/2026-11-01/timeframe-briefs.json').read_text(encoding='utf-8'))['briefs']
+        self.assertEqual(len(module.original_reviews(rows)),8)
+        changed=copy.deepcopy(rows);changed[0]['points'][0]['statement']+=' Changed.'
+        with self.assertRaises(ValueError):module.original_reviews(changed)

@@ -35,7 +35,7 @@ def build(out,base):
     out.mkdir(parents=True,exist_ok=True);(out/'data').mkdir(exist_ok=True)
     data['coverage']=catalog.coverage()
     data['word_index']=build_word_index(documents.values())
-    briefs=validate_briefs(load(pilot/'timeframe-briefs.json'),{key:dict(sha256=d['sha256'],pages={p['number']:p['text'] for p in d['pages']}) for key,d in documents.items()})
+    briefs=validate_briefs(load(pilot/'timeframe-briefs.json'),{key:dict(sha256=d['sha256'],pages={p['number']:p['text'] for p in d['pages']}) for key,d in documents.items()},load(pilot/'timeframe-brief-reviews.json'))
     data['timeframe_index']=timeframe_index(data['word_index'],{key:d['date_review'] for key,d in documents.items()},briefs)
     (out/'data/pilot.json').write_text(json.dumps(data,separators=(',',':'),ensure_ascii=False),encoding='utf-8')
     mapping={'/':base,'/emails':base+'emails.html','/coverage':base+'coverage.html','/words':base+'words.html','/timeframes':base+'timeframes.html'}
@@ -54,7 +54,7 @@ def build(out,base):
     emailjs=replace_once(emailjs,'`/pdf/${encodeURIComponent(source.file_id)}#page=${source.source_page}`','window.PilotStatic.pdfUrl(source.file_id,source.source_page)')
     emailjs=emailjs.replace('`/?doc=',f'`{base}?doc=').replace('Open PDF ↗','DOJ PDF ↗').replace('local email','published email').replace('local review','published review').replace('local email cache','published email data')
     (out/'emails.js').write_text(emailjs,encoding='utf-8')
-    coveragejs=(STATIC/'coverage.js').read_text(encoding='utf-8').replace("'/emails?",f"'{base}emails.html?").replace("'/?doc=",f"'{base}?doc=")
+    coveragejs=(STATIC/'coverage.js').read_text(encoding='utf-8').replace("'/emails?",f"'{base}emails.html?").replace("'/?doc=",f"'{base}?doc=").replace("'/timeframes?",f"'{base}timeframes.html?")
     (out/'coverage.js').write_text(coveragejs,encoding='utf-8')
     (out/'words.js').write_text((STATIC/'words.js').read_text(encoding='utf-8').replace("'/?doc=",f"'{base}?doc="),encoding='utf-8')
     (out/'timeframes.js').write_text((STATIC/'timeframes.js').read_text(encoding='utf-8').replace("'/?doc=",f"'{base}?doc="),encoding='utf-8')

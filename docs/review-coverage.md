@@ -1,5 +1,7 @@
 # Review coverage dashboard
 
+The [November 7 brief evaluation](brief-evaluation-2026-11-07.md) adds date/brief coverage alongside the correspondence counts described below. New totals show 36 dated PDFs, 18 prepared page briefs, eight with recorded editorial source checks and 18 with date evidence only. Dataset/document rows include these denominators and links to the matching timeframe cards. The default document table now includes PDFs with either email candidates or a usable reviewed date; the checkbox shows all remaining pilot PDFs. A brief's editorial source check is separate from email-candidate review and does not change draft or verification status.
+
 The dashboard at `/coverage` locally and `coverage.html` on GitHub Pages shows candidate-level review totals by dataset and source PDF. It includes all 100 pilot PDFs across 12 datasets; documents with no detected email candidates are hidden from the document table by default and can be shown with a checkbox. A dataset selector narrows the document table while the pilot totals remain fixed. Dataset/table settings persist in the URL.
 
 Counts come from the same source-bound candidate catalog as the Email review page. Reviewed means a Codex source-assisted editorial check, not authentication, uniqueness, or eligibility for contact counting. At this milestone, 45 of 114 candidate occurrences are reviewed; 69 remain unreviewed. At least one candidate is reviewed in each of the 18 PDFs with detected email candidates, but coverage within those PDFs is partial.

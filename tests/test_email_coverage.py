@@ -24,6 +24,17 @@ class CoverageTests(unittest.TestCase):
     def test_unknown_source_rejected(self):
         with self.assertRaises(ValueError):review_coverage({'records':[{'file_id':'missing'}]},[])
 
+    def test_brief_and_date_denominators_are_document_counts(self):
+        documents=[dict(id=f'doc{i}',dataset=1 if i<3 else 2) for i in range(4)]
+        index={'documents':[dict(id='doc0',date_status='dated',primary_date='2020-01-01',brief={'editorial_review':{'reviewer':'Codex'}}),dict(id='doc1',date_status='dated',primary_date='2020-01-01',brief={'status':'draft'}),dict(id='doc2',date_status='dated',primary_date='2020-01-01',brief=None),dict(id='doc3',date_status='uncertain',primary_date=None,brief=None)]}
+        result=review_coverage({'records':[]},documents,index);t=result['totals']
+        self.assertEqual((t['eligible_dated_documents'],t['prepared_briefs'],t['source_checked_briefs'],t['date_evidence_only'],t['excluded_without_reviewed_date']),(3,2,1,1,1))
+        self.assertEqual(t['prepared_briefs']+t['date_evidence_only'],t['eligible_dated_documents'])
+        self.assertLessEqual(t['source_checked_briefs'],t['prepared_briefs'])
+        for field in ('eligible_dated_documents','prepared_briefs','source_checked_briefs','date_evidence_only','excluded_without_reviewed_date'):
+            self.assertEqual(sum(r[field] for r in result['datasets']),t[field])
+        self.assertEqual(t['candidates'],0)
+
     def test_drilldowns_preserve_group_sources(self):
         first=dict(id='one',file_id='EFTA00000001',source_page=1,source_line=1,flags=['sender_address_unresolved','date_missing'],source_review={'boundary_status':'supported_segment'})
         second=dict(id='two',file_id='EFTA00000002',source_page=1,source_line=1,flags=['recipient_address_unresolved'])

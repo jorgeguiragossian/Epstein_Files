@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "method": "Codex editorial comparison of the original eight briefs with rendered PDF pages and native text. Same-assistant review; not independent or human verification. Two citation spans expanded before recording results.",
+  "reviews": [
+    {
+      "file_id": "EFTA00039826",
+      "source_sha256": "27587c2d3f3429a1be02eb23ceda80a66266b4706cc55277d7fcdad51b16e65c",
+      "brief_sha256": "a4f72063d7a08138f9d705f9566b384b3e29cb43f49fb2fec55ea41a6e03cf34",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_after_citation_expansion",
+      "notes": "Expanded the excerpt to include the third-party privacy and Rule 17(c) context; wording continues to describe a request, not a ruling.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA00039881",
+      "source_sha256": "55bcc95f274cd7492877b36cceb596ad690355c1c5e1fd8be51acc09b46c7526",
+      "brief_sha256": "8c47b600e5b3ed35ec328b57404d7b9b76f9f3c5a7d719288a8fdf9e155a92fa",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_after_citation_expansion",
+      "notes": "Added the recipient heading to the credential excerpt so both recipient and subject are supported. Redacted values remain unreconstructed.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA00009865",
+      "source_sha256": "4c13c335b0b1c00c584181b89f1bcef485a85f632629d41f4aaa7888f4311f63",
+      "brief_sha256": "876cbde46a7e14f45e7cf0e4ddb5d55bae80bf3e0f86425d2ed8a50b15b70da1",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "Quoted scheduling language supports the brief. Its next-day timing remains attributed to the quoted email, not a verified filing.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA00039419",
+      "source_sha256": "d5e231ff64593a43ca3d6a129dbeb87cec515f7d011bdb0e72cef9adaeaf05e9",
+      "brief_sha256": "181778491a4af1882ed0ade1949a9bf4c1008f2be40622dc1a1bb78dfc341d4f",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "The top-level intended referral supports the statement; the brief makes no finding about quoted allegations or later action.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA02212946",
+      "source_sha256": "3cb8ba0d0ca4a2d4bf7ec7b01f300488f5d64cf08373c5633a6832b85b87c441",
+      "brief_sha256": "854a6369158168f9468221f71348054458bfd87d07fe113bbae4f16f2de64989",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "The top-level sender explicitly lists proposed participants. Future intent and the absence of evidence the call occurred remain clear.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA02209722",
+      "source_sha256": "32a8c2f1ffc864059b6348bccfb2319ffef21e178fe66b6465802e15c198d1b4",
+      "brief_sha256": "ab9208049e85903a9f48c7430a5f7db81a87a24fe9585295af9baa21eb14dafa",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "The cancellation claim is explicitly in a quoted reply; the brief attributes it rather than verifying travel or a booking.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA02730477",
+      "source_sha256": "ed228324eb39978c4780d013b97b7de93533ee79450dc287a7daa9e4296a7871",
+      "brief_sha256": "d8a92d854c50fd8034dc72e87c9890ff483519895f4794c0d9f1ab5e9df02c23",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "The source describes the report\u2019s research purpose. The brief does not repeat its allegations as established findings.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA02212894",
+      "source_sha256": "decb542e4008201b0d025d59716b12542a50700c563a28ef25455e7800a1afa5",
+      "brief_sha256": "383330226152f0a1e1d5c9c41228df452efec7eff33a035b4d333d62ccb769bd",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "The excerpt supports a meeting inquiry; names are preserved without identity expansion or a claim the meeting occurred.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    }
+  ]
+}

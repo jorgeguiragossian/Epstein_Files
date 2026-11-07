@@ -29,7 +29,7 @@ def main():
     assert get('/api/documents/EFTA00008892')['date_review']['date_type']=='presentation'
     assert get('/api/documents/EFTA02212924')['date_review']['primary_date'] is None
     timeline=get('/api/timeframes')
-    assert (timeline['selected_documents'],timeline['prepared_briefs'],timeline['date_evidence_only'])==(36,8,28)
+    assert (timeline['selected_documents'],timeline['prepared_briefs'],timeline['date_evidence_only'],timeline['source_checked_briefs'])==(36,18,18,8)
     assert get('/api/timeframes?date_from=2017-05-23&date_to=2017-05-23')['selected_documents']==0
     dated=get('/api/search?date_from=2019-06-18&date_to=2019-06-18')
     assert dated['total_documents']==1 and dated['results'][0]['id']=='EFTA00008529'
