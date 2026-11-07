@@ -26,3 +26,5 @@ The [timeframe briefs](docs/timeframe-briefs.md) view selects 36 prepared AI-ass
 ## Collection catalog
 
 The [resumable listing catalog](docs/catalog.md) records 24,447 observed dataset/file URL pairs across all 12 datasets, including download and extraction metadata for the 100 pilot PDFs. Normal browser capture has now traversed every advertised listing page in datasets 1–8 and 12. Datasets 9–11 have 61 observed listing pages each and remain partial. URL extensions include PDF, spreadsheets, CSV, audio and video; these are file-listing observations, not MIME verification. The full current file total remains unknown. Catalog entries outside the pilot are discovery records, not searchable document text.
+
+The [official bulk-discovery check and next extraction plan](docs/bulk-discovery-and-expansion.md) found no documented bulk route in the official sources checked. A source-bound 100-PDF expansion and ten-file dataset 8 first wave are prepared; neither has been downloaded or added to search.

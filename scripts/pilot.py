@@ -93,7 +93,7 @@ def download(out, age_confirmed):
             if used >= MAX_TOTAL:
                 result['status'] = 'total_byte_limit'
             else:
-                request = urllib.request.Request(item['url'], headers={'User-Agent': 'EpsteinFilesResearchPilot/0.1 (bounded 100-document sample)', 'Cookie': 'justiceGovAgeVerified=true'})
+                request = urllib.request.Request(item['url'], headers={'User-Agent': 'EpsteinFilesResearchPilot/0.1 (bounded document batch)', 'Cookie': 'justiceGovAgeVerified=true'})
                 with urllib.request.urlopen(request, timeout=60) as response:
                     result.update(http_status=response.status, final_url=response.url,
                         content_type=response.headers.get('Content-Type'), content_length=response.headers.get('Content-Length'))
@@ -128,7 +128,7 @@ def download(out, age_confirmed):
                 part.unlink()
         records.append(result)
         save(log, {'updated_at_utc': now(), 'max_file_bytes': MAX_FILE, 'max_total_bytes': MAX_TOTAL, 'files': records})
-        print(f"{len(records)}/100 ds{item['dataset']:02d} {item['file_id']}: {result['status']} {result.get('bytes', '')}", flush=True)
+        print(f"{len(records)}/{len(selection)} ds{item['dataset']:02d} {item['file_id']}: {result['status']} {result.get('bytes', '')}", flush=True)
         time.sleep(0.4)
 
 

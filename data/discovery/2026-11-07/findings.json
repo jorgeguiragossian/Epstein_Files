@@ -1,0 +1,44 @@
+{
+  "observed_on": "2026-11-07",
+  "conclusion": "No documented Epstein-specific bulk manifest, archive download, or public file-enumeration API found in the checked sources; availability elsewhere remains unknown.",
+  "sources": [
+    {
+      "url": "https://www.justice.gov/epstein/doj-disclosures",
+      "method": "Normal browser; expanded the Transparency Act section; saved rendered anchor links",
+      "finding": "Twelve numbered dataset links; no bulk/archive/manifest link matched the recorded search rule."
+    },
+    {
+      "url": "https://www.justice.gov/epstein/search",
+      "method": "Normal browser; one known filename query EFTA00039826",
+      "finding": "Returned the known dataset 9 PDF; no export or bulk link observed. This is not a completeness test."
+    },
+    {
+      "url": "https://www.justice.gov/developer/api-documentation/api_v1",
+      "method": "Read official API documentation",
+      "finding": "The resources section documents blog_entries and press_releases, not Epstein file enumeration."
+    },
+    {
+      "url": "https://www.justice.gov/developer",
+      "method": "Read official developer resource index",
+      "finding": "General developer resources and news APIs; no Epstein-specific file-discovery interface identified."
+    },
+    {
+      "url": "https://www.justice.gov/open/open-data",
+      "method": "Followed the official Public Data List link",
+      "finding": "Links to https://www.justice.gov/data.json."
+    },
+    {
+      "url": "https://www.justice.gov/data.json",
+      "method": "Bounded 32 MiB request; actual response 10,455,182 bytes; scanned all 3,267 dataset records",
+      "finding": "Zero case-insensitive Epstein matches anywhere within a dataset record. See hashed audit result."
+    }
+  ],
+  "limits": [
+    "Official-domain searches are not exhaustive proof of absence.",
+    "No undocumented endpoints, guessed archive URLs or third-party mirrors were used.",
+    "No messages were sent to DOJ.",
+    "No linked corpus file bodies were downloaded in this investigation.",
+    "Library search has stated format/searchability limits and is not a verified census."
+  ],
+  "decision": "Retain browser catalog as discovery fallback. Prepare a bounded 100-PDF non-random expansion from known URLs, starting with ten dataset 8 PDFs before larger processing or publication."
+}

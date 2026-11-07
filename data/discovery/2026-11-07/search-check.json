@@ -1,0 +1,14 @@
+{
+  "bulk_candidates": [],
+  "query": "EFTA00039826",
+  "result_links": [
+    {
+      "href": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00039826.pdf",
+      "text": "EFTA00039826.pdf"
+    }
+  ],
+  "url": "https://www.justice.gov/epstein/search",
+  "captured_at_utc": "2026-11-07T19:40:22.171Z",
+  "representation": "rendered_search_dom",
+  "scope": "One known pilot filename query; not a full-file enumeration"
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://www.justice.gov/data.json",
+  "retrieved_at_utc": "2026-11-07T19:39:08.079185+00:00",
+  "http_status": 200,
+  "bytes": 10455182,
+  "sha256": "55a1c04d718be7b901c850eec0b68dcea27a07c54ce0545bb3dc3865aa146157",
+  "dataset_records": 3267,
+  "match_rule": "Case-insensitive Epstein substring anywhere in each dataset record",
+  "matching_records": []
+}
