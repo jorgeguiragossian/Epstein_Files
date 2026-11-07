@@ -1,0 +1,10 @@
+{
+  "planned_files": 100,
+  "first_wave_files": 10,
+  "downloaded_files": 10,
+  "native_extracted_files": 10,
+  "remaining_unprocessed_files": 90,
+  "first_wave": "data/pilot/2026-11-07-wave-01",
+  "public_search_documents": 100,
+  "note": "The original selection is preserved. First-wave raw text remains local with quality gaps pending; remaining 90 selected files were not acquired."
+}

@@ -1,0 +1,20 @@
+{
+  "status": "downloaded_and_native_extracted_quality_gaps_pending",
+  "selected_files": 10,
+  "downloaded_files": 10,
+  "native_extracted_files": 10,
+  "pdf_pages": 49,
+  "ocr_target_pages": [
+    {
+      "file_id": "EFTA00039023",
+      "page": 2
+    }
+  ],
+  "header_detection_review_documents": [
+    "EFTA00021826",
+    "EFTA00032045"
+  ],
+  "source_context_review": "partial_13_pages",
+  "public_search_integration": false,
+  "selection_status_note": "selection.json records planning-time status; downloads.json, metrics.json and this file record the later processing outcome."
+}

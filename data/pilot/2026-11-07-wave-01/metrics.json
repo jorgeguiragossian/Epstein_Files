@@ -1,0 +1,1031 @@
+{
+  "updated_at_utc": "2026-11-07T19:51:05.235597+00:00",
+  "method": "pypdf native text only; low-text threshold <80 substantive alphanumeric characters/page, excluding EFTA stamps. Dates and email blocks are unverified candidates, never established document dates or unique messages.",
+  "files": [
+    {
+      "dataset": 8,
+      "file_id": "EFTA00009713",
+      "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00009713.pdf",
+      "sha256": "506030e1e1ec90ba36df58efd2cb4c33901cfbad20cd07487289a80cd10aac87",
+      "bytes": 7162039,
+      "status": "extracted",
+      "pypdf_version": "6.10.0",
+      "page_count": 34,
+      "pages_processed": 34,
+      "characters": 48023,
+      "low_text_pages": 1,
+      "zero_text_pages": 0,
+      "pages_with_image_xobjects": 34,
+      "date_candidate_count": 27,
+      "date_candidates": [
+        {
+          "page": 1,
+          "line": 9,
+          "raw": "July 22, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 2,
+          "line": 1,
+          "raw": "July 22, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 5,
+          "line": 56,
+          "raw": "July 22, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 6,
+          "line": 1,
+          "raw": "July 22, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 7,
+          "line": 1,
+          "raw": "July 22, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 8,
+          "line": 1,
+          "raw": "July 22, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 9,
+          "line": 4,
+          "raw": "July 21, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 10,
+          "line": 1,
+          "raw": "July 23, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 11,
+          "line": 1,
+          "raw": "July 23, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 14,
+          "line": 53,
+          "raw": "July 23, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 15,
+          "line": 1,
+          "raw": "July 23, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 17,
+          "line": 5,
+          "raw": "August 09, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 18,
+          "line": 1,
+          "raw": "August 09, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 19,
+          "line": 1,
+          "raw": "August 09, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 20,
+          "line": 1,
+          "raw": "August 09, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 21,
+          "line": 4,
+          "raw": "August 09, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 22,
+          "line": 6,
+          "raw": "August 09, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 23,
+          "line": 6,
+          "raw": "August 09, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 25,
+          "line": 6,
+          "raw": "August 10, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 26,
+          "line": 2,
+          "raw": "August 10, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 27,
+          "line": 1,
+          "raw": "August 10, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 28,
+          "line": 6,
+          "raw": "August 10, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 29,
+          "line": 6,
+          "raw": "August 10, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 30,
+          "line": 1,
+          "raw": "August 10, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 32,
+          "line": 1,
+          "raw": "August 10, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 33,
+          "line": 18,
+          "raw": "August 10, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 34,
+          "line": 1,
+          "raw": "August 10, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        }
+      ],
+      "email_header_candidate_count": 0,
+      "candidate_document_type": "unclassified",
+      "document_date": null,
+      "document_date_status": "requires_context_review",
+      "ocr_performed": false,
+      "ocr_review_needed": true,
+      "unique_words": 350,
+      "word_tokens": 3983,
+      "page_metrics": [
+        {
+          "page": 1,
+          "characters": 965,
+          "alphanumeric_characters": 605,
+          "substantive_alphanumeric_characters": 593,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 2,
+          "characters": 547,
+          "alphanumeric_characters": 375,
+          "substantive_alphanumeric_characters": 363,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 3,
+          "characters": 1232,
+          "alphanumeric_characters": 873,
+          "substantive_alphanumeric_characters": 861,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 4,
+          "characters": 1783,
+          "alphanumeric_characters": 1236,
+          "substantive_alphanumeric_characters": 1224,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 5,
+          "characters": 1908,
+          "alphanumeric_characters": 1319,
+          "substantive_alphanumeric_characters": 1307,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 6,
+          "characters": 1888,
+          "alphanumeric_characters": 1311,
+          "substantive_alphanumeric_characters": 1299,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 7,
+          "characters": 1457,
+          "alphanumeric_characters": 1048,
+          "substantive_alphanumeric_characters": 1036,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 8,
+          "characters": 109,
+          "alphanumeric_characters": 82,
+          "substantive_alphanumeric_characters": 70,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 9,
+          "characters": 1016,
+          "alphanumeric_characters": 642,
+          "substantive_alphanumeric_characters": 630,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 10,
+          "characters": 659,
+          "alphanumeric_characters": 445,
+          "substantive_alphanumeric_characters": 433,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 11,
+          "characters": 1225,
+          "alphanumeric_characters": 874,
+          "substantive_alphanumeric_characters": 862,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 12,
+          "characters": 1741,
+          "alphanumeric_characters": 1197,
+          "substantive_alphanumeric_characters": 1185,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 13,
+          "characters": 1910,
+          "alphanumeric_characters": 1332,
+          "substantive_alphanumeric_characters": 1320,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 14,
+          "characters": 2029,
+          "alphanumeric_characters": 1393,
+          "substantive_alphanumeric_characters": 1381,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 15,
+          "characters": 1244,
+          "alphanumeric_characters": 910,
+          "substantive_alphanumeric_characters": 898,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 16,
+          "characters": 1090,
+          "alphanumeric_characters": 686,
+          "substantive_alphanumeric_characters": 674,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 17,
+          "characters": 801,
+          "alphanumeric_characters": 515,
+          "substantive_alphanumeric_characters": 503,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 18,
+          "characters": 1125,
+          "alphanumeric_characters": 778,
+          "substantive_alphanumeric_characters": 766,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 19,
+          "characters": 2015,
+          "alphanumeric_characters": 1371,
+          "substantive_alphanumeric_characters": 1359,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 20,
+          "characters": 1890,
+          "alphanumeric_characters": 1312,
+          "substantive_alphanumeric_characters": 1300,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 21,
+          "characters": 2026,
+          "alphanumeric_characters": 1388,
+          "substantive_alphanumeric_characters": 1376,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 22,
+          "characters": 2016,
+          "alphanumeric_characters": 1373,
+          "substantive_alphanumeric_characters": 1361,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 23,
+          "characters": 1766,
+          "alphanumeric_characters": 1209,
+          "substantive_alphanumeric_characters": 1197,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 24,
+          "characters": 289,
+          "alphanumeric_characters": 222,
+          "substantive_alphanumeric_characters": 210,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 25,
+          "characters": 1186,
+          "alphanumeric_characters": 729,
+          "substantive_alphanumeric_characters": 717,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 26,
+          "characters": 523,
+          "alphanumeric_characters": 344,
+          "substantive_alphanumeric_characters": 332,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 27,
+          "characters": 1701,
+          "alphanumeric_characters": 1166,
+          "substantive_alphanumeric_characters": 1154,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 28,
+          "characters": 1849,
+          "alphanumeric_characters": 1280,
+          "substantive_alphanumeric_characters": 1268,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 29,
+          "characters": 1912,
+          "alphanumeric_characters": 1339,
+          "substantive_alphanumeric_characters": 1327,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 30,
+          "characters": 1938,
+          "alphanumeric_characters": 1324,
+          "substantive_alphanumeric_characters": 1312,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 31,
+          "characters": 2049,
+          "alphanumeric_characters": 1420,
+          "substantive_alphanumeric_characters": 1408,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 32,
+          "characters": 1815,
+          "alphanumeric_characters": 1234,
+          "substantive_alphanumeric_characters": 1222,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 33,
+          "characters": 1885,
+          "alphanumeric_characters": 1306,
+          "substantive_alphanumeric_characters": 1294,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 34,
+          "characters": 434,
+          "alphanumeric_characters": 327,
+          "substantive_alphanumeric_characters": 315,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        }
+      ],
+      "extraction_path": "extractions/ds08-EFTA00009713.json"
+    },
+    {
+      "dataset": 8,
+      "file_id": "EFTA00014597",
+      "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00014597.pdf",
+      "sha256": "9df8a86e36a04c5565598ce719629b58afaa28afd5b1a9466cff8f0f4381ed41",
+      "bytes": 15311,
+      "status": "extracted",
+      "pypdf_version": "6.10.0",
+      "page_count": 1,
+      "pages_processed": 1,
+      "characters": 200,
+      "low_text_pages": 0,
+      "zero_text_pages": 0,
+      "pages_with_image_xobjects": 1,
+      "date_candidate_count": 1,
+      "date_candidates": [
+        {
+          "page": 1,
+          "line": 6,
+          "raw": "16 Jul 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        }
+      ],
+      "email_header_candidate_count": 1,
+      "candidate_document_type": "email_headers_detected",
+      "document_date": null,
+      "document_date_status": "requires_context_review",
+      "ocr_performed": false,
+      "ocr_review_needed": false,
+      "unique_words": 19,
+      "word_tokens": 19,
+      "page_metrics": [
+        {
+          "page": 1,
+          "characters": 200,
+          "alphanumeric_characters": 146,
+          "substantive_alphanumeric_characters": 134,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        }
+      ],
+      "extraction_path": "extractions/ds08-EFTA00014597.json"
+    },
+    {
+      "dataset": 8,
+      "file_id": "EFTA00018844",
+      "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00018844.pdf",
+      "sha256": "63894378cba792dbe18ad7166ad321e94a6c2e245cc4fdf7f5de50385bb39b15",
+      "bytes": 64922,
+      "status": "extracted",
+      "pypdf_version": "6.10.0",
+      "page_count": 1,
+      "pages_processed": 1,
+      "characters": 1323,
+      "low_text_pages": 0,
+      "zero_text_pages": 0,
+      "pages_with_image_xobjects": 1,
+      "date_candidate_count": 4,
+      "date_candidates": [
+        {
+          "page": 1,
+          "line": 1,
+          "raw": "10/05/21",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 1,
+          "line": 12,
+          "raw": "10/5/21",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 1,
+          "line": 23,
+          "raw": "October 12, 2021",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 1,
+          "line": 27,
+          "raw": "October 5, 2021",
+          "role": "unclassified_mention",
+          "validated": false
+        }
+      ],
+      "email_header_candidate_count": 0,
+      "candidate_document_type": "unclassified",
+      "document_date": null,
+      "document_date_status": "requires_context_review",
+      "ocr_performed": false,
+      "ocr_review_needed": false,
+      "unique_words": 93,
+      "word_tokens": 167,
+      "page_metrics": [
+        {
+          "page": 1,
+          "characters": 1323,
+          "alphanumeric_characters": 1038,
+          "substantive_alphanumeric_characters": 1026,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        }
+      ],
+      "extraction_path": "extractions/ds08-EFTA00018844.json"
+    },
+    {
+      "dataset": 8,
+      "file_id": "EFTA00021826",
+      "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00021826.pdf",
+      "sha256": "021c0548096535ea509cace798f28513ff8de2bea63983f01b6239b60447d082",
+      "bytes": 287190,
+      "status": "extracted",
+      "pypdf_version": "6.10.0",
+      "page_count": 3,
+      "pages_processed": 3,
+      "characters": 8909,
+      "low_text_pages": 0,
+      "zero_text_pages": 0,
+      "pages_with_image_xobjects": 3,
+      "date_candidate_count": 1,
+      "date_candidates": [
+        {
+          "page": 1,
+          "line": 5,
+          "raw": "02 Jul 2020",
+          "role": "unclassified_mention",
+          "validated": false
+        }
+      ],
+      "email_header_candidate_count": 0,
+      "candidate_document_type": "unclassified",
+      "document_date": null,
+      "document_date_status": "requires_context_review",
+      "ocr_performed": false,
+      "ocr_review_needed": false,
+      "unique_words": 444,
+      "word_tokens": 1092,
+      "page_metrics": [
+        {
+          "page": 1,
+          "characters": 1880,
+          "alphanumeric_characters": 1515,
+          "substantive_alphanumeric_characters": 1503,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 2,
+          "characters": 4612,
+          "alphanumeric_characters": 3725,
+          "substantive_alphanumeric_characters": 3713,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 3,
+          "characters": 2417,
+          "alphanumeric_characters": 1941,
+          "substantive_alphanumeric_characters": 1929,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        }
+      ],
+      "extraction_path": "extractions/ds08-EFTA00021826.json"
+    },
+    {
+      "dataset": 8,
+      "file_id": "EFTA00026433",
+      "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00026433.pdf",
+      "sha256": "80f4d1144c4cb947bccf6de54aaa80a6540c4beba9f69d15ad93a09aa5c6b581",
+      "bytes": 12702,
+      "status": "extracted",
+      "pypdf_version": "6.10.0",
+      "page_count": 1,
+      "pages_processed": 1,
+      "characters": 173,
+      "low_text_pages": 0,
+      "zero_text_pages": 0,
+      "pages_with_image_xobjects": 1,
+      "date_candidate_count": 2,
+      "date_candidates": [
+        {
+          "page": 1,
+          "line": 4,
+          "raw": "10 Jul 2020",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 1,
+          "line": 5,
+          "raw": "2020-07-10",
+          "role": "unclassified_mention",
+          "validated": false
+        }
+      ],
+      "email_header_candidate_count": 1,
+      "candidate_document_type": "email_headers_detected",
+      "document_date": null,
+      "document_date_status": "requires_context_review",
+      "ocr_performed": false,
+      "ocr_review_needed": false,
+      "unique_words": 14,
+      "word_tokens": 14,
+      "page_metrics": [
+        {
+          "page": 1,
+          "characters": 173,
+          "alphanumeric_characters": 130,
+          "substantive_alphanumeric_characters": 118,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        }
+      ],
+      "extraction_path": "extractions/ds08-EFTA00026433.json"
+    },
+    {
+      "dataset": 8,
+      "file_id": "EFTA00029421",
+      "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00029421.pdf",
+      "sha256": "c07f949de79f2ef37bba227393f055574c2bac73045b60c48c75be0f9da7fbd1",
+      "bytes": 58044,
+      "status": "extracted",
+      "pypdf_version": "6.10.0",
+      "page_count": 1,
+      "pages_processed": 1,
+      "characters": 1766,
+      "low_text_pages": 0,
+      "zero_text_pages": 0,
+      "pages_with_image_xobjects": 1,
+      "date_candidate_count": 3,
+      "date_candidates": [
+        {
+          "page": 1,
+          "line": 4,
+          "raw": "28 Nov 2021",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 1,
+          "line": 8,
+          "raw": "November 28, 2021",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 1,
+          "line": 16,
+          "raw": "November 28, 2021",
+          "role": "unclassified_mention",
+          "validated": false
+        }
+      ],
+      "email_header_candidate_count": 2,
+      "candidate_document_type": "email_headers_detected",
+      "document_date": null,
+      "document_date_status": "requires_context_review",
+      "ocr_performed": false,
+      "ocr_review_needed": false,
+      "unique_words": 149,
+      "word_tokens": 216,
+      "page_metrics": [
+        {
+          "page": 1,
+          "characters": 1766,
+          "alphanumeric_characters": 1353,
+          "substantive_alphanumeric_characters": 1341,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        }
+      ],
+      "extraction_path": "extractions/ds08-EFTA00029421.json"
+    },
+    {
+      "dataset": 8,
+      "file_id": "EFTA00032045",
+      "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00032045.pdf",
+      "sha256": "ab429a079945ac9578cdf062318726fa5fa64fbca2cfd4b93a8ecbd3ee551722",
+      "bytes": 79248,
+      "status": "extracted",
+      "pypdf_version": "6.10.0",
+      "page_count": 2,
+      "pages_processed": 2,
+      "characters": 1879,
+      "low_text_pages": 0,
+      "zero_text_pages": 0,
+      "pages_with_image_xobjects": 2,
+      "date_candidate_count": 3,
+      "date_candidates": [
+        {
+          "page": 1,
+          "line": 4,
+          "raw": "06 Jul 2020",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 1,
+          "line": 11,
+          "raw": "Jul 6, 2020",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 1,
+          "line": 28,
+          "raw": "Jul 6, 2020",
+          "role": "unclassified_mention",
+          "validated": false
+        }
+      ],
+      "email_header_candidate_count": 0,
+      "candidate_document_type": "unclassified",
+      "document_date": null,
+      "document_date_status": "requires_context_review",
+      "ocr_performed": false,
+      "ocr_review_needed": false,
+      "unique_words": 151,
+      "word_tokens": 239,
+      "page_metrics": [
+        {
+          "page": 1,
+          "characters": 1402,
+          "alphanumeric_characters": 1026,
+          "substantive_alphanumeric_characters": 1014,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 2,
+          "characters": 477,
+          "alphanumeric_characters": 334,
+          "substantive_alphanumeric_characters": 322,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        }
+      ],
+      "extraction_path": "extractions/ds08-EFTA00032045.json"
+    },
+    {
+      "dataset": 8,
+      "file_id": "EFTA00034623",
+      "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00034623.pdf",
+      "sha256": "3b1203ddf41b750d9e4811c8ebfbd34ac958667078666ba057a07ce319d1f576",
+      "bytes": 188110,
+      "status": "extracted",
+      "pypdf_version": "6.10.0",
+      "page_count": 3,
+      "pages_processed": 3,
+      "characters": 2645,
+      "low_text_pages": 0,
+      "zero_text_pages": 0,
+      "pages_with_image_xobjects": 3,
+      "date_candidate_count": 3,
+      "date_candidates": [
+        {
+          "page": 1,
+          "line": 15,
+          "raw": "July 24, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 1,
+          "line": 17,
+          "raw": "July 23, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 3,
+          "line": 24,
+          "raw": "07-23-2019",
+          "role": "unclassified_mention",
+          "validated": false
+        }
+      ],
+      "email_header_candidate_count": 0,
+      "candidate_document_type": "unclassified",
+      "document_date": null,
+      "document_date_status": "requires_context_review",
+      "ocr_performed": false,
+      "ocr_review_needed": false,
+      "unique_words": 152,
+      "word_tokens": 266,
+      "page_metrics": [
+        {
+          "page": 1,
+          "characters": 1014,
+          "alphanumeric_characters": 790,
+          "substantive_alphanumeric_characters": 778,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 2,
+          "characters": 887,
+          "alphanumeric_characters": 664,
+          "substantive_alphanumeric_characters": 652,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 3,
+          "characters": 744,
+          "alphanumeric_characters": 508,
+          "substantive_alphanumeric_characters": 496,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        }
+      ],
+      "extraction_path": "extractions/ds08-EFTA00034623.json"
+    },
+    {
+      "dataset": 8,
+      "file_id": "EFTA00037008",
+      "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00037008.pdf",
+      "sha256": "e471f00760804000b96b6031cf8de375b6f39f2d1ba59458f2e855f0cd8d239e",
+      "bytes": 33897,
+      "status": "extracted",
+      "pypdf_version": "6.10.0",
+      "page_count": 1,
+      "pages_processed": 1,
+      "characters": 645,
+      "low_text_pages": 0,
+      "zero_text_pages": 0,
+      "pages_with_image_xobjects": 1,
+      "date_candidate_count": 2,
+      "date_candidates": [
+        {
+          "page": 1,
+          "line": 4,
+          "raw": "30 Nov 2022",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 1,
+          "line": 7,
+          "raw": "November 30, 2022",
+          "role": "unclassified_mention",
+          "validated": false
+        }
+      ],
+      "email_header_candidate_count": 1,
+      "candidate_document_type": "email_headers_detected",
+      "document_date": null,
+      "document_date_status": "requires_context_review",
+      "ocr_performed": false,
+      "ocr_review_needed": false,
+      "unique_words": 50,
+      "word_tokens": 75,
+      "page_metrics": [
+        {
+          "page": 1,
+          "characters": 645,
+          "alphanumeric_characters": 480,
+          "substantive_alphanumeric_characters": 468,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        }
+      ],
+      "extraction_path": "extractions/ds08-EFTA00037008.json"
+    },
+    {
+      "dataset": 8,
+      "file_id": "EFTA00039023",
+      "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00039023.pdf",
+      "sha256": "eb0a43a4469f378c4d9c88f4028f5d3f2994f7882dd17770807a4090d46610ed",
+      "bytes": 62842,
+      "status": "extracted",
+      "pypdf_version": "6.10.0",
+      "page_count": 2,
+      "pages_processed": 2,
+      "characters": 1799,
+      "low_text_pages": 1,
+      "zero_text_pages": 0,
+      "pages_with_image_xobjects": 2,
+      "date_candidate_count": 3,
+      "date_candidates": [
+        {
+          "page": 1,
+          "line": 4,
+          "raw": "28 Jun 2023",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 1,
+          "line": 8,
+          "raw": "June 28, 2023",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 1,
+          "line": 18,
+          "raw": "June 28, 2023",
+          "role": "unclassified_mention",
+          "validated": false
+        }
+      ],
+      "email_header_candidate_count": 1,
+      "candidate_document_type": "email_headers_detected",
+      "document_date": null,
+      "document_date_status": "requires_context_review",
+      "ocr_performed": false,
+      "ocr_review_needed": true,
+      "unique_words": 152,
+      "word_tokens": 232,
+      "page_metrics": [
+        {
+          "page": 1,
+          "characters": 1787,
+          "alphanumeric_characters": 1377,
+          "substantive_alphanumeric_characters": 1365,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 2,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        }
+      ],
+      "extraction_path": "extractions/ds08-EFTA00039023.json"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-07",
+  "reviewer": "Codex",
+  "method": "Same-assistant visual comparison of rendered source PDF pages with native text. Not independent or human verification. All ten first pages, both flagged low-text pages, and one additional roster page inspected; 13 of 49 pages total.",
+  "pages_reviewed": 13,
+  "reviews": [
+    {
+      "file_id": "EFTA00009713",
+      "page": 1,
+      "source_sha256": "506030e1e1ec90ba36df58efd2cb4c33901cfbad20cd07487289a80cd10aac87",
+      "page_text_sha256": "61b21b07336018a6fe70dd3b11c14f3e673b507679284bdd8ef9144c659b078b",
+      "finding": "Roster table layout and redactions are visible. Native text has row/column-order and character-recognition issues; do not infer staff assignments from flattened text.",
+      "next_action": "table_layout_review"
+    },
+    {
+      "file_id": "EFTA00009713",
+      "page": 8,
+      "source_sha256": "506030e1e1ec90ba36df58efd2cb4c33901cfbad20cd07487289a80cd10aac87",
+      "page_text_sha256": "cef531c0c7e01004268f073108a22817f261daf20badaa85b0f57197d4713208",
+      "finding": "The rendered page is genuinely sparse: a date and signature line. Low-text flag is not evidence of missing body text.",
+      "next_action": "no_ocr_required_for_sparse_page_observed"
+    },
+    {
+      "file_id": "EFTA00009713",
+      "page": 2,
+      "source_sha256": "506030e1e1ec90ba36df58efd2cb4c33901cfbad20cd07487289a80cd10aac87",
+      "page_text_sha256": "cb96d2aaee1b6ea9a7fcd357e4b83b4d962ef532eb404e29db9a2c4c832d7180",
+      "finding": "Roster table layout and redactions are visible. Native text has row/column-order and character-recognition issues; do not infer staff assignments from flattened text.",
+      "next_action": "table_layout_review"
+    },
+    {
+      "file_id": "EFTA00014597",
+      "page": 1,
+      "source_sha256": "9df8a86e36a04c5565598ce719629b58afaa28afd5b1a9466cff8f0f4381ed41",
+      "page_text_sha256": "f6cb269f7f7b222eddab6c8a5cff6dfd928e36510d3d3401af10c4b430f61e16",
+      "finding": "First-page rendered layout compared with native text; limited quality inspection, not a whole-document or factual verification.",
+      "next_action": "retain_native_text_for_further_review"
+    },
+    {
+      "file_id": "EFTA00018844",
+      "page": 1,
+      "source_sha256": "63894378cba792dbe18ad7166ad321e94a6c2e245cc4fdf7f5de50385bb39b15",
+      "page_text_sha256": "10aaecaf5fbbdc8cb5a3c11a93be37036915d69e903111e8db4d089c3f1c5caa",
+      "finding": "First-page rendered layout compared with native text; limited quality inspection, not a whole-document or factual verification.",
+      "next_action": "retain_native_text_for_further_review"
+    },
+    {
+      "file_id": "EFTA00021826",
+      "page": 1,
+      "source_sha256": "021c0548096535ea509cace798f28513ff8de2bea63983f01b6239b60447d082",
+      "page_text_sha256": "f75c128ae544511ca1d9dbda56896ce18c1761764bd2547c8a76add19969b29b",
+      "finding": "Email-like layout is visible, but the strict pilot header heuristic reports zero blocks. Native From labels lose their colon or appear as Front; preserve source text and investigate parser handling.",
+      "next_action": "header_detection_review"
+    },
+    {
+      "file_id": "EFTA00026433",
+      "page": 1,
+      "source_sha256": "80f4d1144c4cb947bccf6de54aaa80a6540c4beba9f69d15ad93a09aa5c6b581",
+      "page_text_sha256": "d54eaa3fb3c594c0cf123815e08d2b2872619339529b9ebbf07cdcfa37c54462",
+      "finding": "First-page rendered layout compared with native text; limited quality inspection, not a whole-document or factual verification.",
+      "next_action": "retain_native_text_for_further_review"
+    },
+    {
+      "file_id": "EFTA00029421",
+      "page": 1,
+      "source_sha256": "c07f949de79f2ef37bba227393f055574c2bac73045b60c48c75be0f9da7fbd1",
+      "page_text_sha256": "798f0869167675d65b2c2290602e553e66eb2556d8e2a7748150e7b841970486",
+      "finding": "First-page rendered layout compared with native text; limited quality inspection, not a whole-document or factual verification.",
+      "next_action": "retain_native_text_for_further_review"
+    },
+    {
+      "file_id": "EFTA00032045",
+      "page": 1,
+      "source_sha256": "ab429a079945ac9578cdf062318726fa5fa64fbca2cfd4b93a8ecbd3ee551722",
+      "page_text_sha256": "7b35a3f64e73a84544161ba25268acb76a04ea90f7b369dc4dae18cbbe508584",
+      "finding": "Email-like layout is visible, but the strict pilot header heuristic reports zero blocks. Native From labels lose their colon or appear as Front; preserve source text and investigate parser handling.",
+      "next_action": "header_detection_review"
+    },
+    {
+      "file_id": "EFTA00034623",
+      "page": 1,
+      "source_sha256": "3b1203ddf41b750d9e4811c8ebfbd34ac958667078666ba057a07ce319d1f576",
+      "page_text_sha256": "9c99f114cfb669aa9d59fc7d32aef22a056af8bedeb7f749259b602488d242c6",
+      "finding": "First-page rendered layout compared with native text; limited quality inspection, not a whole-document or factual verification.",
+      "next_action": "retain_native_text_for_further_review"
+    },
+    {
+      "file_id": "EFTA00037008",
+      "page": 1,
+      "source_sha256": "e471f00760804000b96b6031cf8de375b6f39f2d1ba59458f2e855f0cd8d239e",
+      "page_text_sha256": "189cbb579880590f83c8006f6814dca87d4ae626bd5a3d4b9686f856340ec681",
+      "finding": "First-page rendered layout compared with native text; limited quality inspection, not a whole-document or factual verification.",
+      "next_action": "retain_native_text_for_further_review"
+    },
+    {
+      "file_id": "EFTA00039023",
+      "page": 1,
+      "source_sha256": "eb0a43a4469f378c4d9c88f4028f5d3f2994f7882dd17770807a4090d46610ed",
+      "page_text_sha256": "48372d55044c08220f84e79f3c94033603cb4a4706c2737948c25c0aa6fcc26d",
+      "finding": "First-page rendered layout compared with native text; limited quality inspection, not a whole-document or factual verification.",
+      "next_action": "retain_native_text_for_further_review"
+    },
+    {
+      "file_id": "EFTA00039023",
+      "page": 2,
+      "source_sha256": "eb0a43a4469f378c4d9c88f4028f5d3f2994f7882dd17770807a4090d46610ed",
+      "page_text_sha256": "9c057d8b8cf81524870c241c6646de450586bdab98e5294244f5784092fd7b58",
+      "finding": "Rendered page contains an email chain, while native extraction contains only the EFTA stamp. Visible body text is missing from native output.",
+      "next_action": "ocr_target"
+    }
+  ],
+  "ocr_performed": false,
+  "raw_text_publication_ready": false
+}

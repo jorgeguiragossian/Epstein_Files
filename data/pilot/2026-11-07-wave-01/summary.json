@@ -1,0 +1,32 @@
+{
+  "selected_files": 10,
+  "downloaded_files": 10,
+  "extracted_files": 10,
+  "download_status_counts": {
+    "downloaded": 10
+  },
+  "extraction_status_counts": {
+    "extracted": 10
+  },
+  "downloaded_bytes": 7964305,
+  "pdf_pages": 49,
+  "low_text_pages": [
+    {
+      "file_id": "EFTA00009713",
+      "page": 8
+    },
+    {
+      "file_id": "EFTA00039023",
+      "page": 2
+    }
+  ],
+  "zero_alphanumeric_text_pages": 0,
+  "email_header_candidate_blocks": 6,
+  "documents_with_email_header_candidates": 5,
+  "date_candidate_occurrences": 49,
+  "exact_duplicate_source_hash_groups_within_batch": 0,
+  "source_hashes_matching_baseline": [],
+  "source_hashes_and_page_evidence_verified": true,
+  "ocr_performed": false,
+  "interpretation": "Native-text extraction only. Low text is a review flag, not an OCR diagnosis. Header/date candidates are unvalidated and not message/contact counts. No automatic public-site integration."
+}
