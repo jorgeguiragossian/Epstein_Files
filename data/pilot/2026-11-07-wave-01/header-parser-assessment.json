@@ -65,7 +65,7 @@
   ],
   "native_candidate_occurrences": 5,
   "with_reviewed_layers_candidate_occurrences": 8,
-  "public_site_integration": false,
+  "public_site_integration": true,
   "unique_messages_verified": false,
   "contact_rankings_ready": false,
   "interpretation": "Richer viewer-parser counts, distinct from the simple pilot header heuristic. Source-assisted label/fragment layers are explicit opt-ins; native text and unresolved fragments are preserved."

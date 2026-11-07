@@ -15,11 +15,19 @@ function render(group){
  const flags=node('p','email-flags',r.flags.filter(x=>!['candidate_not_verified_message','body_boundary_unverified'].includes(x)).map(x=>x.replaceAll('_',' ')).join(' · ')||'Header fields present; still requires source review.');
  const sources=node('div','email-sources');
  for(const source of group.sources){const row=node('div','');row.append(link(`${source.file_id} · PDF page ${source.source_page}`,`/?doc=${encodeURIComponent(source.file_id)}&pdfpage=${source.source_page}`),document.createTextNode(` · extracted line ${source.source_line} · `),link('Open PDF ↗',`/pdf/${encodeURIComponent(source.file_id)}#page=${source.source_page}`));sources.append(row);}
- const raw=node('details','evidence');raw.append(node('summary','',`Inspect raw headers & detected body · ${group.occurrences} source ${group.occurrences===1?'occurrence':'occurrences'}`));
+ const raw=node('details','evidence');raw.append(node('summary','',`Inspect ${r.derived_text_layer?'derived':'raw'} headers & detected body · ${group.occurrences} source ${group.occurrences===1?'occurrence':'occurrences'}`));
  const rawHeaders=node('pre','email-raw',r.header_evidence.map(h=>`PDF p${h.page}, line ${h.line} · ${h.field}: ${h.value}`).join('\n'));
  const body=node('pre','email-raw',r.body||'No body text detected.');
- raw.append(node('p','evidence-note','Header values are raw extracted text. Address-like strings are not verified identities. This body segment can contain signatures, quotes, attachments, or extraction artifacts.'),rawHeaders,node('h4','',`Detected body segment · PDF ${r.body_pages.length===1?'page':'pages'} ${r.body_pages.join(', ')||'not established'}`),body);
+ raw.append(node('p','evidence-note',r.derived_text_layer?'Header scan uses an explicit source-reviewed derived layer. Native header lines are retained below; participants remain unresolved.':'Header values are raw extracted text. Address-like strings are not verified identities. This body segment can contain signatures, quotes, attachments, or extraction artifacts.'),rawHeaders,node('h4','',`Detected body segment · PDF ${r.body_pages.length===1?'page':'pages'} ${r.body_pages.join(', ')||'not established'}`),body);
+ let sourceLayerPanel=null;
+ if(r.derived_text_layer){
+  const layer=node('section','email-notice');layer.append(node('h4','','Source-reviewed derived header layer'),node('p','',r.derived_text_layer.kind==='reviewed_header_fragments_v1'?'One unresolved header fragment is excluded from scanning and retained without participant attribution.':'Only reviewed From/To labels are normalized; redacted participant values are not reconstructed.'),link('Inspect native page text ↗',`/?doc=${encodeURIComponent(r.file_id)}&pdfpage=${r.source_page}`));
+  for(const fragment of r.derived_text_layer.unresolved_fragments||[])layer.append(node('pre','email-raw',`PDF p${fragment.page}, line ${fragment.line} · unresolved fragment: ${fragment.native_line}`));
+  sourceLayerPanel=layer;
+  raw.append(node('h4','','Preserved native header lines'),node('pre','email-raw',(r.native_header_evidence||[]).map(h=>`PDF p${h.page}, line ${h.line} · ${h.text}`).join('\n')));
+ }
  card.append(head,title,headers,flags,sources);
+ if(sourceLayerPanel)card.append(sourceLayerPanel);
  if(r.source_review){
   const review=r.source_review,panel=node('section','email-notice');
   panel.append(node('h4','','Source-assisted editorial review by Codex'),node('p','',review.boundary_status.replaceAll('_',' ')),node('p','',review.notes));

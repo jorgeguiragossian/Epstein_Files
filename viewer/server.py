@@ -18,11 +18,13 @@ try:
     from .email_coverage import review_coverage
     from .wordcloud import build_word_index,word_cloud
     from .timeframes import validate_briefs,timeframe_index,select_timeframe
+    from .batches import load_expansions,merge_catalog
 except ImportError:
     from email_parser import build_email_catalog,review_page
     from email_coverage import review_coverage
     from wordcloud import build_word_index,word_cloud
     from timeframes import validate_briefs,timeframe_index,select_timeframe
+    from batches import load_expansions,merge_catalog
 
 ROOT = Path(__file__).resolve().parents[1]
 PILOT = ROOT / 'data/pilot/2026-11-01'
@@ -131,6 +133,13 @@ def build_index(pilot=PILOT, database=DB):
         prepared.append((metric, item, extracted, pdf))
     if not prepared:
         raise ValueError('No extracted pilot documents available.')
+    base_prepared = list(prepared)
+    additional_records = []
+    if pilot.resolve() == PILOT.resolve():
+        extra, additional_records = load_expansions()
+        prepared.extend(extra)
+    if len({m['file_id'] for m, item, extracted, pdf in prepared}) != len(prepared):
+        raise ValueError('Duplicate document identifiers across batches')
     people=load(pilot/'people.json')['people']
     validate_people(people,prepared)
     database.parent.mkdir(parents=True, exist_ok=True)
@@ -174,7 +183,10 @@ def build_index(pilot=PILOT, database=DB):
                     hits=name_occurrences(page['text'],person['forms'])
                     if hits:
                         connection.execute('INSERT INTO name_mentions VALUES (?,?,?,?)',(cursor.lastrowid,person['id'],len(hits),json.dumps(hits)))
-        connection.execute('INSERT INTO email_catalog VALUES (?)',(json.dumps(build_email_catalog(prepared,load(pilot/'email-validation.json'),load(pilot/'email-boundaries.json'))),))
+        emails = build_email_catalog(base_prepared,load(pilot/'email-validation.json'),load(pilot/'email-boundaries.json'))
+        if additional_records:
+            emails = merge_catalog(emails, additional_records, len(prepared))
+        connection.execute('INSERT INTO email_catalog VALUES (?)',(json.dumps(emails),))
         connection.commit()
     return len(prepared)
 

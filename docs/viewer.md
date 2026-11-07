@@ -63,3 +63,7 @@ With the viewer running on its default port, `python tests/smoke_viewer.py` chec
 ## Git milestones
 
 Commit and push at small, verified milestones: inventory and extraction pilot; working local viewer; reliable dates/person/message parsing; then each larger analysis feature. Keep originals and unreviewed text out of ordinary Git history during the pilot. The application source and reproducible data manifests stay in this repository.
+
+## Published expansion
+
+The [wave 1 integration](wave-01-integration.md) adds ten dataset 8 PDFs to the searchable sample (110 PDFs, 1,836 pages). Dates remain unreviewed; the email workspace labels derived header layers and preserves native source text. Earlier counts and local-only status above describe their original milestone.

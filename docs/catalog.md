@@ -1,10 +1,10 @@
 # Resumable collection catalog
 
-The collection catalog is the discovery layer for eventual coverage of all twelve numbered DOJ datasets. It is separate from the 100-document searchable pilot. Records outside the pilot have not been downloaded or text-indexed.
+The collection catalog is the discovery layer for eventual coverage of all twelve numbered DOJ datasets. It is separate from the 110-document published sample (the original 100 plus the first ten-file expansion). Other catalog records have not been downloaded or text-indexed.
 
 ## Current checkpoint
 
-The [fourth browser batch](catalog-browser-batch-4.md) expands the catalog to **24,447 dataset/file URL pairs**, adding 7,500 URLs across 150 listing pages. Every advertised listing page has been observed for datasets **1–8 and 12**. Datasets **9–11** each have pages **0–60** observed (61 pages, 3,050 unique file URLs each) and resume at zero-based page **61**. The full collection total remains unknown and searchable text still covers only the 100 pilot PDFs.
+The [fourth browser batch](catalog-browser-batch-4.md) expands the catalog to **24,447 dataset/file URL pairs**, adding 7,500 URLs across 150 listing pages. Every advertised listing page has been observed for datasets **1–8 and 12**. Datasets **9–11** each have pages **0–60** observed (61 pages, 3,050 unique file URLs each) and resume at zero-based page **61**. The full collection total remains unknown and searchable text now covers 110 PDFs.
 
 Observed URL suffixes: 23,980 PDF, 436 MP4, 12 M4A, ten XLSX, four CSV, two XLS, one MOV, one MP3 and one AVI. These are suffix observations, not verified MIME types or readable-content claims. The [third batch](catalog-browser-batch-3.md) records dataset 8’s completed listing.
 
@@ -58,4 +58,6 @@ Browser snapshots can be imported with `python scripts/catalog.py import-browser
 
 ## Next step
 
-Normal browser pagination works for this bounded pass; command-line pagination still fails with 403. Use supported browser capture in bounded batches, or obtain a documented official bulk manifest suitable for large-scale discovery. Then resume cataloging in bounded batches, preserving failures and provenance. Once discovery coverage is measurable, choose the next extraction batch and evaluate public storage/search requirements. This milestone does not yet claim a complete catalog or add the 24,347 non-pilot records to full-text search.
+Normal browser pagination works for this bounded pass; command-line pagination still fails with 403. Use supported browser capture in bounded batches, or obtain a documented official bulk manifest suitable for large-scale discovery. Then resume cataloging in bounded batches, preserving failures and provenance. Once discovery coverage is measurable, choose the next extraction batch and evaluate public storage/search requirements. This milestone does not yet claim a complete catalog or add the 24,337 other catalog records to full-text search.
+
+The [wave 1 integration](wave-01-integration.md) registers the additional processing batch in `data/catalog/processing-batches.json`. Ten file rows now include actual source bytes, hashes and page counts with expansion processing statuses. Listing provenance and the 24,447 discovery count are unchanged.

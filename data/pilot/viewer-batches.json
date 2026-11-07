@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "batches": [
+    {
+      "path": "data/pilot/2026-11-07-wave-01",
+      "documents": 10,
+      "evidence_sha256": {
+        "selection.json": "16141ef4becbcec9f578ac1718acd66cd616985e6addadc90a2ff602c8785261",
+        "downloads.json": "102ca6b49327435c116fb364680544f161df85c7d7e75e69feb9bb20bb706090",
+        "metrics.json": "12c3e67b97f735bd5198fe3c4a99650e422b7e3bb87334f60c790a054894485d",
+        "header-label-reviews.json": "a142a0b6b7c568b641e3a412c9eabd27ae3045b4fe40a19a886fff798efad77a",
+        "header-fragment-reviews.json": "8b8fbd242ccf63120917e2929d108a50828f96e8b9abbc0d22fce9141235d4e0",
+        "candidate-boundary-reviews.json": "e481c47ea2f6fee161529e59f7c2414d1ac48cf49e7b1fe59b1252a9c2225cb9"
+      }
+    }
+  ]
+}

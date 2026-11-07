@@ -4,7 +4,7 @@
   "lossless_body_spans": 10,
   "unique_messages_verified": false,
   "contact_rankings_ready": false,
-  "source_text_publication": false,
-  "public_site_integration": false,
+  "source_text_publication": true,
+  "public_site_integration": true,
   "interpretation": "Source-assisted header/body scope only. Native and derived parent bodies remain intact; quoted content is not promoted to additional messages."
 }

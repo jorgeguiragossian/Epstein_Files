@@ -15,7 +15,7 @@ def fingerprint(value):
     return hashlib.sha256(json.dumps(value, sort_keys=True, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
 
 
-def main(folder):
+def build_catalog(folder):
     metadata = json.loads((folder / 'candidate-boundary-reviews.json').read_text(encoding='utf-8'))
     metrics = {r['file_id']: r for r in json.loads((folder / 'metrics.json').read_text())['files']}
     records, prepared, annotations = [], [], []
@@ -56,13 +56,18 @@ def main(folder):
     for record in catalog['records']:
         if record.get('body_partition'):
             record['flags'] = sorted((set(record['flags']) - {'quoted_body_boundary_unresolved'}) | {'body_partition_source_reviewed'})
-    out = folder / 'extractions/header-reviewed/reviewed-catalog.json'
-    out.write_text(json.dumps(catalog, indent=2) + '\n', encoding='utf-8')
     summary = dict(reviewed_candidates=len(records), partitioned_candidates=len(annotations),
                    lossless_body_spans=sum(len(a['spans']) for a in annotations),
                    unique_messages_verified=False, contact_rankings_ready=False,
-                   source_text_publication=False, public_site_integration=False,
+                   source_text_publication=json.loads((folder / 'processing-status.json').read_text(encoding='utf-8')).get('public_search_integration', False), public_site_integration=json.loads((folder / 'processing-status.json').read_text(encoding='utf-8')).get('public_search_integration', False),
                    interpretation='Source-assisted header/body scope only. Native and derived parent bodies remain intact; quoted content is not promoted to additional messages.')
+    return catalog, summary
+
+
+def main(folder):
+    catalog, summary = build_catalog(folder)
+    out = folder / 'extractions/header-reviewed/reviewed-catalog.json'
+    out.write_text(json.dumps(catalog, indent=2) + '\n', encoding='utf-8')
     (folder / 'boundary-review-summary.json').write_text(json.dumps(summary, indent=2) + '\n', encoding='utf-8')
     print(summary)
 

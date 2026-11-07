@@ -36,3 +36,7 @@ Commit and push source changes to `main`, then rebuild so the manifest identifie
 `scripts/github-pages.py status`, `enable`, and `build-status` use the existing Git credential manager to call GitHub's Pages API. Credentials stay in process memory and are never printed, written to an artifact, or included in the client. `enable` creates Pages with the `gh-pages` source if none exists and declines to switch a different existing source silently.
 
 Future deployments must rebuild from available source caches and repeat validation. This publication does not introduce an unattended re-ingestion or automatic deployment workflow. Repository branch protection, if configured later, may require changing the publication process.
+
+## Published expansion
+
+The [wave 1 integration](wave-01-integration.md) adds ten dataset 8 PDFs to the searchable sample (110 PDFs, 1,836 pages). Dates remain unreviewed; the email workspace labels derived header layers and preserves native source text. Earlier counts and local-only status above describe their original milestone.

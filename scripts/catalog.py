@@ -221,7 +221,19 @@ def export(db, folder, pilot):
         row['representation'] = 'browser_link_dom' if row['snapshot'].endswith('.dom.html') else 'http_html'
     attempts = [dict(r) for r in db.execute('SELECT * FROM attempts ORDER BY attempted_at')]
     downloads = {r['url']: r for r in json.loads((pilot / 'downloads.json').read_text(encoding='utf-8'))['files']}
-    metrics = {r['file_id']: r for r in json.loads((pilot / 'metrics.json').read_text(encoding='utf-8'))['files']}
+    metrics = {r['url']: r for r in json.loads((pilot / 'metrics.json').read_text(encoding='utf-8'))['files']}
+    expansion_urls = set()
+    registry = ROOT / 'data/catalog/processing-batches.json'
+    batches = json.loads(registry.read_text(encoding='utf-8'))['batches'] if registry.exists() and pilot.resolve() == (ROOT / 'data/pilot/2026-11-01').resolve() else []
+    for batch in batches:
+        source = (ROOT / batch).resolve()
+        if not source.is_relative_to(ROOT / 'data/pilot'):
+            raise ValueError('Processing batch outside pilot workspace')
+        more_downloads = json.loads((source / 'downloads.json').read_text(encoding='utf-8'))['files']
+        more_metrics = json.loads((source / 'metrics.json').read_text(encoding='utf-8'))['files']
+        expansion_urls.update(r['url'] for r in more_downloads)
+        downloads.update({r['url']: r for r in more_downloads})
+        metrics.update({r['url']: r for r in more_metrics})
     fields = ['dataset', 'file_id', 'filename', 'url', 'first_seen', 'last_seen', 'listing_pages_observed',
               'download_status', 'bytes', 'source_sha256', 'pdf_pages', 'extraction_status']
     with (folder / 'files.csv').open('w', encoding='utf-8', newline='') as stream:
@@ -231,12 +243,15 @@ def export(db, folder, pilot):
             row = dict(record_row)
             row['listing_pages_observed'] = ';'.join(str(r[0]) for r in db.execute('SELECT DISTINCT page FROM appearances WHERE dataset=? AND url=? ORDER BY page', (row['dataset'], row['url'])))
             download = downloads.get(row['url'])
-            metric = metrics.get(row['file_id']) if download else None
+            metric = metrics.get(row['url']) if download else None
             row.update(download_status='pilot_download_record' if download and download['status'] == 'downloaded' else 'not_downloaded',
                        bytes=metric.get('bytes') if metric else None,
                        source_sha256=metric.get('sha256') if metric else None,
                        pdf_pages=metric.get('page_count') if metric else None,
                        extraction_status='pilot_extraction_record' if metric else 'not_processed')
+            if row['url'] in expansion_urls:
+                row['download_status'] = 'expansion_download_record' if download['status'] == 'downloaded' else download['status']
+                row['extraction_status'] = 'expansion_native_extraction_record' if metric and metric['status'] == 'extracted' else 'not_processed'
             writer.writerow(row)
     datasets = []
     for dataset in range(1, 13):

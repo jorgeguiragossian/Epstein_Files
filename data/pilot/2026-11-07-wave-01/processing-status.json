@@ -1,5 +1,5 @@
 {
-  "status": "targeted_header_and_body_scope_reviews_complete_integration_pending",
+  "status": "integrated_public_native_text_with_explicit_reviewed_header_layers",
   "selected_files": 10,
   "downloaded_files": 10,
   "native_extracted_files": 10,
@@ -7,7 +7,7 @@
   "ocr_target_pages": [],
   "header_detection_review_documents": [],
   "source_context_review": "partial_13_pages",
-  "public_search_integration": false,
+  "public_search_integration": true,
   "selection_status_note": "selection.json records planning-time status; downloads.json, metrics.json and this file record the later processing outcome.",
   "ocr_check": "Page 2 of EFTA00039023 is stamp-only; previous OCR target retracted after individual render and local OCR.",
   "reviewed_label_layer_documents": [
@@ -15,9 +15,9 @@
     "EFTA00032045"
   ],
   "remaining_review_items": [
-    "Five other wave candidate occurrences remain unreviewed",
-    "Broader document source-context and date review",
-    "Public integration and processing metadata reconciliation"
+    "Five other wave candidates retain unreviewed status",
+    "All ten document dates remain unreviewed",
+    "Broader document source-context review"
   ],
   "reviewed_fragment_layer_documents": [
     "EFTA00014597"

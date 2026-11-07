@@ -32,5 +32,5 @@ def review_coverage(catalog,documents,timeframes=None):
             breakdowns=sum(bool(r.get('body_partition')) for r in records),
             adjacent_checks=sum(bool(r.get('continuation_review')) for r in records)))
     def totals(items):return {field:sum(r[field] for r in items) for field in FIELDS}
-    return dict(scope='100-document pilot only. Counts are source candidate occurrences, not unique messages or people. Categories overlap; reviewed does not mean verified. Missing-field counts describe parser output, not editorial source readings.',
+    return dict(scope=f'{len(documents)}-document published sample only. Counts are source candidate occurrences, not unique messages or people. Categories overlap; reviewed does not mean verified. Missing-field counts describe parser output, not editorial source readings.',
         totals=totals(rows),datasets=[dict(dataset=dataset,**totals([r for r in rows if r['dataset']==dataset])) for dataset in sorted({r['dataset'] for r in rows})],documents=rows)

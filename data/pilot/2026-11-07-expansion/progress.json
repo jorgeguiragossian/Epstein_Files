@@ -5,6 +5,6 @@
   "native_extracted_files": 10,
   "remaining_unprocessed_files": 90,
   "first_wave": "data/pilot/2026-11-07-wave-01",
-  "public_search_documents": 100,
-  "note": "The original selection is preserved. First-wave raw text remains local with quality gaps pending; remaining 90 selected files were not acquired."
+  "public_search_documents": 110,
+  "note": "Ten first-wave files are integrated with native text and unreviewed dates; source-assisted header layers are explicitly labeled. Remaining 90 files are still unprocessed."
 }

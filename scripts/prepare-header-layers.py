@@ -48,7 +48,7 @@ def main(folder):
     result = dict(parser_version=VERSION, date_parser_version=DATE_VERSION, documents=counts,
                   native_candidate_occurrences=sum(r['native_candidates'] for r in counts),
                   with_reviewed_layers_candidate_occurrences=sum(r['with_reviewed_layer_candidates'] for r in counts),
-                  public_site_integration=False, unique_messages_verified=False, contact_rankings_ready=False,
+                  public_site_integration=json.loads((folder / 'processing-status.json').read_text(encoding='utf-8')).get('public_search_integration', False), unique_messages_verified=False, contact_rankings_ready=False,
                   interpretation='Richer viewer-parser counts, distinct from the simple pilot header heuristic. Source-assisted label/fragment layers are explicit opt-ins; native text and unresolved fragments are preserved.')
     (folder / 'header-parser-assessment.json').write_text(json.dumps(result, indent=2) + '\n', encoding='utf-8')
     print(f"Native candidates: {result['native_candidate_occurrences']}; with reviewed header layers: {result['with_reviewed_layers_candidate_occurrences']}.")

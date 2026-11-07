@@ -1,6 +1,9 @@
 # Epstein_Files
 A repo to explore and analyze the Epstein files
 
+The [published sample](https://jorgeguiragossian.github.io/Epstein_Files/) now contains **110 PDFs and 1,836 pages**, including the [ten-file dataset 8 integration](docs/wave-01-integration.md). Its ten document dates remain unreviewed. The 36 dated page briefs are unchanged; eight new email-layout occurrences bring that workspace to 122, with derived header readings explicitly labeled.
+
+
 ## Public pilot website
 
 [Open the GitHub Pages pilot](https://jorgeguiragossian.github.io/Epstein_Files/). The public static build contains the pilot's extracted text and parsed email data, with original PDF links pointing to DOJ. See [publication scope and deployment instructions](docs/github-pages.md).
@@ -25,6 +28,6 @@ The [timeframe briefs](docs/timeframe-briefs.md) view selects 36 prepared AI-ass
 
 ## Collection catalog
 
-The [resumable listing catalog](docs/catalog.md) records 24,447 observed dataset/file URL pairs across all 12 datasets, including download and extraction metadata for the 100 pilot PDFs. Normal browser capture has now traversed every advertised listing page in datasets 1–8 and 12. Datasets 9–11 have 61 observed listing pages each and remain partial. URL extensions include PDF, spreadsheets, CSV, audio and video; these are file-listing observations, not MIME verification. The full current file total remains unknown. Catalog entries outside the pilot are discovery records, not searchable document text.
+The [resumable listing catalog](docs/catalog.md) records 24,447 observed dataset/file URL pairs across all 12 datasets, including download and extraction records for the original 100 PDFs and the ten-file expansion. Normal browser capture has now traversed every advertised listing page in datasets 1–8 and 12. Datasets 9–11 have 61 observed listing pages each and remain partial. URL extensions include PDF, spreadsheets, CSV, audio and video; these are file-listing observations, not MIME verification. The full current file total remains unknown. Catalog entries outside the pilot are discovery records, not searchable document text.
 
-The [official bulk-discovery check and next extraction plan](docs/bulk-discovery-and-expansion.md) found no documented bulk route in the official sources checked. A source-bound 100-PDF expansion is prepared. The [ten-file dataset 8 first wave](docs/expansion-wave-01.md) has been downloaded and natively extracted (49 pages); the [quality follow-up](docs/wave-01-quality-followup.md) retracted an incorrect OCR target and prepared source-reviewed label layers for two header misses. The [targeted boundary follow-up](docs/wave-01-boundary-followup.md) now records the additional fragment and lossless quote partitions; public integration remains pending. New raw text remains local; public search is still the original 100 PDFs.
+The [official bulk-discovery check and next extraction plan](docs/bulk-discovery-and-expansion.md) found no documented bulk route in the official sources checked. A source-bound 100-PDF expansion is prepared. The [ten-file dataset 8 first wave](docs/expansion-wave-01.md) has been downloaded and natively extracted (49 pages); the [quality follow-up](docs/wave-01-quality-followup.md) retracted an incorrect OCR target and prepared source-reviewed label layers for two header misses. The [targeted boundary follow-up](docs/wave-01-boundary-followup.md) now records the additional fragment and lossless quote partitions; public integration remains pending. The ten PDFs are now included in public search with unreviewed dates; the remaining 90 selected files are unprocessed.

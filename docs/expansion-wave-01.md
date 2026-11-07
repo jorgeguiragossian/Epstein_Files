@@ -53,3 +53,7 @@ To reconstruct missing local caches, reuse the committed selection with the prev
 ## Next milestone
 
 The [targeted follow-up](wave-01-quality-followup.md) completes the stamp-only OCR check and prepares reviewed label layers for the two initially missed headers. Before integration, inspect quoted-body boundaries and the additional fragmented header in EFTA00014597, then reconcile document keys, date states, source links and batch processing metadata. New raw text remains local and unreviewed at the document level. The remaining 90 selected files remain unprocessed.
+
+## Published expansion
+
+The [wave 1 integration](wave-01-integration.md) adds ten dataset 8 PDFs to the searchable sample (110 PDFs, 1,836 pages). Dates remain unreviewed; the email workspace labels derived header layers and preserves native source text. Earlier counts and local-only status above describe their original milestone.

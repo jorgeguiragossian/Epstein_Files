@@ -36,3 +36,7 @@ The second command materializes and validates the reviewed candidates and partit
 ## Next milestone
 
 Prepare integration of the ten acquired PDFs with explicit native/derived layer labels, unreviewed date states, source PDF links and reconciled processing metadata. The targeted quality blockers are addressed, but this does not imply a whole-document review or reviewed status for every candidate. Public search remains the 100-PDF pilot until that integration is implemented and checked.
+
+## Published expansion
+
+The [wave 1 integration](wave-01-integration.md) adds ten dataset 8 PDFs to the searchable sample (110 PDFs, 1,836 pages). Dates remain unreviewed; the email workspace labels derived header layers and preserves native source text. Earlier counts and local-only status above describe their original milestone.

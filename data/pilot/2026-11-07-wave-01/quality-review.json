@@ -111,7 +111,7 @@
     }
   ],
   "ocr_performed": true,
-  "raw_text_publication_ready": false,
+  "raw_text_publication_ready": true,
   "ocr_scope": "One-page stamp-only check; no missing body text recovered or substituted.",
   "corrections": [
     {
@@ -120,5 +120,6 @@
       "previous_finding_retracted": true,
       "reason": "Retracts the previous contact-sheet finding: email body was on PDF page 1, not page 2. Individual page 2 render and local OCR both show only the EFTA stamp."
     }
-  ]
+  ],
+  "publication_conditions": "Native text with visible unreviewed document dates, sparse/table extraction caveats, and explicit opt-in derived header layers. Not whole-document or independent verification."
 }

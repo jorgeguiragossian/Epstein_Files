@@ -23,7 +23,9 @@ def build(out,base):
     if not base.startswith('/') or not base.endswith('/'):raise ValueError('Base must start and end with a slash.')
     build_index()
     catalog=Catalog();pilot=ROOT/'data/pilot/2026-11-01'
-    metrics=load(pilot/'metrics.json')['files'];documents={}
+    with catalog.connect() as connection:
+        metrics=[dict(r) for r in connection.execute('SELECT id file_id,page_count FROM documents ORDER BY dataset,id')]
+    documents={}
     for metric in metrics:
         record=catalog.document(metric['file_id'],1)
         record.pop('page')

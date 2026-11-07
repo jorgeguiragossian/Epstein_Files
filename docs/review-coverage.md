@@ -17,3 +17,7 @@ The [second November 7 batch](brief-evaluation-batch-2.md) records the next ten 
 The [third November 7 batch](brief-evaluation-batch-3.md) completes limited-page brief coverage for all 36 dated pilot PDFs. The eight newest drafts await a separate recorded check; counts describe PDF records, not unique testimony or events.
 
 The [final dated-pilot review batch](brief-evaluation-batch-4.md) records the remaining eight editorial checks. All 36 page briefs now have a recorded same-assistant check; this does not establish whole-document or full-release coverage.
+
+## 110-document integration
+
+The [wave 1 integration](wave-01-integration.md) expands the current workspace to 110 PDFs and 122 candidate occurrences, with 48 source-reviewed and 74 unreviewed occurrences. Dated brief coverage remains 36 documents; 74 PDFs lack a usable reviewed date. Earlier counts above describe their original milestones.

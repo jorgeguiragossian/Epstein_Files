@@ -15,16 +15,16 @@ def get(path):
 
 def main():
     overview = get('/api/overview')
-    assert overview['documents'] == 100 and overview['pages'] == 1787
+    assert overview['documents'] == 110 and overview['pages'] == 1836
     matches = get('/api/search?q=grand%20jury&dataset=6')
     assert matches['total_documents'] == 11 and matches['total_matching_pages'] == 97
     page = get('/api/documents/EFTA00008529?page=2')
     assert page['page']['number'] == 2 and page['page']['text']
-    assert get('/api/search?quality=review')['total_documents'] == 52
+    assert get('/api/search?quality=review')['total_documents'] == 54
     assert get('/api/search?q=zzznomatchpilot')['total_documents'] == 0
-    assert overview['date_status_counts']=={'dated':36,'uncertain':4,'unreviewed':60}
+    assert overview['date_status_counts']=={'dated':36,'uncertain':4,'unreviewed':70}
     words=get('/api/words')
-    assert (words['eligible_dated_documents'],words['excluded_without_reviewed_date'])==(36,64)
+    assert (words['eligible_dated_documents'],words['excluded_without_reviewed_date'])==(36,74)
     assert get('/api/documents/EFTA00039826')['date_review']['date_type']=='letter'
     assert get('/api/documents/EFTA00008892')['date_review']['date_type']=='presentation'
     assert get('/api/documents/EFTA02212924')['date_review']['primary_date'] is None
@@ -35,16 +35,19 @@ def main():
     assert dated['total_documents']==1 and dated['results'][0]['id']=='EFTA00008529'
     assert get('/api/search?date_status=uncertain')['total_documents']==4
     assert get('/api/search?date_status=undated')['total_documents']==0
-    assert get('/api/search?date_status=unreviewed')['total_documents']==60
+    assert get('/api/search?date_status=unreviewed')['total_documents']==70
     assert get('/api/search?date_from=2014-01-01&date_to=2014-01-01&q=EFTA02730265')['total_documents']==0
     assert get('/api/documents/EFTA00039806')['date_review']['evidence_page']==2
     people=get('/api/people')['people']
     snapshot=json.loads((Path(__file__).resolve().parents[1]/'data/pilot/2026-11-01/people-coverage.json').read_text(encoding='utf-8'))
     assert len(people)==len(snapshot['people'])==22
     fields=('id','label','documents','pages','occurrences')
-    assert sorted([{k:p[k] for k in fields} for p in people],key=lambda p:p['id'])==sorted(snapshot['people'],key=lambda p:p['id'])
+    assert {p['id'] for p in people}=={p['id'] for p in snapshot['people']}
+    for old in snapshot['people']:
+        current=next(p for p in people if p['id']==old['id'])
+        assert all(current[k]>=old[k] for k in ('documents','pages','occurrences'))
     names={p['id']:p for p in people}
-    assert names['ghislaine-maxwell']['documents']==19 and names['ghislaine-maxwell']['pages']==102
+    assert names['ghislaine-maxwell']['documents']==22 and names['ghislaine-maxwell']['pages']==107
     person=get('/api/search?person=ghislaine-maxwell&date_from=2020-06-29&date_to=2020-06-29')
     assert person['total_documents']==3 and {r['id'] for r in person['results']}=={'EFTA00008631','EFTA00008892','EFTA00008920'}
     assert person['results'][0]['matching_pages'][0]==1
@@ -57,7 +60,8 @@ def main():
     assert get('/api/search?person=ken-starr')['total_documents']==4
     email_metadata=json.loads((Path(__file__).resolve().parents[1]/'data/pilot/2026-11-01/email-summary.json').read_text(encoding='utf-8'))
     email_review=get('/api/emails')
-    assert email_review['summary']==email_metadata['summary']
+    assert email_review['summary']['candidate_occurrences']==122
+    assert email_review['summary']['source_review']['reviewed_candidates']==48
     assert email_review['summary']['unique_messages'] is None
     assert get('/api/emails?filter=repeats')['total_groups']==0
     inline=get('/api/emails?document=EFTA02212905')
@@ -65,13 +69,20 @@ def main():
     assert 'date_missing' in inline['results'][0]['representative']['flags']
     assert inline['results'][0]['representative']['parsed_timestamp_candidate'] is None
     assert 'May 18, 2017' in inline['results'][0]['representative']['body']
+    added=get('/api/documents/EFTA00032045?page=1')
+    assert added['date_review']['status']=='unreviewed' and added['page']['text'].startswith('Front ')
+    new_email=get('/api/emails?document=EFTA00032045')['results'][0]['representative']
+    assert new_email['derived_text_layer']['kind']=='reviewed_header_labels_v1'
+    assert new_email['native_header_evidence'][0]['text']=='Front '
+    assert '\n'.join(s['text'] for s in new_email['body_partition']['spans'])==new_email['body']
     for path, status in [('/api/documents/EFTA00008529?page=0',400),('/README.md',404),('/pdf/../../README.md',404),('/api/search?date_from=2021-02-29',400),('/api/search?date_from=2020-01-01&date_to=2019-01-01',400),('/api/search?person=unknown',400),('/api/emails?filter=invented',400),('/api/emails?document=../../README.md',400),('/api/emails?page=0',400)]:
         try: get(path)
         except HTTPError as exc: assert exc.code == status, (path,exc.code)
         else: raise AssertionError(f'Expected HTTP {status} for {path}')
-    with urlopen(Request(BASE + '/pdf/EFTA00008529',headers={'Range':'bytes=0-7'}),timeout=10) as response:
-        body = response.read()
-        assert response.status == 206 and len(body) == 8 and body.startswith(b'%PDF-')
+    for source_id in ('EFTA00008529','EFTA00032045'):
+        with urlopen(Request(BASE + '/pdf/'+source_id,headers={'Range':'bytes=0-7'}),timeout=10) as response:
+            body = response.read()
+            assert response.status == 206 and len(body) == 8 and body.startswith(b'%PDF-')
     print('HTTP smoke passed: coverage, search, person/date filters, email review, page evidence, input errors, file-route isolation, and PDF byte ranges.')
 
 

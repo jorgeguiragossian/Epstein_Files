@@ -21,3 +21,5 @@ Coverage at the [second review batch](brief-evaluation-batch-2.md): 28 prepared 
 After the [third review batch](brief-evaluation-batch-3.md), all 36 dated pilot PDFs have a limited-page brief; 28 have recorded editorial checks and the eight newest drafts await that separate pass. These are PDF-record counts, not unique events or whole-document coverage. The 64 PDFs lacking usable reviewed dates remain excluded.
 
 The [fourth review batch](brief-evaluation-batch-4.md) completes recorded editorial checks for all 36 limited-page drafts. No whole-document or independent verification is implied.
+
+The [110-document integration](wave-01-integration.md) adds ten PDFs with unreviewed primary dates. The 36 dated briefs and checks are unchanged; 74 PDFs are now excluded from timeframe analysis without a usable reviewed date.
