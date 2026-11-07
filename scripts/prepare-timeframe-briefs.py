@@ -333,6 +333,42 @@ REVIEWED_FINGERPRINTS.update({'EFTA00008529': '2a0d25ed4fb8b13265ac9dde7c18b1767
  'EFTA02730265': 'daa58727ec92cb9ab0baad4572867195c919cfa96fe83ca962f8a7b99b4bf1c2',
  'EFTA02731485': 'f79c1ef7cbf44a4e6f4141477ef28cab6161a65824db947e4db2949fd0bf34c1'})
 
+# Final dated-pilot review batch; source statements remain attributed.
+REVIEW_NOTES.update({'EFTA00008920': ('supported_as_scoped',
+                  'Introductory answers support employment, title and approximate tenure. The limitation '
+                  'preserves the resemblance to EFTA00008631 without treating two PDFs as independent '
+                  'testimony.'),
+ 'EFTA00009440': ('supported_as_scoped',
+                  'Separate exact excerpts support Colonial Bank and Western Union return dates. Those dates '
+                  'remain attributed to the witness and distinct from the May 8 session date.'),
+ 'EFTA00009448': ('supported_as_scoped',
+                  'The cited answers support an explicit correction of an earlier age statement. '
+                  'Biographical claims remain attributed, not independently verified.'),
+ 'EFTA00009478': ('supported_as_scoped',
+                  'The question and affirmative answer support obtaining photographs. Redacted identities '
+                  'and the photographs themselves are not reconstructed or authenticated.'),
+ 'EFTA00009502': ('supported_as_scoped',
+                  'The introductory answer supports FBI special-agent employment in Palm Beach. Later '
+                  'testimony is outside scope.'),
+ 'EFTA00009512': ('supported_as_scoped',
+                  'The introductory answers support FBI employment and the named investigation; the brief '
+                  'does not assess investigative conclusions.'),
+ 'EFTA00009586': ('supported_as_scoped',
+                  'The procedural question and answer support service of a subpoena. PDF page 4 versus '
+                  'internal transcript page 3 is correctly distinguished; redacted address remains '
+                  'unreconstructed.'),
+ 'EFTA00009632': ('supported_as_scoped',
+                  'The introductory employment answer supports FBI service in Palm Beach County. Redacted '
+                  'identity and later testimony remain outside scope.')})
+REVIEWED_FINGERPRINTS.update({'EFTA00008920': '3d2fb277ddbd7c1dfc25552baf6cff39d5ae8c9f91800e8f66db1009a0fddee7',
+ 'EFTA00009440': '1fe0726ff1af04c7d6f7360f4f2244e66a3de1bc2956e4ac5ba5099c7a868cb7',
+ 'EFTA00009448': '11488f39852f4f58d80255e5a615a0cd5596009b36d20c27fe43d5939fabaa9f',
+ 'EFTA00009478': '808d51b88b57d3a3f263be9d97dc3a3c0bdb202787f115b488b861ea75b93e73',
+ 'EFTA00009502': 'f9c695ea2c81e14d0f7ee5b66c80c084e0d9d88dbb50a3c75ef67f2dd667749c',
+ 'EFTA00009512': '77d06a4b02278f413c1c166c27c3b16e70ef27ce926da43fe45ad333356d6885',
+ 'EFTA00009586': '16d34a0179be4f5bbe8968e16cdecb46d124f6f4d14e128cc7703b8e53375849',
+ 'EFTA00009632': '1d2152711f66611dbcdfc3dee03c0ca07d496e100831e85b8aa472bd00919a32'})
+
 def recorded_reviews(rows):
     reviews=[]
     for brief in rows:
@@ -365,7 +401,7 @@ def main():
     reviews=recorded_reviews(rows)
     (PILOT/'timeframe-briefs.json').write_text(json.dumps(dict(schema_version=1,prepared_on='2026-11-02',updated_on='2026-11-07',method='Prepared by Codex from cited native page text with source-context checks. Editorial AI-assisted drafts, not human-verified findings. Filtering selects existing briefs; no live AI call or cross-document narrative generation.',briefs=rows),indent=2)+'\n',encoding='utf-8')
     (PILOT/'timeframe-brief-reviews.json').write_text(json.dumps(dict(schema_version=1,
-        method='Codex editorial comparison of twenty-eight briefs with rendered PDF pages and native text. Same-assistant review; not independent or human verification. Recorded checks are pinned to the reviewed prose, citations and source hashes; newly prepared briefs await a separate pass.',reviews=reviews),indent=2)+'\n',encoding='utf-8')
+        method='Codex editorial comparison of thirty-six briefs with rendered PDF pages and native text. Same-assistant review; not independent or human verification. Recorded checks are pinned to the reviewed prose, citations and source hashes; newly prepared briefs await a separate pass.',reviews=reviews),indent=2)+'\n',encoding='utf-8')
     print(f'Prepared {len(rows)} page-scoped briefs.')
 
 

@@ -1,0 +1,715 @@
+{
+  "schema_version": 1,
+  "exported_at_utc": "2026-11-07T18:46:19.690642+00:00",
+  "scope": "Twelve numbered DOJ datasets; observed URL pairs, not unique documents",
+  "method": "Historical and current listing observations retained separately. No file URLs inferred from EFTA numeric ranges. No document GET or HEAD requests.",
+  "observed_file_urls": 898,
+  "current_total_files": null,
+  "datasets": [
+    {
+      "dataset": 1,
+      "listing_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-1-files",
+      "observed_listing_pages": 2,
+      "advertised_listing_pages": 63,
+      "observed_file_urls": 100,
+      "listing_coverage": "partial",
+      "current_total_files": null,
+      "last_observed_at": "2026-11-07T18:45:29.974Z"
+    },
+    {
+      "dataset": 2,
+      "listing_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-2-files",
+      "observed_listing_pages": 1,
+      "advertised_listing_pages": 12,
+      "observed_file_urls": 49,
+      "listing_coverage": "partial",
+      "current_total_files": null,
+      "last_observed_at": "2026-11-07T18:41:52.709453+00:00"
+    },
+    {
+      "dataset": 3,
+      "listing_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-3-files",
+      "observed_listing_pages": 2,
+      "advertised_listing_pages": 2,
+      "observed_file_urls": 76,
+      "listing_coverage": "all_advertised_pages_observed",
+      "current_total_files": null,
+      "last_observed_at": "2026-11-07T18:45:37.813Z"
+    },
+    {
+      "dataset": 4,
+      "listing_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-4-files",
+      "observed_listing_pages": 4,
+      "advertised_listing_pages": 4,
+      "observed_file_urls": 151,
+      "listing_coverage": "all_advertised_pages_observed",
+      "current_total_files": null,
+      "last_observed_at": "2026-11-07T18:45:47.662Z"
+    },
+    {
+      "dataset": 5,
+      "listing_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-5-files",
+      "observed_listing_pages": 3,
+      "advertised_listing_pages": 3,
+      "observed_file_urls": 118,
+      "listing_coverage": "all_advertised_pages_observed",
+      "current_total_files": null,
+      "last_observed_at": "2026-11-07T18:45:55.794Z"
+    },
+    {
+      "dataset": 6,
+      "listing_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-6-files",
+      "observed_listing_pages": 1,
+      "advertised_listing_pages": 1,
+      "observed_file_urls": 13,
+      "listing_coverage": "all_advertised_pages_observed",
+      "current_total_files": null,
+      "last_observed_at": "2026-11-07T18:41:57.726062+00:00"
+    },
+    {
+      "dataset": 7,
+      "listing_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-7-files",
+      "observed_listing_pages": 1,
+      "advertised_listing_pages": 1,
+      "observed_file_urls": 17,
+      "listing_coverage": "all_advertised_pages_observed",
+      "current_total_files": null,
+      "last_observed_at": "2026-11-07T18:41:59.014693+00:00"
+    },
+    {
+      "dataset": 8,
+      "listing_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-8-files",
+      "observed_listing_pages": 1,
+      "advertised_listing_pages": 221,
+      "observed_file_urls": 49,
+      "listing_coverage": "partial",
+      "current_total_files": null,
+      "last_observed_at": "2026-11-07T18:42:00.430079+00:00"
+    },
+    {
+      "dataset": 9,
+      "listing_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-9-files",
+      "observed_listing_pages": 1,
+      "advertised_listing_pages": 10675,
+      "observed_file_urls": 50,
+      "listing_coverage": "partial",
+      "current_total_files": null,
+      "last_observed_at": "2026-11-07T18:42:01.626644+00:00"
+    },
+    {
+      "dataset": 10,
+      "listing_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-10-files",
+      "observed_listing_pages": 1,
+      "advertised_listing_pages": 10081,
+      "observed_file_urls": 50,
+      "listing_coverage": "partial",
+      "current_total_files": null,
+      "last_observed_at": "2026-11-07T18:42:02.857948+00:00"
+    },
+    {
+      "dataset": 11,
+      "listing_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-11-files",
+      "observed_listing_pages": 1,
+      "advertised_listing_pages": 6634,
+      "observed_file_urls": 50,
+      "listing_coverage": "partial",
+      "current_total_files": null,
+      "last_observed_at": "2026-11-07T18:42:04.070873+00:00"
+    },
+    {
+      "dataset": 12,
+      "listing_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-12-files",
+      "observed_listing_pages": 4,
+      "advertised_listing_pages": 4,
+      "observed_file_urls": 175,
+      "listing_coverage": "all_advertised_pages_observed",
+      "current_total_files": null,
+      "last_observed_at": "2026-11-07T18:46:06.350Z"
+    }
+  ],
+  "observations": [
+    {
+      "dataset": 1,
+      "page": 0,
+      "observed_at": "2026-11-01T23:00:25.6044841Z",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-1-files",
+      "html_sha256": "e3ab8200d6e93ad3247161ed7587bc5f15001d8decc1a56433f61b6ecc2b9a1d",
+      "snapshot": "data/inventory/2026-11-01/listing-data-set-1-files-page-0.html",
+      "advertised_pages": 63,
+      "file_count": 50,
+      "representation": "http_html"
+    },
+    {
+      "dataset": 1,
+      "page": 0,
+      "observed_at": "2026-11-07T18:41:51.421566+00:00",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-1-files",
+      "html_sha256": "68d90285d6fb8f6440f572c80534244b595c76c497ae732c22b904622b9e2459",
+      "snapshot": "data/catalog/cache/68d90285d6fb8f6440f572c80534244b595c76c497ae732c22b904622b9e2459.html",
+      "advertised_pages": 63,
+      "file_count": 50,
+      "representation": "http_html"
+    },
+    {
+      "dataset": 1,
+      "page": 1,
+      "observed_at": "2026-11-07T18:45:29.974Z",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-1-files?page=1",
+      "html_sha256": "b62b31e3b5002476f47e4624561ce3ad162bc01aa7cc1933d2f76d916987c88e",
+      "snapshot": "data/catalog/2026-11-07/browser-snapshots/dataset-1-page-1.dom.html",
+      "advertised_pages": 63,
+      "file_count": 50,
+      "representation": "browser_link_dom"
+    },
+    {
+      "dataset": 2,
+      "page": 0,
+      "observed_at": "2026-11-01T23:00:26.6610535Z",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-2-files",
+      "html_sha256": "0e0f7d13ece6d38cd6aa0e2828e584af1777dae00d19bbd58513f71e0475968e",
+      "snapshot": "data/inventory/2026-11-01/listing-data-set-2-files-page-0.html",
+      "advertised_pages": 12,
+      "file_count": 49,
+      "representation": "http_html"
+    },
+    {
+      "dataset": 2,
+      "page": 0,
+      "observed_at": "2026-11-07T18:41:52.709453+00:00",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-2-files",
+      "html_sha256": "1fb753efc511326e964ea75a687e3e20a56bf3da2167253e7403a4debf769aed",
+      "snapshot": "data/catalog/cache/1fb753efc511326e964ea75a687e3e20a56bf3da2167253e7403a4debf769aed.html",
+      "advertised_pages": 12,
+      "file_count": 49,
+      "representation": "http_html"
+    },
+    {
+      "dataset": 3,
+      "page": 0,
+      "observed_at": "2026-11-01T23:00:27.5637631Z",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-3-files",
+      "html_sha256": "991a757e017e57599a2ffec22605dd4b47c2c9a2a14b399a7af833283d62763b",
+      "snapshot": "data/inventory/2026-11-01/listing-data-set-3-files-page-0.html",
+      "advertised_pages": 2,
+      "file_count": 49,
+      "representation": "http_html"
+    },
+    {
+      "dataset": 3,
+      "page": 0,
+      "observed_at": "2026-11-07T18:41:53.981345+00:00",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-3-files",
+      "html_sha256": "6e5a09ceba55350eb000fcef467d4a1abc660dc985a743be6f5d378903022be4",
+      "snapshot": "data/catalog/cache/6e5a09ceba55350eb000fcef467d4a1abc660dc985a743be6f5d378903022be4.html",
+      "advertised_pages": 2,
+      "file_count": 49,
+      "representation": "http_html"
+    },
+    {
+      "dataset": 3,
+      "page": 1,
+      "observed_at": "2026-11-07T18:45:37.813Z",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-3-files?page=1",
+      "html_sha256": "a44727c52beca0e1b836870e31d50f7e86dc93a46f6367b8ddf73efa294782ed",
+      "snapshot": "data/catalog/2026-11-07/browser-snapshots/dataset-3-page-1.dom.html",
+      "advertised_pages": 2,
+      "file_count": 28,
+      "representation": "browser_link_dom"
+    },
+    {
+      "dataset": 4,
+      "page": 0,
+      "observed_at": "2026-11-01T23:00:28.5044232Z",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-4-files",
+      "html_sha256": "6c2ad7331971e30b1454777e603aaaa3e3ed3d80ae33c67b7be732375f9c8801",
+      "snapshot": "data/inventory/2026-11-01/listing-data-set-4-files-page-0.html",
+      "advertised_pages": 4,
+      "file_count": 49,
+      "representation": "http_html"
+    },
+    {
+      "dataset": 4,
+      "page": 0,
+      "observed_at": "2026-11-07T18:41:55.221369+00:00",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-4-files",
+      "html_sha256": "ca9c43e1b6aca3350e1932fa2b9179c2c7ef7311778216cbbe7fcfd7913f24e8",
+      "snapshot": "data/catalog/cache/ca9c43e1b6aca3350e1932fa2b9179c2c7ef7311778216cbbe7fcfd7913f24e8.html",
+      "advertised_pages": 4,
+      "file_count": 49,
+      "representation": "http_html"
+    },
+    {
+      "dataset": 4,
+      "page": 1,
+      "observed_at": "2026-11-07T18:45:40.923Z",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-4-files?page=1",
+      "html_sha256": "3471dab7c67b03194f689af83a5f9d9ae211b15ce67c8ab34739ce02b2b9af16",
+      "snapshot": "data/catalog/2026-11-07/browser-snapshots/dataset-4-page-1.dom.html",
+      "advertised_pages": 4,
+      "file_count": 50,
+      "representation": "browser_link_dom"
+    },
+    {
+      "dataset": 4,
+      "page": 2,
+      "observed_at": "2026-11-07T18:45:44.258Z",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-4-files?page=2",
+      "html_sha256": "c93746ee5e05040859046205c3886bbfa59112584342988ca0b1ff5c98199642",
+      "snapshot": "data/catalog/2026-11-07/browser-snapshots/dataset-4-page-2.dom.html",
+      "advertised_pages": 4,
+      "file_count": 50,
+      "representation": "browser_link_dom"
+    },
+    {
+      "dataset": 4,
+      "page": 3,
+      "observed_at": "2026-11-07T18:45:47.662Z",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-4-files?page=3",
+      "html_sha256": "995f66b0f7d9479ca82b3a7a6056fa718aaf44b556e258a76b56b947ea79742b",
+      "snapshot": "data/catalog/2026-11-07/browser-snapshots/dataset-4-page-3.dom.html",
+      "advertised_pages": 4,
+      "file_count": 2,
+      "representation": "browser_link_dom"
+    },
+    {
+      "dataset": 5,
+      "page": 0,
+      "observed_at": "2026-11-01T23:00:29.4494384Z",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-5-files",
+      "html_sha256": "fd9cb9b2469016694b77a1979d9ea39180e9d09691905a7e1c60828c6972049b",
+      "snapshot": "data/inventory/2026-11-01/listing-data-set-5-files-page-0.html",
+      "advertised_pages": 3,
+      "file_count": 49,
+      "representation": "http_html"
+    },
+    {
+      "dataset": 5,
+      "page": 0,
+      "observed_at": "2026-11-07T18:41:56.510243+00:00",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-5-files",
+      "html_sha256": "454c723863affffbfa3f63314a4a151d35b0d7c04205b74405ab902f9a2871e6",
+      "snapshot": "data/catalog/cache/454c723863affffbfa3f63314a4a151d35b0d7c04205b74405ab902f9a2871e6.html",
+      "advertised_pages": 3,
+      "file_count": 49,
+      "representation": "http_html"
+    },
+    {
+      "dataset": 5,
+      "page": 1,
+      "observed_at": "2026-11-07T18:45:51.624Z",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-5-files?page=1",
+      "html_sha256": "0fbd920f5b2f95120efb951f66e31a37ef672da3a6050bb134c68bdabe87eec1",
+      "snapshot": "data/catalog/2026-11-07/browser-snapshots/dataset-5-page-1.dom.html",
+      "advertised_pages": 3,
+      "file_count": 50,
+      "representation": "browser_link_dom"
+    },
+    {
+      "dataset": 5,
+      "page": 2,
+      "observed_at": "2026-11-07T18:45:55.794Z",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-5-files?page=2",
+      "html_sha256": "316ca6c6b143d8c1e6579d50e6d56efec71feee18867c42f2ab705d484615507",
+      "snapshot": "data/catalog/2026-11-07/browser-snapshots/dataset-5-page-2.dom.html",
+      "advertised_pages": 3,
+      "file_count": 19,
+      "representation": "browser_link_dom"
+    },
+    {
+      "dataset": 6,
+      "page": 0,
+      "observed_at": "2026-11-01T23:00:30.4045818Z",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-6-files",
+      "html_sha256": "b13beca79b43c0732f20e21cd8beb9dd1abed4593c91e84795751f229ee9ae05",
+      "snapshot": "data/inventory/2026-11-01/listing-data-set-6-files-page-0.html",
+      "advertised_pages": 1,
+      "file_count": 13,
+      "representation": "http_html"
+    },
+    {
+      "dataset": 6,
+      "page": 0,
+      "observed_at": "2026-11-07T18:41:57.726062+00:00",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-6-files",
+      "html_sha256": "a15405f2cb7cdf596f337d902b9b4bf6bf537284073a2fd5baff5ad019cab15f",
+      "snapshot": "data/catalog/cache/a15405f2cb7cdf596f337d902b9b4bf6bf537284073a2fd5baff5ad019cab15f.html",
+      "advertised_pages": 1,
+      "file_count": 13,
+      "representation": "http_html"
+    },
+    {
+      "dataset": 7,
+      "page": 0,
+      "observed_at": "2026-11-01T23:00:30.8586593Z",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-7-files",
+      "html_sha256": "902919ad5f334b1569555176da15b426f5b1ff5fb8f7337d8686492d4abe752a",
+      "snapshot": "data/inventory/2026-11-01/listing-data-set-7-files-page-0.html",
+      "advertised_pages": 1,
+      "file_count": 17,
+      "representation": "http_html"
+    },
+    {
+      "dataset": 7,
+      "page": 0,
+      "observed_at": "2026-11-07T18:41:59.014693+00:00",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-7-files",
+      "html_sha256": "262f5a8882259c523881fa6c1536ed5046592500212a37ca71ce8e99f5985ce8",
+      "snapshot": "data/catalog/cache/262f5a8882259c523881fa6c1536ed5046592500212a37ca71ce8e99f5985ce8.html",
+      "advertised_pages": 1,
+      "file_count": 17,
+      "representation": "http_html"
+    },
+    {
+      "dataset": 8,
+      "page": 0,
+      "observed_at": "2026-11-01T23:00:31.3043435Z",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-8-files",
+      "html_sha256": "91c625d01aa66f5e50ffcb4623879d0c8b554218f302a0d8989e45d1782f356a",
+      "snapshot": "data/inventory/2026-11-01/listing-data-set-8-files-page-0.html",
+      "advertised_pages": 221,
+      "file_count": 49,
+      "representation": "http_html"
+    },
+    {
+      "dataset": 8,
+      "page": 0,
+      "observed_at": "2026-11-07T18:42:00.430079+00:00",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-8-files",
+      "html_sha256": "2e5d0ba0306ef97ff22aea8551872527994590926b2336fbf7d087262a2c4b41",
+      "snapshot": "data/catalog/cache/2e5d0ba0306ef97ff22aea8551872527994590926b2336fbf7d087262a2c4b41.html",
+      "advertised_pages": 221,
+      "file_count": 49,
+      "representation": "http_html"
+    },
+    {
+      "dataset": 9,
+      "page": 0,
+      "observed_at": "2026-11-01T23:00:32.2262877Z",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-9-files",
+      "html_sha256": "bf6576cb397519ca2482fc77db30bba40064d85a9666624af6fd059f3459a6da",
+      "snapshot": "data/inventory/2026-11-01/listing-data-set-9-files-page-0.html",
+      "advertised_pages": 10675,
+      "file_count": 50,
+      "representation": "http_html"
+    },
+    {
+      "dataset": 9,
+      "page": 0,
+      "observed_at": "2026-11-07T18:42:01.626644+00:00",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-9-files",
+      "html_sha256": "a4c8390ce5f1009b25fa0952566da59d98078f52f50561765f3d756582cd0c32",
+      "snapshot": "data/catalog/cache/a4c8390ce5f1009b25fa0952566da59d98078f52f50561765f3d756582cd0c32.html",
+      "advertised_pages": 10675,
+      "file_count": 50,
+      "representation": "http_html"
+    },
+    {
+      "dataset": 10,
+      "page": 0,
+      "observed_at": "2026-11-01T23:00:33.0970764Z",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-10-files",
+      "html_sha256": "5fabe73f7f62657957ce07d45e0ee9d4da447c2af84e5d3494e4ebbb3b87bf91",
+      "snapshot": "data/inventory/2026-11-01/listing-data-set-10-files-page-0.html",
+      "advertised_pages": 10081,
+      "file_count": 50,
+      "representation": "http_html"
+    },
+    {
+      "dataset": 10,
+      "page": 0,
+      "observed_at": "2026-11-07T18:42:02.857948+00:00",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-10-files",
+      "html_sha256": "6edaefa784663dee30b82ac263f992e180d9f16251a496c097510169190b90ec",
+      "snapshot": "data/catalog/cache/6edaefa784663dee30b82ac263f992e180d9f16251a496c097510169190b90ec.html",
+      "advertised_pages": 10081,
+      "file_count": 50,
+      "representation": "http_html"
+    },
+    {
+      "dataset": 11,
+      "page": 0,
+      "observed_at": "2026-11-01T23:00:34.0171726Z",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-11-files",
+      "html_sha256": "6ae12b4bb7ba95546ba6edd03ff06483b5a8017a41335fdcc80208bc25a20976",
+      "snapshot": "data/inventory/2026-11-01/listing-data-set-11-files-page-0.html",
+      "advertised_pages": 6634,
+      "file_count": 50,
+      "representation": "http_html"
+    },
+    {
+      "dataset": 11,
+      "page": 0,
+      "observed_at": "2026-11-07T18:42:04.070873+00:00",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-11-files",
+      "html_sha256": "1e3dabb77e35e01bdbf54b673aafde257b24bfbfc3f47900801cb4265761940f",
+      "snapshot": "data/catalog/cache/1e3dabb77e35e01bdbf54b673aafde257b24bfbfc3f47900801cb4265761940f.html",
+      "advertised_pages": 6634,
+      "file_count": 50,
+      "representation": "http_html"
+    },
+    {
+      "dataset": 12,
+      "page": 0,
+      "observed_at": "2026-11-01T23:00:34.9252129Z",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-12-files",
+      "html_sha256": "3f5969215ce8321167c83f590943845c1f7a283cea2172b2c8107d2a27dfbd99",
+      "snapshot": "data/inventory/2026-11-01/listing-data-set-12-files-page-0.html",
+      "advertised_pages": 4,
+      "file_count": 50,
+      "representation": "http_html"
+    },
+    {
+      "dataset": 12,
+      "page": 0,
+      "observed_at": "2026-11-07T18:42:05.418043+00:00",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-12-files",
+      "html_sha256": "4069607f5054770b8f96a1beb17475d65215d40fad0afc58a944b1ee0a3a2956",
+      "snapshot": "data/catalog/cache/4069607f5054770b8f96a1beb17475d65215d40fad0afc58a944b1ee0a3a2956.html",
+      "advertised_pages": 4,
+      "file_count": 50,
+      "representation": "http_html"
+    },
+    {
+      "dataset": 12,
+      "page": 1,
+      "observed_at": "2026-11-07T18:45:58.893Z",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-12-files?page=1",
+      "html_sha256": "8fd2cdcaea435b27590ea5f812803431adc22a4853020da04ee43dae5969b81e",
+      "snapshot": "data/catalog/2026-11-07/browser-snapshots/dataset-12-page-1.dom.html",
+      "advertised_pages": 4,
+      "file_count": 50,
+      "representation": "browser_link_dom"
+    },
+    {
+      "dataset": 12,
+      "page": 2,
+      "observed_at": "2026-11-07T18:46:03.445Z",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-12-files?page=2",
+      "html_sha256": "37058309e703d2ff3a0aff307402625e33085d7d1ae3433356dc3a9086286524",
+      "snapshot": "data/catalog/2026-11-07/browser-snapshots/dataset-12-page-2.dom.html",
+      "advertised_pages": 4,
+      "file_count": 50,
+      "representation": "browser_link_dom"
+    },
+    {
+      "dataset": 12,
+      "page": 3,
+      "observed_at": "2026-11-07T18:46:06.350Z",
+      "source_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-12-files?page=3",
+      "html_sha256": "105846d622bc456710041d6f8a775b90797672a716ddc479ee06bdf5658cba52",
+      "snapshot": "data/catalog/2026-11-07/browser-snapshots/dataset-12-page-3.dom.html",
+      "advertised_pages": 4,
+      "file_count": 25,
+      "representation": "browser_link_dom"
+    }
+  ],
+  "attempts": [
+    {
+      "dataset": 1,
+      "page": 62,
+      "attempted_at": "2026-11-01T23:00:26.0389531Z",
+      "status": "historical_access_blocked",
+      "http_status": 403,
+      "final_url": null,
+      "error": "Response status code does not indicate success: 403 (Forbidden)."
+    },
+    {
+      "dataset": 2,
+      "page": 11,
+      "attempted_at": "2026-11-01T23:00:27.0839155Z",
+      "status": "historical_access_blocked",
+      "http_status": 403,
+      "final_url": null,
+      "error": "Response status code does not indicate success: 403 (Forbidden)."
+    },
+    {
+      "dataset": 3,
+      "page": 1,
+      "attempted_at": "2026-11-01T23:00:28.0224736Z",
+      "status": "historical_access_blocked",
+      "http_status": 403,
+      "final_url": null,
+      "error": "Response status code does not indicate success: 403 (Forbidden)."
+    },
+    {
+      "dataset": 4,
+      "page": 3,
+      "attempted_at": "2026-11-01T23:00:28.9367972Z",
+      "status": "historical_access_blocked",
+      "http_status": 403,
+      "final_url": null,
+      "error": "Response status code does not indicate success: 403 (Forbidden)."
+    },
+    {
+      "dataset": 5,
+      "page": 2,
+      "attempted_at": "2026-11-01T23:00:29.8985163Z",
+      "status": "historical_access_blocked",
+      "http_status": 403,
+      "final_url": null,
+      "error": "Response status code does not indicate success: 403 (Forbidden)."
+    },
+    {
+      "dataset": 8,
+      "page": 220,
+      "attempted_at": "2026-11-01T23:00:31.7905559Z",
+      "status": "historical_access_blocked",
+      "http_status": 403,
+      "final_url": null,
+      "error": "Response status code does not indicate success: 403 (Forbidden)."
+    },
+    {
+      "dataset": 9,
+      "page": 10674,
+      "attempted_at": "2026-11-01T23:00:32.6441990Z",
+      "status": "historical_access_blocked",
+      "http_status": 403,
+      "final_url": null,
+      "error": "Response status code does not indicate success: 403 (Forbidden)."
+    },
+    {
+      "dataset": 10,
+      "page": 10080,
+      "attempted_at": "2026-11-01T23:00:33.5229409Z",
+      "status": "historical_access_blocked",
+      "http_status": 403,
+      "final_url": null,
+      "error": "Response status code does not indicate success: 403 (Forbidden)."
+    },
+    {
+      "dataset": 11,
+      "page": 6633,
+      "attempted_at": "2026-11-01T23:00:34.4500875Z",
+      "status": "historical_access_blocked",
+      "http_status": 403,
+      "final_url": null,
+      "error": "Response status code does not indicate success: 403 (Forbidden)."
+    },
+    {
+      "dataset": 12,
+      "page": 3,
+      "attempted_at": "2026-11-01T23:00:35.3595514Z",
+      "status": "historical_access_blocked",
+      "http_status": 403,
+      "final_url": null,
+      "error": "Response status code does not indicate success: 403 (Forbidden)."
+    },
+    {
+      "dataset": 1,
+      "page": 0,
+      "attempted_at": "2026-11-07T18:41:51.421566+00:00",
+      "status": "observed",
+      "http_status": 200,
+      "final_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-1-files",
+      "error": null
+    },
+    {
+      "dataset": 2,
+      "page": 0,
+      "attempted_at": "2026-11-07T18:41:52.709453+00:00",
+      "status": "observed",
+      "http_status": 200,
+      "final_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-2-files",
+      "error": null
+    },
+    {
+      "dataset": 3,
+      "page": 0,
+      "attempted_at": "2026-11-07T18:41:53.981345+00:00",
+      "status": "observed",
+      "http_status": 200,
+      "final_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-3-files",
+      "error": null
+    },
+    {
+      "dataset": 4,
+      "page": 0,
+      "attempted_at": "2026-11-07T18:41:55.221369+00:00",
+      "status": "observed",
+      "http_status": 200,
+      "final_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-4-files",
+      "error": null
+    },
+    {
+      "dataset": 5,
+      "page": 0,
+      "attempted_at": "2026-11-07T18:41:56.510243+00:00",
+      "status": "observed",
+      "http_status": 200,
+      "final_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-5-files",
+      "error": null
+    },
+    {
+      "dataset": 6,
+      "page": 0,
+      "attempted_at": "2026-11-07T18:41:57.726062+00:00",
+      "status": "observed",
+      "http_status": 200,
+      "final_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-6-files",
+      "error": null
+    },
+    {
+      "dataset": 7,
+      "page": 0,
+      "attempted_at": "2026-11-07T18:41:59.014693+00:00",
+      "status": "observed",
+      "http_status": 200,
+      "final_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-7-files",
+      "error": null
+    },
+    {
+      "dataset": 8,
+      "page": 0,
+      "attempted_at": "2026-11-07T18:42:00.430079+00:00",
+      "status": "observed",
+      "http_status": 200,
+      "final_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-8-files",
+      "error": null
+    },
+    {
+      "dataset": 9,
+      "page": 0,
+      "attempted_at": "2026-11-07T18:42:01.626644+00:00",
+      "status": "observed",
+      "http_status": 200,
+      "final_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-9-files",
+      "error": null
+    },
+    {
+      "dataset": 10,
+      "page": 0,
+      "attempted_at": "2026-11-07T18:42:02.857948+00:00",
+      "status": "observed",
+      "http_status": 200,
+      "final_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-10-files",
+      "error": null
+    },
+    {
+      "dataset": 11,
+      "page": 0,
+      "attempted_at": "2026-11-07T18:42:04.070873+00:00",
+      "status": "observed",
+      "http_status": 200,
+      "final_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-11-files",
+      "error": null
+    },
+    {
+      "dataset": 12,
+      "page": 0,
+      "attempted_at": "2026-11-07T18:42:05.418043+00:00",
+      "status": "observed",
+      "http_status": 200,
+      "final_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-12-files",
+      "error": null
+    },
+    {
+      "dataset": 1,
+      "page": 1,
+      "attempted_at": "2026-11-07T18:42:54.060169+00:00",
+      "status": "access_blocked",
+      "http_status": 403,
+      "final_url": null,
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}

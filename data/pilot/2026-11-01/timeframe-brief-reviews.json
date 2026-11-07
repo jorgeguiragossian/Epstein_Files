@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "method": "Codex editorial comparison of twenty-eight briefs with rendered PDF pages and native text. Same-assistant review; not independent or human verification. Recorded checks are pinned to the reviewed prose, citations and source hashes; newly prepared briefs await a separate pass.",
+  "method": "Codex editorial comparison of thirty-six briefs with rendered PDF pages and native text. Same-assistant review; not independent or human verification. Recorded checks are pinned to the reviewed prose, citations and source hashes; newly prepared briefs await a separate pass.",
   "reviews": [
     {
       "file_id": "EFTA00039826",
@@ -415,6 +415,126 @@
       "reviewer": "Codex",
       "result": "supported_as_scoped",
       "notes": "The cover-email sentence supports the list of attached records. The brief does not authenticate attachments or adopt allegations or investigative conclusions.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA00008920",
+      "source_sha256": "048de59a937ff6521d3477e37b17cca17e1eb1e5ad93e611d1c4da76c2a459c6",
+      "brief_sha256": "3d2fb277ddbd7c1dfc25552baf6cff39d5ae8c9f91800e8f66db1009a0fddee7",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "Introductory answers support employment, title and approximate tenure. The limitation preserves the resemblance to EFTA00008631 without treating two PDFs as independent testimony.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA00009440",
+      "source_sha256": "bba44f52ed6dae64994595b65f7e3dbf1b2422437d52cae9450c077ce139afc5",
+      "brief_sha256": "1fe0726ff1af04c7d6f7360f4f2244e66a3de1bc2956e4ac5ba5099c7a868cb7",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "Separate exact excerpts support Colonial Bank and Western Union return dates. Those dates remain attributed to the witness and distinct from the May 8 session date.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA00009448",
+      "source_sha256": "007c15194efb1feb6565c903e9cee81adb466b719302391c63aa7e274fa30443",
+      "brief_sha256": "11488f39852f4f58d80255e5a615a0cd5596009b36d20c27fe43d5939fabaa9f",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "The cited answers support an explicit correction of an earlier age statement. Biographical claims remain attributed, not independently verified.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA00009478",
+      "source_sha256": "4d085a827108e674ac991d17a26e348e728cd63c34098ec990ae8cab8a2f5af4",
+      "brief_sha256": "808d51b88b57d3a3f263be9d97dc3a3c0bdb202787f115b488b861ea75b93e73",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "The question and affirmative answer support obtaining photographs. Redacted identities and the photographs themselves are not reconstructed or authenticated.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA00009502",
+      "source_sha256": "088b7d62b4611a8210ae0260f0eb73f80def205d2a9c9326a22eb70052dda115",
+      "brief_sha256": "f9c695ea2c81e14d0f7ee5b66c80c084e0d9d88dbb50a3c75ef67f2dd667749c",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "The introductory answer supports FBI special-agent employment in Palm Beach. Later testimony is outside scope.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA00009512",
+      "source_sha256": "fbd8343f9eee79f1c552dd38e27ee713a90f2f21fe4d769fb768f40acca1af60",
+      "brief_sha256": "77d06a4b02278f413c1c166c27c3b16e70ef27ce926da43fe45ad333356d6885",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "The introductory answers support FBI employment and the named investigation; the brief does not assess investigative conclusions.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA00009586",
+      "source_sha256": "f82e0aa52918a2461631e07254aa9d20219f6db9df6521b05043257345ef3013",
+      "brief_sha256": "16d34a0179be4f5bbe8968e16cdecb46d124f6f4d14e128cc7703b8e53375849",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "The procedural question and answer support service of a subpoena. PDF page 4 versus internal transcript page 3 is correctly distinguished; redacted address remains unreconstructed.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA00009632",
+      "source_sha256": "5120d59249d62d8f661abb57a6e037ea34e3acd95fb63db4c77cd5c351d57c68",
+      "brief_sha256": "1d2152711f66611dbcdfc3dee03c0ca07d496e100831e85b8aa472bd00919a32",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "The introductory employment answer supports FBI service in Palm Beach County. Redacted identity and later testimony remain outside scope.",
       "checks": {
         "statement_support": true,
         "attribution": true,

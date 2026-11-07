@@ -21,4 +21,8 @@ The [person-name filter](docs/person-filter.md) now includes 22 curated, source-
 
 The [email review workspace](docs/email-review.md), available at `/emails`, adds page-cited header/body candidates and conservative visible-copy grouping. Incomplete participants and dates remain flagged; contact rankings are not yet enabled.
 
-The [timeframe briefs](docs/timeframe-briefs.md) view selects 36 prepared AI-assisted, page-scoped drafts with citations. Twenty-eight have recorded editorial source checks; the eight newest drafts await that separate pass. All 36 dated pilot PDFs now have a limited-page brief. This static view does not generate live AI summaries.
+The [timeframe briefs](docs/timeframe-briefs.md) view selects 36 prepared AI-assisted, page-scoped drafts with citations. All 36 have recorded Codex editorial source checks; these are not independent or human verification. All 36 dated pilot PDFs now have a limited-page brief. This static view does not generate live AI summaries.
+
+## Collection catalog
+
+The [resumable listing catalog](docs/catalog.md) records 898 observed dataset/file URL pairs across all 12 datasets, including download and extraction metadata for the 100 pilot PDFs. The November 7 refresh reached all first pages. Command-line pagination returned HTTP 403; a normal browser pass captured ten additional pages, completing visible listing coverage for datasets 3, 4, 5, 6, 7 and 12. The full current file total remains unknown. Catalog entries outside the pilot are discovery records, not searchable document text.

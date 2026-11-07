@@ -1,6 +1,6 @@
 # Review coverage dashboard
 
-The [November 7 brief evaluation](brief-evaluation-2026-11-07.md) adds date/brief coverage alongside the correspondence counts described below. New totals show 36 dated PDFs, 36 prepared page briefs, twenty-eight with recorded editorial source checks and none with date evidence only. Dataset/document rows include these denominators and links to the matching timeframe cards. The default document table now includes PDFs with either email candidates or a usable reviewed date; the checkbox shows all remaining pilot PDFs. A brief's editorial source check is separate from email-candidate review and does not change draft or verification status.
+The [November 7 brief evaluation](brief-evaluation-2026-11-07.md) adds date/brief coverage alongside the correspondence counts described below. New totals show 36 dated PDFs, 36 prepared page briefs, thirty-six with recorded editorial source checks and none with date evidence only. Dataset/document rows include these denominators and links to the matching timeframe cards. The default document table now includes PDFs with either email candidates or a usable reviewed date; the checkbox shows all remaining pilot PDFs. A brief's editorial source check is separate from email-candidate review and does not change draft or verification status.
 
 The dashboard at `/coverage` locally and `coverage.html` on GitHub Pages shows candidate-level review totals by dataset and source PDF. It includes all 100 pilot PDFs across 12 datasets; documents with no detected email candidates are hidden from the document table by default and can be shown with a checkbox. A dataset selector narrows the document table while the pilot totals remain fixed. Dataset/table settings persist in the URL.
 
@@ -15,3 +15,5 @@ Nonzero candidate counts link to matching Email review groups. New focuses inclu
 The [second November 7 batch](brief-evaluation-batch-2.md) records the next ten source checks and ten additional drafts.
 
 The [third November 7 batch](brief-evaluation-batch-3.md) completes limited-page brief coverage for all 36 dated pilot PDFs. The eight newest drafts await a separate recorded check; counts describe PDF records, not unique testimony or events.
+
+The [final dated-pilot review batch](brief-evaluation-batch-4.md) records the remaining eight editorial checks. All 36 page briefs now have a recorded same-assistant check; this does not establish whole-document or full-release coverage.
