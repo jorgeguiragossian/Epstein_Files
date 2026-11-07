@@ -13,6 +13,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+from collections import Counter
 from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
@@ -247,11 +248,14 @@ def export(db, folder, pilot):
         datasets.append(dict(dataset=dataset, listing_url=listing_url(dataset), observed_listing_pages=len(pages),
                              advertised_listing_pages=advertised, observed_file_urls=count,
                              listing_coverage='all_advertised_pages_observed' if complete else 'partial',
+                             next_unobserved_listing_page=next((page for page in range(advertised or 1) if page not in pages), None),
                              current_total_files=None,
                              last_observed_at=max((r['observed_at'] for r in subset), default=None)))
+    extensions = dict(sorted(Counter(Path(r[0]).suffix.lower() for r in db.execute('SELECT filename FROM files')).items()))
     manifest = dict(schema_version=1, exported_at_utc=now(), scope='Twelve numbered DOJ datasets; observed URL pairs, not unique documents',
                     method='Historical and current listing observations retained separately. No file URLs inferred from EFTA numeric ranges. No document GET or HEAD requests.',
-                    observed_file_urls=sum(r['observed_file_urls'] for r in datasets), current_total_files=None,
+                    observed_file_urls=sum(r['observed_file_urls'] for r in datasets), observed_url_extensions=extensions,
+                    current_total_files=None,
                     datasets=datasets, observations=observations, attempts=attempts)
     (folder / 'catalog.json').write_text(json.dumps(manifest, indent=2) + '\n', encoding='utf-8')
     # Separate provenance rows keep the main catalog compact while retaining every discovery.

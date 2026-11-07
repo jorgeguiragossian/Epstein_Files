@@ -66,6 +66,8 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(value['datasets'][0]['listing_coverage'], 'partial')
         self.assertEqual(value['datasets'][0]['observed_listing_pages'], 1)
         self.assertEqual(value['datasets'][0]['advertised_listing_pages'], 3)
+        self.assertEqual(value['datasets'][0]['next_unobserved_listing_page'], 1)
+        self.assertEqual(value['observed_url_extensions'], {'.pdf': 1})
         self.assertEqual(value['datasets'][1]['observed_file_urls'], 0)
         self.assertEqual(value['datasets'][1]['listing_coverage'], 'partial')
         self.assertIsNone(value['datasets'][1]['advertised_listing_pages'])
@@ -77,6 +79,12 @@ class CatalogTests(unittest.TestCase):
                                  [tuple(r) for r in restored.execute('SELECT * FROM ' + table)])
         finally:
             restored.close()
+
+    def test_same_efta_stem_does_not_merge_different_file_formats(self):
+        body = html('EFTA1.pdf', "<a href='/epstein/files/DataSet%201/EFTA1.avi'>video</a>")
+        catalog.record(self.db, 1, 0, body, '2026-11-07', 'snapshot')
+        rows = self.db.execute('SELECT file_id,filename FROM files ORDER BY filename').fetchall()
+        self.assertEqual([tuple(r) for r in rows], [('EFTA1', 'EFTA1.avi'), ('EFTA1', 'EFTA1.pdf')])
 
     def test_browser_import_rejects_wrong_page_and_modified_snapshot(self):
         snapshot = Path(self.temp.name) / 'page.dom.html'
