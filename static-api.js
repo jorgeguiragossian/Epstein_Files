@@ -78,7 +78,7 @@
   if(from)day(from);if(to)day(to);if(from&&to&&from>to)throw new Error('Start date must be on or before end date.');
   const set=dataset?integer(dataset,1,12,'Dataset'):null;if(person&&!data.people.people.some(r=>r.id===person))throw new Error('Unknown person-name filter.');
   const scope=index.documents.filter(r=>!set||r.dataset===set),dated=scope.filter(r=>r.date_status==='dated'&&r.primary_date),within=dated.filter(r=>(!from||r.primary_date>=from)&&(!to||r.primary_date<=to)),selected=within.filter(r=>!person||r.people.includes(person)).sort((a,b)=>b.primary_date.localeCompare(a.primary_date)||b.id.localeCompare(a.id));
-  return{version:index.version,scope_documents:scope.length,eligible_dated_documents:dated.length,excluded_without_reviewed_date:scope.length-dated.length,documents_in_date_range:within.length,selected_documents:selected.length,prepared_briefs:selected.filter(r=>r.brief).length,date_evidence_only:selected.filter(r=>!r.brief).length,results:selected};
+  return{version:index.version,scope_documents:scope.length,eligible_dated_documents:dated.length,excluded_without_reviewed_date:scope.length-dated.length,documents_in_date_range:within.length,selected_documents:selected.length,prepared_briefs:selected.filter(r=>r.brief).length,source_checked_briefs:selected.filter(r=>r.brief?.editorial_review).length,date_evidence_only:selected.filter(r=>!r.brief).length,results:selected};
  }
  function dispatch(data,input){
   const url=new URL(input,'https://static.invalid'),p=url.searchParams;
