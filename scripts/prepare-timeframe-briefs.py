@@ -48,6 +48,93 @@ EXTRA_BRIEFS=[
   'This describes a question recorded in the conference transcript. It is not a finding about improper contact or the merits of the subpoena.')
 ]
 
+EXTRA_BRIEFS += [('EFTA00008529',
+  2,
+  'Witness background in the June 2019 session',
+  'The witness identifies their employer as the FBI, their title as special agent, and their assignment as '
+  'the Violent Crimes Against Children squad.',
+  ['A. The FBI.', 'A. Special Agent.', 'A. The Violent Crimes Against Children squad.'],
+  'This covers introductory testimony only. The witness’s redacted identity is not reconstructed and later '
+  'testimony is not summarized.'),
+ ('EFTA00008585',
+  2,
+  'Witness reports an earlier appearance',
+  'The witness states that they testified before the grand jury on June 18, 2019.',
+  ['Q. Did you testify before this grand jury on June 18th, 2019? A. I did.'],
+  'This attributes the answer to the witness in the July 2 session; it does not compare or assess the two '
+  'sessions’ testimony.'),
+ ('EFTA00008631',
+  2,
+  'Microphone instructions and witness background',
+  'The examiner asks the masked witness behind Plexiglas to speak into the microphone; the witness '
+  'identifies their employer as the FBI and title as special agent.',
+  ['you are wearing a mask',
+   "behind Plexiglas. There's a microphone in front of you",
+   'A. The Federal Bureau of Investigation.',
+   'A. Special agent.'],
+  'This describes introductory courtroom arrangements and answers only, without identifying the redacted '
+  'witness or summarizing later testimony.'),
+ ('EFTA00008708',
+  2,
+  'Proposed correction of indictment errors',
+  'The prosecutor says the proposed superseding indictment corrects two clerical errors in Counts Five and '
+  'Six and says no new evidence or witnesses will be presented that day.',
+  ['it corrects two clerical errors, or two typographical errors that were contained in Counts Five and Six '
+   'which are the perjury charges.',
+   'As a result, I will not be presenting any new evidence or new witnesses today.'],
+  'This records the prosecutor’s explanation and intended procedure, not a finding on the charges or '
+  'confirmation of the session’s eventual outcome.'),
+ ('EFTA00008744',
+  2,
+  'Detective’s introductory testimony',
+  'The witness identifies their employer as the New York City Police Department, their title as detective, '
+  'and their service as about fifteen years.',
+  ['A. New York City Police Department.', 'A. Detective.', 'A. About 15 years.'],
+  'This covers introductory answers only. It does not reconstruct the redacted identity or assess later '
+  'testimony.'),
+ ('EFTA00009229',
+  3,
+  'Opening of the Acosta interview',
+  'The transcript records Acosta being sworn, and an examiner identifies herself as counsel with DOJ’s '
+  'Office of Professional Responsibility.',
+  ['was called as a witness and, having been first duly sworn,',
+   'I am a counsel with the Office of Professional'],
+  'This is an opening-procedure brief, not a summary of Acosta’s substantive account or OPR findings.'),
+ ('EFTA02212961',
+  1,
+  'Itinerary details in an email',
+  'The message lists proposed departures and arrivals involving VKO, St. Petersburg and CDG, followed by an '
+  'incomplete line for a CDG-to-SVO leg.',
+  ['Depart St. Petersburg 8:35am arrive CDG 3:30pm', 'May 17th: Depart CDG 6:10pm arrive SVO (not'],
+  'These are itinerary statements, not evidence of completed travel. The incomplete final line and redacted '
+  'participants are not reconstructed.'),
+ ('EFTA02212972',
+  1,
+  'Forwarded store contact information',
+  'A forwarded message attributed to Karyna Shuliak says store contact information is provided and '
+  'references a screenshot.',
+  ['Here is their store contact info. Thank you.', '<Screen Shot 2017-05-01 at 2.26.04 PM.png>'],
+  'The brief describes the forwarded message only; it does not authenticate or summarize the referenced '
+  'screenshot or establish a transaction.'),
+ ('EFTA02730265',
+  1,
+  'Requested changes to proposed points',
+  'The top-level message attributed to Boris Nikolic requests changing a date to the end of January and '
+  'changing the last point about help finding a job.',
+  ['In addition to changing date to the end of January, the last point need to total change re helping me '
+   'find a job'],
+  'This is a request concerning proposed wording. It does not establish acceptance, execution of an '
+  'agreement, or authenticity of the quoted terms or signature text.'),
+ ('EFTA02731485',
+  1,
+  'Referral-update email lists records',
+  'The sender says conversation notes, initial referral-call notes and correspondence with counsel are '
+  'attached for recipients’ records.',
+  ["I'm attaching notes of today's conversation with counsel, notes of the initial referral call, and the "
+   "email correspondence I've had with counsel for your records."],
+  'This summarizes the cover email’s account only. It does not verify attachments, allegations, follow-up '
+  'actions or investigative conclusions.')]
+
 REVIEW_NOTES={
  'EFTA00039826':('supported_after_citation_expansion','Expanded the excerpt to include the third-party privacy and Rule 17(c) context; wording continues to describe a request, not a ruling.'),
  'EFTA00039881':('supported_after_citation_expansion','Added the recipient heading to the credential excerpt so both recipient and subject are supported. Redacted values remain unreconstructed.'),
@@ -71,8 +158,11 @@ REVIEWED_FINGERPRINTS={
  'EFTA02212894':'383330226152f0a1e1d5c9c41228df452efec7eff33a035b4d333d62ccb769bd',
 }
 
+REVIEW_NOTES.update({'EFTA00005705': ('supported_as_scoped', 'The report records eight photographs and intended forwarding; redacted subjects remain unidentified.'), 'EFTA00009823': ('supported_as_scoped', 'The publicity estimate is quoted opinion, not a verified valuation or readership count.'), 'EFTA00009853': ('supported_as_scoped', 'The quoted Monday arrangement and outer 10/31 reply remain distinct; attendance is not established.'), 'EFTA00009882': ('supported_as_scoped', 'The quoted contact-information request is supported; redacted identities are not reconstructed.'), 'EFTA00009890': ('supported_as_scoped', 'The top-level intended filing is supported; actual filing and attachment contents are not established.'), 'EFTA00039790': ('supported_as_scoped', 'The excerpt supports circulation of an opinion; the brief does not adopt the email’s characterization of rulings.'), 'EFTA00039806': ('supported_as_scoped', 'The Tuesday reply belongs to the older quoted chain, not the February 2019 outer date.'), 'EFTA01263156': ('supported_as_scoped', 'The quoted notice describes canceled and planned travel; the outer October date is not assigned to those events.'), 'EFTA00008892': ('supported_as_scoped', 'The reproduced December 1994 letter is distinct from the June 2020 presentation; provenance is not authenticated.'), 'EFTA01263272': ('supported_as_scoped', 'The court asks about pre-subpoena contacts; this question is not a finding of misconduct.')})
+REVIEWED_FINGERPRINTS.update({'EFTA00005705': '60e21bbd26291d74d10fbe426ff1ba90208894dfde4f4742d65a7383b5fea537', 'EFTA00009823': '819e930e6467c22daba9fbffb67135fe45ffbafee5ee4d6b65006c041ead2345', 'EFTA00009853': '6216fecfc5c6e1927d5e1d5be4419a507552dea9c3245f80a9b6bb7593ff33a6', 'EFTA00009882': 'c59f3206feaee3b98f326f387afacf3c0605a71c1f4bed2e35c29fb6d1f1dda6', 'EFTA00009890': '4129b493e5543c81f995738b26b44dc13e2953128ecbebc8dcb2f64a29a6cbf1', 'EFTA00039790': 'e0407fc70258d83dc5057d2553b1d5c921c7be7208dfcc961cb3356544690146', 'EFTA00039806': '008d1a486faffd69faf086a5a081b072d7b013f4a9954064e7bfd2be855c2518', 'EFTA01263156': 'de987715efe95341711d04120fc20e09145cbdd353d798a621d32a7d431d38d4', 'EFTA00008892': 'a1d1fb0436719aa86d3b970fa146178d302fa3d9a66c0909f92d963dac1b9ad8', 'EFTA01263272': 'b82fe8edd7e0dc104ef40f12ed55b25c21e81c7f75138b1999c2102744852dba'})
 
-def original_reviews(rows):
+
+def recorded_reviews(rows):
     reviews=[]
     for brief in rows:
         if brief['file_id'] not in REVIEW_NOTES:continue
@@ -101,10 +191,10 @@ def main():
         rows.append(dict(file_id=key,source_sha256=metric['sha256'],title=title,
             scope=f'PDF page {page} only; not a whole-document summary',status='ai_assisted_editorial_draft',
             points=[dict(statement=statement,limitation=limitation,citations=[dict(page=page,quote=quote,page_text_sha256=hashlib.sha256(text.encode()).hexdigest()) for quote in quotes])]))
-    reviews=original_reviews(rows)
+    reviews=recorded_reviews(rows)
     (PILOT/'timeframe-briefs.json').write_text(json.dumps(dict(schema_version=1,prepared_on='2026-11-02',updated_on='2026-11-07',method='Prepared by Codex from cited native page text with source-context checks. Editorial AI-assisted drafts, not human-verified findings. Filtering selects existing briefs; no live AI call or cross-document narrative generation.',briefs=rows),indent=2)+'\n',encoding='utf-8')
     (PILOT/'timeframe-brief-reviews.json').write_text(json.dumps(dict(schema_version=1,
-        method='Codex editorial comparison of the original eight briefs with rendered PDF pages and native text. Same-assistant review; not independent or human verification. Two citation spans expanded before recording results.',reviews=reviews),indent=2)+'\n',encoding='utf-8')
+        method='Codex editorial comparison of eighteen briefs with rendered PDF pages and native text. Same-assistant review; not independent or human verification. Original eight checks retain their pinned fingerprints; ten additional checks record a separate pass.',reviews=reviews),indent=2)+'\n',encoding='utf-8')
     print(f'Prepared {len(rows)} page-scoped briefs.')
 
 

@@ -1,6 +1,6 @@
 # Review coverage dashboard
 
-The [November 7 brief evaluation](brief-evaluation-2026-11-07.md) adds date/brief coverage alongside the correspondence counts described below. New totals show 36 dated PDFs, 18 prepared page briefs, eight with recorded editorial source checks and 18 with date evidence only. Dataset/document rows include these denominators and links to the matching timeframe cards. The default document table now includes PDFs with either email candidates or a usable reviewed date; the checkbox shows all remaining pilot PDFs. A brief's editorial source check is separate from email-candidate review and does not change draft or verification status.
+The [November 7 brief evaluation](brief-evaluation-2026-11-07.md) adds date/brief coverage alongside the correspondence counts described below. New totals show 36 dated PDFs, 28 prepared page briefs, eighteen with recorded editorial source checks and eight with date evidence only. Dataset/document rows include these denominators and links to the matching timeframe cards. The default document table now includes PDFs with either email candidates or a usable reviewed date; the checkbox shows all remaining pilot PDFs. A brief's editorial source check is separate from email-candidate review and does not change draft or verification status.
 
 The dashboard at `/coverage` locally and `coverage.html` on GitHub Pages shows candidate-level review totals by dataset and source PDF. It includes all 100 pilot PDFs across 12 datasets; documents with no detected email candidates are hidden from the document table by default and can be shown with a checkbox. A dataset selector narrows the document table while the pilot totals remain fixed. Dataset/table settings persist in the URL.
 
@@ -11,3 +11,5 @@ Boundary counts describe editorial flags. Parser From/To gaps count missing synt
 Nonzero candidate counts link to matching Email review groups. New focuses include unreviewed, parser sender gaps, recipient gaps and date gaps. Groups retain all member source references, so future multi-occurrence groups can produce different group and candidate denominators. Dataset totals aggregate the selected pilot files, not the full DOJ release. Contact rankings remain pending.
 
 `viewer/email_coverage.py` computes the local API response at `/api/coverage`; the Pages builder exports that exact response. Tests cover zero-candidate documents, overlapping categories, dataset/document denominator consistency and preserved source references in drilldowns. Static API comparisons check the public adapter against Python, including all new filters.
+
+The [second November 7 batch](brief-evaluation-batch-2.md) records the next ten source checks and ten additional drafts.

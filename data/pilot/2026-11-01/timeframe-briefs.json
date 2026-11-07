@@ -378,6 +378,261 @@
           ]
         }
       ]
+    },
+    {
+      "file_id": "EFTA00008529",
+      "source_sha256": "28e401a4867497402833ed3f5d4277a85bc81bf299840e700694abd22325976d",
+      "title": "Witness background in the June 2019 session",
+      "scope": "PDF page 2 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "The witness identifies their employer as the FBI, their title as special agent, and their assignment as the Violent Crimes Against Children squad.",
+          "limitation": "This covers introductory testimony only. The witness\u2019s redacted identity is not reconstructed and later testimony is not summarized.",
+          "citations": [
+            {
+              "page": 2,
+              "quote": "A. The FBI.",
+              "page_text_sha256": "936c23df5bd0320ed70c7436418114652a46d06b5555b42433755cbc548a3533"
+            },
+            {
+              "page": 2,
+              "quote": "A. Special Agent.",
+              "page_text_sha256": "936c23df5bd0320ed70c7436418114652a46d06b5555b42433755cbc548a3533"
+            },
+            {
+              "page": 2,
+              "quote": "A. The Violent Crimes Against Children squad.",
+              "page_text_sha256": "936c23df5bd0320ed70c7436418114652a46d06b5555b42433755cbc548a3533"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00008585",
+      "source_sha256": "0a0c09b234b58e7d113fa0cf938304c098bfa2e76833015ef0facf100e8ae985",
+      "title": "Witness reports an earlier appearance",
+      "scope": "PDF page 2 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "The witness states that they testified before the grand jury on June 18, 2019.",
+          "limitation": "This attributes the answer to the witness in the July 2 session; it does not compare or assess the two sessions\u2019 testimony.",
+          "citations": [
+            {
+              "page": 2,
+              "quote": "Q. Did you testify before this grand jury on June 18th, 2019? A. I did.",
+              "page_text_sha256": "e3e0ac631f7b135f7548f0261476164c6c0b7af017c337a6e104d54e3e22b1a4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00008631",
+      "source_sha256": "ce91ee3e7e23acd15f1c99eefd0ab9af1fda3fe1d8b5e9e0ea8a66706d3cfbe6",
+      "title": "Microphone instructions and witness background",
+      "scope": "PDF page 2 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "The examiner asks the masked witness behind Plexiglas to speak into the microphone; the witness identifies their employer as the FBI and title as special agent.",
+          "limitation": "This describes introductory courtroom arrangements and answers only, without identifying the redacted witness or summarizing later testimony.",
+          "citations": [
+            {
+              "page": 2,
+              "quote": "you are wearing a mask",
+              "page_text_sha256": "fc9128f040d6470763c76cffa42ab44bb990170e4be5ab869f9e8e43e333a59b"
+            },
+            {
+              "page": 2,
+              "quote": "behind Plexiglas. There's a microphone in front of you",
+              "page_text_sha256": "fc9128f040d6470763c76cffa42ab44bb990170e4be5ab869f9e8e43e333a59b"
+            },
+            {
+              "page": 2,
+              "quote": "A. The Federal Bureau of Investigation.",
+              "page_text_sha256": "fc9128f040d6470763c76cffa42ab44bb990170e4be5ab869f9e8e43e333a59b"
+            },
+            {
+              "page": 2,
+              "quote": "A. Special agent.",
+              "page_text_sha256": "fc9128f040d6470763c76cffa42ab44bb990170e4be5ab869f9e8e43e333a59b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00008708",
+      "source_sha256": "4cbf5cf54bd3b1891d4b0d548fbd26e57a2ffecc15c6455ffe632aa8664cdedb",
+      "title": "Proposed correction of indictment errors",
+      "scope": "PDF page 2 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "The prosecutor says the proposed superseding indictment corrects two clerical errors in Counts Five and Six and says no new evidence or witnesses will be presented that day.",
+          "limitation": "This records the prosecutor\u2019s explanation and intended procedure, not a finding on the charges or confirmation of the session\u2019s eventual outcome.",
+          "citations": [
+            {
+              "page": 2,
+              "quote": "it corrects two clerical errors, or two typographical errors that were contained in Counts Five and Six which are the perjury charges.",
+              "page_text_sha256": "8b3b7d6a02efd89e8e8aa41e796f1e87281a6e7c549a13db591a978800b54571"
+            },
+            {
+              "page": 2,
+              "quote": "As a result, I will not be presenting any new evidence or new witnesses today.",
+              "page_text_sha256": "8b3b7d6a02efd89e8e8aa41e796f1e87281a6e7c549a13db591a978800b54571"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00008744",
+      "source_sha256": "ba14d2070e9bb05c7292af3fce5c84ccb762e8c47fc750d735ade2af6907aa63",
+      "title": "Detective\u2019s introductory testimony",
+      "scope": "PDF page 2 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "The witness identifies their employer as the New York City Police Department, their title as detective, and their service as about fifteen years.",
+          "limitation": "This covers introductory answers only. It does not reconstruct the redacted identity or assess later testimony.",
+          "citations": [
+            {
+              "page": 2,
+              "quote": "A. New York City Police Department.",
+              "page_text_sha256": "c0accf5c60ee33750f25b3ebf1dc69b4dfceb2534976c931bdb3a0b768ca480d"
+            },
+            {
+              "page": 2,
+              "quote": "A. Detective.",
+              "page_text_sha256": "c0accf5c60ee33750f25b3ebf1dc69b4dfceb2534976c931bdb3a0b768ca480d"
+            },
+            {
+              "page": 2,
+              "quote": "A. About 15 years.",
+              "page_text_sha256": "c0accf5c60ee33750f25b3ebf1dc69b4dfceb2534976c931bdb3a0b768ca480d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00009229",
+      "source_sha256": "3703cbb62d6af5d6a037bdac89413cdf3adab5f733a47ae5a07db94245925991",
+      "title": "Opening of the Acosta interview",
+      "scope": "PDF page 3 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "The transcript records Acosta being sworn, and an examiner identifies herself as counsel with DOJ\u2019s Office of Professional Responsibility.",
+          "limitation": "This is an opening-procedure brief, not a summary of Acosta\u2019s substantive account or OPR findings.",
+          "citations": [
+            {
+              "page": 3,
+              "quote": "was called as a witness and, having been first duly sworn,",
+              "page_text_sha256": "a987a654c76b7dc79ec084171092bdf1ef529c198c9e5eb5aeab8a40ff22dda5"
+            },
+            {
+              "page": 3,
+              "quote": "I am a counsel with the Office of Professional",
+              "page_text_sha256": "a987a654c76b7dc79ec084171092bdf1ef529c198c9e5eb5aeab8a40ff22dda5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA02212961",
+      "source_sha256": "36cf352734b5ecd4a43b2ac5d7717f279bc1c3d36f840f4029133ec1039f2fae",
+      "title": "Itinerary details in an email",
+      "scope": "PDF page 1 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "The message lists proposed departures and arrivals involving VKO, St. Petersburg and CDG, followed by an incomplete line for a CDG-to-SVO leg.",
+          "limitation": "These are itinerary statements, not evidence of completed travel. The incomplete final line and redacted participants are not reconstructed.",
+          "citations": [
+            {
+              "page": 1,
+              "quote": "Depart St. Petersburg 8:35am arrive CDG 3:30pm",
+              "page_text_sha256": "a35076c1e4eec5f35e95ad50827807e1e92105e14973daba880873bf4dbeee32"
+            },
+            {
+              "page": 1,
+              "quote": "May 17th: Depart CDG 6:10pm arrive SVO (not",
+              "page_text_sha256": "a35076c1e4eec5f35e95ad50827807e1e92105e14973daba880873bf4dbeee32"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA02212972",
+      "source_sha256": "b520dad0e407fdd3d375e7472f1e3bb332410bed3164cff9385fda7083e345be",
+      "title": "Forwarded store contact information",
+      "scope": "PDF page 1 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "A forwarded message attributed to Karyna Shuliak says store contact information is provided and references a screenshot.",
+          "limitation": "The brief describes the forwarded message only; it does not authenticate or summarize the referenced screenshot or establish a transaction.",
+          "citations": [
+            {
+              "page": 1,
+              "quote": "Here is their store contact info. Thank you.",
+              "page_text_sha256": "7c260d434b72efb94710266ab2539d2f3e51ffdd8e047e6891df71b4c6b70f49"
+            },
+            {
+              "page": 1,
+              "quote": "<Screen Shot 2017-05-01 at 2.26.04 PM.png>",
+              "page_text_sha256": "7c260d434b72efb94710266ab2539d2f3e51ffdd8e047e6891df71b4c6b70f49"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA02730265",
+      "source_sha256": "4ffdabbb392f3126224b15047081c2aa6acc0b813d73943a8fc3792d40f28901",
+      "title": "Requested changes to proposed points",
+      "scope": "PDF page 1 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "The top-level message attributed to Boris Nikolic requests changing a date to the end of January and changing the last point about help finding a job.",
+          "limitation": "This is a request concerning proposed wording. It does not establish acceptance, execution of an agreement, or authenticity of the quoted terms or signature text.",
+          "citations": [
+            {
+              "page": 1,
+              "quote": "In addition to changing date to the end of January, the last point need to total change re helping me find a job",
+              "page_text_sha256": "1a74027d0dac78d829d6c095105fce7fd774010c1771ddfb09fc4dfe81a34b46"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA02731485",
+      "source_sha256": "8203a023de0bb84fd77728af4ea5840f9d651addedf8cec2803b632a26f9fb03",
+      "title": "Referral-update email lists records",
+      "scope": "PDF page 1 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "The sender says conversation notes, initial referral-call notes and correspondence with counsel are attached for recipients\u2019 records.",
+          "limitation": "This summarizes the cover email\u2019s account only. It does not verify attachments, allegations, follow-up actions or investigative conclusions.",
+          "citations": [
+            {
+              "page": 1,
+              "quote": "I'm attaching notes of today's conversation with counsel, notes of the initial referral call, and the email correspondence I've had with counsel for your records.",
+              "page_text_sha256": "dab9a66beb6780599f5e24c87a35b68cf458925d58ee80f264449be61ce74111"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

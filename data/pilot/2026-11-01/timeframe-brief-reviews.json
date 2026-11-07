@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "method": "Codex editorial comparison of the original eight briefs with rendered PDF pages and native text. Same-assistant review; not independent or human verification. Two citation spans expanded before recording results.",
+  "method": "Codex editorial comparison of eighteen briefs with rendered PDF pages and native text. Same-assistant review; not independent or human verification. Original eight checks retain their pinned fingerprints; ten additional checks record a separate pass.",
   "reviews": [
     {
       "file_id": "EFTA00039826",
@@ -115,6 +115,156 @@
       "reviewer": "Codex",
       "result": "supported_as_scoped",
       "notes": "The excerpt supports a meeting inquiry; names are preserved without identity expansion or a claim the meeting occurred.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA00005705",
+      "source_sha256": "f0706bcbb26996637869487cf88c1111a787dceb8041e45b785139c16b591ae1",
+      "brief_sha256": "60e21bbd26291d74d10fbe426ff1ba90208894dfde4f4742d65a7383b5fea537",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "The report records eight photographs and intended forwarding; redacted subjects remain unidentified.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA00009823",
+      "source_sha256": "4d8719325cb2540fef6b22bf3c531f11010cf4a8f348e2ec627d0ca4ae5763e5",
+      "brief_sha256": "819e930e6467c22daba9fbffb67135fe45ffbafee5ee4d6b65006c041ead2345",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "The publicity estimate is quoted opinion, not a verified valuation or readership count.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA00009853",
+      "source_sha256": "2ab03a41c925e7916148964e7f12003d23766a9c7d756f8906eb5988cac53f39",
+      "brief_sha256": "6216fecfc5c6e1927d5e1d5be4419a507552dea9c3245f80a9b6bb7593ff33a6",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "The quoted Monday arrangement and outer 10/31 reply remain distinct; attendance is not established.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA00009882",
+      "source_sha256": "2681a773b34592dce3ca314e905c83e9b1352d0a600882e1dcc7a2b21f3386b1",
+      "brief_sha256": "c59f3206feaee3b98f326f387afacf3c0605a71c1f4bed2e35c29fb6d1f1dda6",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "The quoted contact-information request is supported; redacted identities are not reconstructed.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA00009890",
+      "source_sha256": "ee13b6d7b1609b3c267da58b3b5969968336a22e92ace49eea4e5a1c3a582f42",
+      "brief_sha256": "4129b493e5543c81f995738b26b44dc13e2953128ecbebc8dcb2f64a29a6cbf1",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "The top-level intended filing is supported; actual filing and attachment contents are not established.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA00039790",
+      "source_sha256": "84e0325c529a8b8d6918dc99c3dee784ce36c325fe91d28c784c9503ee84d568",
+      "brief_sha256": "e0407fc70258d83dc5057d2553b1d5c921c7be7208dfcc961cb3356544690146",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "The excerpt supports circulation of an opinion; the brief does not adopt the email\u2019s characterization of rulings.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA00039806",
+      "source_sha256": "3b9dd70e7f0f5b41b0ea8a62508b77b3609a6bf55782c4e61cbb96ff5adb7689",
+      "brief_sha256": "008d1a486faffd69faf086a5a081b072d7b013f4a9954064e7bfd2be855c2518",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "The Tuesday reply belongs to the older quoted chain, not the February 2019 outer date.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA01263156",
+      "source_sha256": "c5c5e5908b2a31e7d43bd4ca7eebbf391a00d605cb62dedfa79ad6864f6ddb01",
+      "brief_sha256": "de987715efe95341711d04120fc20e09145cbdd353d798a621d32a7d431d38d4",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "The quoted notice describes canceled and planned travel; the outer October date is not assigned to those events.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA00008892",
+      "source_sha256": "2189bf6a337dcf122e242611998c9561c66e53733ee55d7a0c396d304971215a",
+      "brief_sha256": "a1d1fb0436719aa86d3b970fa146178d302fa3d9a66c0909f92d963dac1b9ad8",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "The reproduced December 1994 letter is distinct from the June 2020 presentation; provenance is not authenticated.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA01263272",
+      "source_sha256": "d4ae0d904c352df4c9210e00b7b6be33433e59573d07fb3b2a3c3275bdde8e52",
+      "brief_sha256": "b82fe8edd7e0dc104ef40f12ed55b25c21e81c7f75138b1999c2102744852dba",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "The court asks about pre-subpoena contacts; this question is not a finding of misconduct.",
       "checks": {
         "statement_support": true,
         "attribution": true,

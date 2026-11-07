@@ -15,3 +15,5 @@ The tracked [brief file](../data/pilot/2026-11-01/timeframe-briefs.json) stores 
 `viewer/timeframes.py` validates evidence and selects records. The public build exports validated selection metadata and prepared briefs. Synthetic tests cover changed citations, unsupported status, inclusive dates, document-level name selection, missing briefs and invalid filters. Static API comparisons check default, ranged, dataset, person, empty and uncertain-reminder cases. Existing source text, email parsing, reviewed dates and other annotations remain unchanged.
 
 Live on-demand AI summarization would require a separate server-side service, model choice, usage controls and evaluation. This milestone is the reviewable static starting point, with its limited prepared coverage visible rather than silently filling gaps.
+
+Current coverage after the [second review batch](brief-evaluation-batch-2.md): 28 prepared briefs, 18 recorded editorial checks, and eight dated documents with date evidence only.
