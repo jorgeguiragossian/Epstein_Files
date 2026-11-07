@@ -1,0 +1,20 @@
+{
+  "file_id": "EFTA00039023",
+  "page": 2,
+  "source_sha256": "eb0a43a4469f378c4d9c88f4028f5d3f2994f7882dd17770807a4090d46610ed",
+  "native_page_text_sha256": "9c057d8b8cf81524870c241c6646de450586bdab98e5294244f5784092fd7b58",
+  "image_sha256": "2e026c8ee35a14ddba87225aa8b4bf09bab713f060078f28a4841fa6e30995c6",
+  "ocr_output_sha256": "181e54628dc75396669d906199cea3aad673cba4f7d500e5989a55b7f73f6839",
+  "engine": "Windows.Media.Ocr",
+  "language": "en-US",
+  "os_version": "10.0.26200.0",
+  "recognized_at_utc": "2026-11-07T19:58:37.1156538Z",
+  "recognized_characters": 12,
+  "recognized_lines": 1,
+  "recognized_text": "EFTA00039024",
+  "reviewer": "Codex",
+  "reviewed_on": "2026-11-07",
+  "result": "stamp_only_page_no_missing_visible_body",
+  "correction": "Retracts the previous contact-sheet finding: email body was on PDF page 1, not page 2. Individual page 2 render and local OCR both show only the EFTA stamp.",
+  "ocr_text_publication": "Only the stamp is recorded here; raw engine output remains in the ignored extraction cache."
+}

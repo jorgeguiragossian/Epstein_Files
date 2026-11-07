@@ -17,16 +17,20 @@ Downloaded and natively extracted all **ten selected PDFs**, totaling **7,964,30
 
 The native extractor reported **six header blocks across five PDFs** and **49 unvalidated date mentions**. Blocks are detection candidates, not unique emails, verified correspondence or contacts. Dates remain unreviewed; no primary dates or content briefs were assigned.
 
+## Correction and current follow-up
+
+The [targeted quality follow-up](wave-01-quality-followup.md) retracts the original OCR-target finding: EFTA00039023 PDF page 2 is blank except for its stamp. The email body shown in the contact sheet was on page 1. Local OCR and an individual page render confirm the correction. Two explicit source-reviewed header-label layers are now prepared; they do not change native extraction or public parser behavior.
+
 ## Visual quality findings
 
 Compared rendered PDFs with native text for **13 of 49 pages**: every first page, both low-text pages, and roster page 2. This is a same-assistant editorial quality inspection, not independent or whole-document verification. Findings are source-hash and page-text-hash bound in `quality-review.json`.
 
 - **EFTA00009713, page 8:** genuinely sparse date/signature page. Its low-text flag does not justify OCR by itself.
-- **EFTA00039023, page 2:** rendered page has an email chain, but native text contains only the EFTA stamp. This is a clear OCR target. The nonzero alphanumeric count therefore does not establish useful body text.
+- **EFTA00039023, page 2:** the original email-body finding was incorrect and has been retracted. An individual render shows only the EFTA stamp, consistent with native extraction and the later local OCR check.
 - **EFTA00021826 and EFTA00032045, page 1:** visibly email-like pages missed by the strict pilot header heuristic. Native labels lose a colon or read Front. Investigate the richer viewer parser before changing detection; do not silently repair evidence or infer redacted senders/recipients.
 - **EFTA00009713, pages 1–2:** roster tables lose layout and contain character-recognition artifacts in flattened extraction. Raw word/line order is unsuitable for inferring staff assignments.
 
-OCR was not run. A future OCR pass should retain the native layer separately, cite the PDF page and preserve existing redactions. The remaining 36 pages were not visually inspected in this quality pass. Other recognition errors can remain even on pages exceeding the low-text threshold.
+OCR was not run in the initial acquisition pass. A later one-page check is recorded in the follow-up. A future OCR pass should retain the native layer separately, cite the PDF page and preserve existing redactions. The remaining 36 pages were not visually inspected in this quality pass. Other recognition errors can remain even on pages exceeding the low-text threshold.
 
 ## Saved evidence
 
@@ -48,4 +52,4 @@ To reconstruct missing local caches, reuse the committed selection with the prev
 
 ## Next milestone
 
-Run a focused OCR pass on EFTA00039023 page 2, compare that output with the rendered source, and assess the two header-detection misses using the existing viewer parser. Then review integration requirements for the ten new PDFs, including document keys, date states, source links and batch processing metadata. Keep new text visibly unreviewed until appropriate source checks are recorded. Decide whether to process the remaining 90 selected files after these quality gaps are addressed; this wave does not justify automatic expansion to all 100.
+The [targeted follow-up](wave-01-quality-followup.md) completes the stamp-only OCR check and prepares reviewed label layers for the two initially missed headers. Before integration, inspect quoted-body boundaries and the additional fragmented header in EFTA00014597, then reconcile document keys, date states, source links and batch processing metadata. New raw text remains local and unreviewed at the document level. The remaining 90 selected files remain unprocessed.

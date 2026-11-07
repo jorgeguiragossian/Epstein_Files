@@ -1,0 +1,72 @@
+{
+  "parser_version": "email-pilot-1",
+  "date_parser_version": "email-date-2",
+  "documents": [
+    {
+      "file_id": "EFTA00009713",
+      "native_candidates": 0,
+      "with_reviewed_layer_candidates": 0,
+      "reviewed_layer_applied": false
+    },
+    {
+      "file_id": "EFTA00014597",
+      "native_candidates": 0,
+      "with_reviewed_layer_candidates": 0,
+      "reviewed_layer_applied": false
+    },
+    {
+      "file_id": "EFTA00018844",
+      "native_candidates": 0,
+      "with_reviewed_layer_candidates": 0,
+      "reviewed_layer_applied": false
+    },
+    {
+      "file_id": "EFTA00021826",
+      "native_candidates": 0,
+      "with_reviewed_layer_candidates": 1,
+      "reviewed_layer_applied": true
+    },
+    {
+      "file_id": "EFTA00026433",
+      "native_candidates": 1,
+      "with_reviewed_layer_candidates": 1,
+      "reviewed_layer_applied": false
+    },
+    {
+      "file_id": "EFTA00029421",
+      "native_candidates": 2,
+      "with_reviewed_layer_candidates": 2,
+      "reviewed_layer_applied": false
+    },
+    {
+      "file_id": "EFTA00032045",
+      "native_candidates": 0,
+      "with_reviewed_layer_candidates": 1,
+      "reviewed_layer_applied": true
+    },
+    {
+      "file_id": "EFTA00034623",
+      "native_candidates": 0,
+      "with_reviewed_layer_candidates": 0,
+      "reviewed_layer_applied": false
+    },
+    {
+      "file_id": "EFTA00037008",
+      "native_candidates": 1,
+      "with_reviewed_layer_candidates": 1,
+      "reviewed_layer_applied": false
+    },
+    {
+      "file_id": "EFTA00039023",
+      "native_candidates": 1,
+      "with_reviewed_layer_candidates": 1,
+      "reviewed_layer_applied": false
+    }
+  ],
+  "native_candidate_occurrences": 5,
+  "with_reviewed_layers_candidate_occurrences": 7,
+  "public_site_integration": false,
+  "unique_messages_verified": false,
+  "contact_rankings_ready": false,
+  "interpretation": "Richer viewer-parser counts, distinct from the simple pilot header heuristic. Source-assisted label layers are explicit opt-ins; native text is preserved."
+}

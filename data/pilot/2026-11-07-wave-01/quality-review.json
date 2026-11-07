@@ -2,7 +2,7 @@
   "schema_version": 1,
   "reviewed_on": "2026-11-07",
   "reviewer": "Codex",
-  "method": "Same-assistant visual comparison of rendered source PDF pages with native text. Not independent or human verification. All ten first pages, both flagged low-text pages, and one additional roster page inspected; 13 of 49 pages total.",
+  "method": "Same-assistant visual comparison of rendered source PDF pages with native text. Not independent or human verification. All ten first pages, both flagged low-text pages, and one additional roster page inspected; 13 of 49 pages total. Targeted recheck used individual page renders and local Windows OCR for EFTA00039023 page 2.",
   "pages_reviewed": 13,
   "reviews": [
     {
@@ -51,7 +51,7 @@
       "source_sha256": "021c0548096535ea509cace798f28513ff8de2bea63983f01b6239b60447d082",
       "page_text_sha256": "f75c128ae544511ca1d9dbda56896ce18c1761764bd2547c8a76add19969b29b",
       "finding": "Email-like layout is visible, but the strict pilot header heuristic reports zero blocks. Native From labels lose their colon or appear as Front; preserve source text and investigate parser handling.",
-      "next_action": "header_detection_review"
+      "next_action": "reviewed_label_layer_prepared_quote_boundaries_pending"
     },
     {
       "file_id": "EFTA00026433",
@@ -75,7 +75,7 @@
       "source_sha256": "ab429a079945ac9578cdf062318726fa5fa64fbca2cfd4b93a8ecbd3ee551722",
       "page_text_sha256": "7b35a3f64e73a84544161ba25268acb76a04ea90f7b369dc4dae18cbbe508584",
       "finding": "Email-like layout is visible, but the strict pilot header heuristic reports zero blocks. Native From labels lose their colon or appear as Front; preserve source text and investigate parser handling.",
-      "next_action": "header_detection_review"
+      "next_action": "reviewed_label_layer_prepared_quote_boundaries_pending"
     },
     {
       "file_id": "EFTA00034623",
@@ -106,10 +106,19 @@
       "page": 2,
       "source_sha256": "eb0a43a4469f378c4d9c88f4028f5d3f2994f7882dd17770807a4090d46610ed",
       "page_text_sha256": "9c057d8b8cf81524870c241c6646de450586bdab98e5294244f5784092fd7b58",
-      "finding": "Rendered page contains an email chain, while native extraction contains only the EFTA stamp. Visible body text is missing from native output.",
-      "next_action": "ocr_target"
+      "finding": "Individual PDF page render is blank except for its EFTA stamp. Local OCR returned the same stamp as native extraction. Earlier email-body attribution to this page was incorrect.",
+      "next_action": "no_ocr_body_recovery_needed_observed_blank_page"
     }
   ],
-  "ocr_performed": false,
-  "raw_text_publication_ready": false
+  "ocr_performed": true,
+  "raw_text_publication_ready": false,
+  "ocr_scope": "One-page stamp-only check; no missing body text recovered or substituted.",
+  "corrections": [
+    {
+      "file_id": "EFTA00039023",
+      "page": 2,
+      "previous_finding_retracted": true,
+      "reason": "Retracts the previous contact-sheet finding: email body was on PDF page 1, not page 2. Individual page 2 render and local OCR both show only the EFTA stamp."
+    }
+  ]
 }

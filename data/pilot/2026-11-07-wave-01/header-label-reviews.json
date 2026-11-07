@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "layer_version": "reviewed_header_labels_v1",
+  "method": "Codex comparison of individual rendered PDF pages with native text. Explicit opt-in derived layer; native files and original public parser remain unchanged.",
+  "reviews": [
+    {
+      "file_id": "EFTA00021826",
+      "source_sha256": "021c0548096535ea509cace798f28513ff8de2bea63983f01b6239b60447d082",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-07",
+      "scope": "PDF page 1 top-level From/To labels only; no participant values reconstructed",
+      "labels": [
+        {
+          "page": 1,
+          "line": 1,
+          "native_line": "From ",
+          "field": "from",
+          "page_text_sha256": "f75c128ae544511ca1d9dbda56896ce18c1761764bd2547c8a76add19969b29b"
+        },
+        {
+          "page": 1,
+          "line": 2,
+          "native_line": "To ",
+          "field": "to",
+          "page_text_sha256": "f75c128ae544511ca1d9dbda56896ce18c1761764bd2547c8a76add19969b29b"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00032045",
+      "source_sha256": "ab429a079945ac9578cdf062318726fa5fa64fbca2cfd4b93a8ecbd3ee551722",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-07",
+      "scope": "PDF page 1 top-level From/To labels only; no participant values reconstructed",
+      "labels": [
+        {
+          "page": 1,
+          "line": 1,
+          "native_line": "Front ",
+          "field": "from",
+          "page_text_sha256": "7b35a3f64e73a84544161ba25268acb76a04ea90f7b369dc4dae18cbbe508584"
+        },
+        {
+          "page": 1,
+          "line": 2,
+          "native_line": "To ",
+          "field": "to",
+          "page_text_sha256": "7b35a3f64e73a84544161ba25268acb76a04ea90f7b369dc4dae18cbbe508584"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "file_id": "EFTA00021826",
+      "native_candidates": 0,
+      "derived_candidates": 1,
+      "participant_addresses_unresolved": true,
+      "body_boundary_review": "contains_unseparated_quotes",
+      "unique_message_verified": false,
+      "contact_count_eligible": false
+    },
+    {
+      "file_id": "EFTA00032045",
+      "native_candidates": 0,
+      "derived_candidates": 1,
+      "participant_addresses_unresolved": true,
+      "body_boundary_review": "contains_unseparated_quotes",
+      "unique_message_verified": false,
+      "contact_count_eligible": false
+    }
+  ],
+  "parser_version": "email-pilot-1",
+  "date_parser_version": "email-date-2"
+}
