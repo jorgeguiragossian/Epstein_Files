@@ -16,4 +16,6 @@ The tracked [brief file](../data/pilot/2026-11-01/timeframe-briefs.json) stores 
 
 Live on-demand AI summarization would require a separate server-side service, model choice, usage controls and evaluation. This milestone is the reviewable static starting point, with its limited prepared coverage visible rather than silently filling gaps.
 
-Current coverage after the [second review batch](brief-evaluation-batch-2.md): 28 prepared briefs, 18 recorded editorial checks, and eight dated documents with date evidence only.
+Coverage at the [second review batch](brief-evaluation-batch-2.md): 28 prepared briefs, 18 recorded editorial checks, and eight dated documents with date evidence only.
+
+After the [third review batch](brief-evaluation-batch-3.md), all 36 dated pilot PDFs have a limited-page brief; 28 have recorded editorial checks and the eight newest drafts await that separate pass. These are PDF-record counts, not unique events or whole-document coverage. The 64 PDFs lacking usable reviewed dates remain excluded.

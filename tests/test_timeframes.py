@@ -67,6 +67,6 @@ class TimeframeTests(unittest.TestCase):
         spec=importlib.util.spec_from_file_location('prepare_briefs',root/'scripts/prepare-timeframe-briefs.py')
         module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
         rows=json.loads((root/'data/pilot/2026-11-01/timeframe-briefs.json').read_text(encoding='utf-8'))['briefs']
-        self.assertEqual(len(module.recorded_reviews(rows)),18)
+        self.assertEqual(len(module.recorded_reviews(rows)),28)
         changed=copy.deepcopy(rows);changed[0]['points'][0]['statement']+=' Changed.'
         with self.assertRaises(ValueError):module.recorded_reviews(changed)

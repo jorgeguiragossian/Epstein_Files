@@ -459,6 +459,11 @@
               "page": 2,
               "quote": "A. Special agent.",
               "page_text_sha256": "fc9128f040d6470763c76cffa42ab44bb990170e4be5ab869f9e8e43e333a59b"
+            },
+            {
+              "page": 2,
+              "quote": "you could just make an effort to speak into the mic and keep your voice up that would be great.",
+              "page_text_sha256": "fc9128f040d6470763c76cffa42ab44bb990170e4be5ab869f9e8e43e333a59b"
             }
           ]
         }
@@ -539,6 +544,11 @@
               "page": 3,
               "quote": "I am a counsel with the Office of Professional",
               "page_text_sha256": "a987a654c76b7dc79ec084171092bdf1ef529c198c9e5eb5aeab8a40ff22dda5"
+            },
+            {
+              "page": 3,
+              "quote": "Responsibility here at the Department of Justice, and with me",
+              "page_text_sha256": "a987a654c76b7dc79ec084171092bdf1ef529c198c9e5eb5aeab8a40ff22dda5"
             }
           ]
         }
@@ -563,6 +573,11 @@
             {
               "page": 1,
               "quote": "May 17th: Depart CDG 6:10pm arrive SVO (not",
+              "page_text_sha256": "a35076c1e4eec5f35e95ad50827807e1e92105e14973daba880873bf4dbeee32"
+            },
+            {
+              "page": 1,
+              "quote": "May 16th: departing VKO 11:55pm",
               "page_text_sha256": "a35076c1e4eec5f35e95ad50827807e1e92105e14973daba880873bf4dbeee32"
             }
           ]
@@ -589,6 +604,11 @@
               "page": 1,
               "quote": "<Screen Shot 2017-05-01 at 2.26.04 PM.png>",
               "page_text_sha256": "7c260d434b72efb94710266ab2539d2f3e51ffdd8e047e6891df71b4c6b70f49"
+            },
+            {
+              "page": 1,
+              "quote": "From: Karyna Shuliak",
+              "page_text_sha256": "7c260d434b72efb94710266ab2539d2f3e51ffdd8e047e6891df71b4c6b70f49"
             }
           ]
         }
@@ -608,6 +628,11 @@
             {
               "page": 1,
               "quote": "In addition to changing date to the end of January, the last point need to total change re helping me find a job",
+              "page_text_sha256": "1a74027d0dac78d829d6c095105fce7fd774010c1771ddfb09fc4dfe81a34b46"
+            },
+            {
+              "page": 1,
+              "quote": "From: Boris Nikolic",
               "page_text_sha256": "1a74027d0dac78d829d6c095105fce7fd774010c1771ddfb09fc4dfe81a34b46"
             }
           ]
@@ -629,6 +654,251 @@
               "page": 1,
               "quote": "I'm attaching notes of today's conversation with counsel, notes of the initial referral call, and the email correspondence I've had with counsel for your records.",
               "page_text_sha256": "dab9a66beb6780599f5e24c87a35b68cf458925d58ee80f264449be61ce74111"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00008920",
+      "source_sha256": "048de59a937ff6521d3477e37b17cca17e1eb1e5ad93e611d1c4da76c2a459c6",
+      "title": "Introductory FBI testimony reproduced in a transcript",
+      "scope": "PDF page 2 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "The witness identifies their employer as the FBI, their title as special agent, and their service as about three years.",
+          "limitation": "This covers introductory answers only. This page resembles the opening in EFTA00008631; the two PDF records do not establish separate testimony or independent corroboration. The redacted identity is not reconstructed.",
+          "citations": [
+            {
+              "page": 2,
+              "quote": "A. The Federal Bureau of Investigation.",
+              "page_text_sha256": "817d3cf5d69ab1eb2e1d94ce29109850806f012f8b1b425d433c86eec7d1491c"
+            },
+            {
+              "page": 2,
+              "quote": "A. Special agent.",
+              "page_text_sha256": "817d3cf5d69ab1eb2e1d94ce29109850806f012f8b1b425d433c86eec7d1491c"
+            },
+            {
+              "page": 2,
+              "quote": "A. About three years, three years now.",
+              "page_text_sha256": "817d3cf5d69ab1eb2e1d94ce29109850806f012f8b1b425d433c86eec7d1491c"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00009440",
+      "source_sha256": "bba44f52ed6dae64994595b65f7e3dbf1b2422437d52cae9450c077ce139afc5",
+      "title": "Witness describes records returned under subpoenas",
+      "scope": "PDF page 4 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "The witness says documents covering two bank subpoenas were received from Colonial Bank on April 25, 2007, and describes records returned by Western Union in two packages.",
+          "limitation": "This attributes the account to testimony in the May 8 session. The brief does not authenticate the returned records, infer their contents, or treat the session date as a transaction date.",
+          "citations": [
+            {
+              "page": 4,
+              "quote": "We did receive documents back from Colonial",
+              "page_text_sha256": "b2cf2eb62a9a683b82b27beecdd7c9b275b56b10ce1f84dbb40a5de4b9fbe4e9"
+            },
+            {
+              "page": 4,
+              "quote": "Bank, which covered both subpoenas, on April 25, 2007.",
+              "page_text_sha256": "b2cf2eb62a9a683b82b27beecdd7c9b275b56b10ce1f84dbb40a5de4b9fbe4e9"
+            },
+            {
+              "page": 4,
+              "quote": "received items back from western Union on two separate",
+              "page_text_sha256": "b2cf2eb62a9a683b82b27beecdd7c9b275b56b10ce1f84dbb40a5de4b9fbe4e9"
+            },
+            {
+              "page": 4,
+              "quote": "dates, and two packages, the first on April 9, 2007, and",
+              "page_text_sha256": "b2cf2eb62a9a683b82b27beecdd7c9b275b56b10ce1f84dbb40a5de4b9fbe4e9"
+            },
+            {
+              "page": 4,
+              "quote": "the second on April 11, 2007.",
+              "page_text_sha256": "b2cf2eb62a9a683b82b27beecdd7c9b275b56b10ce1f84dbb40a5de4b9fbe4e9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00009448",
+      "source_sha256": "007c15194efb1feb6565c903e9cee81adb466b719302391c63aa7e274fa30443",
+      "title": "Witness corrects an earlier age statement",
+      "scope": "PDF page 3 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "The witness says an earlier statement confused Epstein\u2019s age with another person\u2019s and gives his age during 2004\u20132005 as about 51 or 52 rather than 45.",
+          "limitation": "This reports the witness\u2019s correction in the February 27, 2007 session. It does not independently verify biographical details or summarize the earlier testimony.",
+          "citations": [
+            {
+              "page": 3,
+              "quote": "I did. I was asked by one of you Mr. Epstein's",
+              "page_text_sha256": "eae0d381b29b0c17d90446e95020eabb4c89f46caa65702bd6beab651f129953"
+            },
+            {
+              "page": 3,
+              "quote": "age, and I confused him with another individual in another",
+              "page_text_sha256": "eae0d381b29b0c17d90446e95020eabb4c89f46caa65702bd6beab651f129953"
+            },
+            {
+              "page": 3,
+              "quote": "one of my cases.",
+              "page_text_sha256": "eae0d381b29b0c17d90446e95020eabb4c89f46caa65702bd6beab651f129953"
+            },
+            {
+              "page": 3,
+              "quote": "are looking at the time period of 2004 and 2005. So",
+              "page_text_sha256": "eae0d381b29b0c17d90446e95020eabb4c89f46caa65702bd6beab651f129953"
+            },
+            {
+              "page": 3,
+              "quote": "Mr. Epstein would have been about 51 or 52-years-old, and",
+              "page_text_sha256": "eae0d381b29b0c17d90446e95020eabb4c89f46caa65702bd6beab651f129953"
+            },
+            {
+              "page": 3,
+              "quote": "I believe I told you he was 45. So at the time we're",
+              "page_text_sha256": "eae0d381b29b0c17d90446e95020eabb4c89f46caa65702bd6beab651f129953"
+            },
+            {
+              "page": 3,
+              "quote": "looking during this investigation, he is 51 or 52.",
+              "page_text_sha256": "eae0d381b29b0c17d90446e95020eabb4c89f46caa65702bd6beab651f129953"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00009478",
+      "source_sha256": "4d085a827108e674ac991d17a26e348e728cd63c34098ec990ae8cab8a2f5af4",
+      "title": "Witness says photographs were obtained",
+      "scope": "PDF page 3 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "Asked whether photographs of the two people discussed in prior testimony were obtained, the witness answers yes.",
+          "limitation": "This reports a question and answer in the March 20 session. It does not identify the redacted people, authenticate or reproduce photographs, or independently confirm earlier testimony.",
+          "citations": [
+            {
+              "page": 3,
+              "quote": "Q Did you obtain photographs of those",
+              "page_text_sha256": "74d77f75a8daaf5131148bf87ebe8364e852a2807d06400481759ee992c9f457"
+            },
+            {
+              "page": 3,
+              "quote": "girls?",
+              "page_text_sha256": "74d77f75a8daaf5131148bf87ebe8364e852a2807d06400481759ee992c9f457"
+            },
+            {
+              "page": 3,
+              "quote": "A Yes, I did.",
+              "page_text_sha256": "74d77f75a8daaf5131148bf87ebe8364e852a2807d06400481759ee992c9f457"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00009502",
+      "source_sha256": "088b7d62b4611a8210ae0260f0eb73f80def205d2a9c9326a22eb70052dda115",
+      "title": "FBI agent\u2019s introductory identification",
+      "scope": "PDF page 3 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "The witness describes themself as an FBI special agent working in Palm Beach.",
+          "limitation": "This covers an introductory answer only. The redacted name is not reconstructed, and later testimony and allegations are not summarized.",
+          "citations": [
+            {
+              "page": 3,
+              "quote": "a special agent with the FBI and I work here in Palm Beach.",
+              "page_text_sha256": "2b3b2061534ff4efb6c7b7bc4f80ff7b3b5acfdaf4f9978a5746b3051a10501d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00009512",
+      "source_sha256": "fbd8343f9eee79f1c552dd38e27ee713a90f2f21fe4d769fb768f40acca1af60",
+      "title": "Witness identifies the investigation",
+      "scope": "PDF page 2 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "The witness says they work for the FBI in West Palm Beach and confirms appearing for the continuing investigation called Operation Leap Year.",
+          "limitation": "This covers introductory testimony in the May 15 session. It does not identify the redacted witness or evaluate investigative findings.",
+          "citations": [
+            {
+              "page": 2,
+              "quote": "A The FBI here in West Palm Beach.",
+              "page_text_sha256": "8effdeb451b53da878478e0e6fc315a8f72a02ae3d8d7fc67c3e1d58f8e22539"
+            },
+            {
+              "page": 2,
+              "quote": "Q And are you here today on the continuing",
+              "page_text_sha256": "8effdeb451b53da878478e0e6fc315a8f72a02ae3d8d7fc67c3e1d58f8e22539"
+            },
+            {
+              "page": 2,
+              "quote": "investigation known as Operation Leap Year?",
+              "page_text_sha256": "8effdeb451b53da878478e0e6fc315a8f72a02ae3d8d7fc67c3e1d58f8e22539"
+            },
+            {
+              "page": 2,
+              "quote": "A Yes, I am.",
+              "page_text_sha256": "8effdeb451b53da878478e0e6fc315a8f72a02ae3d8d7fc67c3e1d58f8e22539"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00009586",
+      "source_sha256": "f82e0aa52918a2461631e07254aa9d20219f6db9df6521b05043257345ef3013",
+      "title": "Witness confirms receiving a grand-jury subpoena",
+      "scope": "PDF page 4 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "Asked whether they were served with a subpoena to appear before the grand jury that day, the witness answers yes.",
+          "limitation": "This covers a procedural question and answer in the April 24 session. PDF page 4 carries internal transcript page 3. The witness\u2019s identity and redacted address are not reconstructed, and substantive testimony is not summarized.",
+          "citations": [
+            {
+              "page": 4,
+              "quote": "Q Were you served with a subpoena to appear before the grand jury today? A Yes.",
+              "page_text_sha256": "9cd6dc63f59bddd62185ef627f994d937737b6ee54a27608605bd2c08807f355"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00009632",
+      "source_sha256": "5120d59249d62d8f661abb57a6e037ea34e3acd95fb63db4c77cd5c351d57c68",
+      "title": "Witness identifies FBI employment",
+      "scope": "PDF page 2 only; not a whole-document summary",
+      "status": "ai_assisted_editorial_draft",
+      "points": [
+        {
+          "statement": "In the introductory exchange, the witness says they work for the FBI in Palm Beach County.",
+          "limitation": "This covers the introductory employment answer in the February 6 session only. The redacted identity is not reconstructed; later testimony is outside this brief.",
+          "citations": [
+            {
+              "page": 2,
+              "quote": "the FBI in Palm Beach County.",
+              "page_text_sha256": "c6158ceff2ab9b22c6954c6f83e3e94e10bd6dfcd186d5fef46d8a5eccfb0cd2"
             }
           ]
         }

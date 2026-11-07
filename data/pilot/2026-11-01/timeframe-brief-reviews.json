@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "method": "Codex editorial comparison of eighteen briefs with rendered PDF pages and native text. Same-assistant review; not independent or human verification. Original eight checks retain their pinned fingerprints; ten additional checks record a separate pass.",
+  "method": "Codex editorial comparison of twenty-eight briefs with rendered PDF pages and native text. Same-assistant review; not independent or human verification. Recorded checks are pinned to the reviewed prose, citations and source hashes; newly prepared briefs await a separate pass.",
   "reviews": [
     {
       "file_id": "EFTA00039826",
@@ -265,6 +265,156 @@
       "reviewer": "Codex",
       "result": "supported_as_scoped",
       "notes": "The court asks about pre-subpoena contacts; this question is not a finding of misconduct.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA00008529",
+      "source_sha256": "28e401a4867497402833ed3f5d4277a85bc81bf299840e700694abd22325976d",
+      "brief_sha256": "2a0d25ed4fb8b13265ac9dde7c18b1767e909d37d9cb99c0f455691f3bbfaab9",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "Introductory answers support employer, title and squad assignment. Redacted identity and later testimony remain outside scope.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA00008585",
+      "source_sha256": "0a0c09b234b58e7d113fa0cf938304c098bfa2e76833015ef0facf100e8ae985",
+      "brief_sha256": "f34f0b757764c5995a94cd3cf2ac5d0735fe3bfc89982906b70fe5e7ffd0d4c3",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "The question and answer support the claimed earlier appearance as witness testimony, without assessing either session.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA00008631",
+      "source_sha256": "ce91ee3e7e23acd15f1c99eefd0ab9af1fda3fe1d8b5e9e0ea8a66706d3cfbe6",
+      "brief_sha256": "15d9a2daed83afc14756c55ffd80e931de54c3d02a7c3d47585514250873dfab",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_after_citation_expansion",
+      "notes": "Added the microphone instruction to the cited mask, Plexiglas and employment excerpts. The brief remains limited to introductory arrangements and answers.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA00008708",
+      "source_sha256": "4cbf5cf54bd3b1891d4b0d548fbd26e57a2ffecc15c6455ffe632aa8664cdedb",
+      "brief_sha256": "9c98bd3bd8ed83a6a8c2cb1407c1ebf7c8b915e42ff55d7ec11239ba88ebfb54",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "The prosecutor explains proposed clerical corrections and intended procedure. The brief does not convert this explanation into a finding or completed outcome.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA00008744",
+      "source_sha256": "ba14d2070e9bb05c7292af3fce5c84ccb762e8c47fc750d735ade2af6907aa63",
+      "brief_sha256": "695471d7b181ceb62988f33cdef77ea6b37ea8a1c3500456a013e36cc4438c16",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "The introductory answers support NYPD employment, detective title and approximate service. The redacted identity remains unreconstructed.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA00009229",
+      "source_sha256": "3703cbb62d6af5d6a037bdac89413cdf3adab5f733a47ae5a07db94245925991",
+      "brief_sha256": "1483f390752e70b54c2983162ebe3b20325c0238282c16317c2198bbad6be408",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_after_citation_expansion",
+      "notes": "Expanded the citation with the rest of the OPR office name. Rendered page confirms the sworn opening; the brief does not summarize substantive testimony.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA02212961",
+      "source_sha256": "36cf352734b5ecd4a43b2ac5d7717f279bc1c3d36f840f4029133ec1039f2fae",
+      "brief_sha256": "afe63a11bfbff1b3d98d0e7b6cc7d0981739f2200ef786878f3b40cb1ba141ea",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_after_citation_expansion",
+      "notes": "Added the VKO departure excerpt to support all airports named in the statement. Itinerary lines remain plans; the incomplete SVO line is preserved.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA02212972",
+      "source_sha256": "b520dad0e407fdd3d375e7472f1e3bb332410bed3164cff9385fda7083e345be",
+      "brief_sha256": "99b8a354d461af836fc1dec38c9d11e3be854481c70d5b0a9e4880b3bff98c9c",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_after_citation_expansion",
+      "notes": "Added the forwarded sender heading to support attribution. The brief describes contact-information circulation, without authenticating the screenshot or inferring a transaction.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA02730265",
+      "source_sha256": "4ffdabbb392f3126224b15047081c2aa6acc0b813d73943a8fc3792d40f28901",
+      "brief_sha256": "daa58727ec92cb9ab0baad4572867195c919cfa96fe83ca962f8a7b99b4bf1c2",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_after_citation_expansion",
+      "notes": "Added the top-level sender heading to support attribution. Requested draft changes are not treated as an accepted or executed agreement.",
+      "checks": {
+        "statement_support": true,
+        "attribution": true,
+        "page_scope": true,
+        "limitations": true
+      }
+    },
+    {
+      "file_id": "EFTA02731485",
+      "source_sha256": "8203a023de0bb84fd77728af4ea5840f9d651addedf8cec2803b632a26f9fb03",
+      "brief_sha256": "f79c1ef7cbf44a4e6f4141477ef28cab6161a65824db947e4db2949fd0bf34c1",
+      "reviewed_on": "2026-11-07",
+      "reviewer": "Codex",
+      "result": "supported_as_scoped",
+      "notes": "The cover-email sentence supports the list of attached records. The brief does not authenticate attachments or adopt allegations or investigative conclusions.",
       "checks": {
         "statement_support": true,
         "attribution": true,

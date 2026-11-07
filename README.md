@@ -21,4 +21,4 @@ The [person-name filter](docs/person-filter.md) now includes 22 curated, source-
 
 The [email review workspace](docs/email-review.md), available at `/emails`, adds page-cited header/body candidates and conservative visible-copy grouping. Incomplete participants and dates remain flagged; contact rankings are not yet enabled.
 
-The [timeframe briefs](docs/timeframe-briefs.md) view selects 28 prepared AI-assisted, page-scoped drafts with citations. Eighteen have recorded editorial source checks; eight other dated documents have date evidence only; this static view does not generate live AI summaries.
+The [timeframe briefs](docs/timeframe-briefs.md) view selects 36 prepared AI-assisted, page-scoped drafts with citations. Twenty-eight have recorded editorial source checks; the eight newest drafts await that separate pass. All 36 dated pilot PDFs now have a limited-page brief. This static view does not generate live AI summaries.
