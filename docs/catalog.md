@@ -4,7 +4,9 @@ The collection catalog is the discovery layer for eventual coverage of all twelv
 
 ## Current checkpoint
 
-The [second browser batch](catalog-browser-batch-2.md) expands the catalog to **6,462 dataset/file URL pairs**: 6,460 `.pdf`, one `.avi` and one `.mp4` URL. These are observed extensions, not verified MIME types. Every advertised listing page has been observed for datasets **1–7 and 12**. Datasets **8–11** each have pages 0–10 observed; each resumes at zero-based page **11**. The full collection total remains unknown and searchable text still covers only the 100 pilot PDFs.
+The [third browser batch](catalog-browser-batch-3.md) completes dataset 8 and expands the catalog to **16,947 dataset/file URL pairs**. Dataset 8 has **221 of 221 listing pages observed** and **11,034 unique file URLs**. Every advertised listing page has now been observed for datasets **1–8 and 12**. Datasets **9–11** each have pages 0–10 observed and resume at zero-based page **11**. The full collection total remains unknown and searchable text still covers only the 100 pilot PDFs.
+
+Observed URL extensions: 16,507 PDF, 419 MP4, 10 XLSX, four CSV, three M4A, two XLS, one MP3 and one AVI. These are suffix observations, not verified MIME types or readable-content claims. The [second batch](catalog-browser-batch-2.md) records the previous checkpoint.
 
 ## Initial November 7 observations
 
@@ -20,7 +22,7 @@ Every advertised listing page has now been observed for datasets **3, 4, 5, 6, 7
 
 Under [data/catalog/2026-11-07](../data/catalog/2026-11-07/):
 
-- `files.csv`: 6,462 unique dataset/URL pairs, discovery timestamps, observed page indices, and pilot download/extraction metadata where available. Empty size, hash and page fields mean unknown. `pilot_download_record` is a historical processing record, not a fresh download or a guarantee a fresh clone has the cached PDF.
+- `files.csv`: 16,947 unique dataset/URL pairs, discovery timestamps, observed page indices, and pilot download/extraction metadata where available. Empty size, hash and page fields mean unknown. `pilot_download_record` is a historical processing record, not a fresh download or a guarantee a fresh clone has the cached PDF.
 - `provenance.csv`: each URL's listing page, observation timestamp and exact HTML hash. Repeated observations are retained here without duplicating file rows.
 - `catalog.json`: dataset coverage, all successful listing observations, twelve fresh successful request records, the fresh 403, and ten historical pagination failures. Dataset rows include the next unobserved listing page; the top-level extension counts describe URL suffixes. Browser observations are separately identified with `representation: browser_link_dom`; their HTTP status is not inferred. `current_total_files` is null; discovery counts must not be described as the full release.
 
@@ -56,4 +58,4 @@ Browser snapshots can be imported with `python scripts/catalog.py import-browser
 
 ## Next step
 
-Normal browser pagination works for this bounded pass; command-line pagination still fails with 403. Use supported browser capture in bounded batches, or obtain a documented official bulk manifest suitable for large-scale discovery. Then resume cataloging in bounded batches, preserving failures and provenance. Once discovery coverage is measurable, choose the next extraction batch and evaluate public storage/search requirements. This milestone does not yet claim a complete catalog or add the 6,362 non-pilot records to full-text search.
+Normal browser pagination works for this bounded pass; command-line pagination still fails with 403. Use supported browser capture in bounded batches, or obtain a documented official bulk manifest suitable for large-scale discovery. Then resume cataloging in bounded batches, preserving failures and provenance. Once discovery coverage is measurable, choose the next extraction batch and evaluate public storage/search requirements. This milestone does not yet claim a complete catalog or add the 16,847 non-pilot records to full-text search.
