@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "method": "Explicit source-assisted parser scan exclusion between To and Cc labels. Native text and original fragment are preserved; no address or identity reconstruction.",
+  "reviews": [
+    {
+      "file_id": "EFTA00014597",
+      "source_sha256": "9df8a86e36a04c5565598ce719629b58afaa28afd5b1a9466cff8f0f4381ed41",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-07",
+      "scope": "PDF page 1 header only; native fragment retained without participant attribution",
+      "fragments": [
+        {
+          "page": 1,
+          "line": 3,
+          "native_line": "(NY) (FBI)\" aMMIII ",
+          "page_text_sha256": "f6cb269f7f7b222eddab6c8a5cff6dfd928e36510d3d3401af10c4b430f61e16",
+          "status": "unresolved_header_fragment_not_assigned_to_field"
+        }
+      ]
+    }
+  ]
+}

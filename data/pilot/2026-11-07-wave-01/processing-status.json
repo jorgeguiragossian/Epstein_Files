@@ -1,5 +1,5 @@
 {
-  "status": "native_extracted_reviewed_header_layers_prepared_integration_pending",
+  "status": "targeted_header_and_body_scope_reviews_complete_integration_pending",
   "selected_files": 10,
   "downloaded_files": 10,
   "native_extracted_files": 10,
@@ -15,8 +15,15 @@
     "EFTA00032045"
   ],
   "remaining_review_items": [
-    "Quoted-body boundaries in derived candidates",
-    "Fragmented native header in EFTA00014597 remains undetected by richer parser",
-    "Broader source-context and integration checks"
+    "Five other wave candidate occurrences remain unreviewed",
+    "Broader document source-context and date review",
+    "Public integration and processing metadata reconciliation"
+  ],
+  "reviewed_fragment_layer_documents": [
+    "EFTA00014597"
+  ],
+  "reviewed_body_partition_documents": [
+    "EFTA00021826",
+    "EFTA00032045"
   ]
 }

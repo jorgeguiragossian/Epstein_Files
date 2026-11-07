@@ -43,3 +43,7 @@ This also writes the metadata-only `header-parser-assessment.json`. It does not 
 ## Next step
 
 Review the remaining fragmented header and quoted-body boundaries, then prepare integration of the ten additional PDFs with explicit source-layer display, unreviewed date states and reconciled processing metadata. The public website remains at 100 PDFs; the remaining 90 planned expansion files are still unprocessed.
+
+## Subsequent targeted review
+
+The [boundary follow-up](wave-01-boundary-followup.md) now handles the remaining fragment through an explicit unassigned-fragment layer and records lossless body partitions for the two quote chains. It raises the opt-in wave total to eight candidate occurrences; the original native parser output and public site remain unchanged.

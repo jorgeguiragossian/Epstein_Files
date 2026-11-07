@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "parser_version": "email-pilot-1",
+  "method": "Codex comparison of individual rendered PDF pages and native/explicitly derived source text. Metadata-only spans; materialized text stays local. Same-assistant review, not independent verification.",
+  "reviews": [
+    {
+      "id": "8ef2f1634e869cb2c354",
+      "file_id": "EFTA00014597",
+      "source_sha256": "9df8a86e36a04c5565598ce719629b58afaa28afd5b1a9466cff8f0f4381ed41",
+      "source_page": 1,
+      "source_line": 1,
+      "visible_fingerprint": "8e5e8c40b8f97911d030e104c84c967bbfc487fc169ac29e68c2c5aa22604c0a",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-07",
+      "scope": "Source-assisted header and top-level body boundary review; not identity or message authentication",
+      "source_layer_sha256": "eef67549ff53d42ca8f8a49625be890ee67077088eb38140fe5f98385feda583",
+      "boundary_status": "supported_segment",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Header fragment remains unassigned; body is one URL in native text, not followed or corrected.",
+      "spans": []
+    },
+    {
+      "id": "70f51059ef95fef8c403",
+      "file_id": "EFTA00021826",
+      "source_sha256": "021c0548096535ea509cace798f28513ff8de2bea63983f01b6239b60447d082",
+      "source_page": 1,
+      "source_line": 1,
+      "visible_fingerprint": "029b46ef28fbbb9cca40bab0b8c20d1594ff07b4364731052b29c3849c25cd25",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-07",
+      "scope": "Source-assisted header and top-level body boundary review; not identity or message authentication",
+      "source_layer_sha256": "79a48a6cd4873de6876c25e0bf4e887a1d5b9981dae51cfdb616f4276334831e",
+      "boundary_status": "contains_unseparated_quote",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Top-level reply is separated from quoted chain by source ranges; redacted participants and nested message identities remain unresolved.",
+      "spans": [
+        {
+          "id": "EFTA00021826-wave-span-1",
+          "page": 1,
+          "line_start": 6,
+          "line_end": 6,
+          "kind": "uncertain_header_continuation",
+          "text_sha256": "4c2adf5b16c0a63d3ab646b994abb2624576aa3c8bf4980a8b5d2c6917d22a76"
+        },
+        {
+          "id": "EFTA00021826-wave-span-2",
+          "page": 1,
+          "line_start": 7,
+          "line_end": 7,
+          "kind": "authored_text_candidate",
+          "text_sha256": "1aa7b1c1d5fb1fd6d299eae251a665c7898baeb43d48fb6b8a5b76da6c6ef739"
+        },
+        {
+          "id": "EFTA00021826-wave-span-3",
+          "page": 1,
+          "line_start": 8,
+          "line_end": 13,
+          "kind": "forwarded_quote",
+          "text_sha256": "cb23f30d33ce4dfc7e8153b7a44a7b8e35afcb4d4a2656fba57dae21d725e37d"
+        },
+        {
+          "id": "EFTA00021826-wave-span-4",
+          "page": 1,
+          "line_start": 14,
+          "line_end": 32,
+          "kind": "forwarded_quote",
+          "text_sha256": "f4d581e61e856e6d78ba09c0cf50dc7858e0a8623ea1eb536f58c636e8b6c45c"
+        },
+        {
+          "id": "EFTA00021826-wave-span-5",
+          "page": 2,
+          "line_start": 1,
+          "line_end": 46,
+          "kind": "forwarded_quote",
+          "text_sha256": "cbc1833808a9572292ada5183e41b8a720ba3afb92fede259efac73e16cb4936"
+        },
+        {
+          "id": "EFTA00021826-wave-span-6",
+          "page": 3,
+          "line_start": 1,
+          "line_end": 28,
+          "kind": "forwarded_quote",
+          "text_sha256": "d49eab436b93e6770a26a4e17ef925ec73f5ac05e6a5b1b501f291def2455589"
+        }
+      ]
+    },
+    {
+      "id": "1bd64f16e4252feebb12",
+      "file_id": "EFTA00032045",
+      "source_sha256": "ab429a079945ac9578cdf062318726fa5fa64fbca2cfd4b93a8ecbd3ee551722",
+      "source_page": 1,
+      "source_line": 1,
+      "visible_fingerprint": "67ebb84454da27f3c949d2161aaf3692120af9046a2c1c05bda2580f61403786",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-07",
+      "scope": "Source-assisted header and top-level body boundary review; not identity or message authentication",
+      "source_layer_sha256": "43904d78c08a53c4554db38a331c9bca483121efe81ce39197aeeab3bdf3d492",
+      "boundary_status": "contains_unseparated_quote",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Top-level reply is separated from quoted chain by source ranges; redacted participants and nested message identities remain unresolved.",
+      "spans": [
+        {
+          "id": "EFTA00032045-wave-span-1",
+          "page": 1,
+          "line_start": 5,
+          "line_end": 9,
+          "kind": "authored_text_candidate",
+          "text_sha256": "e46258ed820ee036b7fd1a30b404441913e7201a36e77aa573d2fd18d8eb3c20"
+        },
+        {
+          "id": "EFTA00032045-wave-span-2",
+          "page": 1,
+          "line_start": 10,
+          "line_end": 10,
+          "kind": "signature",
+          "text_sha256": "5740eef812dd396c9ed1b6c5851fc8f25f16a810ac4c8311d4ec9c5015701bbe"
+        },
+        {
+          "id": "EFTA00032045-wave-span-3",
+          "page": 1,
+          "line_start": 11,
+          "line_end": 30,
+          "kind": "inline_quote",
+          "text_sha256": "e59cc26b9f7a4349b87631499bca5af789bc05d7db7f40c098f737a4cb276822"
+        },
+        {
+          "id": "EFTA00032045-wave-span-4",
+          "page": 2,
+          "line_start": 1,
+          "line_end": 12,
+          "kind": "inline_quote",
+          "text_sha256": "1c54d52fd2ea07aa1d869e69c3f9b67bf3c21eac499ccdc12e199ec4540dcf4b"
+        }
+      ]
+    }
+  ]
+}

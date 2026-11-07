@@ -11,8 +11,8 @@
     {
       "file_id": "EFTA00014597",
       "native_candidates": 0,
-      "with_reviewed_layer_candidates": 0,
-      "reviewed_layer_applied": false
+      "with_reviewed_layer_candidates": 1,
+      "reviewed_layer_applied": true
     },
     {
       "file_id": "EFTA00018844",
@@ -64,9 +64,9 @@
     }
   ],
   "native_candidate_occurrences": 5,
-  "with_reviewed_layers_candidate_occurrences": 7,
+  "with_reviewed_layers_candidate_occurrences": 8,
   "public_site_integration": false,
   "unique_messages_verified": false,
   "contact_rankings_ready": false,
-  "interpretation": "Richer viewer-parser counts, distinct from the simple pilot header heuristic. Source-assisted label layers are explicit opt-ins; native text is preserved."
+  "interpretation": "Richer viewer-parser counts, distinct from the simple pilot header heuristic. Source-assisted label/fragment layers are explicit opt-ins; native text and unresolved fragments are preserved."
 }
