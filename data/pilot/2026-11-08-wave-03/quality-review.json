@@ -12,7 +12,7 @@
   "parser_version": "email-pilot-1",
   "date_parser_version": "email-date-2",
   "unique_messages": null,
-  "ocr_performed": false,
+  "ocr_performed": true,
   "public_site_integrated": false,
   "files": [
     {
@@ -221,5 +221,17 @@
       "date_review_status": "unreviewed",
       "financial_data_status": "not_structurally_verified"
     }
-  ]
+  ],
+  "native_extraction_ocr_performed": false,
+  "ocr_followup": {
+    "review_manifest": "ocr-transcription-review.json",
+    "reviewed_pdf_pages": 2,
+    "local_ocr_attempts": 4,
+    "source_assisted_literal_readings": 8,
+    "ocr_improvement_accepted": false,
+    "native_text_replaced": false,
+    "primary_date_assigned": false,
+    "review_status": "source_assisted_readings_recorded_with_unresolved_date_format",
+    "note": "OCR was used only as a local comparator after acquisition. It still missed the handwriting; provisional editorial readings remain in an ignored separate cache, not the native extraction or public site."
+  }
 }

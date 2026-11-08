@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-08",
+  "reviewer": "Codex",
+  "file_id": "EFTA01281641",
+  "dataset": 10,
+  "source_sha256": "92d31fb890cb4422641ea5bd0d5d3904170f6a25b7a15a123595283e5733580b",
+  "native_extraction_sha256": "64d591758d75da0c4add421789f913eaf80effbdc7af2d804a19bb6963883cde",
+  "method": "Local Windows.Media.Ocr en-US on PDFium scale-3 renders and focused crops, followed by Codex visual comparison. Same-assistant source readings; not independent verification. No external service used.",
+  "ocr_attempts": [
+    {
+      "pdf_page": 1,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/page-1-rot-0.png",
+      "image_sha256": "0f09f15e8662b38dd6ddda08b1080d2180b7be3401bea883c66b288e10d49cb3",
+      "result_path": "extractions/ocr-review/page-1-rot-0.json",
+      "result_sha256": "aea23d509b5a482f1f2ed3a304af0b23957585152969be60e77f0ac646570da6",
+      "recognized_lines": 11,
+      "recognized_characters": 143,
+      "crop_pixels_on_rotated_full_render": null,
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    },
+    {
+      "pdf_page": 2,
+      "clockwise_rotation_degrees": 270,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/page-2-rot-270.png",
+      "image_sha256": "8413a0b607df4e6ae0e1235eabec83c8a191137a15d9e6daeff7c529eeb69692",
+      "result_path": "extractions/ocr-review/page-2-rot-270.json",
+      "result_sha256": "de13dd353fa20e35924b5138c9f2e9d54393ea624e77b911cb5eca6dd17cddce",
+      "recognized_lines": 1,
+      "recognized_characters": 4,
+      "crop_pixels_on_rotated_full_render": null,
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    },
+    {
+      "pdf_page": 1,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/page-1-slip.png",
+      "image_sha256": "e9d7d9cfc42ab4b0d295d9d3cb9224b247dd1cd983aefa816062f77893e0ba03",
+      "result_path": "extractions/ocr-review/page-1-slip.json",
+      "result_sha256": "080a65bef180cf92f1dbde3b97459e4e10bc96b41c098e04eea175c037fc82c0",
+      "recognized_lines": 8,
+      "recognized_characters": 97,
+      "crop_pixels_on_rotated_full_render": [
+        90,
+        70,
+        1650,
+        680
+      ],
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    },
+    {
+      "pdf_page": 2,
+      "clockwise_rotation_degrees": 270,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/page-2-slip.png",
+      "image_sha256": "f6599f9330c7e3fd02e395dde6d50d43209292994685878a5a35d1f6b7a52acf",
+      "result_path": "extractions/ocr-review/page-2-slip.json",
+      "result_sha256": "25654ecafc47db53884d9675dcf6bd25d3753ea04824ec85aefb698e8458db80",
+      "recognized_lines": 2,
+      "recognized_characters": 13,
+      "crop_pixels_on_rotated_full_render": [
+        95,
+        230,
+        660,
+        1760
+      ],
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    }
+  ],
+  "transcription_layer": {
+    "local_path": "extractions/ocr-review/editorial-readings.json",
+    "sha256": "0b8121998773d01daf98767d27a3b88c4793b4bb002b58721e504010b79ad031",
+    "public": false
+  },
+  "eligibility": {
+    "primary_date_assignment": false,
+    "verified_transaction_counts": false,
+    "account_identity_inference": false,
+    "automatic_native_text_replacement": false
+  },
+  "page_findings": [
+    {
+      "pdf_page": 1,
+      "native_text_sha256": "c9d0f68abe26e5b671a4cdb12f6d9ccc7a1f3078f87d4054e354993c78382ce4",
+      "status": "source_assisted_readings_saved_date_format_unresolved",
+      "notes": "Native text and both OCR attempts miss the handwritten date and amounts. Source comparison supports provisional literal readings; no primary calendar date is assigned."
+    },
+    {
+      "pdf_page": 2,
+      "native_text_sha256": "56e7be4cfd23a73b6271ff914cda30715b87330123765b4781671ee046a2c82b",
+      "status": "source_assisted_readings_saved_ocr_inadequate",
+      "notes": "Reverse-side writing is upright after a 270-degree render rotation. OCR still does not capture the written references/amounts. Local editorial candidates are separate from native text and do not establish completed transactions or account ownership."
+    }
+  ],
+  "reviewed_fields": [
+    {
+      "id": "front-date",
+      "pdf_page": 1,
+      "kind": "handwritten_date_literal",
+      "status": "literal_reading_only_format_unresolved",
+      "literal_sha256": "c64eb65776aee9e3053869a6d551c7bd66a8f6cd16e41a912930f0cd64d6fe0b",
+      "image_path": "extractions/ocr-review/page-1-slip.png",
+      "region_pixels": [
+        520,
+        210,
+        760,
+        280
+      ]
+    },
+    {
+      "id": "front-checks",
+      "pdf_page": 1,
+      "kind": "written_amount_candidate",
+      "status": "source_assisted_not_independently_verified",
+      "literal_sha256": "960d1ecbd8d5aa843f05eea4db08b8c2d7c31482d7ccd09476fe0d188d6895a8",
+      "image_path": "extractions/ocr-review/page-1-slip.png",
+      "region_pixels": [
+        980,
+        180,
+        1280,
+        250
+      ]
+    },
+    {
+      "id": "front-total",
+      "pdf_page": 1,
+      "kind": "written_amount_candidate",
+      "status": "source_assisted_not_independently_verified",
+      "literal_sha256": "960d1ecbd8d5aa843f05eea4db08b8c2d7c31482d7ccd09476fe0d188d6895a8",
+      "image_path": "extractions/ocr-review/page-1-slip.png",
+      "region_pixels": [
+        980,
+        250,
+        1280,
+        330
+      ]
+    },
+    {
+      "id": "reverse-reference-1",
+      "pdf_page": 2,
+      "kind": "written_reference_candidate",
+      "status": "reference_role_not_verified",
+      "literal_sha256": "c03b99e53b7232c7694802d535457ccbaebdb4641117e4b144f630cf8e13b160",
+      "image_path": "extractions/ocr-review/page-2-slip.png",
+      "region_pixels": [
+        20,
+        130,
+        190,
+        195
+      ]
+    },
+    {
+      "id": "reverse-amount-1",
+      "pdf_page": 2,
+      "kind": "written_amount_candidate",
+      "status": "source_assisted_not_independently_verified",
+      "literal_sha256": "fda346bc83791b36885f993c0e952ecd2ad5fc548e7268208972b0555d655ec4",
+      "image_path": "extractions/ocr-review/page-2-slip.png",
+      "region_pixels": [
+        230,
+        130,
+        550,
+        200
+      ]
+    },
+    {
+      "id": "reverse-reference-2",
+      "pdf_page": 2,
+      "kind": "written_reference_candidate",
+      "status": "reference_role_not_verified",
+      "literal_sha256": "f629ade054785a469fde27b4ff98271c3bc58214772384ee30a763d91c78d8de",
+      "image_path": "extractions/ocr-review/page-2-slip.png",
+      "region_pixels": [
+        20,
+        190,
+        190,
+        250
+      ]
+    },
+    {
+      "id": "reverse-amount-2",
+      "pdf_page": 2,
+      "kind": "written_amount_candidate",
+      "status": "source_assisted_not_independently_verified",
+      "literal_sha256": "34402b0ec7f0981a8e17ed8f4811bf6c903951e36a8d8c7d3c24497a1dcd9769",
+      "image_path": "extractions/ocr-review/page-2-slip.png",
+      "region_pixels": [
+        230,
+        190,
+        550,
+        260
+      ]
+    },
+    {
+      "id": "reverse-total",
+      "pdf_page": 2,
+      "kind": "written_amount_candidate",
+      "status": "source_assisted_not_independently_verified",
+      "literal_sha256": "960d1ecbd8d5aa843f05eea4db08b8c2d7c31482d7ccd09476fe0d188d6895a8",
+      "image_path": "extractions/ocr-review/page-2-slip.png",
+      "region_pixels": [
+        230,
+        1350,
+        550,
+        1460
+      ]
+    }
+  ],
+  "ocr_improvement_accepted": false,
+  "independent_verification": false,
+  "remaining_uncertainties": [
+    "Handwritten date format and century are not established as a primary document date",
+    "Reference labels and amounts are not independently verified transaction records",
+    "Printed/redacted account identifiers are not reconstructed"
+  ],
+  "publication": "OCR images/results and literal readings stay in ignored extraction cache; main records evidence hashes, scope and findings only."
+}
