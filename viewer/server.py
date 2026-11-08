@@ -16,13 +16,13 @@ from urllib.parse import parse_qs, urlsplit
 try:
     from .email_parser import build_email_catalog,review_page
     from .email_coverage import review_coverage
-    from .wordcloud import build_word_index,word_cloud
+    from .wordcloud import build_word_index,word_cloud,reviewed_periods
     from .timeframes import validate_briefs,timeframe_index,select_timeframe
     from .batches import load_expansions,load_expansion_dates,merge_catalog
 except ImportError:
     from email_parser import build_email_catalog,review_page
     from email_coverage import review_coverage
-    from wordcloud import build_word_index,word_cloud
+    from wordcloud import build_word_index,word_cloud,reviewed_periods
     from timeframes import validate_briefs,timeframe_index,select_timeframe
     from batches import load_expansions,load_expansion_dates,merge_catalog
 
@@ -268,10 +268,14 @@ class Catalog:
     def word_index(self):
         with self.connect() as c:
             docs={r['id']:dict(id=r['id'],dataset=r['dataset'],date_review={'status':r['status'],'primary_date':r['primary_date']},pages=[]) for r in c.execute("SELECT d.id,d.dataset,COALESCE(v.status,'unreviewed') status,v.primary_date FROM documents d LEFT JOIN document_dates v ON v.document_id=d.id ORDER BY d.dataset,d.id")}
+            for row in c.execute('SELECT document_id,payload FROM document_reviews'):
+                docs[row['document_id']]['source_quality_review']=json.loads(row['payload'])
+            eligible={key for key,doc in docs.items() if doc['date_review']['status']=='dated' or reviewed_periods(doc)}
             names={}
             for r in c.execute('SELECT page_id,person_id FROM name_mentions'):names.setdefault(r['page_id'],[]).append({'id':r['person_id']})
-            for r in c.execute("SELECT p.id,p.document_id,p.number,p.text FROM pages p JOIN document_dates v ON v.document_id=p.document_id WHERE v.status='dated' ORDER BY p.document_id,p.number"):
-                docs[r['document_id']]['pages'].append(dict(number=r['number'],text=r['text'],name_mentions=names.get(r['id'],[])))
+            for r in c.execute("SELECT p.id,p.document_id,p.number,p.text FROM pages p ORDER BY p.document_id,p.number"):
+                if r['document_id'] in eligible:
+                    docs[r['document_id']]['pages'].append(dict(number=r['number'],text=r['text'],name_mentions=names.get(r['id'],[])))
         return build_word_index(docs.values())
 
     def words(self,**query):
@@ -445,7 +449,7 @@ class Handler(BaseHTTPRequestHandler):
             elif url.path == '/api/people': self.json(200,self.catalog.people())
             elif url.path == '/api/emails':self.json(200,self.catalog.emails(query.get('filter','all'),query.get('document',''),query.get('page',1)))
             elif url.path == '/api/coverage':self.json(200,self.catalog.coverage())
-            elif url.path == '/api/words':self.json(200,self.catalog.words(**{k:query.get(k,'') for k in ('date_from','date_to','dataset','person','exclude')}))
+            elif url.path == '/api/words':self.json(200,self.catalog.words(**{k:query.get(k,'') for k in ('date_from','date_to','dataset','person','exclude','date_basis')}))
             elif url.path == '/api/timeframes':self.json(200,self.catalog.timeframes(**{k:query.get(k,'') for k in ('date_from','date_to','dataset','person')}))
             elif url.path == '/api/search':
                 self.json(200,self.catalog.search(query.get('q',''),query.get('dataset',''),query.get('quality','all'),query.get('page',1),query.get('date_from',''),query.get('date_to',''),query.get('date_status','all'),query.get('person',''),query.get('period_from',''),query.get('period_to','')))

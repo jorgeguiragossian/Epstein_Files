@@ -32,5 +32,5 @@ assert(!fs.readFileSync('site-dist/coverage.js','utf8').includes("'/?doc="));
 assert(!fs.readFileSync('site-dist/words.js','utf8').includes("'/?doc="));
 assert(!fs.readFileSync('site-dist/timeframes.js','utf8').includes("'/?doc="));
 for(const path of ['/api/timeframes?date_from=2021-02-29','/api/timeframes?date_from=2022-01-01&date_to=2020-01-01','/api/timeframes?person=unknown','/api/timeframes?dataset=13'])assert.throws(()=>api.dispatch(data,path));
-for(const path of ['/api/words?date_from=2021-02-29','/api/words?date_from=2022-01-01&date_to=2020-01-01','/api/words?person=unknown','/api/words?dataset=13'])assert.throws(()=>api.dispatch(data,path));
+for(const path of ['/api/words?date_basis=unknown','/api/words?date_from=2021-02-29','/api/words?date_from=2022-01-01&date_to=2020-01-01','/api/words?person=unknown','/api/words?dataset=13'])assert.throws(()=>api.dispatch(data,path));
 console.log(`Static Pages checks passed: ${golden.length} Python/browser-adapter comparisons, invalid inputs, DOJ PDF links, and project subpaths.`);

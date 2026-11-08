@@ -75,3 +75,6 @@ The subsequent [wave 2 date review](wave-02-dates.md) adds eight primary dates a
 The [wave 3 integration](wave-03-integration.md) adds ten dataset 10 PDFs: 130 documents / 1,916 pages. Their source-quality panels expose layout limitations and distinct date roles with page evidence. All ten primary dates remain unreviewed, giving 53 dated / 7 uncertain / 70 unreviewed overall. Local OCR and provisional handwriting readings are not published.
 
 The subsequent [primary-date and reporting-period milestone](reporting-period-search.md) adds independent period-overlap controls to document search. Wave 3 adjudication assigns one court-order date and retains nine uncertain records: 54 dated / 16 uncertain / 60 unreviewed overall. Word clouds and timeframe briefs continue to use primary dates.
+
+
+The subsequent [reporting-period word-cloud milestone](reporting-period-word-cloud.md) adds an explicit date-basis choice to word analysis. Reviewed reporting periods can select PDFs with uncertain primary dates; primary-date mode remains the default. Counts cover whole selected pages with exact source references. Timeframe briefs continue to use primary dates.

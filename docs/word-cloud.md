@@ -11,3 +11,6 @@ Recognized repeated transcript-vendor footer lines (Free State Reporting, its tr
 The top 50 terms sort by descending frequency with alphabetical ties. Display size uses a square-root frequency scale. Selecting a word displays every contributing PDF/page with its token count and a link to the source page. Counts are word occurrences, not unique communications, people or events. The full contributing-page list supports all displayed terms; it is not a sample of their occurrences.
 
 `viewer/wordcloud.py` produces deterministic per-page token counts and the local `/api/words` response. The static build exports the same precomputed token index; the browser filters and aggregates it without retokenizing. Local/static API comparisons cover the default cloud, date ranges, dataset and person selection, exclusions, and empty results. Synthetic tests cover token artifacts, source totals, inclusive date bounds and invalid input. No raw documents, parsed email fields or review decisions are modified.
+
+
+The subsequent [reporting-period word-cloud milestone](reporting-period-word-cloud.md) adds an explicit date-basis choice to word analysis. Reviewed reporting periods can select PDFs with uncertain primary dates; primary-date mode remains the default. Counts cover whole selected pages with exact source references. Timeframe briefs continue to use primary dates.

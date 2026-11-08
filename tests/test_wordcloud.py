@@ -2,6 +2,7 @@
 import sys
 from pathlib import Path
 import unittest
+import copy
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'viewer'))
 from wordcloud import frequencies,build_word_index,word_cloud
 
@@ -39,3 +40,27 @@ class WordTests(unittest.TestCase):
         self.assertEqual(word_cloud(self.index,[],date_to='1900-01-01')['terms'],[])
         for query in [dict(date_from='2020-02-30'),dict(date_from='2021-01-01',date_to='2020-01-01'),dict(dataset='13'),dict(person='missing'),dict(exclude='x'*301)]:
             with self.subTest(query=query),self.assertRaises(ValueError):word_cloud(self.index,[],**query)
+
+    def test_period_mode_includes_uncertain_documents_once_and_preserves_primary_mode(self):
+        docs=copy.deepcopy(self.docs)
+        period=dict(role='statement_reporting_period',period_start='2020-01-01',period_end='2020-01-31',pdf_page=1)
+        docs[2]['source_quality_review']=dict(date_observations=[period,dict(period)])
+        docs[2]['pages'][0]['name_mentions']=[dict(id='person')]
+        docs[2]['pages'].append(dict(number=2,text='secret banana',name_mentions=[]))
+        docs[1]['source_quality_review']=dict(date_observations=[dict(role='portfolio_as_of_date',normalized_day='2020-01-15')])
+        index=build_word_index(docs)
+        original=word_cloud(self.index,['person']);primary=word_cloud(index,['person'])
+        self.assertEqual(primary,original)
+        result=word_cloud(index,['person'],date_basis='reporting_period',date_from='2020-01-31',date_to='2020-01-31')
+        self.assertEqual((result['eligible_reporting_period_documents'],result['excluded_without_reviewed_period']),(1,2))
+        self.assertEqual((result['selected_documents'],result['selected_pages']),(1,2))
+        secret=next(t for t in result['terms'] if t['term']=='secret')
+        self.assertEqual(secret['count'],4)
+        self.assertEqual(sum(s['count'] for s in secret['sources']),4)
+        named=word_cloud(index,['person'],date_basis='reporting_period',person='person')
+        self.assertEqual(named['selected_pages'],1)
+        self.assertEqual(named['terms'][0]['count'],3)
+        self.assertEqual(word_cloud(index,[],date_basis='reporting_period',date_from='2020-02-01')['selected_documents'],0)
+        self.assertEqual(word_cloud(index,[],date_basis='reporting_period',date_to='2019-12-31')['selected_documents'],0)
+        self.assertEqual(word_cloud(index,[],date_basis='reporting_period',exclude='secret')['terms'][0]['term'],'banana')
+        with self.assertRaises(ValueError):word_cloud(index,[],date_basis='unknown')

@@ -23,3 +23,6 @@ The explicit registry pins `data/pilot/2026-11-08-wave-03/date-reviews.json`. Re
 Collection totals are **54 dated, 16 uncertain, 60 unreviewed PDFs**, out of 130 PDFs / 1,916 pages. Date-range analysis covers 54 PDFs; 76 lack a usable primary date. Timeframes retain 36 existing prepared/source-checked briefs and now have 18 date-evidence-only documents. No new content brief, financial value or account association was created.
 
 Validation: 91 offline tests, 68 static/Python API comparisons and real-cache HTTP smoke checks. Tests cover inclusive/open bounds, non-overlap, invalid/reversed dates, standalone as-of exclusion and combinations with primary dates, status, text and dataset. Browser checks cover period controls, uncertain-date results, source reading, URL persistence and clear/reset behavior. All native document fields, source-quality metadata and 163 email records remain unchanged; only the ten new primary-date reviews changed in document payloads.
+
+
+The subsequent [reporting-period word-cloud milestone](reporting-period-word-cloud.md) adds an explicit date-basis choice to word analysis. Reviewed reporting periods can select PDFs with uncertain primary dates; primary-date mode remains the default. Counts cover whole selected pages with exact source references. Timeframe briefs continue to use primary dates.

@@ -25,6 +25,12 @@ def main():
     assert overview['date_status_counts']=={'dated':54,'uncertain':16,'unreviewed':60}
     words=get('/api/words')
     assert (words['eligible_dated_documents'],words['excluded_without_reviewed_date'])==(54,76)
+    reporting=get('/api/words?date_basis=reporting_period')
+    assert (reporting['eligible_reporting_period_documents'],reporting['excluded_without_reviewed_period'],reporting['selected_documents'])==(6,124,6)
+    selected=get('/api/words?date_basis=reporting_period&date_from=2015-11-30&date_to=2015-11-30')
+    assert (selected['selected_documents'],selected['selected_pages'])==(1,2)
+    assert all(s['file_id']=='EFTA01280951' for term in selected['terms'] for s in term['sources'])
+    assert get('/api/words?date_basis=reporting_period&date_from=2015-12-01&date_to=2015-12-01')['selected_documents']==0
     assert get('/api/documents/EFTA00039826')['date_review']['date_type']=='letter'
     assert get('/api/documents/EFTA00008892')['date_review']['date_type']=='presentation'
     assert get('/api/documents/EFTA02212924')['date_review']['primary_date'] is None
@@ -103,7 +109,7 @@ def main():
     assert any(r['representative']['source_review']['header_status']=='source_order_mismatch' for r in wave)
     assert get('/api/documents/EFTA00064578?page=6')['date_review']['primary_date']=='2022-03-10'
     assert get('/api/emails')['summary']['body_partitions']['annotated_candidates']==28
-    for path, status in [('/api/documents/EFTA00008529?page=0',400),('/README.md',404),('/pdf/../../README.md',404),('/api/search?date_from=2021-02-29',400),('/api/search?period_from=2021-02-29',400),('/api/search?period_from=2021-01-01&period_to=2020-01-01',400),('/api/search?date_from=2020-01-01&date_to=2019-01-01',400),('/api/search?person=unknown',400),('/api/emails?filter=invented',400),('/api/emails?document=../../README.md',400),('/api/emails?page=0',400)]:
+    for path, status in [('/api/documents/EFTA00008529?page=0',400),('/README.md',404),('/pdf/../../README.md',404),('/api/words?date_basis=unknown',400),('/api/search?date_from=2021-02-29',400),('/api/search?period_from=2021-02-29',400),('/api/search?period_from=2021-01-01&period_to=2020-01-01',400),('/api/search?date_from=2020-01-01&date_to=2019-01-01',400),('/api/search?person=unknown',400),('/api/emails?filter=invented',400),('/api/emails?document=../../README.md',400),('/api/emails?page=0',400)]:
         try: get(path)
         except HTTPError as exc: assert exc.code == status, (path,exc.code)
         else: raise AssertionError(f'Expected HTTP {status} for {path}')
