@@ -1,0 +1,249 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-08",
+  "scope": "Ten wave 4 PDFs: eight outer sent dates, two uncertain calendar alerts. No new briefs or native email repairs.",
+  "reviews": [
+    {
+      "file_id": "EFTA02212883",
+      "dataset": 11,
+      "source_sha256": "76566756493787c5c345476fc85747b44320838fe081fd7d1a247afb2e4710f9",
+      "status": "dated",
+      "primary_date": "2017-05-30",
+      "date_type": "email_sent",
+      "precision": "day",
+      "evidence_page": 1,
+      "evidence_quote": "Sent Tue 5/3012017 12:05:38 PM",
+      "notes": "Outer Sent row is legible in the PDF; native text loses the slash before the year. Earlier inline/forwarded timestamps are separate. No native timestamp repair. Source Sent reading: Tue 5/30/2017 12:05:38 PM. No timezone is inferred.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "Sent Tue 5/3012017 12:05:38 PM",
+          "native_text_sha256": "16c255089c996e507cf9735befd7aab7e68f103b6b99121ae28c92fca85c3803"
+        }
+      ],
+      "source_date_reading": "Tue 5/30/2017 12:05:38 PM"
+    },
+    {
+      "file_id": "EFTA02213471",
+      "dataset": 11,
+      "source_sha256": "fa9b3596f5037197693a73d3db80da772c9d6f11f37402eb49a303345786d017",
+      "status": "dated",
+      "primary_date": "2017-05-19",
+      "date_type": "email_sent",
+      "precision": "day",
+      "evidence_page": 1,
+      "evidence_quote": "Sent 9/2017 1:35:02 PM",
+      "notes": "Outer Sent row is legible in the PDF, although the native text loses weekday/month and part of the day. The source reading supplies the editorial day; native fields remain damaged and unchanged. Source Sent reading: Fri 5/19/2017 1:35:02 PM. No timezone is inferred.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "Sent 9/2017 1:35:02 PM",
+          "native_text_sha256": "05421a392269787c9a48e65631aaf4ec3a45c5866dd89d8d686ad24cf68850cd"
+        }
+      ],
+      "source_date_reading": "Fri 5/19/2017 1:35:02 PM"
+    },
+    {
+      "file_id": "EFTA02213987",
+      "dataset": 11,
+      "source_sha256": "745f6edc69712c881e47ba11ca60295c3d71dc90f3744aede7dd34939cf38507",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "June 10, 2017 : Larry in 7J June 10-16",
+      "notes": "Calendar alert: the displayed June 10 event text and June 10-16 range do not establish a sent or issue date. No separate primary document date is visible; do not promote the event day.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "June 10, 2017 : Larry in 7J June 10-16",
+          "native_text_sha256": "eb4503196e8699dd21779d3a3a3384c6b376d1decbd50d8f97bd48fd91857fd5"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA02214639",
+      "dataset": 11,
+      "source_sha256": "09732d965fcf4b78163c13e43c74c20e0b10277bcc129071fb6d331bc3fcb518",
+      "status": "dated",
+      "primary_date": "2017-06-09",
+      "date_type": "email_sent",
+      "precision": "day",
+      "evidence_page": 1,
+      "evidence_quote": "Fri 6/9/2017 5:41:46 PM",
+      "notes": "Outer Sent row. Native sender/date/subject values are displaced below labels, but the source date is clear. The earlier quoted same-day exchange and disclaimer copyright year are separate.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "Fri 6/9/2017 5:41:46 PM",
+          "native_text_sha256": "ba7ff63750cae6e69c66ba853269e23f54c2185fe65e61d9df6290412335810e"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA02215291",
+      "dataset": 11,
+      "source_sha256": "2de410a2ad41a0645c8c34f1a9084acaa0c02ff7c57c0404455130de1fac245a",
+      "status": "dated",
+      "primary_date": "2017-06-12",
+      "date_type": "email_sent",
+      "precision": "day",
+      "evidence_page": 1,
+      "evidence_quote": "Sent Mon 6/12/2017 11:40:30 AM",
+      "notes": "Outer Sent row; June 15 schedule dates and the quoted earlier message are separate. Known body-order mismatch remains unresolved and does not obscure the visible outer header.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "Sent Mon 6/12/2017 11:40:30 AM",
+          "native_text_sha256": "a0904879ebc037b122a7db51f493bc6735239253114051a7d480aa10363e83de"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA02215926",
+      "dataset": 11,
+      "source_sha256": "39c1309451da241b94ba0bd5d1ae4d08172351bb1d3274130d0418000324f182",
+      "status": "dated",
+      "primary_date": "2017-06-14",
+      "date_type": "email_sent",
+      "precision": "day",
+      "evidence_page": 1,
+      "evidence_quote": "Sent: Wed 6/14/2017 6:28:06 PM",
+      "notes": "Outer Sent row. June 8 quoted messages and future training/travel date ranges are separate. Damaged nested headers do not change this outer date.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "Sent: Wed 6/14/2017 6:28:06 PM",
+          "native_text_sha256": "618a611a40ebd5231b30f29ffc58acbecccebed76b13323a4798234946eb84ee"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA02216544",
+      "dataset": 11,
+      "source_sha256": "a0acdaf898abeeba81008140546b8b5d287f55dee21495acb718d316fbb1ccb1",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "June 16, 2017 5:00 AM : Can Jude Hess see JE today around 12/12:30?",
+      "notes": "Calendar alert: displayed event/reminder timestamp is not a separately established sent or issue date. No primary date assignment from this timestamp; redacted participants remain unresolved.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "June 16, 2017 5:00 AM : Can Jude Hess see JE today around 12/12:30?",
+          "native_text_sha256": "98ca9308e5c82746c9ed05df95ac3c37ebf2bc8adc9d42dad111b720eed40b34"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA02217241",
+      "dataset": 11,
+      "source_sha256": "657d5c627fef96fc1a0f236d6cd83cf633f631ac1123ebe7c7da73e6dae28b6d",
+      "status": "dated",
+      "primary_date": "2017-06-16",
+      "date_type": "email_sent",
+      "precision": "day",
+      "evidence_page": 1,
+      "evidence_quote": "Fri 6/16/2017 11:41:52 AM",
+      "notes": "Outer Sent row is legible despite native label/value displacement. Earlier inline and forwarded timestamps are distinct; unresolved trailing material remains unchanged.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "Fri 6/16/2017 11:41:52 AM",
+          "native_text_sha256": "a45a6c70fc42c79b5db576a8f4a2b694dcb22b18c434f8590ad248448f6644f9"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA02217799",
+      "dataset": 11,
+      "source_sha256": "abdc78ec7ad6fb8d6777a3dad13683463b152eab967193b37c5b71101589b55d",
+      "status": "dated",
+      "primary_date": "2017-07-12",
+      "date_type": "email_sent",
+      "precision": "day",
+      "evidence_page": 1,
+      "evidence_quote": "Wed 7/12/2017 12:22:55 PM",
+      "notes": "Outer Sent row. The subject/body 5pm appointment and earlier inline quoted timestamps are not the primary sent timestamp.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "Wed 7/12/2017 12:22:55 PM",
+          "native_text_sha256": "b4a2014fc60ea36411c23dc33199b4f273605055a4ee0628b4b59f62d654b19e"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA02218280",
+      "dataset": 11,
+      "source_sha256": "87ff44390ddf4c49d55afaee8d3b59dfd26ccda629f796dacbf8f4a019775399",
+      "status": "dated",
+      "primary_date": "2017-07-31",
+      "date_type": "email_sent",
+      "precision": "day",
+      "evidence_page": 1,
+      "evidence_quote": "Sent: Mon 7/31/2017 4:04:50 PM",
+      "notes": "Outer Sent row. Relative future Wednesday/Thursday appointment requests are separate; no event date or participant identity is inferred.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "Sent: Mon 7/31/2017 4:04:50 PM",
+          "native_text_sha256": "b149be8d7f51a8259e5321cf304722560ca74405402c4dcf0758bdbc79910f94"
+        }
+      ]
+    }
+  ]
+}

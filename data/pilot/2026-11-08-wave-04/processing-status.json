@@ -8,11 +8,10 @@
   "public_search_integration": true,
   "reviewed_candidates": 13,
   "lossless_body_partitions": 9,
-  "document_date_status": "all_unreviewed",
+  "document_date_status": "eight_dated_two_uncertain_calendar_alerts",
   "remaining_review_items": [
     "Incomplete inline message enumeration",
     "Two calendar alerts are not person-to-person messages",
-    "Source-order mismatch and ambiguous trailing fragment retained",
-    "Primary dates not adjudicated"
+    "Source-order mismatch and ambiguous trailing fragment retained"
   ]
 }

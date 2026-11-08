@@ -22,9 +22,9 @@ def main():
     assert page['page']['number'] == 2 and page['page']['text']
     assert get('/api/search?quality=review')['total_documents'] == 58
     assert get('/api/search?q=zzznomatchpilot')['total_documents'] == 0
-    assert overview['date_status_counts']=={'dated':54,'uncertain':16,'unreviewed':70}
+    assert overview['date_status_counts']=={'dated':62,'uncertain':18,'unreviewed':60}
     words=get('/api/words')
-    assert (words['eligible_dated_documents'],words['excluded_without_reviewed_date'])==(54,86)
+    assert (words['eligible_dated_documents'],words['excluded_without_reviewed_date'])==(62,78)
     reporting=get('/api/words?date_basis=reporting_period')
     assert (reporting['eligible_reporting_period_documents'],reporting['excluded_without_reviewed_period'],reporting['selected_documents'])==(6,134,6)
     selected=get('/api/words?date_basis=reporting_period&date_from=2015-11-30&date_to=2015-11-30')
@@ -40,13 +40,13 @@ def main():
     memo=get('/api/search?q=EFTA00034623&date_from=2019-07-23&date_to=2019-07-23')
     assert memo['total_documents']==0
     timeline=get('/api/timeframes')
-    assert (timeline['selected_documents'],timeline['prepared_briefs'],timeline['date_evidence_only'],timeline['source_checked_briefs'])==(54,36,18,36)
+    assert (timeline['selected_documents'],timeline['prepared_briefs'],timeline['date_evidence_only'],timeline['source_checked_briefs'])==(62,36,26,36)
     assert get('/api/timeframes?date_from=2017-05-23&date_to=2017-05-23')['selected_documents']==0
     dated=get('/api/search?date_from=2019-06-18&date_to=2019-06-18')
     assert dated['total_documents']==1 and dated['results'][0]['id']=='EFTA00008529'
-    assert get('/api/search?date_status=uncertain')['total_documents']==16
+    assert get('/api/search?date_status=uncertain')['total_documents']==18
     assert get('/api/search?date_status=undated')['total_documents']==0
-    assert get('/api/search?date_status=unreviewed')['total_documents']==70
+    assert get('/api/search?date_status=unreviewed')['total_documents']==60
     assert get('/api/search?date_from=2014-01-01&date_to=2014-01-01&q=EFTA02730265')['total_documents']==0
     assert get('/api/documents/EFTA00039806')['date_review']['evidence_page']==2
     people=get('/api/people')['people']
@@ -112,7 +112,12 @@ def main():
     mismatch=get('/api/emails?document=EFTA02215291&filter=boundary')['results'][0]['representative']
     assert mismatch['source_review']['boundary_status']=='source_order_mismatch' and not mismatch.get('body_partition')
     assert get('/api/emails?document=EFTA02216544')['results'][0]['representative']['source_review']['boundary_status']=='calendar_alert_not_correspondence'
-    assert get('/api/documents/EFTA02215926?page=3')['date_review']['status']=='unreviewed'
+    assert get('/api/documents/EFTA02215926?page=3')['date_review']['primary_date']=='2017-06-14'
+    assert get('/api/documents/EFTA02213471')['date_review']['primary_date']=='2017-05-19'
+    assert get('/api/documents/EFTA02213987')['date_review']['status']=='uncertain'
+    assert get('/api/documents/EFTA02216544')['date_review']['primary_date'] is None
+    assert get('/api/search?q=EFTA02215291&date_from=2017-06-15&date_to=2017-06-15')['total_documents']==0
+    assert get('/api/timeframes?dataset=11&date_from=2017-05-01&date_to=2017-07-31')['date_evidence_only']==8
     for path, status in [('/api/documents/EFTA00008529?page=0',400),('/README.md',404),('/pdf/../../README.md',404),('/api/words?date_basis=unknown',400),('/api/search?date_from=2021-02-29',400),('/api/search?period_from=2021-02-29',400),('/api/search?period_from=2021-01-01&period_to=2020-01-01',400),('/api/search?date_from=2020-01-01&date_to=2019-01-01',400),('/api/search?person=unknown',400),('/api/emails?filter=invented',400),('/api/emails?document=../../README.md',400),('/api/emails?page=0',400)]:
         try: get(path)
         except HTTPError as exc: assert exc.code == status, (path,exc.code)
