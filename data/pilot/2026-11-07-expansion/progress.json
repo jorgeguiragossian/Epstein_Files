@@ -6,7 +6,7 @@
   "remaining_unprocessed_files": 70,
   "first_wave": "data/pilot/2026-11-07-wave-01",
   "public_search_documents": 130,
-  "note": "All three ten-file expansion waves integrated (130 public PDFs). Wave 3 publishes native text with source-quality/date-role notices; provisional OCR/editorial readings remain local. Ten wave 3 primary dates remain unreviewed. Remaining 70 selected PDFs unprocessed.",
+  "note": "Three ten-file expansion waves integrated (130 public PDFs). Wave 3 primary-date adjudication: one dated, nine uncertain. Document search separately supports reviewed reporting-period overlap; provisional handwriting readings remain local. Remaining 70 selected PDFs unprocessed.",
   "second_wave": "data/pilot/2026-11-08-wave-02",
   "third_wave": "data/pilot/2026-11-08-wave-03"
 }

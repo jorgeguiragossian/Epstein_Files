@@ -21,3 +21,5 @@ node tests/test_static_pages.mjs
 ```
 
 The expansion plan now has 30 acquired/extracted/integrated PDFs and 70 selected PDFs still unprocessed. Next useful work is a separate primary-date adjudication and reporting-period filtering milestone; do not silently equate a reporting-period endpoint with an issue date.
+
+The subsequent [date/period-search milestone](reporting-period-search.md) completes this adjudication and adds separate reporting-period overlap controls to document search. Current primary-date totals are 54 dated, 16 uncertain and 60 unreviewed; the earlier counts above describe the integration milestone.

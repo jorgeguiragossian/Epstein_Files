@@ -39,7 +39,8 @@
         "table-date-role-reviews.json": "59d56f5a9d6627d2d16a1029f49191d291b31a42337bd107101e08fda9d3489d",
         "quality-review.json": "aabb725598cfe203f4c51431c39b6b4ed75be96ef82a36318928f1f43a2179a0",
         "ocr-transcription-review.json": "d7b67e3a58d555de8ce08032b0578c0bbd511441a67c4898c188dbce6220035f",
-        "processing-status.json": "11734e193923d58e6ccfbea2fca51194b89d7b297f00d4778aaee7b07af0db27"
+        "processing-status.json": "3baa1cc0422e7aca3c3e2966bee6afba276432e2bdb98e9103c7661f58c784a3",
+        "date-reviews.json": "57c90afd25cd19b446d39b6b65a9f280426e534eaf6a7114e1a9f3e2ec020b20"
       }
     }
   ]

@@ -73,3 +73,5 @@ The [wave 2 integration](wave-02-integration.md) adds ten dataset 9 PDFs with na
 The subsequent [wave 2 date review](wave-02-dates.md) adds eight primary dates and retains two uncertain records: 53 dated, 7 uncertain and 60 unreviewed overall. The deed has separate recording and acknowledgment evidence links; no recording date is substituted for an uncertain execution date. Timeframes include 36 existing briefs and 17 date-evidence-only documents.
 
 The [wave 3 integration](wave-03-integration.md) adds ten dataset 10 PDFs: 130 documents / 1,916 pages. Their source-quality panels expose layout limitations and distinct date roles with page evidence. All ten primary dates remain unreviewed, giving 53 dated / 7 uncertain / 70 unreviewed overall. Local OCR and provisional handwriting readings are not published.
+
+The subsequent [primary-date and reporting-period milestone](reporting-period-search.md) adds independent period-overlap controls to document search. Wave 3 adjudication assigns one court-order date and retains nine uncertain records: 54 dated / 16 uncertain / 60 unreviewed overall. Word clouds and timeframe briefs continue to use primary dates.

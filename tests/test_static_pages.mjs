@@ -15,7 +15,7 @@ for(const item of golden){
   assert.deepEqual(clean(actual),clean(item.result),item.path);
  }else assert.deepEqual(actual,item.result,item.path);
 }
-for(const path of ['/api/search?date_from=2021-02-29','/api/search?person=unknown','/api/search?q=***','/api/emails?filter=bad','/api/documents/EFTA00008529?page=0'])assert.throws(()=>api.dispatch(data,path),path);
+for(const path of ['/api/search?period_from=2021-02-29','/api/search?period_from=2021-01-01&period_to=2020-01-01','/api/search?date_from=2021-02-29','/api/search?person=unknown','/api/search?q=***','/api/emails?filter=bad','/api/documents/EFTA00008529?page=0'])assert.throws(()=>api.dispatch(data,path),path);
 await api.load();
 assert.equal(api.pdfUrl('EFTA00008529',2),data.documents.EFTA00008529.url+'#page=2');
 for(const name of ['index.html','emails.html','coverage.html','words.html','timeframes.html']){

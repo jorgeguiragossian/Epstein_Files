@@ -288,12 +288,28 @@ class Catalog:
     def timeframes(self,**query):
         return select_timeframe(self.timeframe_index(),[r['id'] for r in self.people()['people']],**query)
 
-    def search(self, q='', dataset='', quality='all', page=1, date_from='', date_to='', date_status='all',person=''):
+    def search(self, q='', dataset='', quality='all', page=1, date_from='', date_to='', date_status='all',person='',period_from='',period_to=''):
         q = q.strip()
         if len(q) > 200:
             raise ValueError('Keep search text to 200 characters or fewer.')
         page = integer(page, 1, 10000, 'Result page')
         where, params = [], []
+        if period_from:iso_day(period_from,'Reporting-period start')
+        if period_to:iso_day(period_to,'Reporting-period end')
+        if period_from and period_to and period_from>period_to:
+            raise ValueError('Reporting-period start must be on or before end.')
+        if period_from or period_to:
+            eligible=[]
+            with self.connect() as c:
+                for row in c.execute('SELECT document_id,payload FROM document_reviews'):
+                    observations=json.loads(row['payload']).get('date_observations',[])
+                    if any(o['role'] in ('statement_reporting_period','transaction_reporting_period')
+                           and o.get('period_start') and o.get('period_end')
+                           and (not period_from or o['period_end']>=period_from)
+                           and (not period_to or o['period_start']<=period_to) for o in observations):
+                        eligible.append(row['document_id'])
+            where.append('d.id IN ('+','.join('?' for _ in eligible)+')' if eligible else '0')
+            params.extend(eligible)
         person_forms=[]
         if person:
             with self.connect() as c:
@@ -432,7 +448,7 @@ class Handler(BaseHTTPRequestHandler):
             elif url.path == '/api/words':self.json(200,self.catalog.words(**{k:query.get(k,'') for k in ('date_from','date_to','dataset','person','exclude')}))
             elif url.path == '/api/timeframes':self.json(200,self.catalog.timeframes(**{k:query.get(k,'') for k in ('date_from','date_to','dataset','person')}))
             elif url.path == '/api/search':
-                self.json(200,self.catalog.search(query.get('q',''),query.get('dataset',''),query.get('quality','all'),query.get('page',1),query.get('date_from',''),query.get('date_to',''),query.get('date_status','all'),query.get('person','')))
+                self.json(200,self.catalog.search(query.get('q',''),query.get('dataset',''),query.get('quality','all'),query.get('page',1),query.get('date_from',''),query.get('date_to',''),query.get('date_status','all'),query.get('person',''),query.get('period_from',''),query.get('period_to','')))
             elif re.fullmatch(r'/api/documents/EFTA\d{8}', url.path):
                 self.json(200,self.catalog.document(url.path.rsplit('/',1)[-1],query.get('page',1)))
             elif re.fullmatch(r'/pdf/EFTA\d{8}', url.path):

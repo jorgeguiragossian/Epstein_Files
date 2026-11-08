@@ -58,6 +58,7 @@ class CatalogTests(unittest.TestCase):
                         c.execute('INSERT INTO name_mentions VALUES (?,?,?,?)',(row[0],key,len(hits),json.dumps(hits)))
             c.commit()
             c.execute('INSERT INTO document_reviews VALUES (?,?)',('EFTA00000003',json.dumps(dict(notes='Reporting period only',date_observations=[dict(role='statement_reporting_period',period_start='2020-01-01',period_end='2020-01-31')]))))
+            c.execute('INSERT INTO document_reviews VALUES (?,?)',('EFTA00000002',json.dumps(dict(notes='As-of observation only',date_observations=[dict(role='portfolio_as_of_date',normalized_day='2020-01-15')]))))
             c.commit()
         cls.catalog = viewer.Catalog(cls.db)
 
@@ -70,6 +71,25 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(record['source_quality_review']['notes'],'Reporting period only')
         self.assertIsNone(record['date_review'].get('primary_date'))
         self.assertNotIn('source_quality_review',self.catalog.document('EFTA00000004'))
+
+    def test_reporting_period_overlap_is_inclusive_and_independent_of_primary_date(self):
+        for query in ({'period_from':'2020-01-01','period_to':'2020-01-01'},
+                      {'period_from':'2020-01-31','period_to':'2020-01-31'},
+                      {'period_from':'2020-01-15'},{'period_to':'2020-01-15'}):
+            with self.subTest(query=query):
+                result=self.catalog.search(**query)
+                self.assertEqual([r['id'] for r in result['results']],['EFTA00000003'])
+        self.assertEqual(self.catalog.search(period_from='2020-02-01')['total_documents'],0)
+        self.assertEqual(self.catalog.search(period_to='2019-12-31')['total_documents'],0)
+        self.assertEqual(self.catalog.search(period_from='2020-01-15',date_status='undated')['total_documents'],1)
+        self.assertEqual(self.catalog.search(period_from='2020-01-15',date_from='2020-01-01')['total_documents'],0)
+        self.assertEqual(self.catalog.search(period_from='2020-01-15',dataset='1')['total_documents'],0)
+        self.assertEqual(self.catalog.search(period_from='2020-01-15',q='notpresent')['total_documents'],0)
+
+    def test_invalid_reporting_period_bounds_are_rejected(self):
+        for query in ({'period_from':'2020-02-30'},{'period_to':'2020-1-01'},
+                      {'period_from':'2020-02-01','period_to':'2020-01-01'}):
+            with self.subTest(query=query),self.assertRaises(ValueError):self.catalog.search(**query)
 
     def test_search_groups_pages_and_links_to_first_match(self):
         response = self.catalog.search('New York')

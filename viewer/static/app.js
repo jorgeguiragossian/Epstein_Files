@@ -7,6 +7,8 @@ state.dateFrom = params.get('date_from') || '';
 state.dateTo = params.get('date_to') || '';
 state.dateStatus = params.get('date_status') || 'all';
 state.person=params.get('person')||'';
+state.periodFrom=params.get('period_from')||'';
+state.periodTo=params.get('period_to')||'';
 state.people=[];
 const dateLabels = {dated:'Reviewed date',uncertain:'Uncertain date',undated:'Reviewed · undated',unreviewed:'Date not yet reviewed'};
 const dateTypes = {email_sent:'Email sent date',report:'Report date',court_order:'Court order date',transcript_session:'Transcript session date',letter:'Letter date',presentation:'Presentation date'};
@@ -55,6 +57,8 @@ function updateLocation() {
   if (state.dateTo) url.searchParams.set('date_to',state.dateTo);
   if (state.dateStatus !== 'all') url.searchParams.set('date_status',state.dateStatus);
   if(state.person) url.searchParams.set('person',state.person);
+  if(state.periodFrom)url.searchParams.set('period_from',state.periodFrom);
+  if(state.periodTo)url.searchParams.set('period_to',state.periodTo);
   if (state.resultPage > 1) url.searchParams.set('rpage', state.resultPage);
   if (state.selected) {
     url.searchParams.set('doc', state.selected);
@@ -117,6 +121,8 @@ async function search({ resetPage = true, keepReader = false } = {}) {
   state.dateTo = $('#date-to').value;
   state.dateStatus = $('#date-status').value;
   state.person=$('#person').value;
+  state.periodFrom=$('#period-from').value;
+  state.periodTo=$('#period-to').value;
   const selectedPerson=state.people.find(p=>p.id===state.person);
   $('#person-scope').textContent=selectedPerson ? `${selectedPerson.label}: ${selectedPerson.documents} ${selectedPerson.documents===1?'document':'documents'} / ${selectedPerson.pages} ${selectedPerson.pages===1?'page':'pages'} across the full pilot. Text mentions are not verified identities or relationships.` : `${state.people.length} curated names, not a complete person index. Full-name text matches do not establish identity, a relationship, or wrongdoing.`;
   updateDatasetButtons();
@@ -127,14 +133,15 @@ async function search({ resetPage = true, keepReader = false } = {}) {
   $('#prev-results').disabled = true;
   $('#next-results').disabled = true;
   try {
-    const query = new URLSearchParams({ q: state.q, dataset: state.dataset, quality: state.quality, page: state.resultPage, date_from:state.dateFrom,date_to:state.dateTo,date_status:state.dateStatus,person:state.person });
+    const query = new URLSearchParams({ q: state.q, dataset: state.dataset, quality: state.quality, page: state.resultPage, date_from:state.dateFrom,date_to:state.dateTo,date_status:state.dateStatus,person:state.person,period_from:state.periodFrom,period_to:state.periodTo });
     const result = await api(`/api/search?${query}`);
     if (version !== state.searchVersion) return;
     state.results = result.results;
     renderResults();
     $('#results-title').textContent = selectedPerson ? `Mentions: ${selectedPerson.label}` : state.q ? 'Search results' : state.dataset ? `Dataset ${String(state.dataset).padStart(2, '0')}` : 'Pilot documents';
     $('#results-status').textContent = `${format(result.total_documents)} ${result.total_documents === 1 ? 'document' : 'documents'}${state.q||state.person ? ` · ${format(result.total_matching_pages)} matching ${result.total_matching_pages===1?'page':'pages'}` : ' in the pilot sample'} · ordered by dataset and file ID`;
-    $('#reset').hidden = !state.q && !state.dataset && !state.person && state.quality === 'all' && !state.dateFrom && !state.dateTo && state.dateStatus==='all';
+    if(state.periodFrom||state.periodTo)$('#results-status').textContent+=' · reviewed reporting-period overlap';
+    $('#reset').hidden = !state.q && !state.dataset && !state.person && state.quality === 'all' && !state.dateFrom && !state.dateTo && !state.periodFrom && !state.periodTo && state.dateStatus==='all';
     const maxPage = Math.max(1, Math.ceil(result.total_documents / result.page_size));
     $('#result-page').textContent = `Page ${state.resultPage} of ${maxPage}`;
     $('#prev-results').disabled = state.resultPage <= 1;
@@ -292,6 +299,12 @@ async function init() {
   $('#date-status').value=['all','dated','uncertain','undated','unreviewed'].includes(state.dateStatus) ? state.dateStatus : 'all';
   $('#date-from').value=state.dateFrom;
   $('#date-to').value=state.dateTo;
+  $('#period-from').value=state.periodFrom;
+  $('#period-to').value=state.periodTo;
+  if(state.periodFrom||state.periodTo)$('#period-from').closest('details').open=true;
+  $('#period-from').addEventListener('change',()=>search());
+  $('#period-to').addEventListener('change',()=>search());
+  $('#clear-periods').addEventListener('click',()=>{$('#period-from').value='';$('#period-to').value='';search();});
   function syncDates() {
     const disabled=!['all','dated'].includes($('#date-status').value);
     $('#date-from').disabled=disabled;
@@ -315,6 +328,7 @@ async function init() {
     $('#search').value = '';
     $('#quality').value = 'all';
     $('#person').value='';
+    $('#period-from').value='';$('#period-to').value='';
     $('#date-status').value='all';$('#date-from').value='';$('#date-to').value='';syncDates();
     search();
   });

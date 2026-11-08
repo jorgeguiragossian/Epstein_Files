@@ -29,10 +29,10 @@
         <div class="intro-heading"><h1>Explore the record.</h1><span class="pilot-tag">DOCUMENT SAMPLE</span></div>
         <p class="intro-copy">Search the documents. Read the context. Follow every finding to its source.</p>
         <div class="stats" aria-label="Pilot coverage">
-          <div><strong id="stat-docs">110</strong><span>DOCUMENTS</span></div>
-          <div><strong id="stat-pages">1,836</strong><span>PDF PAGES</span></div>
+          <div><strong id="stat-docs">130</strong><span>DOCUMENTS</span></div>
+          <div><strong id="stat-pages">1,916</strong><span>PDF PAGES</span></div>
           <div><strong id="stat-datasets">12</strong><span>DATASETS</span></div>
-          <div class="review-stat"><strong id="stat-review">251</strong><span>LOW-TEXT PAGES <abbr title="Pages with fewer than 80 substantive alphanumeric characters. Some are photographs; this is not an OCR diagnosis.">ⓘ</abbr></span></div>
+          <div class="review-stat"><strong id="stat-review">253</strong><span>LOW-TEXT PAGES <abbr title="Pages with fewer than 80 substantive alphanumeric characters. Some are photographs; this is not an OCR diagnosis.">ⓘ</abbr></span></div>
         </div>
       </section>
       <form id="search-form" class="search-form" role="search">
@@ -40,7 +40,11 @@
         <div class="search-options"><span>Matches all words within a page. Names are text matches, not verified identities.</span><label for="quality">Text quality <select id="quality"><option value="all">All documents</option><option value="review">Includes low-text pages</option><option value="substantial">Has substantial text</option></select></label></div>
         <div class="person-filter"><label for="person">Person named<select id="person"><option value="">All names / no person filter</option></select></label><p id="person-scope">Curated full-name text matches. A mention does not verify identity, a relationship, or wrongdoing.</p></div>
         <div class="date-filters"><label for="date-status">Date status<select id="date-status"><option value="all">All date statuses</option><option value="dated">Reviewed date</option><option value="uncertain">Uncertain date</option><option value="undated">Reviewed · undated</option><option value="unreviewed">Not yet reviewed</option></select></label><label for="date-from">From<input id="date-from" type="date" name="date_from"></label><label for="date-to">Through<input id="date-to" type="date" name="date_to"></label><button type="button" id="clear-dates" class="text-button">Clear dates</button></div>
-        <p id="date-coverage" class="date-coverage">Date review covers 20 pilot documents. Ranges use the primary reviewed date, not every date mentioned in the text.</p>
+        <p id="date-coverage" class="date-coverage">Primary-date review covers part of the collection. Ranges use the reviewed primary date, not every date mentioned in the text.</p>
+        <details class="evidence"><summary>Filter by reviewed reporting period</summary>
+          <div class="date-filters"><label for="period-from">Reporting period overlaps from<input id="period-from" type="date" name="period_from"></label><label for="period-to">Reporting period overlaps through<input id="period-to" type="date" name="period_to"></label><button type="button" id="clear-periods" class="text-button">Clear reporting period</button></div>
+          <p class="date-coverage">Matches documents whose reviewed reporting period overlaps these inclusive bounds. Coverage is partial; as-of dates and transaction dates alone do not qualify. Primary-date and other filters also apply. This filter affects document search; word clouds and timeframe briefs still use primary dates.</p>
+        </details>
       </form>
       <div class="content-grid">
         <section class="results-panel" aria-label="Search results">

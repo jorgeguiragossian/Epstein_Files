@@ -21,6 +21,7 @@ paths+=['/api/documents/EFTA00018844','/api/timeframes?date_from=2019-07-24&date
 paths+=['/api/documents/EFTA00064578?page=6','/api/emails?document=EFTA00073640','/api/emails?document=EFTA00079911&page=2','/api/emails?document=EFTA00082128','/api/search?q=EFTA00075976&date_status=dated','/api/search?dataset=9&quality=review']
 paths+=['/api/documents/EFTA00078194','/api/documents/EFTA00075976?page=3','/api/timeframes?date_from=2021-12-01&date_to=2021-12-01','/api/words?date_from=2008-06-18&date_to=2008-06-18','/api/search?q=EFTA00078194&date_from=2020-10-23&date_to=2020-10-23']
 paths+=['/api/documents/EFTA01280951?page=2','/api/documents/EFTA01281641?page=2','/api/documents/EFTA01283668?page=3','/api/search?q=EFTA01280951&date_from=2015-11-01&date_to=2015-11-30','/api/emails?document=EFTA01283668','/api/search?dataset=10']
+paths+=['/api/search?period_from=2015-11-30&period_to=2015-11-30','/api/search?period_from=2015-12-01&period_to=2015-12-01','/api/search?period_from=2015-11-01&date_status=uncertain','/api/search?period_to=2014-08-01','/api/search?period_from=2018-06-30&dataset=10&person=jeffrey-epstein','/api/search?period_from=2015-11-01&date_status=dated','/api/documents/EFTA01262784?page=7']
 for path in paths:
     url=urlsplit(path);q={k:v[0] for k,v in parse_qs(url.query).items()}
     if url.path=='/api/overview':result=catalog.overview()

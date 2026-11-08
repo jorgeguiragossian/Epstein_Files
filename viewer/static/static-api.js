@@ -15,6 +15,8 @@
  function search(data,p){
   const q=(p.get('q')||'').trim(),dataset=p.get('dataset')||'',quality=p.get('quality')||'all',person=p.get('person')||'',status=p.get('date_status')||'all';
   const from=p.get('date_from')||'',to=p.get('date_to')||'',page=integer(p.get('page')||1,1,10000,'Result page');
+  const periodFrom=p.get('period_from')||'',periodTo=p.get('period_to')||'';
+  if(periodFrom)day(periodFrom);if(periodTo)day(periodTo);if(periodFrom&&periodTo&&periodFrom>periodTo)throw new Error('Reporting-period start must be on or before end.');
   if(q.length>200)throw new Error('Keep search text to 200 characters or fewer.');
   if(!['all','review','substantial'].includes(quality))throw new Error('Unknown quality filter.');
   if(!['all','dated','uncertain','undated','unreviewed'].includes(status))throw new Error('Unknown date status.');
@@ -25,6 +27,7 @@
   const queryWords=words(q);if(q&&!queryWords.length)throw new Error('Enter at least one word or document ID.');
   const isId=/^EFTA\d{8}$/i.test(q),queryParts=isId?[]:queryWords.map(tokens),rows=[];let totalPages=0;
   for(const doc of Object.values(data.documents).sort((a,b)=>a.dataset-b.dataset||a.id.localeCompare(b.id))){
+   if((periodFrom||periodTo)&&!(doc.source_quality_review?.date_observations||[]).some(o=>['statement_reporting_period','transaction_reporting_period'].includes(o.role)&&o.period_start&&o.period_end&&(!periodFrom||o.period_end>=periodFrom)&&(!periodTo||o.period_start<=periodTo)))continue;
    if(set&&doc.dataset!==set)continue;if(isId&&doc.id!==q.toUpperCase())continue;
    if(quality==='review'&&!doc.low_text_pages)continue;if(quality==='substantial'&&doc.low_text_pages>=doc.page_count)continue;
    const review=doc.date_review;if(status!=='all'&&review.status!==status)continue;
