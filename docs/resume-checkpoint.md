@@ -6,8 +6,10 @@ Wave 4 primary-date review is complete: eight outer sent dates, two uncertain ca
 
 Wave 4 reviews retain two calendar alerts (explicitly not established person-to-person messages), one reading-order mismatch and one ambiguous trailing fragment. Nine new partitions reconstruct detected bodies exactly; inline-message enumeration remains incomplete. Boundary filters and coverage now include source-order/trailing issues. Dates and identities were not silently repaired; contact rankings remain disabled.
 
-Validation passed: 93 offline tests, 84 static/Python comparisons, real-cache HTTP smoke checks, native-record regression and browser checks. The saved expansion selection has 40 acquired/extracted/integrated PDFs and 60 unprocessed. Do not regenerate it.
+Validation passed: 93 offline tests, 84 static/Python comparisons, real-cache HTTP smoke checks, native-record regression and browser checks. The saved expansion selection now has 50 acquired/extracted PDFs, 40 integrated and 50 unprocessed. Do not regenerate it.
 
-Next recommended milestone: acquire the next ten saved dataset 12 selections, followed by extraction-quality and source review. Preserve the saved selection and explicit evidence bindings.
+Wave 5 dataset 12 acquisition/quality triage is complete locally: ten PDFs, 254 pages / 29,974,820 bytes. All native extractions succeeded; 21 source pages inspected. Eleven low-text pages reflect heavy redaction or a photograph. EFTA02857524 has 205 pages with only its first/final pages visually reviewed. Five PDFs yield 18 unreviewed parser occurrences; damaged headers and attachment labels remain explicit. Native text omits a visible protective-order footer in EFTA02858497. No OCR, primary dates, identity associations or public integration occurred. See `docs/wave-05-acquisition.md`.
+
+Next recommended milestone: source-assisted correspondence review across all wave 5 correspondence pages, then bounded component/layout review of the long memorandum before integration. Preserve the saved selection and evidence bindings.
 
 Original PDFs, local SQLite, native extractions and rendered/OCR/editorial-reading caches remain ignored. All original and four expansion caches are needed for builds. Deposit-ticket provisional readings remain local; OCR/date format unresolved. Explicit registries pin evidence; changed source bytes require re-review rather than automatic hash renewal.

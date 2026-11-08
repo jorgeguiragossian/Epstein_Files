@@ -1,0 +1,17 @@
+# Wave 5: dataset 12 acquisition and quality triage
+
+The ten dataset 12 PDFs from the unchanged saved expansion selection were downloaded through official DOJ listing links using normal browser access. Existing adult-eligibility authorization covered the age prompt. All PDF signatures, SHA-256 hashes and 64 MiB individual / 512 MiB batch limits were checked. Response headers were not captured or invented.
+
+All native extractions succeeded: **254 pages / 29,974,820 bytes**. Codex visually compared **21 pages** with native UTF-8 text: every first page, every flagged low-text page, and the final page of EFTA02857524. Native extraction covers all 254 pages; this is bounded quality triage, not whole-document review or independent authentication.
+
+EFTA02731200 has ten low-text pages, all visually inspected. They are heavily redacted, with sparse visible headings/page markers; no reconstruction beneath redactions was attempted. EFTA02731708 is a one-page photograph with redacted faces and a source stamp, explaining the stamp-only extraction. No OCR was performed or indicated solely by these sparse-page inspections.
+
+Five PDFs contain 18 current-parser occurrences, compared with 23 simple heuristic header candidates. These measures use different rules and are not unique-message counts. EFTA02731593 is an eleven-page chain with a severely damaged outer header. EFTA02731511 has damaged sender/attachment labels; attachment filenames do not establish that attachments were separately acquired. EFTA02731477 and EFTA02731736 have displaced header values; the latter has a truncated native clock. EFTA02731646 needs signature/quote and page-continuation checks. Native text was not silently repaired, and candidate boundaries remain unreviewed.
+
+EFTA02857524 contains 205 pages. Its opening memorandum seeks approval for a proposed indictment; the final page contains indictment-form signature lines. Only PDF pages 1 and 205 were visually inspected. Internal document boundaries, reading order and date roles require further source review. Proposals and source allegations are not treated as adjudicated facts. The intelligence report and crisis intake also need source-context review before summaries. In EFTA02858497, native text omits a visible red protective-order footer; this is recorded explicitly rather than equating extraction with the full source page.
+
+No primary dates, identity associations, contact rankings or content summaries were assigned. The live site remains unchanged at **140 PDFs / 1,933 pages**, 62 dated, 18 uncertain and 60 unreviewed. This batch is not integrated.
+
+Tracked metadata: `data/pilot/2026-11-08-wave-05/selection.json`, `downloads.json`, `metrics.json`, `metrics.csv` and `quality-review.json`. Source PDFs, raw native text, parser candidates and rendered images remain ignored caches. Planning-time selection statuses are retained; download/metrics records describe actual results. Reconstruction uses existing pilot download/analyze commands with this output directory; normal browser acquisition may be necessary. Compare exact bytes before accepting prior review evidence.
+
+The expansion plan now has **50 acquired/extracted PDFs, 40 integrated and 50 unprocessed**. Do not regenerate the selection. Next: review all correspondence-bearing source pages and detected candidate boundaries, then perform a bounded component/layout assessment of the long memorandum before public integration. Primary-date adjudication remains separate.

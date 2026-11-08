@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-08",
+  "method": "Codex visual comparison of 21 PDF pages with native UTF-8 extraction: all ten first pages, all flagged low-text pages and final page of the 205-page file. Same-assistant quality triage, not whole-document review or independent authentication.",
+  "downloaded_files": 10,
+  "bytes": 29974820,
+  "pages": 254,
+  "low_text_pages": 11,
+  "visually_inspected_pages": 21,
+  "native_header_candidates": 23,
+  "parsed_email_occurrences": 18,
+  "parser_version": "email-pilot-1",
+  "date_parser_version": "email-date-2",
+  "unique_messages": null,
+  "ocr_performed": false,
+  "public_site_integrated": false,
+  "files": [
+    {
+      "file_id": "EFTA02730267",
+      "source_sha256": "9d37dd235e09612c7d4a8a5af259eb57487169560c711c2aa6102d6c7ee03b80",
+      "pages": 4,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "650910646e96dffcd47307574971c3b2b8e39d518aa707f789d8eb06f963ca91"
+      },
+      "notes": "First page is an intelligence report with separate document/template dates and source-attributed findings. Native report title/branding partly lost. Only page 1 visually inspected; no primary date or identity finding assigned.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "no_candidates_detected"
+    },
+    {
+      "file_id": "EFTA02731200",
+      "source_sha256": "467fce4cef183cba2f5d1757bf7eb2c3cab856ed2a146cdef57c03eb47bc6b6f",
+      "pages": 26,
+      "low_text_pdf_pages": [
+        11,
+        15,
+        16,
+        17,
+        20,
+        21,
+        23,
+        24,
+        25,
+        26
+      ],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1,
+        11,
+        15,
+        16,
+        17,
+        20,
+        21,
+        23,
+        24,
+        25,
+        26
+      ],
+      "inspected_page_text_sha256": {
+        "1": "844a1f8506edc29e3c39331d09c1d840e237f65378d119b819b07507d339b922",
+        "11": "b560df6b26905335a69b41f3f49b2550bf51c2d02fee0ae985d86402a596fd06",
+        "15": "b5f374d70e4f82d27ba871467ab986f380290bb75e5d122b3ffbfa8490238913",
+        "16": "b0aaf15b729db0ff9e7d53ef4a31b767aec3cba0dddfe04fd5aa0ba8eb10feb1",
+        "17": "a1cea178f23c7e4166be2a3c1a9a04222be453f0a634650a6e90c8bb98fb25b9",
+        "20": "c1ea7e17797ee59c6e289ed8fff5183a4594633a4cf89b83500744a94176edd3",
+        "21": "784f7849e7e2b27b0b7900f4c74724ea4e52078dd8325c1cd5693193598bf654",
+        "23": "cb15da2fe76df4425c6804fa4d918ef7afbeab6ac737800caf436b6f24c6babd",
+        "24": "3f1bcf601d4e74de4697ca3997ebc5bbe02d1583faa96f36cac0eecbbe465d50",
+        "25": "75283f9e2f750d46adf46f243464f4bb775902dbc7bf8ac4d64d7bcac3dfce1c",
+        "26": "af4fa4df45a3ab6215fbd39d9973ec69f4e11621d5496cae2500f5f84c054f70"
+      },
+      "notes": "Heavily redacted memorandum. All ten low-text pages visually inspected: visible page numbers, headings and sparse fragments remain; low text predominantly reflects redaction, not an established OCR failure. No reconstruction under redactions. Other pages beyond the first are not visually reviewed in this pass.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "no_candidates_detected"
+    },
+    {
+      "file_id": "EFTA02731477",
+      "source_sha256": "06efab54df1fd59cc262c926513d3aa37f930f7404c6d39371e1c41ed5455e55",
+      "pages": 1,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 2,
+      "parsed_email_occurrences": 2,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "b8f91f7c713ae95795c6dfb1206d2b946b69a8328ef2a5c22a8e2b425bb6fd6a"
+      },
+      "notes": "Email page with two detected candidates. Outer header values are displaced below labels; quoted message and redacted participants need boundary review.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "unreviewed_candidates"
+    },
+    {
+      "file_id": "EFTA02731511",
+      "source_sha256": "8bd5213ec744bf11a10caed14ba6969ada8810a9008c7d9be3da85204cefbf3c",
+      "pages": 1,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 1,
+      "parsed_email_occurrences": 1,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "e22f6f3fec4984bbebcd0869f69e77b9ed93897a34566d319e465714603c1a31"
+      },
+      "notes": "Email with severely damaged native sender and attachment filenames. Attachment names are visible in PDF but are not separately acquired or presumed present. Body/signature/disclaimer need separation; preserve native extraction.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "unreviewed_candidates"
+    },
+    {
+      "file_id": "EFTA02731593",
+      "source_sha256": "a1bb8ac1355899cec6ccf17c26e76eafc46ecbcad5a44a83b084f1100a738a38",
+      "pages": 11,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 16,
+      "parsed_email_occurrences": 11,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "f86ae4e15bf097cc0aae05ff820446edc698018d6242e28c271e0a98cb8c949f"
+      },
+      "notes": "Eleven-page email chain with badly damaged outer date/subject and inline replies. First page inspected only; all remaining source pages require correspondence review before integration. Parser enumeration is incomplete.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "unreviewed_candidates"
+    },
+    {
+      "file_id": "EFTA02731646",
+      "source_sha256": "47fcd856cb8bddeba354a1d4bf2db244442a2d21b5bfb8a0829e63597a3c8ce7",
+      "pages": 2,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 2,
+      "parsed_email_occurrences": 2,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "11ffdad81f77a736a88965981b1b87c668eb22d6a4db18a4cd961a42c4f6f454"
+      },
+      "notes": "Two-page email chain. Native recipient/date-clock artifacts are visible; signatures, quote boundaries and page continuation require review. Only page 1 visually inspected.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "unreviewed_candidates"
+    },
+    {
+      "file_id": "EFTA02731708",
+      "source_sha256": "98c01c42a5051e5e184cdd20b7fe0db82f3dda2bf6aaea6855ed122fe8576f26",
+      "pages": 1,
+      "low_text_pdf_pages": [
+        1
+      ],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "d817add4180a72400016f2c6d87af755548a7f71f3169251b2e9ca1d5577794b"
+      },
+      "notes": "Single-page photograph with redacted faces and source stamp. Native extraction captures the stamp only; no substantial prose is visible. No OCR indicated by this inspection; do not infer identities, location or relationships from the image.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "no_candidates_detected"
+    },
+    {
+      "file_id": "EFTA02731736",
+      "source_sha256": "2adfb89019e64eb23e6fc8f64997e34e56d5338a0ae3b0833d1e8799e55d8b0a",
+      "pages": 1,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 2,
+      "parsed_email_occurrences": 2,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "be23e9547b9af9bb052cce06b53949c796db25c10399b123c409074caa845dd0"
+      },
+      "notes": "Email with displaced outer sent/subject values and a quoted message. Native outer clock truncated; no timestamp correction or primary date assigned.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "unreviewed_candidates"
+    },
+    {
+      "file_id": "EFTA02857524",
+      "source_sha256": "e42989c16c2450cbfbdcc535950bb594391c93fea6c3411b5168e0a65ec25bbd",
+      "pages": 205,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1,
+        205
+      ],
+      "inspected_page_text_sha256": {
+        "1": "5200e7b9be4e6e0a54a5bbcf524f451745b75aaa4f4d97fbdf1563af625f70e2",
+        "205": "2e176e2b22b69afb770eb9087f3dc522b90220a7f730fbd2371b6543cf330151"
+      },
+      "notes": "205-page file: first page is a memorandum seeking approval for a proposed indictment; final page has indictment-form signature lines. Only pages 1 and 205 visually inspected; native extraction covers all pages. Do not treat proposals/allegations as adjudicated facts or this check as full-document review. Internal component boundaries and native reading order require further source inspection.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "no_candidates_detected"
+    },
+    {
+      "file_id": "EFTA02858497",
+      "source_sha256": "2db62ea826df4daa97dbb0b85f3d2d78bd1402754109412bfcf991138583df88",
+      "pages": 2,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "53b8083deb5d42fc5e770b6c87fbb52f8c11054767c26f46363dc2b5427d7e54"
+      },
+      "notes": "Crisis intake first page: source-attributed report, not independent confirmation of its allegations. Native text does not capture the visible red protective-order footer. Keep visual/source context separate; page 2 not visually inspected and no primary date assigned.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "no_candidates_detected"
+    }
+  ]
+}
