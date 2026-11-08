@@ -243,6 +243,13 @@ async function openDocument(id, page, focus = false) {
       sourceDetail('Date evidence',`PDF page ${review.evidence_page}: ${review.evidence_quote}`);
     }
     sourceDetail('Primary date', review.primary_date ? `${review.primary_date} (${dateTypes[review.date_type]}; reviewed assignment)` : dateLabels[review.status]);
+    for (const supporting of review.supporting_evidence || []) {
+      const evidence=node('button','text-button',`View supporting date evidence · PDF page ${supporting.pdf_page} ↗`);
+      evidence.type='button';
+      evidence.addEventListener('click',()=>openDocument(id,supporting.pdf_page));
+      primary.append(evidence);
+      sourceDetail('Supporting date evidence',`PDF page ${supporting.pdf_page}: ${supporting.quote}`);
+    }
     sourceDetail('Text coverage', `${record.page_count} of ${record.page_count} pages processed; ${record.low_text_pages} flagged low-text`);
     sourceDetail('Email headers', `${record.email_headers} unverified candidates in this file; not unique messages or contacts`);
     sourceDetail('File size', `${(record.bytes / 1048576).toFixed(2)} MiB`);
