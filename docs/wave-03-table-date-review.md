@@ -30,3 +30,5 @@ python scripts/check-table-date-review.py --out data/pilot/2026-11-08-wave-03
 The validator checks complete document/page coverage, PDF/extraction/page bindings, exact source anchors, recognized date roles and valid ordered reporting periods. It rejects promotion of these observations into a primary date, verified ledger or identity inference. All 88 offline tests pass, including changed bytes, missing pages, wrong quotes, unsupported roles and reversed periods. Native extraction remains unchanged.
 
 Next: integrate wave 3 with document-level layout/date-role notices and source links. Keep reporting-period observations separate from the existing primary-date filter. The deposit-ticket editorial layer needs an explicit source-assisted label if later exposed; it must not silently replace native extraction.
+
+The subsequent [native-source integration](wave-03-integration.md) adds these ten PDFs with the recorded notices and source-linked date roles. The local handwriting layer remains unpublished; no primary-date or structured-ledger promotion occurs.

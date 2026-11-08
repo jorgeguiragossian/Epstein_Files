@@ -5,8 +5,8 @@
   "native_extracted_files": 30,
   "remaining_unprocessed_files": 70,
   "first_wave": "data/pilot/2026-11-07-wave-01",
-  "public_search_documents": 120,
-  "note": "Waves 1 and 2 integrated (120 public PDFs). Wave 3: ten dataset 10 PDFs locally acquired/extracted; OCR handwriting review and all-42-page layout/date-role assessment complete. Native search with explicit notices is the next integration step; no verified financial ledger or primary dates assigned. Remaining 70 selected PDFs unprocessed.",
+  "public_search_documents": 130,
+  "note": "All three ten-file expansion waves integrated (130 public PDFs). Wave 3 publishes native text with source-quality/date-role notices; provisional OCR/editorial readings remain local. Ten wave 3 primary dates remain unreviewed. Remaining 70 selected PDFs unprocessed.",
   "second_wave": "data/pilot/2026-11-08-wave-02",
   "third_wave": "data/pilot/2026-11-08-wave-03"
 }

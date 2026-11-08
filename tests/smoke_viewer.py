@@ -15,16 +15,16 @@ def get(path):
 
 def main():
     overview = get('/api/overview')
-    assert overview['documents'] == 120 and overview['pages'] == 1874
+    assert overview['documents'] == 130 and overview['pages'] == 1916
     matches = get('/api/search?q=grand%20jury&dataset=6')
     assert matches['total_documents'] == 11 and matches['total_matching_pages'] == 97
     page = get('/api/documents/EFTA00008529?page=2')
     assert page['page']['number'] == 2 and page['page']['text']
-    assert get('/api/search?quality=review')['total_documents'] == 55
+    assert get('/api/search?quality=review')['total_documents'] == 56
     assert get('/api/search?q=zzznomatchpilot')['total_documents'] == 0
-    assert overview['date_status_counts']=={'dated':53,'uncertain':7,'unreviewed':60}
+    assert overview['date_status_counts']=={'dated':53,'uncertain':7,'unreviewed':70}
     words=get('/api/words')
-    assert (words['eligible_dated_documents'],words['excluded_without_reviewed_date'])==(53,67)
+    assert (words['eligible_dated_documents'],words['excluded_without_reviewed_date'])==(53,77)
     assert get('/api/documents/EFTA00039826')['date_review']['date_type']=='letter'
     assert get('/api/documents/EFTA00008892')['date_review']['date_type']=='presentation'
     assert get('/api/documents/EFTA02212924')['date_review']['primary_date'] is None
@@ -40,7 +40,7 @@ def main():
     assert dated['total_documents']==1 and dated['results'][0]['id']=='EFTA00008529'
     assert get('/api/search?date_status=uncertain')['total_documents']==7
     assert get('/api/search?date_status=undated')['total_documents']==0
-    assert get('/api/search?date_status=unreviewed')['total_documents']==60
+    assert get('/api/search?date_status=unreviewed')['total_documents']==70
     assert get('/api/search?date_from=2014-01-01&date_to=2014-01-01&q=EFTA02730265')['total_documents']==0
     assert get('/api/documents/EFTA00039806')['date_review']['evidence_page']==2
     people=get('/api/people')['people']
@@ -87,6 +87,12 @@ def main():
     assert get('/api/search?q=EFTA00078194&date_from=2020-10-23&date_to=2020-10-23')['total_documents']==0
     assert get('/api/search?q=EFTA00073640&date_from=2021-11-30&date_to=2021-11-30')['total_documents']==0
     assert get('/api/search?q=EFTA00073640&date_from=2021-12-01&date_to=2021-12-01')['total_documents']==1
+    layout=get('/api/documents/EFTA01280951?page=2')
+    assert layout['source_quality_review']['layout_status']=='multiple_date_amount_columns_flattened'
+    assert layout['date_review']['status']=='unreviewed'
+    assert get('/api/search?q=EFTA01280951&date_from=2015-11-01&date_to=2015-11-30')['total_documents']==0
+    assert get('/api/documents/EFTA01281641')['source_quality_review']['layout_status']=='handwriting_ocr_inadequate_separate_editorial_layer'
+    assert get('/api/emails?document=EFTA01283668')['total_groups']==0
     wave=get('/api/emails?document=EFTA00073640')['results']
     assert any(r['representative']['source_review']['header_status']=='source_order_mismatch' for r in wave)
     assert get('/api/documents/EFTA00064578?page=6')['date_review']['primary_date']=='2022-03-10'

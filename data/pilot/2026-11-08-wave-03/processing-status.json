@@ -1,0 +1,21 @@
+{
+  "status": "integrated_native_search_with_layout_and_date_role_notices",
+  "selected_files": 10,
+  "downloaded_files": 10,
+  "native_extracted_files": 10,
+  "pdf_pages": 42,
+  "public_search_integration": true,
+  "primary_document_date_status": "all_ten_unreviewed",
+  "source_quality_reviews": 10,
+  "date_role_observations": 14,
+  "source_assisted_transcription_public": false,
+  "raw_ocr_public": false,
+  "structured_financial_data_verified": false,
+  "native_text_replaced": false,
+  "remaining_review_items": [
+    "Primary-date adjudication remains separate from reporting-period observations",
+    "Deposit-ticket handwritten date format unresolved",
+    "Financial cells and transaction identities are not independently verified"
+  ],
+  "note": "Native source text is published with explicit notices. Local OCR/editorial reading layer is not published. PDFs remain at DOJ."
+}

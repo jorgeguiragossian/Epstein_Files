@@ -162,6 +162,7 @@ def build_index(pilot=PILOT, database=DB):
             DROP TABLE IF EXISTS pages;
             DROP TABLE IF EXISTS documents;
             DROP TABLE IF EXISTS document_dates;
+            DROP TABLE IF EXISTS document_reviews;
             DROP TABLE IF EXISTS people;
             DROP TABLE IF EXISTS name_mentions;
             DROP TABLE IF EXISTS email_catalog;
@@ -172,6 +173,7 @@ def build_index(pilot=PILOT, database=DB):
                 text TEXT, low_text INTEGER, date_candidates TEXT, UNIQUE(document_id, number));
             CREATE VIRTUAL TABLE search USING fts5(text, tokenize='unicode61');
             CREATE TABLE document_dates(document_id TEXT PRIMARY KEY,status TEXT,primary_date TEXT,date_type TEXT,review_json TEXT);
+            CREATE TABLE document_reviews(document_id TEXT PRIMARY KEY,payload TEXT);
             CREATE TABLE people(id TEXT PRIMARY KEY,label TEXT,forms_json TEXT,evidence_json TEXT);
             CREATE TABLE name_mentions(page_id INTEGER,person_id TEXT,occurrences INTEGER,hits_json TEXT,PRIMARY KEY(page_id,person_id));
             CREATE INDEX mentions_person ON name_mentions(person_id,page_id);
@@ -185,6 +187,9 @@ def build_index(pilot=PILOT, database=DB):
                  item['bytes'], metric['date_candidate_count'], metric['email_header_candidate_count'],
                  metric['url'], item['sha256'], str(pdf.resolve())))
             review = reviews.get(metric['file_id'])
+            if metric.get('source_quality_review'):
+                connection.execute('INSERT INTO document_reviews VALUES (?,?)',
+                    (metric['file_id'],json.dumps(metric['source_quality_review'])))
             if review:
                 connection.execute('INSERT INTO document_dates VALUES (?,?,?,?,?)',
                     (metric['file_id'],review['status'],review['primary_date'],review['date_type'],json.dumps(review)))
@@ -363,6 +368,9 @@ class Catalog:
             document['page']['name_mentions']=[{'id':r['person_id'],'label':r['label'],'occurrences':r['occurrences'],'hits':json.loads(r['hits_json'])} for r in c.execute('''SELECT m.person_id,n.label,m.occurrences,m.hits_json FROM name_mentions m JOIN people n ON n.id=m.person_id JOIN pages p ON p.id=m.page_id WHERE p.document_id=? AND p.number=? ORDER BY n.label''',(document_id,page))]
             review = c.execute('SELECT review_json FROM document_dates WHERE document_id=?',(document_id,)).fetchone()
             document['date_review'] = json.loads(review['review_json']) if review else {'status':'unreviewed','primary_date':None,'date_type':None,'notes':'This document has not yet had a primary-date review.'}
+            quality=c.execute('SELECT payload FROM document_reviews WHERE document_id=?',(document_id,)).fetchone()
+            if quality:
+                document['source_quality_review']=json.loads(quality['payload'])
             return document
 
     def pdf(self, document_id):

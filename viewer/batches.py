@@ -53,6 +53,15 @@ def load_expansions():
             if 'correspondence-reviews.json' not in batch['evidence_sha256']:
                 raise ValueError('Native correspondence review requires pinned evidence')
             reviewed, _ = script('check-wave-correspondence').build_catalog(folder)
+        elif mode == 'native_layout_review_v1':
+            if 'table-date-role-reviews.json' not in batch['evidence_sha256']:
+                raise ValueError('Native layout review requires pinned evidence')
+            script('check-table-date-review').validate(folder)
+            rows = read(folder/'table-date-role-reviews.json')['reviews']
+            by_id = {r['file_id']:r for r in rows}
+            for metric,item,extracted,pdf in current:
+                metric['source_quality_review'] = by_id[metric['file_id']]
+            reviewed = dict(records=[])
         elif mode == 'derived_header_layers_v1':
             script('prepare-header-layers').main(folder)
             reviewed, _ = script('prepare-wave-boundaries').build_catalog(folder)

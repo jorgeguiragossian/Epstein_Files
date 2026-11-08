@@ -5,5 +5,5 @@
   "structured_financial_data_verified": false,
   "primary_dates_assigned": false,
   "native_text_replaced": false,
-  "public_site_integration": false
+  "public_site_integration": true
 }

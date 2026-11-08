@@ -29,6 +29,7 @@ class CatalogTests(unittest.TestCase):
                 CREATE TABLE pages(id INTEGER PRIMARY KEY,document_id TEXT,number INTEGER,text TEXT,low_text INTEGER,date_candidates TEXT);
                 CREATE VIRTUAL TABLE search USING fts5(text,tokenize='unicode61');
                 CREATE TABLE document_dates(document_id TEXT PRIMARY KEY,status TEXT,primary_date TEXT,date_type TEXT,review_json TEXT);
+                CREATE TABLE document_reviews(document_id TEXT PRIMARY KEY,payload TEXT);
                 CREATE TABLE people(id TEXT PRIMARY KEY,label TEXT,forms_json TEXT,evidence_json TEXT);
                 CREATE TABLE name_mentions(page_id INTEGER,person_id TEXT,occurrences INTEGER,hits_json TEXT,PRIMARY KEY(page_id,person_id));
             ''')
@@ -56,11 +57,19 @@ class CatalogTests(unittest.TestCase):
                         import json
                         c.execute('INSERT INTO name_mentions VALUES (?,?,?,?)',(row[0],key,len(hits),json.dumps(hits)))
             c.commit()
+            c.execute('INSERT INTO document_reviews VALUES (?,?)',('EFTA00000003',json.dumps(dict(notes='Reporting period only',date_observations=[dict(role='statement_reporting_period',period_start='2020-01-01',period_end='2020-01-31')]))))
+            c.commit()
         cls.catalog = viewer.Catalog(cls.db)
 
     @classmethod
     def tearDownClass(cls):
         cls.temp.cleanup()
+
+    def test_source_quality_review_is_optional_and_separate_from_primary_date(self):
+        record=self.catalog.document('EFTA00000003')
+        self.assertEqual(record['source_quality_review']['notes'],'Reporting period only')
+        self.assertIsNone(record['date_review'].get('primary_date'))
+        self.assertNotIn('source_quality_review',self.catalog.document('EFTA00000004'))
 
     def test_search_groups_pages_and_links_to_first_match(self):
         response = self.catalog.search('New York')

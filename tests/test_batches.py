@@ -41,6 +41,18 @@ class BatchTests(unittest.TestCase):
             self.assertEqual(len(prepared),1)
             self.assertEqual(loaded,records)
             dispatch.assert_called_once_with('check-wave-correspondence')
+            quality=dict(file_id=metric['file_id'],notes='Fixture table review',date_observations=[])
+            save('table-date-role-reviews.json',dict(reviews=[quality]))
+            registry['batches'][0].update(review_mode='native_layout_review_v1',evidence_sha256={
+                'table-date-role-reviews.json':hashlib.sha256((folder/'table-date-role-reviews.json').read_bytes()).hexdigest()})
+            (root/'data/pilot/viewer-batches.json').write_text(json.dumps(registry))
+            helper=SimpleNamespace(validate=lambda path:{})
+            with patch.object(batches,'ROOT',root),patch.object(batches,'script',return_value=helper) as dispatch:
+                prepared,loaded=batches.load_expansions()
+            self.assertEqual(prepared[0][0]['source_quality_review'],quality)
+            self.assertEqual([r['id'] for r in loaded],[r['id'] for r in records])
+            self.assertTrue(all('source_review' not in r for r in loaded))
+            dispatch.assert_called_once_with('check-table-date-review')
 
     def test_merge_preserves_old_records_and_counts_reviews_without_enabling_contacts(self):
         def candidate(key):

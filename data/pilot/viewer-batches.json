@@ -27,6 +27,20 @@
         "processing-status.json": "eb63cb535a795daeacb5cdd91144a0ab090f06173c7ed41b2be6df7ed01ef54c",
         "date-reviews.json": "ee4037b662e2e5295b9bc71f384567e1163d02bca9b56b5bb2a4a54971773fa2"
       }
+    },
+    {
+      "path": "data/pilot/2026-11-08-wave-03",
+      "documents": 10,
+      "review_mode": "native_layout_review_v1",
+      "evidence_sha256": {
+        "selection.json": "f870cd3e6b80873281e063de426fa534192cfab129c3d5def9766a6937e97cdb",
+        "downloads.json": "0a6255a1088f4e5808835b87d3f521f3ba7575e2df1cf738e6140b7d2e5bf633",
+        "metrics.json": "40615302567b4147f99a06071cda764fada8afc41795881d31417e17bd8401ab",
+        "table-date-role-reviews.json": "59d56f5a9d6627d2d16a1029f49191d291b31a42337bd107101e08fda9d3489d",
+        "quality-review.json": "aabb725598cfe203f4c51431c39b6b4ed75be96ef82a36318928f1f43a2179a0",
+        "ocr-transcription-review.json": "d7b67e3a58d555de8ce08032b0578c0bbd511441a67c4898c188dbce6220035f",
+        "processing-status.json": "11734e193923d58e6ccfbea2fca51194b89d7b297f00d4778aaee7b07af0db27"
+      }
     }
   ]
 }

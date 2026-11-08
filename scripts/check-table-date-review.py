@@ -59,7 +59,7 @@ def validate(folder):
                 raise ValueError('Layout evidence absent from cited page')
     return dict(documents_reviewed=len(rows),pdf_pages_reviewed=page_count,date_role_observations=observations,
                 structured_financial_data_verified=False,primary_dates_assigned=False,native_text_replaced=False,
-                public_site_integration=False)
+                public_site_integration=read(folder/'processing-status.json').get('public_search_integration',False) if (folder/'processing-status.json').exists() else False)
 
 
 if __name__=='__main__':

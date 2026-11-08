@@ -13,7 +13,7 @@
   "date_parser_version": "email-date-2",
   "unique_messages": null,
   "ocr_performed": true,
-  "public_site_integrated": false,
+  "public_site_integrated": true,
   "files": [
     {
       "file_id": "EFTA01262784",
@@ -243,5 +243,6 @@
     "structured_financial_data_verified": false,
     "search_integration_recommendation": "Native source text with explicit layout/date-role notices; no automatic ledger or primary-date promotion.",
     "scope_note": "All 42 pages visually inspected across acquisition, OCR and this follow-up; this is layout/date-role assessment, not cell-by-cell verification. Original acquisition scope above is historical."
-  }
+  },
+  "publication_scope": "Native text and document-level source-quality/date-role notes only. OCR results and provisional handwriting layer stay local."
 }
