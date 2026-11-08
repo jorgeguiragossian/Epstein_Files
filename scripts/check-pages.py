@@ -23,6 +23,7 @@ paths+=['/api/documents/EFTA00078194','/api/documents/EFTA00075976?page=3','/api
 paths+=['/api/documents/EFTA01280951?page=2','/api/documents/EFTA01281641?page=2','/api/documents/EFTA01283668?page=3','/api/search?q=EFTA01280951&date_from=2015-11-01&date_to=2015-11-30','/api/emails?document=EFTA01283668','/api/search?dataset=10']
 paths+=['/api/search?period_from=2015-11-30&period_to=2015-11-30','/api/search?period_from=2015-12-01&period_to=2015-12-01','/api/search?period_from=2015-11-01&date_status=uncertain','/api/search?period_to=2014-08-01','/api/search?period_from=2018-06-30&dataset=10&person=jeffrey-epstein','/api/search?period_from=2015-11-01&date_status=dated','/api/documents/EFTA01262784?page=7']
 paths+=['/api/words?date_basis=reporting_period','/api/words?date_basis=reporting_period&date_from=2015-11-30&date_to=2015-11-30','/api/words?date_basis=reporting_period&date_from=2015-12-01&date_to=2015-12-01','/api/words?date_basis=reporting_period&dataset=1','/api/words?date_basis=reporting_period&person=jeffrey-epstein&exclude=bank%2Cbalance','/api/words?date_basis=reporting_period&date_to=2014-08-01']
+paths+=['/api/search?dataset=11','/api/emails?document=EFTA02215291&filter=boundary','/api/emails?document=EFTA02217241&filter=boundary','/api/emails?document=EFTA02216544','/api/documents/EFTA02215926?page=3']
 for path in paths:
     url=urlsplit(path);q={k:v[0] for k,v in parse_qs(url.query).items()}
     if url.path=='/api/overview':result=catalog.overview()

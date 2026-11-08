@@ -12,7 +12,7 @@
   "date_parser_version": "email-date-2",
   "unique_messages": null,
   "ocr_performed": false,
-  "public_site_integrated": false,
+  "public_site_integrated": true,
   "files": [
     {
       "file_id": "EFTA02212883",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "exported_at_utc": "2026-11-08T17:48:38.800627+00:00",
+  "exported_at_utc": "2026-11-08T23:06:14.376075+00:00",
   "scope": "Twelve numbered DOJ datasets; observed URL pairs, not unique documents",
   "method": "Historical and current listing observations retained separately. No file URLs inferred from EFTA numeric ranges. No document GET or HEAD requests.",
   "observed_file_urls": 24447,

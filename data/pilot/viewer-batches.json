@@ -42,6 +42,19 @@
         "processing-status.json": "3baa1cc0422e7aca3c3e2966bee6afba276432e2bdb98e9103c7661f58c784a3",
         "date-reviews.json": "57c90afd25cd19b446d39b6b65a9f280426e534eaf6a7114e1a9f3e2ec020b20"
       }
+    },
+    {
+      "path": "data/pilot/2026-11-08-wave-04",
+      "documents": 10,
+      "review_mode": "native_correspondence_v1",
+      "evidence_sha256": {
+        "selection.json": "407d734a864dea52ea001f5315cd55c2a5a2f2c217258b3e6331db2e81ba83ef",
+        "downloads.json": "d177e16638ccb02c9c3b4e457116129792d7aeb656fe5619e5524189b78c3584",
+        "metrics.json": "158d2f2ff71a7f28908b2cbe21549ce95789bc6400047b5311d19aa616343348",
+        "quality-review.json": "bc18a0e0a5ffc2fee8e395a837dbf8c7b07a8a7831e2f7f3562d97445f6996a6",
+        "correspondence-reviews.json": "f6283d3e5a0d8701ae10127044fbe489684066c450f49339439e0ca48d2fc52a",
+        "processing-status.json": "78c0b27849c5d276ab9b281a83a36225d231910d8894488a4c95ae6688c91308"
+      }
     }
   ]
 }

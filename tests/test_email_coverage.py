@@ -21,6 +21,14 @@ class CoverageTests(unittest.TestCase):
         for field in ('documents','candidates','reviewed','unreviewed','boundary','date_unresolved'):
             self.assertEqual(sum(r[field] for r in result['datasets']),t[field])
 
+    def test_layout_and_trailing_issues_remain_in_boundary_drilldown(self):
+        records=[dict(id=str(i),file_id='doc',source_page=1,source_line=i+1,flags=[],source_review={'boundary_status':status}) for i,status in enumerate(('source_order_mismatch','unresolved_trailing_material','calendar_alert_not_correspondence'))]
+        catalog=dict(records=records,summary={},groups=[dict(id=r['id'],record_ids=[r['id']],occurrences=1) for r in records])
+        self.assertEqual(review_coverage(catalog,[dict(id='doc',dataset=11)])['totals']['boundary'],2)
+        result=review_page(catalog,'boundary')
+        self.assertEqual(result['total_groups'],2)
+        self.assertEqual({r['representative']['id'] for r in result['results']},{'0','1'})
+
     def test_unknown_source_rejected(self):
         with self.assertRaises(ValueError):review_coverage({'records':[{'file_id':'missing'}]},[])
 
