@@ -31,6 +31,16 @@ function render(group){
  if(r.source_review){
   const review=r.source_review,panel=node('section','email-notice');
   panel.append(node('h4','','Source-assisted editorial review by Codex'),node('p','',review.boundary_status.replaceAll('_',' ')),node('p','',review.notes));
+  if(review.header_status)panel.append(node('p','evidence-note',`Header finding: ${review.header_status.replaceAll('_',' ')}. Reviewed does not mean resolved.`));
+  if(review.page_evidence?.length){
+   const pages=node('p','email-sources');
+   for(const evidence of review.page_evidence){
+    if(pages.childNodes.length)pages.append(document.createTextNode(' · '));
+    pages.append(link(`Reviewed PDF page ${evidence.pdf_page} ↗`,`/Epstein_Files/?doc=${encodeURIComponent(r.file_id)}&pdfpage=${evidence.pdf_page}`));
+   }
+   panel.append(pages);
+   panel.append(node('p','evidence-note','Review covers detected candidates only. Damaged headers can leave quoted messages unrecognized or place header text inside the detected body. No complete message count is established.'));
+  }
   if(review.correspondence_kind)panel.append(node('p','evidence-note',`Source context: ${review.correspondence_kind.replaceAll('_',' ')} · editorial description, not a verified relationship.`));
   if(review.source_day_reading)panel.append(node('p','',`Source date reading: ${review.source_day_reading}`));
   if(review.parsed_clock_conflict)panel.append(node('p','email-flags',`Timestamp discrepancy: the PDF reads ${review.source_clock_reading}; the parsed candidate above lost the PM marker. Use the source reading pending parser correction. Timezone is not inferred.`));
