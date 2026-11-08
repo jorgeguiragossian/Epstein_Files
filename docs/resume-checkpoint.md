@@ -1,6 +1,8 @@
-# Resume checkpoint — November 7, 2026
+# Resume checkpoint — November 8, 2026
 
-Work is paused at the repository owner's request until tomorrow.
+November 8 update: wave 2 acquisition and quality triage are complete. See `docs/wave-02-acquisition.md` and `data/pilot/2026-11-08-wave-02/quality-review.json`. Ten dataset 9 PDFs (38 pages) were downloaded through normal DOJ browser access and extracted locally. All first pages and the only low-text page were visually inspected. That sparse page does not currently require OCR. The parser found 41 unreviewed email occurrences across six PDFs. These ten files are not yet integrated into the live viewer. The remaining unprocessed selection is now 80 PDFs.
+
+Resume with source-based header alignment and correspondence-boundary review of wave 2 before integration; primary-date review follows separately. Preserve native text and existing published records. The historical milestone below describes the unchanged live site.
 
 The date-review milestone is saved on main in `243ef2b` and published on gh-pages in `99474f9`. GitHub Pages was verified to serve the exact built data bytes and source revision. Both working trees were clean and synchronized with their origin tracking branches before this checkpoint.
 

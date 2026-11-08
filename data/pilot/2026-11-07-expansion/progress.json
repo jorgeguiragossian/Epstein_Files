@@ -1,10 +1,11 @@
 {
   "planned_files": 100,
   "first_wave_files": 10,
-  "downloaded_files": 10,
-  "native_extracted_files": 10,
-  "remaining_unprocessed_files": 90,
+  "downloaded_files": 20,
+  "native_extracted_files": 20,
+  "remaining_unprocessed_files": 80,
   "first_wave": "data/pilot/2026-11-07-wave-01",
   "public_search_documents": 110,
-  "note": "Ten first-wave files are integrated with native text and unreviewed dates; source-assisted header layers are explicitly labeled. Remaining 90 files are still unprocessed."
+  "note": "Wave 1 remains published with nine dated PDFs and one uncertain roster. Wave 2: ten dataset 9 PDFs acquired and native-extracted locally; quality triage complete, correspondence and primary-date review pending. Not yet integrated in public viewer. Remaining 80 selected PDFs unprocessed.",
+  "second_wave": "data/pilot/2026-11-08-wave-02"
 }

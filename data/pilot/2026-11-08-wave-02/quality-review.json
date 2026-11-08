@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-08",
+  "method": "Codex visual inspection of all ten first pages and the one low-text page, compared with native pypdf text. Automated extraction covers every page; this is not whole-document review or independent authentication.",
+  "downloaded_files": 10,
+  "pages": 38,
+  "low_text_pages": 1,
+  "observed_ocr_remediation_pages": 0,
+  "native_header_candidates": 38,
+  "parsed_email_occurrences": 41,
+  "unique_messages": null,
+  "public_site_integrated": false,
+  "files": [
+    {
+      "file_id": "EFTA00039153",
+      "source_sha256": "55fa742fe5d3685a4487c6cf79dd9aef6cbd7251be60b2cdf2cdb24612a1a95e",
+      "pages": 3,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "3702a7b905abd2a45e6676efbb8d50ac4631817e94636b4f3269d07cb8f51a61"
+      },
+      "notes": "Exhibit list with multiple referenced dates; do not infer a containing-document date from listed exhibits.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00059374",
+      "source_sha256": "6213c7eb4d2a6119cf93fded1985ba70008a7f659033f633627e940f99333ada",
+      "pages": 1,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 1,
+      "parsed_email_occurrences": 1,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "774ac2c08826c22289c566a3d38d9f97252fb5cf909e9d124502b775ff39c565"
+      },
+      "notes": "Header labels and values are separated in native text. Source page shows subject and sent date in their header rows; review alignment before relying on parsed fields.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00064578",
+      "source_sha256": "30d820ac5d1e0a6d3280259dfc57b398818d59a3f09bb7c0fc8ca334f1d2eb65",
+      "pages": 6,
+      "low_text_pdf_pages": [
+        6
+      ],
+      "native_header_candidates": 5,
+      "parsed_email_occurrences": 5,
+      "visually_inspected_pdf_pages": [
+        1,
+        6
+      ],
+      "inspected_page_text_sha256": {
+        "1": "f3ad1dd1f8971eb84a9eb9bea1bc90281125c40c6b2fd7afc3816fda14b27d37",
+        "6": "15ad6a1c2ebae19f793d6e73b13a6c660c40d0346aa3b224c2979e2896b1d538"
+      },
+      "notes": "Email chain with damaged native subject and attachment text. PDF page 6 is a sparse attachment note; both visible sentences and stamp are captured. Low text is expected, not an observed OCR failure.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00067452",
+      "source_sha256": "37fba38d9d9164b7893570bb7d3e261ae527ad3cc6dd253ad084c797ea68a7cc",
+      "pages": 1,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 1,
+      "parsed_email_occurrences": 1,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "3eeccefbe5f13804ca1b45c8ba1b377228ab73ead1922fc34af0c16a1a20b5e5"
+      },
+      "notes": "Email with redacted header identities. Source label Bcc is extracted as Bce; preserve native text and review labels separately.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00070036",
+      "source_sha256": "f58773ffeb61632f3dbc86422385a63dad6c414f310f751cd143b81410cc00f6",
+      "pages": 1,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "46cb5fc151f9ff8829993f77a5cdeb630eb6eb6af57f62846e9ee94ff186899f"
+      },
+      "notes": "Dated letter; earlier referenced letters and incident dates are separate from its issue date.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00073640",
+      "source_sha256": "d480777a8e458fee4d87712fde939211b7ea58521323a239f3d5554bd63cf20e",
+      "pages": 3,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 3,
+      "parsed_email_occurrences": 5,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "d96ab72f75a9f2fbb5a7fbd116e2e709d20ae3dd8d20218618cef85d5b80caf3"
+      },
+      "notes": "Email chain: damaged top-level To/Cc text and multiple nested messages require source review.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00075976",
+      "source_sha256": "2a06f26864e01f396c905142d50e3823816a4970e6923722ef4d7ed2402b5c9f",
+      "pages": 3,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "57343ccda7cf92a0a481b954f83f12fa38c35c51c5b975931589fe5fd3afbdad"
+      },
+      "notes": "Court order with docket filing date; inspect final order page before assigning a primary date.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00078194",
+      "source_sha256": "8c5e6ed18af38f4b8b09e11e11c71a19a5a61a6cad33a71fe1c89e23a695b2b3",
+      "pages": 2,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "aec39c9ad9d2b1d180fdcf1b48504584cb8bbdae6e689d8ab18309120b44d64c"
+      },
+      "notes": "Warranty deed with recording, execution and referenced conveyance dates. No primary-date assignment in this quality pass.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00079911",
+      "source_sha256": "2a67aded527f736bd7e0789dd05f6381c96f8bbe6a66915e9db3890119e27645",
+      "pages": 14,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 20,
+      "parsed_email_occurrences": 21,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "2ef41c8b9b61abeaae266f6b98d206058a4624161a0f1bc312f0e38ba070e2a1"
+      },
+      "notes": "Long email chain with merged top-level From/To native text; inspect candidate boundaries and quotes before interpreting correspondents.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00082128",
+      "source_sha256": "560d007b955bb122e73914694c3390832f3abc5b9b9c2e02c2bfd90f1e9a7f0a",
+      "pages": 4,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 8,
+      "parsed_email_occurrences": 8,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "eaa4b339f6a3e683276fb153178245747324a6c18145b8b4cf7a61554bd3afb5"
+      },
+      "notes": "Email chain with signatures and embedded graphic text; review quoted headers and signature boundaries.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "unreviewed"
+    }
+  ]
+}
