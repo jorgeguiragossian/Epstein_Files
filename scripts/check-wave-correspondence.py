@@ -3,6 +3,7 @@ import argparse
 import hashlib
 import json
 import sys
+from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -56,6 +57,13 @@ def build_catalog(folder):
                 raise ValueError('Changed reviewed native page')
         if record['source_page'] not in {e['pdf_page'] for e in review['page_evidence']}:
             raise ValueError('Review requires candidate source page evidence')
+        if review.get('coverage') == 'detected_header_and_body_pages':
+            required = {record['source_page'], *record['body_pages'],
+                        *(h['page'] for h in record['header_evidence'])}
+            if not required <= {e['pdf_page'] for e in review['page_evidence']}:
+                raise ValueError('Review must cover all detected header and body pages')
+            if review.get('detected_body_sha256') != hashlib.sha256(record['body'].encode()).hexdigest():
+                raise ValueError('Changed reviewed detected body')
         record['source_review'] = dict(review)
         if review.get('spans'):
             spans = []
@@ -72,9 +80,11 @@ def build_catalog(folder):
     apply_boundaries(catalog,dict(parser_version=VERSION,annotations=annotations),prepared)
     summary = dict(candidate_occurrences=len(records),reviewed_candidates=len(seen),
                    unreviewed_candidates=len(records)-len(seen),body_partitions=len(annotations),
+                   header_status_counts=dict(Counter(r['source_review'].get('header_status','unspecified') for r in records if r.get('source_review'))),
+                   boundary_status_counts=dict(Counter(r['source_review'].get('boundary_status','unspecified') for r in records if r.get('source_review'))),
                    unique_messages=None,contact_rankings_ready=False,public_site_integration=False,
                    parser_version=VERSION,date_parser_version=DATE_VERSION,
-                   scope='Six outer candidates only; native parsed fields and body text preserved. Header layout issues remain explicit; no primary dates assigned.')
+                   scope=metadata.get('scope','Scoped candidate reviews; native fields and bodies preserved; no primary dates assigned.'))
     return catalog, summary
 
 

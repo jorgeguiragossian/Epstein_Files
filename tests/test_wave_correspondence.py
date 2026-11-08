@@ -60,3 +60,24 @@ class WaveCorrespondenceTests(unittest.TestCase):
         (self.folder/'source.pdf').write_bytes(b'changed')
         with self.assertRaises(ValueError):
             wave.build_catalog(self.folder)
+
+    def test_full_scope_requires_all_detected_pages(self):
+        extraction = dict(source_sha256=self.sha,pages=[dict(page=1,text=self.text),dict(page=2,text='Continued reply.')])
+        self.save('extraction.json',extraction)
+        metric = wave.read(self.folder/'metrics.json')['files'][0]
+        metric['page_count'] = 2
+        self.save('metrics.json',dict(files=[metric]))
+        record = wave.parse_document(extraction,metric['file_id'],9,self.sha)[0]
+        review = self.metadata['reviews'][0]
+        review.update(coverage='detected_header_and_body_pages',visible_fingerprint=record['visible_fingerprint'],
+                      detected_body_sha256=hashlib.sha256(record['body'].encode()).hexdigest())
+        self.save('correspondence-reviews.json',self.metadata)
+        with self.assertRaisesRegex(ValueError,'all detected header and body pages'):
+            wave.build_catalog(self.folder)
+        review['page_evidence'].append(dict(pdf_page=2,native_text_sha256=hashlib.sha256(b'Continued reply.').hexdigest()))
+        self.save('correspondence-reviews.json',self.metadata)
+        wave.build_catalog(self.folder)
+        review['detected_body_sha256'] = 'changed'
+        self.save('correspondence-reviews.json',self.metadata)
+        with self.assertRaisesRegex(ValueError,'Changed reviewed detected body'):
+            wave.build_catalog(self.folder)

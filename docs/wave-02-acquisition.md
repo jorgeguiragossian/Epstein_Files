@@ -29,3 +29,20 @@ The checker validates PDF/extraction bindings, parser versions, candidate finger
 Five initial quality-review page hashes were corrected to use explicit UTF-8 JSON decoding and UTF-8 text hashing rather than Windows default decoding. `quality-review.json` records the affected pages and correction rationale; source PDF and extraction bytes did not change.
 
 Next: review the remaining nested/later candidates and resolve or explicitly retain header-layout issues before public integration. Do not treat the six scoped reviews as whole-chain verification.
+
+## Nested/later correspondence review completed
+
+The remaining 35 detected candidates now have scoped source-assisted reviews. Across both passes, all 29 pages of the six correspondence-bearing PDFs were visually inspected. Each new review binds its detected body hash and all detected header/body page hashes. All 41 parser occurrences now have reviews; this does not establish complete message enumeration, authenticity, unique-message counts or identity associations.
+
+There are 19 lossless body partitions, including 14 added in this pass. Native candidate fields, body text and visible-copy grouping are unchanged. Nineteen candidates retain unseparated-quote issues. Header findings comprise 18 supported layouts and 23 records with damaged, displaced, merged or unresolved header material. A supported detected segment can still contain header-continuation issues; review completion is separate from issue resolution.
+
+Specific unresolved findings include:
+
+- EFTA00064578: inline quoted requests and supplier correspondence remain embedded in detected bodies. The last candidate's header spans pages 5–6 and its one-sentence body is present on page 6.
+- EFTA00073640: the outer-body phrase displaced into the next candidate remains unresolved in both affected records. Headers without recognized From labels on pages 2 and 3 leave quoted messages unenumerated.
+- EFTA00079911: multiple headers cross page boundaries, with Cc/Subject material inside detected bodies. Page 2's native sent time for the candidate at line 5 reads 22:20 while the source displays 12:20; no timestamp was silently corrected. Further quoted headers are embedded inside candidates on later pages.
+- EFTA00082128: signature graphics continue across pages, two inline exchanges remain embedded in one candidate, and the final body includes repeated disclaimers. Signature text and disclaimers do not establish additional messages.
+
+The validator enforces complete detected-page coverage and body-hash consistency for these 35 new reviews. All 79 offline tests pass. Direct real-cache checks confirmed all 41 native payloads and visible-copy groups unchanged and all 19 partitions reconstruct the exact detected body. No primary dates were assigned, no derived field repairs were applied, and these ten PDFs remain outside the public viewer.
+
+Next milestone: integrate the batch while exposing unresolved findings clearly, with regression checks against the published 110 PDFs. Primary-date review remains a separate step. Keep the public labels clear that reviewed candidates may still have unresolved issues and that parser enumeration is incomplete.

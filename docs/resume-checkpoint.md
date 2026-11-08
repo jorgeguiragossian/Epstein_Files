@@ -4,7 +4,9 @@ November 8 update: wave 2 acquisition and quality triage are complete. See `docs
 
 The first correspondence pass is also saved: six outer candidates reviewed, five lossless body partitions, 35 nested/later candidates still unreviewed. EFTA00073640 has a source-order mismatch and no complete authored-body partition. No header fields were silently repaired. Run `scripts/check-wave-correspondence.py --out data/pilot/2026-11-08-wave-02` to validate and materialize the local reviewed catalog. All 78 offline tests passed; all 41 native candidate payloads are preserved. Five quality-review page hashes were corrected to explicit UTF-8 encoding with the correction recorded in metadata.
 
-Resume with remaining nested/later candidate review and explicit handling of header-layout issues before integration; primary-date review follows separately. Preserve native text and existing published records. The historical milestone below describes the unchanged live site.
+Nested/later review is now complete: all 41 detected candidates have scoped reviews, with 19 lossless body partitions. All 29 correspondence-bearing source PDF pages have been inspected across the two passes. Nineteen candidates retain unseparated-quote issues, and 23 have header-layout issues. Missed quoted headers mean enumeration is incomplete; no unique-message counts, identities or primary dates were established. All 79 offline tests pass; native payloads and visible-copy groups are unchanged. These files remain outside the public viewer.
+
+Resume with integration of this batch while displaying unresolved header/quote findings explicitly, checking existing published records for regressions; primary-date review follows separately. Preserve native text and existing published records. The historical milestone below describes the unchanged live site.
 
 The date-review milestone is saved on main in `243ef2b` and published on gh-pages in `99474f9`. GitHub Pages was verified to serve the exact built data bytes and source revision. Both working trees were clean and synchronized with their origin tracking branches before this checkpoint.
 
