@@ -1,0 +1,533 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-08",
+  "method": "Codex comparison of rendered source pages and native UTF-8 text. All 42 PDF pages inspected across acquisition/OCR/layout passes. Editorial layout/date-role assessment, not cell-by-cell financial verification or independent authentication.",
+  "scope": "Searchable native text with explicit limitations; no structured transaction dataset or primary-date assignments.",
+  "reviews": [
+    {
+      "file_id": "EFTA01262784",
+      "source_sha256": "4300c017bf6b6f992a0be53f1d58ca31a30bbd59e3810a2c70d5c9cbebe42385",
+      "layout_status": "narrative_application_and_order",
+      "notes": "Application pages 1-4 and court order pages 5-7 both carry June 27, 2019 signature dates. Repeated 2017.02.06 footers are form/version markers, not signed dates.",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "3c9c37dc06a8ff7cb77b2300dd6b9bdf2933f56781722e6859cafa87a90faf9a"
+        },
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "bdae725cf12dfaef5af8ff10097f987c790a55b2d303b398e329fa0692136b1d"
+        },
+        {
+          "pdf_page": 3,
+          "native_text_sha256": "47d8635f7ad49e2ae7cdeaec1fed26d9d8dac9c3d037cab1172a0cbb6e29e100"
+        },
+        {
+          "pdf_page": 4,
+          "native_text_sha256": "38a2f6b7220fe5b011402edc8a9b499ce023e40f28d9eb1c326ed1a4701c17d2"
+        },
+        {
+          "pdf_page": 5,
+          "native_text_sha256": "fe739ab2d40b8d7037b8178d11eeb347248248634d366b5778f993dbd3473407"
+        },
+        {
+          "pdf_page": 6,
+          "native_text_sha256": "d4cb52231b3fb9900387ecee2e0d8a19e81346e736780eb1ab626cb3fb8cbd26"
+        },
+        {
+          "pdf_page": 7,
+          "native_text_sha256": "0005d5e15d8ce39a676b4bafa874a7fb621bb558b3299183fe0a77ae261dbf3c"
+        }
+      ],
+      "date_observations": [
+        {
+          "role": "application_signature_date",
+          "pdf_page": 4,
+          "native_quote": "June 27, 2019",
+          "normalized_day": "2019-06-27"
+        },
+        {
+          "role": "court_order_signature_date",
+          "pdf_page": 7,
+          "native_quote": "June 27, 2019",
+          "normalized_day": "2019-06-27"
+        },
+        {
+          "role": "form_version_marker",
+          "pdf_page": 7,
+          "native_quote": "2017.02.06",
+          "excluded_from_primary_assignment": true
+        }
+      ],
+      "layout_evidence": [
+        {
+          "pdf_page": 5,
+          "native_quote": "SEALED ORDER"
+        }
+      ],
+      "eligibility": {
+        "structured_ledger": false,
+        "verified_transactions": false,
+        "identity_inference": false,
+        "primary_date_assignment": false
+      }
+    },
+    {
+      "file_id": "EFTA01268630",
+      "source_sha256": "6ad20b5cc46ad2715df4cd03c94ccd511c9bd92e02dde457ed6c41872724d0a1",
+      "layout_status": "column_order_and_recognition_errors",
+      "notes": "Names and property descriptions align in source rows. Native text separates row numbers and headings and contains name/digit errors. This is not a verified property/entity table. Heading supplies only a year.",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "4362dedd003167fd916f5d37c412929a64436eaecf64fdde4fc77fedb8298ff7"
+        }
+      ],
+      "date_observations": [
+        {
+          "role": "document_year",
+          "pdf_page": 1,
+          "native_quote": "1980 CURRENT USE TAXATION",
+          "source_year": 1980
+        }
+      ],
+      "layout_evidence": [
+        {
+          "pdf_page": 1,
+          "native_quote": "Name"
+        },
+        {
+          "pdf_page": 1,
+          "native_quote": "Instructions"
+        }
+      ],
+      "eligibility": {
+        "structured_ledger": false,
+        "verified_transactions": false,
+        "identity_inference": false,
+        "primary_date_assignment": false
+      }
+    },
+    {
+      "file_id": "EFTA01280083",
+      "source_sha256": "0c124e29b79cfb49069356b1d54d0153da2e05a70616463ce70697a332dfaee4",
+      "layout_status": "parallel_columns_and_form_fields_unresolved",
+      "notes": "Preliminary HUD-1 has borrower/seller columns on pages 1-2, a certification page and GFE/HUD-1 comparisons on page 4. Native text flattens columns. Repeated comparison line items must not be counted as additional payments. Print timestamp precedes planned settlement/proration/disbursement fields; blank signatures do not establish completion.",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "ee3198b0d7e762af07cd671fa9a85f8a2938004db8c41dc4fb72cf7291b8d831"
+        },
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "9887651bd4dce68d63ec2236c9a5281476d1e2a0c9eadae66d8c189f7bfe1efe"
+        },
+        {
+          "pdf_page": 3,
+          "native_text_sha256": "bf5c9f9d938689205099d6d8a89eb8a1a1aee28cdead8ad452ba459c7489dfb0"
+        },
+        {
+          "pdf_page": 4,
+          "native_text_sha256": "a82c2944e1be40d3a4eb969df241f8a11190f0aa29b2cce64a7a9e0d3d04e930"
+        }
+      ],
+      "date_observations": [
+        {
+          "role": "preliminary_print_timestamp",
+          "pdf_page": 1,
+          "native_quote": "PRELIMINARY 12/9/2014 12:38:38 PM",
+          "normalized_day": "2014-12-09"
+        },
+        {
+          "role": "planned_settlement_date",
+          "pdf_page": 1,
+          "native_quote": "I. Settlement Date: 12.10,2014 Proration Date: 12/102014 Disbursement Date: 12 102014",
+          "normalized_day": "2014-12-10",
+          "note": "Planned fields read visually; native punctuation damaged. No completed settlement inferred."
+        }
+      ],
+      "layout_evidence": [
+        {
+          "pdf_page": 2,
+          "native_quote": "Funds at"
+        },
+        {
+          "pdf_page": 4,
+          "native_quote": "PRELIMINARY"
+        }
+      ],
+      "eligibility": {
+        "structured_ledger": false,
+        "verified_transactions": false,
+        "identity_inference": false,
+        "primary_date_assignment": false
+      }
+    },
+    {
+      "file_id": "EFTA01280951",
+      "source_sha256": "9f58e5aa12a366d467143b5cc6fb67c2cd0b62e68476efaeaca365fc695b79ec",
+      "layout_status": "multiple_date_amount_columns_flattened",
+      "notes": "Page 1 has summary and activity sections; page 2 has three Date/Amount column pairs. Native text places some Amount headings after data rows, so sequence alone is not reliable column alignment. Analysis period and statement period have different roles.",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "3bc88b958dbea8a8f325aa03e9970ce4df89db1c3e68b6467f5917131b401e4f"
+        },
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "4353f8d8b53317ed7efa705ba246b5b8dd24732834ff90166ceef3065f05f6c4"
+        }
+      ],
+      "date_observations": [
+        {
+          "role": "statement_reporting_period",
+          "pdf_page": 1,
+          "native_quote": "Statement Period Date: 11/1/2015 - I I/3O/2OI5",
+          "period_start": "2015-11-01",
+          "period_end": "2015-11-30",
+          "note": "Source period read visually; native digits contain letter substitutions."
+        }
+      ],
+      "layout_evidence": [
+        {
+          "pdf_page": 2,
+          "native_quote": "Date Amount Date"
+        },
+        {
+          "pdf_page": 2,
+          "native_quote": "Amount Date Amount"
+        }
+      ],
+      "eligibility": {
+        "structured_ledger": false,
+        "verified_transactions": false,
+        "identity_inference": false,
+        "primary_date_assignment": false
+      }
+    },
+    {
+      "file_id": "EFTA01281641",
+      "source_sha256": "92d31fb890cb4422641ea5bd0d5d3904170f6a25b7a15a123595283e5733580b",
+      "layout_status": "handwriting_ocr_inadequate_separate_editorial_layer",
+      "notes": "Front/back handwriting has provisional local readings only. Four OCR attempts do not capture it reliably. Date format/century remain unresolved. No numeric field is promoted to a ledger.",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "c9d0f68abe26e5b671a4cdb12f6d9ccc7a1f3078f87d4054e354993c78382ce4"
+        },
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "56e7be4cfd23a73b6271ff914cda30715b87330123765b4781671ee046a2c82b"
+        }
+      ],
+      "date_observations": [
+        {
+          "role": "handwritten_date_unresolved",
+          "pdf_page": 1,
+          "native_quote": "DEPOSIT TICKET",
+          "note": "Literal reading stays in the separate local layer; no ISO primary date assigned."
+        }
+      ],
+      "layout_evidence": [
+        {
+          "pdf_page": 1,
+          "native_quote": "CHECKS"
+        }
+      ],
+      "eligibility": {
+        "structured_ledger": false,
+        "verified_transactions": false,
+        "identity_inference": false,
+        "primary_date_assignment": false
+      }
+    },
+    {
+      "file_id": "EFTA01283668",
+      "source_sha256": "1792665e4bd494501455205342b91e6ec524a3a3dd1b0a51ce93fb517af446a3",
+      "layout_status": "mixed_currency_parallel_tables_and_repeated_summaries",
+      "notes": "Pages 3-8 mix parallel tables, holdings, USD/EUR and current-period/year-to-date figures. Native text interleaves headings and values. Pages 9-10 distinguish trade from settlement dates. Pages 11-13 are disclosures; pages 2/14 intentionally blank. Do not sum local currencies with USD equivalents or treat repeated summaries as new activity.",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "54d0508c153edfd76229caefbfca849ad0297f683b324989daf670bbdca8c7de"
+        },
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "fc20f81d4c666ca7c2f97a9fc5f7d12c6048728e7b6f854103aaef41150e6ac6"
+        },
+        {
+          "pdf_page": 3,
+          "native_text_sha256": "36bbf3fbca27863c595c30e039b388b257deddb7dcc0e7f8b5c619eee9ae61cb"
+        },
+        {
+          "pdf_page": 4,
+          "native_text_sha256": "b6858376b0f9c2e6753068ed0f8febed246f90291294700a4e352ed17bed4d2f"
+        },
+        {
+          "pdf_page": 5,
+          "native_text_sha256": "45dcd463563cba329a930a919b4e837d2d0c3b7329296af933a76678104f1ccd"
+        },
+        {
+          "pdf_page": 6,
+          "native_text_sha256": "d1fe2fc1652d0ef52b602b1a70ccac45ece667bcea714a4ecc0c08a496c151cb"
+        },
+        {
+          "pdf_page": 7,
+          "native_text_sha256": "5e9550b1fc6b9636c8b16dd78c197b4588107363fa94b73e5db944179baebb9c"
+        },
+        {
+          "pdf_page": 8,
+          "native_text_sha256": "e3d483544e8c77ff8a7dc35b97ca76c2b76e7ba67a395ae45a4662a8098a9b4b"
+        },
+        {
+          "pdf_page": 9,
+          "native_text_sha256": "98e1d696f9cc0aa162fbc032500d5c63bf312e5e51c955cffcc02151f281cbd1"
+        },
+        {
+          "pdf_page": 10,
+          "native_text_sha256": "872de9a2a966880fba44cd5af88244677095cb2ba83fbba9e547d1ccb5fafb3c"
+        },
+        {
+          "pdf_page": 11,
+          "native_text_sha256": "23726d7b1008c538551bed5de1ea3bf22f26742eb2b499fcabcdb51252c6cde4"
+        },
+        {
+          "pdf_page": 12,
+          "native_text_sha256": "0242b5398ca8cbc21823a04d506a13fc1e1379ea04f8f9011e8d293a5ca2a64c"
+        },
+        {
+          "pdf_page": 13,
+          "native_text_sha256": "45753b6ceeb6a3bc9d9ae3aaec33f9edf139706e3da0f9b595e4c20aa55d2fdb"
+        },
+        {
+          "pdf_page": 14,
+          "native_text_sha256": "ee89f4e5887d1f3235c0a6bb9d08db91255194b6586d973d03d2b267f1fd8f8a"
+        }
+      ],
+      "date_observations": [
+        {
+          "role": "portfolio_as_of_date",
+          "pdf_page": 1,
+          "native_quote": "As of Juno 30. 2018",
+          "normalized_day": "2018-06-30"
+        },
+        {
+          "role": "transaction_reporting_period",
+          "pdf_page": 7,
+          "native_quote": "June'. 20'8 ha Jura 30. 20'8",
+          "period_start": "2018-06-01",
+          "period_end": "2018-06-30",
+          "note": "Period read visually; native heading damaged."
+        }
+      ],
+      "layout_evidence": [
+        {
+          "pdf_page": 3,
+          "native_quote": "Market Value Reconciliation in USD"
+        },
+        {
+          "pdf_page": 9,
+          "native_quote": "Trade Date"
+        },
+        {
+          "pdf_page": 9,
+          "native_quote": "Settlement Data"
+        }
+      ],
+      "eligibility": {
+        "structured_ledger": false,
+        "verified_transactions": false,
+        "identity_inference": false,
+        "primary_date_assignment": false
+      }
+    },
+    {
+      "file_id": "EFTA01285058",
+      "source_sha256": "dab2faf11a244e989e641ff88edfe4fc26416f9a737183a62b427d0faa922938",
+      "layout_status": "debit_credit_balance_columns_and_repeated_activity",
+      "notes": "Activity crosses pages 1-2. Check/other-debit summaries repeat selected detailed entries; they must not be added as separate events. Native punctuation/headings contain errors, so debit/credit/balance placement needs source references. Page 3 is boilerplate.",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "f1c7ac4bd54f4129d8b9622638f71ea0843e9644b44306f2ba25c671d637344f"
+        },
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "dd35f01e102b3ba8db1095e64a0adcb2f41bd72f607e02dd963fa7b914c2ec64"
+        },
+        {
+          "pdf_page": 3,
+          "native_text_sha256": "f9d84645cbece29d96cc1bd4f38082a6aea854647f86c1ced0d2e5400192bbd9"
+        }
+      ],
+      "date_observations": [
+        {
+          "role": "statement_reporting_period",
+          "pdf_page": 1,
+          "native_quote": "August 1.2014 to August 31. 2014",
+          "period_start": "2014-08-01",
+          "period_end": "2014-08-31"
+        }
+      ],
+      "layout_evidence": [
+        {
+          "pdf_page": 2,
+          "native_quote": "Date Description IJebit Credit Balance"
+        }
+      ],
+      "eligibility": {
+        "structured_ledger": false,
+        "verified_transactions": false,
+        "identity_inference": false,
+        "primary_date_assignment": false
+      }
+    },
+    {
+      "file_id": "EFTA01286095",
+      "source_sha256": "0984e0ee3278092724e02189bf820d7067f61879d151c62220643a4104ab6d97",
+      "layout_status": "summary_columns_and_date_digit_errors",
+      "notes": "Page 1 has summary balances and a no-activity detail area; page 2 is boilerplate. Native institution words and balance digits are distorted; specific amounts or zero activity are not automatically verified. Period endpoints are not issue dates.",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "a43efecdc7ccc55a9632a3566bed3ba862dc4f03e05c2e06f27802637efe25ac"
+        },
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "d01c40b4ccec34420c1922f0d73ef13926f49958c4771de9710d7a52de5bbf31"
+        }
+      ],
+      "date_observations": [
+        {
+          "role": "statement_reporting_period",
+          "pdf_page": 1,
+          "native_quote": "April I. 2016 to April 30.2016",
+          "period_start": "2016-04-01",
+          "period_end": "2016-04-30"
+        }
+      ],
+      "layout_evidence": [
+        {
+          "pdf_page": 1,
+          "native_quote": "Summary"
+        }
+      ],
+      "eligibility": {
+        "structured_ledger": false,
+        "verified_transactions": false,
+        "identity_inference": false,
+        "primary_date_assignment": false
+      }
+    },
+    {
+      "file_id": "EFTA01287122",
+      "source_sha256": "0ffaa0e684092b624ec29a912f5836034fec089068706d5867364d5eef972fc4",
+      "layout_status": "continued_activity_and_duplicate_summary_sections",
+      "notes": "Detailed activity continues on page 2; Checks Paid and Other Debits repeat selected entries on pages 2-3. Native amounts/account text contain errors. Repeated summaries do not establish additional transfers. Page 4 is boilerplate.",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "d6528aa16c0b820c7c88f3ebea5df67a29d09c0f335a32a82f09e3a91ffc6acc"
+        },
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "46ab7f990eeb63c053e35cffd513277edb08a897fcbc5ec9981e4bcf4075d866"
+        },
+        {
+          "pdf_page": 3,
+          "native_text_sha256": "a38149460daaa3d6acb37cb03e3b03aadfd3c11c20db2f436502d7ca48b53c69"
+        },
+        {
+          "pdf_page": 4,
+          "native_text_sha256": "c241634ca97d48432307cdfe3b06e710181f12890e0181f11be369c7f4bf8147"
+        }
+      ],
+      "date_observations": [
+        {
+          "role": "statement_reporting_period",
+          "pdf_page": 1,
+          "native_quote": "October 1.2017 to October 31. 2017",
+          "period_start": "2017-10-01",
+          "period_end": "2017-10-31"
+        }
+      ],
+      "layout_evidence": [
+        {
+          "pdf_page": 2,
+          "native_quote": "Date Description Debit Credit Balance"
+        },
+        {
+          "pdf_page": 3,
+          "native_quote": "Date Description Amount"
+        }
+      ],
+      "eligibility": {
+        "structured_ledger": false,
+        "verified_transactions": false,
+        "identity_inference": false,
+        "primary_date_assignment": false
+      }
+    },
+    {
+      "file_id": "EFTA01288151",
+      "source_sha256": "3a62485ec3426c624d558b7cff0b15cab2532f60e5ed2e55c6236ccf053e46b5",
+      "layout_status": "balance_interest_and_fee_sections_distinct",
+      "notes": "Page 1 has balances and activity; page 2 has fee/interest calculations with period and year-to-date roles. These reporting measures are not interchangeable transaction rows. Page 3 is boilerplate. Native word/number errors are retained.",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "6c81ee499854789f4b081df062fa15b08449fb92c40b4ba6fce5595c8eb1889b"
+        },
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "301ede1efb2c19d79fb8db9364081b9d8f093a9ba107c8d0541172e04db088cb"
+        },
+        {
+          "pdf_page": 3,
+          "native_text_sha256": "99887a14fa3b45b19475ec605122a4cf901ff1b4cf0e6316b7aa92e59fcce453"
+        }
+      ],
+      "date_observations": [
+        {
+          "role": "statement_reporting_period",
+          "pdf_page": 1,
+          "native_quote": "December 1. 2018 to December 31. 2018",
+          "period_start": "2018-12-01",
+          "period_end": "2018-12-31"
+        }
+      ],
+      "layout_evidence": [
+        {
+          "pdf_page": 2,
+          "native_quote": "Interest"
+        }
+      ],
+      "eligibility": {
+        "structured_ledger": false,
+        "verified_transactions": false,
+        "identity_inference": false,
+        "primary_date_assignment": false
+      }
+    }
+  ]
+}

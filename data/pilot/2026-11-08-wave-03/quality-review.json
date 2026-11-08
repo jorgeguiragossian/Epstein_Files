@@ -233,5 +233,15 @@
     "primary_date_assigned": false,
     "review_status": "source_assisted_readings_recorded_with_unresolved_date_format",
     "note": "OCR was used only as a local comparator after acquisition. It still missed the handwriting; provisional editorial readings remain in an ignored separate cache, not the native extraction or public site."
+  },
+  "layout_date_followup": {
+    "review_manifest": "table-date-role-reviews.json",
+    "documents_reviewed": 10,
+    "pdf_pages_reviewed": 42,
+    "date_role_observations": 14,
+    "primary_dates_assigned": false,
+    "structured_financial_data_verified": false,
+    "search_integration_recommendation": "Native source text with explicit layout/date-role notices; no automatic ledger or primary-date promotion.",
+    "scope_note": "All 42 pages visually inspected across acquisition, OCR and this follow-up; this is layout/date-role assessment, not cell-by-cell verification. Original acquisition scope above is historical."
   }
 }
