@@ -6,7 +6,7 @@
   <meta name="description" content="A public research workspace for a document sample of the DOJ Epstein Files.">
   <title>Epstein Files — Document explorer</title>
   <link rel="stylesheet" href="/Epstein_Files/style.css?v=3981ddc2a54f">
-  <script src="/Epstein_Files/static-api.js?v=315dce0f77ac" defer></script><script src="/Epstein_Files/app.js?v=47dc5fd9e18b" defer></script>
+  <script src="/Epstein_Files/static-api.js?v=315dce0f77ac" defer></script><script src="/Epstein_Files/app.js?v=2042ed53de06" defer></script>
 </head>
 <body>
   <a class="skip" href="#workspace">Skip to documents</a>
@@ -56,6 +56,7 @@
             <h2 id="reader-title" tabindex="-1"></h2>
             <div class="reader-links"><a class="primary" id="pdf-link" target="_blank" rel="noopener noreferrer">DOJ PDF · page 1 ↗</a><a id="doj-link" target="_blank" rel="noopener noreferrer">DOJ original ↗</a></div>
             <div id="primary-date" class="primary-date"></div>
+            <section id="source-quality" aria-label="Source quality review" hidden></section>
             <div class="page-controls"><button id="prev-page" type="button" class="outline" aria-label="Previous PDF page">←</button><form id="page-form"><label for="page-number">PDF page</label><input id="page-number" type="number" min="1" value="1" aria-label="PDF page number"><span id="page-total"></span><button class="text-button" type="submit">Go</button></form><button id="next-page" type="button" class="outline" aria-label="Next PDF page">→</button></div>
             <div id="matching-pages" class="matching-pages" hidden></div>
             <div id="page-warning" class="page-warning" hidden>Low text on this page. It may be a photograph, a sparse page, or require OCR. Check the PDF.</div>

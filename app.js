@@ -179,6 +179,8 @@ async function openDocument(id, page, focus = false) {
   $('#date-list').replaceChildren();
   $('#source-details').replaceChildren();
   $('#primary-date').replaceChildren();
+  $('#source-quality').replaceChildren();
+  $('#source-quality').hidden=true;
   $('#page-people').replaceChildren();
   try {
     const record = await api(`/api/documents/${encodeURIComponent(id)}?page=${page}`);
@@ -251,6 +253,24 @@ async function openDocument(id, page, focus = false) {
       sourceDetail('Supporting date evidence',`PDF page ${supporting.pdf_page}: ${supporting.quote}`);
     }
     sourceDetail('Text coverage', `${record.page_count} of ${record.page_count} pages processed; ${record.low_text_pages} flagged low-text`);
+    if(record.source_quality_review){
+      const quality=record.source_quality_review,panel=$('#source-quality');
+      panel.className='email-notice';panel.hidden=false;
+      panel.append(node('h3','','Source quality review'),node('p','',quality.notes),
+        node('p','evidence-note','Editorial source comparison by Codex, not cell-by-cell financial verification. Native text is preserved. Date-role observations below do not control primary-date filters.'));
+      const roles={application_signature_date:'Application signature date',court_order_signature_date:'Court order signature date',form_version_marker:'Form / version marker',document_year:'Document year',preliminary_print_timestamp:'Preliminary print timestamp',planned_settlement_date:'Planned settlement date',statement_reporting_period:'Statement reporting period',portfolio_as_of_date:'Portfolio as-of date',transaction_reporting_period:'Transaction reporting period',handwritten_date_unresolved:'Handwritten date · unresolved'};
+      const details=node('details','evidence');details.append(node('summary','',`Date roles & source evidence (${quality.date_observations.length})`));
+      for(const observation of quality.date_observations){
+        const section=node('div','');
+        const reading=observation.period_start?`${observation.period_start} through ${observation.period_end}`:observation.normalized_day||observation.source_year||'No primary-date assignment';
+        section.append(node('h4','',`${roles[observation.role]||observation.role} · ${reading}`));
+        if(observation.note)section.append(node('p','',observation.note));
+        section.append(node('blockquote','',observation.native_quote));
+        const button=node('button','text-button',`View role evidence · PDF page ${observation.pdf_page} ↗`);button.type='button';
+        button.addEventListener('click',()=>openDocument(id,observation.pdf_page));section.append(button);details.append(section);
+      }
+      panel.append(details);
+    }
     sourceDetail('Email headers', `${record.email_headers} unverified candidates in this file; not unique messages or contacts`);
     sourceDetail('File size', `${(record.bytes / 1048576).toFixed(2)} MiB`);
     sourceDetail('SHA-256', record.sha256);
