@@ -57,7 +57,7 @@
    if(filter==='unreviewed'&&!members.some(r=>!r.source_review))continue;
    const focus={sender:['sender_address_unresolved'],recipient:['recipient_address_unresolved'],date:['date_missing','date_unparsed','date_ambiguous_numeric']}[filter];
    if(focus&&!members.some(r=>r.flags.some(f=>focus.includes(f))))continue;
-   if(filter==='boundary'&&!members.some(r=>['contains_unseparated_quote','forwarding_wrapper_only','continuation_unverified'].includes(r.source_review?.boundary_status)))continue;
+   if(filter==='boundary'&&!members.some(r=>['contains_unseparated_quote','forwarding_wrapper_only','continuation_unverified','source_order_mismatch','unresolved_trailing_material'].includes(r.source_review?.boundary_status)))continue;
    rows.push({...group,representative:members.find(r=>r.file_id===doc)||members[0],sources:members.map(r=>({id:r.id,file_id:r.file_id,source_page:r.source_page,source_line:r.source_line,flags:r.flags}))});
   }
   return{summary:catalog.summary,documents:[...new Set(catalog.records.map(r=>r.file_id))].sort(),total_groups:rows.length,page,page_size:12,results:rows.slice((page-1)*12,page*12)};

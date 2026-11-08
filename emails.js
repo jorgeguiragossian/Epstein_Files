@@ -31,6 +31,7 @@ function render(group){
  if(r.source_review){
   const review=r.source_review,panel=node('section','email-notice');
   panel.append(node('h4','','Source-assisted editorial review by Codex'),node('p','',review.boundary_status.replaceAll('_',' ')),node('p','',review.notes));
+  if(review.boundary_status==='calendar_alert_not_correspondence')panel.append(node('p','email-flags','Calendar alert: event text does not establish a person-to-person message or a sent date.'));
   if(review.header_status)panel.append(node('p','evidence-note',`Header finding: ${review.header_status.replaceAll('_',' ')}. Reviewed does not mean resolved.`));
   if(review.page_evidence?.length){
    const pages=node('p','email-sources');

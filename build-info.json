@@ -1,10 +1,10 @@
 {
-  "source_revision": "8a32800549d3f11c30976ec872eac17fe2d248de",
+  "source_revision": "d291742ac80f9b9fb5305f05bb3cce919c20bab4",
   "base_path": "/Epstein_Files/",
-  "documents": 130,
-  "pages": 1916,
+  "documents": 140,
+  "pages": 1933,
   "name_phrases": 22,
-  "email_candidates": 163,
-  "data_bytes": 3936139,
+  "email_candidates": 176,
+  "data_bytes": 4025800,
   "publication": "public full pilot; no source PDF copies or credentials"
 }
