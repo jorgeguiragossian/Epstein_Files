@@ -66,4 +66,4 @@ Commit and push at small, verified milestones: inventory and extraction pilot; w
 
 ## Published expansion
 
-The [wave 1 integration](wave-01-integration.md) adds ten dataset 8 PDFs to the searchable sample (110 PDFs, 1,836 pages). Dates remain unreviewed; the email workspace labels derived header layers and preserves native source text. Earlier counts and local-only status above describe their original milestone.
+The [wave 1 integration](wave-01-integration.md) adds ten dataset 8 PDFs to the searchable sample (110 PDFs, 1,836 pages). Nine new primary dates are reviewed and one multi-day roster remains uncertain (45 dated, 5 uncertain, 60 unreviewed overall); the email workspace labels derived header layers and preserves native source text. Earlier counts and local-only status above describe their original milestone.

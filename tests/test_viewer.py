@@ -123,7 +123,7 @@ class CatalogTests(unittest.TestCase):
         metric={'sha256':'abc','page_count':1}
         extracted={'pages':[{'text':'Session June 18, 2019. Mentions 2018-08-23.'}]}
         viewer.validate_review(record,metric,extracted)
-        for role in ('letter','presentation'):
+        for role in ('letter','presentation','court_order'):
             viewer.validate_review(dict(record,date_type=role),metric,extracted)
         with self.assertRaises(ValueError):viewer.validate_review(dict(record,date_type='invented'),metric,extracted)
         for changes in ({'source_sha256':'changed'},{'evidence_page':2},{'evidence_quote':'not present'},{'status':'uncertain'}):

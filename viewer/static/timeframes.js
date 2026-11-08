@@ -1,5 +1,5 @@
 const $=s=>document.querySelector(s),initial=new URL(location.href).searchParams;let version=0;
-const roles={email_sent:'Email sent date',report:'Report date',transcript_session:'Transcript session date',letter:'Letter date',presentation:'Presentation date'};
+const roles={email_sent:'Email sent date',report:'Report date',court_order:'Court order date',transcript_session:'Transcript session date',letter:'Letter date',presentation:'Presentation date'};
 function node(tag,text,cls){const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;}
 function sourceLink(id,page,label){const a=node('a',label);a.href='/?doc='+encodeURIComponent(id)+'&pdfpage='+page;a.target='_blank';a.rel='noopener noreferrer';return a;}
 function card(item){

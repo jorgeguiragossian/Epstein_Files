@@ -63,6 +63,22 @@ def load_expansions():
     return prepared, records
 
 
+def load_expansion_dates():
+    rows = []
+    for batch in read(ROOT / 'data/pilot/viewer-batches.json')['batches']:
+        expected = batch['evidence_sha256'].get('date-reviews.json')
+        if expected is None:
+            continue
+        folder = (ROOT / batch['path']).resolve()
+        if not folder.is_relative_to(ROOT / 'data/pilot'):
+            raise ValueError('Expansion folder outside pilot workspace')
+        path = folder / 'date-reviews.json'
+        if hashlib.sha256(path.read_bytes()).hexdigest() != expected:
+            raise ValueError('Expansion date evidence changed')
+        rows.extend(read(path)['reviews'])
+    return rows
+
+
 def merge_catalog(base, extra, document_count):
     try:
         from .email_parser import group_records

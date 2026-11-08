@@ -39,3 +39,12 @@ The static bundle exposes the newly integrated native text, candidate bodies and
 Regression checks cover evidence-hash rejection, duplicate document/candidate identifiers, preserved prior records, unreviewed new dates, native versus derived headers, complete body reconstruction, existing date/name search, static/Python API parity and source PDF links. Browser checks cover the fragment card, quote breakdown and native-text link. This milestone expands publication coverage, not full-release or whole-document review coverage.
 
 The remaining 90 selected expansion PDFs remain unprocessed. The next useful milestone is primary-date review for these ten new documents, followed by a further bounded acquisition batch.
+
+
+## Primary-date review completed November 7
+
+The separate wave `date-reviews.json` assigns nine primary dates: seven containing-email sent dates, one court-order date and one memorandum issue date. The multi-day roster EFTA00009713 remains uncertain; its July 22, August 9 and August 10 pages do not establish one assembly date. EFTA00034623 is assigned July 24, 2019, the memorandum issue date, rather than its July 23 activity period.
+
+Each assignment binds the PDF SHA-256 and an exact native-text quote on PDF page 1. Codex visually compared the source pages; these are editorial assignments, not independent authentication. The roster's additional date-bearing pages 18 and 25 were also inspected. The registry pins this review file, and indexing rejects unknown, duplicate, stale or unsupported date assignments before rebuilding the database. Reproduce the curated manifest with `python scripts/prepare-wave-dates.py`.
+
+Published totals are now 45 dated, 5 uncertain and 60 unreviewed PDFs. Date filters and word clouds include the nine new dated documents. Timeframes show nine date-evidence-only documents alongside the unchanged 36 prepared and source-checked briefs. Native page text and all 122 email candidate records remain unchanged. The next milestone is a further bounded acquisition batch from the remaining 90 selected PDFs.

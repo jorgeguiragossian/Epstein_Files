@@ -18,13 +18,13 @@ try:
     from .email_coverage import review_coverage
     from .wordcloud import build_word_index,word_cloud
     from .timeframes import validate_briefs,timeframe_index,select_timeframe
-    from .batches import load_expansions,merge_catalog
+    from .batches import load_expansions,load_expansion_dates,merge_catalog
 except ImportError:
     from email_parser import build_email_catalog,review_page
     from email_coverage import review_coverage
     from wordcloud import build_word_index,word_cloud
     from timeframes import validate_briefs,timeframe_index,select_timeframe
-    from batches import load_expansions,merge_catalog
+    from batches import load_expansions,load_expansion_dates,merge_catalog
 
 ROOT = Path(__file__).resolve().parents[1]
 PILOT = ROOT / 'data/pilot/2026-11-01'
@@ -65,7 +65,7 @@ def validate_review(review, metric, extracted):
         raise ValueError('Date evidence is absent from the cited page.')
     if review['status']=='dated':
         iso_day(review['primary_date'])
-        if review['date_type'] not in ('email_sent','report','transcript_session','letter','presentation') or review['precision']!='day':
+        if review['date_type'] not in ('email_sent','report','transcript_session','letter','presentation','court_order') or review['precision']!='day':
             raise ValueError('A dated record requires a supported date type and day precision.')
     elif review['primary_date'] is not None or review['date_type'] is not None:
         raise ValueError('Uncertain and undated reviews cannot assign a primary date.')
@@ -138,6 +138,13 @@ def build_index(pilot=PILOT, database=DB):
     if pilot.resolve() == PILOT.resolve():
         extra, additional_records = load_expansions()
         prepared.extend(extra)
+        sources = {metric['file_id']:(metric, extracted) for metric,item,extracted,pdf in extra}
+        for review in load_expansion_dates():
+            key = review['file_id']
+            if key in reviews or key not in sources:
+                raise ValueError('Duplicate or unknown expansion date review document.')
+            validate_review(review, *sources[key])
+            reviews[key] = review
     if len({m['file_id'] for m, item, extracted, pdf in prepared}) != len(prepared):
         raise ValueError('Duplicate document identifiers across batches')
     people=load(pilot/'people.json')['people']

@@ -16,7 +16,8 @@ paths+=['/api/coverage','/api/emails?filter=unreviewed','/api/emails?filter=send
 paths+=['/api/words','/api/words?date_from=2020-01-01&date_to=2020-12-31','/api/words?dataset=6','/api/words?person=ghislaine-maxwell','/api/words?exclude=epstein%2Ccourt','/api/words?date_from=1900-01-01&date_to=1900-01-02']
 paths+=['/api/words?date_from=2018-10-10&date_to=2018-10-10&dataset=10','/api/search?date_status=uncertain&q=EFTA02212924','/api/documents/EFTA02730477?page=1']
 paths+=['/api/timeframes','/api/timeframes?date_from=2021-04-01&date_to=2021-04-30','/api/timeframes?dataset=6','/api/timeframes?person=ghislaine-maxwell','/api/timeframes?date_from=1900-01-01&date_to=1900-01-02','/api/timeframes?date_from=2017-05-23&date_to=2017-05-23']
-paths+=['/api/documents/EFTA00032045?page=1','/api/documents/EFTA00039023?page=2','/api/emails?document=EFTA00014597','/api/emails?document=EFTA00021826','/api/emails?document=EFTA00032045','/api/search?q=EFTA00009713&date_status=unreviewed']
+paths+=['/api/documents/EFTA00032045?page=1','/api/documents/EFTA00039023?page=2','/api/emails?document=EFTA00014597','/api/emails?document=EFTA00021826','/api/emails?document=EFTA00032045','/api/search?q=EFTA00009713&date_status=uncertain']
+paths+=['/api/documents/EFTA00018844','/api/timeframes?date_from=2019-07-24&date_to=2019-07-24','/api/words?date_from=2023-06-28&date_to=2023-06-28']
 for path in paths:
     url=urlsplit(path);q={k:v[0] for k,v in parse_qs(url.query).items()}
     if url.path=='/api/overview':result=catalog.overview()
