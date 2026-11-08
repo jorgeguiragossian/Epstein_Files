@@ -1,11 +1,12 @@
 {
   "planned_files": 100,
   "first_wave_files": 10,
-  "downloaded_files": 20,
-  "native_extracted_files": 20,
-  "remaining_unprocessed_files": 80,
+  "downloaded_files": 30,
+  "native_extracted_files": 30,
+  "remaining_unprocessed_files": 70,
   "first_wave": "data/pilot/2026-11-07-wave-01",
   "public_search_documents": 120,
-  "note": "Twenty expansion PDFs integrated. Wave 2 now has eight reviewed primary dates and two uncertain records; correspondence issues remain explicit. Remaining 80 selected PDFs unprocessed.",
-  "second_wave": "data/pilot/2026-11-08-wave-02"
+  "note": "Waves 1 and 2 integrated (120 public PDFs). Wave 3: ten dataset 10 PDFs, 42 pages, acquired and native-extracted locally; quality triage flags two deposit-ticket pages for OCR/transcription and financial tables for row/column review. No email candidates detected. Not yet integrated; 70 selected PDFs unprocessed.",
+  "second_wave": "data/pilot/2026-11-08-wave-02",
+  "third_wave": "data/pilot/2026-11-08-wave-03"
 }

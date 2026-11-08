@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-08",
+  "method": "Codex visual comparison of ten first PDF pages, the deposit-ticket reverse side and three additional portfolio pages with native UTF-8 extraction. Fourteen inspected pages total; automated extraction covers all 42. Not whole-document review or independent authentication.",
+  "downloaded_files": 10,
+  "bytes": 3125888,
+  "pages": 42,
+  "low_text_pages": 1,
+  "source_assisted_ocr_transcription_review_pages": 2,
+  "native_header_candidates": 0,
+  "parsed_email_occurrences": 0,
+  "parser_version": "email-pilot-1",
+  "date_parser_version": "email-date-2",
+  "unique_messages": null,
+  "ocr_performed": false,
+  "public_site_integrated": false,
+  "files": [
+    {
+      "file_id": "EFTA01262784",
+      "source_sha256": "4300c017bf6b6f992a0be53f1d58ca31a30bbd59e3810a2c70d5c9cbebe42385",
+      "pages": 7,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "3c9c37dc06a8ff7cb77b2300dd6b9bdf2933f56781722e6859cafa87a90faf9a"
+      },
+      "ocr_transcription_review_pdf_pages": [],
+      "visually_confirmed_intentionally_blank_pdf_pages": [],
+      "notes": "Source first page is a legal application, not an email. Inspect final signature/order pages before primary-date assignment; dates in cited authorities are not issue dates.",
+      "date_review_status": "unreviewed",
+      "financial_data_status": "not_structurally_verified"
+    },
+    {
+      "file_id": "EFTA01268630",
+      "source_sha256": "6ad20b5cc46ad2715df4cd03c94ccd511c9bd92e02dde457ed6c41872724d0a1",
+      "pages": 1,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "4362dedd003167fd916f5d37c412929a64436eaecf64fdde4fc77fedb8298ff7"
+      },
+      "ocr_transcription_review_pdf_pages": [],
+      "visually_confirmed_intentionally_blank_pdf_pages": [],
+      "notes": "Tabular property/tax record. Native text separates some names and column values; handwriting/signature and typed row alignment need source comparison before structured extraction. Printed year alone is not a reviewed day date.",
+      "date_review_status": "unreviewed",
+      "financial_data_status": "not_structurally_verified"
+    },
+    {
+      "file_id": "EFTA01280083",
+      "source_sha256": "0c124e29b79cfb49069356b1d54d0153da2e05a70616463ce70697a332dfaee4",
+      "pages": 4,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "ee3198b0d7e762af07cd671fa9a85f8a2938004db8c41dc4fb72cf7291b8d831"
+      },
+      "ocr_transcription_review_pdf_pages": [],
+      "visually_confirmed_intentionally_blank_pdf_pages": [],
+      "notes": "Preliminary settlement statement with dense multi-column amounts and several date roles. Searchable native text is not a verified ledger or date assignment; column/row alignment needs review.",
+      "date_review_status": "unreviewed",
+      "financial_data_status": "not_structurally_verified"
+    },
+    {
+      "file_id": "EFTA01280951",
+      "source_sha256": "9f58e5aa12a366d467143b5cc6fb67c2cd0b62e68476efaeaca365fc695b79ec",
+      "pages": 2,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "3bc88b958dbea8a8f325aa03e9970ce4df89db1c3e68b6467f5917131b401e4f"
+      },
+      "ocr_transcription_review_pdf_pages": [],
+      "visually_confirmed_intentionally_blank_pdf_pages": [],
+      "notes": "Statement-period banking record. Native text has recognition errors in digits and date characters. No amounts, transaction categories or parties are independently verified.",
+      "date_review_status": "unreviewed",
+      "financial_data_status": "not_structurally_verified"
+    },
+    {
+      "file_id": "EFTA01281641",
+      "source_sha256": "92d31fb890cb4422641ea5bd0d5d3904170f6a25b7a15a123595283e5733580b",
+      "pages": 2,
+      "low_text_pdf_pages": [
+        2
+      ],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "inspected_page_text_sha256": {
+        "1": "c9d0f68abe26e5b671a4cdb12f6d9ccc7a1f3078f87d4054e354993c78382ce4",
+        "2": "56e7be4cfd23a73b6271ff914cda30715b87330123765b4781671ee046a2c82b"
+      },
+      "ocr_transcription_review_pdf_pages": [
+        1,
+        2
+      ],
+      "visually_confirmed_intentionally_blank_pdf_pages": [],
+      "notes": "Deposit ticket with handwritten content. Page 1 includes visibly handwritten date/amount content poorly captured in native text; rotated handwritten reverse-side content on page 2 is largely absent. Both pages need source-assisted OCR/transcription review. Low-text heuristic flags only page 2; it misses the poor recognition on page 1.",
+      "date_review_status": "unreviewed",
+      "financial_data_status": "not_structurally_verified"
+    },
+    {
+      "file_id": "EFTA01283668",
+      "source_sha256": "1792665e4bd494501455205342b91e6ec524a3a3dd1b0a51ce93fb517af446a3",
+      "pages": 14,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1,
+        2,
+        3,
+        14
+      ],
+      "inspected_page_text_sha256": {
+        "1": "54d0508c153edfd76229caefbfca849ad0297f683b324989daf670bbdca8c7de",
+        "2": "fc20f81d4c666ca7c2f97a9fc5f7d12c6048728e7b6f854103aaef41150e6ac6",
+        "3": "36bbf3fbca27863c595c30e039b388b257deddb7dcc0e7f8b5c619eee9ae61cb",
+        "14": "ee89f4e5887d1f3235c0a6bb9d08db91255194b6586d973d03d2b267f1fd8f8a"
+      },
+      "ocr_transcription_review_pdf_pages": [],
+      "visually_confirmed_intentionally_blank_pdf_pages": [
+        2,
+        14
+      ],
+      "notes": "Multi-page portfolio/account record. Pages 2 and 14 visibly say This Page Intentionally Left Blank; these are expected sparse content, not observed missing-text failures. Page 3 has side-by-side financial tables; native text cannot be treated as verified structured financial data.",
+      "date_review_status": "unreviewed",
+      "financial_data_status": "not_structurally_verified"
+    },
+    {
+      "file_id": "EFTA01285058",
+      "source_sha256": "dab2faf11a244e989e641ff88edfe4fc26416f9a737183a62b427d0faa922938",
+      "pages": 3,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "f1c7ac4bd54f4129d8b9622638f71ea0843e9644b44306f2ba25c671d637344f"
+      },
+      "ocr_transcription_review_pdf_pages": [],
+      "visually_confirmed_intentionally_blank_pdf_pages": [],
+      "notes": "Bank statement with transactions and a reporting period. Native recognition and row associations need source checks before financial or date interpretation.",
+      "date_review_status": "unreviewed",
+      "financial_data_status": "not_structurally_verified"
+    },
+    {
+      "file_id": "EFTA01286095",
+      "source_sha256": "0984e0ee3278092724e02189bf820d7067f61879d151c62220643a4104ab6d97",
+      "pages": 2,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "a43efecdc7ccc55a9632a3566bed3ba862dc4f03e05c2e06f27802637efe25ac"
+      },
+      "ocr_transcription_review_pdf_pages": [],
+      "visually_confirmed_intentionally_blank_pdf_pages": [],
+      "notes": "Bank statement with a reporting period and summary columns; native institution/entity words and digits include errors. Do not infer a single issue date or financial relationship from the text alone.",
+      "date_review_status": "unreviewed",
+      "financial_data_status": "not_structurally_verified"
+    },
+    {
+      "file_id": "EFTA01287122",
+      "source_sha256": "0ffaa0e684092b624ec29a912f5836034fec089068706d5867364d5eef972fc4",
+      "pages": 4,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "d6528aa16c0b820c7c88f3ebea5df67a29d09c0f335a32a82f09e3a91ffc6acc"
+      },
+      "ocr_transcription_review_pdf_pages": [],
+      "visually_confirmed_intentionally_blank_pdf_pages": [],
+      "notes": "Bank statement with tabular transactions and a period. Native person/entity spelling and account/amount columns require review before structured analysis.",
+      "date_review_status": "unreviewed",
+      "financial_data_status": "not_structurally_verified"
+    },
+    {
+      "file_id": "EFTA01288151",
+      "source_sha256": "3a62485ec3426c624d558b7cff0b15cab2532f60e5ed2e55c6236ccf053e46b5",
+      "pages": 3,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "6c81ee499854789f4b081df062fa15b08449fb92c40b4ba6fce5595c8eb1889b"
+      },
+      "ocr_transcription_review_pdf_pages": [],
+      "visually_confirmed_intentionally_blank_pdf_pages": [],
+      "notes": "Bank statement with a reporting period and summary/transaction tables. Native text is a search layer; amounts and column relationships are not verified.",
+      "date_review_status": "unreviewed",
+      "financial_data_status": "not_structurally_verified"
+    }
+  ]
+}
