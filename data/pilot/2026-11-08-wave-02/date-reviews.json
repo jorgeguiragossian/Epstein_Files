@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-08",
+  "scope": "Ten wave 2 PDFs: eight primary dates, two uncertain; no new briefs or email field repairs.",
+  "reviews": [
+    {
+      "file_id": "EFTA00059374",
+      "dataset": 9,
+      "source_sha256": "6213c7eb4d2a6119cf93fded1985ba70008a7f659033f633627e940f99333ada",
+      "status": "dated",
+      "primary_date": "2019-08-10",
+      "date_type": "email_sent",
+      "precision": "day",
+      "evidence_page": 1,
+      "evidence_quote": "Saturday, August 10, 2019 10:20:14 PM",
+      "notes": "Containing-email Date row visually confirmed despite separated native labels/values. Earlier forwarded message and handwritten annotation are not primary dates. No timezone is inferred.",
+      "review_method": "Codex visual comparison of cited PDF pages with native UTF-8 extraction; editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day as displayed in the source; do not infer or convert an unspecified timezone."
+    },
+    {
+      "file_id": "EFTA00064578",
+      "dataset": 9,
+      "source_sha256": "30d820ac5d1e0a6d3280259dfc57b398818d59a3f09bb7c0fc8ca334f1d2eb65",
+      "status": "dated",
+      "primary_date": "2022-03-10",
+      "date_type": "email_sent",
+      "precision": "day",
+      "evidence_page": 1,
+      "evidence_quote": "Date: Thursday, March 10, 2022 3:19:38 PM",
+      "notes": "Outer email sent date; quoted 2021 messages, 2018 purchase dates and 2019 installation dates are separate. Native subject/attachment damage does not obscure this date row. No timezone is inferred.",
+      "review_method": "Codex visual comparison of cited PDF pages with native UTF-8 extraction; editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day as displayed in the source; do not infer or convert an unspecified timezone."
+    },
+    {
+      "file_id": "EFTA00067452",
+      "dataset": 9,
+      "source_sha256": "37fba38d9d9164b7893570bb7d3e261ae527ad3cc6dd253ad084c797ea68a7cc",
+      "status": "dated",
+      "primary_date": "2008-06-18",
+      "date_type": "email_sent",
+      "precision": "day",
+      "evidence_page": 1,
+      "evidence_quote": "Date: Wed, 18 Jun 2008 17:53:07 +0000",
+      "notes": "Outer email sent date; the future July 7 deadline mentioned in the body is not the primary document date.",
+      "review_method": "Codex visual comparison of cited PDF pages with native UTF-8 extraction; editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day as displayed in the source; do not infer or convert an unspecified timezone."
+    },
+    {
+      "file_id": "EFTA00070036",
+      "dataset": 9,
+      "source_sha256": "f58773ffeb61632f3dbc86422385a63dad6c414f310f751cd143b81410cc00f6",
+      "status": "dated",
+      "primary_date": "2019-08-12",
+      "date_type": "letter",
+      "precision": "day",
+      "evidence_page": 1,
+      "evidence_quote": "August 12, 2019",
+      "notes": "Letter issue date above the salutation. Referenced August 10 correspondence and July 23 incident are separate dates; SENT VIA EMAIL does not make this a parsed email message.",
+      "review_method": "Codex visual comparison of cited PDF pages with native UTF-8 extraction; editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day as displayed in the source; do not infer or convert an unspecified timezone."
+    },
+    {
+      "file_id": "EFTA00073640",
+      "dataset": 9,
+      "source_sha256": "d480777a8e458fee4d87712fde939211b7ea58521323a239f3d5554bd63cf20e",
+      "status": "dated",
+      "primary_date": "2021-12-01",
+      "date_type": "email_sent",
+      "precision": "day",
+      "evidence_page": 1,
+      "evidence_quote": "Date: Wed, 01 Dec 2021 04:32:29 +0000",
+      "notes": "Outer email Date row uses December 1 as displayed at +0000. Earlier November 30 quoted local-clock messages and the attachment filename do not control the date. Known body-order problems remain unresolved and do not change this visible header date.",
+      "review_method": "Codex visual comparison of cited PDF pages with native UTF-8 extraction; editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day as displayed in the source; do not infer or convert an unspecified timezone."
+    },
+    {
+      "file_id": "EFTA00075976",
+      "dataset": 9,
+      "source_sha256": "2a06f26864e01f396c905142d50e3823816a4970e6923722ef4d7ed2402b5c9f",
+      "status": "dated",
+      "primary_date": "2021-07-30",
+      "date_type": "court_order",
+      "precision": "day",
+      "evidence_page": 3,
+      "evidence_quote": "Dated: July 30, 2021",
+      "notes": "Order date on the final PDF page, consistent with the July 30 docket filing stamp. Dates in cited authorities and news coverage are separate.",
+      "review_method": "Codex visual comparison of cited PDF pages with native UTF-8 extraction; editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day as displayed in the source; do not infer or convert an unspecified timezone."
+    },
+    {
+      "file_id": "EFTA00079911",
+      "dataset": 9,
+      "source_sha256": "2a67aded527f736bd7e0789dd05f6381c96f8bbe6a66915e9db3890119e27645",
+      "status": "dated",
+      "primary_date": "2019-08-23",
+      "date_type": "email_sent",
+      "precision": "day",
+      "evidence_page": 1,
+      "evidence_quote": "Date: Fri, 23 Aug 2019 20:40:59 +0000",
+      "notes": "Outer email sent date; July 5 in the subject identifies a subpoena and proposed September meetings are future events. The known clock discrepancy in a later quoted message is separate from this outer header.",
+      "review_method": "Codex visual comparison of cited PDF pages with native UTF-8 extraction; editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day as displayed in the source; do not infer or convert an unspecified timezone."
+    },
+    {
+      "file_id": "EFTA00082128",
+      "dataset": 9,
+      "source_sha256": "560d007b955bb122e73914694c3390832f3abc5b9b9c2e02c2bfd90f1e9a7f0a",
+      "status": "dated",
+      "primary_date": "2019-08-14",
+      "date_type": "email_sent",
+      "precision": "day",
+      "evidence_page": 1,
+      "evidence_quote": "Date: Wed, 14 Aug 2019 16:59:58 +0000",
+      "notes": "Outer email sent date. August 19 in the subject is a proposed meeting, and 2017/2018 in signature graphics are not document dates.",
+      "review_method": "Codex visual comparison of cited PDF pages with native UTF-8 extraction; editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day as displayed in the source; do not infer or convert an unspecified timezone."
+    },
+    {
+      "file_id": "EFTA00039153",
+      "dataset": 9,
+      "source_sha256": "55fa742fe5d3685a4487c6cf79dd9aef6cbd7251be60b2cdf2cdb24612a1a95e",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "LIST OF EXHIBITS - CHAPTER 2",
+      "notes": "All three PDF pages were inspected. Each footer DATE field is blank; dates in the numbered list refer to exhibits, statutes or other records. No assembly/issue date for this list is established. The case number is not a primary-date assignment.",
+      "review_method": "Codex visual comparison of cited PDF pages with native UTF-8 extraction; editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day as displayed in the source; do not infer or convert an unspecified timezone.",
+      "inspected_pdf_pages": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "file_id": "EFTA00078194",
+      "dataset": 9,
+      "source_sha256": "8c5e6ed18af38f4b8b09e11e11c71a19a5a61a6cad33a71fe1c89e23a695b2b3",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "RECORDED 10/23/2020 09:56:41",
+      "notes": "Both PDF pages inspected. Recording occurred October 23, 2020; page 2 separately states acknowledgment on March 9, 2019. The March 2019 made/execution-day text on page 1 is obscured by a watermark and absent from native extraction. Retain an uncertain primary execution date rather than substitute the recording or acknowledgment date. No legal effect or authenticity is inferred.",
+      "review_method": "Codex visual comparison of cited PDF pages with native UTF-8 extraction; editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day as displayed in the source; do not infer or convert an unspecified timezone.",
+      "inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 2,
+          "quote": "on this 9th day of March. 2019",
+          "native_text_sha256": "7a050096d3c17ced754662d4d8fde266e20113f640424a5326b70a060c1ed94b"
+        }
+      ]
+    }
+  ]
+}

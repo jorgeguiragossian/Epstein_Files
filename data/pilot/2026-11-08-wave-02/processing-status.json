@@ -7,12 +7,12 @@
   "public_search_integration": true,
   "reviewed_candidates": 41,
   "lossless_body_partitions": 19,
-  "document_date_status": "all_ten_unreviewed",
+  "document_date_status": "eight_dated_two_uncertain",
   "source_context_review": "29_correspondence_PDF_pages; other document types only first-page quality triage",
   "remaining_review_items": [
-    "Primary dates for all ten PDFs",
     "Unresolved header layouts and embedded quotes",
-    "Incomplete enumeration of visible quoted messages"
+    "Incomplete enumeration of visible quoted messages",
+    "No primary date established for exhibit list or deed"
   ],
   "selection_status_note": "Selection records planning-time status; downloads, metrics and this record describe later processing. No new derived field repairs. Source PDFs remain on DOJ."
 }

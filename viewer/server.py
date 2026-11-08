@@ -63,6 +63,12 @@ def validate_review(review, metric, extracted):
     page = integer(review['evidence_page'],1,metric['page_count'],'Evidence page')
     if not review['evidence_quote'] or review['evidence_quote'] not in extracted['pages'][page-1]['text']:
         raise ValueError('Date evidence is absent from the cited page.')
+    for evidence in review.get('supporting_evidence',[]):
+        number=integer(evidence['pdf_page'],1,metric['page_count'],'Supporting evidence page')
+        text=extracted['pages'][number-1]['text']
+        if (hashlib.sha256(text.encode()).hexdigest()!=evidence['native_text_sha256']
+                or not evidence['quote'] or evidence['quote'] not in text):
+            raise ValueError('Supporting date evidence is stale or absent.')
     if review['status']=='dated':
         iso_day(review['primary_date'])
         if review['date_type'] not in ('email_sent','report','transcript_session','letter','presentation','court_order') or review['precision']!='day':

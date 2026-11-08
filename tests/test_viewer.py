@@ -128,6 +128,11 @@ class CatalogTests(unittest.TestCase):
         with self.assertRaises(ValueError):viewer.validate_review(dict(record,date_type='invented'),metric,extracted)
         for changes in ({'source_sha256':'changed'},{'evidence_page':2},{'evidence_quote':'not present'},{'status':'uncertain'}):
             with self.subTest(changes=changes),self.assertRaises(ValueError): viewer.validate_review(dict(record,**changes),metric,extracted)
+        supporting=dict(pdf_page=1,quote='June 18, 2019',native_text_sha256=hashlib.sha256(extracted['pages'][0]['text'].encode()).hexdigest())
+        viewer.validate_review(dict(record,supporting_evidence=[supporting]),metric,extracted)
+        for changes in ({'pdf_page':2},{'quote':'absent'},{'native_text_sha256':'changed'}):
+            with self.subTest(supporting=changes),self.assertRaises(ValueError):
+                viewer.validate_review(dict(record,supporting_evidence=[dict(supporting,**changes)]),metric,extracted)
 
     def test_person_matches_are_page_scoped_and_combine_with_dates(self):
         response=self.catalog.search(person='alice-example')

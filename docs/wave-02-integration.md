@@ -21,3 +21,5 @@ node tests/test_static_pages.mjs
 ```
 
 Source PDFs and extraction caches remain ignored; public page text and review payloads are in the authorized gh-pages bundle. The next milestone is primary-date review of these ten new PDFs. Eighty selected expansion PDFs remain unprocessed.
+
+The subsequent [primary-date review](wave-02-dates.md) assigns eight dates and retains two uncertain records. Collection date totals are now 53 dated, 7 uncertain and 60 unreviewed; the integration counts above describe the earlier milestone.
