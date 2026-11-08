@@ -1,0 +1,24 @@
+{
+  "candidate_occurrences": 13,
+  "reviewed_candidates": 13,
+  "unreviewed_candidates": 0,
+  "body_partitions": 9,
+  "header_status_counts": {
+    "header_text_damaged": 5,
+    "header_values_displaced": 4,
+    "header_layout_supported": 4
+  },
+  "boundary_status_counts": {
+    "contains_unseparated_quote": 7,
+    "signature_separated": 2,
+    "calendar_alert_not_correspondence": 2,
+    "source_order_mismatch": 1,
+    "unresolved_trailing_material": 1
+  },
+  "unique_messages": null,
+  "contact_rankings_ready": false,
+  "public_site_integration": false,
+  "parser_version": "email-pilot-1",
+  "date_parser_version": "email-date-2",
+  "scope": "All 13 detected candidates reviewed; enumeration incomplete; two calendar alerts, one source-order mismatch and one ambiguous trailing fragment remain explicitly distinguished. Native fields/body/grouping preserved; dates unadjudicated."
+}

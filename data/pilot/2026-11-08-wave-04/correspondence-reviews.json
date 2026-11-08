@@ -1,0 +1,684 @@
+{
+  "schema_version": 1,
+  "parser_version": "email-pilot-1",
+  "date_parser_version": "email-date-2",
+  "method": "Codex source-assisted editorial review using all 17 rendered source pages and native UTF-8 line ranges; exact source/page/body hashes. Not independent authentication.",
+  "scope": "All 13 detected candidates reviewed; enumeration incomplete; two calendar alerts, one source-order mismatch and one ambiguous trailing fragment remain explicitly distinguished. Native fields/body/grouping preserved; dates unadjudicated.",
+  "reviews": [
+    {
+      "file_id": "EFTA02212883",
+      "source_sha256": "76566756493787c5c345476fc85747b44320838fe081fd7d1a247afb2e4710f9",
+      "source_page": 1,
+      "source_line": 1,
+      "visible_fingerprint": "659d9d597a8d537258167f6d85b077d0920ec7386aab9205935d829947f2db67",
+      "record_id": "cbd557d8d4ec2f5434d3",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "scope": "Detected header/body pages and visible quote layout only; same-assistant editorial review, not independent authentication or complete message enumeration.",
+      "review_status": "source_assisted_editorial_review",
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "81fa8b023f96d113a20de5d623d7cb0154fd6083e19b29f8def6209b4de1e555",
+      "header_status": "header_text_damaged",
+      "boundary_status": "contains_unseparated_quote",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Outer From is extracted as Fran and incorrectly included in detected Cc. Sent date has a damaged separator. Two inline replies remain unenumerated. Keep native header values; no sender correction. The following detected candidate is visibly forwarded.",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "16c255089c996e507cf9735befd7aab7e68f103b6b99121ae28c92fca85c3803"
+        },
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "d2ce868a33e6e8ada809f431df4753a9253a16266083114a7d37be0d6830e02a"
+        }
+      ],
+      "spans": [
+        {
+          "id": "cbd557d8d4ec2f5434d3-span-1",
+          "page": 1,
+          "line_start": 6,
+          "line_end": 6,
+          "kind": "authored_text_candidate",
+          "text_sha256": "3afdda2c098fc8346a9f2e0ba06ec9c6188411cf78cc7934cfd8b666ce632f55"
+        },
+        {
+          "id": "cbd557d8d4ec2f5434d3-span-2",
+          "page": 1,
+          "line_start": 7,
+          "line_end": 7,
+          "kind": "signature",
+          "text_sha256": "5740eef812dd396c9ed1b6c5851fc8f25f16a810ac4c8311d4ec9c5015701bbe"
+        },
+        {
+          "id": "cbd557d8d4ec2f5434d3-span-3",
+          "page": 1,
+          "line_start": 8,
+          "line_end": 12,
+          "kind": "inline_quote",
+          "text_sha256": "bd60dbd38e57705e8b5c35bc37573ed1eb02e063e989f217ffefecd5e43e2ca8"
+        }
+      ],
+      "following_quoted_candidate_id": "d774cd7b7a228f7752f6"
+    },
+    {
+      "file_id": "EFTA02212883",
+      "source_sha256": "76566756493787c5c345476fc85747b44320838fe081fd7d1a247afb2e4710f9",
+      "source_page": 1,
+      "source_line": 14,
+      "visible_fingerprint": "43e51ea5a5f3dfcb6b54566c766b2b13165d48a0423b34ab7f6f116c4821b6c8",
+      "record_id": "d774cd7b7a228f7752f6",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "scope": "Detected header/body pages and visible quote layout only; same-assistant editorial review, not independent authentication or complete message enumeration.",
+      "review_status": "source_assisted_editorial_review",
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "248d134a24749f1ad30a7336de17c259c18cc5190aa3eab08d4cd9917d9ea141",
+      "header_status": "header_text_damaged",
+      "boundary_status": "contains_unseparated_quote",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Forwarded header is visible; redacted address yields extraction artifacts. Reply at line 18 is followed by an inline quote and disclaimer spanning pages. No inferred identity or unique-message claim.",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "16c255089c996e507cf9735befd7aab7e68f103b6b99121ae28c92fca85c3803"
+        },
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "d2ce868a33e6e8ada809f431df4753a9253a16266083114a7d37be0d6830e02a"
+        }
+      ],
+      "spans": [
+        {
+          "id": "d774cd7b7a228f7752f6-span-1",
+          "page": 1,
+          "line_start": 18,
+          "line_end": 18,
+          "kind": "authored_text_candidate",
+          "text_sha256": "8af9058bc1c417fbaf32f68646fbbe092a686a8a0548d0df8280cff5ed67045c"
+        },
+        {
+          "id": "d774cd7b7a228f7752f6-span-2",
+          "page": 1,
+          "line_start": 19,
+          "line_end": 22,
+          "kind": "inline_quote",
+          "text_sha256": "324e7f67c432905c9c719b5936977811159dc12d1607ef2dbf48a393bcafa8a5"
+        },
+        {
+          "id": "d774cd7b7a228f7752f6-span-3",
+          "page": 1,
+          "line_start": 23,
+          "line_end": 28,
+          "kind": "disclaimer",
+          "text_sha256": "377fe6685cfb7e9fee4dbc32341c3a88ea646b42fe63d882c20b945be25fd122"
+        },
+        {
+          "id": "d774cd7b7a228f7752f6-span-4",
+          "page": 2,
+          "line_start": 1,
+          "line_end": 7,
+          "kind": "disclaimer",
+          "text_sha256": "55f5dcaf542c484494942989785cd55ec3f140606ebbb39414dfce67752bd8b9"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA02213471",
+      "source_sha256": "fa9b3596f5037197693a73d3db80da772c9d6f11f37402eb49a303345786d017",
+      "source_page": 1,
+      "source_line": 1,
+      "visible_fingerprint": "c2575d157652d71754e23104ac1097b48e7262afecc3393800f022ddd2844fa6",
+      "record_id": "db017abf93616e7608f8",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "scope": "Detected header/body pages and visible quote layout only; same-assistant editorial review, not independent authentication or complete message enumeration.",
+      "review_status": "source_assisted_editorial_review",
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "cecd6e7e22ef4a831dc3652cba30d0c54781fc96064071c3efca7d8ddfcfdabc",
+      "header_status": "header_values_displaced",
+      "boundary_status": "signature_separated",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Source sender fragment is displaced to native body line 5; sent date loses visible components. Line 5 is uncertain header continuation, not authored prose. Page 2 continues signature/publication material. No native repair.",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "05421a392269787c9a48e65631aaf4ec3a45c5866dd89d8d686ad24cf68850cd"
+        },
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "f42c8b1706cd1a22b9a37871ab93983acaebc59eaa8b6f4b1efd8242ad2bbb02"
+        }
+      ],
+      "spans": [
+        {
+          "id": "db017abf93616e7608f8-span-1",
+          "page": 1,
+          "line_start": 5,
+          "line_end": 5,
+          "kind": "uncertain_header_continuation",
+          "text_sha256": "2f0ec8da30b9476f531c414f75352bf47bb19d6aa8701027f09529df303635f7"
+        },
+        {
+          "id": "db017abf93616e7608f8-span-2",
+          "page": 1,
+          "line_start": 6,
+          "line_end": 9,
+          "kind": "authored_text_candidate",
+          "text_sha256": "70d7389ee82b763f4474038407f1033a35c9c78f2b54a6d601d0bb6f702fdcff"
+        },
+        {
+          "id": "db017abf93616e7608f8-span-3",
+          "page": 1,
+          "line_start": 10,
+          "line_end": 18,
+          "kind": "signature",
+          "text_sha256": "5d156e79a4a3ea538c7010fbd7080646e7472afbb78b8652bc64dc7334f1567f"
+        },
+        {
+          "id": "db017abf93616e7608f8-span-4",
+          "page": 2,
+          "line_start": 1,
+          "line_end": 2,
+          "kind": "signature",
+          "text_sha256": "160ac9ffd3d918af921b089861a9faa898a5f20f4e7f7fbe5e2e6144825c4184"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA02213987",
+      "source_sha256": "745f6edc69712c881e47ba11ca60295c3d71dc90f3744aede7dd34939cf38507",
+      "source_page": 1,
+      "source_line": 1,
+      "visible_fingerprint": "684c1426263c8bfef9cb6c4a11582e333ec3ffcde628bf57a5be65eb68dbd8bd",
+      "record_id": "ffb94e82c800add8d79a",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "scope": "Detected header/body pages and visible quote layout only; same-assistant editorial review, not independent authentication or complete message enumeration.",
+      "review_status": "source_assisted_editorial_review",
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "888d6961f81dc9cab5f46fc5041c64ad46282d81876b930a61e5e2cd2828f388",
+      "header_status": "header_text_damaged",
+      "boundary_status": "calendar_alert_not_correspondence",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Calendar alert with damaged recipient extraction. Body is event text, not an adjudicated sent timestamp or person-to-person message; no authored-body partition.",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "eb4503196e8699dd21779d3a3a3384c6b376d1decbd50d8f97bd48fd91857fd5"
+        }
+      ],
+      "spans": []
+    },
+    {
+      "file_id": "EFTA02214639",
+      "source_sha256": "09732d965fcf4b78163c13e43c74c20e0b10277bcc129071fb6d331bc3fcb518",
+      "source_page": 1,
+      "source_line": 1,
+      "visible_fingerprint": "b746f6d996374787c8ab16766585ab188a7156f954d14fc47dc863bebf7b6be1",
+      "record_id": "eb257c55091c179ebad6",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "scope": "Detected header/body pages and visible quote layout only; same-assistant editorial review, not independent authentication or complete message enumeration.",
+      "review_status": "source_assisted_editorial_review",
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "3636d508074939909179d05d831cb4930280923cd6afb1290bc89d484e63c123",
+      "header_status": "header_values_displaced",
+      "boundary_status": "contains_unseparated_quote",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Sender, sent value and subject are displaced into native body lines 5-7; line 8 is rendered title metadata. Outer reply is line 9 with signature lines 10-14. Several inline exchanges lack separate detected headers; page 2 is service disclaimer. Attribution beyond the outer reply remains limited.",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "ba7ff63750cae6e69c66ba853269e23f54c2185fe65e61d9df6290412335810e"
+        },
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "dd4c6d661c336fa14df2d3627016de76c73613cfb7f5bc0b8da2112ce21b6a22"
+        }
+      ],
+      "spans": [
+        {
+          "id": "eb257c55091c179ebad6-span-1",
+          "page": 1,
+          "line_start": 5,
+          "line_end": 8,
+          "kind": "uncertain_header_continuation",
+          "text_sha256": "87a1ccd03bcef2d215e80b1a0b9e633c5ad7f248f1b20b8d90d56715dfdcf061"
+        },
+        {
+          "id": "eb257c55091c179ebad6-span-2",
+          "page": 1,
+          "line_start": 9,
+          "line_end": 9,
+          "kind": "authored_text_candidate",
+          "text_sha256": "efc7f84d6e5736acd8fff245a20d512940e6a4d3a0f95b8f4c06603ec536fa37"
+        },
+        {
+          "id": "eb257c55091c179ebad6-span-3",
+          "page": 1,
+          "line_start": 10,
+          "line_end": 14,
+          "kind": "signature",
+          "text_sha256": "db09d6f5809f265b2c6ec15da214401ce07229f4125b8a7d26e4363952ff0417"
+        },
+        {
+          "id": "eb257c55091c179ebad6-span-4",
+          "page": 1,
+          "line_start": 15,
+          "line_end": 26,
+          "kind": "inline_quote",
+          "text_sha256": "a5be88d47a71c6bbba39e34c679b085b96c7635fa9d3c65d15a617265e8fc3a5"
+        },
+        {
+          "id": "eb257c55091c179ebad6-span-5",
+          "page": 1,
+          "line_start": 27,
+          "line_end": 27,
+          "kind": "disclaimer",
+          "text_sha256": "8be3e012587fa5c2f884b48fc196f8af5798c962dacae123be9db5c0bed7d6c1"
+        },
+        {
+          "id": "eb257c55091c179ebad6-span-6",
+          "page": 2,
+          "line_start": 1,
+          "line_end": 7,
+          "kind": "disclaimer",
+          "text_sha256": "7941c1b45db7f74aee5a562643693db6223cd28ce876ffdd2da237f82024f26a"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA02215291",
+      "source_sha256": "2de410a2ad41a0645c8c34f1a9084acaa0c02ff7c57c0404455130de1fac245a",
+      "source_page": 1,
+      "source_line": 3,
+      "visible_fingerprint": "44debe62cf11231b777d2643d0d015532bd2806a980013bfd3b7e0ffb1f07728",
+      "record_id": "d3dffbe0f40927a8b09b",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "scope": "Detected header/body pages and visible quote layout only; same-assistant editorial review, not independent authentication or complete message enumeration.",
+      "review_status": "source_assisted_editorial_review",
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "14efd4f15d08c744d178b4a5159693abf6849ef3edd408d0c66596bfbf90ea75",
+      "header_status": "header_layout_supported",
+      "boundary_status": "source_order_mismatch",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Detected header layout is supported, with redacted recipient retained. Native lines 1-2 contain a phrase/signature visually below the quoted schedule but outside detected body. Some partially redacted schedule text is missing/damaged. No complete authored-body partition is asserted; preserve this mismatch.",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "a0904879ebc037b122a7db51f493bc6735239253114051a7d480aa10363e83de"
+        }
+      ],
+      "spans": []
+    },
+    {
+      "file_id": "EFTA02215926",
+      "source_sha256": "39c1309451da241b94ba0bd5d1ae4d08172351bb1d3274130d0418000324f182",
+      "source_page": 1,
+      "source_line": 1,
+      "visible_fingerprint": "00009c54a95bdc018eb42fbf9a8b468300c2eb63794feb13d40abcf43cf60d66",
+      "record_id": "fc6f449bcd01113801f1",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "scope": "Detected header/body pages and visible quote layout only; same-assistant editorial review, not independent authentication or complete message enumeration.",
+      "review_status": "source_assisted_editorial_review",
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "46227ca852fed37988db147cfd72b95dc13f660416128b0d49bcd5210763576f",
+      "header_status": "header_layout_supported",
+      "boundary_status": "contains_unseparated_quote",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Outer header layout is supported; sender is redacted. Outer reply is one line, followed by multiple unenumerated quoted exchanges spanning pages 1-2. Page 2 has damaged quoted header material. The next detected candidate on page 3 is visibly forwarded; do not infer reply identities.",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "618a611a40ebd5231b30f29ffc58acbecccebed76b13323a4798234946eb84ee"
+        },
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "b0f2476911c3c5563757f46a569864eb7b446b40bb35797917e60f9360159829"
+        },
+        {
+          "pdf_page": 3,
+          "native_text_sha256": "b2a4e27311442184a011826d141411e7e982e53c553e35908577cda878689211"
+        },
+        {
+          "pdf_page": 4,
+          "native_text_sha256": "b041bade258fd253bbdba1236dc7af5d792d2d877b9347d240904584ff6c93e1"
+        }
+      ],
+      "spans": [
+        {
+          "id": "fc6f449bcd01113801f1-span-1",
+          "page": 1,
+          "line_start": 6,
+          "line_end": 6,
+          "kind": "authored_text_candidate",
+          "text_sha256": "3cd8c0df0552d21d51ba18a3ea2661481adb22a159cc2e8eb3887f0fd550b066"
+        },
+        {
+          "id": "fc6f449bcd01113801f1-span-2",
+          "page": 1,
+          "line_start": 7,
+          "line_end": 31,
+          "kind": "inline_quote",
+          "text_sha256": "856c58ceaca65071b775bd756d7cf1f8aedbdf45a484ccb2c3f6d1a8fbd6fcc9"
+        },
+        {
+          "id": "fc6f449bcd01113801f1-span-3",
+          "page": 2,
+          "line_start": 1,
+          "line_end": 18,
+          "kind": "inline_quote",
+          "text_sha256": "c2d61c26aba15d729858cb5ec42ce898b2b5ff70c5dd54fef240cd277fafe9a1"
+        }
+      ],
+      "following_quoted_candidate_id": "883edab265074a1164dc"
+    },
+    {
+      "file_id": "EFTA02215926",
+      "source_sha256": "39c1309451da241b94ba0bd5d1ae4d08172351bb1d3274130d0418000324f182",
+      "source_page": 3,
+      "source_line": 2,
+      "visible_fingerprint": "7e350b0f544c9d34dd506ab6257392b31ceaf47ec967999d1e053c212de3abe3",
+      "record_id": "883edab265074a1164dc",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "scope": "Detected header/body pages and visible quote layout only; same-assistant editorial review, not independent authentication or complete message enumeration.",
+      "review_status": "source_assisted_editorial_review",
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "49b86f291b3b83e50194ba9e36834ed0c7a08d23629cbc5044eb5c4ff1a20d52",
+      "header_status": "header_text_damaged",
+      "boundary_status": "contains_unseparated_quote",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Forwarded From and Subject have extraction damage and narrow line wrapping. Native body has outer reply, inline quoted message, signature and disclaimer continued onto page 4. Preserve native line breaks and damaged values.",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "618a611a40ebd5231b30f29ffc58acbecccebed76b13323a4798234946eb84ee"
+        },
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "b0f2476911c3c5563757f46a569864eb7b446b40bb35797917e60f9360159829"
+        },
+        {
+          "pdf_page": 3,
+          "native_text_sha256": "b2a4e27311442184a011826d141411e7e982e53c553e35908577cda878689211"
+        },
+        {
+          "pdf_page": 4,
+          "native_text_sha256": "b041bade258fd253bbdba1236dc7af5d792d2d877b9347d240904584ff6c93e1"
+        }
+      ],
+      "spans": [
+        {
+          "id": "883edab265074a1164dc-span-1",
+          "page": 3,
+          "line_start": 8,
+          "line_end": 8,
+          "kind": "authored_text_candidate",
+          "text_sha256": "c2bc649c1ff7bd673d91ea69f71571c4ad128e0bc37ec61e522499ab326ff336"
+        },
+        {
+          "id": "883edab265074a1164dc-span-2",
+          "page": 3,
+          "line_start": 9,
+          "line_end": 27,
+          "kind": "inline_quote",
+          "text_sha256": "1549b96e48a1032ead683a48d548129ff4f4f71efcc45915035f0296941a5375"
+        },
+        {
+          "id": "883edab265074a1164dc-span-3",
+          "page": 3,
+          "line_start": 28,
+          "line_end": 30,
+          "kind": "inline_quote",
+          "text_sha256": "fa9d3b072842329bce4c8919074ed97ac0da7dce813b560b341ffebf2a52bc14"
+        },
+        {
+          "id": "883edab265074a1164dc-span-4",
+          "page": 3,
+          "line_start": 31,
+          "line_end": 37,
+          "kind": "disclaimer",
+          "text_sha256": "fbc3b1c6ce5f208b81aaa333356f1cc0527ec84b0794cafa9d58cb2022a506b5"
+        },
+        {
+          "id": "883edab265074a1164dc-span-5",
+          "page": 4,
+          "line_start": 1,
+          "line_end": 6,
+          "kind": "disclaimer",
+          "text_sha256": "cc65d6ed1ca0650a711d422b6cd165b61c972757869364f25bb14196be39367a"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA02216544",
+      "source_sha256": "a0acdaf898abeeba81008140546b8b5d287f55dee21495acb718d316fbb1ccb1",
+      "source_page": 1,
+      "source_line": 1,
+      "visible_fingerprint": "54ff1c681c91b415b75cf5910d1e540391b678b502caf54610eb37bc7f7c588c",
+      "record_id": "619149feee09b51cd30e",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "scope": "Detected header/body pages and visible quote layout only; same-assistant editorial review, not independent authentication or complete message enumeration.",
+      "review_status": "source_assisted_editorial_review",
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "2acc4b4b14ba0cc60a4f1428b5627c42b4b430fc378b9ab8bc3b69e4a496e0b1",
+      "header_status": "header_layout_supported",
+      "boundary_status": "calendar_alert_not_correspondence",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Source has redacted sender/recipient and an alert label. Displayed event timestamp is not automatically a sent date. No person-to-person authorship or identity inference; no authored-body partition.",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "98ca9308e5c82746c9ed05df95ac3c37ebf2bc8adc9d42dad111b720eed40b34"
+        }
+      ],
+      "spans": []
+    },
+    {
+      "file_id": "EFTA02217241",
+      "source_sha256": "657d5c627fef96fc1a0f236d6cd83cf633f631ac1123ebe7c7da73e6dae28b6d",
+      "source_page": 1,
+      "source_line": 1,
+      "visible_fingerprint": "ab8137a05103a8d36820914ff7126e7d83d3b65c952db3c5eb4b2914962bf742",
+      "record_id": "8154568fde5f97b04f01",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "scope": "Detected header/body pages and visible quote layout only; same-assistant editorial review, not independent authentication or complete message enumeration.",
+      "review_status": "source_assisted_editorial_review",
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "e4c5c2806039d413f20158d14f911483a28169deed91f8bb7cc69feaa2a03067",
+      "header_status": "header_values_displaced",
+      "boundary_status": "contains_unseparated_quote",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Native sent label has no colon and value is displaced below subject, though parser includes it. Outer reply and phone signature precede two inline quoted exchanges; the next candidate is visibly forwarded. Quoted exchanges remain unenumerated.",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "a45a6c70fc42c79b5db576a8f4a2b694dcb22b18c434f8590ad248448f6644f9"
+        },
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "98bcac878c555698d6da6b8341e4d8ce54c9f5e8ee4f9a3e1d1ddf682d1cbd93"
+        }
+      ],
+      "spans": [
+        {
+          "id": "8154568fde5f97b04f01-span-1",
+          "page": 1,
+          "line_start": 6,
+          "line_end": 6,
+          "kind": "authored_text_candidate",
+          "text_sha256": "5a51dfdaa2d0c92d921a858146a3fe7b4b5f4d78879cabd685dfa0a217c52d57"
+        },
+        {
+          "id": "8154568fde5f97b04f01-span-2",
+          "page": 1,
+          "line_start": 7,
+          "line_end": 7,
+          "kind": "signature",
+          "text_sha256": "5740eef812dd396c9ed1b6c5851fc8f25f16a810ac4c8311d4ec9c5015701bbe"
+        },
+        {
+          "id": "8154568fde5f97b04f01-span-3",
+          "page": 1,
+          "line_start": 8,
+          "line_end": 15,
+          "kind": "inline_quote",
+          "text_sha256": "4858e05b9931d13fc60017b90f864bfb13f30b8d2a2161a55ba593261a2f51e3"
+        }
+      ],
+      "following_quoted_candidate_id": "6fd74d47cbcf318a6eb5"
+    },
+    {
+      "file_id": "EFTA02217241",
+      "source_sha256": "657d5c627fef96fc1a0f236d6cd83cf633f631ac1123ebe7c7da73e6dae28b6d",
+      "source_page": 1,
+      "source_line": 17,
+      "visible_fingerprint": "9916e4eb979d9e5e27cebc55460a591eeb747c7548bb2da07135328624c6c49e",
+      "record_id": "6fd74d47cbcf318a6eb5",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "scope": "Detected header/body pages and visible quote layout only; same-assistant editorial review, not independent authentication or complete message enumeration.",
+      "review_status": "source_assisted_editorial_review",
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "b73a796bef0825729412e045f20553b99373eab18cc98df6216f4a5906b362f0",
+      "header_status": "header_layout_supported",
+      "boundary_status": "unresolved_trailing_material",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Forwarded header has redacted participants. Detected body includes a trailing wrote fragment on page 1 that is not a legible separate quoted header in source, followed by the closing on page 2. Keep unpartitioned pending clarification; do not turn the fragment into another message.",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "a45a6c70fc42c79b5db576a8f4a2b694dcb22b18c434f8590ad248448f6644f9"
+        },
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "98bcac878c555698d6da6b8341e4d8ce54c9f5e8ee4f9a3e1d1ddf682d1cbd93"
+        }
+      ],
+      "spans": []
+    },
+    {
+      "file_id": "EFTA02217799",
+      "source_sha256": "abdc78ec7ad6fb8d6777a3dad13683463b152eab967193b37c5b71101589b55d",
+      "source_page": 1,
+      "source_line": 1,
+      "visible_fingerprint": "012e7545a29b16dc9785b8e60ff515d91c6fcac1f263ab8b49b3c7accbc39822",
+      "record_id": "b95b6e12084dc01070fb",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "scope": "Detected header/body pages and visible quote layout only; same-assistant editorial review, not independent authentication or complete message enumeration.",
+      "review_status": "source_assisted_editorial_review",
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "9e1785961cc907b8066e967b4aadb676c1a785038c0ba1ec6f9e67f5ef02010b",
+      "header_status": "header_values_displaced",
+      "boundary_status": "contains_unseparated_quote",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Outer recipient visible in source is absent from native header; sent value is displaced but detected. Outer reply/signature precede two quoted exchanges, with quote markers and signature damage. No inferred recipient repair or additional message enumeration.",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "b4a2014fc60ea36411c23dc33199b4f273605055a4ee0628b4b59f62d654b19e"
+        }
+      ],
+      "spans": [
+        {
+          "id": "b95b6e12084dc01070fb-span-1",
+          "page": 1,
+          "line_start": 6,
+          "line_end": 6,
+          "kind": "authored_text_candidate",
+          "text_sha256": "e4dbd8880dd13852e44987aee456c9a70d4947a4b9680ba0e57c2184ec2d0c30"
+        },
+        {
+          "id": "b95b6e12084dc01070fb-span-2",
+          "page": 1,
+          "line_start": 7,
+          "line_end": 7,
+          "kind": "signature",
+          "text_sha256": "5740eef812dd396c9ed1b6c5851fc8f25f16a810ac4c8311d4ec9c5015701bbe"
+        },
+        {
+          "id": "b95b6e12084dc01070fb-span-3",
+          "page": 1,
+          "line_start": 8,
+          "line_end": 26,
+          "kind": "inline_quote",
+          "text_sha256": "3fe16f80bf2ecadce67c9aad4fca8d5c2e0bd7bbbc2bfe714a3fa341c63579c0"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA02218280",
+      "source_sha256": "87ff44390ddf4c49d55afaee8d3b59dfd26ccda629f796dacbf8f4a019775399",
+      "source_page": 1,
+      "source_line": 1,
+      "visible_fingerprint": "96cfe3c3e4adde35c9b132aae3e38504a83c13c11b29a2a8b750859ce28b2356",
+      "record_id": "e24db8b5c6344c24ae29",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "scope": "Detected header/body pages and visible quote layout only; same-assistant editorial review, not independent authentication or complete message enumeration.",
+      "review_status": "source_assisted_editorial_review",
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "98c37363866a3779425a1dc95c9fba72eca11873e39280688e43d0b6b8b8905d",
+      "header_status": "header_text_damaged",
+      "boundary_status": "signature_separated",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Partial recipient native string is damaged; sender is redacted. Body request and phone signature can be separated. Do not expand partial names or identify who is meant by Leon.",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "b149be8d7f51a8259e5321cf304722560ca74405402c4dcf0758bdbc79910f94"
+        }
+      ],
+      "spans": [
+        {
+          "id": "e24db8b5c6344c24ae29-span-1",
+          "page": 1,
+          "line_start": 6,
+          "line_end": 7,
+          "kind": "authored_text_candidate",
+          "text_sha256": "a71727005cd883f8e8a5faf220a95eea18eece166ec7732dced6aaef20c52c82"
+        },
+        {
+          "id": "e24db8b5c6344c24ae29-span-2",
+          "page": 1,
+          "line_start": 8,
+          "line_end": 8,
+          "kind": "signature",
+          "text_sha256": "5740eef812dd396c9ed1b6c5851fc8f25f16a810ac4c8311d4ec9c5015701bbe"
+        }
+      ]
+    }
+  ]
+}
