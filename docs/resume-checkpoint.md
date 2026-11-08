@@ -10,6 +10,8 @@ Reporting-period word-cloud mode is complete: six eligible PDFs, inclusive overl
 
 Validation passed: 92 offline tests, 74 static/Python API comparisons, real-cache HTTP smoke checks and browser checks of period-based frequencies, basis switching and source links. All document records, source-quality metadata, date reviews and 163 email records are unchanged during this word-cloud milestone.
 
-Next recommended milestone: the next ten-file acquisition batch from the remaining 70 selected PDFs, followed by source/text quality review. The expansion plan has 30 acquired/extracted/integrated PDFs. Do not regenerate the saved selection.
+Wave 4 acquisition and quality triage is complete locally: ten dataset 11 PDFs, 17 pages / 591,909 bytes; all pages visually compared, two sparse pages captured, no OCR. The parser detects 13 unreviewed occurrences across ten PDFs; calendar alerts and unenumerated inline chains require care. EFTA02215291 has a body-order mismatch. Source/native text remain unchanged and this batch is not publicly integrated. See `docs/wave-04-acquisition.md`.
+
+Next recommended milestone: source-assisted correspondence/header-boundary review for wave 4, then integration with prior-public-data regression checks and separate primary-date review. The saved expansion plan has 40 acquired/extracted PDFs, 30 integrated and 60 unprocessed. Do not regenerate the selection.
 
 Original PDFs, raw extractions, local SQLite and OCR/editorial-reading caches remain ignored. The deposit-ticket's eight provisional literal readings remain local and unpublished; OCR was inadequate and date format remains unresolved. Builds need original and all three expansion caches. Explicit registries pin evidence; changed source bytes require re-review rather than automatic hash renewal.

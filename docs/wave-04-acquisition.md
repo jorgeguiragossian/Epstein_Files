@@ -1,0 +1,15 @@
+# Wave 4: dataset 11 acquisition and quality triage
+
+The ten dataset 11 PDFs from the unchanged expansion selection were acquired through official DOJ listing links using normal browser downloads on November 8, 2026. Existing adult-eligibility authorization covered the age prompt. All PDF signatures, SHA-256 hashes and the 64 MiB individual / 512 MiB batch limits were checked. Response headers were not captured or invented.
+
+All ten native extractions succeeded: **17 pages and 591,909 bytes**. Codex visually compared every page with its native UTF-8 extraction using local PDFium contact sheets. This is scoped extraction-quality review, not independent authentication or correspondence-boundary adjudication. The two low-text pages (EFTA02213471 page 2 and EFTA02217241 page 2) contain a publication link and a short closing respectively; their visible text is captured. No OCR was performed.
+
+The three heuristic email-header candidates and 13 current-parser occurrences measure different detection rules. All ten PDFs have parser occurrences, including two calendar alerts; these are not established unique messages. Inline exchanges are missed by the parser. Damaged or displaced header values, redacted senders, narrow wrapping, signatures and disclaimers need explicit boundary review. Native text is retained without silent repairs.
+
+EFTA02215291 needs particular care: a phrase and phone signature visually below the quoted schedule are extracted above the outer header. Some partially redacted schedule text is also missing or unreliable. EFTA02215926 has a damaged quoted header on page 2 and a split forwarded header on page 3. EFTA02213471 loses part of its visible sent date and displaces a sender fragment. These findings must remain visible in subsequent review; page-text density does not establish correct reading order.
+
+No primary dates, identity associations, contact-count claims or summaries were assigned. Alert event dates must be distinguished from sent/document dates. The live viewer remains at **130 PDFs / 1,916 pages**, with its existing date, correspondence and word-cloud data unchanged.
+
+Metadata is tracked in `data/pilot/2026-11-08-wave-04/selection.json`, `downloads.json`, `metrics.json`, `metrics.csv` and `quality-review.json`. Source PDFs, native extraction text, parsed candidates and rendered images remain ignored local caches. Selection status describes planning time; downloads and metrics record actual outcomes. Reconstruct using the existing pilot download/analyze commands with this output directory, using normal browser acquisition if needed. Source bytes must match before accepting prior review evidence.
+
+Across the saved expansion plan, **40 PDFs are acquired/extracted, 30 integrated and 60 remain unprocessed**. Next: review all 13 detected correspondence candidates and visible unenumerated chains, retaining layout issues, before integrating this batch. Primary-date adjudication follows separately. Do not regenerate the saved selection.

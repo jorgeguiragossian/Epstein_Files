@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-08",
+  "method": "Codex visual comparison of all 17 PDF pages with native UTF-8 extraction using PDFium contact sheets. Bounded extraction-quality review, not independent authentication or candidate-boundary adjudication.",
+  "downloaded_files": 10,
+  "bytes": 591909,
+  "pages": 17,
+  "low_text_pages": 2,
+  "native_header_candidates": 3,
+  "parsed_email_occurrences": 13,
+  "parser_version": "email-pilot-1",
+  "date_parser_version": "email-date-2",
+  "unique_messages": null,
+  "ocr_performed": false,
+  "public_site_integrated": false,
+  "files": [
+    {
+      "file_id": "EFTA02212883",
+      "source_sha256": "76566756493787c5c345476fc85747b44320838fe081fd7d1a247afb2e4710f9",
+      "pages": 2,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 1,
+      "parsed_email_occurrences": 2,
+      "visually_inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "inspected_page_text_sha256": {
+        "1": "16c255089c996e507cf9735befd7aab7e68f103b6b99121ae28c92fca85c3803",
+        "2": "d2ce868a33e6e8ada809f431df4753a9253a16266083114a7d37be0d6830e02a"
+      },
+      "notes": "Outer From label and Sent date are damaged in native text. Several inline quoted replies are not separately enumerated. Page 2 continues a disclaimer. Header/boundary review required.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "unreviewed_candidates"
+    },
+    {
+      "file_id": "EFTA02213471",
+      "source_sha256": "fa9b3596f5037197693a73d3db80da772c9d6f11f37402eb49a303345786d017",
+      "pages": 2,
+      "low_text_pdf_pages": [
+        2
+      ],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 1,
+      "visually_inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "inspected_page_text_sha256": {
+        "1": "05421a392269787c9a48e65631aaf4ec3a45c5866dd89d8d686ad24cf68850cd",
+        "2": "f42c8b1706cd1a22b9a37871ab93983acaebc59eaa8b6f4b1efd8242ad2bbb02"
+      },
+      "notes": "Native extraction displaces the sender fragment below Subject and loses part of the visible sent date. Page 2 is a sparse publication link, fully captured; not an observed OCR failure.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "unreviewed_candidates"
+    },
+    {
+      "file_id": "EFTA02213987",
+      "source_sha256": "745f6edc69712c881e47ba11ca60295c3d71dc90f3744aede7dd34939cf38507",
+      "pages": 1,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 1,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "eb4503196e8699dd21779d3a3a3384c6b376d1decbd50d8f97bd48fd91857fd5"
+      },
+      "notes": "Sparse calendar alert. Native recipient string is damaged. Displayed event date is not automatically a sent date. Do not infer identity from an alert label.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "unreviewed_candidates"
+    },
+    {
+      "file_id": "EFTA02214639",
+      "source_sha256": "09732d965fcf4b78163c13e43c74c20e0b10277bcc129071fb6d331bc3fcb518",
+      "pages": 2,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 1,
+      "visually_inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "inspected_page_text_sha256": {
+        "1": "ba7ff63750cae6e69c66ba853269e23f54c2185fe65e61d9df6290412335810e",
+        "2": "dd4c6d661c336fa14df2d3627016de76c73613cfb7f5bc0b8da2112ce21b6a22"
+      },
+      "notes": "Native header values are separated from labels. Inline quoted exchanges and repeated signature blocks need partition review. Page 2 contains a captured service disclaimer.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "unreviewed_candidates"
+    },
+    {
+      "file_id": "EFTA02215291",
+      "source_sha256": "2de410a2ad41a0645c8c34f1a9084acaa0c02ff7c57c0404455130de1fac245a",
+      "pages": 1,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 1,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "a0904879ebc037b122a7db51f493bc6735239253114051a7d480aa10363e83de"
+      },
+      "notes": "Native body-order mismatch: JOJO TO DRIVE YOU and the phone signature are extracted before the outer header though visually below the quoted schedule. Source also has partially redacted schedule text not captured reliably. Preserve native text and review boundaries before integration.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "unreviewed_candidates"
+    },
+    {
+      "file_id": "EFTA02215926",
+      "source_sha256": "39c1309451da241b94ba0bd5d1ae4d08172351bb1d3274130d0418000324f182",
+      "pages": 4,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 1,
+      "parsed_email_occurrences": 2,
+      "visually_inspected_pdf_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "inspected_page_text_sha256": {
+        "1": "618a611a40ebd5231b30f29ffc58acbecccebed76b13323a4798234946eb84ee",
+        "2": "b0f2476911c3c5563757f46a569864eb7b446b40bb35797917e60f9360159829",
+        "3": "b2a4e27311442184a011826d141411e7e982e53c553e35908577cda878689211",
+        "4": "b041bade258fd253bbdba1236dc7af5d792d2d877b9347d240904584ff6c93e1"
+      },
+      "notes": "Four-page chain. Native text damages a quoted header on page 2 and the forwarded header on page 3; narrowing text wrap complicates quote segmentation. Page 4 continues the disclaimer. Parser does not enumerate all visible exchanges.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "unreviewed_candidates"
+    },
+    {
+      "file_id": "EFTA02216544",
+      "source_sha256": "a0acdaf898abeeba81008140546b8b5d287f55dee21495acb718d316fbb1ccb1",
+      "pages": 1,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 1,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "98ca9308e5c82746c9ed05df95ac3c37ebf2bc8adc9d42dad111b720eed40b34"
+      },
+      "notes": "Sparse calendar alert with redacted header values. Event timestamp is distinct from a reviewed document/sent date. No redacted identity reconstruction.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "unreviewed_candidates"
+    },
+    {
+      "file_id": "EFTA02217241",
+      "source_sha256": "657d5c627fef96fc1a0f236d6cd83cf633f631ac1123ebe7c7da73e6dae28b6d",
+      "pages": 2,
+      "low_text_pdf_pages": [
+        2
+      ],
+      "native_header_candidates": 1,
+      "parsed_email_occurrences": 2,
+      "visually_inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "inspected_page_text_sha256": {
+        "1": "a45a6c70fc42c79b5db576a8f4a2b694dcb22b18c434f8590ad248448f6644f9",
+        "2": "98bcac878c555698d6da6b8341e4d8ce54c9f5e8ee4f9a3e1d1ddf682d1cbd93"
+      },
+      "notes": "Outer sent value is displaced below Subject. Inline quoted replies precede a forwarded block. Page 2 is a captured sparse closing. Review quotation boundaries and missing-colon labels.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "unreviewed_candidates"
+    },
+    {
+      "file_id": "EFTA02217799",
+      "source_sha256": "abdc78ec7ad6fb8d6777a3dad13683463b152eab967193b37c5b71101589b55d",
+      "pages": 1,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 1,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "b4a2014fc60ea36411c23dc33199b4f273605055a4ee0628b4b59f62d654b19e"
+      },
+      "notes": "Outer recipient is absent from native header and sent value is displaced. Nested replies/signatures remain in detected body; source comparison is needed before authored-text attribution.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "unreviewed_candidates"
+    },
+    {
+      "file_id": "EFTA02218280",
+      "source_sha256": "87ff44390ddf4c49d55afaee8d3b59dfd26ccda629f796dacbf8f4a019775399",
+      "pages": 1,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 1,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "b149be8d7f51a8259e5321cf304722560ca74405402c4dcf0758bdbc79910f94"
+      },
+      "notes": "Native recipient text is damaged/truncated; sender is redacted. Do not expand partial names or infer identities/relationships. Header layout review required.",
+      "date_review_status": "unreviewed",
+      "correspondence_review_status": "unreviewed_candidates"
+    }
+  ]
+}
