@@ -48,12 +48,22 @@ def load_expansions():
                     or len(extracted['pages']) != metric['page_count']):
                 raise ValueError('Expansion source/extraction validation failed')
             current.append((metric, item, extracted, pdf))
-        script('prepare-header-layers').main(folder)
-        reviewed, _ = script('prepare-wave-boundaries').build_catalog(folder)
-        checked = {r['file_id']: r for r in reviewed['records']}
+        mode = batch.get('review_mode','derived_header_layers_v1')
+        if mode == 'native_correspondence_v1':
+            if 'correspondence-reviews.json' not in batch['evidence_sha256']:
+                raise ValueError('Native correspondence review requires pinned evidence')
+            reviewed, _ = script('check-wave-correspondence').build_catalog(folder)
+        elif mode == 'derived_header_layers_v1':
+            script('prepare-header-layers').main(folder)
+            reviewed, _ = script('prepare-wave-boundaries').build_catalog(folder)
+        else:
+            raise ValueError('Unsupported expansion review mode')
+        checked = {}
+        for record in reviewed['records']:
+            checked.setdefault(record['file_id'], []).append(record)
         for metric, item, extracted, pdf in current:
             key = metric['file_id']
-            candidates = [checked[key]] if key in checked else parse_document(extracted, key, metric['dataset'], metric['sha256'])
+            candidates = checked[key] if key in checked else parse_document(extracted, key, metric['dataset'], metric['sha256'])
             for candidate in candidates:
                 if candidate.get('derived_text_layer'):
                     candidate['native_header_evidence'] = [dict(page=h['page'], line=h['line'],

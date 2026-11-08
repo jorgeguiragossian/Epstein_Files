@@ -15,16 +15,16 @@ def get(path):
 
 def main():
     overview = get('/api/overview')
-    assert overview['documents'] == 110 and overview['pages'] == 1836
+    assert overview['documents'] == 120 and overview['pages'] == 1874
     matches = get('/api/search?q=grand%20jury&dataset=6')
     assert matches['total_documents'] == 11 and matches['total_matching_pages'] == 97
     page = get('/api/documents/EFTA00008529?page=2')
     assert page['page']['number'] == 2 and page['page']['text']
-    assert get('/api/search?quality=review')['total_documents'] == 54
+    assert get('/api/search?quality=review')['total_documents'] == 55
     assert get('/api/search?q=zzznomatchpilot')['total_documents'] == 0
-    assert overview['date_status_counts']=={'dated':45,'uncertain':5,'unreviewed':60}
+    assert overview['date_status_counts']=={'dated':45,'uncertain':5,'unreviewed':70}
     words=get('/api/words')
-    assert (words['eligible_dated_documents'],words['excluded_without_reviewed_date'])==(45,65)
+    assert (words['eligible_dated_documents'],words['excluded_without_reviewed_date'])==(45,75)
     assert get('/api/documents/EFTA00039826')['date_review']['date_type']=='letter'
     assert get('/api/documents/EFTA00008892')['date_review']['date_type']=='presentation'
     assert get('/api/documents/EFTA02212924')['date_review']['primary_date'] is None
@@ -40,7 +40,7 @@ def main():
     assert dated['total_documents']==1 and dated['results'][0]['id']=='EFTA00008529'
     assert get('/api/search?date_status=uncertain')['total_documents']==5
     assert get('/api/search?date_status=undated')['total_documents']==0
-    assert get('/api/search?date_status=unreviewed')['total_documents']==60
+    assert get('/api/search?date_status=unreviewed')['total_documents']==70
     assert get('/api/search?date_from=2014-01-01&date_to=2014-01-01&q=EFTA02730265')['total_documents']==0
     assert get('/api/documents/EFTA00039806')['date_review']['evidence_page']==2
     people=get('/api/people')['people']
@@ -52,7 +52,7 @@ def main():
         current=next(p for p in people if p['id']==old['id'])
         assert all(current[k]>=old[k] for k in ('documents','pages','occurrences'))
     names={p['id']:p for p in people}
-    assert names['ghislaine-maxwell']['documents']==22 and names['ghislaine-maxwell']['pages']==107
+    assert names['ghislaine-maxwell']['documents']==23 and names['ghislaine-maxwell']['pages']==108
     person=get('/api/search?person=ghislaine-maxwell&date_from=2020-06-29&date_to=2020-06-29')
     assert person['total_documents']==3 and {r['id'] for r in person['results']}=={'EFTA00008631','EFTA00008892','EFTA00008920'}
     assert person['results'][0]['matching_pages'][0]==1
@@ -65,8 +65,8 @@ def main():
     assert get('/api/search?person=ken-starr')['total_documents']==4
     email_metadata=json.loads((Path(__file__).resolve().parents[1]/'data/pilot/2026-11-01/email-summary.json').read_text(encoding='utf-8'))
     email_review=get('/api/emails')
-    assert email_review['summary']['candidate_occurrences']==122
-    assert email_review['summary']['source_review']['reviewed_candidates']==48
+    assert email_review['summary']['candidate_occurrences']==163
+    assert email_review['summary']['source_review']['reviewed_candidates']==89
     assert email_review['summary']['unique_messages'] is None
     assert get('/api/emails?filter=repeats')['total_groups']==0
     inline=get('/api/emails?document=EFTA02212905')
@@ -80,6 +80,10 @@ def main():
     assert new_email['derived_text_layer']['kind']=='reviewed_header_labels_v1'
     assert new_email['native_header_evidence'][0]['text']=='Front '
     assert '\n'.join(s['text'] for s in new_email['body_partition']['spans'])==new_email['body']
+    wave=get('/api/emails?document=EFTA00073640')['results']
+    assert any(r['representative']['source_review']['header_status']=='source_order_mismatch' for r in wave)
+    assert get('/api/documents/EFTA00064578?page=6')['date_review']['status']=='unreviewed'
+    assert get('/api/emails')['summary']['body_partitions']['annotated_candidates']==28
     for path, status in [('/api/documents/EFTA00008529?page=0',400),('/README.md',404),('/pdf/../../README.md',404),('/api/search?date_from=2021-02-29',400),('/api/search?date_from=2020-01-01&date_to=2019-01-01',400),('/api/search?person=unknown',400),('/api/emails?filter=invented',400),('/api/emails?document=../../README.md',400),('/api/emails?page=0',400)]:
         try: get(path)
         except HTTPError as exc: assert exc.code == status, (path,exc.code)

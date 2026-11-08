@@ -13,6 +13,19 @@
         "candidate-boundary-reviews.json": "e481c47ea2f6fee161529e59f7c2414d1ac48cf49e7b1fe59b1252a9c2225cb9",
         "date-reviews.json": "a90058dcde7ff1b3d9d8fe70f6a0455f2f3fffcf7b6aa63e259410bfa1206b85"
       }
+    },
+    {
+      "path": "data/pilot/2026-11-08-wave-02",
+      "documents": 10,
+      "review_mode": "native_correspondence_v1",
+      "evidence_sha256": {
+        "selection.json": "d2bd4e3a8c050801713cc2863afe193293cb32ea645215e667a5fc4d7f129906",
+        "downloads.json": "3eaa384676c707d1b08e5fe09902ec84e36834724dd2d4228fc34147ef1b547a",
+        "metrics.json": "9410935c5c692de388a63aee7699097953a12a796fcd147d0d85a0e527579bd2",
+        "correspondence-reviews.json": "62664e07e35fe980cce8ecf732b655e9fd1a79fb6cf709c9ddb68ac8c5f68efe",
+        "quality-review.json": "caacf0e9f6d0d9295005cb02b766ae677fe9c8e1d227fc0a089cdb9c211a1721",
+        "processing-status.json": "ae4d1f3a5080d9df7b8557e7023c5bbdbd262b36af00eca0d9d90d31a64cb09a"
+      }
     }
   ]
 }

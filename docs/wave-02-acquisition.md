@@ -46,3 +46,5 @@ Specific unresolved findings include:
 The validator enforces complete detected-page coverage and body-hash consistency for these 35 new reviews. All 79 offline tests pass. Direct real-cache checks confirmed all 41 native payloads and visible-copy groups unchanged and all 19 partitions reconstruct the exact detected body. No primary dates were assigned, no derived field repairs were applied, and these ten PDFs remain outside the public viewer.
 
 Next milestone: integrate the batch while exposing unresolved findings clearly, with regression checks against the published 110 PDFs. Primary-date review remains a separate step. Keep the public labels clear that reviewed candidates may still have unresolved issues and that parser enumeration is incomplete.
+
+The subsequent [integration milestone](wave-02-integration.md) includes this batch in the public viewer, preserving the review findings and native data. The acquisition/review counts above describe their earlier local milestones.

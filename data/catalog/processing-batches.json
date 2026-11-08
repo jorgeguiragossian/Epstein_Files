@@ -1,6 +1,7 @@
 {
   "schema_version": 1,
   "batches": [
-    "data/pilot/2026-11-07-wave-01"
+    "data/pilot/2026-11-07-wave-01",
+    "data/pilot/2026-11-08-wave-02"
   ]
 }

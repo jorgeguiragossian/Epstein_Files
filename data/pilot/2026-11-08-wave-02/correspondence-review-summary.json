@@ -18,7 +18,7 @@
   },
   "unique_messages": null,
   "contact_rankings_ready": false,
-  "public_site_integration": false,
+  "public_site_integration": true,
   "parser_version": "email-pilot-1",
   "date_parser_version": "email-date-2",
   "scope": "All 41 detected candidates have scoped editorial source reviews. Enumeration remains incomplete; unresolved extraction/header/quote issues are retained. No primary dates or unique messages established."

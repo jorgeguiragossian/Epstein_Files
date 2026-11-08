@@ -5,7 +5,7 @@
   "native_extracted_files": 20,
   "remaining_unprocessed_files": 80,
   "first_wave": "data/pilot/2026-11-07-wave-01",
-  "public_search_documents": 110,
-  "note": "Wave 1 remains published with nine dated PDFs and one uncertain roster. Wave 2: ten dataset 9 PDFs acquired and native-extracted locally; quality triage complete, correspondence and primary-date review pending. Not yet integrated in public viewer. Remaining 80 selected PDFs unprocessed.",
+  "public_search_documents": 120,
+  "note": "Twenty expansion PDFs acquired and native-extracted; both ten-file waves integrated. Wave 2 retains ten unreviewed primary dates and explicit correspondence issues. Remaining 80 selected PDFs unprocessed.",
   "second_wave": "data/pilot/2026-11-08-wave-02"
 }

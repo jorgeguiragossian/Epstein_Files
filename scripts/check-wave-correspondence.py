@@ -82,7 +82,8 @@ def build_catalog(folder):
                    unreviewed_candidates=len(records)-len(seen),body_partitions=len(annotations),
                    header_status_counts=dict(Counter(r['source_review'].get('header_status','unspecified') for r in records if r.get('source_review'))),
                    boundary_status_counts=dict(Counter(r['source_review'].get('boundary_status','unspecified') for r in records if r.get('source_review'))),
-                   unique_messages=None,contact_rankings_ready=False,public_site_integration=False,
+                   unique_messages=None,contact_rankings_ready=False,
+                   public_site_integration=read(folder/'processing-status.json').get('public_search_integration',False) if (folder/'processing-status.json').exists() else False,
                    parser_version=VERSION,date_parser_version=DATE_VERSION,
                    scope=metadata.get('scope','Scoped candidate reviews; native fields and bodies preserved; no primary dates assigned.'))
     return catalog, summary
