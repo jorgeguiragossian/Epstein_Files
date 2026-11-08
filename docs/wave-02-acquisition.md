@@ -11,3 +11,21 @@ The heuristic extraction metric reports 38 email-header candidates; the current 
 Next: inspect candidate boundaries and header alignment against the relevant source pages, preserve native text, and label any justified derived header layer. Then integrate this batch into the viewer with regression checks and review primary dates separately. Do not assume the property deed's recording date is its execution date, or use dates in the exhibit list as its assembly date.
 
 The live site remains at 110 PDFs and 1,836 pages. Across the expansion plan, 20 PDFs are now acquired/extracted, ten are integrated, and 80 remain unprocessed. A fresh clone can reconstruct caches using the existing `scripts/pilot.py download` and `analyze` commands with `--out data/pilot/2026-11-08-wave-02`; browser acquisition may be needed if command-line access is blocked. Compare source bytes before accepting reconstructed review evidence.
+
+## First correspondence review pass
+
+Six outer email candidates, one per correspondence-bearing PDF, now have source-assisted editorial reviews in `correspondence-reviews.json`. Ten individual source pages were inspected (first pages of all six PDFs and second pages of the four multi-page chains). Five candidates have lossless native-body partitions separating authored-text candidates, signatures, header metadata and inline or forwarded quotes where supported. All 41 native candidate payloads remain intact; 35 nested/later candidates remain unreviewed. No derived header correction, identity association, primary-date assignment or public integration was made.
+
+EFTA00073640 needs particular care: a phrase visibly in the outer message body appears at native page 1 line 16, after a nested header. A complete authored-body partition would misrepresent this extraction. That candidate remains flagged with a source-order mismatch and has no body partition. Its page 2 also includes a From label without a colon that the parser misses. Other explicit findings include separated subject/date values in EFTA00059374, damaged subject/attachment text in EFTA00064578, and merged From/To rows in EFTA00079911. None is silently repaired.
+
+Revalidate and materialize the reviewed catalog locally with:
+
+```powershell
+python scripts/check-wave-correspondence.py --out data/pilot/2026-11-08-wave-02
+```
+
+The checker validates PDF/extraction bindings, parser versions, candidate fingerprints, reviewed native-page hashes and exact body reconstruction. It rejects unique-message or contact-count promotion. The local catalog stays under ignored `extractions/`; the summary and evidence metadata are tracked. All 78 offline tests pass, including changed-source, changed-review and native-field preservation checks.
+
+Five initial quality-review page hashes were corrected to use explicit UTF-8 JSON decoding and UTF-8 text hashing rather than Windows default decoding. `quality-review.json` records the affected pages and correction rationale; source PDF and extraction bytes did not change.
+
+Next: review the remaining nested/later candidates and resolve or explicitly retain header-layout issues before public integration. Do not treat the six scoped reviews as whole-chain verification.

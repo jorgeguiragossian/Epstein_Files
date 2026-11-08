@@ -1,0 +1,294 @@
+{
+  "schema_version": 1,
+  "parser_version": "email-pilot-1",
+  "date_parser_version": "email-date-2",
+  "method": "Codex visual comparison of ten individual rendered PDF pages with exact native text line ranges. Same-assistant editorial scope; not independent verification. No new messages, identities or primary dates established.",
+  "reviews": [
+    {
+      "file_id": "EFTA00059374",
+      "source_sha256": "6213c7eb4d2a6119cf93fded1985ba70008a7f659033f633627e940f99333ada",
+      "source_page": 1,
+      "source_line": 1,
+      "visible_fingerprint": "38624b3730ae88e6b17442a4b888bced7539d5c96c9d9bf4ac43250752a0e8a0",
+      "record_id": "8ca70db6bbf457025a1b",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "scope": "Outer candidate header layout and body/quote boundaries only; not whole-chain review, identity verification or authentication",
+      "review_status": "source_assisted_editorial_review",
+      "header_status": "header_values_displaced",
+      "boundary_status": "contains_unseparated_quote",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Header labels are separated from subject/date values: native lines 6 and 7 belong to the source header, not authored body. Native line 8 is the forwarding note, 9-11 signature, and 12-20 a quoted message. Subject native text differs from the visible source; no repair or identity assignment.",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "4a8e46e97b89be76e2f049c3db6c6d57a35aab297686eb768211d00ada1d7afc"
+        }
+      ],
+      "spans": [
+        {
+          "id": "EFTA00059374-outer-span-1",
+          "page": 1,
+          "line_start": 5,
+          "line_end": 7,
+          "kind": "uncertain_header_continuation",
+          "text_sha256": "865319b2aeb500e01343ca43993fb1f83ca159dfa0979051a1d239606189d1e7"
+        },
+        {
+          "id": "EFTA00059374-outer-span-2",
+          "page": 1,
+          "line_start": 8,
+          "line_end": 8,
+          "kind": "authored_text_candidate",
+          "text_sha256": "f7b9829ce83d0d814f6f9c8acbc83b45653ae13d993f6ca7dab8f3f3703ad030"
+        },
+        {
+          "id": "EFTA00059374-outer-span-3",
+          "page": 1,
+          "line_start": 9,
+          "line_end": 11,
+          "kind": "signature",
+          "text_sha256": "5d5806e3f6d9f6f6f81a373e06a992cd7f390f77871d3dbc300a53b69c6702ee"
+        },
+        {
+          "id": "EFTA00059374-outer-span-4",
+          "page": 1,
+          "line_start": 12,
+          "line_end": 20,
+          "kind": "forwarded_quote",
+          "text_sha256": "a6a9beb335748bda827f7c95365b739223a90a9b6eb8206a764b9cf4ce10f329"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00064578",
+      "source_sha256": "30d820ac5d1e0a6d3280259dfc57b398818d59a3f09bb7c0fc8ca334f1d2eb65",
+      "source_page": 1,
+      "source_line": 1,
+      "visible_fingerprint": "88c1f822279b298a348dca2b851975577d696e1ed4c56e0d3261e591b6bba20e",
+      "record_id": "0ead5c50ee685db4fb6e",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "scope": "Outer candidate header layout and body/quote boundaries only; not whole-chain review, identity verification or authentication",
+      "review_status": "source_assisted_editorial_review",
+      "header_status": "header_text_damaged",
+      "boundary_status": "contains_unseparated_quote",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Subject and attachment native text are damaged; participants remain redacted. Native line 5 is attachment metadata, line 6 the outer reply, lines 7-8 an inline quote, and the next explicit header at line 9 is quoted correspondence. PDF page 2 begins with signature continuation before another quoted header; do not attach this continuation to the outer reply.",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "56be1b3a0e280aba257efa70a39e0224c8391ed69a4ab1d70cb46bc5a7809d8f"
+        },
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "22dea0d96453b965d6bd6976e908b2a10d1e6938c8723ee5bfec7e8ae18cd8b8"
+        }
+      ],
+      "spans": [
+        {
+          "id": "EFTA00064578-outer-span-1",
+          "page": 1,
+          "line_start": 5,
+          "line_end": 5,
+          "kind": "uncertain_header_continuation",
+          "text_sha256": "42b1cae352610a21a7e0c62f5bd5bca611fc7a1ae169d7e5602c6cf001639383"
+        },
+        {
+          "id": "EFTA00064578-outer-span-2",
+          "page": 1,
+          "line_start": 6,
+          "line_end": 6,
+          "kind": "authored_text_candidate",
+          "text_sha256": "fd12a0de470b7d9de78f831dc79ca8370208ca6714fdfc0560b16286904713e5"
+        },
+        {
+          "id": "EFTA00064578-outer-span-3",
+          "page": 1,
+          "line_start": 7,
+          "line_end": 8,
+          "kind": "inline_quote",
+          "text_sha256": "622c0c080823e100e09cd2ad8b5382724f9b26a863e20929f4ffcd1f8846ad2e"
+        }
+      ],
+      "following_quoted_candidate_id": "e59efc8b71865b686abc"
+    },
+    {
+      "file_id": "EFTA00067452",
+      "source_sha256": "37fba38d9d9164b7893570bb7d3e261ae527ad3cc6dd253ad084c797ea68a7cc",
+      "source_page": 1,
+      "source_line": 1,
+      "visible_fingerprint": "15bb26f51926da7930fe8b3867e4c006d17b6e7442661e0033a452e762e83ad1",
+      "record_id": "54728ddf10897a5f8ff8",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "scope": "Outer candidate header layout and body/quote boundaries only; not whole-chain review, identity verification or authentication",
+      "review_status": "source_assisted_editorial_review",
+      "header_status": "source_layout_supported",
+      "boundary_status": "supported_segment",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Single visible email segment. Importance at native line 7 is header metadata; 8-20 authored text and 21-25 signature. Source Bcc label is extracted as Bce; redacted sender/recipient identities remain unresolved. No native field repair.",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "3eeccefbe5f13804ca1b45c8ba1b377228ab73ead1922fc34af0c16a1a20b5e5"
+        }
+      ],
+      "spans": [
+        {
+          "id": "EFTA00067452-outer-span-1",
+          "page": 1,
+          "line_start": 7,
+          "line_end": 7,
+          "kind": "uncertain_header_continuation",
+          "text_sha256": "97f355e676d382c3da3f854db4d9b56b60dfd33dfc88abded8cff7c078dd757b"
+        },
+        {
+          "id": "EFTA00067452-outer-span-2",
+          "page": 1,
+          "line_start": 8,
+          "line_end": 20,
+          "kind": "authored_text_candidate",
+          "text_sha256": "7494fe10650d3be2ad35c20f85a9e23bf0d013df8d10e3f9dc26db2436d2e4be"
+        },
+        {
+          "id": "EFTA00067452-outer-span-3",
+          "page": 1,
+          "line_start": 21,
+          "line_end": 25,
+          "kind": "signature",
+          "text_sha256": "eed0c5259e89743f386e2e873aec1e06cbd8de4c82eb2640c5445ca14a49d321"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00073640",
+      "source_sha256": "d480777a8e458fee4d87712fde939211b7ea58521323a239f3d5554bd63cf20e",
+      "source_page": 1,
+      "source_line": 1,
+      "visible_fingerprint": "267958934d9953bd06ba27e4d1ecddc1f908a901fb361f11066b414ee997c66b",
+      "record_id": "8920b18a3658dc01e24b",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "scope": "Outer candidate header layout and body/quote boundaries only; not whole-chain review, identity verification or authentication",
+      "review_status": "source_assisted_editorial_review",
+      "header_status": "source_order_mismatch",
+      "boundary_status": "contains_unseparated_quote",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Source page 1 shows NTW material because it is all impeachment in the outer body, but native extraction places that phrase at line 16 after the next quoted header. Native outer-body lines 6-8 therefore omit visible outer-body material. Top-level To/Cc labels are damaged or omitted. No complete authored-body partition is asserted. Page 2 contains a header continuation at lines 1-3 and a later unrecognized From label at line 27; nested coverage remains incomplete.",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "4c4e76207d9f4d15c58b8a0430b7d3ebb94eb561ba60b4f14162110264f04945"
+        },
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "4e49943536dd744105290d9dd8cad8c07ba4aae9d257ac8cd382c476f2d9f858"
+        }
+      ],
+      "spans": []
+    },
+    {
+      "file_id": "EFTA00079911",
+      "source_sha256": "2a67aded527f736bd7e0789dd05f6381c96f8bbe6a66915e9db3890119e27645",
+      "source_page": 1,
+      "source_line": 1,
+      "visible_fingerprint": "5f0384b619eee0f1ffb9d8fcfbbca1c013ba6f48527be6cba56e54a0296f87a6",
+      "record_id": "e8456a2291e9ebcfde01",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "scope": "Outer candidate header layout and body/quote boundaries only; not whole-chain review, identity verification or authentication",
+      "review_status": "source_assisted_editorial_review",
+      "header_status": "merged_header_labels",
+      "boundary_status": "supported_segment",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Source shows separate From/To rows, merged into native line 1. Native line 4 is the outer reply; next explicit header at line 5 begins quoted correspondence. Page 2 shows continued quoted messages, including a forwarded header. No participant association inferred from merged text.",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "43b07ab7f35fb1f3ece8a23bf7bd52ecf1608452c4d388aec4b69b7529ded2f3"
+        },
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "7c379e6350d77ea3e6ec39a234de04758a41d0a10dc1eb461be51cd1fc7ae561"
+        }
+      ],
+      "spans": [
+        {
+          "id": "EFTA00079911-outer-span-1",
+          "page": 1,
+          "line_start": 4,
+          "line_end": 4,
+          "kind": "authored_text_candidate",
+          "text_sha256": "87b26afd7dde71a1c3998479788d5c3b05acfc11ce9a407ce065dce36136589e"
+        }
+      ],
+      "following_quoted_candidate_id": "b0f74159df1470675f77"
+    },
+    {
+      "file_id": "EFTA00082128",
+      "source_sha256": "560d007b955bb122e73914694c3390832f3abc5b9b9c2e02c2bfd90f1e9a7f0a",
+      "source_page": 1,
+      "source_line": 1,
+      "visible_fingerprint": "5d2ed97fcb542794629cf15ccd5a1315b44a4a9910a97ed201b6f915db8b0a00",
+      "record_id": "2a367e20d5f674d68738",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-08",
+      "scope": "Outer candidate header layout and body/quote boundaries only; not whole-chain review, identity verification or authentication",
+      "review_status": "source_assisted_editorial_review",
+      "header_status": "source_layout_supported",
+      "boundary_status": "supported_segment",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Native line 5 is inline-image metadata; line 6 is the outer reply; lines 7-15 signature and graphic text. The next header at line 16 is quoted correspondence. PDF page 2 starts with signature continuation from a later quoted candidate, not the outer reply. Visible sender name is a source reading only; redacted address ownership is not established.",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "eaa4b339f6a3e683276fb153178245747324a6c18145b8b4cf7a61554bd3afb5"
+        },
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "f5ce63b084762830ec0e4c06288deff7930abffeb44801b3a82dae40d93a6817"
+        }
+      ],
+      "spans": [
+        {
+          "id": "EFTA00082128-outer-span-1",
+          "page": 1,
+          "line_start": 5,
+          "line_end": 5,
+          "kind": "uncertain_header_continuation",
+          "text_sha256": "2c13cdbf9749f4add1c3975b55e095d1062e2f9648600fb0a9f7a8731527cd08"
+        },
+        {
+          "id": "EFTA00082128-outer-span-2",
+          "page": 1,
+          "line_start": 6,
+          "line_end": 6,
+          "kind": "authored_text_candidate",
+          "text_sha256": "5f9a2b795615ba6a3d5455fd5624d773fbca5bcd16249c421fd37411dc9837da"
+        },
+        {
+          "id": "EFTA00082128-outer-span-3",
+          "page": 1,
+          "line_start": 7,
+          "line_end": 15,
+          "kind": "signature",
+          "text_sha256": "482420b330dae1d6d635887d2b4d7d4a6cf93c7162d73900834b6e7c2d447629"
+        }
+      ],
+      "following_quoted_candidate_id": "e4dcd618040351cf48ad"
+    }
+  ]
+}

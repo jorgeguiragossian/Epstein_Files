@@ -39,7 +39,7 @@
         1
       ],
       "inspected_page_text_sha256": {
-        "1": "774ac2c08826c22289c566a3d38d9f97252fb5cf909e9d124502b775ff39c565"
+        "1": "4a8e46e97b89be76e2f049c3db6c6d57a35aab297686eb768211d00ada1d7afc"
       },
       "notes": "Header labels and values are separated in native text. Source page shows subject and sent date in their header rows; review alignment before relying on parsed fields.",
       "date_review_status": "unreviewed",
@@ -59,7 +59,7 @@
         6
       ],
       "inspected_page_text_sha256": {
-        "1": "f3ad1dd1f8971eb84a9eb9bea1bc90281125c40c6b2fd7afc3816fda14b27d37",
+        "1": "56be1b3a0e280aba257efa70a39e0224c8391ed69a4ab1d70cb46bc5a7809d8f",
         "6": "15ad6a1c2ebae19f793d6e73b13a6c660c40d0346aa3b224c2979e2896b1d538"
       },
       "notes": "Email chain with damaged native subject and attachment text. PDF page 6 is a sparse attachment note; both visible sentences and stamp are captured. Low text is expected, not an observed OCR failure.",
@@ -111,7 +111,7 @@
         1
       ],
       "inspected_page_text_sha256": {
-        "1": "d96ab72f75a9f2fbb5a7fbd116e2e709d20ae3dd8d20218618cef85d5b80caf3"
+        "1": "4c4e76207d9f4d15c58b8a0430b7d3ebb94eb561ba60b4f14162110264f04945"
       },
       "notes": "Email chain: damaged top-level To/Cc text and multiple nested messages require source review.",
       "date_review_status": "unreviewed",
@@ -128,7 +128,7 @@
         1
       ],
       "inspected_page_text_sha256": {
-        "1": "57343ccda7cf92a0a481b954f83f12fa38c35c51c5b975931589fe5fd3afbdad"
+        "1": "6669010302a0a4d23e6c48c40df05d830a10c418514b8f7a62f688a7ebebf0cd"
       },
       "notes": "Court order with docket filing date; inspect final order page before assigning a primary date.",
       "date_review_status": "unreviewed",
@@ -162,7 +162,7 @@
         1
       ],
       "inspected_page_text_sha256": {
-        "1": "2ef41c8b9b61abeaae266f6b98d206058a4624161a0f1bc312f0e38ba070e2a1"
+        "1": "43b07ab7f35fb1f3ece8a23bf7bd52ecf1608452c4d388aec4b69b7529ded2f3"
       },
       "notes": "Long email chain with merged top-level From/To native text; inspect candidate boundaries and quotes before interpreting correspondents.",
       "date_review_status": "unreviewed",
@@ -185,5 +185,31 @@
       "date_review_status": "unreviewed",
       "correspondence_review_status": "unreviewed"
     }
-  ]
+  ],
+  "hash_encoding_correction": {
+    "corrected_on": "2026-11-08",
+    "pages": [
+      [
+        "EFTA00059374",
+        1
+      ],
+      [
+        "EFTA00064578",
+        1
+      ],
+      [
+        "EFTA00073640",
+        1
+      ],
+      [
+        "EFTA00075976",
+        1
+      ],
+      [
+        "EFTA00079911",
+        1
+      ]
+    ],
+    "reason": "Initial inspection hashes used the Windows default text decoding. Recomputed explicitly from UTF-8 JSON and UTF-8 page text. Source PDF and native extraction bytes unchanged."
+  }
 }
