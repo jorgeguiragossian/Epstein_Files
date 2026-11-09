@@ -1,0 +1,248 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-08",
+  "scope": "Ten wave 5 PDFs: eight issue/sent dates; photograph and compound file uncertain. No new briefs or native email repairs.",
+  "reviews": [
+    {
+      "file_id": "EFTA02730267",
+      "dataset": 12,
+      "source_sha256": "9d37dd235e09612c7d4a8a5af259eb57487169560c711c2aa6102d6c7ee03b80",
+      "status": "dated",
+      "primary_date": "2022-02-14",
+      "date_type": "report",
+      "precision": "day",
+      "evidence_page": 1,
+      "evidence_quote": "14 February 2022",
+      "notes": "Report issue date in the heading. Template effective date October 1, 2021 and referenced case/event dates are separate; do not use the template date.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "14 February 2022",
+          "native_text_sha256": "650910646e96dffcd47307574971c3b2b8e39d518aa707f789d8eb06f963ca91"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA02731200",
+      "dataset": 12,
+      "source_sha256": "467fce4cef183cba2f5d1757bf7eb2c3cab856ed2a146cdef57c03eb47bc6b6f",
+      "status": "dated",
+      "primary_date": "2020-04-14",
+      "date_type": "report",
+      "precision": "day",
+      "evidence_page": 1,
+      "evidence_quote": "April 14, 2020",
+      "notes": "Memorandum issue date in the first-page heading, not a prosecution outcome or date of every incident discussed. Redactions remain unchanged.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "April 14, 2020",
+          "native_text_sha256": "844a1f8506edc29e3c39331d09c1d840e237f65378d119b819b07507d339b922"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA02731477",
+      "dataset": 12,
+      "source_sha256": "06efab54df1fd59cc262c926513d3aa37f930f7404c6d39371e1c41ed5455e55",
+      "status": "dated",
+      "primary_date": "2023-06-12",
+      "date_type": "email_sent",
+      "precision": "day",
+      "evidence_page": 1,
+      "evidence_quote": "Monday. June 12.2023 1:59 PM",
+      "notes": "Outer Sent row, displaced below native labels. Quoted 1:53 PM message is separate; no native clock or header repair.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "Monday. June 12.2023 1:59 PM",
+          "native_text_sha256": "b8f91f7c713ae95795c6dfb1206d2b946b69a8328ef2a5c22a8e2b425bb6fd6a"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA02731511",
+      "dataset": 12,
+      "source_sha256": "8bd5213ec744bf11a10caed14ba6969ada8810a9008c7d9be3da85204cefbf3c",
+      "status": "dated",
+      "primary_date": "2024-03-07",
+      "date_type": "email_sent",
+      "precision": "day",
+      "evidence_page": 1,
+      "evidence_quote": "Date: Thursday, March 7, 2024 7:10:20 PM",
+      "notes": "Outer Date row. Attachment titles and Year 18 text are not primary dates or proof that attachments were separately acquired.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "Date: Thursday, March 7, 2024 7:10:20 PM",
+          "native_text_sha256": "e22f6f3fec4984bbebcd0869f69e77b9ed93897a34566d319e465714603c1a31"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA02731593",
+      "dataset": 12,
+      "source_sha256": "a1bb8ac1355899cec6ccf17c26e76eafc46ecbcad5a44a83b084f1100a738a38",
+      "status": "dated",
+      "primary_date": "2023-06-22",
+      "date_type": "email_sent",
+      "precision": "day",
+      "evidence_page": 1,
+      "evidence_quote": "Date: Thursday,",
+      "notes": "Outer Date row clearly readable in source, severely damaged and displaced in native text. June 21 inline/quoted timestamps and later pages of earlier messages are distinct; native fields remain unchanged. Source header reading: Thursday, June 22, 2023 8:20:45 AM. No timezone is inferred.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "Date: Thursday,",
+          "native_text_sha256": "f86ae4e15bf097cc0aae05ff820446edc698018d6242e28c271e0a98cb8c949f"
+        }
+      ],
+      "source_date_reading": "Thursday, June 22, 2023 8:20:45 AM"
+    },
+    {
+      "file_id": "EFTA02731646",
+      "dataset": 12,
+      "source_sha256": "47fcd856cb8bddeba354a1d4bf2db244442a2d21b5bfb8a0829e63597a3c8ce7",
+      "status": "dated",
+      "primary_date": "2021-08-24",
+      "date_type": "email_sent",
+      "precision": "day",
+      "evidence_page": 1,
+      "evidence_quote": "Date: Tuesday, August 24, 2021 10:50:11 NI",
+      "notes": "Outer Date row supplies August 24 despite damaged native AM marker. August 17 quoted message and prospective end-of-year contact are separate. No native repair.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "Date: Tuesday, August 24, 2021 10:50:11 NI",
+          "native_text_sha256": "11ffdad81f77a736a88965981b1b87c668eb22d6a4db18a4cd961a42c4f6f454"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA02731708",
+      "dataset": 12,
+      "source_sha256": "98c01c42a5051e5e184cdd20b7fe0db82f3dda2bf6aaea6855ed122fe8576f26",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "EFTA02731708",
+      "notes": "One-page photograph with source stamp only and no visible date. Capture/issue date is not established; do not infer it from adjacent files, image appearance or filename.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "EFTA02731708",
+          "native_text_sha256": "d817add4180a72400016f2c6d87af755548a7f71f3169251b2e9ca1d5577794b"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA02731736",
+      "dataset": 12,
+      "source_sha256": "2adfb89019e64eb23e6fc8f64997e34e56d5338a0ae3b0833d1e8799e55d8b0a",
+      "status": "dated",
+      "primary_date": "2023-06-28",
+      "date_type": "email_sent",
+      "precision": "day",
+      "evidence_page": 1,
+      "evidence_quote": "Wednesday. June 28. 2023 2:",
+      "notes": "Outer Sent calendar day is legible in source despite truncated native clock and displaced values. Quoted June 12 message is separate; no missing clock value is inferred.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "Wednesday. June 28. 2023 2:",
+          "native_text_sha256": "be23e9547b9af9bb052cce06b53949c796db25c10399b123c409074caa845dd0"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA02857524",
+      "dataset": 12,
+      "source_sha256": "e42989c16c2450cbfbdcc535950bb594391c93fea6c3411b5168e0a65ec25bbd",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "May 1, 2007",
+      "notes": "Compound PDF contains original/revised memorandum, addenda, amendment dates and indictment-form material. No assembly/issue date for the entire compound file is established. Do not promote the opening May 1 date, latest amendment or an event/table date to one primary date for all components. See bounded component assessment; this is not full-content review.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "May 1, 2007",
+          "native_text_sha256": "5200e7b9be4e6e0a54a5bbcf524f451745b75aaa4f4d97fbdf1563af625f70e2"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA02858497",
+      "dataset": 12,
+      "source_sha256": "2db62ea826df4daa97dbb0b85f3d2d78bd1402754109412bfcf991138583df88",
+      "status": "dated",
+      "primary_date": "2019-07-08",
+      "date_type": "report",
+      "precision": "day",
+      "evidence_page": 1,
+      "evidence_quote": "Date: 07/08/2019",
+      "notes": "Crisis intake Date row is July 8 in the displayed US context, consistent with received timestamp and Monday reference. Template revision and alleged historic events are separate. This dates the intake report, not its allegations.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "Date: 07/08/2019",
+          "native_text_sha256": "53b8083deb5d42fc5e770b6c87fbb52f8c11054767c26f46363dc2b5427d7e54"
+        }
+      ]
+    }
+  ]
+}

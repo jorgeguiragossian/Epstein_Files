@@ -8,7 +8,7 @@
   "public_search_integration": true,
   "reviewed_candidates": 18,
   "lossless_body_partitions": 16,
-  "document_date_status": "all_unreviewed",
+  "document_date_status": "eight_dated_two_uncertain",
   "remaining_review_items": [
     "Incomplete message enumeration",
     "Compound file has multiple date roles; no single primary date assigned",
