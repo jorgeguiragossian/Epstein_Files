@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-08",
+  "scope": "Ten wave 6 PDFs: nine photographs and one handwritten log retain uncertain primary dates. No new briefs or native email repairs.",
+  "reviews": [
+    {
+      "file_id": "EFTA00000002",
+      "dataset": 1,
+      "source_sha256": "ecc2e2d3d973ff5228afe7d82e5e0f3997bd0e289b809537ae4f0b9632759163",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "EFTA00000002",
+      "notes": "Single-page photograph: no visible capture or issue date is established. Source stamp is an identifier, not a date. Do not infer a date from neighboring files, visual appearance, incidental objects or the separate photographic log.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "EFTA00000002",
+          "native_text_sha256": "a3ce944f14fdc78ce5e8ba139360eb5446e244d0e25316a0e9aada65a2c44578"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00000356",
+      "dataset": 1,
+      "source_sha256": "8b1a400df9716df417449d468052dcbfb4ed38abca43058669ff9076a57fe885",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "EFTA00000356",
+      "notes": "Single-page photograph: no visible capture or issue date is established. Source stamp is an identifier, not a date. Do not infer a date from neighboring files, visual appearance, incidental objects or the separate photographic log.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "EFTA00000356",
+          "native_text_sha256": "ceca18ff0c87d6e851ce1b26dda84a3fb1a49497af91f709d070c5f5e422bd82"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00000708",
+      "dataset": 1,
+      "source_sha256": "bdbb5eeda51aa42783e7a4d65294bda122256bac758f54cd496991fd7eb33078",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "EFTA00000708",
+      "notes": "Single-page photograph: no visible capture or issue date is established. Source stamp is an identifier, not a date. Do not infer a date from neighboring files, visual appearance, incidental objects or the separate photographic log.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "EFTA00000708",
+          "native_text_sha256": "9fb7acac41c34a06d060c3246a8729327d4544d5e6f39bed8b6374b784fa588b"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00001057",
+      "dataset": 1,
+      "source_sha256": "41920d7ee4df4405a86cf5bb9f7c73ede0e4b0787053abfe2138c0e2e1a3dc35",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "EFTA00001057",
+      "notes": "Single-page photograph: no visible capture or issue date is established. Source stamp is an identifier, not a date. Do not infer a date from neighboring files, visual appearance, incidental objects or the separate photographic log.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "EFTA00001057",
+          "native_text_sha256": "f413c1aaff8d8904c35c608eca795d4408364c4b80bc1a3a3cadd54de1d1c3bd"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00001407",
+      "dataset": 1,
+      "source_sha256": "66fe6fbc48de474723a0014df3409f6bbc33c7a0b3b5edebeb8015db495ee75a",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "EFTA00001407",
+      "notes": "Single-page photograph: no visible capture or issue date is established. Source stamp is an identifier, not a date. Do not infer a date from neighboring files, visual appearance, incidental objects or the separate photographic log.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "EFTA00001407",
+          "native_text_sha256": "13ded86e0e0b4fdb3bb49bfe22e1897562ec3d8bec2c82dd263c37909605e1cf"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00001756",
+      "dataset": 1,
+      "source_sha256": "80fc854c5128efa893c488b071af243ffe6e5d07917996243015317d892a77ab",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "EFTA00001756",
+      "notes": "Single-page photograph: no visible capture or issue date is established. Source stamp is an identifier, not a date. Do not infer a date from neighboring files, visual appearance, incidental objects or the separate photographic log.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "EFTA00001756",
+          "native_text_sha256": "5f17a4b517c2dc95c5047effd3dc85a9c4fa3b3559daefed14c5c0d7354b2f7e"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00002109",
+      "dataset": 1,
+      "source_sha256": "595758e779aeeb22d716843078af29f83ad3ad09731619672cddfbb675d63359",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "EFTA00002109",
+      "notes": "Single-page photograph: no visible capture or issue date is established. Source stamp is an identifier, not a date. Do not infer a date from neighboring files, visual appearance, incidental objects or the separate photographic log.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "EFTA00002109",
+          "native_text_sha256": "376ccddb9c0a520ceb7b93126266178ac79aaad0c0ee186007896d1e26c06aca"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00002459",
+      "dataset": 1,
+      "source_sha256": "ca2a3810e1f1df29509f70ef4fe43ea4516e5ef65847d5ee56d9053ff4cbc6d7",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "EFTA00002459",
+      "notes": "Single-page photograph: no visible capture or issue date is established. Source stamp is an identifier, not a date. Do not infer a date from neighboring files, visual appearance, incidental objects or the separate photographic log.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "EFTA00002459",
+          "native_text_sha256": "672d2a2b9295a8c548fb8ae937847be71c4b89659bd654f4e53570f52b9c5ee1"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00002809",
+      "dataset": 1,
+      "source_sha256": "6af7d5c175ff5fffa5419ad5abe1e3b627bb4df9b3d4ece8ef148a542252b277",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "EFTA00002809",
+      "notes": "Single-page photograph: no visible capture or issue date is established. Source stamp is an identifier, not a date. Do not infer a date from neighboring files, visual appearance, incidental objects or the separate photographic log.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "EFTA00002809",
+          "native_text_sha256": "74d2cba8732d25f8648dbd4db2103c5a14d522f08eb90a1f0ca73e54c06fa85b"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00003158",
+      "dataset": 1,
+      "source_sha256": "f2fe0187ae486a74fb3a2c05ace376fc7733f1a8c25240801f54c6ff7a6ce64d",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "EFTA00003158",
+      "notes": "Photographed handwritten log: a numeric handwritten DATE entry is visible, but normalized day/date interpretation and its role as log creation versus photo capture are not established in this scoped review. Native text and local OCR are inadequate for the handwritten field. No provisional date literal is published or promoted, and log row numbers do not establish links to these PDFs. Retain an uncertain primary date pending a dedicated field-level source adjudication.",
+      "review_method": "Codex visual comparison of PDF page 1 with native UTF-8 extraction; same-assistant editorial date assignment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "EFTA00003158",
+          "native_text_sha256": "7fe5a19ccd96f126a7df39afa8a6772447266a23dceca4a67efbc014fcfcd244"
+        }
+      ]
+    }
+  ]
+}

@@ -22,7 +22,7 @@ def main():
     assert page['page']['number'] == 2 and page['page']['text']
     assert get('/api/search?quality=review')['total_documents'] == 69
     assert get('/api/search?q=zzznomatchpilot')['total_documents'] == 0
-    assert overview['date_status_counts']=={'dated':70,'uncertain':20,'unreviewed':70}
+    assert overview['date_status_counts']=={'dated':70,'uncertain':30,'unreviewed':60}
     words=get('/api/words')
     assert (words['eligible_dated_documents'],words['excluded_without_reviewed_date'])==(70,90)
     reporting=get('/api/words?date_basis=reporting_period')
@@ -44,9 +44,9 @@ def main():
     assert get('/api/timeframes?date_from=2017-05-23&date_to=2017-05-23')['selected_documents']==0
     dated=get('/api/search?date_from=2019-06-18&date_to=2019-06-18')
     assert dated['total_documents']==1 and dated['results'][0]['id']=='EFTA00008529'
-    assert get('/api/search?date_status=uncertain')['total_documents']==20
+    assert get('/api/search?date_status=uncertain')['total_documents']==30
     assert get('/api/search?date_status=undated')['total_documents']==0
-    assert get('/api/search?date_status=unreviewed')['total_documents']==70
+    assert get('/api/search?date_status=unreviewed')['total_documents']==60
     assert get('/api/search?date_from=2014-01-01&date_to=2014-01-01&q=EFTA02730265')['total_documents']==0
     assert get('/api/documents/EFTA00039806')['date_review']['evidence_page']==2
     people=get('/api/people')['people']
@@ -126,11 +126,13 @@ def main():
     assert get('/api/documents/EFTA02731708')['date_review']['primary_date'] is None
     assert get('/api/search?q=EFTA02731593&date_from=2023-06-21&date_to=2023-06-21')['total_documents']==0
     photo=get('/api/documents/EFTA00000002')
-    assert photo['page']['text'].strip()=='EFTA00000002' and photo['date_review']['status']=='unreviewed'
+    assert photo['page']['text'].strip()=='EFTA00000002' and photo['date_review']['status']=='uncertain'
     log=get('/api/documents/EFTA00003158')
     assert 'three local Windows OCR passes' in log['source_quality_review']['notes']
     assert 'sample_log_row_literal' not in json.dumps(log) and 'literal_reading' not in json.dumps(log)
     assert get('/api/emails?document=EFTA00003158')['total_groups']==0
+    assert log['date_review']['status']=='uncertain' and log['date_review']['primary_date'] is None
+    assert get('/api/search?q=EFTA00003158&date_from=2019-08-12&date_to=2019-08-12')['total_documents']==0
     for path, status in [('/api/documents/EFTA00008529?page=0',400),('/README.md',404),('/pdf/../../README.md',404),('/api/words?date_basis=unknown',400),('/api/search?date_from=2021-02-29',400),('/api/search?period_from=2021-02-29',400),('/api/search?period_from=2021-01-01&period_to=2020-01-01',400),('/api/search?date_from=2020-01-01&date_to=2019-01-01',400),('/api/search?person=unknown',400),('/api/emails?filter=invented',400),('/api/emails?document=../../README.md',400),('/api/emails?page=0',400)]:
         try: get(path)
         except HTTPError as exc: assert exc.code == status, (path,exc.code)
