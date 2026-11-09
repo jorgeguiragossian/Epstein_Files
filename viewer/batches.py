@@ -67,6 +67,14 @@ def load_expansions():
             reviewed, _ = script('prepare-wave-boundaries').build_catalog(folder)
         else:
             raise ValueError('Unsupported expansion review mode')
+        if batch.get('quality_mode') == 'scoped_component_v1':
+            if not {'quality-review.json','component-layout-review.json'} <= set(batch['evidence_sha256']):
+                raise ValueError('Scoped quality review requires pinned evidence')
+            try:
+                from .source_quality import attach_quality
+            except ImportError:
+                from source_quality import attach_quality
+            attach_quality(current, read(folder/'quality-review.json'), read(folder/'component-layout-review.json'))
         checked = {}
         for record in reviewed['records']:
             checked.setdefault(record['file_id'], []).append(record)

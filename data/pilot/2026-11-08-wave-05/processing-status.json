@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "status": "native_search_with_scoped_correspondence_and_component_reviews",
+  "selected_files": 10,
+  "downloaded_files": 10,
+  "native_extracted_files": 10,
+  "pdf_pages": 254,
+  "public_search_integration": true,
+  "reviewed_candidates": 18,
+  "lossless_body_partitions": 16,
+  "document_date_status": "all_unreviewed",
+  "remaining_review_items": [
+    "Incomplete message enumeration",
+    "Compound file has multiple date roles; no single primary date assigned",
+    "Component assessment is bounded, not full-content review"
+  ]
+}

@@ -264,7 +264,15 @@ async function openDocument(id, page, focus = false) {
       const quality=record.source_quality_review,panel=$('#source-quality');
       panel.className='email-notice';panel.hidden=false;
       panel.append(node('h3','','Source quality review'),node('p','',quality.notes),
-        node('p','evidence-note','Editorial source comparison by Codex, not cell-by-cell financial verification. Native text is preserved. Date-role observations below do not control primary-date filters.'));
+        node('p','evidence-note',quality.review_scope?'Editorial source comparison by Codex; not independent authentication or full-content review. Native text is preserved.':'Editorial source comparison by Codex, not cell-by-cell financial verification. Native text is preserved. Date-role observations below do not control primary-date filters.'));
+      if(quality.review_scope)panel.append(node('p','evidence-note',quality.review_scope));
+      if(quality.component_assessment){
+        const assessment=quality.component_assessment;
+        panel.append(node('h4','','Compound file: bounded assessment'),node('p','',assessment.review_scope));
+        for(const finding of assessment.findings)panel.append(node('p','',`PDF pages ${finding.pdf_pages.join(', ')}: ${finding.finding}`));
+        for(const start of assessment.component_start_observations){const b=node('button','text-button',`Observed ${start.kind.replaceAll('_',' ')}: PDF page ${start.pdf_page}`);b.type='button';b.addEventListener('click',()=>openDocument(id,start.pdf_page));panel.append(b);}
+        panel.append(node('p','evidence-note','Observed starts are not complete component segmentation. No primary date or verified legal status is assigned.'));
+      }
       const roles={application_signature_date:'Application signature date',court_order_signature_date:'Court order signature date',form_version_marker:'Form / version marker',document_year:'Document year',preliminary_print_timestamp:'Preliminary print timestamp',planned_settlement_date:'Planned settlement date',statement_reporting_period:'Statement reporting period',portfolio_as_of_date:'Portfolio as-of date',transaction_reporting_period:'Transaction reporting period',handwritten_date_unresolved:'Handwritten date · unresolved'};
       const details=node('details','evidence');details.append(node('summary','',`Date roles & source evidence (${quality.date_observations.length})`));
       for(const observation of quality.date_observations){
@@ -276,7 +284,7 @@ async function openDocument(id, page, focus = false) {
         const button=node('button','text-button',`View role evidence · PDF page ${observation.pdf_page} ↗`);button.type='button';
         button.addEventListener('click',()=>openDocument(id,observation.pdf_page));section.append(button);details.append(section);
       }
-      panel.append(details);
+      if(quality.date_observations.length)panel.append(details);
     }
     sourceDetail('Email headers', `${record.email_headers} unverified candidates in this file; not unique messages or contacts`);
     sourceDetail('File size', `${(record.bytes / 1048576).toFixed(2)} MiB`);

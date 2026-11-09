@@ -14,7 +14,7 @@
   },
   "unique_messages": null,
   "contact_rankings_ready": false,
-  "public_site_integration": false,
+  "public_site_integration": true,
   "parser_version": "email-pilot-1",
   "date_parser_version": "email-date-2",
   "scope": "All 18 detected occurrences reviewed; visible messages remain unenumerated, especially EFTA02731593 pages 5-11. No native-field repairs, date assignments or identity/contact promotion."

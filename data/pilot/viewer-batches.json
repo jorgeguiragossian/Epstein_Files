@@ -56,6 +56,21 @@
         "processing-status.json": "17cbdd39f92768b38a0752e8d2bf1a1d45c53bc70d3ca3d387acd0dc02862148",
         "date-reviews.json": "c0cd390585991cdfca2a11a133f0339b4f0c609a78928eefbadda2fc78d3fed3"
       }
+    },
+    {
+      "path": "data/pilot/2026-11-08-wave-05",
+      "documents": 10,
+      "review_mode": "native_correspondence_v1",
+      "quality_mode": "scoped_component_v1",
+      "evidence_sha256": {
+        "selection.json": "05f1188031fb44a9ae65e48202964f0f4a9feeac830729436facc483eb56b331",
+        "downloads.json": "fa5cffe82b20fe05c5fc995a5ef5ab62e63bb7139659276d7c6db60e7a8b45d4",
+        "metrics.json": "e03552ac1d10679870737ba4c16bf197faf04a25e8e7c12f44f85a74dece8704",
+        "quality-review.json": "dc6fcc54cf5e98c10c0359e4ab1fdb44797381688df26af3abd007f595cf81ed",
+        "correspondence-reviews.json": "a7b458319028d3e4fb8349ff07a9a3953e50016b90115a39ac16dd1c1c364158",
+        "component-layout-review.json": "4576d7302758ce8ab253154b43abb1454c5b42c7bfde7f25918a285cfacf3ed5",
+        "processing-status.json": "90cbf22d9e35a7c8e1d951788e7df6f12cc656689daca3b5f7d0a514b5b883c6"
+      }
     }
   ]
 }
