@@ -1,0 +1,11 @@
+dataset,file_id,url,status,bytes,sha256,page_count,pages_processed,characters,low_text_pages,zero_text_pages,pages_with_image_xobjects,date_candidate_count,email_header_candidate_count,ocr_review_needed,candidate_document_type,word_tokens,unique_words
+2,EFTA00003160,https://www.justice.gov/epstein/files/DataSet%202/EFTA00003160.pdf,extracted,289948,2b302fdba66c1c8711d4dae8247d1fa57c4e800a91e0b38dde1706bdacd92343,1,1,15,1,0,1,0,0,True,unclassified,0,0
+2,EFTA00003324,https://www.justice.gov/epstein/files/DataSet%202/EFTA00003324.pdf,extracted,341531,6460a3aa30aed806ff5f56b9c2d13cacae2eeda2aadb77ab5c655420d1db03ab,1,1,12,1,0,1,0,0,True,unclassified,0,0
+2,EFTA00003388,https://www.justice.gov/epstein/files/DataSet%202/EFTA00003388.pdf,extracted,1384869,08209ebc2c16effa444d0a43a66ba9a99cc2198baebe4858f67dd0b3f21416b9,1,1,12,1,0,1,0,0,True,unclassified,0,0
+2,EFTA00003458,https://www.justice.gov/epstein/files/DataSet%202/EFTA00003458.pdf,extracted,1158844,f492ca86ca20fe982bc7d608b33d86c409ecb79bd999865aa1949c830d932de4,1,1,12,1,0,1,0,0,True,unclassified,0,0
+2,EFTA00003520,https://www.justice.gov/epstein/files/DataSet%202/EFTA00003520.pdf,extracted,1257647,b29a65fd2d4f4dfbb52932845ab48c8e0853498355bd61c86e6eec02982ea687,1,1,12,1,0,1,0,0,True,unclassified,0,0
+2,EFTA00003601,https://www.justice.gov/epstein/files/DataSet%202/EFTA00003601.pdf,extracted,257388,bbcb7a69c2e8527adf629fa840a5a03ced6ae80174fdd308bb6944142ead61a8,2,2,24,2,0,2,0,0,True,unclassified,0,0
+2,EFTA00003664,https://www.justice.gov/epstein/files/DataSet%202/EFTA00003664.pdf,extracted,1246767,974d28d94e490774aba4ef8ba57720548a9d9474eb2c164b09e25aac459d2d13,1,1,22,1,0,1,0,0,True,unclassified,0,0
+2,EFTA00003726,https://www.justice.gov/epstein/files/DataSet%202/EFTA00003726.pdf,extracted,1262714,c58ccca30d28cc06436cf69eadb802a7899affb6b00e6a19bb4b48d8759d4364,1,1,12,1,0,1,0,0,True,unclassified,0,0
+2,EFTA00003792,https://www.justice.gov/epstein/files/DataSet%202/EFTA00003792.pdf,extracted,1377996,f62830bc396f484862b9094a80bc790dc52a004cc26534279c4dc451b5679e63,1,1,12,1,0,1,0,0,True,unclassified,0,0
+2,EFTA00003857,https://www.justice.gov/epstein/files/DataSet%202/EFTA00003857.pdf,extracted,110107,19508d00678b548ddda1d0b6e830c9fdeeb684ce85705742dded35ae50d43cd1,1,1,12,1,0,1,0,0,True,unclassified,0,0
