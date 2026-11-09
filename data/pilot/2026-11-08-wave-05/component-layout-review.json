@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "file_id": "EFTA02857524",
+  "source_sha256": "e42989c16c2450cbfbdcc535950bb594391c93fea6c3411b5168e0a65ec25bbd",
+  "reviewer": "Codex",
+  "reviewed_on": "2026-11-08",
+  "review_scope": "Bounded component/layout assessment: native-text heading scan across 205 pages and visual comparison of 14 selected PDF pages. Not full-content review, legal authentication or complete component segmentation.",
+  "pdf_pages": 205,
+  "visually_inspected_pdf_pages": [
+    1,
+    32,
+    35,
+    75,
+    76,
+    79,
+    80,
+    132,
+    133,
+    143,
+    144,
+    151,
+    152,
+    205
+  ],
+  "page_evidence": [
+    {
+      "pdf_page": 1,
+      "native_text_sha256": "5200e7b9be4e6e0a54a5bbcf524f451745b75aaa4f4d97fbdf1563af625f70e2"
+    },
+    {
+      "pdf_page": 32,
+      "native_text_sha256": "f4bdddcc8d542754d621af07324fb7fe40f0d8af5d63fae9e5ce554559cdb2a6"
+    },
+    {
+      "pdf_page": 35,
+      "native_text_sha256": "cfd5f526c6f08743a17a973d69d146bf29312d4b0c043d463c1b23d1178cfa2b"
+    },
+    {
+      "pdf_page": 75,
+      "native_text_sha256": "7f44356f2473dfdcaa117a6f16a1e4a8c07eeb87487e32e0334c8aa5d2390b53"
+    },
+    {
+      "pdf_page": 76,
+      "native_text_sha256": "c32d3a4f4285d9eff362183efc98c23a916a3faa4ff85e39351f9be99d2f392e"
+    },
+    {
+      "pdf_page": 79,
+      "native_text_sha256": "d095c09f45d34f816fd01d405253b5ab15f8fa9e27c6f59a6b414cddada872e3"
+    },
+    {
+      "pdf_page": 80,
+      "native_text_sha256": "e78ce3118953a0976cb7f665fbc1b7891654ec7e30affee0cbe3f81944d557ed"
+    },
+    {
+      "pdf_page": 132,
+      "native_text_sha256": "5ab0bdae5b5291ce8c869133a61c9edadfb2ef4f3f9830c60c2cc39e6457fa80"
+    },
+    {
+      "pdf_page": 133,
+      "native_text_sha256": "6f32a8ee97f3b15eff504d945f7f6bf38393984c49ae59d05913a10e1fdd0bd5"
+    },
+    {
+      "pdf_page": 143,
+      "native_text_sha256": "537d37cb06600557c6d985117d64cea3ae3142fe8edfcce9d1965949f2d3857b"
+    },
+    {
+      "pdf_page": 144,
+      "native_text_sha256": "c458aacd8ef87eccec0edae46406f1170785236aebcf578198521482b55a2276"
+    },
+    {
+      "pdf_page": 151,
+      "native_text_sha256": "21e04e3f103ca1e618c08ed953a6f9e50dfafd8dba6bd082ee7acd14633fce71"
+    },
+    {
+      "pdf_page": 152,
+      "native_text_sha256": "cd39bb72a0d5135d390839eca5f3bdf3d2a42bb90c15282dead6f9790b3718d1"
+    },
+    {
+      "pdf_page": 205,
+      "native_text_sha256": "2e176e2b22b69afb770eb9087f3dc522b90220a7f730fbd2371b6543cf330151"
+    }
+  ],
+  "component_start_observations": [
+    {
+      "pdf_page": 1,
+      "kind": "opening_memorandum",
+      "native_quote": "Re: Operation Leap Year",
+      "native_text_sha256": "5200e7b9be4e6e0a54a5bbcf524f451745b75aaa4f4d97fbdf1563af625f70e2",
+      "primary_date_assigned": false
+    },
+    {
+      "pdf_page": 80,
+      "kind": "revised_memorandum",
+      "native_quote": "Re: Operation Leap Year",
+      "native_text_sha256": "e78ce3118953a0976cb7f665fbc1b7891654ec7e30affee0cbe3f81944d557ed",
+      "primary_date_assigned": false
+    },
+    {
+      "pdf_page": 133,
+      "kind": "second_addendum",
+      "native_quote": "Second Addendum",
+      "native_text_sha256": "6f32a8ee97f3b15eff504d945f7f6bf38393984c49ae59d05913a10e1fdd0bd5",
+      "primary_date_assigned": false
+    },
+    {
+      "pdf_page": 144,
+      "kind": "third_supplement",
+      "native_quote": "Third Supplement",
+      "native_text_sha256": "c458aacd8ef87eccec0edae46406f1170785236aebcf578198521482b55a2276",
+      "primary_date_assigned": false
+    },
+    {
+      "pdf_page": 152,
+      "kind": "indictment_form",
+      "native_quote": "INDICTMENT",
+      "native_text_sha256": "cd39bb72a0d5135d390839eca5f3bdf3d2a42bb90c15282dead6f9790b3718d1",
+      "primary_date_assigned": false
+    }
+  ],
+  "findings": [
+    {
+      "pdf_pages": [
+        75,
+        76,
+        79
+      ],
+      "finding": "PDF page 75 is printed page 79 (conclusion), followed by inserted earlier-numbered material: PDF page 76 is printed 41 and PDF page 79 printed 44. Preserve PDF pagination; do not reorder or infer a contiguous original sequence."
+    },
+    {
+      "pdf_pages": [
+        1,
+        80,
+        133,
+        144
+      ],
+      "finding": "Multiple memorandum versions/addenda contain issue, revision and amendment date roles. No single primary day is assigned to the compound PDF in this review."
+    },
+    {
+      "pdf_pages": [
+        35,
+        79
+      ],
+      "finding": "Count/date/offense/defendant tables flatten into native search text. Structured row alignment and transaction/event claims are not validated."
+    },
+    {
+      "pdf_pages": [
+        152,
+        205
+      ],
+      "finding": "Indictment-form opening has an unfilled case-number line; final page shows unfilled signature lines. This inspection does not establish filing, return by a grand jury or adjudicated facts."
+    },
+    {
+      "pdf_pages": [
+        1,
+        32,
+        35,
+        75,
+        76,
+        79,
+        80,
+        132,
+        133,
+        143,
+        144,
+        151,
+        152,
+        205
+      ],
+      "finding": "Redactions and extraction artifacts remain. Do not infer redacted identities, silently normalize text, or treat repeated versions as independent corroboration."
+    }
+  ],
+  "complete_component_segmentation": false,
+  "whole_document_review": false,
+  "primary_date_assigned": false,
+  "native_text_replaced": false,
+  "verified_legal_status": false,
+  "public_site_integrated": false
+}

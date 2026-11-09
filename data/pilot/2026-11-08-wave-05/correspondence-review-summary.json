@@ -1,0 +1,21 @@
+{
+  "candidate_occurrences": 18,
+  "reviewed_candidates": 18,
+  "unreviewed_candidates": 0,
+  "body_partitions": 16,
+  "header_status_counts": {
+    "header_values_displaced": 6,
+    "header_layout_supported": 8,
+    "header_text_damaged": 4
+  },
+  "boundary_status_counts": {
+    "supported_segment": 12,
+    "contains_unseparated_quote": 6
+  },
+  "unique_messages": null,
+  "contact_rankings_ready": false,
+  "public_site_integration": false,
+  "parser_version": "email-pilot-1",
+  "date_parser_version": "email-date-2",
+  "scope": "All 18 detected occurrences reviewed; visible messages remain unenumerated, especially EFTA02731593 pages 5-11. No native-field repairs, date assignments or identity/contact promotion."
+}
