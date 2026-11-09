@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-08",
+  "scope": "Ten wave 7 photograph PDFs retain uncertain primary dates; two have incomplete camera overlays. No new briefs or native email repairs.",
+  "reviews": [
+    {
+      "file_id": "EFTA00003160",
+      "dataset": 2,
+      "source_sha256": "2b302fdba66c1c8711d4dae8247d1fa57c4e800a91e0b38dde1706bdacd92343",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "EFTA00003160",
+      "notes": "Photographic page has no established complete capture/issue date. Source stamp identifies the page, not its date. Do not date the photograph from appearance, neighboring records or PDF/file order.",
+      "review_method": "Codex visual comparison of all cited photograph PDF pages with native UTF-8 extraction; editorial date assessment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "EFTA00003160",
+          "native_text_sha256": "a14f724abd9b674f74526c7e6f50a3b0fdaed966549358cbb301289cedadc759"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00003324",
+      "dataset": 2,
+      "source_sha256": "6460a3aa30aed806ff5f56b9c2d13cacae2eeda2aadb77ab5c655420d1db03ab",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "EFTA00003324",
+      "notes": "Photographic page has no established complete capture/issue date. Source stamp identifies the page, not its date. Do not date the photograph from appearance, neighboring records or PDF/file order.",
+      "review_method": "Codex visual comparison of all cited photograph PDF pages with native UTF-8 extraction; editorial date assessment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "EFTA00003324",
+          "native_text_sha256": "e92b17357d0e2dc274e904b3fb552ab217e4e2c5c927fe18db83ff707b462cf4"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00003388",
+      "dataset": 2,
+      "source_sha256": "08209ebc2c16effa444d0a43a66ba9a99cc2198baebe4858f67dd0b3f21416b9",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "EFTA00003388",
+      "notes": "Photographic page has no established complete capture/issue date. Source stamp identifies the page, not its date. Do not date the photograph from appearance, neighboring records or PDF/file order.",
+      "review_method": "Codex visual comparison of all cited photograph PDF pages with native UTF-8 extraction; editorial date assessment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "EFTA00003388",
+          "native_text_sha256": "8aeae04ef67f34f1c47e0e46d1c857f2ce0567201189dedccefca97c96649b12"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00003458",
+      "dataset": 2,
+      "source_sha256": "f492ca86ca20fe982bc7d608b33d86c409ecb79bd999865aa1949c830d932de4",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "EFTA00003458",
+      "notes": "Photographic page has no established complete capture/issue date. Source stamp identifies the page, not its date. Do not date the photograph from appearance, neighboring records or PDF/file order.",
+      "review_method": "Codex visual comparison of all cited photograph PDF pages with native UTF-8 extraction; editorial date assessment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "EFTA00003458",
+          "native_text_sha256": "02fe62e63c3ed5a06971c2267ee8edca74708672a3cbdb416c0d79bfe6074cb8"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00003520",
+      "dataset": 2,
+      "source_sha256": "b29a65fd2d4f4dfbb52932845ab48c8e0853498355bd61c86e6eec02982ea687",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "EFTA00003520",
+      "notes": "Photographic page has no established complete capture/issue date. Source stamp identifies the page, not its date. Do not date the photograph from appearance, neighboring records or PDF/file order.",
+      "review_method": "Codex visual comparison of all cited photograph PDF pages with native UTF-8 extraction; editorial date assessment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "EFTA00003520",
+          "native_text_sha256": "ca61190a354f1d0e94486f65668542062f1e82dc4982f37c8bf0ce4ef43240e3"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00003601",
+      "dataset": 2,
+      "source_sha256": "bbcb7a69c2e8527adf629fa840a5a03ced6ae80174fdd308bb6944142ead61a8",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "EFTA00003601",
+      "notes": "Both PDF pages inspected. Visually similar image presentations do not establish a capture/issue date, chronology or verified duplicate status. No complete calendar date is established; preserve both pages and their source order.",
+      "review_method": "Codex visual comparison of all cited photograph PDF pages with native UTF-8 extraction; editorial date assessment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "EFTA00003601",
+          "native_text_sha256": "3d4f20e35fc4a0bd0781c74c758cc1f613ec4859901b1a9b3e6a67cdfb3a0f7f"
+        },
+        {
+          "pdf_page": 2,
+          "quote": "EFTA00003602",
+          "native_text_sha256": "4dd3ac7f1744adb65c52f371485e4d8c93c6de7ed5f25df0fc123f1be1fef22c"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00003664",
+      "dataset": 2,
+      "source_sha256": "974d28d94e490774aba4ef8ba57720548a9d9474eb2c164b09e25aac459d2d13",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "EFTA00003664",
+      "notes": "Photographic page has no established complete capture/issue date. Source stamp identifies the page, not its date. Do not date the photograph from appearance, neighboring records or PDF/file order.",
+      "review_method": "Codex visual comparison of all cited photograph PDF pages with native UTF-8 extraction; editorial date assessment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "EFTA00003664",
+          "native_text_sha256": "163a9b654716e061936b831df98d3f1eda4f27049f7da957a93fdde581a04b9b"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00003726",
+      "dataset": 2,
+      "source_sha256": "c58ccca30d28cc06436cf69eadb802a7899affb6b00e6a19bb4b48d8759d4364",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "EFTA00003726",
+      "notes": "Partial camera overlay contains a day-number/time fragment but no complete month/year/calendar date. Native text omits the overlay. Camera clock accuracy and timezone are not established. Do not infer missing date components or assign a primary day from this fragment.",
+      "review_method": "Codex visual comparison of all cited photograph PDF pages with native UTF-8 extraction; editorial date assessment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "EFTA00003726",
+          "native_text_sha256": "8c884c91cd3e35f26c223ad2874b2c64d95281b5810f7c2ae0fc13339e7b3f99"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00003792",
+      "dataset": 2,
+      "source_sha256": "f62830bc396f484862b9094a80bc790dc52a004cc26534279c4dc451b5679e63",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "EFTA00003792",
+      "notes": "Partial camera overlay contains a day-number/time fragment but no complete month/year/calendar date. Native text omits the overlay. Camera clock accuracy and timezone are not established. Do not infer missing date components or assign a primary day from this fragment.",
+      "review_method": "Codex visual comparison of all cited photograph PDF pages with native UTF-8 extraction; editorial date assessment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "EFTA00003792",
+          "native_text_sha256": "d75197698e029899819bea08d1c77b676c9c02feeadfae951221e85b7f32aed0"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00003857",
+      "dataset": 2,
+      "source_sha256": "19508d00678b548ddda1d0b6e830c9fdeeb684ce85705742dded35ae50d43cd1",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "EFTA00003857",
+      "notes": "Photographic page has no established complete capture/issue date. Source stamp identifies the page, not its date. Do not date the photograph from appearance, neighboring records or PDF/file order.",
+      "review_method": "Codex visual comparison of all cited photograph PDF pages with native UTF-8 extraction; editorial date assessment, not independent authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "EFTA00003857",
+          "native_text_sha256": "65ccd14414d80bcbdb0169ce949f780dd6ea5bc89331a5da83155f26150178c5"
+        }
+      ]
+    }
+  ]
+}
