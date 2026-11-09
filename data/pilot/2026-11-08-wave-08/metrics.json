@@ -1,0 +1,3086 @@
+{
+  "updated_at_utc": "2026-11-09T02:57:36.864153+00:00",
+  "method": "pypdf native text only; low-text threshold <80 substantive alphanumeric characters/page, excluding EFTA stamps. Dates and email blocks are unverified candidates, never established document dates or unique messages.",
+  "files": [
+    {
+      "dataset": 3,
+      "file_id": "EFTA00003434",
+      "url": "https://www.justice.gov/epstein/files/DataSet%203/EFTA00003434.pdf",
+      "sha256": "913ab68537d96bbeb2c02b101b704f316e13a2284c27ea14678616edf1815ff8",
+      "bytes": 1223469,
+      "status": "extracted",
+      "pypdf_version": "6.21.4",
+      "page_count": 1,
+      "pages_processed": 1,
+      "characters": 16,
+      "low_text_pages": 1,
+      "zero_text_pages": 0,
+      "pages_with_image_xobjects": 1,
+      "date_candidate_count": 0,
+      "date_candidates": [],
+      "email_header_candidate_count": 0,
+      "candidate_document_type": "unclassified",
+      "document_date": null,
+      "document_date_status": "requires_context_review",
+      "ocr_performed": false,
+      "ocr_review_needed": true,
+      "unique_words": 0,
+      "word_tokens": 0,
+      "page_metrics": [
+        {
+          "page": 1,
+          "characters": 16,
+          "alphanumeric_characters": 13,
+          "substantive_alphanumeric_characters": 1,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        }
+      ],
+      "extraction_path": "extractions/ds03-EFTA00003434.json"
+    },
+    {
+      "dataset": 3,
+      "file_id": "EFTA00003858",
+      "url": "https://www.justice.gov/epstein/files/DataSet%203/EFTA00003858.pdf",
+      "sha256": "f1b6eddeb9ff47c3014cadc873e230dbe30e3865cba3fcc034cfc98a1b51ff02",
+      "bytes": 1129921,
+      "status": "extracted",
+      "pypdf_version": "6.21.4",
+      "page_count": 4,
+      "pages_processed": 4,
+      "characters": 539,
+      "low_text_pages": 3,
+      "zero_text_pages": 0,
+      "pages_with_image_xobjects": 4,
+      "date_candidate_count": 0,
+      "date_candidates": [],
+      "email_header_candidate_count": 0,
+      "candidate_document_type": "unclassified",
+      "document_date": null,
+      "document_date_status": "requires_context_review",
+      "ocr_performed": false,
+      "ocr_review_needed": true,
+      "unique_words": 52,
+      "word_tokens": 58,
+      "page_metrics": [
+        {
+          "page": 1,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 2,
+          "characters": 63,
+          "alphanumeric_characters": 42,
+          "substantive_alphanumeric_characters": 30,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 3,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 4,
+          "characters": 452,
+          "alphanumeric_characters": 339,
+          "substantive_alphanumeric_characters": 327,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        }
+      ],
+      "extraction_path": "extractions/ds03-EFTA00003858.json"
+    },
+    {
+      "dataset": 3,
+      "file_id": "EFTA00003931",
+      "url": "https://www.justice.gov/epstein/files/DataSet%203/EFTA00003931.pdf",
+      "sha256": "c8bf70cfd49c3242afc8002c4280b5f2aa0c7db71bca1bbd6ac402a688280bfc",
+      "bytes": 670593,
+      "status": "extracted",
+      "pypdf_version": "6.21.4",
+      "page_count": 2,
+      "pages_processed": 2,
+      "characters": 66,
+      "low_text_pages": 2,
+      "zero_text_pages": 0,
+      "pages_with_image_xobjects": 2,
+      "date_candidate_count": 0,
+      "date_candidates": [],
+      "email_header_candidate_count": 0,
+      "candidate_document_type": "unclassified",
+      "document_date": null,
+      "document_date_status": "requires_context_review",
+      "ocr_performed": false,
+      "ocr_review_needed": true,
+      "unique_words": 6,
+      "word_tokens": 6,
+      "page_metrics": [
+        {
+          "page": 1,
+          "characters": 54,
+          "alphanumeric_characters": 43,
+          "substantive_alphanumeric_characters": 31,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 2,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        }
+      ],
+      "extraction_path": "extractions/ds03-EFTA00003931.json"
+    },
+    {
+      "dataset": 3,
+      "file_id": "EFTA00004012",
+      "url": "https://www.justice.gov/epstein/files/DataSet%203/EFTA00004012.pdf",
+      "sha256": "5adf1bc0819ab23ca1e2fd5fb73155e0d7f0c8806d8574c0c17fe6658c540839",
+      "bytes": 2869889,
+      "status": "extracted",
+      "pypdf_version": "6.21.4",
+      "page_count": 27,
+      "pages_processed": 27,
+      "characters": 597,
+      "low_text_pages": 27,
+      "zero_text_pages": 0,
+      "pages_with_image_xobjects": 27,
+      "date_candidate_count": 1,
+      "date_candidates": [
+        {
+          "page": 1,
+          "line": 3,
+          "raw": "27.87.08",
+          "role": "unclassified_mention",
+          "validated": false
+        }
+      ],
+      "email_header_candidate_count": 0,
+      "candidate_document_type": "unclassified",
+      "document_date": null,
+      "document_date_status": "requires_context_review",
+      "ocr_performed": false,
+      "ocr_review_needed": true,
+      "unique_words": 11,
+      "word_tokens": 11,
+      "page_metrics": [
+        {
+          "page": 1,
+          "characters": 118,
+          "alphanumeric_characters": 77,
+          "substantive_alphanumeric_characters": 65,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 2,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 3,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 4,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 5,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 6,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 7,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 8,
+          "characters": 18,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 9,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 10,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 11,
+          "characters": 15,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 12,
+          "characters": 29,
+          "alphanumeric_characters": 19,
+          "substantive_alphanumeric_characters": 7,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 13,
+          "characters": 24,
+          "alphanumeric_characters": 14,
+          "substantive_alphanumeric_characters": 2,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 14,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 15,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 16,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 17,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 18,
+          "characters": 16,
+          "alphanumeric_characters": 13,
+          "substantive_alphanumeric_characters": 1,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 19,
+          "characters": 30,
+          "alphanumeric_characters": 18,
+          "substantive_alphanumeric_characters": 6,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 20,
+          "characters": 16,
+          "alphanumeric_characters": 14,
+          "substantive_alphanumeric_characters": 2,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 21,
+          "characters": 115,
+          "alphanumeric_characters": 38,
+          "substantive_alphanumeric_characters": 26,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 22,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 23,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 24,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 25,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 26,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 27,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        }
+      ],
+      "extraction_path": "extractions/ds03-EFTA00004012.json"
+    },
+    {
+      "dataset": 3,
+      "file_id": "EFTA00004060",
+      "url": "https://www.justice.gov/epstein/files/DataSet%203/EFTA00004060.pdf",
+      "sha256": "c51f98989dff7fceed3e4859439bcaae59d2df267dc3899cecebd93c506e2495",
+      "bytes": 1990804,
+      "status": "extracted",
+      "pypdf_version": "6.21.4",
+      "page_count": 4,
+      "pages_processed": 4,
+      "characters": 768,
+      "low_text_pages": 3,
+      "zero_text_pages": 0,
+      "pages_with_image_xobjects": 4,
+      "date_candidate_count": 0,
+      "date_candidates": [],
+      "email_header_candidate_count": 0,
+      "candidate_document_type": "unclassified",
+      "document_date": null,
+      "document_date_status": "requires_context_review",
+      "ocr_performed": false,
+      "ocr_review_needed": true,
+      "unique_words": 84,
+      "word_tokens": 93,
+      "page_metrics": [
+        {
+          "page": 1,
+          "characters": 718,
+          "alphanumeric_characters": 550,
+          "substantive_alphanumeric_characters": 538,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 2,
+          "characters": 16,
+          "alphanumeric_characters": 13,
+          "substantive_alphanumeric_characters": 1,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 3,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 4,
+          "characters": 22,
+          "alphanumeric_characters": 17,
+          "substantive_alphanumeric_characters": 5,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        }
+      ],
+      "extraction_path": "extractions/ds03-EFTA00004060.json"
+    },
+    {
+      "dataset": 3,
+      "file_id": "EFTA00004231",
+      "url": "https://www.justice.gov/epstein/files/DataSet%203/EFTA00004231.pdf",
+      "sha256": "c8fd4649d5434f725917364d3d50d0198e26398257c179860ad9b3e8d5590bf9",
+      "bytes": 455748,
+      "status": "extracted",
+      "pypdf_version": "6.21.4",
+      "page_count": 3,
+      "pages_processed": 3,
+      "characters": 670,
+      "low_text_pages": 2,
+      "zero_text_pages": 0,
+      "pages_with_image_xobjects": 3,
+      "date_candidate_count": 1,
+      "date_candidates": [
+        {
+          "page": 1,
+          "line": 2,
+          "raw": "4-11-03",
+          "role": "unclassified_mention",
+          "validated": false
+        }
+      ],
+      "email_header_candidate_count": 0,
+      "candidate_document_type": "unclassified",
+      "document_date": null,
+      "document_date_status": "requires_context_review",
+      "ocr_performed": false,
+      "ocr_review_needed": true,
+      "unique_words": 56,
+      "word_tokens": 61,
+      "page_metrics": [
+        {
+          "page": 1,
+          "characters": 609,
+          "alphanumeric_characters": 447,
+          "substantive_alphanumeric_characters": 435,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 2,
+          "characters": 49,
+          "alphanumeric_characters": 40,
+          "substantive_alphanumeric_characters": 28,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 3,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        }
+      ],
+      "extraction_path": "extractions/ds03-EFTA00004231.json"
+    },
+    {
+      "dataset": 3,
+      "file_id": "EFTA00004577",
+      "url": "https://www.justice.gov/epstein/files/DataSet%203/EFTA00004577.pdf",
+      "sha256": "35d961a924b72dddfbc9c45292810e40408a7ddca4eda88f79421c6210dbafa2",
+      "bytes": 38574580,
+      "status": "extracted",
+      "pypdf_version": "6.21.4",
+      "page_count": 86,
+      "pages_processed": 86,
+      "characters": 19715,
+      "low_text_pages": 27,
+      "zero_text_pages": 0,
+      "pages_with_image_xobjects": 86,
+      "date_candidate_count": 0,
+      "date_candidates": [],
+      "email_header_candidate_count": 0,
+      "candidate_document_type": "unclassified",
+      "document_date": null,
+      "document_date_status": "requires_context_review",
+      "ocr_performed": false,
+      "ocr_review_needed": true,
+      "unique_words": 155,
+      "word_tokens": 2605,
+      "page_metrics": [
+        {
+          "page": 1,
+          "characters": 167,
+          "alphanumeric_characters": 123,
+          "substantive_alphanumeric_characters": 111,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 2,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 3,
+          "characters": 116,
+          "alphanumeric_characters": 80,
+          "substantive_alphanumeric_characters": 68,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 4,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 5,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 6,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 7,
+          "characters": 123,
+          "alphanumeric_characters": 87,
+          "substantive_alphanumeric_characters": 75,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 8,
+          "characters": 46,
+          "alphanumeric_characters": 38,
+          "substantive_alphanumeric_characters": 26,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 9,
+          "characters": 49,
+          "alphanumeric_characters": 40,
+          "substantive_alphanumeric_characters": 28,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 10,
+          "characters": 18,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 11,
+          "characters": 374,
+          "alphanumeric_characters": 288,
+          "substantive_alphanumeric_characters": 276,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 12,
+          "characters": 383,
+          "alphanumeric_characters": 286,
+          "substantive_alphanumeric_characters": 274,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 13,
+          "characters": 374,
+          "alphanumeric_characters": 285,
+          "substantive_alphanumeric_characters": 273,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 14,
+          "characters": 400,
+          "alphanumeric_characters": 304,
+          "substantive_alphanumeric_characters": 292,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 15,
+          "characters": 311,
+          "alphanumeric_characters": 200,
+          "substantive_alphanumeric_characters": 188,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 16,
+          "characters": 256,
+          "alphanumeric_characters": 164,
+          "substantive_alphanumeric_characters": 152,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 17,
+          "characters": 171,
+          "alphanumeric_characters": 136,
+          "substantive_alphanumeric_characters": 124,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 18,
+          "characters": 62,
+          "alphanumeric_characters": 32,
+          "substantive_alphanumeric_characters": 20,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 19,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 20,
+          "characters": 168,
+          "alphanumeric_characters": 138,
+          "substantive_alphanumeric_characters": 126,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 21,
+          "characters": 101,
+          "alphanumeric_characters": 81,
+          "substantive_alphanumeric_characters": 69,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 22,
+          "characters": 212,
+          "alphanumeric_characters": 157,
+          "substantive_alphanumeric_characters": 145,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 23,
+          "characters": 178,
+          "alphanumeric_characters": 136,
+          "substantive_alphanumeric_characters": 124,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 24,
+          "characters": 178,
+          "alphanumeric_characters": 141,
+          "substantive_alphanumeric_characters": 129,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 25,
+          "characters": 162,
+          "alphanumeric_characters": 128,
+          "substantive_alphanumeric_characters": 116,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 26,
+          "characters": 180,
+          "alphanumeric_characters": 140,
+          "substantive_alphanumeric_characters": 128,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 27,
+          "characters": 184,
+          "alphanumeric_characters": 140,
+          "substantive_alphanumeric_characters": 128,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 28,
+          "characters": 191,
+          "alphanumeric_characters": 148,
+          "substantive_alphanumeric_characters": 136,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 29,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 30,
+          "characters": 349,
+          "alphanumeric_characters": 266,
+          "substantive_alphanumeric_characters": 254,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 31,
+          "characters": 412,
+          "alphanumeric_characters": 304,
+          "substantive_alphanumeric_characters": 292,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 32,
+          "characters": 395,
+          "alphanumeric_characters": 298,
+          "substantive_alphanumeric_characters": 286,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 33,
+          "characters": 397,
+          "alphanumeric_characters": 300,
+          "substantive_alphanumeric_characters": 288,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 34,
+          "characters": 396,
+          "alphanumeric_characters": 295,
+          "substantive_alphanumeric_characters": 283,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 35,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 36,
+          "characters": 398,
+          "alphanumeric_characters": 299,
+          "substantive_alphanumeric_characters": 287,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 37,
+          "characters": 434,
+          "alphanumeric_characters": 310,
+          "substantive_alphanumeric_characters": 298,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 38,
+          "characters": 402,
+          "alphanumeric_characters": 301,
+          "substantive_alphanumeric_characters": 289,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 39,
+          "characters": 467,
+          "alphanumeric_characters": 326,
+          "substantive_alphanumeric_characters": 314,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 40,
+          "characters": 456,
+          "alphanumeric_characters": 349,
+          "substantive_alphanumeric_characters": 337,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 41,
+          "characters": 490,
+          "alphanumeric_characters": 382,
+          "substantive_alphanumeric_characters": 370,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 42,
+          "characters": 564,
+          "alphanumeric_characters": 381,
+          "substantive_alphanumeric_characters": 369,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 43,
+          "characters": 456,
+          "alphanumeric_characters": 371,
+          "substantive_alphanumeric_characters": 359,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 44,
+          "characters": 453,
+          "alphanumeric_characters": 371,
+          "substantive_alphanumeric_characters": 359,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 45,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 46,
+          "characters": 246,
+          "alphanumeric_characters": 185,
+          "substantive_alphanumeric_characters": 173,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 47,
+          "characters": 190,
+          "alphanumeric_characters": 150,
+          "substantive_alphanumeric_characters": 138,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 48,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 49,
+          "characters": 209,
+          "alphanumeric_characters": 153,
+          "substantive_alphanumeric_characters": 141,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 50,
+          "characters": 239,
+          "alphanumeric_characters": 176,
+          "substantive_alphanumeric_characters": 164,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 51,
+          "characters": 94,
+          "alphanumeric_characters": 72,
+          "substantive_alphanumeric_characters": 60,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 52,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 53,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 54,
+          "characters": 309,
+          "alphanumeric_characters": 233,
+          "substantive_alphanumeric_characters": 221,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 55,
+          "characters": 343,
+          "alphanumeric_characters": 268,
+          "substantive_alphanumeric_characters": 256,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 56,
+          "characters": 347,
+          "alphanumeric_characters": 268,
+          "substantive_alphanumeric_characters": 256,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 57,
+          "characters": 362,
+          "alphanumeric_characters": 282,
+          "substantive_alphanumeric_characters": 270,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 58,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 59,
+          "characters": 345,
+          "alphanumeric_characters": 268,
+          "substantive_alphanumeric_characters": 256,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 60,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 61,
+          "characters": 359,
+          "alphanumeric_characters": 277,
+          "substantive_alphanumeric_characters": 265,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 62,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 63,
+          "characters": 430,
+          "alphanumeric_characters": 336,
+          "substantive_alphanumeric_characters": 324,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 64,
+          "characters": 438,
+          "alphanumeric_characters": 338,
+          "substantive_alphanumeric_characters": 326,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 65,
+          "characters": 443,
+          "alphanumeric_characters": 341,
+          "substantive_alphanumeric_characters": 329,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 66,
+          "characters": 429,
+          "alphanumeric_characters": 336,
+          "substantive_alphanumeric_characters": 324,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 67,
+          "characters": 436,
+          "alphanumeric_characters": 341,
+          "substantive_alphanumeric_characters": 329,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 68,
+          "characters": 410,
+          "alphanumeric_characters": 331,
+          "substantive_alphanumeric_characters": 319,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 69,
+          "characters": 416,
+          "alphanumeric_characters": 332,
+          "substantive_alphanumeric_characters": 320,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 70,
+          "characters": 420,
+          "alphanumeric_characters": 331,
+          "substantive_alphanumeric_characters": 319,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 71,
+          "characters": 420,
+          "alphanumeric_characters": 333,
+          "substantive_alphanumeric_characters": 321,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 72,
+          "characters": 299,
+          "alphanumeric_characters": 234,
+          "substantive_alphanumeric_characters": 222,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 73,
+          "characters": 177,
+          "alphanumeric_characters": 141,
+          "substantive_alphanumeric_characters": 129,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 74,
+          "characters": 218,
+          "alphanumeric_characters": 176,
+          "substantive_alphanumeric_characters": 164,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 75,
+          "characters": 212,
+          "alphanumeric_characters": 175,
+          "substantive_alphanumeric_characters": 163,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 76,
+          "characters": 218,
+          "alphanumeric_characters": 168,
+          "substantive_alphanumeric_characters": 156,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 77,
+          "characters": 163,
+          "alphanumeric_characters": 123,
+          "substantive_alphanumeric_characters": 111,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 78,
+          "characters": 108,
+          "alphanumeric_characters": 87,
+          "substantive_alphanumeric_characters": 75,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 79,
+          "characters": 54,
+          "alphanumeric_characters": 42,
+          "substantive_alphanumeric_characters": 30,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 80,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 81,
+          "characters": 165,
+          "alphanumeric_characters": 122,
+          "substantive_alphanumeric_characters": 110,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 82,
+          "characters": 171,
+          "alphanumeric_characters": 127,
+          "substantive_alphanumeric_characters": 115,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 83,
+          "characters": 163,
+          "alphanumeric_characters": 124,
+          "substantive_alphanumeric_characters": 112,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 84,
+          "characters": 165,
+          "alphanumeric_characters": 125,
+          "substantive_alphanumeric_characters": 113,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 85,
+          "characters": 49,
+          "alphanumeric_characters": 40,
+          "substantive_alphanumeric_characters": 28,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 86,
+          "characters": 15,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        }
+      ],
+      "extraction_path": "extractions/ds03-EFTA00004577.json"
+    },
+    {
+      "dataset": 3,
+      "file_id": "EFTA00005091",
+      "url": "https://www.justice.gov/epstein/files/DataSet%203/EFTA00005091.pdf",
+      "sha256": "6dda07399013a01f3b8e6e2a58359512e4120ff62d9188af4e2bd59c6db78835",
+      "bytes": 42601905,
+      "status": "extracted",
+      "pypdf_version": "6.21.4",
+      "page_count": 100,
+      "pages_processed": 100,
+      "characters": 22388,
+      "low_text_pages": 27,
+      "zero_text_pages": 0,
+      "pages_with_image_xobjects": 100,
+      "date_candidate_count": 0,
+      "date_candidates": [],
+      "email_header_candidate_count": 0,
+      "candidate_document_type": "unclassified",
+      "document_date": null,
+      "document_date_status": "requires_context_review",
+      "ocr_performed": false,
+      "ocr_review_needed": true,
+      "unique_words": 112,
+      "word_tokens": 2037,
+      "page_metrics": [
+        {
+          "page": 1,
+          "characters": 332,
+          "alphanumeric_characters": 247,
+          "substantive_alphanumeric_characters": 235,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 2,
+          "characters": 327,
+          "alphanumeric_characters": 226,
+          "substantive_alphanumeric_characters": 214,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 3,
+          "characters": 312,
+          "alphanumeric_characters": 226,
+          "substantive_alphanumeric_characters": 214,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 4,
+          "characters": 302,
+          "alphanumeric_characters": 220,
+          "substantive_alphanumeric_characters": 208,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 5,
+          "characters": 124,
+          "alphanumeric_characters": 96,
+          "substantive_alphanumeric_characters": 84,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 6,
+          "characters": 49,
+          "alphanumeric_characters": 40,
+          "substantive_alphanumeric_characters": 28,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 7,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 8,
+          "characters": 322,
+          "alphanumeric_characters": 233,
+          "substantive_alphanumeric_characters": 221,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 9,
+          "characters": 300,
+          "alphanumeric_characters": 225,
+          "substantive_alphanumeric_characters": 213,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 10,
+          "characters": 217,
+          "alphanumeric_characters": 162,
+          "substantive_alphanumeric_characters": 150,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 11,
+          "characters": 49,
+          "alphanumeric_characters": 40,
+          "substantive_alphanumeric_characters": 28,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 12,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 13,
+          "characters": 298,
+          "alphanumeric_characters": 230,
+          "substantive_alphanumeric_characters": 218,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 14,
+          "characters": 300,
+          "alphanumeric_characters": 224,
+          "substantive_alphanumeric_characters": 212,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 15,
+          "characters": 304,
+          "alphanumeric_characters": 225,
+          "substantive_alphanumeric_characters": 213,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 16,
+          "characters": 91,
+          "alphanumeric_characters": 68,
+          "substantive_alphanumeric_characters": 56,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 17,
+          "characters": 49,
+          "alphanumeric_characters": 40,
+          "substantive_alphanumeric_characters": 28,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 18,
+          "characters": 15,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 19,
+          "characters": 244,
+          "alphanumeric_characters": 195,
+          "substantive_alphanumeric_characters": 183,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 20,
+          "characters": 250,
+          "alphanumeric_characters": 198,
+          "substantive_alphanumeric_characters": 186,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 21,
+          "characters": 302,
+          "alphanumeric_characters": 226,
+          "substantive_alphanumeric_characters": 214,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 22,
+          "characters": 281,
+          "alphanumeric_characters": 216,
+          "substantive_alphanumeric_characters": 204,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 23,
+          "characters": 262,
+          "alphanumeric_characters": 208,
+          "substantive_alphanumeric_characters": 196,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 24,
+          "characters": 194,
+          "alphanumeric_characters": 153,
+          "substantive_alphanumeric_characters": 141,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 25,
+          "characters": 49,
+          "alphanumeric_characters": 40,
+          "substantive_alphanumeric_characters": 28,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 26,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 27,
+          "characters": 213,
+          "alphanumeric_characters": 155,
+          "substantive_alphanumeric_characters": 143,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 28,
+          "characters": 263,
+          "alphanumeric_characters": 192,
+          "substantive_alphanumeric_characters": 180,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 29,
+          "characters": 262,
+          "alphanumeric_characters": 192,
+          "substantive_alphanumeric_characters": 180,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 30,
+          "characters": 265,
+          "alphanumeric_characters": 189,
+          "substantive_alphanumeric_characters": 177,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 31,
+          "characters": 292,
+          "alphanumeric_characters": 198,
+          "substantive_alphanumeric_characters": 186,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 32,
+          "characters": 267,
+          "alphanumeric_characters": 189,
+          "substantive_alphanumeric_characters": 177,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 33,
+          "characters": 49,
+          "alphanumeric_characters": 40,
+          "substantive_alphanumeric_characters": 28,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 34,
+          "characters": 74,
+          "alphanumeric_characters": 52,
+          "substantive_alphanumeric_characters": 40,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 35,
+          "characters": 359,
+          "alphanumeric_characters": 276,
+          "substantive_alphanumeric_characters": 264,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 36,
+          "characters": 372,
+          "alphanumeric_characters": 280,
+          "substantive_alphanumeric_characters": 268,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 37,
+          "characters": 373,
+          "alphanumeric_characters": 275,
+          "substantive_alphanumeric_characters": 263,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 38,
+          "characters": 365,
+          "alphanumeric_characters": 276,
+          "substantive_alphanumeric_characters": 264,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 39,
+          "characters": 369,
+          "alphanumeric_characters": 275,
+          "substantive_alphanumeric_characters": 263,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 40,
+          "characters": 364,
+          "alphanumeric_characters": 275,
+          "substantive_alphanumeric_characters": 263,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 41,
+          "characters": 361,
+          "alphanumeric_characters": 272,
+          "substantive_alphanumeric_characters": 260,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 42,
+          "characters": 375,
+          "alphanumeric_characters": 285,
+          "substantive_alphanumeric_characters": 273,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 43,
+          "characters": 387,
+          "alphanumeric_characters": 295,
+          "substantive_alphanumeric_characters": 283,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 44,
+          "characters": 379,
+          "alphanumeric_characters": 289,
+          "substantive_alphanumeric_characters": 277,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 45,
+          "characters": 388,
+          "alphanumeric_characters": 290,
+          "substantive_alphanumeric_characters": 278,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 46,
+          "characters": 382,
+          "alphanumeric_characters": 290,
+          "substantive_alphanumeric_characters": 278,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 47,
+          "characters": 187,
+          "alphanumeric_characters": 144,
+          "substantive_alphanumeric_characters": 132,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 48,
+          "characters": 382,
+          "alphanumeric_characters": 289,
+          "substantive_alphanumeric_characters": 277,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 49,
+          "characters": 49,
+          "alphanumeric_characters": 40,
+          "substantive_alphanumeric_characters": 28,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 50,
+          "characters": 17,
+          "alphanumeric_characters": 14,
+          "substantive_alphanumeric_characters": 2,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 51,
+          "characters": 15,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 52,
+          "characters": 50,
+          "alphanumeric_characters": 36,
+          "substantive_alphanumeric_characters": 24,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 53,
+          "characters": 256,
+          "alphanumeric_characters": 204,
+          "substantive_alphanumeric_characters": 192,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 54,
+          "characters": 256,
+          "alphanumeric_characters": 207,
+          "substantive_alphanumeric_characters": 195,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 55,
+          "characters": 259,
+          "alphanumeric_characters": 207,
+          "substantive_alphanumeric_characters": 195,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 56,
+          "characters": 109,
+          "alphanumeric_characters": 88,
+          "substantive_alphanumeric_characters": 76,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 57,
+          "characters": 49,
+          "alphanumeric_characters": 40,
+          "substantive_alphanumeric_characters": 28,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 58,
+          "characters": 20,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 59,
+          "characters": 247,
+          "alphanumeric_characters": 120,
+          "substantive_alphanumeric_characters": 108,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 60,
+          "characters": 275,
+          "alphanumeric_characters": 130,
+          "substantive_alphanumeric_characters": 118,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 61,
+          "characters": 304,
+          "alphanumeric_characters": 142,
+          "substantive_alphanumeric_characters": 130,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 62,
+          "characters": 293,
+          "alphanumeric_characters": 132,
+          "substantive_alphanumeric_characters": 120,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 63,
+          "characters": 297,
+          "alphanumeric_characters": 137,
+          "substantive_alphanumeric_characters": 125,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 64,
+          "characters": 281,
+          "alphanumeric_characters": 132,
+          "substantive_alphanumeric_characters": 120,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 65,
+          "characters": 270,
+          "alphanumeric_characters": 130,
+          "substantive_alphanumeric_characters": 118,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 66,
+          "characters": 285,
+          "alphanumeric_characters": 132,
+          "substantive_alphanumeric_characters": 120,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 67,
+          "characters": 272,
+          "alphanumeric_characters": 126,
+          "substantive_alphanumeric_characters": 114,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 68,
+          "characters": 283,
+          "alphanumeric_characters": 129,
+          "substantive_alphanumeric_characters": 117,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 69,
+          "characters": 299,
+          "alphanumeric_characters": 133,
+          "substantive_alphanumeric_characters": 121,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 70,
+          "characters": 229,
+          "alphanumeric_characters": 111,
+          "substantive_alphanumeric_characters": 99,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 71,
+          "characters": 49,
+          "alphanumeric_characters": 40,
+          "substantive_alphanumeric_characters": 28,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 72,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 73,
+          "characters": 260,
+          "alphanumeric_characters": 207,
+          "substantive_alphanumeric_characters": 195,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 74,
+          "characters": 272,
+          "alphanumeric_characters": 209,
+          "substantive_alphanumeric_characters": 197,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 75,
+          "characters": 250,
+          "alphanumeric_characters": 196,
+          "substantive_alphanumeric_characters": 184,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 76,
+          "characters": 49,
+          "alphanumeric_characters": 40,
+          "substantive_alphanumeric_characters": 28,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 77,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 78,
+          "characters": 302,
+          "alphanumeric_characters": 155,
+          "substantive_alphanumeric_characters": 143,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 79,
+          "characters": 271,
+          "alphanumeric_characters": 142,
+          "substantive_alphanumeric_characters": 130,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 80,
+          "characters": 304,
+          "alphanumeric_characters": 157,
+          "substantive_alphanumeric_characters": 145,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 81,
+          "characters": 305,
+          "alphanumeric_characters": 161,
+          "substantive_alphanumeric_characters": 149,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 82,
+          "characters": 49,
+          "alphanumeric_characters": 40,
+          "substantive_alphanumeric_characters": 28,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 83,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 84,
+          "characters": 286,
+          "alphanumeric_characters": 135,
+          "substantive_alphanumeric_characters": 123,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 85,
+          "characters": 276,
+          "alphanumeric_characters": 127,
+          "substantive_alphanumeric_characters": 115,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 86,
+          "characters": 127,
+          "alphanumeric_characters": 64,
+          "substantive_alphanumeric_characters": 52,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 87,
+          "characters": 276,
+          "alphanumeric_characters": 129,
+          "substantive_alphanumeric_characters": 117,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 88,
+          "characters": 279,
+          "alphanumeric_characters": 130,
+          "substantive_alphanumeric_characters": 118,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 89,
+          "characters": 49,
+          "alphanumeric_characters": 40,
+          "substantive_alphanumeric_characters": 28,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 90,
+          "characters": 41,
+          "alphanumeric_characters": 31,
+          "substantive_alphanumeric_characters": 19,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 91,
+          "characters": 288,
+          "alphanumeric_characters": 130,
+          "substantive_alphanumeric_characters": 118,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 92,
+          "characters": 279,
+          "alphanumeric_characters": 122,
+          "substantive_alphanumeric_characters": 110,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 93,
+          "characters": 284,
+          "alphanumeric_characters": 126,
+          "substantive_alphanumeric_characters": 114,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 94,
+          "characters": 252,
+          "alphanumeric_characters": 107,
+          "substantive_alphanumeric_characters": 95,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 95,
+          "characters": 292,
+          "alphanumeric_characters": 122,
+          "substantive_alphanumeric_characters": 110,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 96,
+          "characters": 292,
+          "alphanumeric_characters": 134,
+          "substantive_alphanumeric_characters": 122,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 97,
+          "characters": 268,
+          "alphanumeric_characters": 119,
+          "substantive_alphanumeric_characters": 107,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 98,
+          "characters": 269,
+          "alphanumeric_characters": 117,
+          "substantive_alphanumeric_characters": 105,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 99,
+          "characters": 263,
+          "alphanumeric_characters": 117,
+          "substantive_alphanumeric_characters": 105,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 100,
+          "characters": 268,
+          "alphanumeric_characters": 132,
+          "substantive_alphanumeric_characters": 120,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        }
+      ],
+      "extraction_path": "extractions/ds03-EFTA00005091.json"
+    },
+    {
+      "dataset": 3,
+      "file_id": "EFTA00005536",
+      "url": "https://www.justice.gov/epstein/files/DataSet%203/EFTA00005536.pdf",
+      "sha256": "dd89586bee41592805b562ef6f4405ba1f7de0331b10f9513c76f719894ec905",
+      "bytes": 910103,
+      "status": "extracted",
+      "pypdf_version": "6.21.4",
+      "page_count": 2,
+      "pages_processed": 2,
+      "characters": 67,
+      "low_text_pages": 2,
+      "zero_text_pages": 0,
+      "pages_with_image_xobjects": 2,
+      "date_candidate_count": 0,
+      "date_candidates": [],
+      "email_header_candidate_count": 0,
+      "candidate_document_type": "unclassified",
+      "document_date": null,
+      "document_date_status": "requires_context_review",
+      "ocr_performed": false,
+      "ocr_review_needed": true,
+      "unique_words": 4,
+      "word_tokens": 4,
+      "page_metrics": [
+        {
+          "page": 1,
+          "characters": 46,
+          "alphanumeric_characters": 29,
+          "substantive_alphanumeric_characters": 17,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 2,
+          "characters": 21,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        }
+      ],
+      "extraction_path": "extractions/ds03-EFTA00005536.json"
+    },
+    {
+      "dataset": 3,
+      "file_id": "EFTA00005586",
+      "url": "https://www.justice.gov/epstein/files/DataSet%203/EFTA00005586.pdf",
+      "sha256": "2ca8bfbe49f98b91cb43f0a230b21f7a16d05374ae69d92204f77a72da634a84",
+      "bytes": 579117,
+      "status": "extracted",
+      "pypdf_version": "6.21.4",
+      "page_count": 119,
+      "pages_processed": 119,
+      "characters": 3213,
+      "low_text_pages": 119,
+      "zero_text_pages": 0,
+      "pages_with_image_xobjects": 119,
+      "date_candidate_count": 0,
+      "date_candidates": [],
+      "email_header_candidate_count": 0,
+      "candidate_document_type": "unclassified",
+      "document_date": null,
+      "document_date_status": "requires_context_review",
+      "ocr_performed": false,
+      "ocr_review_needed": true,
+      "unique_words": 2,
+      "word_tokens": 238,
+      "page_metrics": [
+        {
+          "page": 1,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 2,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 3,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 4,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 5,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 6,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 7,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 8,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 9,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 10,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 11,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 12,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 13,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 14,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 15,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 16,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 17,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 18,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 19,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 20,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 21,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 22,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 23,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 24,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 25,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 26,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 27,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 28,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 29,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 30,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 31,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 32,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 33,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 34,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 35,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 36,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 37,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 38,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 39,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 40,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 41,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 42,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 43,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 44,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 45,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 46,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 47,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 48,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 49,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 50,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 51,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 52,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 53,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 54,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 55,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 56,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 57,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 58,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 59,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 60,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 61,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 62,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 63,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 64,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 65,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 66,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 67,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 68,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 69,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 70,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 71,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 72,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 73,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 74,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 75,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 76,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 77,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 78,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 79,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 80,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 81,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 82,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 83,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 84,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 85,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 86,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 87,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 88,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 89,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 90,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 91,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 92,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 93,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 94,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 95,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 96,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 97,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 98,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 99,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 100,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 101,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 102,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 103,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 104,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 105,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 106,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 107,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 108,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 109,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 110,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 111,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 112,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 113,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 114,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 115,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 116,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 117,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 118,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 119,
+          "characters": 27,
+          "alphanumeric_characters": 23,
+          "substantive_alphanumeric_characters": 11,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        }
+      ],
+      "extraction_path": "extractions/ds03-EFTA00005586.json"
+    }
+  ]
+}
