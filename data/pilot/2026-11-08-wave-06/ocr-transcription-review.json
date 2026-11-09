@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-08",
+  "reviewer": "Codex",
+  "file_id": "EFTA00003158",
+  "dataset": 1,
+  "source_sha256": "f2fe0187ae486a74fb3a2c05ace376fc7733f1a8c25240801f54c6ff7a6ce64d",
+  "native_extraction_sha256": "5a071cde28480f7327f24b9347fa18eace16d44e51999694006fe0ac9d018ece",
+  "method": "Local Windows.Media.Ocr en-US on PDFium scale-3 full page and two focused crops, compared visually by Codex. Same-assistant provisional readings, not independent verification; no external service.",
+  "ocr_attempts": [
+    {
+      "pdf_page": 1,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/page-1-full.png",
+      "image_sha256": "7d5e1dffe43a1ea84ab74cc1ccca6acc78d4d92b9aa835c54e27d05a43497897",
+      "result_path": "extractions/ocr-review/page-1-full.json",
+      "result_sha256": "0e63c4e37d09b633649b8df1e5549c60cfe62e699717a0a53d1c75c05637814f",
+      "recognized_lines": 8,
+      "recognized_characters": 139,
+      "crop_pixels_on_rotated_full_render": null,
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    },
+    {
+      "pdf_page": 1,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/page-1-header.png",
+      "image_sha256": "05148c75288e342c2186c62636c54f61b2a57eafa4d1aadd330bb3b0a8974bc6",
+      "result_path": "extractions/ocr-review/page-1-header.json",
+      "result_sha256": "184016ec6cc402c438f1d088f4c3b72297ffa752bcb4b81a76a201dfdcbc4063",
+      "recognized_lines": 3,
+      "recognized_characters": 44,
+      "crop_pixels_on_rotated_full_render": [
+        240,
+        400,
+        1700,
+        710
+      ],
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    },
+    {
+      "pdf_page": 1,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/page-1-rows.png",
+      "image_sha256": "445f0dbc5ff8f3d7b30d3b3221d5ee67378c5dcb8bbba877f5cea0cce51aa4b4",
+      "result_path": "extractions/ocr-review/page-1-rows.json",
+      "result_sha256": "c07dda334b2a4454ba8f5830ab2090fdace62f2c3ac176575519d4ac0df767b9",
+      "recognized_lines": 2,
+      "recognized_characters": 63,
+      "crop_pixels_on_rotated_full_render": [
+        240,
+        710,
+        1690,
+        1600
+      ],
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    }
+  ],
+  "page_findings": [
+    {
+      "pdf_page": 1,
+      "native_text_sha256": "7fe5a19ccd96f126a7df39afa8a6772447266a23dceca4a67efbc014fcfcd244",
+      "finding": "Native extraction and three OCR attempts miss most handwritten rows. Density threshold is not recognition accuracy. Two sampled row literals are separate provisional readings, not full-table correction."
+    }
+  ],
+  "eligibility": {
+    "primary_date_assignment": false,
+    "verified_transactions": false,
+    "identity_inference": false,
+    "native_text_replacement": false,
+    "photo_id_association": false
+  },
+  "transcription_layer": {
+    "local_path": "extractions/ocr-review/editorial-readings.json",
+    "sha256": "3c8a77b5f43ea5f54f0ab1745c267a448f51fbebd46b75d542a38050dbc7716d"
+  },
+  "reviewed_fields": [
+    {
+      "id": "first-log-row",
+      "pdf_page": 1,
+      "kind": "sample_log_row_literal",
+      "status": "provisional_source_assisted_not_independently_verified",
+      "image_path": "extractions/ocr-review/page-1-full.png",
+      "region_pixels": [
+        260,
+        740,
+        730,
+        800
+      ],
+      "literal_sha256": "3655f2801bfb6cad915a8e9144e5159fbd61872d8feffd81df69473fa50d2700"
+    },
+    {
+      "id": "last-log-row",
+      "pdf_page": 1,
+      "kind": "sample_log_row_literal",
+      "status": "provisional_source_assisted_not_independently_verified",
+      "image_path": "extractions/ocr-review/page-1-full.png",
+      "region_pixels": [
+        260,
+        1525,
+        750,
+        1585
+      ],
+      "literal_sha256": "fa054e8467ef51ecd533fd8fb706289ff3ea4c86e4895fc472b52588b18e3f7f"
+    }
+  ],
+  "ocr_improvement_accepted": false,
+  "independent_verification": false,
+  "remaining_uncertainties": [
+    "Date role and normalized primary day unadjudicated",
+    "Full row transcription and ambiguous numerals not validated",
+    "Log photo numbers are not established mappings to EFTA PDF identifiers",
+    "Location/ownership/identity not independently verified"
+  ],
+  "publication": "Images, OCR outputs and provisional literals remain ignored local caches; tracked metadata contains hashes, regions, scope and findings only."
+}

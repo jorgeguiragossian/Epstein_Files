@@ -13,3 +13,19 @@ Tracked metadata lives in `data/pilot/2026-11-08-wave-06/selection.json`, `downl
 The live site remains unchanged at **150 PDFs / 2,187 pages**, with 70 dated, 20 uncertain and 60 unreviewed PDFs. Across the expansion plan, **60 PDFs are acquired/extracted, 50 integrated and 40 unprocessed**. Do not regenerate the saved selection.
 
 Next: locally assess OCR/transcription of EFTA00003158 against its source, retaining native text and explicit handwriting uncertainty, then integrate this photograph-heavy batch with source-quality notices. Primary-date review remains separate; do not infer dates or locations from neighboring files or image appearance.
+
+## Handwritten-log OCR assessment completed
+
+EFTA00003158 PDF page 1 was rendered locally with PDFium at scale 3 (1,785 by 2,649 pixels). The existing Windows.Media.Ocr en-US helper ran on the full page and two focused crops: header `[240,400,1700,710]`, rows `[240,710,1690,1600]`. Full-page OCR returned eight lines / 139 characters; header crop three lines / 44 characters; row crop two lines / 63 characters. These are output volumes, not recognition-accuracy measurements.
+
+Source comparison confirms the engine mostly reads printed labels and misses the handwritten table. **No OCR improvement is accepted for native-text replacement.** Codex separately saved two clear sample row literals in an ignored provisional editorial layer. They are not independently verified, do not constitute a complete log transcription and do not establish links between log photo numbers and EFTA PDF identifiers. The handwritten date, normalized primary day, complete row alignment and ambiguous numerals remain unadjudicated. Redacted preparer information is not reconstructed.
+
+`ocr-transcription-review.json` records exact PDF/native/image/result/literal hashes, source regions, scope and disabled eligibility flags. Full-page/crop images, raw OCR word boxes and provisional literal readings remain under ignored `extractions/ocr-review/`. They are not public and do not change native text, primary dates, identity/location findings or photo associations.
+
+The existing checker validates all bindings, source regions and unchanged native extraction:
+
+```powershell
+python scripts/check-ocr-review.py --out data/pilot/2026-11-08-wave-06
+```
+
+All 94 offline tests pass. Repeat OCR only with explicit source re-review; new results/timestamps must not automatically renew prior evidence. Next: integrate the ten native PDFs with notices distinguishing image-only sparse text from the handwritten log's inadequate extraction. Keep provisional OCR/editorial caches local. Primary-date adjudication remains separate.
