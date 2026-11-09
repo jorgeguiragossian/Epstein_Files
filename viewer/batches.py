@@ -53,6 +53,16 @@ def load_expansions():
             if 'correspondence-reviews.json' not in batch['evidence_sha256']:
                 raise ValueError('Native correspondence review requires pinned evidence')
             reviewed, _ = script('check-wave-correspondence').build_catalog(folder)
+        elif mode == 'native_quality_v1':
+            if not {'quality-review.json','ocr-transcription-review.json'} <= set(batch['evidence_sha256']):
+                raise ValueError('Native quality review requires pinned evidence')
+            script('check-ocr-review').validate(folder)
+            try:
+                from .source_quality import attach_quality
+            except ImportError:
+                from source_quality import attach_quality
+            attach_quality(current, read(folder/'quality-review.json'))
+            reviewed = dict(records=[])
         elif mode == 'native_layout_review_v1':
             if 'table-date-role-reviews.json' not in batch['evidence_sha256']:
                 raise ValueError('Native layout review requires pinned evidence')

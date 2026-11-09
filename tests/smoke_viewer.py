@@ -15,18 +15,18 @@ def get(path):
 
 def main():
     overview = get('/api/overview')
-    assert overview['documents'] == 150 and overview['pages'] == 2187
+    assert overview['documents'] == 160 and overview['pages'] == 2197
     matches = get('/api/search?q=grand%20jury&dataset=6')
     assert matches['total_documents'] == 11 and matches['total_matching_pages'] == 97
     page = get('/api/documents/EFTA00008529?page=2')
     assert page['page']['number'] == 2 and page['page']['text']
-    assert get('/api/search?quality=review')['total_documents'] == 60
+    assert get('/api/search?quality=review')['total_documents'] == 69
     assert get('/api/search?q=zzznomatchpilot')['total_documents'] == 0
-    assert overview['date_status_counts']=={'dated':70,'uncertain':20,'unreviewed':60}
+    assert overview['date_status_counts']=={'dated':70,'uncertain':20,'unreviewed':70}
     words=get('/api/words')
-    assert (words['eligible_dated_documents'],words['excluded_without_reviewed_date'])==(70,80)
+    assert (words['eligible_dated_documents'],words['excluded_without_reviewed_date'])==(70,90)
     reporting=get('/api/words?date_basis=reporting_period')
-    assert (reporting['eligible_reporting_period_documents'],reporting['excluded_without_reviewed_period'],reporting['selected_documents'])==(6,144,6)
+    assert (reporting['eligible_reporting_period_documents'],reporting['excluded_without_reviewed_period'],reporting['selected_documents'])==(6,154,6)
     selected=get('/api/words?date_basis=reporting_period&date_from=2015-11-30&date_to=2015-11-30')
     assert (selected['selected_documents'],selected['selected_pages'])==(1,2)
     assert all(s['file_id']=='EFTA01280951' for term in selected['terms'] for s in term['sources'])
@@ -46,7 +46,7 @@ def main():
     assert dated['total_documents']==1 and dated['results'][0]['id']=='EFTA00008529'
     assert get('/api/search?date_status=uncertain')['total_documents']==20
     assert get('/api/search?date_status=undated')['total_documents']==0
-    assert get('/api/search?date_status=unreviewed')['total_documents']==60
+    assert get('/api/search?date_status=unreviewed')['total_documents']==70
     assert get('/api/search?date_from=2014-01-01&date_to=2014-01-01&q=EFTA02730265')['total_documents']==0
     assert get('/api/documents/EFTA00039806')['date_review']['evidence_page']==2
     people=get('/api/people')['people']
@@ -125,6 +125,12 @@ def main():
     assert get('/api/documents/EFTA02857524')['date_review']['status']=='uncertain'
     assert get('/api/documents/EFTA02731708')['date_review']['primary_date'] is None
     assert get('/api/search?q=EFTA02731593&date_from=2023-06-21&date_to=2023-06-21')['total_documents']==0
+    photo=get('/api/documents/EFTA00000002')
+    assert photo['page']['text'].strip()=='EFTA00000002' and photo['date_review']['status']=='unreviewed'
+    log=get('/api/documents/EFTA00003158')
+    assert 'three local Windows OCR passes' in log['source_quality_review']['notes']
+    assert 'sample_log_row_literal' not in json.dumps(log) and 'literal_reading' not in json.dumps(log)
+    assert get('/api/emails?document=EFTA00003158')['total_groups']==0
     for path, status in [('/api/documents/EFTA00008529?page=0',400),('/README.md',404),('/pdf/../../README.md',404),('/api/words?date_basis=unknown',400),('/api/search?date_from=2021-02-29',400),('/api/search?period_from=2021-02-29',400),('/api/search?period_from=2021-01-01&period_to=2020-01-01',400),('/api/search?date_from=2020-01-01&date_to=2019-01-01',400),('/api/search?person=unknown',400),('/api/emails?filter=invented',400),('/api/emails?document=../../README.md',400),('/api/emails?page=0',400)]:
         try: get(path)
         except HTTPError as exc: assert exc.code == status, (path,exc.code)

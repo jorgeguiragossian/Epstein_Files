@@ -2,13 +2,13 @@
 import hashlib
 
 
-def attach_quality(prepared, quality, component):
+def attach_quality(prepared, quality, component=None):
     rows = {r['file_id']: r for r in quality['files']}
     if len(rows) != len(quality['files']) or set(rows) != {m['file_id'] for m, _, _, _ in prepared}:
         raise ValueError('Quality review document coverage changed')
-    if component['file_id'] not in rows or any(component.get(k) for k in
+    if component is not None and (component['file_id'] not in rows or any(component.get(k) for k in
             ('whole_document_review', 'complete_component_segmentation', 'primary_date_assigned',
-             'native_text_replaced', 'verified_legal_status')):
+             'native_text_replaced', 'verified_legal_status'))):
         raise ValueError('Unsupported component review promotion')
     for metric, _, extracted, _ in prepared:
         row = rows[metric['file_id']]
@@ -24,7 +24,7 @@ def attach_quality(prepared, quality, component):
         review = dict(file_id=metric['file_id'], source_sha256=metric['sha256'], notes='Initial acquisition triage: ' + row['notes'],
                       review_scope='Initial acquisition scope: ' + quality['method'], date_observations=[],
                       inspected_pdf_pages=row['visually_inspected_pdf_pages'])
-        if metric['file_id'] == component['file_id']:
+        if component is not None and metric['file_id'] == component['file_id']:
             if component['source_sha256'] != metric['sha256'] or component['pdf_pages'] != len(pages):
                 raise ValueError('Component review source changed')
             evidence = component['page_evidence']

@@ -208,7 +208,7 @@
       "inspected_page_text_sha256": {
         "1": "7fe5a19ccd96f126a7df39afa8a6772447266a23dceca4a67efbc014fcfcd244"
       },
-      "notes": "Photograph of handwritten photographic log/form. Substantial handwritten date/location/row descriptions are poorly captured in native text despite passing the density threshold. Source-assisted OCR/transcription and row-alignment review required before using fields. No primary date, location, linked-photo correspondence or corrected native text assigned.",
+      "notes": "Photograph of handwritten photographic log/form. Substantial handwritten date/location/row descriptions are poorly captured in native text despite passing the density threshold. Source-assisted OCR/transcription and row-alignment review required before using fields. No primary date, location, linked-photo correspondence or corrected native text assigned. Follow-up: three local Windows OCR passes were inadequate for handwriting; no replacement was accepted. Provisional sample readings remain local and are excluded from public text/search. Date, full-table transcription and photo-number associations remain unresolved.",
       "content_kind": "photographed_handwritten_log",
       "source_assisted_ocr_review_needed": true,
       "date_review_status": "unreviewed"

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "status": "native_search_with_scoped_image_log_quality_notices",
+  "selected_files": 10,
+  "downloaded_files": 10,
+  "native_extracted_files": 10,
+  "pdf_pages": 10,
+  "public_search_integration": true,
+  "parsed_email_occurrences": 0,
+  "document_date_status": "all_unreviewed",
+  "ocr_native_replacement": false,
+  "provisional_readings_public": false,
+  "remaining_review_items": [
+    "Handwritten log date and full-table content unresolved",
+    "Photographs not dated from adjacent files or appearance",
+    "Incidental signs/labels not comprehensively transcribed"
+  ]
+}

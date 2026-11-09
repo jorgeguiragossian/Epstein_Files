@@ -17,6 +17,10 @@ class SourceQualityTests(unittest.TestCase):
         attach_quality(prepared,quality,component)
         self.assertEqual(prepared[0][0]['source_quality_review']['component_assessment'],component)
         self.assertEqual(prepared[0][0]['source_quality_review']['date_observations'],[])
+        photo_prepared=copy.deepcopy(prepared)
+        attach_quality(photo_prepared,quality)
+        self.assertNotIn('component_assessment',photo_prepared[0][0]['source_quality_review'])
+        self.assertEqual(photo_prepared[0][0]['source_quality_review']['date_observations'],[])
         for change in ({'source_sha256':'changed'},{'whole_document_review':True},
                        {'primary_date_assigned':True},{'verified_legal_status':True},
                        {'page_evidence':[dict(pdf_page=1,native_text_sha256='changed')]},

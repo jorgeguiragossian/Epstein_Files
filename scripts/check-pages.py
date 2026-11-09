@@ -27,6 +27,7 @@ paths+=['/api/search?dataset=11','/api/emails?document=EFTA02215291&filter=bound
 paths+=['/api/documents/EFTA02213471','/api/search?q=EFTA02213987&date_status=uncertain','/api/search?q=EFTA02215291&date_from=2017-06-15&date_to=2017-06-15','/api/timeframes?dataset=11&date_from=2017-05-01&date_to=2017-07-31','/api/words?dataset=11&date_from=2017-05-19&date_to=2017-05-19']
 paths+=['/api/documents/EFTA02857524?page=80','/api/documents/EFTA02731708','/api/emails?document=EFTA02731593&filter=boundary','/api/emails?document=EFTA02731511','/api/search?dataset=12&date_status=unreviewed']
 paths+=['/api/documents/EFTA02731593','/api/search?q=EFTA02857524&date_status=uncertain','/api/search?q=EFTA02731593&date_from=2023-06-21&date_to=2023-06-21','/api/timeframes?dataset=12&date_from=2023-06-22&date_to=2023-06-22','/api/words?dataset=12&date_from=2023-06-22&date_to=2023-06-22']
+paths+=['/api/documents/EFTA00000002','/api/documents/EFTA00003158','/api/emails?document=EFTA00003158','/api/search?dataset=1&quality=review','/api/search?q=EFTA00003158&date_status=unreviewed']
 for path in paths:
     url=urlsplit(path);q={k:v[0] for k,v in parse_qs(url.query).items()}
     if url.path=='/api/overview':result=catalog.overview()
