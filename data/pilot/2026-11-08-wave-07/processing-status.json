@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "status": "native_search_with_scoped_photograph_quality_notices",
+  "selected_files": 10,
+  "downloaded_files": 10,
+  "native_extracted_files": 10,
+  "pdf_pages": 11,
+  "public_search_integration": true,
+  "parsed_email_occurrences": 0,
+  "document_date_status": "all_unreviewed",
+  "ocr_performed": false,
+  "remaining_review_items": [
+    "No complete capture/issue dates established",
+    "Partial camera day/time overlays lack month/year",
+    "No image identity/location or verified duplicate findings"
+  ]
+}

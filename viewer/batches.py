@@ -53,10 +53,14 @@ def load_expansions():
             if 'correspondence-reviews.json' not in batch['evidence_sha256']:
                 raise ValueError('Native correspondence review requires pinned evidence')
             reviewed, _ = script('check-wave-correspondence').build_catalog(folder)
-        elif mode == 'native_quality_v1':
-            if not {'quality-review.json','ocr-transcription-review.json'} <= set(batch['evidence_sha256']):
+        elif mode in ('native_quality_v1','native_image_quality_v1'):
+            required={'quality-review.json'} | ({'ocr-transcription-review.json'} if mode=='native_quality_v1' else set())
+            if not required <= set(batch['evidence_sha256']):
                 raise ValueError('Native quality review requires pinned evidence')
-            script('check-ocr-review').validate(folder)
+            if mode=='native_quality_v1':
+                script('check-ocr-review').validate(folder)
+            elif any(r.get('source_assisted_ocr_review_needed') for r in read(folder/'quality-review.json')['files']):
+                raise ValueError('Image-only mode cannot skip required OCR review')
             try:
                 from .source_quality import attach_quality
             except ImportError:

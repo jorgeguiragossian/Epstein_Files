@@ -53,6 +53,26 @@ class BatchTests(unittest.TestCase):
             self.assertEqual([r['id'] for r in loaded],[r['id'] for r in records])
             self.assertTrue(all('source_review' not in r for r in loaded))
             dispatch.assert_called_once_with('check-table-date-review')
+            image_quality=dict(method='Fixture quality scope',files=[dict(file_id=metric['file_id'],
+                source_sha256=sha,notes='Native preserved',visually_inspected_pdf_pages=[1],
+                inspected_page_text_sha256={'1':hashlib.sha256(text.encode()).hexdigest()},
+                source_assisted_ocr_review_needed=False)])
+            save('quality-review.json',image_quality)
+            registry['batches'][0].update(review_mode='native_image_quality_v1',evidence_sha256={
+                'quality-review.json':hashlib.sha256((folder/'quality-review.json').read_bytes()).hexdigest()})
+            (root/'data/pilot/viewer-batches.json').write_text(json.dumps(registry))
+            with patch.object(batches,'ROOT',root),patch.object(batches,'script') as dispatch:
+                prepared,loaded=batches.load_expansions()
+            dispatch.assert_not_called()
+            self.assertEqual(prepared[0][0]['source_quality_review']['date_observations'],[])
+            self.assertEqual([r['id'] for r in loaded],[r['id'] for r in records])
+            image_quality['files'][0]['source_assisted_ocr_review_needed']=True
+            save('quality-review.json',image_quality)
+            registry['batches'][0]['evidence_sha256']['quality-review.json']=hashlib.sha256((folder/'quality-review.json').read_bytes()).hexdigest()
+            (root/'data/pilot/viewer-batches.json').write_text(json.dumps(registry))
+            with patch.object(batches,'ROOT',root),self.assertRaisesRegex(ValueError,'cannot skip required OCR'):
+                batches.load_expansions()
+
 
     def test_merge_preserves_old_records_and_counts_reviews_without_enabling_contacts(self):
         def candidate(key):
