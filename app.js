@@ -11,7 +11,7 @@ state.periodFrom=params.get('period_from')||'';
 state.periodTo=params.get('period_to')||'';
 state.people=[];
 const dateLabels = {dated:'Reviewed date',uncertain:'Uncertain date',undated:'Reviewed · undated',unreviewed:'Date not yet reviewed'};
-const dateTypes = {email_sent:'Email sent date',report:'Report date',court_order:'Court order date',transcript_session:'Transcript session date',letter:'Letter date',presentation:'Presentation date'};
+const dateTypes = {email_sent:'Email sent date',report:'Report date',court_order:'Court order date',evidence_received:'Evidence received date',transcript_session:'Transcript session date',letter:'Letter date',presentation:'Presentation date'};
 const format = (number) => Number(number).toLocaleString('en-US');
 
 function node(tag, className, text) {
@@ -270,7 +270,7 @@ async function openDocument(id, page, focus = false) {
         const assessment=quality.ocr_assessment;
         panel.append(node('h4','','Local OCR assessment: native text preserved'));
         for(const note of assessment.notes)panel.append(node('p','',note));
-        panel.append(node('p','evidence-note','No OCR replacement accepted. Raw OCR, source images and provisional literal readings remain local and are excluded from published search text.'));
+        panel.append(node('p','evidence-note','No OCR replacement accepted. Raw OCR, source images and provisional literal readings remain local and are excluded from published search text. These recognition findings predate any separately recorded primary-date adjudication; a reviewed date does not correct native text.'));
         for(const page of assessment.inspected_pdf_pages){const b=node('button','text-button',`OCR source comparison: PDF page ${page}`);b.type='button';b.addEventListener('click',()=>openDocument(id,page));panel.append(b);}
       }
       if(quality.component_assessment){
