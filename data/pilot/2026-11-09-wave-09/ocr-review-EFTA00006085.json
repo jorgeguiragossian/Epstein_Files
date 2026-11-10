@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-09",
+  "reviewer": "Codex",
+  "file_id": "EFTA00006085",
+  "dataset": 4,
+  "source_sha256": "379e4fb261534f76933c30678c5cadf3784108c7538bb8ed2de940e3118f1358",
+  "native_extraction_sha256": "ae04829e31aa903c3ae9f899e701f09d73b6badc478308ad3ff1fd4364157ecc",
+  "method": "Local Windows.Media.Ocr en-US on PDFium scale-3 renders, visually compared by Codex; focused heading crop for EFTA00007501. Same-assistant bounded source assessment, not independent authentication. No external service.",
+  "ocr_attempts": [
+    {
+      "pdf_page": 1,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/EFTA00006085-page-1.png",
+      "image_sha256": "be273633cf028b97ba2eb945a62f96da554d50f4927faa5328839a7146043597",
+      "result_path": "extractions/ocr-review/EFTA00006085-page-1.json",
+      "result_sha256": "3dfbce481282f7d3bf33170bc7495ed5bd2cefbd14d62011f6282a6c0a342e09",
+      "recognized_lines": 1,
+      "recognized_characters": 12,
+      "crop_pixels_on_rotated_full_render": null,
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    },
+    {
+      "pdf_page": 2,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/EFTA00006085-page-2.png",
+      "image_sha256": "d613bf388b6af5a452610ff264f057d13e625fff7e8a07055ff1db7bffb64a88",
+      "result_path": "extractions/ocr-review/EFTA00006085-page-2.json",
+      "result_sha256": "3d9c6d9bf83ad23d24ef7a7b67f0cefcb28f5b243eeed66adf2ea603938aaca2",
+      "recognized_lines": 24,
+      "recognized_characters": 942,
+      "crop_pixels_on_rotated_full_render": null,
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    },
+    {
+      "pdf_page": 3,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/EFTA00006085-page-3.png",
+      "image_sha256": "3fbf7a15edfb3db902e3d24359621e836cf19dc72510089db9a5538a111673ec",
+      "result_path": "extractions/ocr-review/EFTA00006085-page-3.json",
+      "result_sha256": "5b29970808b40486b14b4b91e2f66edb1d13df8fc08af2c59f844624de319a31",
+      "recognized_lines": 9,
+      "recognized_characters": 158,
+      "crop_pixels_on_rotated_full_render": null,
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    }
+  ],
+  "page_findings": [
+    {
+      "pdf_page": 1,
+      "native_text_sha256": "6514fa5bafca1459b8df622b4af7ec83d3ed9b78d53f2b0d9eec99ae327d024e",
+      "finding": "Local OCR misses handwritten folder heading entirely; native heading is garbled."
+    },
+    {
+      "pdf_page": 2,
+      "native_text_sha256": "2948cb8fcd9044d7bbe0c749d1edaf08e6c27e0c410372393969ab662acc2dba",
+      "finding": "Printed certification boilerplate is partly recognized; handwritten organization, role, execution date and place are incomplete/errorful. No corrected certification or primary date accepted."
+    },
+    {
+      "pdf_page": 3,
+      "native_text_sha256": "a567927a37e79b3cfb6b694a8e3880682962fbee8d5ad6ec316966cb3980bbb2",
+      "finding": "Handwritten inventory and event-date lines remain substantially misrecognized/omitted. No reconstructed inventory or date assignment accepted."
+    }
+  ],
+  "eligibility": {
+    "primary_date_assignment": false,
+    "verified_transactions": false,
+    "identity_inference": false,
+    "native_text_replacement": false,
+    "verified_media_contents": false
+  },
+  "transcription_layer": {
+    "local_path": "extractions/ocr-review/EFTA00006085-editorial-readings.json",
+    "sha256": "bf90de477d13b1dfeca63ce9f92d17c3f82eb1235c156c1e3d066199a79e00d8"
+  },
+  "reviewed_fields": [],
+  "ocr_improvement_accepted": false,
+  "independent_verification": false,
+  "remaining_uncertainties": [
+    "No complete corrected text layer validated",
+    "Dates and components require separate adjudication",
+    "Uninspected pages remain outside this OCR scope"
+  ],
+  "publication": "Raw OCR, images and provisional literal readings remain ignored local caches. Metadata publishes scope, findings, hashes and image regions only."
+}

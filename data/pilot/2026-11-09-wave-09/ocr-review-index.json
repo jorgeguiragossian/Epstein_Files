@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-09",
+  "scope": "Thirteen source pages across eight flagged files, fourteen local OCR attempts, one provisional literal; no native replacement or public corrected text.",
+  "reviews": [
+    {
+      "file_id": "EFTA00005910",
+      "review_file": "ocr-review-EFTA00005910.json",
+      "review_sha256": "5830b2e0764669652fae473520e8b2b57fef2504264679bd195c265e2ccd0a67"
+    },
+    {
+      "file_id": "EFTA00006085",
+      "review_file": "ocr-review-EFTA00006085.json",
+      "review_sha256": "01c152be947e4527523a382f25e258358aaa1e7f22e8001c754b68b3888d9bbb"
+    },
+    {
+      "file_id": "EFTA00007501",
+      "review_file": "ocr-review-EFTA00007501.json",
+      "review_sha256": "db634c02f663bf3e7d2a366b6fc1d46d9161d183f3b6c4fb6fbfc1229780fb05"
+    },
+    {
+      "file_id": "EFTA00007606",
+      "review_file": "ocr-review-EFTA00007606.json",
+      "review_sha256": "84995cc88e4c8958df1d2323d14c87e9dff7f60dad9d5e898c95aca9dc179d58"
+    },
+    {
+      "file_id": "EFTA00007684",
+      "review_file": "ocr-review-EFTA00007684.json",
+      "review_sha256": "460376c19cbe702af0d84e9c3ba09dd4a550911b01dbcc52dcc63db5e0746d63"
+    },
+    {
+      "file_id": "EFTA00007763",
+      "review_file": "ocr-review-EFTA00007763.json",
+      "review_sha256": "f4b2aee7e079ef4fa3ff9406ab7e86c4b550fc1129ae8aaf7600d90d4ab49b91"
+    },
+    {
+      "file_id": "EFTA00007968",
+      "review_file": "ocr-review-EFTA00007968.json",
+      "review_sha256": "56c7caa476b073feb6c15750ca0a256abf102091b187d279bcaed108248ba5e1"
+    },
+    {
+      "file_id": "EFTA00008320",
+      "review_file": "ocr-review-EFTA00008320.json",
+      "review_sha256": "56ed3b1ef334f4b06b4d0d8822c9c19e7d37c9851b34b36574e86c6733617511"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-09",
+  "reviewer": "Codex",
+  "file_id": "EFTA00005910",
+  "dataset": 4,
+  "source_sha256": "f1168414278fceffdeb2fd5556cf39a86cdf36ce84af5472b0d4f54834df3230",
+  "native_extraction_sha256": "3a88a48bb18fde2e650d724c2abac02142bb7baa9bee60e2cece1541d76fb60a",
+  "method": "Local Windows.Media.Ocr en-US on PDFium scale-3 renders, visually compared by Codex; focused heading crop for EFTA00007501. Same-assistant bounded source assessment, not independent authentication. No external service.",
+  "ocr_attempts": [
+    {
+      "pdf_page": 1,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/EFTA00005910-page-1.png",
+      "image_sha256": "aff4a10811af059ad3c55fa18ec6e4e66f58ed876b7acc87d276a6846c956da1",
+      "result_path": "extractions/ocr-review/EFTA00005910-page-1.json",
+      "result_sha256": "ceadbcf0a24694fb8fbac4811cdadcd291ce5f4a656e352e667a454fa55e503d",
+      "recognized_lines": 2,
+      "recognized_characters": 23,
+      "crop_pixels_on_rotated_full_render": null,
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    }
+  ],
+  "page_findings": [
+    {
+      "pdf_page": 1,
+      "native_text_sha256": "b186ec5cf36b242c108908c404fe4cf3d4d0af371d1ede13d18a64c7de74877d",
+      "finding": "Folder-cover handwriting is not recovered reliably: native text omits it and local OCR produces a garbled fragment. No location/identity association or date assigned. Other 13 pages are outside this OCR assessment."
+    }
+  ],
+  "eligibility": {
+    "primary_date_assignment": false,
+    "verified_transactions": false,
+    "identity_inference": false,
+    "native_text_replacement": false,
+    "verified_media_contents": false
+  },
+  "transcription_layer": {
+    "local_path": "extractions/ocr-review/EFTA00005910-editorial-readings.json",
+    "sha256": "a79c5041df86540dac9777526d895f9c7c38fa5fe9ec7ef67785b6c5457768d4"
+  },
+  "reviewed_fields": [],
+  "ocr_improvement_accepted": false,
+  "independent_verification": false,
+  "remaining_uncertainties": [
+    "No complete corrected text layer validated",
+    "Dates and components require separate adjudication",
+    "Uninspected pages remain outside this OCR scope"
+  ],
+  "publication": "Raw OCR, images and provisional literal readings remain ignored local caches. Metadata publishes scope, findings, hashes and image regions only."
+}

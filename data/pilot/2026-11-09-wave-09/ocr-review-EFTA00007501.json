@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-09",
+  "reviewer": "Codex",
+  "file_id": "EFTA00007501",
+  "dataset": 4,
+  "source_sha256": "a00bf4439e901863c88026a61b2eb3b7c348a0a46deb663ccdc2f64e36034a0b",
+  "native_extraction_sha256": "ac68ecca19ade1d0c2615dfde1451762857ee0ee9549809c6d3d9c08f89d0b6a",
+  "method": "Local Windows.Media.Ocr en-US on PDFium scale-3 renders, visually compared by Codex; focused heading crop for EFTA00007501. Same-assistant bounded source assessment, not independent authentication. No external service.",
+  "ocr_attempts": [
+    {
+      "pdf_page": 1,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/EFTA00007501-page-1.png",
+      "image_sha256": "3ca4623a982d706a500f9685adc92bc09b96233e01f743b22db6f7d2c4815a00",
+      "result_path": "extractions/ocr-review/EFTA00007501-page-1.json",
+      "result_sha256": "044a03e1b1f6efcc4bfaccace2a58f2d9acc3f53b569c1774dbc332f4eccd92c",
+      "recognized_lines": 102,
+      "recognized_characters": 1011,
+      "crop_pixels_on_rotated_full_render": null,
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    },
+    {
+      "pdf_page": 1,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/EFTA00007501-page-1-crop.png",
+      "image_sha256": "1097671b98a92ce3dc2ef7c855bfdab635d3c3346b174c32510bf2ae6a62b48c",
+      "result_path": "extractions/ocr-review/EFTA00007501-page-1-crop.json",
+      "result_sha256": "cc5e1af544f36360e621d8359125624b353fc3375daa3c7d9c06f0ea5733c5f9",
+      "recognized_lines": 4,
+      "recognized_characters": 84,
+      "crop_pixels_on_rotated_full_render": [
+        100,
+        180,
+        1100,
+        550
+      ],
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    }
+  ],
+  "page_findings": [
+    {
+      "pdf_page": 1,
+      "native_text_sha256": "eb27b100a6c6bcc7d749083143942b95cb4c9a7b901b996638bcddc82ac5d1f1",
+      "finding": "Visible statement heading reads Aug 20, 2005; native text reads Aug 20, 2006. Full-page local OCR omits the heading date and focused crop again misreads the year as 2006. One provisional source-assisted literal is retained locally. No native replacement, primary document date, validated call rows or subscriber/contact inference accepted. Other 41 pages are outside this OCR assessment."
+    }
+  ],
+  "eligibility": {
+    "primary_date_assignment": false,
+    "verified_transactions": false,
+    "identity_inference": false,
+    "native_text_replacement": false,
+    "verified_media_contents": false
+  },
+  "transcription_layer": {
+    "local_path": "extractions/ocr-review/EFTA00007501-editorial-readings.json",
+    "sha256": "fbab63150c6cc41da66a38f8843d73430679d22a9de15ae0fc77ec5d0f9a235a"
+  },
+  "reviewed_fields": [
+    {
+      "id": "statement-heading-date",
+      "pdf_page": 1,
+      "kind": "printed_statement_date_literal",
+      "status": "provisional_source_assisted_not_independently_verified",
+      "image_path": "extractions/ocr-review/EFTA00007501-page-1-crop.png",
+      "region_pixels": [
+        40,
+        105,
+        200,
+        150
+      ],
+      "literal_sha256": "2b9288310f046ade96a6da8422a3298704a126a6cf9165cc8ed54d2b6bc5ef3c"
+    }
+  ],
+  "ocr_improvement_accepted": false,
+  "independent_verification": false,
+  "remaining_uncertainties": [
+    "No complete corrected text layer validated",
+    "Dates and components require separate adjudication",
+    "Uninspected pages remain outside this OCR scope"
+  ],
+  "publication": "Raw OCR, images and provisional literal readings remain ignored local caches. Metadata publishes scope, findings, hashes and image regions only."
+}

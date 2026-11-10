@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-09",
+  "reviewer": "Codex",
+  "file_id": "EFTA00007968",
+  "dataset": 4,
+  "source_sha256": "6965151352c5e7981fa0fabb8ee9db95df5e628181c163b2136cf3a91d25839a",
+  "native_extraction_sha256": "b0cf3abec19b76ca67b88d88c869b939785311374ed78f81758fe7a58d2679b6",
+  "method": "Local Windows.Media.Ocr en-US on PDFium scale-3 renders, visually compared by Codex; focused heading crop for EFTA00007501. Same-assistant bounded source assessment, not independent authentication. No external service.",
+  "ocr_attempts": [
+    {
+      "pdf_page": 1,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/EFTA00007968-page-1.png",
+      "image_sha256": "1f67e5b2d1b4cfa0badc3dd344b70ba61b84e7161d94fcc47816fcb8e64bb94c",
+      "result_path": "extractions/ocr-review/EFTA00007968-page-1.json",
+      "result_sha256": "74c5a93fbdec281e7208af6b1cb0e7650eb378b35ba3d788cd2e563eb7bd636c",
+      "recognized_lines": 16,
+      "recognized_characters": 195,
+      "crop_pixels_on_rotated_full_render": null,
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    },
+    {
+      "pdf_page": 2,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/EFTA00007968-page-2.png",
+      "image_sha256": "9b4816694d0c93f1a323ebed228fe7b7b1083734b42bd28f714840908127feb7",
+      "result_path": "extractions/ocr-review/EFTA00007968-page-2.json",
+      "result_sha256": "6553fdac87df6c6eee78dfe4afbecf3c0590b52b89fd062cde758481c552882d",
+      "recognized_lines": 7,
+      "recognized_characters": 106,
+      "crop_pixels_on_rotated_full_render": null,
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    }
+  ],
+  "page_findings": [
+    {
+      "pdf_page": 1,
+      "native_text_sha256": "1ffe78663b764455f948e8e01f4baa0d759b2167c59813425c0e8ce36a667afa",
+      "finding": "Native and local OCR misread the visible handwritten evidence-form date; handwriting and description remain unreliable. No primary date, identity inference or reconstructed redaction accepted."
+    },
+    {
+      "pdf_page": 2,
+      "native_text_sha256": "feb5756b1e1bac333c9873c798a48a5d912620e8b19bab410494229a1034c957",
+      "finding": "Local OCR recognizes printed unscanned-item notice and template revision, with garbled handwritten description. No media contents or evidence-event date inferred."
+    }
+  ],
+  "eligibility": {
+    "primary_date_assignment": false,
+    "verified_transactions": false,
+    "identity_inference": false,
+    "native_text_replacement": false,
+    "verified_media_contents": false
+  },
+  "transcription_layer": {
+    "local_path": "extractions/ocr-review/EFTA00007968-editorial-readings.json",
+    "sha256": "a3ebe1533effc4cf58ac1e972b73972a5ad1ee8573655fe59336ed2ff7a74edf"
+  },
+  "reviewed_fields": [],
+  "ocr_improvement_accepted": false,
+  "independent_verification": false,
+  "remaining_uncertainties": [
+    "No complete corrected text layer validated",
+    "Dates and components require separate adjudication",
+    "Uninspected pages remain outside this OCR scope"
+  ],
+  "publication": "Raw OCR, images and provisional literal readings remain ignored local caches. Metadata publishes scope, findings, hashes and image regions only."
+}

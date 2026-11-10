@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-09",
+  "reviewer": "Codex",
+  "file_id": "EFTA00008320",
+  "dataset": 4,
+  "source_sha256": "e19a4cab78e2889b735f0ab2bd93455b6fb4354d490261e1a68d142d6f369981",
+  "native_extraction_sha256": "24e050574b6ba01d6f132e2da777f28552702a53760861cc07135bb738d15358",
+  "method": "Local Windows.Media.Ocr en-US on PDFium scale-3 renders, visually compared by Codex; focused heading crop for EFTA00007501. Same-assistant bounded source assessment, not independent authentication. No external service.",
+  "ocr_attempts": [
+    {
+      "pdf_page": 89,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/EFTA00008320-page-89.png",
+      "image_sha256": "ac5b95b7ddfc7220958c7d0af6eb3a32a1fd21d5c7bed6c43556ff2e87e4c1c9",
+      "result_path": "extractions/ocr-review/EFTA00008320-page-89.json",
+      "result_sha256": "b8bd06d9188ce8e0df667bd4741228419d5927c3daeaf78a4986254b5dbe8911",
+      "recognized_lines": 1,
+      "recognized_characters": 12,
+      "crop_pixels_on_rotated_full_render": null,
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    }
+  ],
+  "page_findings": [
+    {
+      "pdf_page": 89,
+      "native_text_sha256": "2f6e217a8d5e0f56f2794aaca69c46b33a14d68cfa4d148377c683a2572934cb",
+      "finding": "Local OCR recovers only EFTA stamp and omits visible unredacted handwritten marking. Redactions are preserved; no ownership/identity/date inference accepted. Only this final page receives OCR assessment; publication components and other 88 pages are not covered."
+    }
+  ],
+  "eligibility": {
+    "primary_date_assignment": false,
+    "verified_transactions": false,
+    "identity_inference": false,
+    "native_text_replacement": false,
+    "verified_media_contents": false
+  },
+  "transcription_layer": {
+    "local_path": "extractions/ocr-review/EFTA00008320-editorial-readings.json",
+    "sha256": "f3f73368f3103e763da80f10b5d71317df3a5446aa9ce6a82b7cd1ee0098c613"
+  },
+  "reviewed_fields": [],
+  "ocr_improvement_accepted": false,
+  "independent_verification": false,
+  "remaining_uncertainties": [
+    "No complete corrected text layer validated",
+    "Dates and components require separate adjudication",
+    "Uninspected pages remain outside this OCR scope"
+  ],
+  "publication": "Raw OCR, images and provisional literal readings remain ignored local caches. Metadata publishes scope, findings, hashes and image regions only."
+}

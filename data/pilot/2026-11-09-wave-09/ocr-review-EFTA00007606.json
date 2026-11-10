@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-09",
+  "reviewer": "Codex",
+  "file_id": "EFTA00007606",
+  "dataset": 4,
+  "source_sha256": "e3dfdf7dc1f0ba9916c1a191d8fb684897dc3ac918e38952a84906d49274d298",
+  "native_extraction_sha256": "776694ae5bc7a931d672368e9e4d9fc236c6942501de251ee9a8bd30b8e83cb7",
+  "method": "Local Windows.Media.Ocr en-US on PDFium scale-3 renders, visually compared by Codex; focused heading crop for EFTA00007501. Same-assistant bounded source assessment, not independent authentication. No external service.",
+  "ocr_attempts": [
+    {
+      "pdf_page": 1,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/EFTA00007606-page-1.png",
+      "image_sha256": "39b4dbf5be88dce4e1b3ddd35b734978d1b379f2e9d294f961ab685a27e6c73e",
+      "result_path": "extractions/ocr-review/EFTA00007606-page-1.json",
+      "result_sha256": "6a7f9543695d073e0784a98ff2a788e4fdb6febbe2ab4b5abb0f07a50d1bacb2",
+      "recognized_lines": 3,
+      "recognized_characters": 27,
+      "crop_pixels_on_rotated_full_render": null,
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    },
+    {
+      "pdf_page": 3,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/EFTA00007606-page-3.png",
+      "image_sha256": "bdc82dccb6a4156339c8d65646467a9f1841aeac2e878d749a81124e01d4d006",
+      "result_path": "extractions/ocr-review/EFTA00007606-page-3.json",
+      "result_sha256": "0559378660573206d42bc3c7f7071485ca6dcb1faa667d1e76e3afcbd3216067",
+      "recognized_lines": 38,
+      "recognized_characters": 1862,
+      "crop_pixels_on_rotated_full_render": null,
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    }
+  ],
+  "page_findings": [
+    {
+      "pdf_page": 1,
+      "native_text_sha256": "05b134f0d6a8c62a286b2bb1bafb785020dcc9690417458f6cd0614ab43fea17",
+      "finding": "Local OCR recovers the printed folder identifier with an imperfect handwritten fragment; native text has only EFTA stamp. This is an evidence/folder identifier, not a message or event date."
+    },
+    {
+      "pdf_page": 3,
+      "native_text_sha256": "c88c896904a645a86a3996ec5cd0b95b659032f9c8dc2d721bad3a1418f3a3c9",
+      "finding": "Local OCR still garbles shipping fields and omits the ship-date field while recognizing footer date text. Ship, delivery and page-print dates are different roles; no primary date or verified shipment inference accepted."
+    }
+  ],
+  "eligibility": {
+    "primary_date_assignment": false,
+    "verified_transactions": false,
+    "identity_inference": false,
+    "native_text_replacement": false,
+    "verified_media_contents": false
+  },
+  "transcription_layer": {
+    "local_path": "extractions/ocr-review/EFTA00007606-editorial-readings.json",
+    "sha256": "f4450931245a16d08c2f1dae4b637fc255f60552896566e63c678a5adc4e925e"
+  },
+  "reviewed_fields": [],
+  "ocr_improvement_accepted": false,
+  "independent_verification": false,
+  "remaining_uncertainties": [
+    "No complete corrected text layer validated",
+    "Dates and components require separate adjudication",
+    "Uninspected pages remain outside this OCR scope"
+  ],
+  "publication": "Raw OCR, images and provisional literal readings remain ignored local caches. Metadata publishes scope, findings, hashes and image regions only."
+}

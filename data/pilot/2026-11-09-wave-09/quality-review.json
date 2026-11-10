@@ -96,10 +96,10 @@
         "1": "6514fa5bafca1459b8df622b4af7ec83d3ed9b78d53f2b0d9eec99ae327d024e",
         "2": "2948cb8fcd9044d7bbe0c749d1edaf08e6c27e0c410372393969ab662acc2dba",
         "3": "a567927a37e79b3cfb6b694a8e3880682962fbee8d5ad6ec316966cb3980bbb2",
-        "4": "9963f3d2e56e9f6fed36320ef8fbdfb030df688b164cc96efc006a33238ccaef",
+        "4": "02ae0bc7b2ccb8883ab79723375275850b287c13f41299e297c6cab763b7846a",
         "5": "cd5f1951b253b1102c170b059b969561205e5c2fb066cb325e594170a71cade4",
-        "6": "ba061a51534dc1a3d4ba2752fa8bb5fbab25a9dd4dba8405f6367219255d1079",
-        "7": "e04f5abc19d6201ec19c7bde4b8c06eb668dc83600af97c3a958010261b71c18",
+        "6": "36ff9f2df29c95f60d7f4c5837226d80294243072b43493211e6d5c8a7f012d9",
+        "7": "b342d08b5e8389c310affa2138e95be18867b58ae8da6068b2c313f60855e9ca",
         "8": "d0dbbbf980b84997df5e428d8fade4b17b6499c90782654277e9b48ad9b5d980"
       },
       "notes": "Folder cover, business-record certification, handwritten inventory, four front-of-house reports and settlement sheet. Native handwriting on pages 1-3 is incomplete/errorful; printed report tables have reading-order/numeric errors. Certification execution, event and settlement dates are distinct; no primary date assigned.",
@@ -119,8 +119,8 @@
         100
       ],
       "inspected_page_text_sha256": {
-        "1": "1b945b9682aeb59d6891d8cafacb39c3c070705903ea0eda73cf6214449d6087",
-        "50": "5075b45a7ca8e33c100da2073dfabf7af1deea47d84cf3f5d758046100482c5f",
+        "1": "7801b6f056b906f4ca42381c7af6cf88214a6722a6dd3ee7951a1eb2693943a2",
+        "50": "a492e74a5f7cd54f5ea6e807fd1f05b898b70c47ec46c95ea26145112a7def11",
         "100": "fa176d757384463f462e31898fd0b778900964acb31e699e610c4b87db548e9a"
       },
       "notes": "Three sampled pages of redacted telephone statements span different statement headings. Native destination/date/numeric recognition contains errors; row/column relationships are not validated. No subscriber identity, contact ranking, unique calls or single reporting period inferred from this 100-page file.",
@@ -140,9 +140,9 @@
         42
       ],
       "inspected_page_text_sha256": {
-        "1": "48925221e28e3188403bf601d1b573961a30f4b278e799ff52cb926bd48ea931",
-        "21": "bbd87dfca9f6eaeaeb4d975b49b8338be6b95996878569b1728c234f24df0a5e",
-        "42": "d6db24e37889e98941c1e7e167e6464f93366e7e09a32115c681676145dee54b"
+        "1": "eb27b100a6c6bcc7d749083143942b95cb4c9a7b901b996638bcddc82ac5d1f1",
+        "21": "6de9ad4f2314c243827f0ad06781daa9970f7458fe1ba8a14e2351111f291596",
+        "42": "882e02454f79059dd4637ad61d1f91cf7903f8f5d7270206c5870d8646f758fb"
       },
       "notes": "Three sampled telephone-statement pages include itemized calls and account service charges across different headings. Native page 1 statement year disagrees with visible source year; dates, places and columns have recognition errors. No primary date, call counts, subscriber identity or full period coverage assigned.",
       "source_assisted_ocr_review_needed": true,
@@ -164,7 +164,7 @@
       ],
       "inspected_page_text_sha256": {
         "1": "05b134f0d6a8c62a286b2bb1bafb785020dcc9690417458f6cd0614ab43fea17",
-        "2": "a5b47c71d0849d9012f4fcb1351cf6abbcace587adf3b118ec4553e346c36b90",
+        "2": "04c11b1253d92ce768d7b86edec28ff7be75e944491c1c93dcf32d24b4f4054f",
         "3": "c88c896904a645a86a3996ec5cd0b95b659032f9c8dc2d721bad3a1418f3a3c9"
       },
       "notes": "Folder cover, order/shipment document and shipping label inspected. Cover identifiers omitted from native text; printed shipment dates/fields contain recognition errors. Multiple document roles/dates; no primary date assigned.",
@@ -182,7 +182,7 @@
         1
       ],
       "inspected_page_text_sha256": {
-        "1": "b27c529cf2c5b6d1f2f06a51a74349337b903d97990f2c32286cdeab56d519e7"
+        "1": "3f2afef71a9411c4c327ff6000bfced3ccb24e94cf48149c50fad534fa1a948d"
       },
       "notes": "Invoice photographed through reflective packaging. Native extraction misses much of invoice body and printed/handwritten dates; exceeds low-text threshold despite poor recognition. No date, purchase attribution or identity inferred.",
       "source_assisted_ocr_review_needed": true,
@@ -209,10 +209,10 @@
         6
       ],
       "inspected_page_text_sha256": {
-        "1": "8cd50993f1452ca41bcd3697b22bab909b7933bac04b9330d7dce20e9ff10d0c",
-        "2": "da43403b519d9ef9dedc007185c9ce0883705b0c8c8bc33fcbac85adf907ed78",
-        "3": "41cd2a27aba290a0d315658b8f5cb2ebd3e0200484705aff12805cdeb9c89a6d",
-        "4": "9811465439df77a45cf9f927f49bc391b86e7279692c374d89e2976fb1b39b66",
+        "1": "9cf1c27e52b3ac695c3463b42f697ed70934e9663914565f268cc91d62f6a882",
+        "2": "75ede77e3678ca1253be19148b606589989fa054896d809d502b83e8f14ecd06",
+        "3": "ea799506206774992434e5270c1c1c806b9ee4080b5cdbb4d6eb04d2d08561fd",
+        "4": "213391fe6aff2449e92aef0c5dc2b70e3e6803fb13e86f0b2f494c52dbf0de96",
         "5": "94046ca6ff90121c4e2ea4691a875cb20cc632a6b3fb49b3aedc41fd271530ea",
         "6": "4d9fbac7f9a965e277f96e8b35e372c7f61cced10ee508cb423859c1aa40b3e7"
       },
@@ -236,7 +236,7 @@
         3
       ],
       "inspected_page_text_sha256": {
-        "1": "f3f801aef70868291afeff12fc4d37481b9a6c7a99641f5d4936aac0fbfe567b",
+        "1": "1ffe78663b764455f948e8e01f4baa0d759b2167c59813425c0e8ce36a667afa",
         "2": "feb5756b1e1bac333c9873c798a48a5d912620e8b19bab410494229a1034c957",
         "3": "58cd105180de4e876e8848d671b9aa6651a1ef9f77bf7eb22b1d209846e7d346"
       },
@@ -263,7 +263,7 @@
         89
       ],
       "inspected_page_text_sha256": {
-        "1": "14fa3dee98f594a158d50b5246d6cb3de14d8e5331eba2d8d957b8116946db0a",
+        "1": "713e97d32ec8ddb09d5f746b66655f71c7459cf361cdd53740df4dec9588ba8d",
         "45": "d7c198a14c475f453e74d3e8187e4b875c264bcaa2c65fbf13e85d7f3549df26",
         "89": "2f6e217a8d5e0f56f2794aaca69c46b33a14d68cfa4d148377c683a2572934cb"
       },
