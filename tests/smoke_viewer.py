@@ -15,18 +15,24 @@ def get(path):
 
 def main():
     overview = get('/api/overview')
-    assert overview['documents'] == 180 and overview['pages'] == 2556
+    assert overview['documents'] == 190 and overview['pages'] == 2826
+    wave9 = get('/api/documents/EFTA00007501')
+    assert wave9['date_review']['status']=='unreviewed'
+    assert wave9['source_quality_review']['ocr_assessment']['inspected_pdf_pages']==[1]
+    assert wave9['source_quality_review']['ocr_assessment']['native_replacement_accepted'] is False
+    assert 'Aug 20, 2006' in wave9['page']['text']
+    assert get('/api/emails?document=EFTA00005707')['total_groups']==0
     matches = get('/api/search?q=grand%20jury&dataset=6')
     assert matches['total_documents'] == 11 and matches['total_matching_pages'] == 97
     page = get('/api/documents/EFTA00008529?page=2')
     assert page['page']['number'] == 2 and page['page']['text']
-    assert get('/api/search?quality=review')['total_documents'] == 89
+    assert get('/api/search?quality=review')['total_documents'] == 95
     assert get('/api/search?q=zzznomatchpilot')['total_documents'] == 0
-    assert overview['date_status_counts']=={'dated':71,'uncertain':49,'unreviewed':60}
+    assert overview['date_status_counts']=={'dated':71,'uncertain':49,'unreviewed':70}
     words=get('/api/words')
-    assert (words['eligible_dated_documents'],words['excluded_without_reviewed_date'])==(71,109)
+    assert (words['eligible_dated_documents'],words['excluded_without_reviewed_date'])==(71,119)
     reporting=get('/api/words?date_basis=reporting_period')
-    assert (reporting['eligible_reporting_period_documents'],reporting['excluded_without_reviewed_period'],reporting['selected_documents'])==(6,174,6)
+    assert (reporting['eligible_reporting_period_documents'],reporting['excluded_without_reviewed_period'],reporting['selected_documents'])==(6,184,6)
     selected=get('/api/words?date_basis=reporting_period&date_from=2015-11-30&date_to=2015-11-30')
     assert (selected['selected_documents'],selected['selected_pages'])==(1,2)
     assert all(s['file_id']=='EFTA01280951' for term in selected['terms'] for s in term['sources'])
@@ -46,7 +52,7 @@ def main():
     assert dated['total_documents']==1 and dated['results'][0]['id']=='EFTA00008529'
     assert get('/api/search?date_status=uncertain')['total_documents']==49
     assert get('/api/search?date_status=undated')['total_documents']==0
-    assert get('/api/search?date_status=unreviewed')['total_documents']==60
+    assert get('/api/search?date_status=unreviewed')['total_documents']==70
     assert get('/api/search?date_from=2014-01-01&date_to=2014-01-01&q=EFTA02730265')['total_documents']==0
     assert get('/api/documents/EFTA00039806')['date_review']['evidence_page']==2
     people=get('/api/people')['people']
@@ -58,7 +64,7 @@ def main():
         current=next(p for p in people if p['id']==old['id'])
         assert all(current[k]>=old[k] for k in ('documents','pages','occurrences'))
     names={p['id']:p for p in people}
-    assert names['ghislaine-maxwell']['documents']==26 and names['ghislaine-maxwell']['pages']==118
+    assert names['ghislaine-maxwell']['documents']==27 and names['ghislaine-maxwell']['pages']==119
     person=get('/api/search?person=ghislaine-maxwell&date_from=2020-06-29&date_to=2020-06-29')
     assert person['total_documents']==3 and {r['id'] for r in person['results']}=={'EFTA00008631','EFTA00008892','EFTA00008920'}
     assert person['results'][0]['matching_pages'][0]==1

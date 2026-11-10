@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "status": "native_search_with_bounded_quality_and_indexed_ocr_assessments",
+  "selected_files": 10,
+  "downloaded_files": 10,
+  "native_extracted_files": 10,
+  "pdf_pages": 270,
+  "public_search_integration": true,
+  "parsed_email_occurrences": 0,
+  "document_date_status": "unreviewed",
+  "ocr_native_replacement": false,
+  "provisional_readings_public": false,
+  "remaining_review_items": [
+    "Source comparison bounded to 37 of 270 pages",
+    "OCR assessment bounded to 13 pages; no accepted replacement",
+    "Primary dates/components unadjudicated; telephone rows not validated"
+  ]
+}

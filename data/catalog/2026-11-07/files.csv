@@ -3789,7 +3789,7 @@ dataset,file_id,filename,url,first_seen,last_seen,listing_pages_observed,downloa
 3,EFTA00005578,EFTA00005578.pdf,https://www.justice.gov/epstein/files/DataSet%203/EFTA00005578.pdf,2026-11-07T18:45:37.813Z,2026-11-07T18:45:37.813Z,1,not_downloaded,,,,not_processed
 3,EFTA00005586,EFTA00005586.pdf,https://www.justice.gov/epstein/files/DataSet%203/EFTA00005586.pdf,2026-11-07T18:45:37.813Z,2026-11-07T18:45:37.813Z,1,expansion_download_record,579117,2ca8bfbe49f98b91cb43f0a230b21f7a16d05374ae69d92204f77a72da634a84,119,expansion_native_extraction_record
 4,EFTA00005705,EFTA00005705.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00005705.pdf,2026-11-01T23:00:28.5044232Z,2026-11-07T18:41:55.221369+00:00,0,pilot_download_record,30168,f0706bcbb26996637869487cf88c1111a787dceb8041e45b785139c16b591ae1,2,pilot_extraction_record
-4,EFTA00005707,EFTA00005707.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00005707.pdf,2026-11-01T23:00:28.5044232Z,2026-11-07T18:41:55.221369+00:00,0,not_downloaded,,,,not_processed
+4,EFTA00005707,EFTA00005707.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00005707.pdf,2026-11-01T23:00:28.5044232Z,2026-11-07T18:41:55.221369+00:00,0,expansion_download_record,154193,fa16419cde338d9665c918bb70e2253f357f96b562017670de01e46539c6dedd,4,expansion_native_extraction_record
 4,EFTA00005711,EFTA00005711.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00005711.pdf,2026-11-01T23:00:28.5044232Z,2026-11-07T18:41:55.221369+00:00,0,not_downloaded,,,,not_processed
 4,EFTA00005714,EFTA00005714.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00005714.pdf,2026-11-01T23:00:28.5044232Z,2026-11-07T18:41:55.221369+00:00,0,not_downloaded,,,,not_processed
 4,EFTA00005716,EFTA00005716.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00005716.pdf,2026-11-01T23:00:28.5044232Z,2026-11-07T18:41:55.221369+00:00,0,not_downloaded,,,,not_processed
@@ -3806,7 +3806,7 @@ dataset,file_id,filename,url,first_seen,last_seen,listing_pages_observed,downloa
 4,EFTA00005855,EFTA00005855.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00005855.pdf,2026-11-01T23:00:28.5044232Z,2026-11-07T18:41:55.221369+00:00,0,not_downloaded,,,,not_processed
 4,EFTA00005878,EFTA00005878.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00005878.pdf,2026-11-01T23:00:28.5044232Z,2026-11-07T18:41:55.221369+00:00,0,pilot_download_record,320957,65b745c957a223f6ddf4624200c78288d1ffdd5cec992f8e74925175c03f69e0,21,pilot_extraction_record
 4,EFTA00005899,EFTA00005899.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00005899.pdf,2026-11-01T23:00:28.5044232Z,2026-11-07T18:41:55.221369+00:00,0,not_downloaded,,,,not_processed
-4,EFTA00005910,EFTA00005910.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00005910.pdf,2026-11-01T23:00:28.5044232Z,2026-11-07T18:41:55.221369+00:00,0,not_downloaded,,,,not_processed
+4,EFTA00005910,EFTA00005910.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00005910.pdf,2026-11-01T23:00:28.5044232Z,2026-11-07T18:41:55.221369+00:00,0,expansion_download_record,812361,f1168414278fceffdeb2fd5556cf39a86cdf36ce84af5472b0d4f54834df3230,14,expansion_native_extraction_record
 4,EFTA00005924,EFTA00005924.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00005924.pdf,2026-11-01T23:00:28.5044232Z,2026-11-07T18:41:55.221369+00:00,0,not_downloaded,,,,not_processed
 4,EFTA00005932,EFTA00005932.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00005932.pdf,2026-11-01T23:00:28.5044232Z,2026-11-07T18:41:55.221369+00:00,0,not_downloaded,,,,not_processed
 4,EFTA00005945,EFTA00005945.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00005945.pdf,2026-11-01T23:00:28.5044232Z,2026-11-07T18:41:55.221369+00:00,0,not_downloaded,,,,not_processed
@@ -3824,7 +3824,7 @@ dataset,file_id,filename,url,first_seen,last_seen,listing_pages_observed,downloa
 4,EFTA00006066,EFTA00006066.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00006066.pdf,2026-11-01T23:00:28.5044232Z,2026-11-07T18:41:55.221369+00:00,0,not_downloaded,,,,not_processed
 4,EFTA00006069,EFTA00006069.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00006069.pdf,2026-11-01T23:00:28.5044232Z,2026-11-07T18:41:55.221369+00:00,0,not_downloaded,,,,not_processed
 4,EFTA00006072,EFTA00006072.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00006072.pdf,2026-11-01T23:00:28.5044232Z,2026-11-07T18:41:55.221369+00:00,0,not_downloaded,,,,not_processed
-4,EFTA00006085,EFTA00006085.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00006085.pdf,2026-11-01T23:00:28.5044232Z,2026-11-07T18:41:55.221369+00:00,0,not_downloaded,,,,not_processed
+4,EFTA00006085,EFTA00006085.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00006085.pdf,2026-11-01T23:00:28.5044232Z,2026-11-07T18:41:55.221369+00:00,0,expansion_download_record,741239,379e4fb261534f76933c30678c5cadf3784108c7538bb8ed2de940e3118f1358,8,expansion_native_extraction_record
 4,EFTA00006093,EFTA00006093.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00006093.pdf,2026-11-01T23:00:28.5044232Z,2026-11-07T18:41:55.221369+00:00,0,not_downloaded,,,,not_processed
 4,EFTA00006099,EFTA00006099.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00006099.pdf,2026-11-01T23:00:28.5044232Z,2026-11-07T18:41:55.221369+00:00,0,not_downloaded,,,,not_processed
 4,EFTA00006100,EFTA00006100.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00006100.pdf,2026-11-01T23:00:28.5044232Z,2026-11-07T18:41:55.221369+00:00,0,not_downloaded,,,,not_processed
@@ -3842,7 +3842,7 @@ dataset,file_id,filename,url,first_seen,last_seen,listing_pages_observed,downloa
 4,EFTA00006380,EFTA00006380.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00006380.pdf,2026-11-07T18:45:40.923Z,2026-11-07T18:45:40.923Z,1,not_downloaded,,,,not_processed
 4,EFTA00006383,EFTA00006383.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00006383.pdf,2026-11-07T18:45:40.923Z,2026-11-07T18:45:40.923Z,1,not_downloaded,,,,not_processed
 4,EFTA00006385,EFTA00006385.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00006385.pdf,2026-11-07T18:45:40.923Z,2026-11-07T18:45:40.923Z,1,not_downloaded,,,,not_processed
-4,EFTA00006387,EFTA00006387.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00006387.pdf,2026-11-07T18:45:40.923Z,2026-11-07T18:45:40.923Z,1,not_downloaded,,,,not_processed
+4,EFTA00006387,EFTA00006387.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00006387.pdf,2026-11-07T18:45:40.923Z,2026-11-07T18:45:40.923Z,1,expansion_download_record,11140387,98b051e5390830ef1fa97d5f4750b443acc930d917ff6689eff9fda8a78aa158,100,expansion_native_extraction_record
 4,EFTA00006487,EFTA00006487.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00006487.pdf,2026-11-07T18:45:40.923Z,2026-11-07T18:45:40.923Z,1,not_downloaded,,,,not_processed
 4,EFTA00006587,EFTA00006587.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00006587.pdf,2026-11-07T18:45:40.923Z,2026-11-07T18:45:40.923Z,1,not_downloaded,,,,not_processed
 4,EFTA00006687,EFTA00006687.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00006687.pdf,2026-11-07T18:45:40.923Z,2026-11-07T18:45:40.923Z,1,not_downloaded,,,,not_processed
@@ -3858,7 +3858,7 @@ dataset,file_id,filename,url,first_seen,last_seen,listing_pages_observed,downloa
 4,EFTA00007253,EFTA00007253.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007253.pdf,2026-11-07T18:45:40.923Z,2026-11-07T18:45:40.923Z,1,not_downloaded,,,,not_processed
 4,EFTA00007301,EFTA00007301.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007301.pdf,2026-11-07T18:45:40.923Z,2026-11-07T18:45:40.923Z,1,not_downloaded,,,,not_processed
 4,EFTA00007401,EFTA00007401.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007401.pdf,2026-11-07T18:45:40.923Z,2026-11-07T18:45:40.923Z,1,not_downloaded,,,,not_processed
-4,EFTA00007501,EFTA00007501.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007501.pdf,2026-11-07T18:45:40.923Z,2026-11-07T18:45:40.923Z,1,not_downloaded,,,,not_processed
+4,EFTA00007501,EFTA00007501.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007501.pdf,2026-11-07T18:45:40.923Z,2026-11-07T18:45:40.923Z,1,expansion_download_record,7964978,a00bf4439e901863c88026a61b2eb3b7c348a0a46deb663ccdc2f64e36034a0b,42,expansion_native_extraction_record
 4,EFTA00007543,EFTA00007543.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007543.pdf,2026-11-07T18:45:40.923Z,2026-11-07T18:45:40.923Z,1,not_downloaded,,,,not_processed
 4,EFTA00007546,EFTA00007546.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007546.pdf,2026-11-07T18:45:40.923Z,2026-11-07T18:45:40.923Z,1,not_downloaded,,,,not_processed
 4,EFTA00007550,EFTA00007550.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007550.pdf,2026-11-07T18:45:40.923Z,2026-11-07T18:45:40.923Z,1,not_downloaded,,,,not_processed
@@ -3874,7 +3874,7 @@ dataset,file_id,filename,url,first_seen,last_seen,listing_pages_observed,downloa
 4,EFTA00007582,EFTA00007582.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007582.pdf,2026-11-07T18:45:40.923Z,2026-11-07T18:45:40.923Z,1,not_downloaded,,,,not_processed
 4,EFTA00007585,EFTA00007585.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007585.pdf,2026-11-07T18:45:40.923Z,2026-11-07T18:45:40.923Z,1,not_downloaded,,,,not_processed
 4,EFTA00007600,EFTA00007600.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007600.pdf,2026-11-07T18:45:40.923Z,2026-11-07T18:45:40.923Z,1,not_downloaded,,,,not_processed
-4,EFTA00007606,EFTA00007606.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007606.pdf,2026-11-07T18:45:40.923Z,2026-11-07T18:45:40.923Z,1,not_downloaded,,,,not_processed
+4,EFTA00007606,EFTA00007606.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007606.pdf,2026-11-07T18:45:40.923Z,2026-11-07T18:45:40.923Z,1,expansion_download_record,1819056,e3dfdf7dc1f0ba9916c1a191d8fb684897dc3ac918e38952a84906d49274d298,3,expansion_native_extraction_record
 4,EFTA00007609,EFTA00007609.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007609.pdf,2026-11-07T18:45:40.923Z,2026-11-07T18:45:40.923Z,1,not_downloaded,,,,not_processed
 4,EFTA00007612,EFTA00007612.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007612.pdf,2026-11-07T18:45:40.923Z,2026-11-07T18:45:40.923Z,1,not_downloaded,,,,not_processed
 4,EFTA00007615,EFTA00007615.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007615.pdf,2026-11-07T18:45:40.923Z,2026-11-07T18:45:40.923Z,1,not_downloaded,,,,not_processed
@@ -3890,7 +3890,7 @@ dataset,file_id,filename,url,first_seen,last_seen,listing_pages_observed,downloa
 4,EFTA00007654,EFTA00007654.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007654.pdf,2026-11-07T18:45:44.258Z,2026-11-07T18:45:44.258Z,2,not_downloaded,,,,not_processed
 4,EFTA00007680,EFTA00007680.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007680.pdf,2026-11-07T18:45:44.258Z,2026-11-07T18:45:44.258Z,2,not_downloaded,,,,not_processed
 4,EFTA00007682,EFTA00007682.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007682.pdf,2026-11-07T18:45:44.258Z,2026-11-07T18:45:44.258Z,2,not_downloaded,,,,not_processed
-4,EFTA00007684,EFTA00007684.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007684.pdf,2026-11-07T18:45:44.258Z,2026-11-07T18:45:44.258Z,2,not_downloaded,,,,not_processed
+4,EFTA00007684,EFTA00007684.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007684.pdf,2026-11-07T18:45:44.258Z,2026-11-07T18:45:44.258Z,2,expansion_download_record,628948,7a3df464062ca451174c49a0ceccf231b08cb014aad5a04e7713b3981eec3608,1,expansion_native_extraction_record
 4,EFTA00007685,EFTA00007685.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007685.pdf,2026-11-07T18:45:44.258Z,2026-11-07T18:45:44.258Z,2,not_downloaded,,,,not_processed
 4,EFTA00007686,EFTA00007686.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007686.pdf,2026-11-07T18:45:44.258Z,2026-11-07T18:45:44.258Z,2,not_downloaded,,,,not_processed
 4,EFTA00007688,EFTA00007688.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007688.pdf,2026-11-07T18:45:44.258Z,2026-11-07T18:45:44.258Z,2,not_downloaded,,,,not_processed
@@ -3906,7 +3906,7 @@ dataset,file_id,filename,url,first_seen,last_seen,listing_pages_observed,downloa
 4,EFTA00007741,EFTA00007741.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007741.pdf,2026-11-07T18:45:44.258Z,2026-11-07T18:45:44.258Z,2,not_downloaded,,,,not_processed
 4,EFTA00007747,EFTA00007747.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007747.pdf,2026-11-07T18:45:44.258Z,2026-11-07T18:45:44.258Z,2,not_downloaded,,,,not_processed
 4,EFTA00007753,EFTA00007753.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007753.pdf,2026-11-07T18:45:44.258Z,2026-11-07T18:45:44.258Z,2,not_downloaded,,,,not_processed
-4,EFTA00007763,EFTA00007763.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007763.pdf,2026-11-07T18:45:44.258Z,2026-11-07T18:45:44.258Z,2,not_downloaded,,,,not_processed
+4,EFTA00007763,EFTA00007763.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007763.pdf,2026-11-07T18:45:44.258Z,2026-11-07T18:45:44.258Z,2,expansion_download_record,671119,9dd32b4b155c25d3bfee2ef1f009dc34fc2a40a843c8a4fcdc3c5482d8264cb5,6,expansion_native_extraction_record
 4,EFTA00007769,EFTA00007769.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007769.pdf,2026-11-07T18:45:44.258Z,2026-11-07T18:45:44.258Z,2,not_downloaded,,,,not_processed
 4,EFTA00007775,EFTA00007775.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007775.pdf,2026-11-07T18:45:44.258Z,2026-11-07T18:45:44.258Z,2,not_downloaded,,,,not_processed
 4,EFTA00007781,EFTA00007781.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007781.pdf,2026-11-07T18:45:44.258Z,2026-11-07T18:45:44.258Z,2,not_downloaded,,,,not_processed
@@ -3922,7 +3922,7 @@ dataset,file_id,filename,url,first_seen,last_seen,listing_pages_observed,downloa
 4,EFTA00007959,EFTA00007959.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007959.pdf,2026-11-07T18:45:44.258Z,2026-11-07T18:45:44.258Z,2,not_downloaded,,,,not_processed
 4,EFTA00007962,EFTA00007962.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007962.pdf,2026-11-07T18:45:44.258Z,2026-11-07T18:45:44.258Z,2,not_downloaded,,,,not_processed
 4,EFTA00007965,EFTA00007965.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007965.pdf,2026-11-07T18:45:44.258Z,2026-11-07T18:45:44.258Z,2,not_downloaded,,,,not_processed
-4,EFTA00007968,EFTA00007968.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007968.pdf,2026-11-07T18:45:44.258Z,2026-11-07T18:45:44.258Z,2,not_downloaded,,,,not_processed
+4,EFTA00007968,EFTA00007968.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007968.pdf,2026-11-07T18:45:44.258Z,2026-11-07T18:45:44.258Z,2,expansion_download_record,138995,6965151352c5e7981fa0fabb8ee9db95df5e628181c163b2136cf3a91d25839a,3,expansion_native_extraction_record
 4,EFTA00007971,EFTA00007971.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007971.pdf,2026-11-07T18:45:44.258Z,2026-11-07T18:45:44.258Z,2,not_downloaded,,,,not_processed
 4,EFTA00007975,EFTA00007975.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007975.pdf,2026-11-07T18:45:44.258Z,2026-11-07T18:45:44.258Z,2,not_downloaded,,,,not_processed
 4,EFTA00007978,EFTA00007978.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00007978.pdf,2026-11-07T18:45:44.258Z,2026-11-07T18:45:44.258Z,2,not_downloaded,,,,not_processed
@@ -3938,7 +3938,7 @@ dataset,file_id,filename,url,first_seen,last_seen,listing_pages_observed,downloa
 4,EFTA00008020,EFTA00008020.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00008020.pdf,2026-11-07T18:45:44.258Z,2026-11-07T18:45:44.258Z,2,not_downloaded,,,,not_processed
 4,EFTA00008120,EFTA00008120.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00008120.pdf,2026-11-07T18:45:44.258Z,2026-11-07T18:45:44.258Z,2,not_downloaded,,,,not_processed
 4,EFTA00008220,EFTA00008220.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00008220.pdf,2026-11-07T18:45:47.662Z,2026-11-07T18:45:47.662Z,3,not_downloaded,,,,not_processed
-4,EFTA00008320,EFTA00008320.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00008320.pdf,2026-11-07T18:45:47.662Z,2026-11-07T18:45:47.662Z,3,not_downloaded,,,,not_processed
+4,EFTA00008320,EFTA00008320.pdf,https://www.justice.gov/epstein/files/DataSet%204/EFTA00008320.pdf,2026-11-07T18:45:47.662Z,2026-11-07T18:45:47.662Z,3,expansion_download_record,10059546,e19a4cab78e2889b735f0ab2bd93455b6fb4354d490261e1a68d142d6f369981,89,expansion_native_extraction_record
 5,EFTA00008409,EFTA00008409.pdf,https://www.justice.gov/epstein/files/DataSet%205/EFTA00008409.pdf,2026-11-01T23:00:29.4494384Z,2026-11-07T18:41:56.510243+00:00,0,pilot_download_record,535668,c7f86c9f8dd6e72ca9257fa6e8cb682227d9e4c41c3997ec5a31e768b8b36890,1,pilot_extraction_record
 5,EFTA00008410,EFTA00008410.pdf,https://www.justice.gov/epstein/files/DataSet%205/EFTA00008410.pdf,2026-11-01T23:00:29.4494384Z,2026-11-07T18:41:56.510243+00:00,0,not_downloaded,,,,not_processed
 5,EFTA00008411,EFTA00008411.pdf,https://www.justice.gov/epstein/files/DataSet%205/EFTA00008411.pdf,2026-11-01T23:00:29.4494384Z,2026-11-07T18:41:56.510243+00:00,0,not_downloaded,,,,not_processed
