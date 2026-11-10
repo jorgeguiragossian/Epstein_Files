@@ -10,4 +10,6 @@ Validation: 97 offline tests, 121 static/Python comparisons, HTTP smoke, prior-d
 
 Prior log/deposit OCR limitations remain explicit and provisional literals stay local. The wave 5 compound PDF retains bounded 14-page assessment, not full review or complete segmentation. Contact rankings disabled; message enumeration incomplete.
 
-Next recommended milestone: acquire ten saved dataset 4 selections and perform extraction-quality/source review, then dataset 5. Date roles and bounded album uncertainty remain explicit; see `docs/wave-08-dates.md`. The unchanged expansion plan has 80 acquired/extracted/integrated PDFs and 20 unprocessed. Do not regenerate it.
+Wave 9 acquired/extracted, not integrated: **10 dataset 4 PDFs / 270 pages / 34,130,822 bytes**, 26 low-text pages, zero detected email-header candidates/parsed occurrences. Bounded 37-page visual comparison; eight files require scoped source-assisted OCR assessment (including incorrect statement year, handwriting and invoice omissions). All primary dates unreviewed. Metadata and findings in `docs/wave-09-acquisition.md`; PDF/native/parser/render caches stay local and ignored.
+
+Next recommended milestone: bounded local OCR/source assessment of the eight flagged wave 9 files, then integration with source-quality notices and separate date adjudication. Dataset 5 follows. The unchanged expansion plan has 90 acquired/extracted PDFs, 80 integrated and 10 unprocessed. Do not regenerate it. Live totals above are unchanged.

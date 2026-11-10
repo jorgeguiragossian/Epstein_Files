@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-09",
+  "method": "Codex bounded visual comparison of 37 source PDF pages with native UTF-8 extraction: all pages of files up to eight pages; first/middle/last pages of four larger files. Not whole-batch content review or independent authentication.",
+  "downloaded_files": 10,
+  "bytes": 34130822,
+  "pages": 270,
+  "low_text_pages": 26,
+  "visually_inspected_pages": 37,
+  "native_header_candidates": 0,
+  "parsed_email_occurrences": 0,
+  "parser_version": "email-pilot-1",
+  "date_parser_version": "email-date-2",
+  "unique_messages": null,
+  "ocr_performed": false,
+  "public_site_integrated": false,
+  "files": [
+    {
+      "file_id": "EFTA00005707",
+      "source_sha256": "fa16419cde338d9665c918bb70e2253f357f96b562017670de01e46539c6dedd",
+      "pages": 4,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "inspected_page_text_sha256": {
+        "1": "d330461220fcdd5419bdeb550711bdb80a487672723251bb2ebc62217483c55d",
+        "2": "1bc767276c279ed41954bba30ed6c314d825eb1707f86f9d1234976854668d4a",
+        "3": "87270af16782344369cc7c27d0185c069941a6ecb9260a7069fa06b94de4d795",
+        "4": "d0c257db712dee0a4db52307e4dca83e0984fd9b528031c7ba42aaddebff9227"
+      },
+      "notes": "Four-page redacted FBI administrative communication about travel authorization/clearance. To/From fields are agency-routing fields, not detected email occurrences. Printed text largely present; primary communication date and travel dates require separate adjudication.",
+      "source_assisted_ocr_review_needed": false,
+      "date_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00005910",
+      "source_sha256": "f1168414278fceffdeb2fd5556cf39a86cdf36ce84af5472b0d4f54834df3230",
+      "pages": 14,
+      "low_text_pdf_pages": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1,
+        7,
+        14
+      ],
+      "inspected_page_text_sha256": {
+        "1": "b186ec5cf36b242c108908c404fe4cf3d4d0af371d1ede13d18a64c7de74877d",
+        "7": "312a74ae577ac3b18b1341b99495bb17a81ffce01718c9df4a7ecc1153159765",
+        "14": "da3e7c573fea29d81e3d00a53a0f03b0f69c5b8dd643fa9fe7eeab17a89cb31b"
+      },
+      "notes": "Inspected folder cover has handwritten location text absent from native extraction; inspected middle/last pages are fully blacked out apart from EFTA stamps. Only 3 of 14 pages visually inspected; other low-text pages not adjudicated.",
+      "source_assisted_ocr_review_needed": true,
+      "date_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00006085",
+      "source_sha256": "379e4fb261534f76933c30678c5cadf3784108c7538bb8ed2de940e3118f1358",
+      "pages": 8,
+      "low_text_pdf_pages": [
+        1
+      ],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "inspected_page_text_sha256": {
+        "1": "6514fa5bafca1459b8df622b4af7ec83d3ed9b78d53f2b0d9eec99ae327d024e",
+        "2": "2948cb8fcd9044d7bbe0c749d1edaf08e6c27e0c410372393969ab662acc2dba",
+        "3": "a567927a37e79b3cfb6b694a8e3880682962fbee8d5ad6ec316966cb3980bbb2",
+        "4": "9963f3d2e56e9f6fed36320ef8fbdfb030df688b164cc96efc006a33238ccaef",
+        "5": "cd5f1951b253b1102c170b059b969561205e5c2fb066cb325e594170a71cade4",
+        "6": "ba061a51534dc1a3d4ba2752fa8bb5fbab25a9dd4dba8405f6367219255d1079",
+        "7": "e04f5abc19d6201ec19c7bde4b8c06eb668dc83600af97c3a958010261b71c18",
+        "8": "d0dbbbf980b84997df5e428d8fade4b17b6499c90782654277e9b48ad9b5d980"
+      },
+      "notes": "Folder cover, business-record certification, handwritten inventory, four front-of-house reports and settlement sheet. Native handwriting on pages 1-3 is incomplete/errorful; printed report tables have reading-order/numeric errors. Certification execution, event and settlement dates are distinct; no primary date assigned.",
+      "source_assisted_ocr_review_needed": true,
+      "date_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00006387",
+      "source_sha256": "98b051e5390830ef1fa97d5f4750b443acc930d917ff6689eff9fda8a78aa158",
+      "pages": 100,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1,
+        50,
+        100
+      ],
+      "inspected_page_text_sha256": {
+        "1": "1b945b9682aeb59d6891d8cafacb39c3c070705903ea0eda73cf6214449d6087",
+        "50": "5075b45a7ca8e33c100da2073dfabf7af1deea47d84cf3f5d758046100482c5f",
+        "100": "fa176d757384463f462e31898fd0b778900964acb31e699e610c4b87db548e9a"
+      },
+      "notes": "Three sampled pages of redacted telephone statements span different statement headings. Native destination/date/numeric recognition contains errors; row/column relationships are not validated. No subscriber identity, contact ranking, unique calls or single reporting period inferred from this 100-page file.",
+      "source_assisted_ocr_review_needed": false,
+      "date_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00007501",
+      "source_sha256": "a00bf4439e901863c88026a61b2eb3b7c348a0a46deb663ccdc2f64e36034a0b",
+      "pages": 42,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1,
+        21,
+        42
+      ],
+      "inspected_page_text_sha256": {
+        "1": "48925221e28e3188403bf601d1b573961a30f4b278e799ff52cb926bd48ea931",
+        "21": "bbd87dfca9f6eaeaeb4d975b49b8338be6b95996878569b1728c234f24df0a5e",
+        "42": "d6db24e37889e98941c1e7e167e6464f93366e7e09a32115c681676145dee54b"
+      },
+      "notes": "Three sampled telephone-statement pages include itemized calls and account service charges across different headings. Native page 1 statement year disagrees with visible source year; dates, places and columns have recognition errors. No primary date, call counts, subscriber identity or full period coverage assigned.",
+      "source_assisted_ocr_review_needed": true,
+      "date_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00007606",
+      "source_sha256": "e3dfdf7dc1f0ba9916c1a191d8fb684897dc3ac918e38952a84906d49274d298",
+      "pages": 3,
+      "low_text_pdf_pages": [
+        1
+      ],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "inspected_page_text_sha256": {
+        "1": "05b134f0d6a8c62a286b2bb1bafb785020dcc9690417458f6cd0614ab43fea17",
+        "2": "a5b47c71d0849d9012f4fcb1351cf6abbcace587adf3b118ec4553e346c36b90",
+        "3": "c88c896904a645a86a3996ec5cd0b95b659032f9c8dc2d721bad3a1418f3a3c9"
+      },
+      "notes": "Folder cover, order/shipment document and shipping label inspected. Cover identifiers omitted from native text; printed shipment dates/fields contain recognition errors. Multiple document roles/dates; no primary date assigned.",
+      "source_assisted_ocr_review_needed": true,
+      "date_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00007684",
+      "source_sha256": "7a3df464062ca451174c49a0ceccf231b08cb014aad5a04e7713b3981eec3608",
+      "pages": 1,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "b27c529cf2c5b6d1f2f06a51a74349337b903d97990f2c32286cdeab56d519e7"
+      },
+      "notes": "Invoice photographed through reflective packaging. Native extraction misses much of invoice body and printed/handwritten dates; exceeds low-text threshold despite poor recognition. No date, purchase attribution or identity inferred.",
+      "source_assisted_ocr_review_needed": true,
+      "date_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00007763",
+      "source_sha256": "9dd32b4b155c25d3bfee2ef1f009dc34fc2a40a843c8a4fcdc3c5482d8264cb5",
+      "pages": 6,
+      "low_text_pdf_pages": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "inspected_page_text_sha256": {
+        "1": "8cd50993f1452ca41bcd3697b22bab909b7933bac04b9330d7dce20e9ff10d0c",
+        "2": "da43403b519d9ef9dedc007185c9ce0883705b0c8c8bc33fcbac85adf907ed78",
+        "3": "41cd2a27aba290a0d315658b8f5cb2ebd3e0200484705aff12805cdeb9c89a6d",
+        "4": "9811465439df77a45cf9f927f49bc391b86e7279692c374d89e2976fb1b39b66",
+        "5": "94046ca6ff90121c4e2ea4691a875cb20cc632a6b3fb49b3aedc41fd271530ea",
+        "6": "4d9fbac7f9a965e277f96e8b35e372c7f61cced10ee508cb423859c1aa40b3e7"
+      },
+      "notes": "Evidence packaging, redacted item cover, digitization notice, handwritten evidence form, unscanned-item placeholder and cassette photograph inspected. Native text omits handwriting/descriptions and label text. Placeholder revision/digitization-template dates are not evidence-event dates; no audio content or primary date inferred.",
+      "source_assisted_ocr_review_needed": true,
+      "date_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00007968",
+      "source_sha256": "6965151352c5e7981fa0fabb8ee9db95df5e628181c163b2136cf3a91d25839a",
+      "pages": 3,
+      "low_text_pdf_pages": [
+        2,
+        3
+      ],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "inspected_page_text_sha256": {
+        "1": "f3f801aef70868291afeff12fc4d37481b9a6c7a99641f5d4936aac0fbfe567b",
+        "2": "feb5756b1e1bac333c9873c798a48a5d912620e8b19bab410494229a1034c957",
+        "3": "58cd105180de4e876e8848d671b9aa6651a1ef9f77bf7eb22b1d209846e7d346"
+      },
+      "notes": "Handwritten evidence form, unscanned-item placeholder and cassette photograph inspected. Native form date is inconsistent with visible source; handwritten description/labels omitted or unreliable. Template revision is not an evidence-event date. No audio content or primary date inferred.",
+      "source_assisted_ocr_review_needed": true,
+      "date_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00008320",
+      "source_sha256": "e19a4cab78e2889b735f0ab2bd93455b6fb4354d490261e1a68d142d6f369981",
+      "pages": 89,
+      "low_text_pdf_pages": [
+        30,
+        49,
+        83,
+        85,
+        89
+      ],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1,
+        45,
+        89
+      ],
+      "inspected_page_text_sha256": {
+        "1": "14fa3dee98f594a158d50b5246d6cb3de14d8e5331eba2d8d957b8116946db0a",
+        "45": "d7c198a14c475f453e74d3e8187e4b875c264bcaa2c65fbf13e85d7f3549df26",
+        "89": "2f6e217a8d5e0f56f2794aaca69c46b33a14d68cfa4d148377c683a2572934cb"
+      },
+      "notes": "First/middle pages are scanned publication text; final page is redacted handwritten ownership/department marking with almost no native text. Publication reading order and character encoding have errors. Scope is 3 of 89 pages; internal components and remaining low-text pages not fully reviewed. Text is not a personal statement by the subject.",
+      "source_assisted_ocr_review_needed": true,
+      "date_review_status": "unreviewed"
+    }
+  ]
+}
