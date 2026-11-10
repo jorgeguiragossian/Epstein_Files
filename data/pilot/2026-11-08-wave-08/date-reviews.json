@@ -1,0 +1,356 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-09",
+  "scope": "Ten wave 8 PDFs: one evidence-received date and nine uncertain primary dates; bounded album review preserved. No new briefs or native email repairs.",
+  "reviews": [
+    {
+      "file_id": "EFTA00003434",
+      "dataset": 3,
+      "source_sha256": "913ab68537d96bbeb2c02b101b704f316e13a2284c27ea14678616edf1815ff8",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "EFTA00003434",
+      "notes": "Photograph has no established complete capture/issue date. Source stamp identifies a page, not a day. No image/neighboring-file date inference.",
+      "review_method": "Codex scoped source comparison of cited PDF pages with native UTF-8 evidence and prior quality/OCR review; editorial date adjudication, not authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "EFTA00003434",
+          "native_text_sha256": "da486c798de4da92a82adf8a8870889829100c7e5fc824ccb00c4f81eb94e4f1"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00003858",
+      "dataset": 3,
+      "source_sha256": "f1b6eddeb9ff47c3014cadc873e230dbe30e3865cba3fcc034cfc98a1b51ff02",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "EFTA00003858",
+      "notes": "Four-page item/package record: scanned object, item-not-scanned placeholder and package images. Template revision and product copyright are distinct from record creation/acquisition. No single primary issue date established.",
+      "review_method": "Codex scoped source comparison of cited PDF pages with native UTF-8 evidence and prior quality/OCR review; editorial date adjudication, not authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "EFTA00003858",
+          "native_text_sha256": "2fb7b78d68790a6c64bc2514b5daf6686a80c1b53689815c0bdcba94d1fff2aa"
+        },
+        {
+          "pdf_page": 2,
+          "quote": "ITEM \nWAS NOT \nSCANNED \nDESCRIPTION \nI .,,,o,,,,--\nEFTA00003859",
+          "native_text_sha256": "7ea70e06a09a3fd6458407455650bad7d653ae557c7add3a94ec0398623e3bea"
+        },
+        {
+          "pdf_page": 3,
+          "quote": "EFTA00003860",
+          "native_text_sha256": "966a222fb899192495789a2c9029fbf12ad1c50cabb8f5343fceceb4bda1f621"
+        },
+        {
+          "pdf_page": 4,
+          "quote": "Lather -Up Pussy'\" \nGo ahead and work \nyourself up into a \nsudsy lather. \nThis playful pussy will \nbring a new kick to \nyour shower or tub. \nThere isn't a better way \nto start your day than \nwith a little pussy! \n7 \nE-2482 4-2 \nV \n16770 01328 \n@Copyright 1997 by California Exotic Nove \nMade in China. SOLO AS A HOVE \nnghts reserved. The shape and appearance of this parka ard dress of Cardomia Exol \n6 \nII I II048572 \nFOR EXTERNAL USE 01 \nEFTA00003861",
+          "native_text_sha256": "afe2619cf86c8e279b84e945dcdedb05260896d4a87d3440163219ddc565b5de"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00003931",
+      "dataset": 3,
+      "source_sha256": "c8bf70cfd49c3242afc8002c4280b5f2aa0c7db71bca1bbd6ac402a688280bfc",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "ITEM",
+      "notes": "Placeholder and framed photograph: template revision dates the form version, not the object/photo/record issue. No complete primary date established.",
+      "review_method": "Codex scoped source comparison of cited PDF pages with native UTF-8 evidence and prior quality/OCR review; editorial date adjudication, not authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "ITEM",
+          "native_text_sha256": "ba23211f206d29239db9a71ee1a3826fdf716d23acf81cc2d97e0b7517021a7b"
+        },
+        {
+          "pdf_page": 2,
+          "quote": "EFTA00003932",
+          "native_text_sha256": "70e59bfafdca3a36d46c9785f888b447f82dcb5c36b81acac3aee6124cf146c6"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00004012",
+      "dataset": 3,
+      "source_sha256": "5adf1bc0819ab23ca1e2fd5fb73155e0d7f0c8806d8574c0c17fe6658c540839",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "Date :",
+      "notes": "Only PDF pages 1/14/27 visually inspected. Photo-processing sleeve date field is blank; sampled photos do not establish album assembly/issue/capture date. Not a whole-album date review.",
+      "review_method": "Codex scoped source comparison of cited PDF pages with native UTF-8 evidence and prior quality/OCR review; editorial date adjudication, not authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1,
+        14,
+        27
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "Date :",
+          "native_text_sha256": "c26202f2e9e8c4a68666933b2e43b2fcdc1f1bd595f9a7c896a443e836e8c136"
+        },
+        {
+          "pdf_page": 14,
+          "quote": "EFTA00004025",
+          "native_text_sha256": "f2bb548c83b943918a05c25204e5726cbec5dde35714ba047d7cf5c23076b1a4"
+        },
+        {
+          "pdf_page": 27,
+          "quote": "EFTA00004038",
+          "native_text_sha256": "c37fcb96a1a40b8b44addc7b6250f6462bdc92ff23c5554c653d11041dc18b53"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00004060",
+      "dataset": 3,
+      "source_sha256": "c51f98989dff7fceed3e4859439bcaae59d2df267dc3899cecebd93c506e2495",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "EFTA00004060",
+      "notes": "Publication/advertisement covers and reverse sides. Month, anniversary and weekly promotion text do not establish a full primary day. No year/day inferred from publication styling or marketing claims.",
+      "review_method": "Codex scoped source comparison of cited PDF pages with native UTF-8 evidence and prior quality/OCR review; editorial date adjudication, not authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "EFTA00004060",
+          "native_text_sha256": "874cc9237a47b285369d1223633a6e0ccedc47d45decae33d5697f10829e5324"
+        },
+        {
+          "pdf_page": 2,
+          "quote": "y. \nEFTA00004061",
+          "native_text_sha256": "517a59d0633f9c8b69eff782671a0729ac5e931777b44e8f80673f0ab4e3f62f"
+        },
+        {
+          "pdf_page": 3,
+          "quote": "EFTA00004062",
+          "native_text_sha256": "f5a2c33d74d8fd448b2e46e3f23c014f2e29dd623b8757868c0317c6263308c1"
+        },
+        {
+          "pdf_page": 4,
+          "quote": "g(0 12-6 \nEFTA00004063",
+          "native_text_sha256": "ecfe1e17b505eea00534ff9e9458cbb0e6a42355155087b6f974be89ef4b8d3f"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00004231",
+      "dataset": 3,
+      "source_sha256": "c8fd4649d5434f725917364d3d50d0198e26398257c179860ad9b3e8d5590bf9",
+      "status": "dated",
+      "primary_date": "2020-07-17",
+      "date_type": "evidence_received",
+      "precision": "day",
+      "evidence_page": 1,
+      "evidence_quote": "Date Received",
+      "notes": "Handwritten Date Received row reads 7/17/20, interpreted as July 17, 2020 in the contemporary US evidence-receipt context. This is the recorded receipt-handling date for the evidence record, not photo capture, media creation or authenticated chain of custody. Form revision and item-not-scanned template revision are separate. Native date text remains damaged and unchanged. Source header reading: 7/17/20. No timezone is inferred.",
+      "review_method": "Codex scoped source comparison of cited PDF pages with native UTF-8 evidence and prior quality/OCR review; editorial date adjudication, not authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "Date Received",
+          "native_text_sha256": "abce9ffaddb71006e51b3bbb7248da9644d23686c45941b993a7591d8f050ca0"
+        },
+        {
+          "pdf_page": 2,
+          "quote": "ITEM \nWAS NOT \nSCANNED \nDESCRIPTION \nEFTA00004232",
+          "native_text_sha256": "eff7afced745c56f960dd3dc7a71800738d66237fd073856cc4b05eb9fd93176"
+        },
+        {
+          "pdf_page": 3,
+          "quote": "EFTA00004233",
+          "native_text_sha256": "69b00ce1c63b896292408184c2b2cdaeda1cbc77eaf87e2deda69fc047b1b2f5"
+        }
+      ],
+      "source_date_reading": "7/17/20"
+    },
+    {
+      "file_id": "EFTA00004577",
+      "dataset": 3,
+      "source_sha256": "35d961a924b72dddfbc9c45292810e40408a7ddca4eda88f79421c6210dbafa2",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "EFTA00004577",
+      "notes": "Only PDF pages 1/43/86 visually inspected. Contact-sheet filenames/captions and disc label do not establish a single assembly/issue date or dates of every image/media item. No date inferred from caption/filename fragments; not full-album review.",
+      "review_method": "Codex scoped source comparison of cited PDF pages with native UTF-8 evidence and prior quality/OCR review; editorial date adjudication, not authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1,
+        43,
+        86
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "EFTA00004577",
+          "native_text_sha256": "1a11b42ee4112be7e06d180f72f18e36fe98c99229453c5f52d347f615f1f005"
+        },
+        {
+          "pdf_page": 43,
+          "quote": "Clinton/Morocco24.JPG \nMorroco king wedding \n\u2022 \nClinton/Morocco27.JPG \nMorroco king wedding \nClinton/Morocco30.JPG \nMorroco king wedding \n33 \nSt Trop/Clinton Morroco. Nude \nClinton/Morocco25.JPG \nMorroco king wedding \nClinton/Morocco28.JPG \nMorroco king wedding \nClinton/Morocco31.J PG \nMorroco king wedding \nClinton/Morocco26.JPG \nMorroco king wedding \nClinton/Morocco29.JPG \nMorroco king wedding \nClinton/Morocco32.JPG \nMorroco king wedding \nEFTA00004619",
+          "native_text_sha256": "5c5ed874252c68245b86adf3a1e8d53d242a84546ef63d7ef2f19b2afe78215f"
+        },
+        {
+          "pdf_page": 86,
+          "quote": "\u2022 \nEFTA00004662",
+          "native_text_sha256": "546121e46680b7bd920b91f03254230e8e55738ec1c53ac971bad3a0b2cf13e8"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00005091",
+      "dataset": 3,
+      "source_sha256": "6dda07399013a01f3b8e6e2a58359512e4120ff62d9188af4e2bd59c6db78835",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "BOOK 20",
+      "notes": "Only PDF pages 1/50/100 visually inspected. Index labels contain year/month/event-like fragments, not a single established issue/assembly day. Disc labels and contact sheets do not establish photo/media dates or contents; no forced day precision.",
+      "review_method": "Codex scoped source comparison of cited PDF pages with native UTF-8 evidence and prior quality/OCR review; editorial date adjudication, not authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1,
+        50,
+        100
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "BOOK 20",
+          "native_text_sha256": "1387b273fa4d269a5ece223d00be504b9903cea728770fd4d72e32425050bb50"
+        },
+        {
+          "pdf_page": 50,
+          "quote": "10. \nEFTA00005140",
+          "native_text_sha256": "b205b5c4c3d90c5459391d325189fc97a5831f153224314de7fa6176e1e4d250"
+        },
+        {
+          "pdf_page": 100,
+          "quote": "Chateau Vilette \n\u2751+ + + + + \nIMG_0157.JPG \nE + + + + + \nIMG_0160.JPG \n\u2751+ + + + + \nIMG_0158.JPG \nEj + 4- 4 4 4-\nIMG_0161.JPG \n\u2751\u00a0+ + + + + \nIMG_0159.JPG \n\u2751+ + + + + \nIMG_0162.JPG \n\u2751+ + 4- 4- \u2751+ + 4- 4- 4- \u27514- 4- 4- 4-\nIMG_0163.JPG IMG_0164.JPG IMG_0165.JPG \nEFTA00005190",
+          "native_text_sha256": "fd835e4413587dc8d07cabd2d54c281f9f27d5cb5a4c3a98a177cf91836f25bd"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00005536",
+      "dataset": 3,
+      "source_sha256": "dd89586bee41592805b562ef6f4405ba1f7de0331b10f9513c76f719894ec905",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "Looking",
+      "notes": "Two redacted image/publication pages have no established complete issue/assembly/capture date. Title/appearance is not a date. Redacted content is not reconstructed.",
+      "review_method": "Codex scoped source comparison of cited PDF pages with native UTF-8 evidence and prior quality/OCR review; editorial date adjudication, not authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "Looking",
+          "native_text_sha256": "172e77a5f7f718a1076959b8d5d3f01ba3a45dc4197cc9140b6effeb95c9d834"
+        },
+        {
+          "pdf_page": 2,
+          "quote": "\u2022 \n\u2022 \n\u2022 \nEFTA00005537",
+          "native_text_sha256": "707eaee023d603daded647c364c7fbfc3e4c6aca1b4e6943a8c36869d15fca46"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00005586",
+      "dataset": 3,
+      "source_sha256": "2ca8bfbe49f98b91cb43f0a230b21f7a16d05374ae69d92204f77a72da634a84",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "Grand Jury-NY",
+      "notes": "Only PDF pages 1/60/119 visually inspected. Blacked-out content and Grand Jury-NY labels/stamps do not establish a full primary day. Do not infer hidden dates or hearing/filing status; not review of all 119 source pages.",
+      "review_method": "Codex scoped source comparison of cited PDF pages with native UTF-8 evidence and prior quality/OCR review; editorial date adjudication, not authentication",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1,
+        60,
+        119
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "Grand Jury-NY",
+          "native_text_sha256": "13b4c73bf6f65b62bb8501f806d25d33a5ca1ea539605b7c590c624f527542bf"
+        },
+        {
+          "pdf_page": 60,
+          "quote": "Grand Jury-NY \nEFTA00005645",
+          "native_text_sha256": "886a1ac7dedf89aeddef06825c54417cb2d50970402d11c14e557a67a37d106d"
+        },
+        {
+          "pdf_page": 119,
+          "quote": "Grand Jury-NY \nEFTA00005704",
+          "native_text_sha256": "d0506bdf6579c9441f468d6cc0581629a04c8607b2480f367c88272623c6e2e5"
+        }
+      ]
+    }
+  ]
+}
