@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-09",
+  "reviewer": "Codex",
+  "file_id": "EFTA00004231",
+  "dataset": 3,
+  "source_sha256": "c8fd4649d5434f725917364d3d50d0198e26398257c179860ad9b3e8d5590bf9",
+  "native_extraction_sha256": "4f351c2bc55f25fb118f8d6b4b4364e6b476f09c969e1f10446547b7b11936d5",
+  "method": "Local Windows.Media.Ocr en-US on PDFium scale-3 renders and receipt crops, visually compared by Codex. Same-assistant provisional literal review, not independent authentication. No external service.",
+  "ocr_attempts": [
+    {
+      "pdf_page": 1,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/EFTA00004231-page-1.png",
+      "image_sha256": "ed9196cea8d2762c818750c52536eba091aba3a6a9fb5e5d5f28c4f06875286a",
+      "result_path": "extractions/ocr-review/EFTA00004231-page-1.json",
+      "result_sha256": "edb3f2a00f1ff9a1245947f18d64e60b2c441260bca4e56eab5178db6cc9a28c",
+      "recognized_lines": 27,
+      "recognized_characters": 497,
+      "crop_pixels_on_rotated_full_render": null,
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    },
+    {
+      "pdf_page": 1,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/EFTA00004231-header.png",
+      "image_sha256": "dfecff25c55fd5c34ca483a0f153568ca204e1209d307a74d0283984c5c3948c",
+      "result_path": "extractions/ocr-review/EFTA00004231-header.json",
+      "result_sha256": "95cbc11aab7cb0496c416826f2c78a53577eaaff0436179fce6dd553f8364791",
+      "recognized_lines": 9,
+      "recognized_characters": 179,
+      "crop_pixels_on_rotated_full_render": [
+        100,
+        250,
+        1400,
+        720
+      ],
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    },
+    {
+      "pdf_page": 1,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/EFTA00004231-description.png",
+      "image_sha256": "c99a0bd540b24a2f318d708bd494f5a3be7dc02a166fe3a3fe7eb21f16e54245",
+      "result_path": "extractions/ocr-review/EFTA00004231-description.json",
+      "result_sha256": "e464c9b227d6ea9a3b7b2eb4213f046f080d319b53aac76d0623380ed4b4ee75",
+      "recognized_lines": 3,
+      "recognized_characters": 48,
+      "crop_pixels_on_rotated_full_render": [
+        100,
+        1800,
+        1450,
+        2170
+      ],
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    }
+  ],
+  "page_findings": [
+    {
+      "pdf_page": 1,
+      "native_text_sha256": "abce9ffaddb71006e51b3bbb7248da9644d23686c45941b993a7591d8f050ca0",
+      "finding": "Full-page and focused OCR fail the handwritten received date and most description. Two source-assisted literal fragments remain separate and provisional. Date Received is an evidence-handling role, not photo capture or media creation; no ISO primary date assigned. Redacted source is not reconstructed; USB content and chain of custody are not independently verified."
+    }
+  ],
+  "eligibility": {
+    "primary_date_assignment": false,
+    "verified_transactions": false,
+    "identity_inference": false,
+    "native_text_replacement": false,
+    "verified_media_contents": false
+  },
+  "transcription_layer": {
+    "local_path": "extractions/ocr-review/EFTA00004231-editorial-readings.json",
+    "sha256": "e28dad15747a9f50856f96b682a4823ea48e1616db30a200b3a31f964c6b0411"
+  },
+  "reviewed_fields": [
+    {
+      "id": "received-date",
+      "pdf_page": 1,
+      "kind": "handwritten_date_literal",
+      "status": "provisional_source_assisted_not_independently_verified",
+      "image_path": "extractions/ocr-review/EFTA00004231-header.png",
+      "region_pixels": [
+        240,
+        270,
+        550,
+        345
+      ],
+      "literal_sha256": "fbb9e2baae052966ad94ddb33ffd9519d0122ba31acaa4fea3e3e86efe23970d"
+    },
+    {
+      "id": "description-fragment",
+      "pdf_page": 1,
+      "kind": "handwritten_description_fragment",
+      "status": "provisional_source_assisted_not_independently_verified",
+      "image_path": "extractions/ocr-review/EFTA00004231-description.png",
+      "region_pixels": [
+        120,
+        70,
+        1050,
+        145
+      ],
+      "literal_sha256": "bd45aeb467a68eac720c034e8a5743e28f3a98215fec6b38637f18b861864fa1"
+    }
+  ],
+  "ocr_improvement_accepted": false,
+  "independent_verification": false,
+  "remaining_uncertainties": [
+    "No full corrected text layer validated",
+    "Source labels/date roles are not independent factual verification",
+    "No primary dates, identities or media contents promoted"
+  ],
+  "publication": "Raw OCR, images and literal readings remain ignored local caches. Metadata publishes scope, findings, hashes and image regions only."
+}

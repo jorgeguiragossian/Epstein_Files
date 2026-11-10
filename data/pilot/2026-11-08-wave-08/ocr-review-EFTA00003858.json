@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-09",
+  "reviewer": "Codex",
+  "file_id": "EFTA00003858",
+  "dataset": 3,
+  "source_sha256": "f1b6eddeb9ff47c3014cadc873e230dbe30e3865cba3fcc034cfc98a1b51ff02",
+  "native_extraction_sha256": "f7c41506988a5a2992dd532c9da58850ee9dbb93d5641b8e038a173ce7fa2385",
+  "method": "Local Windows.Media.Ocr en-US on PDFium scale-3 renders and receipt crops, visually compared by Codex. Same-assistant provisional literal review, not independent authentication. No external service.",
+  "ocr_attempts": [
+    {
+      "pdf_page": 3,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/EFTA00003858-page-3.png",
+      "image_sha256": "cb8d9530507988f8fd4e4a473a120297fdf012c6dfbeae169ffe72d48fca2d09",
+      "result_path": "extractions/ocr-review/EFTA00003858-page-3.json",
+      "result_sha256": "6e4fb97ec101230bfceb9a6d74e8f34d0ed8ce6ede432c617bae528a6d86665d",
+      "recognized_lines": 2,
+      "recognized_characters": 28,
+      "crop_pixels_on_rotated_full_render": null,
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    },
+    {
+      "pdf_page": 4,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/EFTA00003858-page-4.png",
+      "image_sha256": "17bf826e72bf8d026a5be61179b93515cf63fd671db894ef5ae0a820df88260b",
+      "result_path": "extractions/ocr-review/EFTA00003858-page-4.json",
+      "result_sha256": "5821a7322ac11e0f1a0c4de24f838ef48e3f81cd019badaa4fa648c5b1b2b9cd",
+      "recognized_lines": 26,
+      "recognized_characters": 547,
+      "crop_pixels_on_rotated_full_render": null,
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    }
+  ],
+  "page_findings": [
+    {
+      "pdf_page": 3,
+      "native_text_sha256": "966a222fb899192495789a2c9029fbf12ad1c50cabb8f5343fceceb4bda1f621",
+      "finding": "Full-page OCR reads very little of the prominent front heading, while back-package prose is partially recovered with character/brand/barcode errors. Partial recognition is not a validated complete transcription; product/copyright labels do not establish a primary document date or ownership."
+    },
+    {
+      "pdf_page": 4,
+      "native_text_sha256": "afe2619cf86c8e279b84e945dcdedb05260896d4a87d3440163219ddc565b5de",
+      "finding": "Full-page OCR reads very little of the prominent front heading, while back-package prose is partially recovered with character/brand/barcode errors. Partial recognition is not a validated complete transcription; product/copyright labels do not establish a primary document date or ownership."
+    }
+  ],
+  "eligibility": {
+    "primary_date_assignment": false,
+    "verified_transactions": false,
+    "identity_inference": false,
+    "native_text_replacement": false,
+    "verified_media_contents": false
+  },
+  "transcription_layer": {
+    "local_path": "extractions/ocr-review/EFTA00003858-editorial-readings.json",
+    "sha256": "523c9cff1f280e854e98dacc2fa60e39795e46f3b5e4f317202bb0f57b89537e"
+  },
+  "reviewed_fields": [
+    {
+      "id": "package-title",
+      "pdf_page": 3,
+      "kind": "printed_heading",
+      "status": "provisional_source_assisted_not_independently_verified",
+      "image_path": "extractions/ocr-review/EFTA00003858-page-3.png",
+      "region_pixels": [
+        250,
+        300,
+        1600,
+        1400
+      ],
+      "literal_sha256": "ba7bc736a5dddd3d9405e6ed717381852a8eddefe05490391b745c84ffb77ac3"
+    }
+  ],
+  "ocr_improvement_accepted": false,
+  "independent_verification": false,
+  "remaining_uncertainties": [
+    "No full corrected text layer validated",
+    "Source labels/date roles are not independent factual verification",
+    "No primary dates, identities or media contents promoted"
+  ],
+  "publication": "Raw OCR, images and literal readings remain ignored local caches. Metadata publishes scope, findings, hashes and image regions only."
+}

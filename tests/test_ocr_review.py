@@ -43,6 +43,15 @@ class OcrReviewTests(unittest.TestCase):
         self.assertTrue(ocr.validate(self.folder)['native_extraction_preserved'])
         self.assertEqual((self.folder/'native.json').read_bytes(),before)
 
+    def test_named_reviews_keep_same_bindings_and_reject_paths_outside_batch(self):
+        self.save('second-review.json',self.review)
+        self.assertEqual(ocr.validate(self.folder),ocr.validate(self.folder,'second-review.json'))
+        with self.assertRaisesRegex(ValueError,'outside batch'):
+            ocr.validate(self.folder,'../outside.json')
+        self.review['reviewed_fields'][0]['literal_sha256']='changed'
+        self.save('second-review.json',self.review)
+        with self.assertRaises(ValueError):ocr.validate(self.folder,'second-review.json')
+
     def test_rejects_stale_review_and_eligibility_promotion(self):
         for field,value in [('source_sha256','changed'),('native_extraction_sha256','changed'),('eligibility',dict(primary_date_assignment=True))]:
             changed=copy.deepcopy(self.review);changed[field]=value

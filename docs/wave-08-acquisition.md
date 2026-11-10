@@ -21,3 +21,29 @@ Tracked metadata: `data/pilot/2026-11-08-wave-08/selection.json`, `downloads.jso
 The live viewer remains unchanged at **170 PDFs / 2,208 pages**, 70 dated, 40 uncertain and 60 unreviewed PDFs. The unchanged expansion plan has **80 acquired/extracted PDFs, 70 integrated and 20 unprocessed**. Do not regenerate it.
 
 Next: targeted local source/OCR assessment of the two printed-cover files and handwritten receipt, retaining native text and explicit field/date uncertainty. Then integrate with bounded album/redaction/placeholder notices, prior-data preservation checks and separate primary-date adjudication.
+
+## Targeted OCR/source assessment — November 9, 2026
+
+Five source pages were re-rendered at PDFium scale 3 and visually compared with seven local Windows.Media.Ocr en-US runs:
+
+| Source | Scope | OCR output characters |
+| --- | --- | --- |
+| EFTA00003858 | PDF pages 3 and 4, full page | 28 / 547 |
+| EFTA00004060 | PDF pages 1 and 3, full page | 633 / 46 |
+| EFTA00004231 | PDF page 1, full/header/description | 497 / 179 / 48 |
+
+Character counts measure output volume, not accuracy. OCR recovers some printed package/advertisement prose but misses prominent stylized headings and introduces character, label and barcode errors. Receipt OCR misses the handwritten received date and damages most description text, including in focused crops. **No OCR output is accepted as native-text replacement or corrected public search text.**
+
+Codex separately retained four provisional sample literals in ignored local editorial layers: one package heading, one advertisement heading and two receipt-field fragments. This is not full-page transcription, independent identity/ownership verification or an authenticated custody chain. The receipt field is explicitly Date Received, distinct from photo capture/media creation. No normalized primary date is assigned. Redacted contributor/agent content is not reconstructed, and the USB photograph does not supply USB contents.
+
+Three tracked metadata files (`ocr-review-EFTA00003858.json`, `ocr-review-EFTA00004060.json`, `ocr-review-EFTA00004231.json`) and `ocr-review-index.json` bind PDF/native/image/result/literal hashes, page scope, crop coordinates, sample regions and disabled promotion flags. All raw OCR text/word boxes, render images and literal readings remain ignored under `extractions/ocr-review/`. Native extraction bytes are unchanged. No new source PDFs, dates, summaries or review layers are deployed in this milestone.
+
+The checker now accepts a named metadata file through `--review`, preserving its default behavior for earlier batches and rejecting paths outside the batch. Revalidate each named review, for example:
+
+```powershell
+python scripts/check-ocr-review.py --out data/pilot/2026-11-08-wave-08 --review ocr-review-EFTA00004231.json
+```
+
+All three source/OCR/literal evidence chains validate and all **95 offline tests** pass, including named-manifest stale-field and path-containment checks. The five inspected OCR pages do not expand the previous 28-page visual scope because all were already inspected. The remaining album/redaction scope limits still apply.
+
+Next: integrate wave 8 native text with explicit bounded album/redaction/placeholder notices and OCR-assessment findings. Preserve all provisional literals locally and compare prior public payloads. Primary-date adjudication follows separately; template revisions, product labels and receipt roles must remain distinct.

@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-09",
+  "reviewer": "Codex",
+  "file_id": "EFTA00004060",
+  "dataset": 3,
+  "source_sha256": "c51f98989dff7fceed3e4859439bcaae59d2df267dc3899cecebd93c506e2495",
+  "native_extraction_sha256": "1a3625d4cddd084fad9f6ddd55cb26ced7539fdab00d6ce3d9e825edbb127cd7",
+  "method": "Local Windows.Media.Ocr en-US on PDFium scale-3 renders and receipt crops, visually compared by Codex. Same-assistant provisional literal review, not independent authentication. No external service.",
+  "ocr_attempts": [
+    {
+      "pdf_page": 1,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/EFTA00004060-page-1.png",
+      "image_sha256": "f38de9cdb6a5277adb86c3c62ff7b19a96bdd6e0106debb90c0707a362d6f111",
+      "result_path": "extractions/ocr-review/EFTA00004060-page-1.json",
+      "result_sha256": "0bf3d7223423a0f5522ce4dbcba52dad65e73aa45864728631b6ff814cf4ce70",
+      "recognized_lines": 25,
+      "recognized_characters": 633,
+      "crop_pixels_on_rotated_full_render": null,
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    },
+    {
+      "pdf_page": 3,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/EFTA00004060-page-3.png",
+      "image_sha256": "749b83dc05ca60b0d38abb7b13a2d4d3d60c6380f971f6ab2ffd640bd2b31406",
+      "result_path": "extractions/ocr-review/EFTA00004060-page-3.json",
+      "result_sha256": "3db99be9172b3e99a873db8c65d661d3e10617ce7d1a03f7d855860ad72c122c",
+      "recognized_lines": 4,
+      "recognized_characters": 46,
+      "crop_pixels_on_rotated_full_render": null,
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    }
+  ],
+  "page_findings": [
+    {
+      "pdf_page": 1,
+      "native_text_sha256": "874cc9237a47b285369d1223633a6e0ccedc47d45decae33d5697f10829e5324",
+      "finding": "OCR partially recovers advertisement text but misses stylized mastheads and introduces errors. Publication month/anniversary references remain distinct from primary day dates. Redactions and native extraction remain unchanged."
+    },
+    {
+      "pdf_page": 3,
+      "native_text_sha256": "f5a2c33d74d8fd448b2e46e3f23c014f2e29dd623b8757868c0317c6263308c1",
+      "finding": "OCR partially recovers advertisement text but misses stylized mastheads and introduces errors. Publication month/anniversary references remain distinct from primary day dates. Redactions and native extraction remain unchanged."
+    }
+  ],
+  "eligibility": {
+    "primary_date_assignment": false,
+    "verified_transactions": false,
+    "identity_inference": false,
+    "native_text_replacement": false,
+    "verified_media_contents": false
+  },
+  "transcription_layer": {
+    "local_path": "extractions/ocr-review/EFTA00004060-editorial-readings.json",
+    "sha256": "545dc6e662baf4f9d669c367c77c5a59105babcef5dd41d37099b657332b7732"
+  },
+  "reviewed_fields": [
+    {
+      "id": "advert-heading",
+      "pdf_page": 1,
+      "kind": "printed_heading",
+      "status": "provisional_source_assisted_not_independently_verified",
+      "image_path": "extractions/ocr-review/EFTA00004060-page-1.png",
+      "region_pixels": [
+        100,
+        1350,
+        900,
+        1750
+      ],
+      "literal_sha256": "076fb6e869b7b4945885506d0dc3ba273b0c4fd7a688cc79f917449885ea71b9"
+    }
+  ],
+  "ocr_improvement_accepted": false,
+  "independent_verification": false,
+  "remaining_uncertainties": [
+    "No full corrected text layer validated",
+    "Source labels/date roles are not independent factual verification",
+    "No primary dates, identities or media contents promoted"
+  ],
+  "publication": "Raw OCR, images and literal readings remain ignored local caches. Metadata publishes scope, findings, hashes and image regions only."
+}

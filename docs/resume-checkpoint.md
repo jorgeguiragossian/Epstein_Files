@@ -1,4 +1,4 @@
-# Resume checkpoint — November 8, 2026
+# Resume checkpoint — November 9, 2026
 
 Wave 7 integrated: **170 PDFs / 2,208 pages**, 194 detected email occurrences, 120 scoped candidate reviews and 53 lossless body breakdowns. All 160 prior document payloads, email records/groups and analysis entries preserved exactly. See `docs/wave-07-integration.md`.
 
@@ -12,4 +12,6 @@ Validation: 94 offline tests, 110 static/Python comparisons, HTTP smoke and brow
 
 Wave 8 dataset 3 acquisition/quality triage complete locally: ten PDFs / 348 pages / 91,006,129 bytes; 213 low-text pages. All native extractions succeeded, zero email candidates. Twenty-eight source pages inspected (all small files; first/middle/last of four larger files). Printed text gaps in EFTA00003858/4060 and handwritten receipt in EFTA00004231 need targeted local OCR/source assessment. Albums/contact sheets, placeholders and blacked-out pages require explicit scope notices; no full-content review, primary dates or public integration. See `docs/wave-08-acquisition.md`.
 
-Next recommended milestone: targeted printed-cover and receipt OCR/source review, then wave 8 native integration with scope/quality notices and separate dates. The unchanged expansion plan has 80 acquired/extracted PDFs, 70 integrated and 20 unprocessed (dataset 4/5 selections). Do not regenerate it.
+Wave 8 targeted OCR/source assessment complete November 9: five source pages, seven local Windows OCR passes and four provisional literals (two printed-heading samples, two receipt fragments). Printed recognition is partial/errorful; receipt handwriting OCR is inadequate. No replacement/public corrected text accepted, no primary dates assigned. Raw OCR/images/literals remain local. Three named review manifests plus index bind all evidence; checker now supports --review with path containment. All three chains and 95 offline tests pass. Original 28-page visual scope remains unchanged.
+
+Next recommended milestone: integrate wave 8 native text with bounded album/redaction/placeholder notices and explicit OCR-assessment limitations, keeping provisional readings local, then separate dates. The unchanged expansion plan has 80 acquired/extracted PDFs, 70 integrated and 20 unprocessed (dataset 4/5 selections). Do not regenerate it.

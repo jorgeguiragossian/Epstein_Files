@@ -20,8 +20,8 @@ def local_path(folder,relative):
     return path
 
 
-def validate(folder):
-    review=read(folder/'ocr-transcription-review.json')
+def validate(folder, review_filename='ocr-transcription-review.json'):
+    review=read(local_path(folder,review_filename))
     downloads={r['file_id']:r for r in read(folder/'downloads.json')['files']}
     metrics={r['file_id']:r for r in read(folder/'metrics.json')['files']}
     key=review['file_id'];item=downloads[key];metric=metrics[key]
@@ -84,5 +84,6 @@ def validate(folder):
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--out',type=Path,required=True)
+    parser.add_argument('--review',default='ocr-transcription-review.json',help='Review metadata path relative to batch folder')
     args=parser.parse_args()
-    print(json.dumps(validate(args.out),indent=2))
+    print(json.dumps(validate(args.out,args.review),indent=2))
