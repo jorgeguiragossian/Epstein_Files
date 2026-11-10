@@ -11,7 +11,7 @@ state.periodFrom=params.get('period_from')||'';
 state.periodTo=params.get('period_to')||'';
 state.people=[];
 const dateLabels = {dated:'Reviewed date',uncertain:'Uncertain date',undated:'Reviewed · undated',unreviewed:'Date not yet reviewed'};
-const dateTypes = {email_sent:'Email sent date',report:'Report date',court_order:'Court order date',evidence_received:'Evidence received date',transcript_session:'Transcript session date',letter:'Letter date',presentation:'Presentation date'};
+const dateTypes = {email_sent:'Email sent date',report:'Report date',court_order:'Court order date',evidence_received:'Evidence received date',communication:'Communication date',transcript_session:'Transcript session date',letter:'Letter date',presentation:'Presentation date'};
 const format = (number) => Number(number).toLocaleString('en-US');
 
 function node(tag, className, text) {
