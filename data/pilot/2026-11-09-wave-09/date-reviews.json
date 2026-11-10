@@ -1,0 +1,409 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-09",
+  "scope": "Ten wave 9 documents: one communication date, nine uncertain primary dates; prior 37-page bounded comparison preserved. No native replacement or new briefs.",
+  "reviews": [
+    {
+      "file_id": "EFTA00005707",
+      "dataset": 4,
+      "source_sha256": "fa16419cde338d9665c918bb70e2253f357f96b562017670de01e46539c6dedd",
+      "status": "dated",
+      "primary_date": "2011-03-14",
+      "date_type": "communication",
+      "precision": "day",
+      "evidence_page": 1,
+      "evidence_quote": "Date: 03/14/2011",
+      "notes": "Header Date: 03/14/2011 dates this four-page FBI administrative communication. March 14-21 travel interval and referenced email are separate roles, not proof of completed travel or an extracted email. Calendar day interpreted in explicit US month/day/year context.",
+      "review_method": "Codex bounded source comparison with native UTF-8 evidence and prior quality/OCR findings; same-assistant editorial adjudication, not independent authentication",
+      "timezone_policy": "Use source calendar day; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "Precedence: ROUTINE Date: 03/14/2011 \nTo: Miami Attn: Squad PB-2/Palm Beach County RA \nSA \nSSA \nTo: Canberra Attn: LEGAT \nALATI \nFrom: Criminal Investigative \nCrimes Against Children Unit \nContact: SSA \nApproved By: \nDrafted By: \nCase ID #: 31E-MM-108062 (Pending) \nTitle: JEFFREY EPSTEIN; \nGHISLAINE MAXWELL; \nWSTA - CHILD PROSTITUTION \nSynopsis: To advise Miami Division of CACU concurrence of the travel \nrequest of two Miami Agents to travel to Sydney, Australia from \n03/14/2011 to 03/21/2011 to interview United States Citizen, \nDetails: CACU concurs with Miami Divisions request for two Miami \nAgents to travel to Sydney, Australia from 03/14/2011 to 03/21/2011 to \ninterview United States Citizen, \nIn addition, per email dated 03/14/2011, Criminal \nInvestigative Division, Deputy Assistant Director, \nconcurs with Miami Division's International travel request. \nCACU advises Miami Division to conduct all appropriate \nCountry Clearance requirements regarding official travel to Foreign \nCountries as set forth by the Office of International Operations (0I0) \nregarding International Travel requirements for FBI employees. \nThe following procedures are required to be completed \nby travelers prior to official FBI travel overseas: \nSTEPS 1 AND 2 SHOULD BE DONE SIMULTANEOUSLY AND EARLY \nCOORDINATION WITH THE RESPECTIVE LEGAT IS STRONGLY ENCOURAGED. \nEFTA00005707",
+          "native_text_sha256": "d330461220fcdd5419bdeb550711bdb80a487672723251bb2ebc62217483c55d"
+        },
+        {
+          "pdf_page": 2,
+          "quote": "1. An EC to the responsible Legat office indicating intended travel to \nits Area of Responsibility(AOR) with personnel information, the \npurpose of the proposed travel, and as much detail as possible. One EC \nis sufficient for multiple individuals traveling to the same AOR for \nthe same purpose. In addition to the Legat office, leads should also \nbe set to the region-specific operational unit in the Office of \nInternational Operations (0I0) for informational purposes (see \nIntranet FBI webpages for Legat AORs and OIO operational units), \nthe Security Division to request passage of the travelers' \nclearances to the respective embassies, and to CIRG at SIOC for \nthe purpose of requesting inclusion on the SIOC Foreign Travel \nReport. \n2. Completion and submission of an electronic Country \nClearance (eCC) request through the Department of State (DoS) \ninternet: https://ecc.state.gov. Step by step instructions on \nhow to complete the eCC can be found on the (MO website: \nhttp://oio.fbinet.fbi/Deployments/. Multiple travelers can be \nincluded in the same eCC request as long they have the same \nitineraries. The travelers are responsible for completing and \nsubmitting their eCC requests via the internet. \n3. Completion and submission of the Clearance Passage \nWorksheet to the Clearance Passage, Contractor, and Law \nEnforcement Reinvestigations Unit (CPCLERU). The Clearance \nPassage Worksheet can be found at: \nhttp://secd.fbinet.fbi/iss/cpcleru/items_clearance.htm. One \nworksheet can be filled out for a maximum of ten people and can \nbe submitted electronically. This procedure is required to \nforward your clearance to the respective embassy. \nIt should be noted that providing sufficient and \nrelevant information in the EC will provide the Legat office a \nthorough understanding of the proposed travel should any \nquestions arise from the Embassy. The granting of the Country \nClearance is ultimately the responsibility of the Chief of \nMission at that embassy and the Country Clearance approval will \nbe coordinated by the Legat office. \nWhen submitting the eCC, all information should be \nunclassified. Thus, specific details regarding the specific \npurpose of travel, the operational assistance or activity to be \nconducted, etc., should be included only in the secure/classified \nenvironment of the FBI EC. \nEFTA00005708",
+          "native_text_sha256": "1bc767276c279ed41954bba30ed6c314d825eb1707f86f9d1234976854668d4a"
+        },
+        {
+          "pdf_page": 3,
+          "quote": "IF THE PURPOSE OF YOUR TRAVEL IS SENSITIVE IN NATURE \nAND SUBMITTING ANY INFORMATION VIA THE PUBLIC DOMAIN COULD \nCOMPROMISE YOUR REASON FOR TRAVEL, CONTACT THE LEGAT OFFICE \nIMMEDIATELY TO MAKE THE APPROPRIATE ARRANGEMENTS TO OBTAIN \nCOUNTRY CLEARANCE. \nBoth the EC and the eCC are required to ensure all \nparties involved in the granting of country clearances and the \ncoordination/assistance of the travelers' activities in-country \nare fully coordinated and approved prior to the travel. \nLEAD(s): \nEFTA00005709",
+          "native_text_sha256": "87270af16782344369cc7c27d0185c069941a6ecb9260a7069fa06b94de4d795"
+        },
+        {
+          "pdf_page": 4,
+          "quote": "Set Lead 1: (Action) \nMIAMI \nAT MIAMI, FLORIDA \nConduct all appropriate Country Clearance requirements \nregarding official travel to Foreign Countries as highlighted in this \ncommunication. CID/CACU concurs with travel. \nSet Lead 2: (Information) \nCANBERRA \nAT CANBERRA, AUSTRALIA \nRead and Clear. \n* * \nEFTA00005710",
+          "native_text_sha256": "d0c257db712dee0a4db52307e4dca83e0984fd9b528031c7ba42aaddebff9227"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00005910",
+      "dataset": 4,
+      "source_sha256": "f1168414278fceffdeb2fd5556cf39a86cdf36ce84af5472b0d4f54834df3230",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "[ \nI \nEFTA00005910",
+      "notes": "Folder cover and two sampled blacked-out pages do not establish a complete primary date. Scope is PDF pages 1/7/14 only, not all fourteen pages; handwriting/location and hidden content do not supply an issue date.",
+      "review_method": "Codex bounded source comparison with native UTF-8 evidence and prior quality/OCR findings; same-assistant editorial adjudication, not independent authentication",
+      "timezone_policy": "Use source calendar day; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1,
+        7,
+        14
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "[ \nI \nEFTA00005910",
+          "native_text_sha256": "b186ec5cf36b242c108908c404fe4cf3d4d0af371d1ede13d18a64c7de74877d"
+        },
+        {
+          "pdf_page": 7,
+          "quote": "EFTA00005916",
+          "native_text_sha256": "312a74ae577ac3b18b1341b99495bb17a81ffce01718c9df4a7ecc1153159765"
+        },
+        {
+          "pdf_page": 14,
+          "quote": "EFTA00005923",
+          "native_text_sha256": "da3e7c573fea29d81e3d00a53a0f03b0f69c5b8dd643fa9fe7eeab17a89cb31b"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00006085",
+      "dataset": 4,
+      "source_sha256": "379e4fb261534f76933c30678c5cadf3784108c7538bb8ed2de940e3118f1358",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "art-o-m-g-4 cEvroz- =test-4 \n-1W pere,c,  am, t., fr Atz2T \nEFTA00006085",
+      "notes": "Compound certification, inventory, four event reports and settlement sheet. Handwritten certification execution date and February 1-2, 2005 event dates have different roles. No single issue/assembly day established for the entire PDF; no event date substituted for certification or collection date.",
+      "review_method": "Codex bounded source comparison with native UTF-8 evidence and prior quality/OCR findings; same-assistant editorial adjudication, not independent authentication",
+      "timezone_policy": "Use source calendar day; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "art-o-m-g-4 cEvroz- =test-4 \n-1W pere,c,  am, t., fr Atz2T \nEFTA00006085",
+          "native_text_sha256": "6514fa5bafca1459b8df622b4af7ec83d3ed9b78d53f2b0d9eec99ae327d024e"
+        },
+        {
+          "pdf_page": 2,
+          "quote": "CERTIFICATION OF BUSINESS RECORDS \nI, the undersigned,  , declare that I am: \nemployed by/associated with  Pas( -e M i nce,tit/ 1(9-R1 !rep 4 141 04 /13in the \nposition of  hte lei( n.)07,/4 /5.7g4-102)   and by reason of my \nposition am authorized and qualified to make this declaration. \nIn my employment with the above-named bank/company I am familiar with the \nbusiness records it maintains. The above-named bank/company maintains records of its \nbusiness which are: \n1. made at or near the time of the occurrence of the matters set forth therein, by, \nor from inform.ation transmitted by, a person with knowledge of those matters; \n2. kept in the course of regularly conducted business activity; and \n3. made by the regularly conducted activity as a regular practice. \nAmong the records so maintained are the attached records itemized in Appendix A, \nInventory of Documents. \nI declare under penalty of perjury that the foregoing is true and correct. \nDate of execution: \nPlace of execution: \nSignature: \n6/a /2O 0 7 \ntveroe,./e..6-2- Are. Y \nEFTA00006086",
+          "native_text_sha256": "2948cb8fcd9044d7bbe0c749d1edaf08e6c27e0c410372393969ab662acc2dba"
+        },
+        {
+          "pdf_page": 3,
+          "quote": "APPENDIX A \nDOCUMENT INVENTORY \nThe documents submitted are as follows: \n6 gontor to, \njra I1 af.)er - 3 O / 2/4-, \naocx- - 30 fi nn \noar - s.'30 \n/51- 0i o2 cos- - 3o \". /4.7. \n?) _chow -- e7 -716/17em -(27/2_ I re-X / ra. / _2ocr \nSign ture of Records Custodian: \nEFTA00006087",
+          "native_text_sha256": "a567927a37e79b3cfb6b694a8e3880682962fbee8d5ad6ec316966cb3980bbb2"
+        },
+        {
+          "pdf_page": 4,
+          "quote": "FRONT OF HOUSE MANAGERS REPORT \nDAY: TUES. DATE: FEB. 1, 2005 \nWEATHER: SUN/FAIR \nTHEATER: AURENE \nEVENT: DAVID COPPERFIELD \nEVENT CODE: S215 \nTIME: 5:30PM \nHOUSE: \nHEAD USHERS: \nI . \nMEZZ \ni l l\nBALC \nI I\nSWING INFO CTRI \nEDITH \nVOLUNTEERS 57 \nDROP COUNT: PAID 1078 391 75 Sub Total 1544 \nCOMP 121 0 0 Sub Total \nTOTAL \n121 \n_ lees \nCURTAIN: \nCLOSE: \nMAINTENANCE: \nSECURITY: \nPARKING FACILITY: \nVALET: STAFF 15 jREG 72  PFRD 10 TOTAL \nNUMBER OF VOUCHERS 1 I . Z TAPE # \nM.O.D. IN: 12:00PM OUT: THRU \nIN: 1:30PM OUT: THRU \nIN: 1:30PM OUT: THRU \n5:42PM \n7:02PM POLICE: 2 \nHOUSEKEEPING: 2 \nPRODUCTION: JEFF \n82 \n28 \n, 1 AUDIENCE RESPONSE  \nAWESOME! VERY NICEI \nAMAZING. \nVERY GOOD. \nNONE \nINCIDENT REPORTS \nMISCELLANEOUS t. \u2022 -.;\u2022-\u2022 =1* z. \nNo. of Intermissions: 0 \nVolunteers: Target Range AuR 60.75 Target Range Ama 10.14 \nActual # AuRene 57 Actual # Amaturo \nCOMMENTS \nSOME COMPLAINTS FROM PATRONS THAT THE SHOW IS THE SAME AS LAST YEAR'S; \nOTHERS COMPLAINING THAT THE SHOW IS \"SOPHOMORIC\" \"AND AMATURISH\". THEY \nWANTED THEIR MONEY BACK. \nHOUSEKEEPING NEEDED MORE STAFF AS FOOD AND DRINKS WERE ALLOWED IN AND THE \nTURN-AROUND TIME WAS SHORT, AND HK WAS TOLD NOT TO ENTER HOUSE BETWEEN SHOWS. \nCOUPLE WAS UPSET: HUSBAND WAS ASKED TO PARTICIPATE IN FINAL DISAPPEARING ACT; \nAT END OF SHOW, WIFE GOT VERY UPSET BECAUSE SHE COULDN'T FIND HIM. HUSBAND \nGOT VERBALLY UPSET AT COPPERFIELD MANAGER BACKSTAGE, MADE A SCENE, \nAND HAD TO BE ESCORTED OFF PREMISES BY FLPD. \nREST ROOMS WERE NOT ADEQUATELY ATTENDED TO AFTER SHOW, AS HOUSEKEEPING \nWAS SHORT STAFFED. \nEFTA00006088",
+          "native_text_sha256": "02ae0bc7b2ccb8883ab79723375275850b287c13f41299e297c6cab763b7846a"
+        },
+        {
+          "pdf_page": 5,
+          "quote": "FRONT OF HOUSE MANAGERS REPORT \nDAY: TUES. DATE: FEB. 1, 2005 \nWEATHER: SUN/FAIR \nTHEATER: AURENE \nEVENT: DAVID COPPERFIELD \nEVENT CODE: 5215 \nTIME: 8:30PM \nHOUSE: \nVOLUNTEE\nHEAD USHER \nRS\nS:\n53 \nORCH \nRP MEZZ IP BALC if SWING INFO CTR EDITH \nDROP COUNT: PAID 1186 513 217 Sub Total 1916 \nCOMP 91 0 0 Sub Total 91 \nTOTAL 2007 \nCURTAIN: \nCLOSE: \nMAINTENANCE: \nSECURITY: \n8:41PM \n10:00PM POLICE: \nHOUSEKEEPING: \nPRODUCTION: JEFF \n2 \n2 \nPARKING FACILITY: \nVALET: STAFF 16 REG 86 \nNUMBER OF VOUCHERS 0 \nPFRD 8 TOTAL \nZ TAPE # \n94 \n29 \nM.O.D. IN: 12:00PM OUT: 10:30PM \nIN: 1:30PM OUT: 10:30PM \nIN: 1:30PM OUT: 10:30PM \nAUDIENCE RESPONSE \nCOOL! VERY GOOD. \nAWESOME! \nOH, IT WAS WORTH EVERY PENNY. \nt:;-, INCIDENT REPORTS \nNONE \nVolunteers: \nMISCELLANEOUS \nNo. of Intermissions: 0 \nTarget Range AuR 60-76 Target Range Ama 10-14 \nActual # AuRene 53 Actual # Amaturo \nCOMMENTS \nTURN-AROUND TIME FOR ALL STAFF WAS TIGHT. \nFOH STAFF AND VOLUNTEERS NEEDED TO PITCH IN AND ASSIST IN CLEANING FLOORS IN \nHOUSE BEFORE SECOND SHOW. \nSHORT ON VOLUNTEERS. \nEFTA00006089",
+          "native_text_sha256": "cd5f1951b253b1102c170b059b969561205e5c2fb066cb325e594170a71cade4"
+        },
+        {
+          "pdf_page": 6,
+          "quote": "FRONT OF HOUSE MANAGERS REPORT \nDAY: Wednesday DATE: February 2, 2005 \nWEATHER: Magic \nTHEATER: Au-Rene \nEVENT: David Copperfield \nEVENT CODE: B008 \nTIME: 5:30 PM \nHOUSE: \nHEAD USHERS: \nM i l\nMEZZ \nI! B LC AORCH \u2022 SWING INFO CTR Kathy VOLUNTEERS \nDROP COUNT: \n76 \nPAID 1187 153 63 Sub Total 1403 \nCOMP 71 0 0 Sub Total 71 \nTOTAL 1 474 _ \nCURTAIN: \nCLOSE: \nMAINTENANCE: \nSECURITY: \nPARKING FACILITY: \nVALET: \nM.O.D. \n5:48 \n7:09 POLICE: \nHOUSEKEEPING: \nPRODUCTION: Jeff \nSTAFF 12 \nNUMBER OF VOUCHERS 0 \n(REG 70 PFRD 6 TOTAL 76 \n1\"Z\" Tape Number 30 \nIN: 12:00 PM OUT: THRU \nIN: 2:00 PM OUT: THRU \nIN: 2:00 PM OUT: THRU \nI  AUDIENCE RESPONSE \nWhy is he so late? \nIt was wonderful! \nSame show again? \nNONE \nVolunteers: \nINCIDENT REPORTS \nMISCELLANEOUS \nIntermissions: 0 \nTarget Range AuR 60-75 Target Range Ama 10-14 \nActual # AuRene 76 Actual # Amaturo \n\u2022  COMMENTS \nVery late start made the tight turnaround between shows even harder to manage. \nEFTA00006090",
+          "native_text_sha256": "36ff9f2df29c95f60d7f4c5837226d80294243072b43493211e6d5c8a7f012d9"
+        },
+        {
+          "pdf_page": 7,
+          "quote": "FRONT OF HOUSE MANAG RS REPORT \nDAY: Wednesday DATE: February 2, 2005 \nWEATHER: Magic \nTHEATER: Au-Rene \nEVENT: David Copperfield \nEVENT CODE: B008 \nTIME: 8:30 PM \nHOUSE: \nHEAD USHERS: \nORCH \nMP \nMEZZ \nIN \nBALC \nIII \nSWING INFO CTR \nKathy \nVOLUNTEERS 54 \nDROP COUNT: PAID 1224 501 412 Sub Total 2137 \nCOMP 81 0 0 Sub Total 81 \nTOTAL 2218 \nCURTAIN: \nCLOSE: \nMAINTENANCE: \nSECURITY: \nPARKING FACILITY: \nVALET: STAFF 20 \n8:44 \n10:08 POLICE: \nHOUSEKEEPING: MII P IMI\nPRODUCTION: Jeff \nNUMBER OF VOUCHERS \nM.O.D. \nREG 103  PFRD  6 TOTAL ij 109 \n\u2022 0 I IT Tape Number 31 \nIN: 12:00 PM OUT: 9:15 PM \nIN: 2:00 PM OUT: 10:30 PM \nIN: 2:00 PM OUT: 10:30 PM \n, AUDIENCE RESPONSE  .0 \nHow'd he DO thatl? \nVery, very disappointed \nIt was great! \nNONE \nEE \nINCIDENT REPORTS \nMISCELLANEOUS \nVolunteers: Target Range AuR 60-76 \nActual # AuRene 64 \nCOMMENTS \nIntermissions: \nTarget Range Ama 10-14 \nActual # Amaturo \nEFTA00006091",
+          "native_text_sha256": "b342d08b5e8389c310affa2138e95be18867b58ae8da6068b2c313f60855e9ca"
+        },
+        {
+          "pdf_page": 8,
+          "quote": "DAVID GOPPERABLO \nDavid Copperfield \nWeek 1 of 1 \n2/1-2/2/2005\nPert \nBackstage \nBCPA \nCompany \nPTG \nBox office \nB00805 Tar Sold \nComp \nTotal Trc \n4 Percent Sold \nTic Sold-comps \nComp Tix \nTicket Sales \nInterest Income \nStagehands \nWardrobe \nHair \nHair \nGround Transportation \nDry Ice \nPiano Tuning \nEquipment Rental - right \nEquipment Rental - Other \nMisc untaxed \nCorrections \nCatering (EST) \nMisc (taxable) \nMisc (nontaxable) \nSales Tax \nRent \nRent Tax \nHouse Package \nSurcharge \nInsurance \nGuarantee \nNAGBOR -95% \nRoyalties- 596.50% \nAdvertising Commissions-50% \nCompany Overages \nAdvertising at net \nLeague Dues \nRUNNERS \nProgram Extra Pages \nSeason Advertising \nPR Fees \nPR Expenses \nFTA Fee \nMusicians \nOther \nASCAP \nSign Interpreter \nGroups \nPhones \nMC,Nisa \nDiscover Card \nAmex \nAdmissions Tax \nBCPA Box Office \nSeason Credit Cards \nTotal ExpeNtef . \nNet Income \nProfit/Loss (70/30) \nPartner Transfer \nPartner Transfer \nTOTAL TRANSFER \nBCPA \n7,395 \n580 \n7,975 \n70% \nDrop Court \nGross Potential $ 1,243,016 \n% of Gross Potential , \nPTG PACA Total \n3,095 4,350 7,395 \n580 - 580 \n3,625 4,350 7,975 \n$ 151,202.75 $ 219,830.50 $ 371,033.25 \n151,202.75 219,830.50 371,033.25 \n151,202.75 219,830.50 371,033.25 \n21,734.76 21,734.76 \n. - - \n- \n300.00 300.00 \n- 6,000.00 6,000.00 \n75.00 75.00 \n22.50 22.50 \n19,750.00 19,750.00 \n1,185.00 1,185.00 \n8,250.00 8,250.00 \n22,185.00 22,185.00 \n2,356.48 2,356.48 \n5,353.98 5,353.98 \n190,334.74 190,334.74 \n5,008.81 5,008.81 \n2,731.43 2,731.43 \n35,964.78 35,964.78 \n. . \n. . \n358.13 1,065.60 1,923.73 \n275.62 3,165.83 3,441.45 \n17.72 192.91 160.12 \n298.77 . 2,443.90 2,742.67 \n19,746.12 19,746.12 \n0.02 2,091.75 2,091.77 \n260,090.11 90,768.23 350,858.39 \n1 (108,887.36) 1 129,062.27 1 20,174.91 \n14,122.44 6,052.47 20,174.91 \n(123,009.80) 123,009.80 \n- . \n(123.009.80) $ 123,009.80 1 - \n123,009.80 \nPrinted 00 8/10-200? al 1132 NA Page I oil \nEFTA00006092",
+          "native_text_sha256": "d0dbbbf980b84997df5e428d8fade4b17b6499c90782654277e9b48ad9b5d980"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00006387",
+      "dataset": 4,
+      "source_sha256": "98b051e5390830ef1fa97d5f4750b443acc930d917ff6689eff9fda8a78aa158",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "Itemized Details For. \nAccount Number: \nCustomer Service Number 1-800-937-8997 \nJun 21, 2006 Page 43 of 111 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate Call \nDestination \nTime Number \nCalled \nCall \nType \nMinutes Airtime \nCharges \nToll \nCharges \nTotal \n6/15/06 New York, NY 5:58 PM (F) 6 - $ \n6/15/06 New York, NY 6:04 PM (A) 26 - $ $ \n6/15/06 New York, NY 6:31 PM (F) 2 - $ $ \n6/15/06 New York, NY 6:49 PM (F) 3 - $ \n6/15/06 New York, NY 6:53 PM (F) 3 - \n6/15/06 New York, NY 6:55 PM (F) 4 - $ \n6/15/06 New York, NY 6:59 PM (F) 1 - $ \n6/15/06 New York, NY 7:06 PM (F) 1 - $ \n6/15/06 White Pis, NY 7:24 PM (F) 1 $ - $ $ \n6/15/06 While Pls, NY 725 PM I $ 0.35 $ $ 0.35 \n6/15/06 White PIs, NY 727 PM 1 $ 0.35 $ $ 0.35 \n6/15/06 Bronx Nyc, NY 7:29 PM 1 $ 0.35 $ $ 0.35 \n6/15/06 New Yorlc, NY 7:58 PM (F) 1 $ - $ $ \n6/15/06 New York, NY 7:59 PM (F) -- 1 $ - $ $ \n6/15/06 New York. NY 8:00 PM (F) 1 $ - $ $ \n6/15/06 New York, NY 8:01 PM (F) 1 $ - $ $ \n6/15/06 New York NY 8:02 PM (F) I $ - $ $ \n6/15/06 New York, NY 8:03 PM (F) 1 $ - $ $ \n6/15/06 New Yodc, NY 8:04 PM (F) 1 $ - $ \u2022 $ \n6/15/06 New York, NY 8:06 PM (F) 1 $ - $ $ \n6/15/06 New York, NY 8:07 PM (F) 1 $ - $ $ \n6/15/06 New York. NY 8:09 PM (F) 1 $ - $ $ \n6/15/06 New York, NY 8:09 PM (F) 1 ... $ $ \n6/15/06 New York, NY 8:10 PM (F) 1 $ - $ $ \n6/15/06 New York, NY 8:12 PM (F) 1 $ - $ $ \n6/16/06 New York, NY 2:02 AM (F) 29 $ - $ - $ \n6/16/06 White Pls, NY 6:57 AM I=E (F) 1 - $ \n6/16/06 White Pis, NY 6:58 AM (F) 1 - $ \n6/16/06 White Pis, NY 7:00 AM (F) 1 \n6/16/06 White Pls, NY 7:01 AM (F) 1 - $ \n6/16/06 White PIS, NY 7:01 AM (F) 1 - $ \n6/16/06 White Pls, NY 7:02 AM (F) - $ \n6/16/06 White PI% NY 7:06 AM (F) - s \n6/18/06 White Pls, NY 7:07 AM (F) 3 - $ \n6/16/06 White Pls, NY 7:12 AM (F) 2 - $ \n6/16/06 White Pls, NY 8:51 AM (F) 1 - $ \nCall Type: (A) Cal Waiting (B) Calf Forward (C) Conference CaN (E)Datatpax (F)Mobile2Mobile (3) Voioemail (H) Free Calls \n(K)vVPS Call (U) Other (V)'5' Call \nEFTA00006387",
+      "notes": "Only PDF pages 1/50/100 inspected in this 100-page telephone-statement collection. Sampled statement headings span June/July/August 2006 and rows have their own dates; no single primary date or complete reporting period established. Calls/columns not validated.",
+      "review_method": "Codex bounded source comparison with native UTF-8 evidence and prior quality/OCR findings; same-assistant editorial adjudication, not independent authentication",
+      "timezone_policy": "Use source calendar day; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1,
+        50,
+        100
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "Itemized Details For. \nAccount Number: \nCustomer Service Number 1-800-937-8997 \nJun 21, 2006 Page 43 of 111 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate Call \nDestination \nTime Number \nCalled \nCall \nType \nMinutes Airtime \nCharges \nToll \nCharges \nTotal \n6/15/06 New York, NY 5:58 PM (F) 6 - $ \n6/15/06 New York, NY 6:04 PM (A) 26 - $ $ \n6/15/06 New York, NY 6:31 PM (F) 2 - $ $ \n6/15/06 New York, NY 6:49 PM (F) 3 - $ \n6/15/06 New York, NY 6:53 PM (F) 3 - \n6/15/06 New York, NY 6:55 PM (F) 4 - $ \n6/15/06 New York, NY 6:59 PM (F) 1 - $ \n6/15/06 New York, NY 7:06 PM (F) 1 - $ \n6/15/06 White Pis, NY 7:24 PM (F) 1 $ - $ $ \n6/15/06 While Pls, NY 725 PM I $ 0.35 $ $ 0.35 \n6/15/06 White PIs, NY 727 PM 1 $ 0.35 $ $ 0.35 \n6/15/06 Bronx Nyc, NY 7:29 PM 1 $ 0.35 $ $ 0.35 \n6/15/06 New Yorlc, NY 7:58 PM (F) 1 $ - $ $ \n6/15/06 New York, NY 7:59 PM (F) -- 1 $ - $ $ \n6/15/06 New York. NY 8:00 PM (F) 1 $ - $ $ \n6/15/06 New York, NY 8:01 PM (F) 1 $ - $ $ \n6/15/06 New York NY 8:02 PM (F) I $ - $ $ \n6/15/06 New York, NY 8:03 PM (F) 1 $ - $ $ \n6/15/06 New Yodc, NY 8:04 PM (F) 1 $ - $ \u2022 $ \n6/15/06 New York, NY 8:06 PM (F) 1 $ - $ $ \n6/15/06 New York, NY 8:07 PM (F) 1 $ - $ $ \n6/15/06 New York. NY 8:09 PM (F) 1 $ - $ $ \n6/15/06 New York, NY 8:09 PM (F) 1 ... $ $ \n6/15/06 New York, NY 8:10 PM (F) 1 $ - $ $ \n6/15/06 New York, NY 8:12 PM (F) 1 $ - $ $ \n6/16/06 New York, NY 2:02 AM (F) 29 $ - $ - $ \n6/16/06 White Pls, NY 6:57 AM I=E (F) 1 - $ \n6/16/06 White Pis, NY 6:58 AM (F) 1 - $ \n6/16/06 White Pis, NY 7:00 AM (F) 1 \n6/16/06 White Pls, NY 7:01 AM (F) 1 - $ \n6/16/06 White PIS, NY 7:01 AM (F) 1 - $ \n6/16/06 White Pls, NY 7:02 AM (F) - $ \n6/16/06 White PI% NY 7:06 AM (F) - s \n6/18/06 White Pls, NY 7:07 AM (F) 3 - $ \n6/16/06 White Pls, NY 7:12 AM (F) 2 - $ \n6/16/06 White Pls, NY 8:51 AM (F) 1 - $ \nCall Type: (A) Cal Waiting (B) Calf Forward (C) Conference CaN (E)Datatpax (F)Mobile2Mobile (3) Voioemail (H) Free Calls \n(K)vVPS Call (U) Other (V)'5' Call \nEFTA00006387",
+          "native_text_sha256": "7801b6f056b906f4ca42381c7af6cf88214a6722a6dd3ee7951a1eb2693943a2"
+        },
+        {
+          "pdf_page": 50,
+          "quote": "Itemized Details For: \nAccount Number: \nCustomer Service Number \nJul 21, 2006 \n1-800-937-8997 \nPage 58 of 97 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate Call \nDestination \nTime Number \nCalled \nCall \nType \nMinutes Airtime \nCharges \nToll \nCharges \nTotal \n7/06/06 White Pia, NY 12:02 AM (F) 1 $ - $ S \n7/06/06 New York, NY 12:02 AM (F) 1 - $ S \n7/06/06 New York, W 12:03 AM (F) 1 - $ $ \n7/06/06 New York, NY 12:04 AM (F) 1 - $ \n7/06/06 New York, NY 1204 AM (F) 1 - $ \n7/06/06 New York. NY 12409 AM (F) 1 $ - $ \n7/06/06 New York, NY 1210 AM (F) 1 - $ \n7/06/06 New York, NY 1210 AM (F) 1 \n7/06/06 New York, NY 12:10 AM (F) 1 - $ \n7/06/06 New York, NY 6:29 AM (F) 1 - $ \n7/06/06 New York, NY 6:30AM (F) 1 $ - $ \n7/06/06 New York, NY 6:36 AM (F) 1 - $ \n7/0606 New York, NY 6:40 AM (F) 1 - $ \n\u20147/06/06 White Pls, NY 6:41 AM (F) 1 - $ \n7/06/06 White Pis, NY 8:41 AM (F) 40 - $ \n7/06/06 White Pls, NY 9:10 AM (F) 1 \u2022 $ \n7/06/06 White Pis, NY 9:10 AM (F) 1 $ \u2022 $ \n7/06/06 White Pls, NY 9:11 AM (F) 1 - $ \n7/06/06 White Pls, NY 9:13 AM (F) 1 - $ \n- 7/06/06 White PS, NY 9:14 AM (F) 1 - $ $ \n7/06/06 White Pls, NY 9:30 AM (F) 1 - $ \n7/06/06 White Pls. NY 9:30 AM (F) 1 \u2022 $ $ \n7/06/06 White Pls, NY 9:31 AM (F) ' 1 - $ \n7/06/06 White Pis, NY 9:31 AM (F) 1 \u2022 $ \n7/06/06 Incoming 9:52 AM 17 - $ \n7/06/06 New York, NY 10:22 AM (F) $ \n7/06/06 White Pls, NY 12:10 PM (F) 1 - $ \n7/06/06 New York, NY 1213 PM (F) 1 - $ \n7/06/06 New York, W 1214 PM (F) 1 - $ \n7/06/06 New York, NY 12:24 PM (F) 1 - $ \n7/06/06 New York, NY 1:18 PM (F) 1 - $ \n7/06/06 New York, NY 1:19 PM (F) 1 - $ \n7/06/06 New York, NY 127 PM (F) 1 - $ \n7/06/06 New Yorlc, NY 128 PM 6 - \n7/06/06 New York, NY 1:41 PM (F) 1 - $ \n7/06/06 New York, W 1:48 PM (F) 1 - $ \nCall Type: (A) Call Walling (B) Cal Forward (C) Conference Call (E) Data/Fax (F) Mobile2Mobile (G) Voicemall (H) Free Calls \n(K) WPS Call (U) Other (V) '5' Call \nEFTA00006436",
+          "native_text_sha256": "a492e74a5f7cd54f5ea6e807fd1f05b898b70c47ec46c95ea26145112a7def11"
+        },
+        {
+          "pdf_page": 100,
+          "quote": "Itemized Details For: \nAccount Number: \nCustomer Service Number 1400-937-8997 \nAug 21, 2006 Page 32 of 75 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate Call \nDestination \nTime Number \nCalled \nCall \nType \nMinutes Airtime \nCharges \nToll \nCharges \nTotal \n7/23/06 New York NY 3:35 PM (F) 1 - $ \n7/23/06 New York. NY 3:36 PM (F) 1 - $ \n7/23/06 New York, NY 3:50 PM (F) 2 - $ \n7/23/06 White Pls, NY 4:06 PM (F) 1 - $ S \n7/23/06 White Pis, NY 4:14 PM (F) 1 - $ \n7/23/06 Incoming 4:28 PM 4 $ \n7/23/06 Queens Nyc, NY 6:03 PM - $ \n7/23/06 white Pls. NY 6:10 PM (F) 1 - $ \n7/23/06 White Pis, NY 6:10 PM (F) 10 - $ \n7/23/06 White Pls, NY 6:35 PM 1 - $ \n7/23/06 White Pis, NY 6:36 PM IM=. (F) 1 - $ \n7/23/06 White Pis, NY 6:36 PM (F) 1 - $ \n7/23/08 White Pis, NY 6:37 PM (F) 1 - $ \n7/23/06 White Pls, NY 6:37 PM (F) 1 - $ \n7/23/06 New York, NY 6:37 PM (F) - $ \n7/23/06 New York, NY 6:38 PM (F) 1 - $ \n7/23/06 New York, NY 6:38 PM (F) 1 - $ \n7/23/06 New Ye*, NY 6:39 PM (F) 1 - $ \n7/23/06 New York, NY 6:39 PM (F) - $ \n7/23/06 Bronx Nyc, NY 6:40 PM (C) 32 \n7/23/08 New York, NY 6:43 PM (C) 2 - $ \n7/23/06 New York, NY 6:48 PM (C) 1 - $ \n7/23/06 White Pis, NY 7:17 PM (F) 1 - $ \n7/23/06 White Pis, NY 7:23 PM (F) 1 - $ \n7/23/08 Bronx Nye, NY 7:31 PM (F) - $ \n7/23108 Bronx Nye, NY 7:32 PM (F) 1 - $ \n7/2306 New York, NY 7:33 PM (F) 1 - \n7/23/06 Bronx Nye, NY 7:33 PM 1 - $ \n7/23/06 New York. NY 7:35 PM (F) - $ \n7/23/06 Bronx Nyc, NY 7:36 PM (F) 1 - $ $ \n7/23/06 Bronx Nye, NY 7:36 PM (F) 1 - $ \n7/23/06 Bronx Nye, NY 7:37 PM (F) 1 - $ \n7/23/08 Bronx Nye, NY 7:37 PM (F) 1 - $ \n7/23/06 Bronx Nyc, NY 7:46 PM (F) 1 - $ \n7/23/06 Bronx Nye, NY 7A7 PM (F) $ - $ \n7/23/06 Bronx Nyc, NY 7:50 PM (F) 1 - $ \nCall Type: (A) Call Walling (B) Call Forward (C) Conference Call (E) Data/Fax (F) MoNe2Mobile (G) Voloemall (i) Free Calls \n(K) WP$ Call (U) Other M '5' Call \nEFTA00006486",
+          "native_text_sha256": "fa176d757384463f462e31898fd0b778900964acb31e699e610c4b87db548e9a"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00007501",
+      "dataset": 4,
+      "source_sha256": "a00bf4439e901863c88026a61b2eb3b7c348a0a46deb663ccdc2f64e36034a0b",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "itemized Deals For: \nAccount Number: \nCustomer Service Number '1.800.937.8997 \nAug 20, 2006 Page 7 of 19 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate Call Time Number \nDestination Called \nCall \nTYPe \nMinutes Airtime Toll \nCharges Charges \nTotal \n7/31/05 Miami', FL 10-.56 AM \n7/31/05 Queens NY 11:17 AM_ \n7/31/05 Incoming 4:41 PM \n7/31/05 Incoming 4:59 PM \n7/31/05 Miami. FL 8:17 PM_ \n7/31/05 Miami. FL 820 PM \n7/31/05 MiamI. Ft. 8:39 PM \n7/31/05 Miami, FL 8:39 PM \n7/31/05 incoming 8:51 PM \n8/01/05 Incoming 10:38 AM \n8/01/05 Morning 11:24 AM \n8)01/05 Incoming 5:03 PM \n8/01/05 Marion, OH 7:47 PM \n&01/05 Incoming 9:14 PM \n801/05 Oueens Nyc, NY 9:19 PM \n8/01/05 Incoming 10:22 PM \n8/02/05 Incoming 7:55 AM \n8/02/05 Incoming 7.56 AM \n8/0205 Incoming 8:13 AM \n8/02/05 Incoming 9:01 AM \u2022 \n8/02/05 Incoming 928 AM \n8/03/05 Inw.wI. y 11:17 AM \n8/03/05 Incoming 11:44 AM \n8/03/05 New York, NY 11:53 AM \n8/03/05 Inoxrting 11:54 AM \n8/0305 New York, NY 1:43 PM \n8/0205 Incoming \n8/0605 Incoming \n8107/05 Incoming 5:39 PM \n8/01/0$ AtuflorClues, NM 553 PM \n8/07/05 New York, NY 555 PM \n1:11 PM, \n6:27 PM \n(F) - $ $ \nNBR Unaval 2 $ - $ \n3 \u2022 $ \n- $ $ \n(F) I $ - $ $ \n11 S $ \n3 \u2022 $ IS \n$ - $ $ \n$ - $ $ \n\u2022 $ $ \n4 - $ \n6 $ - $ \n2 $ S \n4 \n2 - $ $ \n$ - $ \n(F./ \n1 $ S $ \n1 $ \nBlocked NBR $ \nBlocked NBR 1 $ , - \n- $ \nBlocked NBR 1 $ \u2022 S $ \n\u2022 S $ \n- $ $ \n- $ $ \nBlocked NBR 3 $ - $ $ \n1 $ S \n8/07/05 Incoming 11:05 PM \natoms Incoming 9:03 AM \n&mos Riverside, IL 9:05 AM \n8/08/05 VA C\u00b0 .1056 AM \n3 \n1 $ \nCal Types (A) Cal Wailing (B) Cal Fonvaro (C)Ccederente Cal (E) Data/Fax (F)Mcblie2Mobile (G) Voice/nal (H) Fres Ca \n(IQ WPS Cal \n-:\u2022,\u2022; \u2022 \u2022iai;\u2022- \u2022 \u2022 btft.t fis.,:lk: rift I -$.4 '1 -4  \u2022 \n1. . \" c\u2022 \n: *Ai \u2022 . I \n\u2018. :* \u2022 \n- \u2022 \n!.. r \u2022 ift\u2022  \u2022 I\"lb \nEFTA00007501",
+      "notes": "Only PDF pages 1/21/42 inspected. Source page 1 heading reads Aug 20, 2005 although native and focused OCR read 2006; later sampled statement headings differ. The local provisional heading reading does not date the whole collection. No single primary date or complete reporting period established; no native correction.",
+      "review_method": "Codex bounded source comparison with native UTF-8 evidence and prior quality/OCR findings; same-assistant editorial adjudication, not independent authentication",
+      "timezone_policy": "Use source calendar day; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1,
+        21,
+        42
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "itemized Deals For: \nAccount Number: \nCustomer Service Number '1.800.937.8997 \nAug 20, 2006 Page 7 of 19 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate Call Time Number \nDestination Called \nCall \nTYPe \nMinutes Airtime Toll \nCharges Charges \nTotal \n7/31/05 Miami', FL 10-.56 AM \n7/31/05 Queens NY 11:17 AM_ \n7/31/05 Incoming 4:41 PM \n7/31/05 Incoming 4:59 PM \n7/31/05 Miami. FL 8:17 PM_ \n7/31/05 Miami. FL 820 PM \n7/31/05 MiamI. Ft. 8:39 PM \n7/31/05 Miami, FL 8:39 PM \n7/31/05 incoming 8:51 PM \n8/01/05 Incoming 10:38 AM \n8/01/05 Morning 11:24 AM \n8)01/05 Incoming 5:03 PM \n8/01/05 Marion, OH 7:47 PM \n&01/05 Incoming 9:14 PM \n801/05 Oueens Nyc, NY 9:19 PM \n8/01/05 Incoming 10:22 PM \n8/02/05 Incoming 7:55 AM \n8/02/05 Incoming 7.56 AM \n8/0205 Incoming 8:13 AM \n8/02/05 Incoming 9:01 AM \u2022 \n8/02/05 Incoming 928 AM \n8/03/05 Inw.wI. y 11:17 AM \n8/03/05 Incoming 11:44 AM \n8/03/05 New York, NY 11:53 AM \n8/03/05 Inoxrting 11:54 AM \n8/0305 New York, NY 1:43 PM \n8/0205 Incoming \n8/0605 Incoming \n8107/05 Incoming 5:39 PM \n8/01/0$ AtuflorClues, NM 553 PM \n8/07/05 New York, NY 555 PM \n1:11 PM, \n6:27 PM \n(F) - $ $ \nNBR Unaval 2 $ - $ \n3 \u2022 $ \n- $ $ \n(F) I $ - $ $ \n11 S $ \n3 \u2022 $ IS \n$ - $ $ \n$ - $ $ \n\u2022 $ $ \n4 - $ \n6 $ - $ \n2 $ S \n4 \n2 - $ $ \n$ - $ \n(F./ \n1 $ S $ \n1 $ \nBlocked NBR $ \nBlocked NBR 1 $ , - \n- $ \nBlocked NBR 1 $ \u2022 S $ \n\u2022 S $ \n- $ $ \n- $ $ \nBlocked NBR 3 $ - $ $ \n1 $ S \n8/07/05 Incoming 11:05 PM \natoms Incoming 9:03 AM \n&mos Riverside, IL 9:05 AM \n8/08/05 VA C\u00b0 .1056 AM \n3 \n1 $ \nCal Types (A) Cal Wailing (B) Cal Fonvaro (C)Ccederente Cal (E) Data/Fax (F)Mcblie2Mobile (G) Voice/nal (H) Fres Ca \n(IQ WPS Cal \n-:\u2022,\u2022; \u2022 \u2022iai;\u2022- \u2022 \u2022 btft.t fis.,:lk: rift I -$.4 '1 -4  \u2022 \n1. . \" c\u2022 \n: *Ai \u2022 . I \n\u2018. :* \u2022 \n- \u2022 \n!.. r \u2022 ift\u2022  \u2022 I\"lb \nEFTA00007501",
+          "native_text_sha256": "eb27b100a6c6bcc7d749083143942b95cb4c9a7b901b996638bcddc82ac5d1f1"
+        },
+        {
+          "pdf_page": 21,
+          "quote": "IterNzed Details r. For: \nAccount Number: \nCustomer Service Number 1.800.937.8997 \nOct 20. 2005 Page 10 of 19 \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES - (Continued) \nDate Call \nDestination \nTime Number \nCalled \nCall \nType \nMinutes Airtime Toll \nCharges Charges \nTotal \n10/05/05 Miami, FL 8:07 PM 12 - $ $ \n10/05/05 Orlando. FL 8:19 PM 1 \u2022 $ $ \n10/05/05 Incoming 10:32 PM 1 \u2022 $ \n10/06/05 New York. NY 8:47 AM $ \n10/06/05 'waning 9:01 AM $ $ \n10/06/05 New York, NY 9-.02 AM $ $ \n10/06/05 MiarN, FL 11:10 AM 2 $ - S S \n10/06A)5 Dir Asst 2:30 PM 411 2 - S 125 $ 1.25 \n10/06/05 Marnl. FL 3:18 PM s \n10/06/05 Incoming 425 PM 2 $ $ . \n10/06/05 Incoming 4:30 PM I $ - S - S - \n10/06/05 Incoming 4:46 PM 1 $ \u2022 - $ . $\n10/06/05 Incoming 5:07 PM 1 $ a $ - S -\n10/06/05 'Incoming 5:35 PM 1 $ - $ \u2022 $\n10/06/05 New York, NY 5:52 PM I $ - $ . $ . \n10/06/05 New York NY 5:53 PM 1 $ \u2022 - $ - $ -\n10/06/05 Miami, FL 6:03 PM 1 $ a $\n10/06/05 W Palm Bch, FL 6:09 PM 1 $ - $ - $ . \n10/06/06 Kant FL 611 PM 3 $ - $ $ -\n'10/06\u2022V5 New York NY 6:A39 PM 1 $ \u2022 $ - $ . \n1 W06/05 Marlon, OH 6:40 PM (F) 2 \n10/06/05 Incoming 7:33 PM 1 \u2022 \n10/06/05 W Palm Bch. FL 7:40 PM S . - $ $ \n10/06/05 Warn& FL 8:15 PM \u2022 $ $ \n10/06/05 Incoming 820 PM $ \n10/06/05 Incoming 820 PM 2 - $ \n1W06/05 Incoming 8.22 PM 3 \u2022 $ \n10/06/05 New Yak NY 9:03 PM 2 - $ \n10/06A)5 Miarnl, FL 9:05 PM 1 $ \u2022 $ $ \u2022 \n10/06/05 W Palm Bch, FL 924 PM 1 $ - $ - $ - \n10/06/05 New York. NY 9:25 PM 1 $ - $ $ \u2022 \n10/06/05 char Amato, VI 927 PM .1 $ 0.69 $ 0.69 \n10/06/05 Char Amato, VI 9:28 PM 1 $ - $ 0.69 $ 0.69 \n10/06X6 Incoming 9:51 PM 1 S - $ $ - \n\u2022IG'06/05 Char Arno's. VI 1029 PM 3 $ \u2022 $ 2.07 $ 2.07 \n10/07A)5 'claiming 9-.24 AM 2 $ \u2022 $ $ \u2022 \nCM boa (A) Call Waiting (B)CaA Forward (C) Cagerence (E) Data/Fax (F)Mobilie2Maas (G) Won' (H) Free Cads \n. \n\u2022 14 i \"\n. \u2022 \u2022 - 1 , \u2022 44.\".% .\u2022 ..\u20224114 Mit:h1 :1 `faV YI; 1(1\"...14413v 1. 4 .sit\u2018i \u2022 . k\"21 . \u2022 otter); \"I \u2022 \u2022 \u2022 ;II -4*, . . \u2022 tt1441 . \nEFTA00007521",
+          "native_text_sha256": "6de9ad4f2314c243827f0ad06781daa9970f7458fe1ba8a14e2351111f291596"
+        },
+        {
+          "pdf_page": 42,
+          "quote": "Itemized Details For: \nAccount Number: \nCustomer Service Number 1-800-937-8997 \nJan 21, 2006 Paps 4 of 8 \nAccount Service Detail for Subscriber \nUsed Service \nnctuded Plan MinuteS \nTYPO \nMinuteS \nWHENEVER PEAK OFF PEAK WEEKEND \n7 \nAmount Totals \nMonthly Service Charges S 0.46 \nPartial monthly charge for ILD Bar Sub Level from 12.20/05 to 12/2W0$ \nPartial monthly charge for ILO Bar Sub Level from 12/21/05 to 12t21/05 \nPartial monthly charge for Text Message 1000 from 12/20/05 to 12/20/05 \nPartial monthly charge for Text Message 1000 from 12/21/05 to 12/21/05 \nPartial monthly charge for VM & Fax from 12/20/C6 to 12/20/05 \nPartial monthly Marge for VM & Fax from 12/21/05 to 12/21/05 \nITaxes, Fees and Surcharges \nGovernment Fees and Taxes \nFederal Excise Tax \nState Communication Service Tax \nLead Communication Service Tax \nCounty 911 \nRegulatory Programs Fee-\n'Fee we coaect and retain to help cover our costs related to funding and complying with \ngovernment mandates. Programs and atagadana \n$ \n$ 0.23 \nS 0.23 \n$ \n$ 0.03 \n$ 0.04 \n$ 0.02 \n$ 0.50 \nS 0.86 \n1.451S \nTotal Charges S 1.91 \nDestination Caned Type Charges Charges \nLOCAL AIRTIME, LONG DISTANCE and INTERNATIONAL CHARGES \nDate Call Time Number Call Minutes Airtime Toll Total \n12/20,t5 Miarni, FL 203 PM $ $ - $ \n12.20,D5 Miami,, FL 3:38 PM 5 $ $ \n12/20/05 Miami, FL 3:42 PM 1 $ $ \nSUBTOTAL 7 $ \u2022 $ \n\u2022 \n$ 1 \nTotal of All Usage Charges S \nCal Type (A) Cal Waning (3) cat Forward (C) C0nterenO3 Cal (E) Data/Fax (F)Mobee2mobie (0)Voicemai (H) Free Calls \n(K)WP.S Cat 'I.? .... . .\n;iti\u2022 \u2022  \u2022\" . \u2022 . ; 1n. k\"e-\"ii  t \n..\nEFTA00007542",
+          "native_text_sha256": "882e02454f79059dd4637ad61d1f91cf7903f8f5d7270206c5870d8646f758fb"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00007606",
+      "dataset": 4,
+      "source_sha256": "e3dfdf7dc1f0ba9916c1a191d8fb684897dc3ac918e38952a84906d49274d298",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "EFTA00007606",
+      "notes": "Folder, order/shipment record and shipping label contain order, ship, delivery and page-print dates in different roles. No single primary date established for the compound PDF; folder identifier is not a date and shipping-label text does not verify shipment completion.",
+      "review_method": "Codex bounded source comparison with native UTF-8 evidence and prior quality/OCR findings; same-assistant editorial adjudication, not independent authentication",
+      "timezone_policy": "Use source calendar day; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "EFTA00007606",
+          "native_text_sha256": "05b134f0d6a8c62a286b2bb1bafb785020dcc9690417458f6cd0614ab43fea17"
+        },
+        {
+          "pdf_page": 2,
+          "quote": "amazon.com. \nBilling Address: \nJeffrey Epstein \n358 El Brillo Way \nPalm Beach, Florida 33480 \nUSA \nAmazon.coni \namazon.com. 1850 Mercer Rd. \nLexington, KY 40511 \nJeffrey Epstein \n358 El Brillo Way \nPalm Beach, Honda 33480 \nUSA \nAi rbrd57708/-3-/next/ 2436223 SOR1ExtFastTrae: \nYour order of September 4, 2005 (Order ID 103-1737520-450864W \nQty. Wm \nIN THIS SHIPMENT \nSM 101: A Realistic Introduction \nWiseman, Jay --- Paperback \nf\" C-2 \"I 0963976389 \n\u2022 \nShipping Address: \nJeffrey Epstein \n358 El Brill\u00b0 Way \nPalm Beach, Florida 33480 \nUSA \n1 \nSlaveCraft: Roadmaps for Erotic Servitude --Principles, Skills and Tools \nBaldwin, Guy --- Paperback \nI\" C-2 \"/ 1881943143 \nTraining With Miss Abernathy: A Workbook for Erotic Slaves and Their \nOwners \nAbernathy. Christina --- Paperback \nl\" C-2 01 1890159077 \nItem Price \nSubtotal \nShipping & I kindling \nOrder Total \nPaid via Amex \nBalance due \nThis shipment \u2022ompletes your order. \nTotal \nhttp://www.enanen.com \nYour Account \nFor detailed information about this and other orders, please visit \nYour Account. You can also print invoices, change your e-mail \naddress and payment settings, alter your communicatioc \npreferences, and much more - 24 hours a day - at \nhttp://www.amazon.com/your-accoun. \nReturns Ale Easy! \nVisit http://www.amaion.com/retums to return any item -\nincluding gifts - in unopened or original condition within 30 \ndays for a full refund (other restrictions apply). Please have \nyour order ID ready. \n$16.47 $16.47 \n$15.95 $15.95 I Thanks for shopping at Arnazon.corr, and ple,.se \ncome again! \n$11.95 $11.95 \n$4437 \n$24.46 \n$68.83 \n$68.83 \n$0.00 I I. amazop.coo'ed m: \nrbrdi77Rt; SOR 1 I. x F.t.t 1 ra k/next/2436223/0912-19:30/0911-19,15/mreed Box or Pad: (71.1.B I2X9X2 \nIII III1111111111 IIIIIIIIIIIIIIIIIIIII III \nEFTA00007607",
+          "native_text_sha256": "04c11b1253d92ce768d7b86edec28ff7be75e944491c1c93dcf32d24b4f4054f"
+        },
+        {
+          "pdf_page": 3,
+          "quote": "FcdEx l Ship Manager l Label Page 1 of I \nFrom Origin C' \nJEFFREY E. EPSIEIN \n4111 FLOOR \nNEWYORK. NY 10022 \nJeffrey,. \n358 El Brillo Way \nPalm Beach, FL 33480 \nE \nELL SENDER \nShio Date 1gggpos \nActual WO 2 LB \nSyskiinti It I3e640NEy2200 \nAccount', S ......... \nREF. mal ll  \nlit [lilt llll II' I Oo fi ery Ad es Ea Coce Hil 111111 \nPRIORITY OVERNIGHT \nIRO \n3348O -FL-US \nRES \nI 'SW \n)20 I \nTUE \nDeliver By \n20SEP05 \nFLL AA \nXH LNAA \nShipping Label: Your shipment Is complete \n1. Use the 'Print' feature from your browser to send tnis page to your laser or inkjet printer. \n2. Fold the printed page along the horizontal line \n3. Place label in shipping pouch and affx it to your shipment so that the tarcode portion of the Inset Can be read and scanned.Warning: Use only the printed original label for shipping. Using a photocopy of this label for shipping purposes is fraudulent and could result in additional billing charges, along with the cancellation of your FedEx account number. Use of this system constitutes yow agreement to the service cc ndrOns in the current FecEx Service Guide available on leder corn FedEx will rot be responsible for any claim it excess of St 00 per package. whether the result of loss, damage, delay. non-delvery.rosdelivery, or misirformabon. unless you decare a hgher value. pay ar additional charge. document your actual loss and Ile a timely claim. Linstaticns turd in Me cuTent Feats Service Gude apply. Your right to reCOve- from FedEx for any loss. including intrirsic value or the package. loss of sates. income .ntarest profit. attorney's fees, costs. and other forms of damage whetter direct. incidental, consequential, or special is limited to tie greater of $100 or Me authorized declared value. Recovery cannot exceed actual documented loss. maximum for Items of extraordinary value is 550), e g. Jewelry. predous metals, negotable instrumerts and other items listed in our Service Guide Written claims must be filed within strict time knits. see current redEx Servos Guide. \nlittps://www.fedex.corrilegi-bthishiP_Wunity/31iUv5FiRx0kUq2BcRw0HbQr4AgXt6laUr... 9/19/2005 \nEFTA00007608",
+          "native_text_sha256": "c88c896904a645a86a3996ec5cd0b95b659032f9c8dc2d721bad3a1418f3a3c9"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00007684",
+      "dataset": 4,
+      "source_sha256": "7a3df464062ca451174c49a0ceccf231b08cb014aad5a04e7713b3981eec3608",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": ",ea \nwar \n1 a egg \nsesr:U sio's; 1 I \nWOOD TECHNOLOGY \nMETAL TECHNOLOGY \nDUST. NO. \nSHIPPED \nPEASE RET.Ii- TO \nWOOD TECHNOLOGY, INC. \nBACK \nORDERED \nP.O. BOX 130 \nCONOVER, NC 28613 \nPHONE (828) 464-8049 \nFAX (828) 464-8046 \nDATE SHIPPED SHIPPED WI SALESMAN \nDESCRIPTION \nVt\nAir -\u2022\u2022\u2022\u2022\u2022Megolem\" \nINVOICE \nPRICE I AMOUNT \n\u2014C7t \n't st :\u2022\u20221 \u2022 \nEFTA00007684",
+      "notes": "Invoice photograph has printed invoice/shipped fields and a separate handwritten packaging marking. Faint/reflected text and missing native date fields do not establish which date governs the photographed evidence record. No primary date or verified transaction assigned.",
+      "review_method": "Codex bounded source comparison with native UTF-8 evidence and prior quality/OCR findings; same-assistant editorial adjudication, not independent authentication",
+      "timezone_policy": "Use source calendar day; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": ",ea \nwar \n1 a egg \nsesr:U sio's; 1 I \nWOOD TECHNOLOGY \nMETAL TECHNOLOGY \nDUST. NO. \nSHIPPED \nPEASE RET.Ii- TO \nWOOD TECHNOLOGY, INC. \nBACK \nORDERED \nP.O. BOX 130 \nCONOVER, NC 28613 \nPHONE (828) 464-8049 \nFAX (828) 464-8046 \nDATE SHIPPED SHIPPED WI SALESMAN \nDESCRIPTION \nVt\nAir -\u2022\u2022\u2022\u2022\u2022Megolem\" \nINVOICE \nPRICE I AMOUNT \n\u2014C7t \n't st :\u2022\u20221 \u2022 \nEFTA00007684",
+          "native_text_sha256": "3f2afef71a9411c4c327ff6000bfced3ccb24e94cf48149c50fad534fa1a948d"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00007763",
+      "dataset": 4,
+      "source_sha256": "9dd32b4b155c25d3bfee2ef1f009dc34fc2a40a843c8a4fcdc3c5482d8264cb5",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "......y \u2022 \u2022 \u2022\u2022,\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022 \nfi tfiDMIc ORAL BUREAU OF iblv,uS A Vet\u00b0 14Cg telOF INVESTIGATION 3 iitufl \nEFTA00007763",
+      "notes": "Evidence packaging, handwritten form, digitization notice, unscanned-item placeholder and cassette photo have distinct handling/template/label roles. Handwritten form date is not established as receipt, capture or creation. April 2018 and July 27, 2020 template markers do not date the evidence event or underlying audio. No single primary day established.",
+      "review_method": "Codex bounded source comparison with native UTF-8 evidence and prior quality/OCR findings; same-assistant editorial adjudication, not independent authentication",
+      "timezone_policy": "Use source calendar day; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "......y \u2022 \u2022 \u2022\u2022,\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022 \nfi tfiDMIc ORAL BUREAU OF iblv,uS A Vet\u00b0 14Cg telOF INVESTIGATION 3 iitufl \nEFTA00007763",
+          "native_text_sha256": "9cf1c27e52b3ac695c3463b42f697ed70934e9663914565f268cc91d62f6a882"
+        },
+        {
+          "pdf_page": 2,
+          "quote": "I \n\u2022 \n... \nEFTA00007764",
+          "native_text_sha256": "75ede77e3678ca1253be19148b606589989fa054896d809d502b83e8f14ecd06"
+        },
+        {
+          "pdf_page": 3,
+          "quote": "All documents and \nPhotographs \nEnclosed have been \nDigitized. \nNegatives and/or \nmedia have not \nbeen captured. \nDL-02 Media \u2666O.1 \nApril 2018 \nEFTA00007765",
+          "native_text_sha256": "ea799506206774992434e5270c1c1c806b9ee4080b5cdbb4d6eb04d2d08561fd"
+        },
+        {
+          "pdf_page": 4,
+          "quote": "Officer:\n-Lab #: \n. dEll\u2022\u2022\u2022\u2022Wa. \noitsigriva \nSt  Town of Palm Beach lita 0' Police Department tt`97 .\nEVIDENCE SienfiL; \nCASE trYS\" 3 6 9  PROPERTY # OS- /or \nWV( CONTENTS ( 0_ \nItem Quantity Description \ntru st re Lel= \nSuspect: s i\nDate: W./ y\u2022 OS-\nKL-231 \n.a. \n12 \nEFTA00007766",
+          "native_text_sha256": "213391fe6aff2449e92aef0c5dc2b70e3e6803fb13e86f0b2f494c52dbf0de96"
+        },
+        {
+          "pdf_page": 5,
+          "quote": "ITEM \nWAS NOT \nSCANNED \nDESCRIPTION \nEFTA00007767",
+          "native_text_sha256": "94046ca6ff90121c4e2ea4691a875cb20cc632a6b3fb49b3aedc41fd271530ea"
+        },
+        {
+          "pdf_page": 6,
+          "quote": "EFTA00007768",
+          "native_text_sha256": "4d9fbac7f9a965e277f96e8b35e372c7f61cced10ee508cb423859c1aa40b3e7"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00007968",
+      "dataset": 4,
+      "source_sha256": "6965151352c5e7981fa0fabb8ee9db95df5e628181c163b2136cf3a91d25839a",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "- \n1111111111gellE11111\nge tIN . Town of Palm Beach 0-ter  NA I \nEVIDENCE \" \nPolice Department ...1 gs 4 ge I \nflCASE,  0 .5 - 3 6 R PROPERTY,  o6-9 5  A \u2022 \nId  CONTENTS (28/y-2_ v 1 1 Item Quantity Description \nr \nDate: 01 -.27-04 \nLab #: \n\u2022 \n\u2022:\n\u2022 -\u2022 .\u2022 \n\u2022 \n. ' - \nEFTA00007968",
+      "notes": "Evidence form date is damaged in native/OCR text; the source handwritten form date is distinct from July 27, 2020 placeholder revision and cassette-label markings. Date field alone does not establish receipt, capture or media creation. No single primary date or audio date assigned.",
+      "review_method": "Codex bounded source comparison with native UTF-8 evidence and prior quality/OCR findings; same-assistant editorial adjudication, not independent authentication",
+      "timezone_policy": "Use source calendar day; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "- \n1111111111gellE11111\nge tIN . Town of Palm Beach 0-ter  NA I \nEVIDENCE \" \nPolice Department ...1 gs 4 ge I \nflCASE,  0 .5 - 3 6 R PROPERTY,  o6-9 5  A \u2022 \nId  CONTENTS (28/y-2_ v 1 1 Item Quantity Description \nr \nDate: 01 -.27-04 \nLab #: \n\u2022 \n\u2022:\n\u2022 -\u2022 .\u2022 \n\u2022 \n. ' - \nEFTA00007968",
+          "native_text_sha256": "1ffe78663b764455f948e8e01f4baa0d759b2167c59813425c0e8ce36a667afa"
+        },
+        {
+          "pdf_page": 2,
+          "quote": "ITEM \nWAS NOT \nSCANNED \nDESCRIPTION \nEFTA00007969",
+          "native_text_sha256": "feb5756b1e1bac333c9873c798a48a5d912620e8b19bab410494229a1034c957"
+        },
+        {
+          "pdf_page": 3,
+          "quote": "zAt 4 \nEFTA00007970",
+          "native_text_sha256": "58cd105180de4e876e8848d671b9aa6651a1ef9f77bf7eb22b1d209846e7d346"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00008320",
+      "dataset": 4,
+      "source_sha256": "e19a4cab78e2889b735f0ab2bd93455b6fb4354d490261e1a68d142d6f369981",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "Massaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u2713\u00a0Use massage as a reward for children who complete their homework. \n\u2713\u00a0Offer the family chef a massage In return for preparing a special meal. \n\u2713\u00a0Make the idea of massage non-threatening by offering the simple, seated, \nback and neck massage (fully clothed) from Chapter 12. \n\u2713\u00a0If someone says no to massage, respect that person's feelings, but offer a \ntidbit of Information that may help, such as the location of the \nheadache-reduction massage point in the webbing between the thumb \nand index finger (see Chapter 13). \n\u2713\u00a0When a family member does agree to receive his or her first-ever mas-\nsage, start out easy, with very light pressure, so you don't turn them off \nto the idea. Do some gentle warmups first, and then use more intense \nmaneuvers after the person is used to your touch. \n\u2713\u00a0Be willing to be the first one to offer massage and to continue offering it \neven if the favor is not reciprocated for a while. \nMy father went to Emory University Hospital \nonce for heart surgery, because his arteries \nwere blocked. The entire family was scared. \nMy mom and sister and I accompanied him, and \nwe watched as theywheeled him into the oper-\nating room, which was filled with high-tech, \nexpensive equipment thatwe didn't understand. \nHours later, he came out okay, but the nurses \nhad to strap him to his hospital bed so he wouldn't \naccidentally roll over on the tubes and wires \nthat sprouted from his body. \nI stayed by his side all night, watching his pain \nand discomfort increase until he asked me to try \nto do something about it. \n\"Would you mind giving me a little massage, \nSon?\" he asked. \nI agreed, and then slid my hands along the hos-\npitatmattress under his-back until I could curl \nmyfingers up and work on his knotted muscles. \nThe operating table had been as hard as a block \nof concrete, and being strapped in one position \nfor hours turned outto be the most painful part \nof the.operation. \n\"You know, Steve; he said, his face just inches \nfrom mine, \"After whet I've been through, it feels \ngreat just to be alive. And what you're doing \nfeels indescribable.\" \nSo, every hour or so during the night, I awoke \nfrom sleep in the chair beside him, stretched my \nfingers beneath his back again, and offered the \nbest massage I could. We didn't speak many \nwords, but the father-son communication \nbetween us had never been stronger. It's an \nexperience that bonds us to this day. \nEFTA00008320",
+      "notes": "Only PDF pages 1/45/89 inspected in an 89-page publication extract/marked cover collection. Publication page numbers, prose and final handwritten marking do not establish a complete issue/assembly day. No date inferred from subject matter, ownership or unseen components.",
+      "review_method": "Codex bounded source comparison with native UTF-8 evidence and prior quality/OCR findings; same-assistant editorial adjudication, not independent authentication",
+      "timezone_policy": "Use source calendar day; no timezone inference or conversion.",
+      "inspected_pdf_pages": [
+        1,
+        45,
+        89
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "Massaging my father \n272 Part V: Living the Good Life: Massage for Every Body  \n\u2713\u00a0Use massage as a reward for children who complete their homework. \n\u2713\u00a0Offer the family chef a massage In return for preparing a special meal. \n\u2713\u00a0Make the idea of massage non-threatening by offering the simple, seated, \nback and neck massage (fully clothed) from Chapter 12. \n\u2713\u00a0If someone says no to massage, respect that person's feelings, but offer a \ntidbit of Information that may help, such as the location of the \nheadache-reduction massage point in the webbing between the thumb \nand index finger (see Chapter 13). \n\u2713\u00a0When a family member does agree to receive his or her first-ever mas-\nsage, start out easy, with very light pressure, so you don't turn them off \nto the idea. Do some gentle warmups first, and then use more intense \nmaneuvers after the person is used to your touch. \n\u2713\u00a0Be willing to be the first one to offer massage and to continue offering it \neven if the favor is not reciprocated for a while. \nMy father went to Emory University Hospital \nonce for heart surgery, because his arteries \nwere blocked. The entire family was scared. \nMy mom and sister and I accompanied him, and \nwe watched as theywheeled him into the oper-\nating room, which was filled with high-tech, \nexpensive equipment thatwe didn't understand. \nHours later, he came out okay, but the nurses \nhad to strap him to his hospital bed so he wouldn't \naccidentally roll over on the tubes and wires \nthat sprouted from his body. \nI stayed by his side all night, watching his pain \nand discomfort increase until he asked me to try \nto do something about it. \n\"Would you mind giving me a little massage, \nSon?\" he asked. \nI agreed, and then slid my hands along the hos-\npitatmattress under his-back until I could curl \nmyfingers up and work on his knotted muscles. \nThe operating table had been as hard as a block \nof concrete, and being strapped in one position \nfor hours turned outto be the most painful part \nof the.operation. \n\"You know, Steve; he said, his face just inches \nfrom mine, \"After whet I've been through, it feels \ngreat just to be alive. And what you're doing \nfeels indescribable.\" \nSo, every hour or so during the night, I awoke \nfrom sleep in the chair beside him, stretched my \nfingers beneath his back again, and offered the \nbest massage I could. We didn't speak many \nwords, but the father-son communication \nbetween us had never been stronger. It's an \nexperience that bonds us to this day. \nEFTA00008320",
+          "native_text_sha256": "713e97d32ec8ddb09d5f746b66655f71c7459cf361cdd53740df4dec9588ba8d"
+        },
+        {
+          "pdf_page": 45,
+          "quote": "316 Part VI: The Part of Tens  \nThe royal treatment at home \nDrop the kids at grandma's house and head home to cook your partner's \nfavorite meal, arrange flowers, light candles, and warm the aromatherapy oil. \nThen put the skills you attain from this book to good use by giving a great \nmassage. This is good for major brownie points in your favor. \n8&B and massage \nTake a trip to a quaint and charming little bed & breakfast and trade mas-\nsages with your partner in this new, romantic environment. \nLeave a little rub behind \nWhen you're a houseguest, leave behind a massage gift certificate from a \nlocal massage therapist to show how much you appreciate your host's \nhospitality. \nMassage for charity \nBuy a gift certificate from a local massage therapist and offer it as a door \nprize for your church or community club auction. \nWedding day. rub \nBuy a massage for (or better yet, give a massage to!) a friend who is getting \nmarried. I received a massage on my own wedding day and have given mas-\nsages to friends on theirs. You can always manage to make that extra hour \nappear on the big day, no matter how hectic things seem to get, and it really \nhelps to calm the nervous bride or groom. \nThe massage economy pack \nNegotiate with a local massage therapist to purchase a whole series of mas-\nsages at a discount, and then share them with your partner, family, friends, \nbusiness associates, and anyone else you can think of. \nYou're the gift \nAfter you read this book, offer free massages to all of your friends and each \nperson in your family. Do this even if you think you're not \"good enough\" at \ngiving massage yet. If you give from your heart, people may respond accord-\ningly. It's the gift that counts, not the wrapping. \nEFTA00008364",
+          "native_text_sha256": "d7c198a14c475f453e74d3e8187e4b875c264bcaa2c65fbf13e85d7f3549df26"
+        },
+        {
+          "pdf_page": 89,
+          "quote": "1 \nEFTA00008408",
+          "native_text_sha256": "2f6e217a8d5e0f56f2794aaca69c46b33a14d68cfa4d148377c683a2572934cb"
+        }
+      ]
+    }
+  ]
+}

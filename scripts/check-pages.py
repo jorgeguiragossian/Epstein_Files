@@ -12,6 +12,7 @@ paths=['/api/overview','/api/people','/api/documents/EFTA00039806?page=2','/api/
  '/api/search','/api/search?q=grand%20jury&dataset=6','/api/search?person=ghislaine-maxwell&date_from=2020-06-29&date_to=2020-06-29',
  '/api/search?q=EFTA00008529','/api/search?q=Epstein&quality=review','/api/search?q=SDNY_GM','/api/search?date_status=unreviewed','/api/search?person=alan-dershowitz']
 rows=[]
+paths+=['/api/documents/EFTA00005707','/api/search?q=EFTA00005707&date_from=2011-03-14&date_to=2011-03-14','/api/search?q=EFTA00005707&date_from=2011-03-21&date_to=2011-03-21','/api/timeframes?dataset=4&date_from=2011-03-14&date_to=2011-03-14','/api/search?q=EFTA00007501&date_status=uncertain']
 paths+=['/api/documents/EFTA00007501','/api/documents/EFTA00007684','/api/documents/EFTA00007968?page=2','/api/search?dataset=4&date_status=unreviewed','/api/emails?document=EFTA00005707']
 paths+=['/api/coverage','/api/emails?filter=unreviewed','/api/emails?filter=sender','/api/emails?filter=recipient','/api/emails?filter=date']
 paths+=['/api/words','/api/words?date_from=2020-01-01&date_to=2020-12-31','/api/words?dataset=6','/api/words?person=ghislaine-maxwell','/api/words?exclude=epstein%2Ccourt','/api/words?date_from=1900-01-01&date_to=1900-01-02']

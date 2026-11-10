@@ -126,7 +126,7 @@
         "downloads.json": "36ef93b278a8ea3b83e41603a6e6c7607e6562c83e0d0dea9079a1e21c217067",
         "metrics.json": "f3158a985f602c97326dc638381304d13c5711ec2d7c757d46aaa76002555de6",
         "quality-review.json": "74e3fc25c12c360444cc4596e1e6ce8d26535cb621b0803f206ca7f9e7d7c565",
-        "processing-status.json": "e16bda0b369a84a087411070192bee6a4ae2461481f507e7dd2e1f02d96682cb",
+        "processing-status.json": "e74dfabcb9987d50523346913e01b04a0d816082ddbc25689e0f6b284ef82502",
         "ocr-review-index.json": "314c5aa42b316e2f5a5525cf001b3efc437592dcad2de26883dcdd01a72dd160",
         "ocr-review-EFTA00005910.json": "5830b2e0764669652fae473520e8b2b57fef2504264679bd195c265e2ccd0a67",
         "ocr-review-EFTA00006085.json": "01c152be947e4527523a382f25e258358aaa1e7f22e8001c754b68b3888d9bbb",
@@ -135,7 +135,8 @@
         "ocr-review-EFTA00007684.json": "460376c19cbe702af0d84e9c3ba09dd4a550911b01dbcc52dcc63db5e0746d63",
         "ocr-review-EFTA00007763.json": "f4b2aee7e079ef4fa3ff9406ab7e86c4b550fc1129ae8aaf7600d90d4ab49b91",
         "ocr-review-EFTA00007968.json": "56c7caa476b073feb6c15750ca0a256abf102091b187d279bcaed108248ba5e1",
-        "ocr-review-EFTA00008320.json": "56ed3b1ef334f4b06b4d0d8822c9c19e7d37c9851b34b36574e86c6733617511"
+        "ocr-review-EFTA00008320.json": "56ed3b1ef334f4b06b4d0d8822c9c19e7d37c9851b34b36574e86c6733617511",
+        "date-reviews.json": "a17a27c164ba8c41453cf02e32afc75d2416224b8b18f6e4a3021691f2332da8"
       }
     }
   ]

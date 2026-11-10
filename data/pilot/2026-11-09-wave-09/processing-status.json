@@ -7,12 +7,12 @@
   "pdf_pages": 270,
   "public_search_integration": true,
   "parsed_email_occurrences": 0,
-  "document_date_status": "unreviewed",
+  "document_date_status": "one_communication_dated_nine_uncertain",
   "ocr_native_replacement": false,
   "provisional_readings_public": false,
   "remaining_review_items": [
     "Source comparison bounded to 37 of 270 pages",
     "OCR assessment bounded to 13 pages; no accepted replacement",
-    "Primary dates/components unadjudicated; telephone rows not validated"
+    "Component dates remain distinct; telephone rows not validated"
   ]
 }

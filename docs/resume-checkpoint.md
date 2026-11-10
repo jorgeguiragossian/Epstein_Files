@@ -2,7 +2,7 @@
 
 Wave 9 integrated: **190 PDFs / 2,826 pages**, 194 detected email occurrences, 120 scoped candidate reviews and 53 lossless body breakdowns. All 180 prior document payloads, email records/groups and analysis entries preserved exactly. See `docs/wave-09-integration.md`.
 
-Wave 8 date review complete: EFTA00004231 has July 17, 2020 evidence-received date (explicit new role, not capture/media creation); nine other primary dates uncertain. Totals: **71 dated, 49 uncertain, 70 unreviewed**. There are 36 prepared/source-checked briefs, 35 date-evidence-only documents and six reviewed reporting-period PDFs. Reporting-period clouds count full selected pages, not transaction rows.
+Wave 8 date review complete: EFTA00004231 has July 17, 2020 evidence-received date (explicit new role, not capture/media creation); nine other primary dates uncertain. Totals: **72 dated, 58 uncertain, 60 unreviewed**. There are 36 prepared/source-checked briefs, 36 date-evidence-only documents and six reviewed reporting-period PDFs. Reporting-period clouds count full selected pages, not transaction rows.
 
 Wave 8 adds 348 pages with bounded 28-page visual quality scope. Albums/contact sheets, redacted pages, placeholders, printed covers and receipt have explicit notices. Three files have public scoped OCR-assessment findings and source links; seven local attempts cover five previously inspected source pages. Printed OCR is partial/errorful and handwriting OCR inadequate; no native replacement accepted. Raw OCR/images/four provisional literals remain local and excluded from published search. Receipt-handling versus photo/media dates remain separate.
 
@@ -16,4 +16,6 @@ Wave 9 bounded OCR assessment complete: eight flagged files, 13 source pages / 1
 
 Wave 9 integration complete: native search plus ten scoped quality notices/eight OCR assessments. All 180 prior document payloads, email records/groups and word/timeframe entries preserved. Validation: 97 offline tests, 126 static/Python comparisons, HTTP smoke and browser notice/source controls. Catalog remains 24,447 observed URL pairs; 190 acquired/extracted PDFs. Builds require nine-wave caches and indexed OCR evidence.
 
-Next recommended milestone: separately adjudicate dates of ten wave 9 documents, preserving statement/transaction, certification/event, shipping/delivery, evidence/template roles. Then dataset 5 acquisition. The unchanged expansion plan has 90 acquired/extracted/integrated PDFs and 10 unprocessed. Do not regenerate it.
+Wave 9 date adjudication complete: EFTA00005707 has March 14, 2011 communication date; nine others uncertain with mixed date/component roles explicit. New communication role validated/labeled in reader and timeframes. Native/quality payloads and complete email catalog unchanged; only ten intended date reviews changed. See `docs/wave-09-dates.md`. Validation: 97 offline tests, 131 static/Python comparisons, HTTP smoke, source-bound hashes and browser date display.
+
+Next recommended milestone: acquire ten saved dataset 5 selections through normal browser access, then extraction/source-quality triage. The unchanged expansion plan has 90 acquired/extracted/integrated PDFs and 10 unprocessed. Do not regenerate it.
