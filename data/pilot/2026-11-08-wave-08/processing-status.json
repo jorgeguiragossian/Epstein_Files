@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "status": "native_search_with_bounded_quality_and_indexed_ocr_assessments",
+  "selected_files": 10,
+  "downloaded_files": 10,
+  "native_extracted_files": 10,
+  "pdf_pages": 348,
+  "public_search_integration": true,
+  "parsed_email_occurrences": 0,
+  "document_date_status": "all_unreviewed",
+  "ocr_native_replacement": false,
+  "provisional_readings_public": false,
+  "remaining_review_items": [
+    "Album/redaction source review bounded to 28 of 348 pages",
+    "Receipt date roles unadjudicated",
+    "OCR incomplete/errorful; no accepted full correction"
+  ]
+}

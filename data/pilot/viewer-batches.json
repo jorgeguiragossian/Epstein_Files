@@ -99,6 +99,22 @@
         "processing-status.json": "74076aa4fdb5dc72eb850625f0a89a4d0fecaf0b63c07b4a80fe480dadcbded7",
         "date-reviews.json": "1121b96aa8ebd5c1a84f2c893872e8664442e6cf96538d84e1b74911fba27953"
       }
+    },
+    {
+      "path": "data/pilot/2026-11-08-wave-08",
+      "documents": 10,
+      "review_mode": "native_indexed_ocr_quality_v1",
+      "evidence_sha256": {
+        "selection.json": "74db652cf2238274a806d64345fb79cff0474e024fa6e173d8657508b7ce1afe",
+        "downloads.json": "533b4ca54b40d7f691834386e7b918213240df081e2d6e5de453c96cfde8e229",
+        "metrics.json": "e7478db9ff0fc081f5653e9a661643338e3df782e3dd141c6b40326b54566f72",
+        "quality-review.json": "0d8460bab582e2f96c0277d0978430c3b4bf5fd01c8d9ad7ada7bbbd4562d97c",
+        "ocr-review-index.json": "825118b358b64467d8169c95cba774e36c4e31b61ee04387f31207b0ccf515b6",
+        "ocr-review-EFTA00003858.json": "61768e512ca16e59f0574a8ee997c4f94b8854aa655d9fc259c64b5c48ed9f68",
+        "ocr-review-EFTA00004060.json": "a72a1d4e9789b6fecf33cbb910bbfc7e2130dd23212d80dced14791a76eaf57f",
+        "ocr-review-EFTA00004231.json": "1c34d3871b59c803426b42972292c2038292ed43a46a656ebd5bdaf4450c0dab",
+        "processing-status.json": "fca57b5f06666984b7f886d0af407150c85f0a877bc6e574079fce4ebf6fedfc"
+      }
     }
   ]
 }

@@ -31,6 +31,7 @@ paths+=['/api/documents/EFTA00000002','/api/documents/EFTA00003158','/api/emails
 paths+=['/api/search?q=EFTA00003158&date_status=uncertain','/api/search?q=EFTA00000002&date_status=uncertain','/api/search?q=EFTA00003158&date_from=2019-08-12&date_to=2019-08-12']
 paths+=['/api/documents/EFTA00003601?page=2','/api/documents/EFTA00003726','/api/documents/EFTA00003792','/api/emails?document=EFTA00003601','/api/search?dataset=2&date_status=unreviewed']
 paths+=['/api/search?q=EFTA00003726&date_status=uncertain','/api/search?q=EFTA00003601&date_status=uncertain','/api/search?q=EFTA00003726&date_from=2020-01-01&date_to=2025-12-31']
+paths+=['/api/documents/EFTA00004231','/api/documents/EFTA00003858?page=4','/api/documents/EFTA00005586?page=119','/api/documents/EFTA00004577?page=43','/api/search?dataset=3&date_status=unreviewed','/api/emails?document=EFTA00004577']
 for path in paths:
     url=urlsplit(path);q={k:v[0] for k,v in parse_qs(url.query).items()}
     if url.path=='/api/overview':result=catalog.overview()

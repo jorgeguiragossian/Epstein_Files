@@ -18,6 +18,29 @@ def script(name):
     return module
 
 
+def load_ocr_assessments(folder, pinned):
+    if 'ocr-review-index.json' not in pinned:
+        raise ValueError('OCR index requires pinned evidence')
+    index = read(folder/'ocr-review-index.json')
+    result = {}
+    for entry in index['reviews']:
+        key, name = entry['file_id'], entry['review_file']
+        path = (folder/name).resolve()
+        if not path.is_relative_to(folder.resolve()) or key in result:
+            raise ValueError('Invalid or duplicate indexed OCR review')
+        if (name not in pinned or pinned[name] != entry['review_sha256']
+                or hashlib.sha256(path.read_bytes()).hexdigest() != entry['review_sha256']):
+            raise ValueError('Indexed OCR evidence changed')
+        review = read(path)
+        if review['file_id'] != key or review['ocr_improvement_accepted']:
+            raise ValueError('Invalid OCR identity or replacement promotion')
+        script('check-ocr-review').validate(folder, name)
+        result[key] = dict(notes=list(dict.fromkeys(p['finding'] for p in review['page_findings'])),
+                           inspected_pdf_pages=sorted({p['pdf_page'] for p in review['page_findings']}),
+                           native_replacement_accepted=False)
+    return result
+
+
 def load_expansions():
     try:
         from .email_parser import parse_document
@@ -53,11 +76,17 @@ def load_expansions():
             if 'correspondence-reviews.json' not in batch['evidence_sha256']:
                 raise ValueError('Native correspondence review requires pinned evidence')
             reviewed, _ = script('check-wave-correspondence').build_catalog(folder)
-        elif mode in ('native_quality_v1','native_image_quality_v1'):
+        elif mode in ('native_quality_v1','native_image_quality_v1','native_indexed_ocr_quality_v1'):
             required={'quality-review.json'} | ({'ocr-transcription-review.json'} if mode=='native_quality_v1' else set())
             if not required <= set(batch['evidence_sha256']):
                 raise ValueError('Native quality review requires pinned evidence')
-            if mode=='native_quality_v1':
+            assessments = {}
+            if mode=='native_indexed_ocr_quality_v1':
+                assessments = load_ocr_assessments(folder, batch['evidence_sha256'])
+                needed={r['file_id'] for r in read(folder/'quality-review.json')['files'] if r.get('source_assisted_ocr_review_needed')}
+                if set(assessments) != needed:
+                    raise ValueError('Indexed OCR review coverage changed')
+            elif mode=='native_quality_v1':
                 script('check-ocr-review').validate(folder)
             elif any(r.get('source_assisted_ocr_review_needed') for r in read(folder/'quality-review.json')['files']):
                 raise ValueError('Image-only mode cannot skip required OCR review')
@@ -66,6 +95,9 @@ def load_expansions():
             except ImportError:
                 from source_quality import attach_quality
             attach_quality(current, read(folder/'quality-review.json'))
+            for metric, _, _, _ in current:
+                if metric['file_id'] in assessments:
+                    metric['source_quality_review']['ocr_assessment'] = assessments[metric['file_id']]
             reviewed = dict(records=[])
         elif mode == 'native_layout_review_v1':
             if 'table-date-role-reviews.json' not in batch['evidence_sha256']:

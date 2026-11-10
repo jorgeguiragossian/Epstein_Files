@@ -266,6 +266,13 @@ async function openDocument(id, page, focus = false) {
       panel.append(node('h3','','Source quality review'),node('p','',quality.notes),
         node('p','evidence-note',quality.review_scope?'Editorial source comparison by Codex; not independent authentication or full-content review. Native text is preserved.':'Editorial source comparison by Codex, not cell-by-cell financial verification. Native text is preserved. Date-role observations below do not control primary-date filters.'));
       if(quality.review_scope)panel.append(node('p','evidence-note',quality.review_scope));
+      if(quality.ocr_assessment){
+        const assessment=quality.ocr_assessment;
+        panel.append(node('h4','','Local OCR assessment: native text preserved'));
+        for(const note of assessment.notes)panel.append(node('p','',note));
+        panel.append(node('p','evidence-note','No OCR replacement accepted. Raw OCR, source images and provisional literal readings remain local and are excluded from published search text.'));
+        for(const page of assessment.inspected_pdf_pages){const b=node('button','text-button',`OCR source comparison: PDF page ${page}`);b.type='button';b.addEventListener('click',()=>openDocument(id,page));panel.append(b);}
+      }
       if(quality.component_assessment){
         const assessment=quality.component_assessment;
         panel.append(node('h4','','Compound file: bounded assessment'),node('p','',assessment.review_scope));
