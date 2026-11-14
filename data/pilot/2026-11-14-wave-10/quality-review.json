@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-14",
+  "method": "Codex source comparison of all three pages in three acquired PDFs; remaining seven saved selections not yet acquired. Not independent authentication or completed ten-file batch.",
+  "selected_files": 10,
+  "downloaded_files": 3,
+  "bytes": 1667318,
+  "pages": 3,
+  "low_text_pages": 2,
+  "visually_inspected_pages": 3,
+  "native_header_candidates": 0,
+  "parsed_email_occurrences": 0,
+  "parser_version": "email-pilot-1",
+  "date_parser_version": "email-date-2",
+  "unique_messages": null,
+  "ocr_performed": false,
+  "public_site_integrated": false,
+  "files": [
+    {
+      "file_id": "EFTA00008410",
+      "source_sha256": "ec3370e332f923cb2b36e82eb8c443ddb5a95587c0152e59c59e31b2e686ce5a",
+      "pages": 1,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "ce90a705df7d81d2aad28494c9dff2fdc566511943353701f8526bd07ac58312"
+      },
+      "notes": "Photograph of a labeled cardboard evidence box. Native text contains extensive recognition noise and omits clear label text despite exceeding low-text threshold. Identifiers/year-like case markings are not primary dates. No contents or associations inferred.",
+      "source_assisted_ocr_review_needed": true,
+      "date_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00008423",
+      "source_sha256": "4f68c00bb510a1fc7a1ea76875effa6fe403b5c6f7394952ccd2117ed49d29ca",
+      "pages": 1,
+      "low_text_pdf_pages": [
+        1
+      ],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "2bfd8bbeb10392dcc87f866243a5afe2488652c619c142075a55b9554843d1f3"
+      },
+      "notes": "Photograph of a packaged hard drive with evidence/clone labels. Native extraction captures almost none of the visible label text. Label date-like markings do not establish capture, creation or verified media contents.",
+      "source_assisted_ocr_review_needed": true,
+      "date_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00008437",
+      "source_sha256": "2c59bc7bc8408123d54075a6968937862f11abbeddb02b3265ecdd5f50229cb4",
+      "pages": 1,
+      "low_text_pdf_pages": [
+        1
+      ],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "35766c25c8fab5e9375a922b87b8f07e0807725afe7cb077c0f542ab399eaaaf"
+      },
+      "notes": "Photograph of an envelope with handwritten case/item markings, largely absent from native extraction. Identifiers are not primary dates; enclosed contents are not verified.",
+      "source_assisted_ocr_review_needed": true,
+      "date_review_status": "unreviewed"
+    }
+  ]
+}

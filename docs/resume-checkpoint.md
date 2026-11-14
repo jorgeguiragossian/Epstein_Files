@@ -50,3 +50,6 @@ older local PDFs now require explicit R2 restore first. Run run-r2-archive.ps1
 with -Action restore and the bundled Python path (omit Batch for all evidence).
 Dataset 5 acquisition remains next after storage work, with the cache policy
 respected; current local source absence is intentional, not data corruption.
+
+
+Dataset 5 wave 10 partial - November 14, 2026: three acquired/extracted one-page PDFs (EFTA00008410/8423/8437), all three visually inspected; zero email occurrences, all need scoped OCR assessment. Seven remain; EFTA00008451 Save As currently pending in Chrome because native modal controls fail. Preserve unchanged ten-file selection. Docs/wave-10-acquisition.md records scope. New wave 10 local evidence is NOT in prior R2 archive; do not evict it. Live remains 190/2826. Expansion 93 acquired/extracted, 90 integrated, seven unprocessed. Next complete pending Save As and remaining downloads.
