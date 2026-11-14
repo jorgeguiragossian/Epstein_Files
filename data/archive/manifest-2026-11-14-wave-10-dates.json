@@ -1,0 +1,461 @@
+{
+  "schema_version": 1,
+  "bucket": "epstein-files-archive",
+  "batch": "2026-11-14-wave-10",
+  "source_revision": "ceab2a1b54ddb2af9841021ad8db91914ac3421f",
+  "scope": "Every current file in the selected batch (or all data/pilot if no batch), including PDFs, native/OCR evidence and metadata. Excludes Downloads, temporary QA sheets, software dependencies, credentials and Git internals.",
+  "files": [
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/cache/ds05-EFTA00008410.pdf",
+      "bytes": 583036,
+      "sha256": "ec3370e332f923cb2b36e82eb8c443ddb5a95587c0152e59c59e31b2e686ce5a",
+      "object_key": "evidence/sha256/ec3370e332f923cb2b36e82eb8c443ddb5a95587c0152e59c59e31b2e686ce5a"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/cache/ds05-EFTA00008423.pdf",
+      "bytes": 476493,
+      "sha256": "4f68c00bb510a1fc7a1ea76875effa6fe403b5c6f7394952ccd2117ed49d29ca",
+      "object_key": "evidence/sha256/4f68c00bb510a1fc7a1ea76875effa6fe403b5c6f7394952ccd2117ed49d29ca"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/cache/ds05-EFTA00008437.pdf",
+      "bytes": 607789,
+      "sha256": "2c59bc7bc8408123d54075a6968937862f11abbeddb02b3265ecdd5f50229cb4",
+      "object_key": "evidence/sha256/2c59bc7bc8408123d54075a6968937862f11abbeddb02b3265ecdd5f50229cb4"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/cache/ds05-EFTA00008451.pdf",
+      "bytes": 587780,
+      "sha256": "011ffe58960126c56f8231a35b062916ef79900add52322e1845caae76305b48",
+      "object_key": "evidence/sha256/011ffe58960126c56f8231a35b062916ef79900add52322e1845caae76305b48"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/cache/ds05-EFTA00008464.pdf",
+      "bytes": 428738,
+      "sha256": "8de8309b4dc2fd277f509a7d0fdca4dbea8ff8ec3093c8b37d1561ffbee03531",
+      "object_key": "evidence/sha256/8de8309b4dc2fd277f509a7d0fdca4dbea8ff8ec3093c8b37d1561ffbee03531"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/cache/ds05-EFTA00008477.pdf",
+      "bytes": 561603,
+      "sha256": "6e12f5eca71b9123f5c6f9dfdb134a173cfc66be96d2d3a54e1bb8855a5d3064",
+      "object_key": "evidence/sha256/6e12f5eca71b9123f5c6f9dfdb134a173cfc66be96d2d3a54e1bb8855a5d3064"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/cache/ds05-EFTA00008489.pdf",
+      "bytes": 445289,
+      "sha256": "9028f3f7d2fc74adac77d0f4f77c6caa5039d7565ff32e34e37951cdf2f15ea8",
+      "object_key": "evidence/sha256/9028f3f7d2fc74adac77d0f4f77c6caa5039d7565ff32e34e37951cdf2f15ea8"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/cache/ds05-EFTA00008501.pdf",
+      "bytes": 563207,
+      "sha256": "52afa6cde783304ccb25f09c16bfa2d70e9ee210f1cdfd6ae27e1146a9c7c1c1",
+      "object_key": "evidence/sha256/52afa6cde783304ccb25f09c16bfa2d70e9ee210f1cdfd6ae27e1146a9c7c1c1"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/cache/ds05-EFTA00008515.pdf",
+      "bytes": 546815,
+      "sha256": "59cf38dd3f5454560ca58aff3230b3adf793cf18d99a06647bf4f49630c9386a",
+      "object_key": "evidence/sha256/59cf38dd3f5454560ca58aff3230b3adf793cf18d99a06647bf4f49630c9386a"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/cache/ds05-EFTA00008528.pdf",
+      "bytes": 523961,
+      "sha256": "2b88005008b197794daf11d68646d2af1273fb41e6262748adf67d30bc5a8036",
+      "object_key": "evidence/sha256/2b88005008b197794daf11d68646d2af1273fb41e6262748adf67d30bc5a8036"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/date-reviews.json",
+      "bytes": 27483,
+      "sha256": "15c54ca6562ce6dc6786fb5145951e82c2b72abb1a93ed671c567a149d530774",
+      "object_key": "evidence/sha256/15c54ca6562ce6dc6786fb5145951e82c2b72abb1a93ed671c567a149d530774"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/downloads.json",
+      "bytes": 14900,
+      "sha256": "84a218d2acee71b3c922ec8716e66e2a72c9a8163fd9f894d5cb62dac23afb8d",
+      "object_key": "evidence/sha256/84a218d2acee71b3c922ec8716e66e2a72c9a8163fd9f894d5cb62dac23afb8d"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ds05-EFTA00008410.json",
+      "bytes": 3005,
+      "sha256": "c7ed793f2e0e02cc61bbf63bce05be5c2c2129ac2f4975411c7dd409fae9cd33",
+      "object_key": "evidence/sha256/c7ed793f2e0e02cc61bbf63bce05be5c2c2129ac2f4975411c7dd409fae9cd33"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ds05-EFTA00008423.json",
+      "bytes": 1430,
+      "sha256": "c76fe4f5b0a67ddc90ecac5a637c3014baafaed6578b93ca063619f5ce69a36c",
+      "object_key": "evidence/sha256/c76fe4f5b0a67ddc90ecac5a637c3014baafaed6578b93ca063619f5ce69a36c"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ds05-EFTA00008437.json",
+      "bytes": 1510,
+      "sha256": "53ef678b0e342bda37f3cc762e4a828700303bf807e4925d40b8ddaf4994e7f5",
+      "object_key": "evidence/sha256/53ef678b0e342bda37f3cc762e4a828700303bf807e4925d40b8ddaf4994e7f5"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ds05-EFTA00008451.json",
+      "bytes": 1396,
+      "sha256": "3ab97c9c355477320c75a6fd619bac3730465273af61441740f9b1cd21c1c41b",
+      "object_key": "evidence/sha256/3ab97c9c355477320c75a6fd619bac3730465273af61441740f9b1cd21c1c41b"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ds05-EFTA00008464.json",
+      "bytes": 1491,
+      "sha256": "a071372846458774c4d59d221755a7761e955ee6ca2305bd4ef3adbda61ecc17",
+      "object_key": "evidence/sha256/a071372846458774c4d59d221755a7761e955ee6ca2305bd4ef3adbda61ecc17"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ds05-EFTA00008477.json",
+      "bytes": 1515,
+      "sha256": "dc9c3ebdb0e250452651fa2cbca12cbaa403f36b622643132432e1d791b5aee8",
+      "object_key": "evidence/sha256/dc9c3ebdb0e250452651fa2cbca12cbaa403f36b622643132432e1d791b5aee8"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ds05-EFTA00008489.json",
+      "bytes": 4590,
+      "sha256": "1e5dc198528972391b2cfe03d06621a157544b4c1a4e4997b7cdcdafd0266a6e",
+      "object_key": "evidence/sha256/1e5dc198528972391b2cfe03d06621a157544b4c1a4e4997b7cdcdafd0266a6e"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ds05-EFTA00008501.json",
+      "bytes": 4247,
+      "sha256": "bbc5f77b8a3d3448a81bce7878ddd4f1ca16f38164ac299ad5bcc47bd0f60e9f",
+      "object_key": "evidence/sha256/bbc5f77b8a3d3448a81bce7878ddd4f1ca16f38164ac299ad5bcc47bd0f60e9f"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ds05-EFTA00008515.json",
+      "bytes": 1435,
+      "sha256": "782ad601a83c4afbb9df080ee572f5c6bde19bb97825ed590e603d6944b2300a",
+      "object_key": "evidence/sha256/782ad601a83c4afbb9df080ee572f5c6bde19bb97825ed590e603d6944b2300a"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ds05-EFTA00008528.json",
+      "bytes": 1396,
+      "sha256": "7ad9111fd252e4173cc3937e03a7e7288c6db497b9e59ead10c0ad0c701d58fa",
+      "object_key": "evidence/sha256/7ad9111fd252e4173cc3937e03a7e7288c6db497b9e59ead10c0ad0c701d58fa"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/crop-scope.json",
+      "bytes": 568,
+      "sha256": "03cdabd665bd02a76318e385733b3b1749274a08b373dbd6fa9faa5d44968957",
+      "object_key": "evidence/sha256/03cdabd665bd02a76318e385733b3b1749274a08b373dbd6fa9faa5d44968957"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008410-box-label.json",
+      "bytes": 349,
+      "sha256": "1a7b0808fad27ba4ae2c05b3ef83a2bd4cf7fda7bb360f5579ed5729feeb99c3",
+      "object_key": "evidence/sha256/1a7b0808fad27ba4ae2c05b3ef83a2bd4cf7fda7bb360f5579ed5729feeb99c3"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008410-box-label.png",
+      "bytes": 1409664,
+      "sha256": "9331626561c657875c7a43a8ecfb5988deeba093cac12a3d44902d7099c7d3a6",
+      "object_key": "evidence/sha256/9331626561c657875c7a43a8ecfb5988deeba093cac12a3d44902d7099c7d3a6"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008410-editorial-readings.json",
+      "bytes": 152,
+      "sha256": "3135cfb39d5ac193df4fda82a992785c181721cdad59f5e8d77836dab7e04a44",
+      "object_key": "evidence/sha256/3135cfb39d5ac193df4fda82a992785c181721cdad59f5e8d77836dab7e04a44"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008410-page-1.json",
+      "bytes": 881,
+      "sha256": "5dc9c4345a13a3528ce09efc3095b42742be286711810b5eb82d249cbe8cf04f",
+      "object_key": "evidence/sha256/5dc9c4345a13a3528ce09efc3095b42742be286711810b5eb82d249cbe8cf04f"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008410-page-1.png",
+      "bytes": 4013133,
+      "sha256": "fa63022f3a3188869e718d668057257110ee81a0caf38876c1b26e63020c8469",
+      "object_key": "evidence/sha256/fa63022f3a3188869e718d668057257110ee81a0caf38876c1b26e63020c8469"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008423-editorial-readings.json",
+      "bytes": 152,
+      "sha256": "22f17768204ec6456fef3298289534872720b39e56d0a0df6fdef0ea1fb3131c",
+      "object_key": "evidence/sha256/22f17768204ec6456fef3298289534872720b39e56d0a0df6fdef0ea1fb3131c"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008423-page-1.json",
+      "bytes": 6780,
+      "sha256": "8c026cc4c01f7acd6071344d15a4fca4e459a6c7133bd8f2b44829977cf53488",
+      "object_key": "evidence/sha256/8c026cc4c01f7acd6071344d15a4fca4e459a6c7133bd8f2b44829977cf53488"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008423-page-1.png",
+      "bytes": 3367411,
+      "sha256": "0c09eed05e6e97b6c965078fbd6c81070e2fe661fd4975d1373a625ba1ad226b",
+      "object_key": "evidence/sha256/0c09eed05e6e97b6c965078fbd6c81070e2fe661fd4975d1373a625ba1ad226b"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008437-editorial-readings.json",
+      "bytes": 152,
+      "sha256": "671dfa84976958844b5118e6c4178df67f590a5fdf5887e73f8215b8bbd1f0be",
+      "object_key": "evidence/sha256/671dfa84976958844b5118e6c4178df67f590a5fdf5887e73f8215b8bbd1f0be"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008437-page-1.json",
+      "bytes": 1361,
+      "sha256": "eb4ef04134fc6c862ed7a734300affe17894feb2f4f75e0642849dfc263d8c08",
+      "object_key": "evidence/sha256/eb4ef04134fc6c862ed7a734300affe17894feb2f4f75e0642849dfc263d8c08"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008437-page-1.png",
+      "bytes": 4143060,
+      "sha256": "3d2656ae6dc6b5b019343f6925217fadd11e8ff88ded46d1b9b03994837bd649",
+      "object_key": "evidence/sha256/3d2656ae6dc6b5b019343f6925217fadd11e8ff88ded46d1b9b03994837bd649"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008451-editorial-readings.json",
+      "bytes": 152,
+      "sha256": "35a74123c7d93fa385583b6d600829815553916d4d948f3d612059c427607b4b",
+      "object_key": "evidence/sha256/35a74123c7d93fa385583b6d600829815553916d4d948f3d612059c427607b4b"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008451-page-1.json",
+      "bytes": 350,
+      "sha256": "6b5ea7713d5dd6b1b66d9ce202ca834484567c8df2b5b61d7cacd0e6d9698783",
+      "object_key": "evidence/sha256/6b5ea7713d5dd6b1b66d9ce202ca834484567c8df2b5b61d7cacd0e6d9698783"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008451-page-1.png",
+      "bytes": 4473482,
+      "sha256": "771976f9e0793dcf4f6ca2903d36bc21c23c883a13a9064c88f6f27d9a6e9c47",
+      "object_key": "evidence/sha256/771976f9e0793dcf4f6ca2903d36bc21c23c883a13a9064c88f6f27d9a6e9c47"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008464-editorial-readings.json",
+      "bytes": 152,
+      "sha256": "0b8dcc706611429a3ac1625aa0f33ef9a24238a5b062ae2637a8fa64d2b3d15b",
+      "object_key": "evidence/sha256/0b8dcc706611429a3ac1625aa0f33ef9a24238a5b062ae2637a8fa64d2b3d15b"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008464-page-1.json",
+      "bytes": 1754,
+      "sha256": "f3fb2342feda784eab67b2584f5a12df5a081a39d6db299d578dc594bcfb01be",
+      "object_key": "evidence/sha256/f3fb2342feda784eab67b2584f5a12df5a081a39d6db299d578dc594bcfb01be"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008464-page-1.png",
+      "bytes": 3717433,
+      "sha256": "7c6d78fc4835b8008651801d9088f39435d98fe089683f88bb6bba123a5a60b0",
+      "object_key": "evidence/sha256/7c6d78fc4835b8008651801d9088f39435d98fe089683f88bb6bba123a5a60b0"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008477-editorial-readings.json",
+      "bytes": 152,
+      "sha256": "cf65959012ce05006e672772354eecaa38624d590d71cf9c71d743b092830c70",
+      "object_key": "evidence/sha256/cf65959012ce05006e672772354eecaa38624d590d71cf9c71d743b092830c70"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008477-page-1.json",
+      "bytes": 874,
+      "sha256": "8600f35931db104c9443ca07835efa65517a31d3d384a74bbb5b5bbbd91dc4f6",
+      "object_key": "evidence/sha256/8600f35931db104c9443ca07835efa65517a31d3d384a74bbb5b5bbbd91dc4f6"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008477-page-1.png",
+      "bytes": 4161529,
+      "sha256": "860af5045c270a92264a7184f94fa9c09b8159100d52ede37b0bd0477b9fff3e",
+      "object_key": "evidence/sha256/860af5045c270a92264a7184f94fa9c09b8159100d52ede37b0bd0477b9fff3e"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008489-custody-fields.json",
+      "bytes": 17863,
+      "sha256": "1014cf20131d97984df9b600143e6dad0d9bcb8b0b97c6f3077897df3fee76f0",
+      "object_key": "evidence/sha256/1014cf20131d97984df9b600143e6dad0d9bcb8b0b97c6f3077897df3fee76f0"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008489-custody-fields.png",
+      "bytes": 911134,
+      "sha256": "c3f0dc34aa83d9c570af1c0a200a4ca18d67d9e572e70ee3d67ffe33a6a82138",
+      "object_key": "evidence/sha256/c3f0dc34aa83d9c570af1c0a200a4ca18d67d9e572e70ee3d67ffe33a6a82138"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008489-date-fields.json",
+      "bytes": 15056,
+      "sha256": "d4afca2a2152ddba68df02bf44babe3847aa75dda2b9948636d95f300ff3eafe",
+      "object_key": "evidence/sha256/d4afca2a2152ddba68df02bf44babe3847aa75dda2b9948636d95f300ff3eafe"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008489-date-fields.png",
+      "bytes": 928852,
+      "sha256": "a0ac610e5cdb970dc6832d57371dd9cc43a731841120be3961946f99aef37af0",
+      "object_key": "evidence/sha256/a0ac610e5cdb970dc6832d57371dd9cc43a731841120be3961946f99aef37af0"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008489-editorial-readings.json",
+      "bytes": 152,
+      "sha256": "9c150b92f18885f6dda148addabfcc8297827c174ed04cc16b814f6d7e4a68ea",
+      "object_key": "evidence/sha256/9c150b92f18885f6dda148addabfcc8297827c174ed04cc16b814f6d7e4a68ea"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008489-page-1.json",
+      "bytes": 52798,
+      "sha256": "fcbe529e9f726ea0926fb280154c3f0faeca10a39445f2b6db687c87862ad899",
+      "object_key": "evidence/sha256/fcbe529e9f726ea0926fb280154c3f0faeca10a39445f2b6db687c87862ad899"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008489-page-1.png",
+      "bytes": 3002052,
+      "sha256": "9fccc9468bc492251456966d8eda5daeb4b947d7fcd0fcbd26423221859cb0c5",
+      "object_key": "evidence/sha256/9fccc9468bc492251456966d8eda5daeb4b947d7fcd0fcbd26423221859cb0c5"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008501-editorial-readings.json",
+      "bytes": 152,
+      "sha256": "aa4d02ebab694baa105adacdfaff3bbcb4d05593d9e00f0507a21733489f826d",
+      "object_key": "evidence/sha256/aa4d02ebab694baa105adacdfaff3bbcb4d05593d9e00f0507a21733489f826d"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008501-page-1.json",
+      "bytes": 350,
+      "sha256": "c8d574edeec6d7327ccf5846053daac877264cabee952a08cfa1d9abb36ed975",
+      "object_key": "evidence/sha256/c8d574edeec6d7327ccf5846053daac877264cabee952a08cfa1d9abb36ed975"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008501-page-1.png",
+      "bytes": 4469714,
+      "sha256": "87303cb52c329a2210846c7102d6465e0e7810f16e5185203c6bdbd89a88f68c",
+      "object_key": "evidence/sha256/87303cb52c329a2210846c7102d6465e0e7810f16e5185203c6bdbd89a88f68c"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008515-editorial-readings.json",
+      "bytes": 152,
+      "sha256": "2a2f8106ebea826a8f2f0f46e97b633fad05972b205b1922c2de93cf5959445c",
+      "object_key": "evidence/sha256/2a2f8106ebea826a8f2f0f46e97b633fad05972b205b1922c2de93cf5959445c"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008515-page-1.json",
+      "bytes": 6448,
+      "sha256": "b1c4fd17697daa98df70306c5a1fec52c312a8cfe957a55b7c6449ae2ca66dd2",
+      "object_key": "evidence/sha256/b1c4fd17697daa98df70306c5a1fec52c312a8cfe957a55b7c6449ae2ca66dd2"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008515-page-1.png",
+      "bytes": 4534501,
+      "sha256": "99425968eace51388b031b27a10d7f84caa5db4881ddebff5244e8624f7ac784",
+      "object_key": "evidence/sha256/99425968eace51388b031b27a10d7f84caa5db4881ddebff5244e8624f7ac784"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008528-editorial-readings.json",
+      "bytes": 152,
+      "sha256": "1f1584b29f76113a5480e9e2fe57a845d2c3a662466ad51243e29c987580c948",
+      "object_key": "evidence/sha256/1f1584b29f76113a5480e9e2fe57a845d2c3a662466ad51243e29c987580c948"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008528-page-1.json",
+      "bytes": 350,
+      "sha256": "654209a0e3313fa1b1421de985e6379cd5776026d39fb02f2df20013790c16e8",
+      "object_key": "evidence/sha256/654209a0e3313fa1b1421de985e6379cd5776026d39fb02f2df20013790c16e8"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ocr-review/EFTA00008528-page-1.png",
+      "bytes": 4098809,
+      "sha256": "8c79c4503cf4d93beab870b9eb9e1a5314768d1bc25c6dae7d2a1028268ea5cb",
+      "object_key": "evidence/sha256/8c79c4503cf4d93beab870b9eb9e1a5314768d1bc25c6dae7d2a1028268ea5cb"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/metrics.csv",
+      "bytes": 2307,
+      "sha256": "edce799c942342f78248f9bf8e3d9335667f89632affd77930a3aa757e72c250",
+      "object_key": "evidence/sha256/edce799c942342f78248f9bf8e3d9335667f89632affd77930a3aa757e72c250"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/metrics.json",
+      "bytes": 12316,
+      "sha256": "28940cae59c8267fe58a3687e27ab73e540a5990210f1a89caac1219327294fe",
+      "object_key": "evidence/sha256/28940cae59c8267fe58a3687e27ab73e540a5990210f1a89caac1219327294fe"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/ocr-review-EFTA00008410.json",
+      "bytes": 3159,
+      "sha256": "32e5ab526fcaa3aa299eef96ad310ae8b7ca277f3f9da4490c5626234fcf0729",
+      "object_key": "evidence/sha256/32e5ab526fcaa3aa299eef96ad310ae8b7ca277f3f9da4490c5626234fcf0729"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/ocr-review-EFTA00008423.json",
+      "bytes": 2482,
+      "sha256": "12740f827f004618eac1850ada6c3ab6d5ffa55c68f9d66e10da8e524165bf12",
+      "object_key": "evidence/sha256/12740f827f004618eac1850ada6c3ab6d5ffa55c68f9d66e10da8e524165bf12"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/ocr-review-EFTA00008437.json",
+      "bytes": 2434,
+      "sha256": "ab43fc7e1748838ec759e91dd54fed8010ffa03b919a5ff509e7930e78dfb909",
+      "object_key": "evidence/sha256/ab43fc7e1748838ec759e91dd54fed8010ffa03b919a5ff509e7930e78dfb909"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/ocr-review-EFTA00008451.json",
+      "bytes": 2432,
+      "sha256": "7841e5a039429bb133f17d75cc017f486adc1dc74010528692c088323095a42f",
+      "object_key": "evidence/sha256/7841e5a039429bb133f17d75cc017f486adc1dc74010528692c088323095a42f"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/ocr-review-EFTA00008464.json",
+      "bytes": 2456,
+      "sha256": "70dca77aead73a91352003f3d41b96ed6802a1dafbf048813086894ea86e723e",
+      "object_key": "evidence/sha256/70dca77aead73a91352003f3d41b96ed6802a1dafbf048813086894ea86e723e"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/ocr-review-EFTA00008477.json",
+      "bytes": 2396,
+      "sha256": "dbaceaf2808f0b25934cb82c7c07e4024e3ac1703502a72ed6ef652a6de5d3be",
+      "object_key": "evidence/sha256/dbaceaf2808f0b25934cb82c7c07e4024e3ac1703502a72ed6ef652a6de5d3be"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/ocr-review-EFTA00008489.json",
+      "bytes": 4058,
+      "sha256": "6a416ee55c45c0b392ac45e50b2d493aa70cc2a3a177b01127ddea301762e95d",
+      "object_key": "evidence/sha256/6a416ee55c45c0b392ac45e50b2d493aa70cc2a3a177b01127ddea301762e95d"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/ocr-review-EFTA00008501.json",
+      "bytes": 2507,
+      "sha256": "98ab89efe9477871c99f3ab07d329ac1f2435d79585e7ba18e4d9f030cecc366",
+      "object_key": "evidence/sha256/98ab89efe9477871c99f3ab07d329ac1f2435d79585e7ba18e4d9f030cecc366"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/ocr-review-EFTA00008515.json",
+      "bytes": 2497,
+      "sha256": "8af75d6a23a72331f002366fd704f672027df863be56fa80c2ae1dcd03624c20",
+      "object_key": "evidence/sha256/8af75d6a23a72331f002366fd704f672027df863be56fa80c2ae1dcd03624c20"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/ocr-review-EFTA00008528.json",
+      "bytes": 2449,
+      "sha256": "da341c8d7af76312ad511ec42fc610ff28ac80b2ae61dca78d72c96dce615021",
+      "object_key": "evidence/sha256/da341c8d7af76312ad511ec42fc610ff28ac80b2ae61dca78d72c96dce615021"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/ocr-review-index.json",
+      "bytes": 2147,
+      "sha256": "960a8f1a389f3a4733cd4c8603f838224e42105f19f93242945cdb0454c87d12",
+      "object_key": "evidence/sha256/960a8f1a389f3a4733cd4c8603f838224e42105f19f93242945cdb0454c87d12"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/processing-status.json",
+      "bytes": 651,
+      "sha256": "b1dc92d3bea2786e36f9d707d5f7aa866b3d07440c3e66648673d08420150f17",
+      "object_key": "evidence/sha256/b1dc92d3bea2786e36f9d707d5f7aa866b3d07440c3e66648673d08420150f17"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/quality-review.json",
+      "bytes": 8635,
+      "sha256": "fe4cbf25000b49888a24848d35a4a73556a123f4900ce77824ed497ac7c8fc50",
+      "object_key": "evidence/sha256/fe4cbf25000b49888a24848d35a4a73556a123f4900ce77824ed497ac7c8fc50"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/selection.json",
+      "bytes": 12061,
+      "sha256": "a7aefd0815726a2bdcd4962bb643375bfb346083c262924c5601e3b6f24bae4f",
+      "object_key": "evidence/sha256/a7aefd0815726a2bdcd4962bb643375bfb346083c262924c5601e3b6f24bae4f"
+    }
+  ],
+  "file_count": 75,
+  "total_bytes": 48792172
+}

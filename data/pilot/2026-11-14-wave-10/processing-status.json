@@ -7,11 +7,11 @@
   "pdf_pages": 10,
   "public_search_integration": true,
   "parsed_email_occurrences": 0,
-  "document_date_status": "unreviewed",
+  "document_date_status": "ten_uncertain_primary_dates",
   "ocr_native_replacement": false,
   "provisional_readings_public": false,
   "remaining_review_items": [
-    "Primary dates unadjudicated; identifiers and template versions are not event dates",
+    "Primary dates uncertain; custody/form/label roles kept separate",
     "No verified media contents or authenticated custody chain",
     "OCR incomplete/errorful; no accepted replacement"
   ]

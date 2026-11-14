@@ -92,3 +92,15 @@ Ten new native text/quality/OCR records, primary dates unreviewed. Totals72dated
 emails/analysis and private-layer exclusion pass. See docs/wave-10-integration.md.
 Older evidence restored fromR2 for full build. Next: adjudicate ten wave10 dates,
 keeping custody/intercept/template/media/identifier roles separate. No rawOCRpublic.
+
+
+Wave10 date adjudication COMPLETE - November14,2026: ten uncertain primary dates,
+with custody/intercept/transfer/template/photo/label roles explicit. Live target
+200PDFs/2,836pages,72dated/68uncertain/60unreviewed. No new dated cohorts or briefs;
+allnative/quality/email payloads unchanged. 102tests,140static/Python comparisons,
+HTTPsmoke,source/pagehashes and exact preservation pass. Complete updated wave10
+snapshot75files/48,792,172bytes backed up/restore-verified in privateR2; manifest
+and verification suffix2026-11-14-wave-10-dates. Docs/wave-10-dates.md. Original
+100-document expansion review pass complete; next plan coverage-led expansion
+beyond200pilot, maintaining private evidence/cache/quality gates. Older caches
+were restored for builds; evidence remains below2GiB restore cap.

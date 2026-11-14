@@ -17,11 +17,13 @@ def main():
     overview = get('/api/overview')
     assert overview['documents'] == 200 and overview['pages'] == 2836
     wave10=get('/api/documents/EFTA00008489')
-    assert wave10['date_review']['status']=='unreviewed'
+    assert wave10['date_review']['status']=='uncertain'
     assert wave10['source_quality_review']['ocr_assessment']['inspected_pdf_pages']==[1]
     assert wave10['source_quality_review']['ocr_assessment']['native_replacement_accepted'] is False
     assert 'custody' in ' '.join(wave10['source_quality_review']['ocr_assessment']['notes']).lower()
     assert get('/api/emails?document=EFTA00008489')['total_groups']==0
+    assert get('/api/search?q=EFTA00008489&date_from=2009-10-28&date_to=2009-10-28')['total_documents']==0
+    assert get('/api/documents/EFTA00008528')['date_review']['status']=='uncertain'
     communication=get('/api/documents/EFTA00005707')
     assert communication['date_review']['primary_date']=='2011-03-14' and communication['date_review']['date_type']=='communication'
     assert get('/api/search?q=EFTA00005707&date_from=2011-03-21&date_to=2011-03-21')['total_documents']==0
@@ -37,7 +39,7 @@ def main():
     assert page['page']['number'] == 2 and page['page']['text']
     assert get('/api/search?quality=review')['total_documents'] == 102
     assert get('/api/search?q=zzznomatchpilot')['total_documents'] == 0
-    assert overview['date_status_counts']=={'dated':72,'uncertain':58,'unreviewed':70}
+    assert overview['date_status_counts']=={'dated':72,'uncertain':68,'unreviewed':60}
     words=get('/api/words')
     assert (words['eligible_dated_documents'],words['excluded_without_reviewed_date'])==(72,128)
     reporting=get('/api/words?date_basis=reporting_period')
@@ -59,9 +61,9 @@ def main():
     assert get('/api/timeframes?date_from=2017-05-23&date_to=2017-05-23')['selected_documents']==0
     dated=get('/api/search?date_from=2019-06-18&date_to=2019-06-18')
     assert dated['total_documents']==1 and dated['results'][0]['id']=='EFTA00008529'
-    assert get('/api/search?date_status=uncertain')['total_documents']==58
+    assert get('/api/search?date_status=uncertain')['total_documents']==68
     assert get('/api/search?date_status=undated')['total_documents']==0
-    assert get('/api/search?date_status=unreviewed')['total_documents']==70
+    assert get('/api/search?date_status=unreviewed')['total_documents']==60
     assert get('/api/search?date_from=2014-01-01&date_to=2014-01-01&q=EFTA02730265')['total_documents']==0
     assert get('/api/documents/EFTA00039806')['date_review']['evidence_page']==2
     people=get('/api/people')['people']
