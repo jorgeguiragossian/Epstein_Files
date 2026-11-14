@@ -25,3 +25,15 @@ Storage checkpoint - November 14, 2026: pause dataset 5 ingestion for private R2
 
 
 R2 migration verified - November 14, 2026: 582 files / 510,802,898 bytes, 580 unique evidence objects, all 190 PDFs and retained native/OCR evidence backed up to private epstein-files-archive. Every object restored to temporary disk and SHA-256 checked; remote manifest matched byte-for-byte; local snapshot coverage/hashes rechecked. Tracked manifest and receipt in data/archive; credential configuration remains encrypted outside OneDrive/Git. All originals retained. 99 offline tests pass. Next: implement manifest-bound cache retrieval, test a complete batch restore/build, then choose a bounded working-cache policy before any local evidence removal. Dataset 5 remains pending.
+
+
+R2 recovery/build proved - November 14, 2026: complete 582-file snapshot restored
+into an isolated source checkout; 190-document/2,826-page build passed 131 API
+comparisons and produced byte-identical public data. All original source hashes
+unchanged. Tracked proof: data/archive/restore-build-2026-11-14.json. Retrieval
+supports batch selection, manifest pinning, missing-only atomic install, changed
+file rejection, 2 GiB per-destination restore cap and 1 GiB free reserve. 101 offline
+tests pass. Original project caches retained; temporary full recovery workspace
+removed after recording results. No automatic build network fetch or eviction.
+Next: choose which verified local cache batches to release, or continue dataset 5
+with the cache budget respected. Restore required batches explicitly before builds.

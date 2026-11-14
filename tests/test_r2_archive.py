@@ -1,6 +1,7 @@
 import hashlib
 import importlib.util
 import io
+import json
 from pathlib import Path
 import tempfile
 import types
@@ -36,6 +37,35 @@ class FakeClient:
 
 
 class ArchiveTests(unittest.TestCase):
+    def test_cache_budget(self):
+        with tempfile.TemporaryDirectory() as td, patch.object(archive,'ROOT',Path(td)):
+            root=Path(td); rows=[dict(local_path='data/pilot/batch/missing',bytes=20)]
+            with patch.object(archive,'CACHE_LIMIT',10):
+                with self.assertRaises(ValueError):archive.check_cache_budget(root,rows)
+            with patch.object(archive.shutil,'disk_usage',return_value=types.SimpleNamespace(free=10)):
+                with self.assertRaises(ValueError):archive.check_cache_budget(root,rows)
+
+    def test_pinned_restore_and_overwrite_refusal(self):
+        with tempfile.TemporaryDirectory() as td, patch.object(archive,'ROOT',Path(td)):
+            root=Path(td); (root/'data/archive').mkdir(parents=True)
+            payload=b'restored evidence'; sha=hashlib.sha256(payload).hexdigest()
+            relative='data/pilot/batch/extractions/sample.json'
+            manifest=root/'data/archive/manifest.json'
+            manifest.write_text(json.dumps(dict(bucket=archive.BUCKET,files=[dict(
+                local_path=relative,bytes=len(payload),sha256=sha,object_key='evidence/sha256/'+sha)])))
+            receipt=root/'data/archive/verification-2026-11-14.json'
+            receipt.write_text(json.dumps(dict(manifest_sha256=archive.sha_file(manifest))))
+            destination=root/'tmp/restored'
+            with patch.object(archive,'make_client',return_value=FakeClient(payload)):
+                archive.restore(manifest,destination,'batch')
+                self.assertEqual((destination/relative).read_bytes(),payload)
+                (destination/relative).write_bytes(b'local edit')
+                with self.assertRaises(ValueError):archive.restore(manifest,destination)
+                self.assertEqual((destination/relative).read_bytes(),b'local edit')
+                with self.assertRaises(ValueError):archive.restore(manifest,root.parent/'outside')
+                manifest.write_bytes(b'changed manifest')
+                with self.assertRaises(ValueError):archive.restore(manifest,destination)
+
     def test_restore_and_corruption(self):
         with tempfile.TemporaryDirectory() as td, patch.object(archive, 'ROOT', Path(td)), patch.dict(
             'sys.modules', {'botocore.exceptions': types.SimpleNamespace(ClientError=ClientError)}):

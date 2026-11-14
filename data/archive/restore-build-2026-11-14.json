@@ -1,0 +1,15 @@
+{
+  "reviewed_on": "2026-11-14",
+  "manifest_sha256": "40fb12fd9facbb66b1a4032aaf5ea948e3dc6054eb7678fac9a423425e418748",
+  "restored_inventory_files": 582,
+  "source_pdfs": 190,
+  "isolated_build_documents": 190,
+  "isolated_build_pages": 2826,
+  "api_comparisons": 131,
+  "public_data_sha256": "746e4445b2481f7490f510e917396fee63d9a85687f2c83110cc0d6293b6c8af",
+  "matches_current_public_artifact": true,
+  "original_inventory_preserved": true,
+  "cache_limit_bytes": 2147483648,
+  "free_disk_reserve_bytes": 1073741824,
+  "scope": "Fresh tracked source checkout; all missing PDF/native/OCR evidence restored from private R2; full site build and API parity. No original cache eviction."
+}

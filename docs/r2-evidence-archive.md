@@ -54,3 +54,41 @@ rechecked afterward. `data/archive/verification-2026-11-14.json` records the
 verified objects and manifest digest. All local originals remain in place.
 This verifies restoration of this snapshot; it is not an independent second
 provider backup or permission to clear build caches.
+
+## Restore/build test and working-cache policy
+
+On November 14, restored all 582 manifest files into an isolated tracked-source
+checkout with no ignored evidence caches. The complete 190-document/2,826-page
+site build passed all 131 Python/static API comparisons. Its public pilot JSON
+was byte-identical to the current artifact, and every original inventory hash
+was checked afterward. See `data/archive/restore-build-2026-11-14.json`.
+The first restore stopped; a repeat verified all files before building. No
+success was recorded until the complete hash validation and build passed.
+
+Restore through the saved-credential wrapper:
+
+```powershell
+& scripts/run-r2-archive.ps1 -PythonPath '<bundled-python.exe>' -Action restore -Batch '2026-11-09-wave-09'
+```
+
+Omit `-Batch` to restore the complete verified snapshot. The destination defaults
+to the project root. `-Destination` may name an isolated directory under project
+`tmp` for recovery testing. Retrieval is explicit, not an automatic network call
+inside the viewer/build. The command skips matching local files, rejects changed
+ones, downloads missing evidence, validates size/SHA-256 before atomic install,
+and checks the restored selection again. It rejects changed inventory manifests,
+wrong object keys, escaped destinations and unrecognized batch selectors.
+
+The restore tool enforces a 2 GiB evidence-cache ceiling per destination and
+leaves at least 1 GiB free disk space. This is a restore guard, not an OS quota
+or a limit yet enforced by the separate DOJ acquisition tool. Future ingestion
+must respect this policy or add its own guard. No automatic eviction is enabled.
+Before eviction, require a matching verified archive snapshot, retain tracked
+metadata, and evict only reproducible PDF/native/OCR cache files. Restore all
+required batches before a full build; currently every registered batch is needed.
+Do not delete credential configuration, unarchived/new evidence, or alter source
+hashes to work around a mismatch. The isolated recovery workspace is disposable
+and removed after its result is recorded; original caches remain intact.
+
+Validation: 101 offline tests, including restoration, overwrite refusal, manifest
+pinning, source changes, path restrictions and cache/free-space budgets.

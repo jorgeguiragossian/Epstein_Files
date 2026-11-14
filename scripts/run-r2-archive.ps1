@@ -1,4 +1,6 @@
-param([Parameter(Mandatory=$true)][string]$PythonPath)
+param([Parameter(Mandatory=$true)][string]$PythonPath,
+      [ValidateSet('upload','restore')][string]$Action='upload',
+      [string]$Destination='', [string]$Batch='')
 $ErrorActionPreference = 'Stop'
 try {
     foreach ($module in @('Microsoft.PowerShell.Utility','Microsoft.PowerShell.Security')) {
@@ -12,7 +14,10 @@ try {
     $env:EPSTEIN_R2_ENDPOINT = $settings.endpoint
     $env:EPSTEIN_R2_ACCESS_KEY_ID = $settings.access_key_id
     $env:EPSTEIN_R2_SECRET_ACCESS_KEY = $settings.secret_access_key
-    & $PythonPath (Join-Path $PSScriptRoot 'r2-archive.py') upload
+    $archiveArguments = @((Join-Path $PSScriptRoot 'r2-archive.py'), $Action)
+    if ($Destination) { $archiveArguments += @('--destination', $Destination) }
+    if ($Batch) { $archiveArguments += @('--batch', $Batch) }
+    & $PythonPath @archiveArguments
     if ($LASTEXITCODE -ne 0) { throw 'Archive verification failed' }
 } catch {
     Write-Output ('Archive wrapper stopped: ' + $_.Exception.GetType().Name + '. No originals removed.')
