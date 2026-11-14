@@ -12,6 +12,12 @@ function Reveal([Security.SecureString]$Value) {
     try { [Runtime.InteropServices.Marshal]::PtrToStringBSTR($pointer) }
     finally { [Runtime.InteropServices.Marshal]::ZeroFreeBSTR($pointer) }
 }
+function Normalize-R2Endpoint([string]$Value) {
+    $clean = $Value.Trim().Trim([char[]]@([char]34, [char]39)).Trim().TrimEnd('/')
+    $pattern = '^(https://[a-f0-9]{32}(\.(eu|us|fedramp))?\.r2\.cloudflarestorage\.com)(/epstein-files-archive)?$'
+    if ($clean -notmatch $pattern) { throw 'Invalid endpoint format' }
+    return $Matches[1].ToLowerInvariant()
+}
 $stage = 'loading saved credentials'
 $diagnostic = Join-Path $projectRoot 'tmp/r2-setup-status.json'
 try {
@@ -21,13 +27,10 @@ try {
         Write-Host 'Saved credentials found. Keys do not need to be entered again.'
         $stage = 'checking endpoint'
         $replacement = (Read-Host 'S3 endpoint URL (Enter keeps saved endpoint)').Trim().TrimEnd('/')
-        if ($replacement) { $settings.endpoint = $replacement }
+        if ($replacement) { $settings.endpoint = Normalize-R2Endpoint $replacement }
     } else {
         $stage = 'checking endpoint'
-        $endpoint = (Read-Host 'S3 endpoint URL (https://ACCOUNT_ID.r2.cloudflarestorage.com)').Trim().TrimEnd('/')
-        if ($endpoint -notmatch '^https://[a-f0-9]{32}(\.(eu|us|fedramp))?\.r2\.cloudflarestorage\.com$') {
-            throw 'Use the S3 account endpoint shown by Cloudflare, without bucket or object path.'
-        }
+        $endpoint = Normalize-R2Endpoint (Read-Host 'Paste S3 API URL from bucket Settings > General')
         $stage = 'reading keys'
         $access = Read-Host 'Access Key ID (hidden)' -AsSecureString
         $secret = Read-Host 'Secret Access Key (hidden)' -AsSecureString
@@ -35,9 +38,7 @@ try {
         if (-not $settings.access_key_id -or -not $settings.secret_access_key) { throw 'Both keys are required.' }
     }
     $stage = 'checking endpoint'
-    if ($settings.endpoint -notmatch '^https://[a-f0-9]{32}(\.(eu|us|fedramp))?\.r2\.cloudflarestorage\.com$') {
-        throw 'Invalid endpoint format'
-    }
+    $settings.endpoint = Normalize-R2Endpoint $settings.endpoint
     $stage = 'saving encrypted credentials'
     $protected = ConvertTo-SecureString ($settings | ConvertTo-Json -Compress) -AsPlainText -Force
     New-Item -ItemType Directory -Path $credentialFolder -Force | Out-Null
@@ -55,7 +56,8 @@ try {
     Write-Host ('Stopped at: ' + $stage) -ForegroundColor Yellow
     if ($stage -eq 'checking endpoint') {
         Write-Host 'Expected HTTPS account endpoint with a 32-character account ID.'
-        Write-Host 'Use the exact S3 API endpoint for this bucket. No bucket name, path, query, brackets or quotes.'
+        Write-Host 'Both the account endpoint and a URL ending in /epstein-files-archive are accepted.'
+        Write-Host 'Other bucket names, object paths, query strings and unrelated hosts are rejected.'
         Write-Host 'The .eu, .us and .fedramp jurisdiction variants are supported.'
     } elseif ($stage -eq 'loading saved credentials') {
         Write-Host 'The saved file could not be decrypted by this Windows user.'
