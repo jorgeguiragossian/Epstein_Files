@@ -92,3 +92,24 @@ and removed after its result is recorded; original caches remain intact.
 
 Validation: 101 offline tests, including restoration, overwrite refusal, manifest
 pinning, source changes, path restrictions and cache/free-space budgets.
+
+## Local cache release - November 14, 2026
+
+Released 407 exact manifest-listed ignored cache/extraction files (456,190,489
+logical bytes), including 180 older PDFs, after matching archive receipt and
+recovery-build proof and rehashing each source immediately before removal.
+Latest dataset 4 wave 9 remains active locally, with all its manifest hashes
+verified. Tracked metadata, source code, credentials, unverified/changed files,
+Downloads and the live website were untouched. The retained pilot files total
+54,612,409 logical bytes. OneDrive disk allocation and synchronization can differ
+from these logical sizes. Removal inside OneDrive may synchronize there; the
+separately verified private R2 archive remains the recovery source.
+
+`data/archive/cache-release-2026-11-14.json` records every released relative path.
+Before a complete viewer rebuild or local PDF access to older batches, run the
+saved-credential wrapper with `-Action restore` (omit `-Batch` for all evidence).
+That temporarily rehydrates the complete roughly 511 MB snapshot; the 2 GiB
+restore cap still applies. Restore one batch with `-Batch` for narrower source
+work. Do not run a fresh inventory expecting evicted evidence to be local; the
+immutable manifest and archive receipt remain authoritative for released files.
+No automatic build-time retrieval or automatic eviction is enabled.

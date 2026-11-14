@@ -37,3 +37,16 @@ tests pass. Original project caches retained; temporary full recovery workspace
 removed after recording results. No automatic build network fetch or eviction.
 Next: choose which verified local cache batches to release, or continue dataset 5
 with the cache budget respected. Restore required batches explicitly before builds.
+
+
+Cache release completed - November 14, 2026: 407 verified ignored files /
+456,190,489 logical bytes released, including 180 older source PDFs. Only latest
+wave 9 dataset 4 evidence remains active; all of that batch's manifest hashes
+verified. Pilot data now 54,612,409 logical bytes. Tracked release record:
+data/archive/cache-release-2026-11-14.json. Complete R2 inventory/receipt and
+isolated recovery-build proof are retained. No changed/unverified files, tracked
+metadata or Downloads removed; website unchanged. IMPORTANT: full builds and
+older local PDFs now require explicit R2 restore first. Run run-r2-archive.ps1
+with -Action restore and the bundled Python path (omit Batch for all evidence).
+Dataset 5 acquisition remains next after storage work, with the cache policy
+respected; current local source absence is intentional, not data corruption.
