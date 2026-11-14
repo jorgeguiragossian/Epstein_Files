@@ -37,6 +37,19 @@ class FakeClient:
 
 
 class ArchiveTests(unittest.TestCase):
+    def test_incremental_batch_coverage(self):
+        with tempfile.TemporaryDirectory() as td, patch.object(archive,'ROOT',Path(td)):
+            root=Path(td);file=root/'data/pilot/new/cache/a.pdf';file.parent.mkdir(parents=True);file.write_bytes(b'a')
+            other=root/'data/pilot/old/cache/b.pdf';other.parent.mkdir(parents=True);other.write_bytes(b'b')
+            sha=archive.sha_file(file)
+            manifest=dict(bucket=archive.BUCKET,batch='new',file_count=1,total_bytes=1,
+                files=[dict(local_path='data/pilot/new/cache/a.pdf',bytes=1,sha256=sha,object_key='evidence/sha256/'+sha)])
+            archive.validate(manifest)
+            (file.parent/'extra').write_bytes(b'extra')
+            with self.assertRaises(ValueError):archive.validate(manifest)
+            manifest['batch']='../old'
+            with self.assertRaises(ValueError):archive.validate(manifest)
+
     def test_cache_budget(self):
         with tempfile.TemporaryDirectory() as td, patch.object(archive,'ROOT',Path(td)):
             root=Path(td); rows=[dict(local_path='data/pilot/batch/missing',bytes=20)]

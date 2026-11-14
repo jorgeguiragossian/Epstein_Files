@@ -1,6 +1,6 @@
 param([Parameter(Mandatory=$true)][string]$PythonPath,
       [ValidateSet('upload','restore')][string]$Action='upload',
-      [string]$Destination='', [string]$Batch='')
+      [string]$Destination='', [string]$Batch='', [string]$Manifest='', [string]$Verification='')
 $ErrorActionPreference = 'Stop'
 try {
     foreach ($module in @('Microsoft.PowerShell.Utility','Microsoft.PowerShell.Security')) {
@@ -17,6 +17,8 @@ try {
     $archiveArguments = @((Join-Path $PSScriptRoot 'r2-archive.py'), $Action)
     if ($Destination) { $archiveArguments += @('--destination', $Destination) }
     if ($Batch) { $archiveArguments += @('--batch', $Batch) }
+    if ($Manifest) { $archiveArguments += @('--manifest', $Manifest) }
+    if ($Verification) { $archiveArguments += @('--verification', $Verification) }
     & $PythonPath @archiveArguments
     if ($LASTEXITCODE -ne 0) { throw 'Archive verification failed' }
 } catch {

@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "bucket": "epstein-files-archive",
+  "batch": "2026-11-14-wave-10",
+  "source_revision": "3e71ea5e51fb294553aeb70099f175e7cbe82e0d",
+  "scope": "Every current file in the selected batch (or all data/pilot if no batch), including PDFs, native/OCR evidence and metadata. Excludes Downloads, temporary QA sheets, software dependencies, credentials and Git internals.",
+  "files": [
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/cache/ds05-EFTA00008410.pdf",
+      "bytes": 583036,
+      "sha256": "ec3370e332f923cb2b36e82eb8c443ddb5a95587c0152e59c59e31b2e686ce5a",
+      "object_key": "evidence/sha256/ec3370e332f923cb2b36e82eb8c443ddb5a95587c0152e59c59e31b2e686ce5a"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/cache/ds05-EFTA00008423.pdf",
+      "bytes": 476493,
+      "sha256": "4f68c00bb510a1fc7a1ea76875effa6fe403b5c6f7394952ccd2117ed49d29ca",
+      "object_key": "evidence/sha256/4f68c00bb510a1fc7a1ea76875effa6fe403b5c6f7394952ccd2117ed49d29ca"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/cache/ds05-EFTA00008437.pdf",
+      "bytes": 607789,
+      "sha256": "2c59bc7bc8408123d54075a6968937862f11abbeddb02b3265ecdd5f50229cb4",
+      "object_key": "evidence/sha256/2c59bc7bc8408123d54075a6968937862f11abbeddb02b3265ecdd5f50229cb4"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/cache/ds05-EFTA00008451.pdf",
+      "bytes": 587780,
+      "sha256": "011ffe58960126c56f8231a35b062916ef79900add52322e1845caae76305b48",
+      "object_key": "evidence/sha256/011ffe58960126c56f8231a35b062916ef79900add52322e1845caae76305b48"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/cache/ds05-EFTA00008464.pdf",
+      "bytes": 428738,
+      "sha256": "8de8309b4dc2fd277f509a7d0fdca4dbea8ff8ec3093c8b37d1561ffbee03531",
+      "object_key": "evidence/sha256/8de8309b4dc2fd277f509a7d0fdca4dbea8ff8ec3093c8b37d1561ffbee03531"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/cache/ds05-EFTA00008477.pdf",
+      "bytes": 561603,
+      "sha256": "6e12f5eca71b9123f5c6f9dfdb134a173cfc66be96d2d3a54e1bb8855a5d3064",
+      "object_key": "evidence/sha256/6e12f5eca71b9123f5c6f9dfdb134a173cfc66be96d2d3a54e1bb8855a5d3064"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/cache/ds05-EFTA00008489.pdf",
+      "bytes": 445289,
+      "sha256": "9028f3f7d2fc74adac77d0f4f77c6caa5039d7565ff32e34e37951cdf2f15ea8",
+      "object_key": "evidence/sha256/9028f3f7d2fc74adac77d0f4f77c6caa5039d7565ff32e34e37951cdf2f15ea8"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/cache/ds05-EFTA00008501.pdf",
+      "bytes": 563207,
+      "sha256": "52afa6cde783304ccb25f09c16bfa2d70e9ee210f1cdfd6ae27e1146a9c7c1c1",
+      "object_key": "evidence/sha256/52afa6cde783304ccb25f09c16bfa2d70e9ee210f1cdfd6ae27e1146a9c7c1c1"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/cache/ds05-EFTA00008515.pdf",
+      "bytes": 546815,
+      "sha256": "59cf38dd3f5454560ca58aff3230b3adf793cf18d99a06647bf4f49630c9386a",
+      "object_key": "evidence/sha256/59cf38dd3f5454560ca58aff3230b3adf793cf18d99a06647bf4f49630c9386a"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/cache/ds05-EFTA00008528.pdf",
+      "bytes": 523961,
+      "sha256": "2b88005008b197794daf11d68646d2af1273fb41e6262748adf67d30bc5a8036",
+      "object_key": "evidence/sha256/2b88005008b197794daf11d68646d2af1273fb41e6262748adf67d30bc5a8036"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/downloads.json",
+      "bytes": 14900,
+      "sha256": "84a218d2acee71b3c922ec8716e66e2a72c9a8163fd9f894d5cb62dac23afb8d",
+      "object_key": "evidence/sha256/84a218d2acee71b3c922ec8716e66e2a72c9a8163fd9f894d5cb62dac23afb8d"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ds05-EFTA00008410.json",
+      "bytes": 3005,
+      "sha256": "c7ed793f2e0e02cc61bbf63bce05be5c2c2129ac2f4975411c7dd409fae9cd33",
+      "object_key": "evidence/sha256/c7ed793f2e0e02cc61bbf63bce05be5c2c2129ac2f4975411c7dd409fae9cd33"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ds05-EFTA00008423.json",
+      "bytes": 1430,
+      "sha256": "c76fe4f5b0a67ddc90ecac5a637c3014baafaed6578b93ca063619f5ce69a36c",
+      "object_key": "evidence/sha256/c76fe4f5b0a67ddc90ecac5a637c3014baafaed6578b93ca063619f5ce69a36c"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ds05-EFTA00008437.json",
+      "bytes": 1510,
+      "sha256": "53ef678b0e342bda37f3cc762e4a828700303bf807e4925d40b8ddaf4994e7f5",
+      "object_key": "evidence/sha256/53ef678b0e342bda37f3cc762e4a828700303bf807e4925d40b8ddaf4994e7f5"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ds05-EFTA00008451.json",
+      "bytes": 1396,
+      "sha256": "3ab97c9c355477320c75a6fd619bac3730465273af61441740f9b1cd21c1c41b",
+      "object_key": "evidence/sha256/3ab97c9c355477320c75a6fd619bac3730465273af61441740f9b1cd21c1c41b"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ds05-EFTA00008464.json",
+      "bytes": 1491,
+      "sha256": "a071372846458774c4d59d221755a7761e955ee6ca2305bd4ef3adbda61ecc17",
+      "object_key": "evidence/sha256/a071372846458774c4d59d221755a7761e955ee6ca2305bd4ef3adbda61ecc17"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ds05-EFTA00008477.json",
+      "bytes": 1515,
+      "sha256": "dc9c3ebdb0e250452651fa2cbca12cbaa403f36b622643132432e1d791b5aee8",
+      "object_key": "evidence/sha256/dc9c3ebdb0e250452651fa2cbca12cbaa403f36b622643132432e1d791b5aee8"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ds05-EFTA00008489.json",
+      "bytes": 4590,
+      "sha256": "1e5dc198528972391b2cfe03d06621a157544b4c1a4e4997b7cdcdafd0266a6e",
+      "object_key": "evidence/sha256/1e5dc198528972391b2cfe03d06621a157544b4c1a4e4997b7cdcdafd0266a6e"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ds05-EFTA00008501.json",
+      "bytes": 4247,
+      "sha256": "bbc5f77b8a3d3448a81bce7878ddd4f1ca16f38164ac299ad5bcc47bd0f60e9f",
+      "object_key": "evidence/sha256/bbc5f77b8a3d3448a81bce7878ddd4f1ca16f38164ac299ad5bcc47bd0f60e9f"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ds05-EFTA00008515.json",
+      "bytes": 1435,
+      "sha256": "782ad601a83c4afbb9df080ee572f5c6bde19bb97825ed590e603d6944b2300a",
+      "object_key": "evidence/sha256/782ad601a83c4afbb9df080ee572f5c6bde19bb97825ed590e603d6944b2300a"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/extractions/ds05-EFTA00008528.json",
+      "bytes": 1396,
+      "sha256": "7ad9111fd252e4173cc3937e03a7e7288c6db497b9e59ead10c0ad0c701d58fa",
+      "object_key": "evidence/sha256/7ad9111fd252e4173cc3937e03a7e7288c6db497b9e59ead10c0ad0c701d58fa"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/metrics.csv",
+      "bytes": 2307,
+      "sha256": "edce799c942342f78248f9bf8e3d9335667f89632affd77930a3aa757e72c250",
+      "object_key": "evidence/sha256/edce799c942342f78248f9bf8e3d9335667f89632affd77930a3aa757e72c250"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/metrics.json",
+      "bytes": 12316,
+      "sha256": "28940cae59c8267fe58a3687e27ab73e540a5990210f1a89caac1219327294fe",
+      "object_key": "evidence/sha256/28940cae59c8267fe58a3687e27ab73e540a5990210f1a89caac1219327294fe"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/quality-review.json",
+      "bytes": 8635,
+      "sha256": "fe4cbf25000b49888a24848d35a4a73556a123f4900ce77824ed497ac7c8fc50",
+      "object_key": "evidence/sha256/fe4cbf25000b49888a24848d35a4a73556a123f4900ce77824ed497ac7c8fc50"
+    },
+    {
+      "local_path": "data/pilot/2026-11-14-wave-10/selection.json",
+      "bytes": 12061,
+      "sha256": "a7aefd0815726a2bdcd4962bb643375bfb346083c262924c5601e3b6f24bae4f",
+      "object_key": "evidence/sha256/a7aefd0815726a2bdcd4962bb643375bfb346083c262924c5601e3b6f24bae4f"
+    }
+  ],
+  "file_count": 25,
+  "total_bytes": 5396945
+}

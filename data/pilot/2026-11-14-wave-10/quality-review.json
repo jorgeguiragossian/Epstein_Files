@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "reviewed_on": "2026-11-14",
-  "method": "Codex comparison of three rendered single-page PDFs and fourth page visible in Chrome with native UTF-8 extraction; six saved selections not yet acquired. Not authentication or completed batch.",
+  "method": "Codex comparison of all ten source PDF pages rendered with PDFium against native UTF-8 extraction. Complete ten-page acquisition triage, not independent authentication or transcription.",
   "selected_files": 10,
-  "downloaded_files": 4,
-  "bytes": 2255098,
-  "pages": 4,
-  "low_text_pages": 3,
-  "visually_inspected_pages": 4,
+  "downloaded_files": 10,
+  "bytes": 5324711,
+  "pages": 10,
+  "low_text_pages": 7,
+  "visually_inspected_pages": 10,
   "native_header_candidates": 0,
   "parsed_email_occurrences": 0,
   "parser_version": "email-pilot-1",
@@ -87,6 +87,116 @@
         "1": "c849efd5c43b8f6d3f45e36e357ea1bcaf16b5b55bac74e4335a578a88c7504c"
       },
       "notes": "Photograph of an envelope with handwritten case/item markings; visually inspected in Chrome. Markings are not established primary dates. Contents not verified; native recognition requires scoped source comparison.",
+      "source_assisted_ocr_review_needed": true,
+      "date_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00008464",
+      "source_sha256": "8de8309b4dc2fd277f509a7d0fdca4dbea8ff8ec3093c8b37d1561ffbee03531",
+      "pages": 1,
+      "low_text_pdf_pages": [
+        1
+      ],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "3050a946da253024a94cbdcf4eb595653c08afd6557f32957aac3b16edbd0b25"
+      },
+      "notes": "Photograph of packaged drive hardware with glare. Very sparse/errorful native text. No verified contents, ownership or creation/capture date inferred.",
+      "source_assisted_ocr_review_needed": true,
+      "date_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00008477",
+      "source_sha256": "6e12f5eca71b9123f5c6f9dfdb134a173cfc66be96d2d3a54e1bb8855a5d3064",
+      "pages": 1,
+      "low_text_pdf_pages": [
+        1
+      ],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "344161b169b4bf5288733bdd6a688de22ee9033999626837678cb5a6e07820e4"
+      },
+      "notes": "Photograph of envelope with handwritten case/item markings mostly missing from native text. Identifiers are not established dates; enclosed contents not verified.",
+      "source_assisted_ocr_review_needed": true,
+      "date_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00008489",
+      "source_sha256": "9028f3f7d2fc74adac77d0f4f77c6caa5039d7565ff32e34e37951cdf2f15ea8",
+      "pages": 1,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "51cd216a15b98e9e8cce94165105124d6ed305a8c4e9b9a40d8655516a6b6251"
+      },
+      "notes": "Photograph of a chain-of-custody evidence envelope with printed fields, handwriting and redactions. Native text flattens columns and misreads/omits handwritten dates. Intercept, transfer, accepted/released custody and template-revision roles are distinct. No primary date or authenticated chain of custody assigned.",
+      "source_assisted_ocr_review_needed": true,
+      "date_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00008501",
+      "source_sha256": "52afa6cde783304ccb25f09c16bfa2d70e9ee210f1cdfd6ae27e1146a9c7c1c1",
+      "pages": 1,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "39346c25033a36f9f58f222fb00fc9a0c0e92625165ec5bd5d4d816a6de8893e"
+      },
+      "notes": "Photograph of computer/equipment enclosure with labels and handwritten item markings. Native text is noisy despite exceeding low-text threshold. Device labels do not establish data contents, owner or complete event date.",
+      "source_assisted_ocr_review_needed": true,
+      "date_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00008515",
+      "source_sha256": "59cf38dd3f5454560ca58aff3230b3adf793cf18d99a06647bf4f49630c9386a",
+      "pages": 1,
+      "low_text_pdf_pages": [
+        1
+      ],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "53ed42a245fd9212807d4e94a55b0ce8215b8e00d5ca3e77a2f4d211a07756b2"
+      },
+      "notes": "Photograph of multiple drive packages, media, labels and cables. Native text retains only a product phrase. Source labels do not verify device contents or relationships; no counts of unique underlying media/records assigned.",
+      "source_assisted_ocr_review_needed": true,
+      "date_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00008528",
+      "source_sha256": "2b88005008b197794daf11d68646d2af1273fb41e6262748adf67d30bc5a8036",
+      "pages": 1,
+      "low_text_pdf_pages": [
+        1
+      ],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "57a502f515ed4650a542fa8250a63e1e465a50a7a293a86674cafe0217023209"
+      },
+      "notes": "Photograph of wrapped equipment with an item/case tag. Native text has only page stamp; handwritten markings omitted. No identity, device contents or primary date inferred.",
       "source_assisted_ocr_review_needed": true,
       "date_review_status": "unreviewed"
     }

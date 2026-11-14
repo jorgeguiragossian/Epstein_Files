@@ -3,3 +3,9 @@ dataset,file_id,url,status,bytes,sha256,page_count,pages_processed,characters,lo
 5,EFTA00008423,https://www.justice.gov/epstein/files/DataSet%205/EFTA00008423.pdf,extracted,476493,4f68c00bb510a1fc7a1ea76875effa6fe403b5c6f7394952ccd2117ed49d29ca,1,1,25,1,0,1,0,0,True,unclassified,1,1
 5,EFTA00008437,https://www.justice.gov/epstein/files/DataSet%205/EFTA00008437.pdf,extracted,607789,2c59bc7bc8408123d54075a6968937862f11abbeddb02b3265ecdd5f50229cb4,1,1,80,1,0,1,0,0,True,unclassified,0,0
 5,EFTA00008451,https://www.justice.gov/epstein/files/DataSet%205/EFTA00008451.pdf,extracted,587780,011ffe58960126c56f8231a35b062916ef79900add52322e1845caae76305b48,1,1,12,1,0,1,0,0,True,unclassified,0,0
+5,EFTA00008464,https://www.justice.gov/epstein/files/DataSet%205/EFTA00008464.pdf,extracted,428738,8de8309b4dc2fd277f509a7d0fdca4dbea8ff8ec3093c8b37d1561ffbee03531,1,1,49,1,0,1,0,0,True,unclassified,3,3
+5,EFTA00008477,https://www.justice.gov/epstein/files/DataSet%205/EFTA00008477.pdf,extracted,561603,6e12f5eca71b9123f5c6f9dfdb134a173cfc66be96d2d3a54e1bb8855a5d3064,1,1,90,1,0,1,0,0,True,unclassified,0,0
+5,EFTA00008489,https://www.justice.gov/epstein/files/DataSet%205/EFTA00008489.pdf,extracted,445289,9028f3f7d2fc74adac77d0f4f77c6caa5039d7565ff32e34e37951cdf2f15ea8,1,1,1422,0,0,1,0,0,False,unclassified,124,85
+5,EFTA00008501,https://www.justice.gov/epstein/files/DataSet%205/EFTA00008501.pdf,extracted,563207,52afa6cde783304ccb25f09c16bfa2d70e9ee210f1cdfd6ae27e1146a9c7c1c1,1,1,1480,0,0,1,0,0,False,unclassified,5,5
+5,EFTA00008515,https://www.justice.gov/epstein/files/DataSet%205/EFTA00008515.pdf,extracted,546815,59cf38dd3f5454560ca58aff3230b3adf793cf18d99a06647bf4f49630c9386a,1,1,25,1,0,1,0,0,True,unclassified,1,1
+5,EFTA00008528,https://www.justice.gov/epstein/files/DataSet%205/EFTA00008528.pdf,extracted,523961,2b88005008b197794daf11d68646d2af1273fb41e6262748adf67d30bc5a8036,1,1,12,1,0,1,0,0,True,unclassified,0,0

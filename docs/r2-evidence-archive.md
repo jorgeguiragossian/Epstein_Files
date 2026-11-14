@@ -113,3 +113,16 @@ restore cap still applies. Restore one batch with `-Batch` for narrower source
 work. Do not run a fresh inventory expecting evicted evidence to be local; the
 immutable manifest and archive receipt remain authoritative for released files.
 No automatic build-time retrieval or automatic eviction is enabled.
+
+## Incremental dataset 5 backup
+
+Wave 10 is backed up separately: 25 files / 5,396,945 bytes, including ten PDFs.
+Use `inventory --batch 2026-11-14-wave-10 --manifest <new-path>` for a bounded
+new immutable batch inventory. Validation checks exact selected-batch coverage
+without requiring older evicted caches. The original full snapshot is unchanged.
+`run-r2-archive.ps1` accepts `-Manifest` and `-Verification` paths for restoring
+this new snapshot. Receipt paths must stay under data/archive; manifest bytes
+must match the selected verified receipt. Explicitly select these new records:
+`data/archive/manifest-2026-11-14-wave-10.json` and
+`data/archive/verification-2026-11-14-wave-10.json`. No old hashes were renewed.
+Future changes/new OCR evidence require a fresh snapshot. 102 tests pass.

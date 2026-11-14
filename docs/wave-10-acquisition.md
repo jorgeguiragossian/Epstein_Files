@@ -1,20 +1,38 @@
-# Wave 10 dataset 5 acquisition - partial
+# Wave 10 dataset 5 acquisition - complete
 
-November 14, 2026: four of ten unchanged saved selections acquired: EFTA00008410,
-EFTA00008423, EFTA00008437 and EFTA00008451. First three saved by normal Chrome
-navigation/native Save As; user completed the fourth save after modal automation
-failed. PDF signatures/SHA-256 and four single-page native extractions checked.
-First three pages inspected as renders; fourth visually inspected in Chrome.
-Box, packaged drive and envelope labels are poorly recognized. No dates, media
-contents or identity associations promoted. Scoped OCR assessment remains needed.
+November 14, 2026: all ten unchanged saved dataset 5 selections acquired,
+5,324,711 PDF bytes / ten single-page PDFs. Initial three saved by normal Chrome
+navigation/native Save As; user completed the fourth and remaining six after
+native-dialog automation failed. Acquisition method is recorded per file; no
+response headers fabricated. Selection method text preserves the initial partial
+planning provenance; downloads/metrics now cover all ten.
 
-Six remain: EFTA00008464, EFTA00008477, EFTA00008489, EFTA00008501,
-EFTA00008515 and EFTA00008528. EFTA00008464 is open with Save As pending.
-Repeated native-dialog control failures persist after the user completed the
-fourth save. User handoff: save remaining six official URLs through Chrome.
-Selection retains all ten; downloads/metrics cover four. Batch not integrated.
+All ten PDF signatures, SHA-256/extraction source bindings and all ten source
+pages were checked against native UTF-8 text. Seven pages fall below threshold;
+the other three also contain major recognition/layout noise. Files show a box,
+envelopes, packaged drives/media, equipment labels and one custody form. All ten
+need scoped local OCR/source assessment. No detected email occurrences. No
+primary dates, identity associations, verified media contents or authenticated
+custody chain assigned. Form intercept/transfer/accepted/released custody dates
+and template revision need separate roles. Case/item numbers are not dates.
 
-New wave 10 evidence is local/ignored and NOT included in the prior R2 snapshot;
-retain until a new archive snapshot is verified. Live remains 190 PDFs / 2,826
-pages, 72 dated / 58 uncertain / 60 unreviewed. Expansion now 94 acquired/extracted,
-90 integrated and six not acquired. Do not regenerate saved selection.
+The complete 25-file batch snapshot (5,396,945 bytes) is backed up in private R2.
+Every object restored and SHA-256 checked; remote manifest matched exactly and
+local batch revalidated. Manifest/receipt: data/archive/manifest-2026-11-14-wave-10.json
+and verification-2026-11-14-wave-10.json. PDFs/native files stay local ignored
+caches; review contact sheets are temporary render aids outside the archive.
+No local evidence was evicted. New future OCR evidence requires another snapshot.
+
+Incremental batch inventory/upload now avoids rehydrating previously evicted
+older batches. Restore this batch with explicit -Manifest and -Verification
+paths to the new records; old full-snapshot defaults remain unchanged.
+Validation: 102 offline tests, exact selection/source/extraction coverage,
+source-page checks and live R2 upload/restore verification.
+
+This batch is not yet integrated. Live remains 190 PDFs / 2,826 pages,
+72 dated / 58 uncertain / 60 unreviewed. Expansion now has all 100 saved PDFs
+acquired/extracted, 90 integrated and ten awaiting review/integration. Total
+acquired pilot PDFs: 200. Do not regenerate saved selection.
+
+Next: scoped local OCR assessment of all ten pages, then integration with explicit
+quality/source notices and separate primary-date adjudication.

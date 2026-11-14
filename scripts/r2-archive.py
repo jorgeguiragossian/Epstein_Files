@@ -49,9 +49,13 @@ def source_path(relative):
     return result
 
 
-def inventory():
+def inventory(batch=None):
+    if batch and not re.fullmatch(r'[0-9a-z-]+',batch):
+        raise ValueError('Invalid batch selector')
     files = []
-    for path in sorted((ROOT / 'data/pilot').rglob('*')):
+    base = ROOT / 'data/pilot'
+    if batch: base = base / batch
+    for path in sorted(base.rglob('*')):
         if path.is_symlink():
             raise ValueError('Symlinks require explicit review')
         if not path.is_file():
@@ -66,9 +70,9 @@ def inventory():
     total = sum(f['bytes'] for f in files)
     if not files or total > 2 * 1024**3:
         raise ValueError('Inventory exceeds bounded migration scope')
-    return dict(schema_version=1, bucket=BUCKET, source_revision=subprocess.check_output(
+    return dict(schema_version=1, bucket=BUCKET, batch=batch, source_revision=subprocess.check_output(
         ['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip(),
-        scope='Every current file under data/pilot, including PDFs, native/OCR evidence and metadata. '
+        scope='Every current file in the selected batch (or all data/pilot if no batch), including PDFs, native/OCR evidence and metadata. '
               'Excludes Downloads, temporary QA sheets, software dependencies, credentials and Git internals.',
         files=files, file_count=len(files), total_bytes=total)
 
@@ -86,7 +90,13 @@ def validate(manifest):
             raise ValueError('Invalid content-addressed object key')
         if path.stat().st_size != row['bytes'] or sha_file(path) != row['sha256']:
             raise ValueError('Local evidence changed since inventory')
-    actual = {p.relative_to(ROOT).as_posix() for p in (ROOT / 'data/pilot').rglob('*') if p.is_file()}
+    batch=manifest.get('batch')
+    if batch and not re.fullmatch(r'[0-9a-z-]+',batch):raise ValueError('Invalid batch selector')
+    base=ROOT/'data/pilot'
+    if batch:base=base/batch
+    if batch and any(PurePosixPath(r['local_path']).parts[2]!=batch for r in manifest['files']):
+        raise ValueError('Manifest includes files outside selected batch')
+    actual = {p.relative_to(ROOT).as_posix() for p in base.rglob('*') if p.is_file()}
     if paths != actual or sum(f['bytes'] for f in manifest['files']) != manifest['total_bytes']:
         raise ValueError('Archive coverage changed')
 
@@ -139,9 +149,12 @@ def make_client():
                       retries={'max_attempts': 3}, s3={'addressing_style': 'path'}))
 
 
-def restore(manifest_path, destination, batch=None):
+def restore(manifest_path, destination, batch=None, verification=None):
     """Restore pinned evidence; refuse to replace an existing changed file."""
-    trusted = json.loads((ROOT/'data/archive/verification-2026-11-14.json').read_text(encoding='utf-8'))
+    verification=verification or ROOT/'data/archive/verification-2026-11-14.json'
+    if not verification.resolve().is_relative_to((ROOT/'data/archive').resolve()):
+        raise ValueError('Verification receipt outside archive records')
+    trusted = json.loads(verification.read_text(encoding='utf-8'))
     if sha_file(manifest_path) != trusted['manifest_sha256']:
         raise ValueError('Manifest differs from verified archive receipt')
     manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
@@ -245,17 +258,18 @@ if __name__ == '__main__':
     parser.add_argument('--manifest', type=Path, default=DEFAULT)
     parser.add_argument('--destination',type=Path,default=ROOT)
     parser.add_argument('--batch')
+    parser.add_argument('--verification',type=Path)
     args = parser.parse_args()
     try:
         if args.command == 'inventory':
-            value = inventory()
+            value = inventory(args.batch)
             args.manifest.parent.mkdir(parents=True, exist_ok=True)
             if args.manifest.exists():
                 raise ValueError('Refusing to overwrite existing manifest')
             args.manifest.write_text(json.dumps(value, indent=2) + '\n', encoding='utf-8')
             print(json.dumps({k: v for k, v in value.items() if k != 'files'}, indent=2))
         elif args.command == 'restore':
-            restore(args.manifest,args.destination,args.batch)
+            restore(args.manifest,args.destination,args.batch,args.verification)
         else:
             transfer(json.loads(args.manifest.read_text(encoding='utf-8')), args.manifest)
     except Exception as error:

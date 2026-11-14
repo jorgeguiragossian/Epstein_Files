@@ -56,3 +56,17 @@ Dataset 5 wave 10 partial - November 14, 2026: three acquired/extracted one-page
 
 
 Wave 10 handoff update: user saved EFTA00008451; now four acquired/extracted one-page PDFs. EFTA00008464 Save As is pending and native browser input cannot target the modal. Remaining six need normal-browser saves: 8464/8477/8489/8501/8515/8528 (full IDs in docs/wave-10-acquisition.md). Expansion94 acquired/extracted,90integrated,sixpending. New wave10 files not yet backed up to R2; retain.
+
+
+Wave 10 acquisition/backup COMPLETE - November 14, 2026: all ten saved dataset 5
+PDFs acquired/extracted (10 pages / 5,324,711 PDF bytes); all ten pages visually
+compared. Seven low-text pages; all ten need scoped OCR assessment. Zero detected
+email occurrences. No dates/identities/media contents promoted. Complete new batch
+snapshot 25 files / 5,396,945 bytes upload/restored/verified in private R2; tracked
+manifest and verification receipt use suffix 2026-11-14-wave-10. Incremental
+batch inventory and explicit receipt restore added; 102 offline tests pass.
+All 100 expansion selections acquired/extracted,90integrated,10awaitingintegration;
+total acquired200; live remains190/2826 and72dated/58uncertain/60unreviewed.
+Next: scoped OCR assessment of ten wave10 pages, back up new evidence, then
+integrate quality notices and separately adjudicate dates. Original older caches
+remain intentionally evicted; full builds still require explicit restore.
