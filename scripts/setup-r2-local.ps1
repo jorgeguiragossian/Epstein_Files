@@ -28,13 +28,13 @@ try {
     $dummySettings = [ordered]@{endpoint='https://example.invalid';access_key_id='dummy';secret_access_key='dummy'}
     $dummyProtected = ConvertTo-SecureString ($dummySettings | ConvertTo-Json -Compress) -AsPlainText -Force
     $dummyEncrypted = $dummyProtected | ConvertFrom-SecureString
-    $dummyRestored = (Reveal ($dummyEncrypted | ConvertTo-SecureString)) | ConvertFrom-Json
+    $dummyRestored = (Reveal (($dummyEncrypted + "`r`n").Trim() | ConvertTo-SecureString)) | ConvertFrom-Json
     if ($dummyRestored.secret_access_key -ne 'dummy') { throw 'Dummy round-trip mismatch' }
     Write-Host 'Credential encryption preflight passed.'
     if ($SelfTest) { return }
     $stage = 'loading saved credentials'
     if (Test-Path -LiteralPath $credentialFile) {
-        $protected = Get-Content -LiteralPath $credentialFile -Raw | ConvertTo-SecureString
+        $protected = (Get-Content -LiteralPath $credentialFile -Raw).Trim() | ConvertTo-SecureString
         $settings = (Reveal $protected) | ConvertFrom-Json
         Write-Host 'Saved credentials found. Keys do not need to be entered again.'
         $stage = 'checking endpoint'

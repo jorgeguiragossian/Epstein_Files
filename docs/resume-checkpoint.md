@@ -22,3 +22,6 @@ Next recommended milestone: acquire ten saved dataset 5 selections through norma
 
 
 Storage checkpoint - November 14, 2026: pause dataset 5 ingestion for private R2 migration. User created epstein-files-archive and bucket-scoped credentials. Local hidden-prompt DPAPI helper and four-sample upload/restore test prepared; offline transfer/corruption checks and PowerShell syntax pass. Live test requires user credential entry and a successful ignored tmp/r2-smoke receipt. No full backup verified, no project evidence removed. See docs/r2-archive-setup.md.
+
+
+R2 migration verified - November 14, 2026: 582 files / 510,802,898 bytes, 580 unique evidence objects, all 190 PDFs and retained native/OCR evidence backed up to private epstein-files-archive. Every object restored to temporary disk and SHA-256 checked; remote manifest matched byte-for-byte; local snapshot coverage/hashes rechecked. Tracked manifest and receipt in data/archive; credential configuration remains encrypted outside OneDrive/Git. All originals retained. 99 offline tests pass. Next: implement manifest-bound cache retrieval, test a complete batch restore/build, then choose a bounded working-cache policy before any local evidence removal. Dataset 5 remains pending.
