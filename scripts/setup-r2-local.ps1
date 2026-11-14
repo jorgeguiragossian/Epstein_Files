@@ -39,10 +39,13 @@ try {
     }
     $stage = 'checking endpoint'
     $settings.endpoint = Normalize-R2Endpoint $settings.endpoint
-    $stage = 'saving encrypted credentials'
+    $stage = 'encrypting credentials with Windows DPAPI'
     $protected = ConvertTo-SecureString ($settings | ConvertTo-Json -Compress) -AsPlainText -Force
+    $encryptedText = $protected | ConvertFrom-SecureString
+    $stage = 'creating local credential directory'
     New-Item -ItemType Directory -Path $credentialFolder -Force | Out-Null
-    $protected | ConvertFrom-SecureString | Set-Content -LiteralPath $credentialFile -Encoding ASCII
+    $stage = 'writing encrypted credential file'
+    $encryptedText | Set-Content -LiteralPath $credentialFile -Encoding ASCII
     $stage = 'starting Python upload and restore test'
     if (-not (Test-Path -LiteralPath $PythonPath -PathType Leaf)) { throw 'Python missing' }
     $env:EPSTEIN_R2_ENDPOINT = $settings.endpoint
@@ -54,6 +57,9 @@ try {
 } catch {
     Write-Host 'Setup or test stopped. No original files were removed.' -ForegroundColor Yellow
     Write-Host ('Stopped at: ' + $stage) -ForegroundColor Yellow
+    $safeType = $_.Exception.GetType().Name
+    $safeHResult = $_.Exception.HResult
+    Write-Host ('Diagnostic: ' + $safeType + ' / ' + $safeHResult)
     if ($stage -eq 'checking endpoint') {
         Write-Host 'Expected HTTPS account endpoint with a 32-character account ID.'
         Write-Host 'Both the account endpoint and a URL ending in /epstein-files-archive are accepted.'
@@ -64,12 +70,13 @@ try {
     } elseif ($stage -eq 'starting Python upload and restore test') {
         Write-Host 'See the safe diagnostic above and tmp/r2-smoke-status.json for the failed operation.'
     }
-    @{status='stopped'; stage=$stage} | ConvertTo-Json | Set-Content -LiteralPath $diagnostic -Encoding UTF8
+    @{status='stopped'; stage=$stage; error_type=$safeType; hresult=$safeHResult} | ConvertTo-Json | Set-Content -LiteralPath $diagnostic -Encoding UTF8
     Write-Host 'Share only the stopped-at message or safe error code, never the keys.'
 } finally {
     Remove-Item Env:EPSTEIN_R2_ENDPOINT,Env:EPSTEIN_R2_ACCESS_KEY_ID,Env:EPSTEIN_R2_SECRET_ACCESS_KEY -ErrorAction SilentlyContinue
     $settings = $null
     $protected = $null
+    $encryptedText = $null
     $access = $null
     $secret = $null
 }
