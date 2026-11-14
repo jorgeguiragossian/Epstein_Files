@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-14",
+  "reviewer": "Codex",
+  "file_id": "EFTA00008489",
+  "dataset": 5,
+  "source_sha256": "9028f3f7d2fc74adac77d0f4f77c6caa5039d7565ff32e34e37951cdf2f15ea8",
+  "native_extraction_sha256": "1e5dc198528972391b2cfe03d06621a157544b4c1a4e4997b7cdcdafd0266a6e",
+  "method": "Local Windows.Media.Ocr en-US on PDFium scale-3 source renders; additional box-label/custody crops where noted. Codex comparison with source and native UTF-8 evidence, not independent authentication. No external service.",
+  "ocr_attempts": [
+    {
+      "pdf_page": 1,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/EFTA00008489-page-1.png",
+      "image_sha256": "9fccc9468bc492251456966d8eda5daeb4b947d7fcd0fcbd26423221859cb0c5",
+      "result_path": "extractions/ocr-review/EFTA00008489-page-1.json",
+      "result_sha256": "fcbe529e9f726ea0926fb280154c3f0faeca10a39445f2b6db687c87862ad899",
+      "recognized_lines": 55,
+      "recognized_characters": 892,
+      "crop_pixels_on_rotated_full_render": null,
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    },
+    {
+      "pdf_page": 1,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/EFTA00008489-date-fields.png",
+      "image_sha256": "a0ac610e5cdb970dc6832d57371dd9cc43a731841120be3961946f99aef37af0",
+      "result_path": "extractions/ocr-review/EFTA00008489-date-fields.json",
+      "result_sha256": "d4afca2a2152ddba68df02bf44babe3847aa75dda2b9948636d95f300ff3eafe",
+      "recognized_lines": 15,
+      "recognized_characters": 237,
+      "crop_pixels_on_rotated_full_render": [
+        142,
+        1006,
+        1695,
+        1748
+      ],
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    },
+    {
+      "pdf_page": 1,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/EFTA00008489-custody-fields.png",
+      "image_sha256": "c3f0dc34aa83d9c570af1c0a200a4ca18d67d9e572e70ee3d67ffe33a6a82138",
+      "result_path": "extractions/ocr-review/EFTA00008489-custody-fields.json",
+      "result_sha256": "1014cf20131d97984df9b600143e6dad0d9bcb8b0b97c6f3077897df3fee76f0",
+      "recognized_lines": 25,
+      "recognized_characters": 219,
+      "crop_pixels_on_rotated_full_render": [
+        142,
+        1642,
+        1695,
+        2516
+      ],
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    }
+  ],
+  "page_findings": [
+    {
+      "pdf_page": 1,
+      "native_text_sha256": "51cd216a15b98e9e8cce94165105124d6ed305a8c4e9b9a40d8655516a6b6251",
+      "finding": "Full-page and two focused OCR passes recover portions of printed form labels but miss/misread handwritten intercept, transfer and custody dates and lose column/row associations. Redactions preserved. Template revision, intercept, permanent-storage transfer and accepted/released custody dates are distinct. No complete corrected form, authenticated custody chain or primary date accepted in this OCR assessment."
+    }
+  ],
+  "eligibility": {
+    "primary_date_assignment": false,
+    "verified_transactions": false,
+    "identity_inference": false,
+    "native_text_replacement": false,
+    "verified_media_contents": false
+  },
+  "transcription_layer": {
+    "local_path": "extractions/ocr-review/EFTA00008489-editorial-readings.json",
+    "sha256": "9c150b92f18885f6dda148addabfcc8297827c174ed04cc16b814f6d7e4a68ea"
+  },
+  "reviewed_fields": [],
+  "ocr_improvement_accepted": false,
+  "independent_verification": false,
+  "remaining_uncertainties": [
+    "Printed and handwritten labels incomplete/errorful",
+    "No corrected native text or primary date promotion",
+    "Source labels are not verification of media contents or custody history"
+  ],
+  "publication": "Raw OCR, images and editorial layers remain ignored local evidence. Metadata records scope, findings and hashes only."
+}

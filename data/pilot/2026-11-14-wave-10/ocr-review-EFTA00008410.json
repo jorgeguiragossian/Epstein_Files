@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-14",
+  "reviewer": "Codex",
+  "file_id": "EFTA00008410",
+  "dataset": 5,
+  "source_sha256": "ec3370e332f923cb2b36e82eb8c443ddb5a95587c0152e59c59e31b2e686ce5a",
+  "native_extraction_sha256": "c7ed793f2e0e02cc61bbf63bce05be5c2c2129ac2f4975411c7dd409fae9cd33",
+  "method": "Local Windows.Media.Ocr en-US on PDFium scale-3 source renders; additional box-label/custody crops where noted. Codex comparison with source and native UTF-8 evidence, not independent authentication. No external service.",
+  "ocr_attempts": [
+    {
+      "pdf_page": 1,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/EFTA00008410-page-1.png",
+      "image_sha256": "fa63022f3a3188869e718d668057257110ee81a0caf38876c1b26e63020c8469",
+      "result_path": "extractions/ocr-review/EFTA00008410-page-1.json",
+      "result_sha256": "5dc9c4345a13a3528ce09efc3095b42742be286711810b5eb82d249cbe8cf04f",
+      "recognized_lines": 1,
+      "recognized_characters": 12,
+      "crop_pixels_on_rotated_full_render": null,
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    },
+    {
+      "pdf_page": 1,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/EFTA00008410-box-label.png",
+      "image_sha256": "9331626561c657875c7a43a8ecfb5988deeba093cac12a3d44902d7099c7d3a6",
+      "result_path": "extractions/ocr-review/EFTA00008410-box-label.json",
+      "result_sha256": "1a7b0808fad27ba4ae2c05b3ef83a2bd4cf7fda7bb360f5579ed5729feeb99c3",
+      "recognized_lines": 0,
+      "recognized_characters": 0,
+      "crop_pixels_on_rotated_full_render": [
+        388,
+        827,
+        2203,
+        1747
+      ],
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    }
+  ],
+  "page_findings": [
+    {
+      "pdf_page": 1,
+      "native_text_sha256": "ce90a705df7d81d2aad28494c9dff2fdc566511943353701f8526bd07ac58312",
+      "finding": "Full-page OCR returns only the EFTA stamp; focused box-label crop returns no text. Clear handwritten packaging markings remain outside recognized text. No label-based date, identity or verified box contents accepted."
+    }
+  ],
+  "eligibility": {
+    "primary_date_assignment": false,
+    "verified_transactions": false,
+    "identity_inference": false,
+    "native_text_replacement": false,
+    "verified_media_contents": false
+  },
+  "transcription_layer": {
+    "local_path": "extractions/ocr-review/EFTA00008410-editorial-readings.json",
+    "sha256": "3135cfb39d5ac193df4fda82a992785c181721cdad59f5e8d77836dab7e04a44"
+  },
+  "reviewed_fields": [],
+  "ocr_improvement_accepted": false,
+  "independent_verification": false,
+  "remaining_uncertainties": [
+    "Printed and handwritten labels incomplete/errorful",
+    "No corrected native text or primary date promotion",
+    "Source labels are not verification of media contents or custody history"
+  ],
+  "publication": "Raw OCR, images and editorial layers remain ignored local evidence. Metadata records scope, findings and hashes only."
+}

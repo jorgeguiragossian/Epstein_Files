@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-14",
+  "reviewer": "Codex",
+  "file_id": "EFTA00008423",
+  "dataset": 5,
+  "source_sha256": "4f68c00bb510a1fc7a1ea76875effa6fe403b5c6f7394952ccd2117ed49d29ca",
+  "native_extraction_sha256": "c76fe4f5b0a67ddc90ecac5a637c3014baafaed6578b93ca063619f5ce69a36c",
+  "method": "Local Windows.Media.Ocr en-US on PDFium scale-3 source renders; additional box-label/custody crops where noted. Codex comparison with source and native UTF-8 evidence, not independent authentication. No external service.",
+  "ocr_attempts": [
+    {
+      "pdf_page": 1,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/EFTA00008423-page-1.png",
+      "image_sha256": "0c09eed05e6e97b6c965078fbd6c81070e2fe661fd4975d1373a625ba1ad226b",
+      "result_path": "extractions/ocr-review/EFTA00008423-page-1.json",
+      "result_sha256": "8c026cc4c01f7acd6071344d15a4fca4e459a6c7133bd8f2b44829977cf53488",
+      "recognized_lines": 6,
+      "recognized_characters": 97,
+      "crop_pixels_on_rotated_full_render": null,
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    }
+  ],
+  "page_findings": [
+    {
+      "pdf_page": 1,
+      "native_text_sha256": "2bfd8bbeb10392dcc87f866243a5afe2488652c619c142075a55b9554843d1f3",
+      "finding": "OCR recognizes a few printed drive/package fragments but garbles model/label text and misses handwritten evidence/clone markings. Label dates and identifiers do not authenticate drive contents or creation/capture dates."
+    }
+  ],
+  "eligibility": {
+    "primary_date_assignment": false,
+    "verified_transactions": false,
+    "identity_inference": false,
+    "native_text_replacement": false,
+    "verified_media_contents": false
+  },
+  "transcription_layer": {
+    "local_path": "extractions/ocr-review/EFTA00008423-editorial-readings.json",
+    "sha256": "22f17768204ec6456fef3298289534872720b39e56d0a0df6fdef0ea1fb3131c"
+  },
+  "reviewed_fields": [],
+  "ocr_improvement_accepted": false,
+  "independent_verification": false,
+  "remaining_uncertainties": [
+    "Printed and handwritten labels incomplete/errorful",
+    "No corrected native text or primary date promotion",
+    "Source labels are not verification of media contents or custody history"
+  ],
+  "publication": "Raw OCR, images and editorial layers remain ignored local evidence. Metadata records scope, findings and hashes only."
+}

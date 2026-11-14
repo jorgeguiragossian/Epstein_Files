@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-14",
+  "reviewer": "Codex",
+  "file_id": "EFTA00008437",
+  "dataset": 5,
+  "source_sha256": "2c59bc7bc8408123d54075a6968937862f11abbeddb02b3265ecdd5f50229cb4",
+  "native_extraction_sha256": "53ef678b0e342bda37f3cc762e4a828700303bf807e4925d40b8ddaf4994e7f5",
+  "method": "Local Windows.Media.Ocr en-US on PDFium scale-3 source renders; additional box-label/custody crops where noted. Codex comparison with source and native UTF-8 evidence, not independent authentication. No external service.",
+  "ocr_attempts": [
+    {
+      "pdf_page": 1,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/EFTA00008437-page-1.png",
+      "image_sha256": "3d2656ae6dc6b5b019343f6925217fadd11e8ff88ded46d1b9b03994837bd649",
+      "result_path": "extractions/ocr-review/EFTA00008437-page-1.json",
+      "result_sha256": "eb4ef04134fc6c862ed7a734300affe17894feb2f4f75e0642849dfc263d8c08",
+      "recognized_lines": 2,
+      "recognized_characters": 7,
+      "crop_pixels_on_rotated_full_render": null,
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    }
+  ],
+  "page_findings": [
+    {
+      "pdf_page": 1,
+      "native_text_sha256": "35766c25c8fab5e9375a922b87b8f07e0807725afe7cb077c0f542ab399eaaaf",
+      "finding": "OCR yields only two broken identifier fragments from the envelope. Handwritten case/item markings are not reliably recovered; no primary date or enclosed contents accepted."
+    }
+  ],
+  "eligibility": {
+    "primary_date_assignment": false,
+    "verified_transactions": false,
+    "identity_inference": false,
+    "native_text_replacement": false,
+    "verified_media_contents": false
+  },
+  "transcription_layer": {
+    "local_path": "extractions/ocr-review/EFTA00008437-editorial-readings.json",
+    "sha256": "671dfa84976958844b5118e6c4178df67f590a5fdf5887e73f8215b8bbd1f0be"
+  },
+  "reviewed_fields": [],
+  "ocr_improvement_accepted": false,
+  "independent_verification": false,
+  "remaining_uncertainties": [
+    "Printed and handwritten labels incomplete/errorful",
+    "No corrected native text or primary date promotion",
+    "Source labels are not verification of media contents or custody history"
+  ],
+  "publication": "Raw OCR, images and editorial layers remain ignored local evidence. Metadata records scope, findings and hashes only."
+}

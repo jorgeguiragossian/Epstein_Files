@@ -70,3 +70,15 @@ total acquired200; live remains190/2826 and72dated/58uncertain/60unreviewed.
 Next: scoped OCR assessment of ten wave10 pages, back up new evidence, then
 integrate quality notices and separately adjudicate dates. Original older caches
 remain intentionally evicted; full builds still require explicit restore.
+
+
+Wave 10 OCR COMPLETE - November 14, 2026: ten pages,13 local Windows OCR attempts
+(ten full renders plus box-label/two custody crops). No accepted native replacement
+or provisional literal; handwriting/labels/date fields remain unreliable. Ten
+named reviews plus index pass all source/native/image/result evidence validation.
+Full new OCR snapshot73files/48,764,038bytes backed up and restore-verified in R2;
+manifest/verification suffix2026-11-14-wave-10-ocr. Prior snapshots unchanged.
+Docs/wave-10-ocr.md records findings. Raw images/OCR/layers ignored. Next integrate
+wave10 with source-quality notices, restore older batches for build, verify prior
+payload preservation and private-layer exclusion, deploy; date review separately.
+Live remains190/2826,72dated/58uncertain/60unreviewed. No source text changed.

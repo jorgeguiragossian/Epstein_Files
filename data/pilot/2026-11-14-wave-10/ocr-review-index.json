@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-14",
+  "scope": "All ten source pages, thirteen local OCR attempts, zero provisional literals; no accepted native replacement.",
+  "reviews": [
+    {
+      "file_id": "EFTA00008410",
+      "review_file": "ocr-review-EFTA00008410.json",
+      "review_sha256": "32e5ab526fcaa3aa299eef96ad310ae8b7ca277f3f9da4490c5626234fcf0729"
+    },
+    {
+      "file_id": "EFTA00008423",
+      "review_file": "ocr-review-EFTA00008423.json",
+      "review_sha256": "12740f827f004618eac1850ada6c3ab6d5ffa55c68f9d66e10da8e524165bf12"
+    },
+    {
+      "file_id": "EFTA00008437",
+      "review_file": "ocr-review-EFTA00008437.json",
+      "review_sha256": "ab43fc7e1748838ec759e91dd54fed8010ffa03b919a5ff509e7930e78dfb909"
+    },
+    {
+      "file_id": "EFTA00008451",
+      "review_file": "ocr-review-EFTA00008451.json",
+      "review_sha256": "7841e5a039429bb133f17d75cc017f486adc1dc74010528692c088323095a42f"
+    },
+    {
+      "file_id": "EFTA00008464",
+      "review_file": "ocr-review-EFTA00008464.json",
+      "review_sha256": "70dca77aead73a91352003f3d41b96ed6802a1dafbf048813086894ea86e723e"
+    },
+    {
+      "file_id": "EFTA00008477",
+      "review_file": "ocr-review-EFTA00008477.json",
+      "review_sha256": "dbaceaf2808f0b25934cb82c7c07e4024e3ac1703502a72ed6ef652a6de5d3be"
+    },
+    {
+      "file_id": "EFTA00008489",
+      "review_file": "ocr-review-EFTA00008489.json",
+      "review_sha256": "6a416ee55c45c0b392ac45e50b2d493aa70cc2a3a177b01127ddea301762e95d"
+    },
+    {
+      "file_id": "EFTA00008501",
+      "review_file": "ocr-review-EFTA00008501.json",
+      "review_sha256": "98ab89efe9477871c99f3ab07d329ac1f2435d79585e7ba18e4d9f030cecc366"
+    },
+    {
+      "file_id": "EFTA00008515",
+      "review_file": "ocr-review-EFTA00008515.json",
+      "review_sha256": "8af75d6a23a72331f002366fd704f672027df863be56fa80c2ae1dcd03624c20"
+    },
+    {
+      "file_id": "EFTA00008528",
+      "review_file": "ocr-review-EFTA00008528.json",
+      "review_sha256": "da341c8d7af76312ad511ec42fc610ff28ac80b2ae61dca78d72c96dce615021"
+    }
+  ]
+}

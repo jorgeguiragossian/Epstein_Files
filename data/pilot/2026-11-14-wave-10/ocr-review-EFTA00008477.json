@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-14",
+  "reviewer": "Codex",
+  "file_id": "EFTA00008477",
+  "dataset": 5,
+  "source_sha256": "6e12f5eca71b9123f5c6f9dfdb134a173cfc66be96d2d3a54e1bb8855a5d3064",
+  "native_extraction_sha256": "dc9c3ebdb0e250452651fa2cbca12cbaa403f36b622643132432e1d791b5aee8",
+  "method": "Local Windows.Media.Ocr en-US on PDFium scale-3 source renders; additional box-label/custody crops where noted. Codex comparison with source and native UTF-8 evidence, not independent authentication. No external service.",
+  "ocr_attempts": [
+    {
+      "pdf_page": 1,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/EFTA00008477-page-1.png",
+      "image_sha256": "860af5045c270a92264a7184f94fa9c09b8159100d52ede37b0bd0477b9fff3e",
+      "result_path": "extractions/ocr-review/EFTA00008477-page-1.json",
+      "result_sha256": "8600f35931db104c9443ca07835efa65517a31d3d384a74bbb5b5bbbd91dc4f6",
+      "recognized_lines": 1,
+      "recognized_characters": 10,
+      "crop_pixels_on_rotated_full_render": null,
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    }
+  ],
+  "page_findings": [
+    {
+      "pdf_page": 1,
+      "native_text_sha256": "344161b169b4bf5288733bdd6a688de22ee9033999626837678cb5a6e07820e4",
+      "finding": "OCR yields an incomplete/errorful case-number fragment. No validated complete identifier, primary date or enclosed contents accepted."
+    }
+  ],
+  "eligibility": {
+    "primary_date_assignment": false,
+    "verified_transactions": false,
+    "identity_inference": false,
+    "native_text_replacement": false,
+    "verified_media_contents": false
+  },
+  "transcription_layer": {
+    "local_path": "extractions/ocr-review/EFTA00008477-editorial-readings.json",
+    "sha256": "cf65959012ce05006e672772354eecaa38624d590d71cf9c71d743b092830c70"
+  },
+  "reviewed_fields": [],
+  "ocr_improvement_accepted": false,
+  "independent_verification": false,
+  "remaining_uncertainties": [
+    "Printed and handwritten labels incomplete/errorful",
+    "No corrected native text or primary date promotion",
+    "Source labels are not verification of media contents or custody history"
+  ],
+  "publication": "Raw OCR, images and editorial layers remain ignored local evidence. Metadata records scope, findings and hashes only."
+}
