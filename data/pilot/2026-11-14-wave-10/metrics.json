@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-14T20:17:55.256678+00:00",
+  "updated_at_utc": "2026-11-14T20:22:02.140604+00:00",
   "method": "pypdf native text only; low-text threshold <80 substantive alphanumeric characters/page, excluding EFTA stamps. Dates and email blocks are unverified candidates, never established document dates or unique messages.",
   "files": [
     {
@@ -109,6 +109,42 @@
         }
       ],
       "extraction_path": "extractions/ds05-EFTA00008437.json"
+    },
+    {
+      "dataset": 5,
+      "file_id": "EFTA00008451",
+      "url": "https://www.justice.gov/epstein/files/DataSet%205/EFTA00008451.pdf",
+      "sha256": "011ffe58960126c56f8231a35b062916ef79900add52322e1845caae76305b48",
+      "bytes": 587780,
+      "status": "extracted",
+      "pypdf_version": "6.21.4",
+      "page_count": 1,
+      "pages_processed": 1,
+      "characters": 12,
+      "low_text_pages": 1,
+      "zero_text_pages": 0,
+      "pages_with_image_xobjects": 1,
+      "date_candidate_count": 0,
+      "date_candidates": [],
+      "email_header_candidate_count": 0,
+      "candidate_document_type": "unclassified",
+      "document_date": null,
+      "document_date_status": "requires_context_review",
+      "ocr_performed": false,
+      "ocr_review_needed": true,
+      "unique_words": 0,
+      "word_tokens": 0,
+      "page_metrics": [
+        {
+          "page": 1,
+          "characters": 12,
+          "alphanumeric_characters": 12,
+          "substantive_alphanumeric_characters": 0,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        }
+      ],
+      "extraction_path": "extractions/ds05-EFTA00008451.json"
     }
   ]
 }

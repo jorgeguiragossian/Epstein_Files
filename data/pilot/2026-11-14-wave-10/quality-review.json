@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "reviewed_on": "2026-11-14",
-  "method": "Codex source comparison of all three pages in three acquired PDFs; remaining seven saved selections not yet acquired. Not independent authentication or completed ten-file batch.",
+  "method": "Codex comparison of three rendered single-page PDFs and fourth page visible in Chrome with native UTF-8 extraction; six saved selections not yet acquired. Not authentication or completed batch.",
   "selected_files": 10,
-  "downloaded_files": 3,
-  "bytes": 1667318,
-  "pages": 3,
-  "low_text_pages": 2,
-  "visually_inspected_pages": 3,
+  "downloaded_files": 4,
+  "bytes": 2255098,
+  "pages": 4,
+  "low_text_pages": 3,
+  "visually_inspected_pages": 4,
   "native_header_candidates": 0,
   "parsed_email_occurrences": 0,
   "parser_version": "email-pilot-1",
@@ -68,6 +68,25 @@
         "1": "35766c25c8fab5e9375a922b87b8f07e0807725afe7cb077c0f542ab399eaaaf"
       },
       "notes": "Photograph of an envelope with handwritten case/item markings, largely absent from native extraction. Identifiers are not primary dates; enclosed contents are not verified.",
+      "source_assisted_ocr_review_needed": true,
+      "date_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00008451",
+      "source_sha256": "011ffe58960126c56f8231a35b062916ef79900add52322e1845caae76305b48",
+      "pages": 1,
+      "low_text_pdf_pages": [
+        1
+      ],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "c849efd5c43b8f6d3f45e36e357ea1bcaf16b5b55bac74e4335a578a88c7504c"
+      },
+      "notes": "Photograph of an envelope with handwritten case/item markings; visually inspected in Chrome. Markings are not established primary dates. Contents not verified; native recognition requires scoped source comparison.",
       "source_assisted_ocr_review_needed": true,
       "date_review_status": "unreviewed"
     }

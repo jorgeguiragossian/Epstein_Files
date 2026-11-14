@@ -53,3 +53,6 @@ respected; current local source absence is intentional, not data corruption.
 
 
 Dataset 5 wave 10 partial - November 14, 2026: three acquired/extracted one-page PDFs (EFTA00008410/8423/8437), all three visually inspected; zero email occurrences, all need scoped OCR assessment. Seven remain; EFTA00008451 Save As currently pending in Chrome because native modal controls fail. Preserve unchanged ten-file selection. Docs/wave-10-acquisition.md records scope. New wave 10 local evidence is NOT in prior R2 archive; do not evict it. Live remains 190/2826. Expansion 93 acquired/extracted, 90 integrated, seven unprocessed. Next complete pending Save As and remaining downloads.
+
+
+Wave 10 handoff update: user saved EFTA00008451; now four acquired/extracted one-page PDFs. EFTA00008464 Save As is pending and native browser input cannot target the modal. Remaining six need normal-browser saves: 8464/8477/8489/8501/8515/8528 (full IDs in docs/wave-10-acquisition.md). Expansion94 acquired/extracted,90integrated,sixpending. New wave10 files not yet backed up to R2; retain.

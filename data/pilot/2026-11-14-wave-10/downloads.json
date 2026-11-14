@@ -92,6 +92,36 @@
       "acquired_at_utc": "2026-11-14T20:17:53.232455+00:00",
       "acquisition_method": "Chrome normal navigation to official listing-observed PDF URL and native Save As; PDF signature/SHA-256 checked. Response headers not captured.",
       "listing_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-5-files?page=0"
+    },
+    {
+      "dataset": 5,
+      "file_id": "EFTA00008451",
+      "filename": "EFTA00008451.pdf",
+      "url": "https://www.justice.gov/epstein/files/DataSet%205/EFTA00008451.pdf",
+      "first_seen": "2026-11-01T23:00:29.4494384Z",
+      "last_seen": "2026-11-07T18:41:56.510243+00:00",
+      "listing_pages_observed": "0",
+      "download_status": "not_downloaded",
+      "bytes": 587780,
+      "source_sha256": "",
+      "pdf_pages": "",
+      "extraction_status": "not_processed",
+      "first_observed_listing_page": 0,
+      "observed_pool_size": 111,
+      "zero_based_pool_position": 36,
+      "listing_evidence": {
+        "dataset": "5",
+        "url": "https://www.justice.gov/epstein/files/DataSet%205/EFTA00008451.pdf",
+        "listing_page": "0",
+        "html_sha256": "454c723863affffbfa3f63314a4a151d35b0d7c04205b74405ab902f9a2871e6",
+        "observed_at": "2026-11-07T18:41:56.510243+00:00"
+      },
+      "status": "downloaded",
+      "sha256": "011ffe58960126c56f8231a35b062916ef79900add52322e1845caae76305b48",
+      "local_path": "cache/ds05-EFTA00008451.pdf",
+      "acquired_at_utc": "2026-11-14T20:22:01.457727+00:00",
+      "acquisition_method": "Official DOJ PDF opened through Chrome; user completed native Save As after browser-control failure. Local PDF signature/SHA-256 checked. Response headers not captured.",
+      "listing_url": "https://www.justice.gov/epstein/doj-disclosures/data-set-5-files?page=0"
     }
   ]
 }
