@@ -15,7 +15,13 @@ def get(path):
 
 def main():
     overview = get('/api/overview')
-    assert overview['documents'] == 190 and overview['pages'] == 2826
+    assert overview['documents'] == 200 and overview['pages'] == 2836
+    wave10=get('/api/documents/EFTA00008489')
+    assert wave10['date_review']['status']=='unreviewed'
+    assert wave10['source_quality_review']['ocr_assessment']['inspected_pdf_pages']==[1]
+    assert wave10['source_quality_review']['ocr_assessment']['native_replacement_accepted'] is False
+    assert 'custody' in ' '.join(wave10['source_quality_review']['ocr_assessment']['notes']).lower()
+    assert get('/api/emails?document=EFTA00008489')['total_groups']==0
     communication=get('/api/documents/EFTA00005707')
     assert communication['date_review']['primary_date']=='2011-03-14' and communication['date_review']['date_type']=='communication'
     assert get('/api/search?q=EFTA00005707&date_from=2011-03-21&date_to=2011-03-21')['total_documents']==0
@@ -29,13 +35,13 @@ def main():
     assert matches['total_documents'] == 11 and matches['total_matching_pages'] == 97
     page = get('/api/documents/EFTA00008529?page=2')
     assert page['page']['number'] == 2 and page['page']['text']
-    assert get('/api/search?quality=review')['total_documents'] == 95
+    assert get('/api/search?quality=review')['total_documents'] == 102
     assert get('/api/search?q=zzznomatchpilot')['total_documents'] == 0
-    assert overview['date_status_counts']=={'dated':72,'uncertain':58,'unreviewed':60}
+    assert overview['date_status_counts']=={'dated':72,'uncertain':58,'unreviewed':70}
     words=get('/api/words')
-    assert (words['eligible_dated_documents'],words['excluded_without_reviewed_date'])==(72,118)
+    assert (words['eligible_dated_documents'],words['excluded_without_reviewed_date'])==(72,128)
     reporting=get('/api/words?date_basis=reporting_period')
-    assert (reporting['eligible_reporting_period_documents'],reporting['excluded_without_reviewed_period'],reporting['selected_documents'])==(6,184,6)
+    assert (reporting['eligible_reporting_period_documents'],reporting['excluded_without_reviewed_period'],reporting['selected_documents'])==(6,194,6)
     selected=get('/api/words?date_basis=reporting_period&date_from=2015-11-30&date_to=2015-11-30')
     assert (selected['selected_documents'],selected['selected_pages'])==(1,2)
     assert all(s['file_id']=='EFTA01280951' for term in selected['terms'] for s in term['sources'])
@@ -55,7 +61,7 @@ def main():
     assert dated['total_documents']==1 and dated['results'][0]['id']=='EFTA00008529'
     assert get('/api/search?date_status=uncertain')['total_documents']==58
     assert get('/api/search?date_status=undated')['total_documents']==0
-    assert get('/api/search?date_status=unreviewed')['total_documents']==60
+    assert get('/api/search?date_status=unreviewed')['total_documents']==70
     assert get('/api/search?date_from=2014-01-01&date_to=2014-01-01&q=EFTA02730265')['total_documents']==0
     assert get('/api/documents/EFTA00039806')['date_review']['evidence_page']==2
     people=get('/api/people')['people']

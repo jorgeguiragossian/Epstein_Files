@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "status": "native_search_with_bounded_quality_and_indexed_ocr_assessments",
+  "selected_files": 10,
+  "downloaded_files": 10,
+  "native_extracted_files": 10,
+  "pdf_pages": 10,
+  "public_search_integration": true,
+  "parsed_email_occurrences": 0,
+  "document_date_status": "unreviewed",
+  "ocr_native_replacement": false,
+  "provisional_readings_public": false,
+  "remaining_review_items": [
+    "Primary dates unadjudicated; identifiers and template versions are not event dates",
+    "No verified media contents or authenticated custody chain",
+    "OCR incomplete/errorful; no accepted replacement"
+  ]
+}

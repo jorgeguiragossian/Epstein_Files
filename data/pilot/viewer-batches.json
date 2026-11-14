@@ -138,6 +138,29 @@
         "ocr-review-EFTA00008320.json": "56ed3b1ef334f4b06b4d0d8822c9c19e7d37c9851b34b36574e86c6733617511",
         "date-reviews.json": "a17a27c164ba8c41453cf02e32afc75d2416224b8b18f6e4a3021691f2332da8"
       }
+    },
+    {
+      "path": "data/pilot/2026-11-14-wave-10",
+      "documents": 10,
+      "review_mode": "native_indexed_ocr_quality_v1",
+      "evidence_sha256": {
+        "selection.json": "a7aefd0815726a2bdcd4962bb643375bfb346083c262924c5601e3b6f24bae4f",
+        "downloads.json": "84a218d2acee71b3c922ec8716e66e2a72c9a8163fd9f894d5cb62dac23afb8d",
+        "metrics.json": "28940cae59c8267fe58a3687e27ab73e540a5990210f1a89caac1219327294fe",
+        "quality-review.json": "fe4cbf25000b49888a24848d35a4a73556a123f4900ce77824ed497ac7c8fc50",
+        "processing-status.json": "249444574ca0428968c875f39baf2458b83e5b8203060d1a9a62e88335776974",
+        "ocr-review-index.json": "960a8f1a389f3a4733cd4c8603f838224e42105f19f93242945cdb0454c87d12",
+        "ocr-review-EFTA00008410.json": "32e5ab526fcaa3aa299eef96ad310ae8b7ca277f3f9da4490c5626234fcf0729",
+        "ocr-review-EFTA00008423.json": "12740f827f004618eac1850ada6c3ab6d5ffa55c68f9d66e10da8e524165bf12",
+        "ocr-review-EFTA00008437.json": "ab43fc7e1748838ec759e91dd54fed8010ffa03b919a5ff509e7930e78dfb909",
+        "ocr-review-EFTA00008451.json": "7841e5a039429bb133f17d75cc017f486adc1dc74010528692c088323095a42f",
+        "ocr-review-EFTA00008464.json": "70dca77aead73a91352003f3d41b96ed6802a1dafbf048813086894ea86e723e",
+        "ocr-review-EFTA00008477.json": "dbaceaf2808f0b25934cb82c7c07e4024e3ac1703502a72ed6ef652a6de5d3be",
+        "ocr-review-EFTA00008489.json": "6a416ee55c45c0b392ac45e50b2d493aa70cc2a3a177b01127ddea301762e95d",
+        "ocr-review-EFTA00008501.json": "98ab89efe9477871c99f3ab07d329ac1f2435d79585e7ba18e4d9f030cecc366",
+        "ocr-review-EFTA00008515.json": "8af75d6a23a72331f002366fd704f672027df863be56fa80c2ae1dcd03624c20",
+        "ocr-review-EFTA00008528.json": "da341c8d7af76312ad511ec42fc610ff28ac80b2ae61dca78d72c96dce615021"
+      }
     }
   ]
 }

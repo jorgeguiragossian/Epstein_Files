@@ -82,3 +82,13 @@ Docs/wave-10-ocr.md records findings. Raw images/OCR/layers ignored. Next integr
 wave10 with source-quality notices, restore older batches for build, verify prior
 payload preservation and private-layer exclusion, deploy; date review separately.
 Live remains190/2826,72dated/58uncertain/60unreviewed. No source text changed.
+
+
+Wave10 integration COMPLETE - November14,2026:200PDFs/2,836pages; all100original
+expansion selections integrated across12datasets (not full DOJ release).
+Ten new native text/quality/OCR records, primary dates unreviewed. Totals72dated/
+58uncertain/70unreviewed;194emailoccurrences/120scopedreviews/53bodybreakdowns.
+102tests,136static/Python comparisons,HTTPsmoke,preservationof190priorpayloads/
+emails/analysis and private-layer exclusion pass. See docs/wave-10-integration.md.
+Older evidence restored fromR2 for full build. Next: adjudicate ten wave10 dates,
+keeping custody/intercept/template/media/identifier roles separate. No rawOCRpublic.
