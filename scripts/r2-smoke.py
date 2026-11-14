@@ -18,6 +18,7 @@ SAMPLES = [
     'data/pilot/2026-11-09-wave-09/extractions/ocr-review/EFTA00007501-page-1-crop.png',
     'data/pilot/2026-11-09-wave-09/extractions/ocr-review/EFTA00007501-page-1-crop.json',
 ]
+STAGE = 'validating local samples'
 
 
 def digest(data):
@@ -42,6 +43,7 @@ def plan():
 
 
 def run():
+    global STAGE
     rows = plan()
     if '--plan' in sys.argv:
         print(json.dumps(dict(bucket=BUCKET, files=rows), indent=2))
@@ -49,6 +51,7 @@ def run():
     endpoint = os.environ.get('EPSTEIN_R2_ENDPOINT', '')
     if not ENDPOINT.fullmatch(endpoint):
         raise ValueError('Use the exact HTTPS R2 S3 account endpoint')
+    STAGE = 'loading AWS SDK'
     import boto3
     from botocore.config import Config
     from botocore.exceptions import ClientError
@@ -63,15 +66,18 @@ def run():
         payload = (ROOT / row['local_path']).read_bytes()
         if digest(payload) != row['sha256']:
             raise ValueError('Sample changed after planning')
+        STAGE = f'uploading sample {i + 1}'
         try:
             client.put_object(Bucket=BUCKET, Key=row['object_key'], Body=payload,
                               IfNoneMatch='*', Metadata={'sha256': row['sha256']})
         except ClientError as error:
             if str(error.response['Error']['Code']) not in ('PreconditionFailed', '412'):
                 raise
+        STAGE = f'restoring sample {i + 1}'
         response = client.get_object(Bucket=BUCKET, Key=row['object_key'])
         with response['Body'] as stream:
             restored = stream.read(row['bytes'] + 1)
+        STAGE = f'verifying sample {i + 1}'
         if len(restored) != row['bytes'] or digest(restored) != row['sha256']:
             raise ValueError('Restored bytes do not match local source')
         if digest((ROOT / row['local_path']).read_bytes()) != row['sha256']:
@@ -92,5 +98,24 @@ if __name__ == '__main__':
         run()
     except Exception as error:
         # Do not log exception text, HTTP headers or credentials.
-        print('Test stopped: ' + type(error).__name__ + '. No originals removed.', file=sys.stderr)
+        code = type(error).__name__
+        response = getattr(error, 'response', {})
+        candidate = response.get('Error', {}).get('Code', '')
+        if re.fullmatch(r'[A-Za-z0-9_]{1,64}', str(candidate)):
+            code = str(candidate)
+        hints = {
+            'NoSuchBucket': 'Check bucket name and whether its S3 endpoint uses the correct jurisdiction.',
+            'AccessDenied': 'Check Object Read & Write permission and scope for the archive bucket.',
+            'SignatureDoesNotMatch': 'Check the access/secret key pair, endpoint and computer clock.',
+            'InvalidAccessKeyId': 'Check that the Access Key ID belongs to this R2 account.',
+            'EndpointConnectionError': 'Check the endpoint spelling and network connection.',
+            'SSLError': 'TLS connection failed; certificate verification remains enabled.',
+        }
+        safe = dict(status='stopped', stage=STAGE, code=code,
+                    hint=hints.get(code, 'Report this stage and code; do not share credentials.'))
+        target = ROOT / 'tmp/r2-smoke-status.json'
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(json.dumps(safe, indent=2) + '\n', encoding='utf-8')
+        print('Test stopped at ' + STAGE + ': ' + code, file=sys.stderr)
+        print(safe['hint'], file=sys.stderr)
         sys.exit(1)
