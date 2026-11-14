@@ -19,3 +19,6 @@ Wave 9 integration complete: native search plus ten scoped quality notices/eight
 Wave 9 date adjudication complete: EFTA00005707 has March 14, 2011 communication date; nine others uncertain with mixed date/component roles explicit. New communication role validated/labeled in reader and timeframes. Native/quality payloads and complete email catalog unchanged; only ten intended date reviews changed. See `docs/wave-09-dates.md`. Validation: 97 offline tests, 131 static/Python comparisons, HTTP smoke, source-bound hashes and browser date display.
 
 Next recommended milestone: acquire ten saved dataset 5 selections through normal browser access, then extraction/source-quality triage. The unchanged expansion plan has 90 acquired/extracted/integrated PDFs and 10 unprocessed. Do not regenerate it.
+
+
+Storage checkpoint - November 14, 2026: pause dataset 5 ingestion for private R2 migration. User created epstein-files-archive and bucket-scoped credentials. Local hidden-prompt DPAPI helper and four-sample upload/restore test prepared; offline transfer/corruption checks and PowerShell syntax pass. Live test requires user credential entry and a successful ignored tmp/r2-smoke receipt. No full backup verified, no project evidence removed. See docs/r2-archive-setup.md.
