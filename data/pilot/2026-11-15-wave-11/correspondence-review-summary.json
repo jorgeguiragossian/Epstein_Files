@@ -1,0 +1,19 @@
+{
+  "candidate_occurrences": 11,
+  "reviewed_candidates": 11,
+  "unreviewed_candidates": 0,
+  "body_partitions": 9,
+  "header_status_counts": {
+    "redacted_or_native_layout_errors": 11
+  },
+  "boundary_status_counts": {
+    "scoped_lossless_partition": 9,
+    "attachment_body_not_fully_reviewed": 2
+  },
+  "unique_messages": null,
+  "contact_rankings_ready": false,
+  "public_site_integration": false,
+  "parser_version": "email-pilot-1",
+  "date_parser_version": "email-date-2",
+  "scope": "All eleven detected headers reviewed with explicit bounded scope; nine short bodies partitioned; long news-clipping body not fully reviewed. Unique message enumeration incomplete."
+}

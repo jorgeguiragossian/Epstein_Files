@@ -1,0 +1,481 @@
+{
+  "schema_version": 1,
+  "parser_version": "email-pilot-1",
+  "date_parser_version": "email-date-2",
+  "method": "Codex source-render comparison; same-assistant editorial review, not independent authentication. Nine complete short detected-body partitions; two clipping candidates have header-only scope.",
+  "scope": "All eleven detected headers reviewed with explicit bounded scope; nine short bodies partitioned; long news-clipping body not fully reviewed. Unique message enumeration incomplete.",
+  "reviews": [
+    {
+      "file_id": "EFTA00072576",
+      "source_sha256": "acb851b6446a3f0fdd43ae48aca35faab0a364f93d740cced462ee7aa51f04b3",
+      "source_page": 1,
+      "source_line": 1,
+      "visible_fingerprint": "149b6326ad0a3654849964eb0d7c61e4c0edfe13478781715b6c2f1a02b836a1",
+      "record_id": "a2b8fe3ec76cf65b8a31",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-15",
+      "scope": "Detected header and short body boundaries",
+      "review_status": "source_assisted_editorial_review",
+      "header_status": "redacted_or_native_layout_errors",
+      "boundary_status": "scoped_lossless_partition",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Redacted identities remain unavailable. Native header values are preserved, dates not adjudicated. Native body starts with a redaction-related recognition fragment; signature remains separate.",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "f2ef89492cc6eb6e55e5b88de5430455319085f07e54fd1182ca94692c065c73"
+        }
+      ],
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "32f9f9640acc15d44dff39bf07cf38c614b50484d955d84c5f5c712ee7d3dd57",
+      "spans": [
+        {
+          "id": "a2b8fe3ec76cf65b8a31-span-1",
+          "page": 1,
+          "line_start": 5,
+          "line_end": 5,
+          "kind": "uncertain_header_continuation",
+          "text_sha256": "08f271887ce94707da822d5263bae19d5519cb3614e0daedc4c7ce5dab7473f1"
+        },
+        {
+          "id": "a2b8fe3ec76cf65b8a31-span-2",
+          "page": 1,
+          "line_start": 6,
+          "line_end": 10,
+          "kind": "authored_text_candidate",
+          "text_sha256": "9c472cfbd1bb6f4d4936af8e97c7e5d82c08b716b6d930299e9f462626775f72"
+        },
+        {
+          "id": "a2b8fe3ec76cf65b8a31-span-3",
+          "page": 1,
+          "line_start": 11,
+          "line_end": 14,
+          "kind": "signature",
+          "text_sha256": "4c15703f89403aeca80e342e4cacc260f94319fcad4dc6f531a9137cf705342d"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00077515",
+      "source_sha256": "f9b5f768f3e7230d62aca7faae53365e9a152ee05ded2178034986ff0d1533aa",
+      "source_page": 1,
+      "source_line": 1,
+      "visible_fingerprint": "06d0dde1b64fda08efee37ecc4a0ac708b4df68120cf1f7566dce4e54a6f34d0",
+      "record_id": "38e99e2cab29225f3d21",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-15",
+      "scope": "Detected header and sampled attachment layout only",
+      "review_status": "source_assisted_editorial_review",
+      "header_status": "redacted_or_native_layout_errors",
+      "boundary_status": "attachment_body_not_fully_reviewed",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Redacted identities remain unavailable. Native header values are preserved, dates not adjudicated. Header and sampled attachment layout only; long clipping body not fully reviewed or partitioned. News reports are attributed attachment/quoted content, not sender assertions. No unique-message claim.",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "5edce5476f9c89ba3e7ee9ca590ad23e2101a8d33fb9d0647df76ef20a68ffe8"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00077515",
+      "source_sha256": "f9b5f768f3e7230d62aca7faae53365e9a152ee05ded2178034986ff0d1533aa",
+      "source_page": 3,
+      "source_line": 2,
+      "visible_fingerprint": "531836ee57c6c868572926000d4aa208b4b4f00472c888ca12861e87f6f45c90",
+      "record_id": "df6aa4051b91476961ee",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-15",
+      "scope": "Detected header and sampled attachment layout only",
+      "review_status": "source_assisted_editorial_review",
+      "header_status": "redacted_or_native_layout_errors",
+      "boundary_status": "attachment_body_not_fully_reviewed",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Redacted identities remain unavailable. Native header values are preserved, dates not adjudicated. Header and sampled attachment layout only; long clipping body not fully reviewed or partitioned. News reports are attributed attachment/quoted content, not sender assertions. No unique-message claim.",
+      "page_evidence": [
+        {
+          "pdf_page": 3,
+          "native_text_sha256": "225f6f84b867d3646c2e49262cede66c2f4f3bb8e420836d9a3e0e1d5f7a5350"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00082124",
+      "source_sha256": "20aca3b83ef88805f0af668f305511e2ca09af5f85f9fbdc0e4169dfa96f3bc7",
+      "source_page": 1,
+      "source_line": 1,
+      "visible_fingerprint": "8c9ce8bcce11f83a3f1fbf28fc2d355117bfef0e5ecd4b59a820c525961aadbf",
+      "record_id": "81d2feda708452e8b310",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-15",
+      "scope": "Detected header and short body boundaries",
+      "review_status": "source_assisted_editorial_review",
+      "header_status": "redacted_or_native_layout_errors",
+      "boundary_status": "scoped_lossless_partition",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Redacted identities remain unavailable. Native header values are preserved, dates not adjudicated. Nested quoted thread with repeated signatures. Header labels/values may be merged or include redaction noise. Page-spanning headers retained. Two inline quoted messages on page 2 are not separately enumerated by the parser; message enumeration remains incomplete.",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "3537bacb7a90da849679339ce0b8b6f76b672f5bfa6b319b3de4fef2995fd17b"
+        }
+      ],
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "9a7a8f8a68664436edcdc7234db179a2083a91e211d6a244ea4955aa553f86ac",
+      "spans": [
+        {
+          "id": "81d2feda708452e8b310-span-1",
+          "page": 1,
+          "line_start": 4,
+          "line_end": 4,
+          "kind": "uncertain_header_continuation",
+          "text_sha256": "00d180707db352afe3e5e9738b503304a1c86af40962bfedd5dab5eb073dcce9"
+        },
+        {
+          "id": "81d2feda708452e8b310-span-2",
+          "page": 1,
+          "line_start": 5,
+          "line_end": 5,
+          "kind": "authored_text_candidate",
+          "text_sha256": "54ddf0f6462616f886017b361c4cfceca7380176e41887eb0a644ee3468db2cd"
+        },
+        {
+          "id": "81d2feda708452e8b310-span-3",
+          "page": 1,
+          "line_start": 6,
+          "line_end": 14,
+          "kind": "signature",
+          "text_sha256": "400450d59c15064b7fa06d3c6c98597936b7764b8f4cc659a5878800fb185d24"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00082124",
+      "source_sha256": "20aca3b83ef88805f0af668f305511e2ca09af5f85f9fbdc0e4169dfa96f3bc7",
+      "source_page": 1,
+      "source_line": 15,
+      "visible_fingerprint": "1e11adecafc3a53ec273823dd4050dc5a5b677076c84c9e179b7a9699906ef8d",
+      "record_id": "9c5b7330f9871f30d53c",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-15",
+      "scope": "Detected header and short body boundaries",
+      "review_status": "source_assisted_editorial_review",
+      "header_status": "redacted_or_native_layout_errors",
+      "boundary_status": "scoped_lossless_partition",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Redacted identities remain unavailable. Native header values are preserved, dates not adjudicated. Nested quoted thread with repeated signatures. Header labels/values may be merged or include redaction noise. Page-spanning headers retained. Two inline quoted messages on page 2 are not separately enumerated by the parser; message enumeration remains incomplete.",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "3537bacb7a90da849679339ce0b8b6f76b672f5bfa6b319b3de4fef2995fd17b"
+        }
+      ],
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "d543ce3f72626e634c8705c942c77bb427fbf434286508488dc5b43efd28c73a",
+      "spans": [
+        {
+          "id": "9c5b7330f9871f30d53c-span-1",
+          "page": 1,
+          "line_start": 20,
+          "line_end": 22,
+          "kind": "authored_text_candidate",
+          "text_sha256": "d543ce3f72626e634c8705c942c77bb427fbf434286508488dc5b43efd28c73a"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00082124",
+      "source_sha256": "20aca3b83ef88805f0af668f305511e2ca09af5f85f9fbdc0e4169dfa96f3bc7",
+      "source_page": 1,
+      "source_line": 23,
+      "visible_fingerprint": "2bdf70d000530c0984a1a1765ca1ca67440b6a7f96d1ade231f9fe944ed6fb1c",
+      "record_id": "aef13be62324565f10fa",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-15",
+      "scope": "Detected header and short body boundaries",
+      "review_status": "source_assisted_editorial_review",
+      "header_status": "redacted_or_native_layout_errors",
+      "boundary_status": "scoped_lossless_partition",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Redacted identities remain unavailable. Native header values are preserved, dates not adjudicated. Nested quoted thread with repeated signatures. Header labels/values may be merged or include redaction noise. Page-spanning headers retained. Two inline quoted messages on page 2 are not separately enumerated by the parser; message enumeration remains incomplete.",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "3537bacb7a90da849679339ce0b8b6f76b672f5bfa6b319b3de4fef2995fd17b"
+        },
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "f0c7d3d2efd05f500553e2fe3efad6fd95458015b9c247ff1be7dde7133119e3"
+        }
+      ],
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "6262eea69de251f62df97256afb61c044aed06c878ea9e65aacf56b751099a99",
+      "spans": [
+        {
+          "id": "aef13be62324565f10fa-span-1",
+          "page": 1,
+          "line_start": 27,
+          "line_end": 27,
+          "kind": "authored_text_candidate",
+          "text_sha256": "a49b7bae1464116d2439984cba74501303e4efb513e89a2af4e200f483213b68"
+        },
+        {
+          "id": "aef13be62324565f10fa-span-2",
+          "page": 2,
+          "line_start": 1,
+          "line_end": 10,
+          "kind": "signature",
+          "text_sha256": "46178e6c701d3188b439aa504a2e029b6cfb9f25c7c419993c450673946dc928"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00082124",
+      "source_sha256": "20aca3b83ef88805f0af668f305511e2ca09af5f85f9fbdc0e4169dfa96f3bc7",
+      "source_page": 2,
+      "source_line": 11,
+      "visible_fingerprint": "b5f0b83cf75de612a7f4175eca44313d4d2fba06de556d9815ab105cd4c8fd6c",
+      "record_id": "e1508b8d1c05104b8fe6",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-15",
+      "scope": "Detected header and short body boundaries",
+      "review_status": "source_assisted_editorial_review",
+      "header_status": "redacted_or_native_layout_errors",
+      "boundary_status": "scoped_lossless_partition",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Redacted identities remain unavailable. Native header values are preserved, dates not adjudicated. Nested quoted thread with repeated signatures. Header labels/values may be merged or include redaction noise. Page-spanning headers retained. Two inline quoted messages on page 2 are not separately enumerated by the parser; message enumeration remains incomplete.",
+      "page_evidence": [
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "f0c7d3d2efd05f500553e2fe3efad6fd95458015b9c247ff1be7dde7133119e3"
+        }
+      ],
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "a265adf797e85ed0b770a4b0cefb369df5e3e30fb62da17fea8974a203749487",
+      "spans": [
+        {
+          "id": "e1508b8d1c05104b8fe6-span-1",
+          "page": 2,
+          "line_start": 16,
+          "line_end": 16,
+          "kind": "authored_text_candidate",
+          "text_sha256": "62d2c31c317a0279525abbaec068a14ce78a0a3e51b35b2a5db5c979e1d69a1f"
+        },
+        {
+          "id": "e1508b8d1c05104b8fe6-span-2",
+          "page": 2,
+          "line_start": 17,
+          "line_end": 17,
+          "kind": "signature",
+          "text_sha256": "5740eef812dd396c9ed1b6c5851fc8f25f16a810ac4c8311d4ec9c5015701bbe"
+        },
+        {
+          "id": "e1508b8d1c05104b8fe6-span-3",
+          "page": 2,
+          "line_start": 18,
+          "line_end": 24,
+          "kind": "inline_quote",
+          "text_sha256": "e763d6c6c7e92ddf902ca2a01741fa6ff31fb6c0ab9af23855e06b8770bb68b5"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00082124",
+      "source_sha256": "20aca3b83ef88805f0af668f305511e2ca09af5f85f9fbdc0e4169dfa96f3bc7",
+      "source_page": 2,
+      "source_line": 25,
+      "visible_fingerprint": "ad21850ec5ec63fbf1764a952e240fd480fb1fc40d0bb52f8673eb2a552db74b",
+      "record_id": "df62398ddde4fac18345",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-15",
+      "scope": "Detected header and short body boundaries",
+      "review_status": "source_assisted_editorial_review",
+      "header_status": "redacted_or_native_layout_errors",
+      "boundary_status": "scoped_lossless_partition",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Redacted identities remain unavailable. Native header values are preserved, dates not adjudicated. Nested quoted thread with repeated signatures. Header labels/values may be merged or include redaction noise. Page-spanning headers retained. Two inline quoted messages on page 2 are not separately enumerated by the parser; message enumeration remains incomplete.",
+      "page_evidence": [
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "f0c7d3d2efd05f500553e2fe3efad6fd95458015b9c247ff1be7dde7133119e3"
+        },
+        {
+          "pdf_page": 3,
+          "native_text_sha256": "7bbfaa04aff3d14cc57ebda2848670b77f832f0d92c0e58babd65eaa8bc4dabe"
+        }
+      ],
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "71b1f365c40e06cfef3b2f4b5708a60e749ca88f52709c6e9c952da6dc90f226",
+      "spans": [
+        {
+          "id": "df62398ddde4fac18345-span-1",
+          "page": 3,
+          "line_start": 3,
+          "line_end": 7,
+          "kind": "authored_text_candidate",
+          "text_sha256": "6d3d93c79fac7150c6f16cc1fe385ab527a740e8c80da607de3c20f91e3a9d55"
+        },
+        {
+          "id": "df62398ddde4fac18345-span-2",
+          "page": 3,
+          "line_start": 8,
+          "line_end": 14,
+          "kind": "signature",
+          "text_sha256": "209a0350393610f610e6b941721ae8debf773f9953cb02a4e555dca77626784a"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00082124",
+      "source_sha256": "20aca3b83ef88805f0af668f305511e2ca09af5f85f9fbdc0e4169dfa96f3bc7",
+      "source_page": 3,
+      "source_line": 15,
+      "visible_fingerprint": "5e06aa16f63b2456a099badb43a98d5ee4aa8b3737911067e1d8da5a11a54c4f",
+      "record_id": "1f09fc80e7d6ca3deb62",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-15",
+      "scope": "Detected header and short body boundaries",
+      "review_status": "source_assisted_editorial_review",
+      "header_status": "redacted_or_native_layout_errors",
+      "boundary_status": "scoped_lossless_partition",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Redacted identities remain unavailable. Native header values are preserved, dates not adjudicated. Nested quoted thread with repeated signatures. Header labels/values may be merged or include redaction noise. Page-spanning headers retained. Two inline quoted messages on page 2 are not separately enumerated by the parser; message enumeration remains incomplete.",
+      "page_evidence": [
+        {
+          "pdf_page": 3,
+          "native_text_sha256": "7bbfaa04aff3d14cc57ebda2848670b77f832f0d92c0e58babd65eaa8bc4dabe"
+        }
+      ],
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "490675066f5167e6457fcefb5a293d2a11fe874bd39f35eebd4799e51602c6a5",
+      "spans": [
+        {
+          "id": "1f09fc80e7d6ca3deb62-span-1",
+          "page": 3,
+          "line_start": 21,
+          "line_end": 21,
+          "kind": "authored_text_candidate",
+          "text_sha256": "490675066f5167e6457fcefb5a293d2a11fe874bd39f35eebd4799e51602c6a5"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00082124",
+      "source_sha256": "20aca3b83ef88805f0af668f305511e2ca09af5f85f9fbdc0e4169dfa96f3bc7",
+      "source_page": 3,
+      "source_line": 22,
+      "visible_fingerprint": "97498291e1113a52fc82a95a45141607c65cf16c5be81b3842c8c2502f00056d",
+      "record_id": "9f9b9cdcad57f340a478",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-15",
+      "scope": "Detected header and short body boundaries",
+      "review_status": "source_assisted_editorial_review",
+      "header_status": "redacted_or_native_layout_errors",
+      "boundary_status": "scoped_lossless_partition",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Redacted identities remain unavailable. Native header values are preserved, dates not adjudicated. Nested quoted thread with repeated signatures. Header labels/values may be merged or include redaction noise. Page-spanning headers retained. Two inline quoted messages on page 2 are not separately enumerated by the parser; message enumeration remains incomplete.",
+      "page_evidence": [
+        {
+          "pdf_page": 3,
+          "native_text_sha256": "7bbfaa04aff3d14cc57ebda2848670b77f832f0d92c0e58babd65eaa8bc4dabe"
+        }
+      ],
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "47b5a7155489375bf70e4f133d4deceddb258ebe04320e7e08e32e35cd569593",
+      "spans": [
+        {
+          "id": "9f9b9cdcad57f340a478-span-1",
+          "page": 3,
+          "line_start": 27,
+          "line_end": 28,
+          "kind": "authored_text_candidate",
+          "text_sha256": "d3c26faa875bde7ba27a3d99df08f1849246a52a9e70cbb0f9ecadf58e319939"
+        },
+        {
+          "id": "9f9b9cdcad57f340a478-span-2",
+          "page": 3,
+          "line_start": 29,
+          "line_end": 35,
+          "kind": "signature",
+          "text_sha256": "531d56b0c6ce2616bef64ed6cbdacdff012571d05425c09d2555c4f0a9393823"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00082124",
+      "source_sha256": "20aca3b83ef88805f0af668f305511e2ca09af5f85f9fbdc0e4169dfa96f3bc7",
+      "source_page": 3,
+      "source_line": 36,
+      "visible_fingerprint": "fcdaacd4c08903e25a32075bbfbc6d118d7c3946a2e0ff3fad9b9a775fd3f160",
+      "record_id": "0d3bbea523b04745512e",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-15",
+      "scope": "Detected header and short body boundaries",
+      "review_status": "source_assisted_editorial_review",
+      "header_status": "redacted_or_native_layout_errors",
+      "boundary_status": "scoped_lossless_partition",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Redacted identities remain unavailable. Native header values are preserved, dates not adjudicated. Nested quoted thread with repeated signatures. Header labels/values may be merged or include redaction noise. Page-spanning headers retained. Two inline quoted messages on page 2 are not separately enumerated by the parser; message enumeration remains incomplete.",
+      "page_evidence": [
+        {
+          "pdf_page": 3,
+          "native_text_sha256": "7bbfaa04aff3d14cc57ebda2848670b77f832f0d92c0e58babd65eaa8bc4dabe"
+        },
+        {
+          "pdf_page": 4,
+          "native_text_sha256": "7d6f552abb76ef263c0612d11407f6081ca18db2c6c8d5bc45ca93a08e316824"
+        }
+      ],
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "64ef464abc56567561f287faff32a4772f07bcb92c30342a5cd1ad04340dd508",
+      "spans": [
+        {
+          "id": "0d3bbea523b04745512e-span-1",
+          "page": 4,
+          "line_start": 2,
+          "line_end": 5,
+          "kind": "authored_text_candidate",
+          "text_sha256": "a3922f4c970c2ae552e2b98305fe67b8aad12a043e4ff4a823a58cb2074e2ab4"
+        },
+        {
+          "id": "0d3bbea523b04745512e-span-2",
+          "page": 4,
+          "line_start": 6,
+          "line_end": 8,
+          "kind": "signature",
+          "text_sha256": "228c0ad64abf1ea4a44be637252f486ee8f258a30c233f8ed4933b10e7b336c5"
+        },
+        {
+          "id": "0d3bbea523b04745512e-span-3",
+          "page": 4,
+          "line_start": 9,
+          "line_end": 28,
+          "kind": "disclaimer",
+          "text_sha256": "2d495924a5adca4ca597872b54ca17bd95f188c74d7c5592880fdf15775fedc0"
+        }
+      ]
+    }
+  ]
+}
