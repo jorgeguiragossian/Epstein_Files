@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-15",
+  "scope": "Five primary-date reviews: three outer email dates, one source-read letter date, one uncertain numeric policy issue date. No native replacement, new briefs or message/contact verification.",
+  "reviews": [
+    {
+      "file_id": "EFTA00039156",
+      "dataset": 9,
+      "source_sha256": "92fc557f488e7c16a81c6121b909daaf336f381de47470e9567ef37cb50104d8",
+      "status": "uncertain",
+      "primary_date": null,
+      "date_type": null,
+      "precision": null,
+      "evidence_page": 1,
+      "evidence_quote": "12/6/2013",
+      "notes": "Program statement issue-date field is numeric 12/6/2013. Month/day ordering is not established by a spelled-out month in inspected evidence; retain uncertainty rather than choosing December 6 or June 12. Repeated footer is not independent disambiguation. This does not date any underlying event.",
+      "review_method": "Codex visual comparison of cited source PDF page with native UTF-8 extraction and acquisition/OCR findings; editorial primary-date adjudication, not independent authentication.",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone conversion or inferred timezone.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "12/6/2013",
+          "native_text_sha256": "22737cd3d8c5201227ea2e818b8e292ed1b878cc3bd9444e083b914b3b9bfa57"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00065579",
+      "dataset": 9,
+      "source_sha256": "4def1d9b3a023166ce94297f96ded4c808566ca0769c03f576cc166a66ad00d2",
+      "status": "dated",
+      "primary_date": "2020-12-01",
+      "date_type": "letter",
+      "precision": "day",
+      "evidence_page": 2,
+      "evidence_quote": "December C 2020",
+      "notes": "Source-render date above the salutation visibly reads December 1st 2020. Native extraction misreads the day as C, and local OCR is also errorful. This editorial letter-date assignment follows the visible source; the exact damaged native evidence quote and all native text remain unchanged. Exhibit cover has no competing issue date. No authenticity or author identity verification.",
+      "review_method": "Codex visual comparison of cited source PDF page with native UTF-8 extraction and acquisition/OCR findings; editorial primary-date adjudication, not independent authentication.",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone conversion or inferred timezone.",
+      "inspected_pdf_pages": [
+        2
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 2,
+          "quote": "December C 2020",
+          "native_text_sha256": "471d63b0bc396b0c28433bf3bd1d8839fe1f78c134ff66349260c2f7e9cebe33"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00072576",
+      "dataset": 9,
+      "source_sha256": "acb851b6446a3f0fdd43ae48aca35faab0a364f93d740cced462ee7aa51f04b3",
+      "status": "dated",
+      "primary_date": "2019-10-07",
+      "date_type": "email_sent",
+      "precision": "day",
+      "evidence_page": 1,
+      "evidence_quote": "Date: Mon, 07 Oct 2019 19:31:16 +0000",
+      "notes": "Outer email Date row visually confirmed. Meeting logistics in the body do not establish additional primary dates or participant identities. Sender and recipient remain redacted.",
+      "review_method": "Codex visual comparison of cited source PDF page with native UTF-8 extraction and acquisition/OCR findings; editorial primary-date adjudication, not independent authentication.",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone conversion or inferred timezone.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "Date: Mon, 07 Oct 2019 19:31:16 +0000",
+          "native_text_sha256": "f2ef89492cc6eb6e55e5b88de5430455319085f07e54fd1182ca94692c065c73"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00077515",
+      "dataset": 9,
+      "source_sha256": "f9b5f768f3e7230d62aca7faae53365e9a152ee05ded2178034986ff0d1533aa",
+      "status": "dated",
+      "primary_date": "2019-08-19",
+      "date_type": "email_sent",
+      "precision": "day",
+      "evidence_page": 1,
+      "evidence_quote": "Date: Mon, 19 Aug 2019 21:17:23 +0000",
+      "notes": "Outer forwarding-email Date row visually confirmed. Article publication dates, described events and the embedded page-3 forwarded header are separate roles. This dates the containing email, not every clipping or event in the attachment. Long clipping body has only bounded content review.",
+      "review_method": "Codex visual comparison of cited source PDF page with native UTF-8 extraction and acquisition/OCR findings; editorial primary-date adjudication, not independent authentication.",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone conversion or inferred timezone.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "Date: Mon, 19 Aug 2019 21:17:23 +0000",
+          "native_text_sha256": "5edce5476f9c89ba3e7ee9ca590ad23e2101a8d33fb9d0647df76ef20a68ffe8"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00082124",
+      "dataset": 9,
+      "source_sha256": "20aca3b83ef88805f0af668f305511e2ca09af5f85f9fbdc0e4169dfa96f3bc7",
+      "status": "dated",
+      "primary_date": "2019-08-14",
+      "date_type": "email_sent",
+      "precision": "day",
+      "evidence_page": 1,
+      "evidence_quote": "Date: Wed, 14 Aug 2019 20:41:00 +0000",
+      "notes": "Outer email Date row visually confirmed despite merged native To/Subject labels. Earlier quoted emails, proposed calls and the August 19 meeting subject are not the primary transmission date. Message enumeration remains incomplete; no contact identity inferred.",
+      "review_method": "Codex visual comparison of cited source PDF page with native UTF-8 extraction and acquisition/OCR findings; editorial primary-date adjudication, not independent authentication.",
+      "timezone_policy": "Use the calendar day displayed in the source; no timezone conversion or inferred timezone.",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "supporting_evidence": [
+        {
+          "pdf_page": 1,
+          "quote": "Date: Wed, 14 Aug 2019 20:41:00 +0000",
+          "native_text_sha256": "3537bacb7a90da849679339ce0b8b6f76b672f5bfa6b319b3de4fef2995fd17b"
+        }
+      ]
+    }
+  ]
+}

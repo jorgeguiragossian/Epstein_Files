@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "bucket": "epstein-files-archive",
+  "batch": "2026-11-15-wave-11",
+  "source_revision": "be2cec00105ad277084571eced336c46b7c13a7f",
+  "scope": "Every current file in the selected batch (or all data/pilot if no batch), including PDFs, native/OCR evidence and metadata. Excludes Downloads, temporary QA sheets, software dependencies, credentials and Git internals.",
+  "files": [
+    {
+      "local_path": "data/pilot/2026-11-15-wave-11/cache/ds09-EFTA00039156.pdf",
+      "bytes": 2125916,
+      "sha256": "92fc557f488e7c16a81c6121b909daaf336f381de47470e9567ef37cb50104d8",
+      "object_key": "evidence/sha256/92fc557f488e7c16a81c6121b909daaf336f381de47470e9567ef37cb50104d8"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-11/cache/ds09-EFTA00065579.pdf",
+      "bytes": 99989,
+      "sha256": "4def1d9b3a023166ce94297f96ded4c808566ca0769c03f576cc166a66ad00d2",
+      "object_key": "evidence/sha256/4def1d9b3a023166ce94297f96ded4c808566ca0769c03f576cc166a66ad00d2"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-11/cache/ds09-EFTA00072576.pdf",
+      "bytes": 27016,
+      "sha256": "acb851b6446a3f0fdd43ae48aca35faab0a364f93d740cced462ee7aa51f04b3",
+      "object_key": "evidence/sha256/acb851b6446a3f0fdd43ae48aca35faab0a364f93d740cced462ee7aa51f04b3"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-11/cache/ds09-EFTA00077515.pdf",
+      "bytes": 2246363,
+      "sha256": "f9b5f768f3e7230d62aca7faae53365e9a152ee05ded2178034986ff0d1533aa",
+      "object_key": "evidence/sha256/f9b5f768f3e7230d62aca7faae53365e9a152ee05ded2178034986ff0d1533aa"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-11/cache/ds09-EFTA00082124.pdf",
+      "bytes": 234421,
+      "sha256": "20aca3b83ef88805f0af668f305511e2ca09af5f85f9fbdc0e4169dfa96f3bc7",
+      "object_key": "evidence/sha256/20aca3b83ef88805f0af668f305511e2ca09af5f85f9fbdc0e4169dfa96f3bc7"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-11/correspondence-review-summary.json",
+      "bytes": 696,
+      "sha256": "d40eabebbd432c9f52b80d441e59e777da4561a59493760e8791ec8bdb1a92b7",
+      "object_key": "evidence/sha256/d40eabebbd432c9f52b80d441e59e777da4561a59493760e8791ec8bdb1a92b7"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-11/correspondence-reviews.json",
+      "bytes": 22488,
+      "sha256": "148b8744245aeeb125a88e0db74170aea96901f4d96d1a92925af5d25114aab9",
+      "object_key": "evidence/sha256/148b8744245aeeb125a88e0db74170aea96901f4d96d1a92925af5d25114aab9"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-11/date-reviews.json",
+      "bytes": 6701,
+      "sha256": "6176056f83623088440bae5eeeee2a53565eade8a9532171a0d53f68ff5d8bc8",
+      "object_key": "evidence/sha256/6176056f83623088440bae5eeeee2a53565eade8a9532171a0d53f68ff5d8bc8"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-11/downloads.json",
+      "bytes": 7507,
+      "sha256": "3f2cf1bfdf32b3d747e575dae8a80e169f2cad4ccbb39d478795eb6071b398bc",
+      "object_key": "evidence/sha256/3f2cf1bfdf32b3d747e575dae8a80e169f2cad4ccbb39d478795eb6071b398bc"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-11/extractions/correspondence-reviewed/catalog.json",
+      "bytes": 136597,
+      "sha256": "387ad044c9471c221eb85dd118d87ba6b7d278067590efef967ff7efcc9e0455",
+      "object_key": "evidence/sha256/387ad044c9471c221eb85dd118d87ba6b7d278067590efef967ff7efcc9e0455"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-11/extractions/ds09-EFTA00039156.json",
+      "bytes": 123481,
+      "sha256": "a5b37222eedecf53230615564777f51bdc10cc11c6051e7dc4426c02643cdbce",
+      "object_key": "evidence/sha256/a5b37222eedecf53230615564777f51bdc10cc11c6051e7dc4426c02643cdbce"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-11/extractions/ds09-EFTA00065579.json",
+      "bytes": 6258,
+      "sha256": "f4a1da54cc4a515b166e56eb1f25a079b0de5c4b5b4d8d5900ad6a2d684c3a85",
+      "object_key": "evidence/sha256/f4a1da54cc4a515b166e56eb1f25a079b0de5c4b5b4d8d5900ad6a2d684c3a85"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-11/extractions/ds09-EFTA00072576.json",
+      "bytes": 4004,
+      "sha256": "9b3590883362cca8bf196b4f21aed3d9b12a7fc86a1dc7ef6ed1fb9b91ff5643",
+      "object_key": "evidence/sha256/9b3590883362cca8bf196b4f21aed3d9b12a7fc86a1dc7ef6ed1fb9b91ff5643"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-11/extractions/ds09-EFTA00077515.json",
+      "bytes": 142520,
+      "sha256": "435d71f0772f59492d86e331b5adb6bfb9ca5bcf0e1b27474d45b22e8738a217",
+      "object_key": "evidence/sha256/435d71f0772f59492d86e331b5adb6bfb9ca5bcf0e1b27474d45b22e8738a217"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-11/extractions/ds09-EFTA00082124.json",
+      "bytes": 20754,
+      "sha256": "ac29dc7589a7c5923388e8b111ffb8f86ca2144e500eccddf4b2cbb9d2a6e49d",
+      "object_key": "evidence/sha256/ac29dc7589a7c5923388e8b111ffb8f86ca2144e500eccddf4b2cbb9d2a6e49d"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-11/extractions/native-email-candidates.json",
+      "bytes": 97646,
+      "sha256": "97804e6f2cc20cd633c24503facc6570d8bb65d1a10babcb1e21345e59ea2339",
+      "object_key": "evidence/sha256/97804e6f2cc20cd633c24503facc6570d8bb65d1a10babcb1e21345e59ea2339"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-11/extractions/ocr-review/EFTA00065579-editorial-readings.json",
+      "bytes": 152,
+      "sha256": "065e2761ab04adb2d01bfa72828c6d16b5e8297fea04a3d2993c2a97f5d92d53",
+      "object_key": "evidence/sha256/065e2761ab04adb2d01bfa72828c6d16b5e8297fea04a3d2993c2a97f5d92d53"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-11/extractions/ocr-review/EFTA00065579-page-2.json",
+      "bytes": 98880,
+      "sha256": "95effc7857d3f53cf86134fe50a15fe0318f25036bb6867906f3edf37bf9a6f8",
+      "object_key": "evidence/sha256/95effc7857d3f53cf86134fe50a15fe0318f25036bb6867906f3edf37bf9a6f8"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-11/extractions/ocr-review/EFTA00065579-page-2.png",
+      "bytes": 577079,
+      "sha256": "2c7adb26328b34119476c1d5ab7b478667f0126adadcef37aa81e9e5905e60ad",
+      "object_key": "evidence/sha256/2c7adb26328b34119476c1d5ab7b478667f0126adadcef37aa81e9e5905e60ad"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-11/metrics.csv",
+      "bytes": 1349,
+      "sha256": "2b8cfbafdce126a293c4c36619b1246a0c287b94ecf8d5d02cfda75b5df66955",
+      "object_key": "evidence/sha256/2b8cfbafdce126a293c4c36619b1246a0c287b94ecf8d5d02cfda75b5df66955"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-11/metrics.json",
+      "bytes": 36114,
+      "sha256": "095014a300316510e85f339db133d3c6b26c1348606a5227634f93410e47f1c9",
+      "object_key": "evidence/sha256/095014a300316510e85f339db133d3c6b26c1348606a5227634f93410e47f1c9"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-11/ocr-review-EFTA00065579.json",
+      "bytes": 2265,
+      "sha256": "2d4c6e71fdaba3c15a40cade9f4bd69a9cfbf48c07f432eb120df95e0a6705c6",
+      "object_key": "evidence/sha256/2d4c6e71fdaba3c15a40cade9f4bd69a9cfbf48c07f432eb120df95e0a6705c6"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-11/ocr-review-index.json",
+      "bytes": 356,
+      "sha256": "f337e049b6c9e02bb553879bd6d33d65a5515d0e904abeacd56ce01df213d31e",
+      "object_key": "evidence/sha256/f337e049b6c9e02bb553879bd6d33d65a5515d0e904abeacd56ce01df213d31e"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-11/processing-status.json",
+      "bytes": 623,
+      "sha256": "684fa865c536b6d50395d0bd67bda5902454638e7b2cb44ebaab65a1716b340b",
+      "object_key": "evidence/sha256/684fa865c536b6d50395d0bd67bda5902454638e7b2cb44ebaab65a1716b340b"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-11/quality-review.json",
+      "bytes": 5832,
+      "sha256": "af6d1b9cf4b560ccdfba97274797f98edc3331548abe35ef95299eb09c8a85eb",
+      "object_key": "evidence/sha256/af6d1b9cf4b560ccdfba97274797f98edc3331548abe35ef95299eb09c8a85eb"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-11/selection.json",
+      "bytes": 7414,
+      "sha256": "e711ec0fda48aab3c9a0608f383c95ead29e90eaba9615a77459832cb076b1f9",
+      "object_key": "evidence/sha256/e711ec0fda48aab3c9a0608f383c95ead29e90eaba9615a77459832cb076b1f9"
+    }
+  ],
+  "file_count": 26,
+  "total_bytes": 6032421
+}

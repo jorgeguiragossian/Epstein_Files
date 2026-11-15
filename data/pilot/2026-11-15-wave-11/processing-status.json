@@ -8,11 +8,11 @@
   "public_search_integration": true,
   "reviewed_candidates": 11,
   "lossless_body_partitions": 9,
-  "document_date_status": "unreviewed",
+  "document_date_status": "four_dated_one_uncertain",
   "remaining_review_items": [
-    "Primary dates unreviewed",
     "Message enumeration incomplete; no contact rankings",
     "Two clipping bodies not fully reviewed",
-    "Letter OCR remains errorful; native text preserved"
+    "Letter OCR remains errorful; native text preserved",
+    "Numeric policy issue date remains ambiguous"
   ]
 }
