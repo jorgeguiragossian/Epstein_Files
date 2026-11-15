@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "planned_on": "2026-11-15",
+  "status": "planned_not_downloaded",
+  "source_revision": "29ab665db8129d8ce3da94e4d27992842adb2ea5",
+  "source_catalog": "data/catalog/2026-11-07/files.csv",
+  "source_catalog_sha256": "d87502768f24036dc00053b0d1653720117fe39661308f26f7c180cc44940042",
+  "source_provenance_sha256": "00890ac29b383ea569a13f4c84cd0f641c121b6f7fefe43158e45949b606be7d",
+  "excluded_processed_urls": 200,
+  "exclusion_selection_sha256": {
+    "data/pilot/2026-11-01/selection.json": "57393d7ef23143c0c3551a5309ac569f45eb0891665d6ab64c3d0a841110b5da",
+    "data/pilot/2026-11-07-wave-01/selection.json": "16141ef4becbcec9f578ac1718acd66cd616985e6addadc90a2ff602c8785261",
+    "data/pilot/2026-11-08-wave-02/selection.json": "d2bd4e3a8c050801713cc2863afe193293cb32ea645215e667a5fc4d7f129906",
+    "data/pilot/2026-11-08-wave-03/selection.json": "f870cd3e6b80873281e063de426fa534192cfab129c3d5def9766a6937e97cdb",
+    "data/pilot/2026-11-08-wave-04/selection.json": "407d734a864dea52ea001f5315cd55c2a5a2f2c217258b3e6331db2e81ba83ef",
+    "data/pilot/2026-11-08-wave-05/selection.json": "05f1188031fb44a9ae65e48202964f0f4a9feeac830729436facc483eb56b331",
+    "data/pilot/2026-11-08-wave-06/selection.json": "8ed5a46532c249a31ac20e22fbe50b74daa176df7a9a41b1a65b095ffbfbcdc5",
+    "data/pilot/2026-11-08-wave-07/selection.json": "56bf9c9610419ee927c237eeb915b84aaa3e43791b8832c18a78a0e09fe03962",
+    "data/pilot/2026-11-08-wave-08/selection.json": "74db652cf2238274a806d64345fb79cff0474e024fa6e173d8657508b7ce1afe",
+    "data/pilot/2026-11-09-wave-09/selection.json": "c44a0c81745d16f3de1053164424f93f41ee4b2105e32f7ad8dc77dc4866c098",
+    "data/pilot/2026-11-14-wave-10/selection.json": "a7aefd0815726a2bdcd4962bb643375bfb346083c262924c5601e3b6f24bae4f"
+  },
+  "registry_sha256": "600c39cc265740e19dc68740ed1f15177b4b29a628c36f09941ce92652bcd025",
+  "method": "Second acquisition wave of the frozen phase-02 plan: five dataset 8 PDFs; exact parent entries retained. User normal-browser download workflow, no new availability check claimed.",
+  "limits": {
+    "max_file_bytes": 67108864,
+    "max_wave_bytes": 134217728,
+    "max_expansion_bytes": 536870912,
+    "extraction_timeout_seconds_per_file": 120,
+    "active_evidence_cache_limit_bytes": 2147483648,
+    "paid_ocr": false,
+    "live_ai": false
+  },
+  "first_wave": {
+    "dataset": 9,
+    "files": 5,
+    "reason": "Prior ten-file dataset9 sample had38native header candidates across38pages; this is a workload signal only, not a content prediction."
+  },
+  "catalog_limits": "24,447 observed dataset/file URL pairs; full current release total unknown. Datasets9/10/11 observed pages0-60, next unobserved61. No completeness claim or file URL inferred from numeric ranges.",
+  "coverage": [
+    {
+      "dataset": 8,
+      "eligible_observed_pdfs": 10578,
+      "selected": 5,
+      "reason": "evenly_spaced_observed_pool_positions"
+    },
+    {
+      "dataset": 9,
+      "eligible_observed_pdfs": 3006,
+      "selected": 5,
+      "reason": "evenly_spaced_observed_pool_positions"
+    },
+    {
+      "dataset": 10,
+      "eligible_observed_pdfs": 3033,
+      "selected": 5,
+      "reason": "evenly_spaced_observed_pool_positions"
+    },
+    {
+      "dataset": 11,
+      "eligible_observed_pdfs": 3033,
+      "selected": 5,
+      "reason": "evenly_spaced_observed_pool_positions"
+    },
+    {
+      "dataset": 12,
+      "eligible_observed_pdfs": 158,
+      "selected": 5,
+      "reason": "evenly_spaced_observed_pool_positions"
+    }
+  ],
+  "files": [
+    {
+      "dataset": 8,
+      "file_id": "EFTA00009747",
+      "filename": "EFTA00009747.pdf",
+      "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00009747.pdf",
+      "first_seen": "2026-11-01T23:00:31.3043435Z",
+      "last_seen": "2026-11-07T18:42:00.430079+00:00",
+      "listing_pages_observed": "0",
+      "download_status": "not_downloaded",
+      "bytes": "",
+      "source_sha256": "",
+      "pdf_pages": "",
+      "extraction_status": "not_processed",
+      "first_observed_listing_page": 0,
+      "observed_pool_size": 10578,
+      "zero_based_pool_position": 0,
+      "listing_evidence": {
+        "dataset": "8",
+        "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00009747.pdf",
+        "listing_page": "0",
+        "html_sha256": "2e5d0ba0306ef97ff22aea8551872527994590926b2336fbf7d087262a2c4b41",
+        "observed_at": "2026-11-07T18:42:00.430079+00:00"
+      }
+    },
+    {
+      "dataset": 8,
+      "file_id": "EFTA00019484",
+      "filename": "EFTA00019484.pdf",
+      "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00019484.pdf",
+      "first_seen": "2026-11-07T19:16:09.366Z",
+      "last_seen": "2026-11-07T19:16:09.366Z",
+      "listing_pages_observed": "53",
+      "download_status": "not_downloaded",
+      "bytes": "",
+      "source_sha256": "",
+      "pdf_pages": "",
+      "extraction_status": "not_processed",
+      "first_observed_listing_page": 53,
+      "observed_pool_size": 10578,
+      "zero_based_pool_position": 2644,
+      "listing_evidence": {
+        "dataset": "8",
+        "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00019484.pdf",
+        "listing_page": "53",
+        "html_sha256": "10075b0e4cd4f9c8038340ca337b3fb7d93feb5670dc4474b93b955c95c3b8be",
+        "observed_at": "2026-11-07T19:16:09.366Z"
+      }
+    },
+    {
+      "dataset": 8,
+      "file_id": "EFTA00027884",
+      "filename": "EFTA00027884.pdf",
+      "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00027884.pdf",
+      "first_seen": "2026-11-07T19:17:57.653Z",
+      "last_seen": "2026-11-07T19:17:57.653Z",
+      "listing_pages_observed": "106",
+      "download_status": "not_downloaded",
+      "bytes": "",
+      "source_sha256": "",
+      "pdf_pages": "",
+      "extraction_status": "not_processed",
+      "first_observed_listing_page": 106,
+      "observed_pool_size": 10578,
+      "zero_based_pool_position": 5288,
+      "listing_evidence": {
+        "dataset": "8",
+        "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00027884.pdf",
+        "listing_page": "106",
+        "html_sha256": "63e4380b97cbae711de90ee7d17da68948f461589ed0acfe5ac7775f206a3085",
+        "observed_at": "2026-11-07T19:17:57.653Z"
+      }
+    },
+    {
+      "dataset": 8,
+      "file_id": "EFTA00033965",
+      "filename": "EFTA00033965.pdf",
+      "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00033965.pdf",
+      "first_seen": "2026-11-07T19:20:04.607Z",
+      "last_seen": "2026-11-07T19:20:04.607Z",
+      "listing_pages_observed": "167",
+      "download_status": "not_downloaded",
+      "bytes": "",
+      "source_sha256": "",
+      "pdf_pages": "",
+      "extraction_status": "not_processed",
+      "first_observed_listing_page": 167,
+      "observed_pool_size": 10578,
+      "zero_based_pool_position": 7932,
+      "listing_evidence": {
+        "dataset": "8",
+        "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00033965.pdf",
+        "listing_page": "167",
+        "html_sha256": "64ec40a393bc89c933295bd8095779b1d38cb00e7ecbe9adaf27337c980d9dca",
+        "observed_at": "2026-11-07T19:20:04.607Z"
+      }
+    },
+    {
+      "dataset": 8,
+      "file_id": "EFTA00039022",
+      "filename": "EFTA00039022.pdf",
+      "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00039022.pdf",
+      "first_seen": "2026-11-07T19:21:56.315Z",
+      "last_seen": "2026-11-07T19:21:56.315Z",
+      "listing_pages_observed": "220",
+      "download_status": "not_downloaded",
+      "bytes": "",
+      "source_sha256": "",
+      "pdf_pages": "",
+      "extraction_status": "not_processed",
+      "first_observed_listing_page": 220,
+      "observed_pool_size": 10578,
+      "zero_based_pool_position": 10577,
+      "listing_evidence": {
+        "dataset": "8",
+        "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00039022.pdf",
+        "listing_page": "220",
+        "html_sha256": "d2ac0104cef3f9060170156729864f8644d46b7d099b457f7da111486b9327e5",
+        "observed_at": "2026-11-07T19:21:56.315Z"
+      }
+    }
+  ],
+  "parent_selection": "data/pilot/2026-11-15-phase-02/selection.json",
+  "parent_selection_sha256": "d9eefb80104861bf979ee3905e593f72029c94e4532a0265b30452df76fa8207"
+}

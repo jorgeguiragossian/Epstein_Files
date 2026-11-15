@@ -139,3 +139,6 @@ Wave 11 integration - November 15, 2026: 205 PDFs / 2,901 pages; 205 email candi
 
 
 Wave 11 primary-date review complete - November 15, 2026: four dated (three outer emails and one source-read letter), one uncertain numeric policy issue date. Totals 205 PDFs / 2,901 pages; 76 dated / 69 uncertain / 60 unreviewed; 36 briefs / 40 date-evidence-only / six reporting-period PDFs. Full email catalog and all document bodies unchanged. 102 offline tests, 157 static/API comparisons, HTTP smoke and targeted date exclusion/preservation checks pass. Private R2 dates snapshot: 26 files / 6,032,421 bytes fully restored/SHA-256 verified. See docs/wave-11-dates.md. Next: five frozen dataset 8 selections from phase 02 through normal browser access; twenty planned PDFs pending.
+
+
+Wave 12 handoff prepared - November 15, 2026: next five dataset 8 parent selections frozen unchanged in data/pilot/2026-11-15-wave-12/selection.json (EFTA00009747, EFTA00019484, EFTA00027884, EFTA00033965, EFTA00039022). User normal-browser Downloads workflow; no new availability or acquisition claimed. See docs/wave-12-downloads.md. On user return, verify PDF signatures, sizes and SHA-256 before extraction and private R2 backup. Live site unchanged at 205 PDFs / 2,901 pages.
