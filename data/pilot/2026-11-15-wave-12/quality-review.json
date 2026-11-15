@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-15",
+  "method": "Bounded comparison of PDFium source renders and native UTF-8 extraction: ten explicitly listed pages of 52. Same-assistant acquisition triage, not complete content review or independent authentication.",
+  "selected_files": 5,
+  "downloaded_files": 5,
+  "bytes": 3140554,
+  "pages": 52,
+  "low_text_pages": 0,
+  "visually_inspected_pages": 10,
+  "native_header_candidates": 7,
+  "parsed_email_occurrences": 7,
+  "parser_version": "email-pilot-1",
+  "date_parser_version": "email-date-2",
+  "unique_messages": null,
+  "ocr_performed": false,
+  "public_site_integrated": false,
+  "files": [
+    {
+      "file_id": "EFTA00009747",
+      "source_sha256": "732a558942835b6557adb22ee10e207a6bdda8d62659fe1d21e669e6d3f4e352",
+      "pages": 20,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1,
+        10,
+        20
+      ],
+      "inspected_page_text_sha256": {
+        "1": "5c3595119a880c72303e8ae33b87880e3ef2d5ae7286837897500f192ed901f6",
+        "10": "900258c85ae99daf5e3b5dc7718d661b576b0e9e438001c483fda0e434cc6aa3",
+        "20": "d9aacb0a877cddfad0ad56880dc391ae26d082dd7ce24f569202cb7040fb5350"
+      },
+      "notes": "Indictment with court filing header, highlighted printed allegations and handwritten final-page annotations. Native sampled prose broadly tracks source; handwriting and stamps on page 20 are noisy/omitted and need bounded source-assisted OCR assessment. Allegations are not findings of guilt. Only pages 1, 10 and 20 inspected; no full-content review or date adjudication.",
+      "source_assisted_ocr_review_needed": true,
+      "date_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00019484",
+      "source_sha256": "d4a6264c03f72ec3b5ed9ed3094be56442b32a5b1777cf0c40ebe5662a4b5fa5",
+      "pages": 2,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 7,
+      "parsed_email_occurrences": 7,
+      "visually_inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "inspected_page_text_sha256": {
+        "1": "d46449cc893c8aec986ea6910f568a0de663fed3b8724697e1832ab4aa0af330",
+        "2": "c6da971c3c0fb5793f065d2b10906e2ac26970f4aff943ffb303ed49b4f16aa1"
+      },
+      "notes": "Two-page nested email chain with redacted participants and seven detected header occurrences. Header continuations and body cross the page boundary; some recipient fragments occur after subject/body labels in native reading order. Attachment filenames do not establish separately acquired attachment contents. Preserve redactions; candidate/header/body review and date adjudication remain pending; no unique-message/contact claims.",
+      "source_assisted_ocr_review_needed": false,
+      "date_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00027884",
+      "source_sha256": "a841a7553a3db2034de9a77f845b2a4d51a0c74aea3e3463abfecc32610283c6",
+      "pages": 28,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1,
+        14,
+        28
+      ],
+      "inspected_page_text_sha256": {
+        "1": "657b454244abaea9855813fab5a6ee2a4f96c22fd140307610a003f2fdc8ce8e",
+        "14": "75f2b5188df3708048b4bee0c1c3ea2a261bc5893d3efd002729b1389820ad3c",
+        "28": "aeb925e177dc913130f76f5a24b6b868f6fe033bf9f37d9bbf13b71202bdcf00"
+      },
+      "notes": "Court conference transcript. Printed line numbers and captions are flattened ahead of prose in native extraction, and some words are imperfect; sampled substantive prose broadly tracks source. Three-page scope (1,14,28), not complete transcript review. Attribute statements to speakers; no identity, liability or primary-date inference from mentions.",
+      "source_assisted_ocr_review_needed": false,
+      "date_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00033965",
+      "source_sha256": "fb355ce933e369d3092699f258efe3218046cbf3ab34baf32104baac4be72c1c",
+      "pages": 1,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "fe79d4e37ce768ec3eb9e6c75a8debc7b4f64d787e72e5ce398d9af4a8529135"
+      },
+      "notes": "Single sparse printed observation note; substantive text is present despite large blank area. Date range describes an observation interval, not an established document creation/issue day. No person identity, diagnosis or independent verification inferred. Date review pending.",
+      "source_assisted_ocr_review_needed": false,
+      "date_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00039022",
+      "source_sha256": "847fdc7a8f601196c64b62df5366f3d23916233d2e7feac82239bc7db2d0ae9a",
+      "pages": 1,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "28f2e84253d3f31f0d294a2a04333f270495d0fc778eaf9b4a10b87f849d985d"
+      },
+      "notes": "Calendar event export with distinct scheduled start/end, created, modified and DTSTAMP fields, redacted organizer/attendees and Teams boilerplate. Not evidence of actual attendance or a person-to-person sent email. No participant identities or single primary date assigned. Native text broadly tracks visible nonredacted fields; parser detects zero email occurrences.",
+      "source_assisted_ocr_review_needed": false,
+      "date_review_status": "unreviewed"
+    }
+  ]
+}

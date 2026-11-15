@@ -142,3 +142,6 @@ Wave 11 primary-date review complete - November 15, 2026: four dated (three oute
 
 
 Wave 12 handoff prepared - November 15, 2026: next five dataset 8 parent selections frozen unchanged in data/pilot/2026-11-15-wave-12/selection.json (EFTA00009747, EFTA00019484, EFTA00027884, EFTA00033965, EFTA00039022). User normal-browser Downloads workflow; no new availability or acquisition claimed. See docs/wave-12-downloads.md. On user return, verify PDF signatures, sizes and SHA-256 before extraction and private R2 backup. Live site unchanged at 205 PDFs / 2,901 pages.
+
+
+Wave 12 acquisition complete - November 15, 2026: five dataset 8 PDFs / 52 pages / 3,140,554 source bytes. Native extraction successful; zero low-text pages; seven unreviewed header/parser occurrences in EFTA00019484. Bounded ten-page visual scope; indictment page 20 handwriting needs source-assisted OCR assessment. Calendar event and observation interval are not sent email/primary issue dates. Private R2 acquisition snapshot: 16 files / 3,366,202 bytes, all restored/SHA-256 verified. Originals retained. See docs/wave-12-acquisition.md. Acquired total 210, live remains 205 PDFs / 2,901 pages. Phase 02: ten acquired, five integrated, fifteen unacquired. Next: seven-candidate correspondence review and page-20 OCR assessment before integration; dates separately.

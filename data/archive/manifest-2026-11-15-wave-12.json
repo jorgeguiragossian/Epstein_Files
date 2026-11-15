@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "bucket": "epstein-files-archive",
+  "batch": "2026-11-15-wave-12",
+  "source_revision": "97444aa3e5b46a51f38dc1df1c0f86e8c6b21773",
+  "scope": "Every current file in the selected batch (or all data/pilot if no batch), including PDFs, native/OCR evidence and metadata. Excludes Downloads, temporary QA sheets, software dependencies, credentials and Git internals.",
+  "files": [
+    {
+      "local_path": "data/pilot/2026-11-15-wave-12/cache/ds08-EFTA00009747.pdf",
+      "bytes": 1609472,
+      "sha256": "732a558942835b6557adb22ee10e207a6bdda8d62659fe1d21e669e6d3f4e352",
+      "object_key": "evidence/sha256/732a558942835b6557adb22ee10e207a6bdda8d62659fe1d21e669e6d3f4e352"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-12/cache/ds08-EFTA00019484.pdf",
+      "bytes": 85070,
+      "sha256": "d4a6264c03f72ec3b5ed9ed3094be56442b32a5b1777cf0c40ebe5662a4b5fa5",
+      "object_key": "evidence/sha256/d4a6264c03f72ec3b5ed9ed3094be56442b32a5b1777cf0c40ebe5662a4b5fa5"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-12/cache/ds08-EFTA00027884.pdf",
+      "bytes": 1399346,
+      "sha256": "a841a7553a3db2034de9a77f845b2a4d51a0c74aea3e3463abfecc32610283c6",
+      "object_key": "evidence/sha256/a841a7553a3db2034de9a77f845b2a4d51a0c74aea3e3463abfecc32610283c6"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-12/cache/ds08-EFTA00033965.pdf",
+      "bytes": 11602,
+      "sha256": "fb355ce933e369d3092699f258efe3218046cbf3ab34baf32104baac4be72c1c",
+      "object_key": "evidence/sha256/fb355ce933e369d3092699f258efe3218046cbf3ab34baf32104baac4be72c1c"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-12/cache/ds08-EFTA00039022.pdf",
+      "bytes": 35064,
+      "sha256": "847fdc7a8f601196c64b62df5366f3d23916233d2e7feac82239bc7db2d0ae9a",
+      "object_key": "evidence/sha256/847fdc7a8f601196c64b62df5366f3d23916233d2e7feac82239bc7db2d0ae9a"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-12/downloads.json",
+      "bytes": 6853,
+      "sha256": "62a68267df488d70c4bfc6c3a89c1b37e0ae48153c42c2c8a1787758a9390263",
+      "object_key": "evidence/sha256/62a68267df488d70c4bfc6c3a89c1b37e0ae48153c42c2c8a1787758a9390263"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-12/extractions/ds08-EFTA00009747.json",
+      "bytes": 63070,
+      "sha256": "f67cab4f31978798054865e7a3279f80cdcb421385e9331efec8f055f8226fb1",
+      "object_key": "evidence/sha256/f67cab4f31978798054865e7a3279f80cdcb421385e9331efec8f055f8226fb1"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-12/extractions/ds08-EFTA00019484.json",
+      "bytes": 13044,
+      "sha256": "4cbad8458cb3f5b151977b3ce814f5f64768a8f5f3193e14dd03b300a17b9b96",
+      "object_key": "evidence/sha256/4cbad8458cb3f5b151977b3ce814f5f64768a8f5f3193e14dd03b300a17b9b96"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-12/extractions/ds08-EFTA00027884.json",
+      "bytes": 78144,
+      "sha256": "75eba386374890882d6675d8a59d386ce79e8a80329f4403af7ad6644da5eef7",
+      "object_key": "evidence/sha256/75eba386374890882d6675d8a59d386ce79e8a80329f4403af7ad6644da5eef7"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-12/extractions/ds08-EFTA00033965.json",
+      "bytes": 2311,
+      "sha256": "d4253b5026de8a7eb56f020fb6e140b0f50cf77045071f71d995779ca60315ef",
+      "object_key": "evidence/sha256/d4253b5026de8a7eb56f020fb6e140b0f50cf77045071f71d995779ca60315ef"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-12/extractions/ds08-EFTA00039022.json",
+      "bytes": 4749,
+      "sha256": "76f87bb967b200c12a270c056ee45dbcbd908b2ee281c3be5cf1dbf0fd00fd4d",
+      "object_key": "evidence/sha256/76f87bb967b200c12a270c056ee45dbcbd908b2ee281c3be5cf1dbf0fd00fd4d"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-12/extractions/native-email-candidates.json",
+      "bytes": 13024,
+      "sha256": "a0ac15d82d587f4c8cc96a9c3539ca247a02419162da6b51b7278e529105bb0e",
+      "object_key": "evidence/sha256/a0ac15d82d587f4c8cc96a9c3539ca247a02419162da6b51b7278e529105bb0e"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-12/metrics.csv",
+      "bytes": 1320,
+      "sha256": "7cafd4fd6d3e62ca5ec4d63608ee089943fd327ea57f60e4dee5219ec10b2b2f",
+      "object_key": "evidence/sha256/7cafd4fd6d3e62ca5ec4d63608ee089943fd327ea57f60e4dee5219ec10b2b2f"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-12/metrics.json",
+      "bytes": 28829,
+      "sha256": "1450261184a0bead1654567b276107261aa157f4041b6635156e24b60f382367",
+      "object_key": "evidence/sha256/1450261184a0bead1654567b276107261aa157f4041b6635156e24b60f382367"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-12/quality-review.json",
+      "bytes": 5828,
+      "sha256": "460e7ea838a68ffbbad2a5910bbb1eb10ee44cbb47e5896d7b128ab36f2d0a74",
+      "object_key": "evidence/sha256/460e7ea838a68ffbbad2a5910bbb1eb10ee44cbb47e5896d7b128ab36f2d0a74"
+    },
+    {
+      "local_path": "data/pilot/2026-11-15-wave-12/selection.json",
+      "bytes": 8476,
+      "sha256": "cbb7d0d6422ecba82fa7b9d226e06e9529998a2db5231cc032bd3e8f01a9e36b",
+      "object_key": "evidence/sha256/cbb7d0d6422ecba82fa7b9d226e06e9529998a2db5231cc032bd3e8f01a9e36b"
+    }
+  ],
+  "file_count": 16,
+  "total_bytes": 3366202
+}

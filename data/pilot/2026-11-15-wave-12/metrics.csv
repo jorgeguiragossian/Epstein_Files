@@ -1,0 +1,6 @@
+dataset,file_id,url,status,bytes,sha256,page_count,pages_processed,characters,low_text_pages,zero_text_pages,pages_with_image_xobjects,date_candidate_count,email_header_candidate_count,ocr_review_needed,candidate_document_type,word_tokens,unique_words
+8,EFTA00009747,https://www.justice.gov/epstein/files/DataSet%208/EFTA00009747.pdf,extracted,1609472,732a558942835b6557adb22ee10e207a6bdda8d62659fe1d21e669e6d3f4e352,20,20,25523,0,0,20,46,0,False,unclassified,3075,570
+8,EFTA00019484,https://www.justice.gov/epstein/files/DataSet%208/EFTA00019484.pdf,extracted,85070,d4a6264c03f72ec3b5ed9ed3094be56442b32a5b1777cf0c40ebe5662a4b5fa5,2,2,1926,0,0,2,7,7,False,email_headers_detected,199,81
+8,EFTA00027884,https://www.justice.gov/epstein/files/DataSet%208/EFTA00027884.pdf,extracted,1399346,a841a7553a3db2034de9a77f845b2a4d51a0c74aea3e3463abfecc32610283c6,28,28,41064,0,0,28,2,0,False,unclassified,5008,1085
+8,EFTA00033965,https://www.justice.gov/epstein/files/DataSet%208/EFTA00033965.pdf,extracted,11602,fb355ce933e369d3092699f258efe3218046cbf3ab34baf32104baac4be72c1c,1,1,118,0,0,1,2,0,False,unclassified,7,7
+8,EFTA00039022,https://www.justice.gov/epstein/files/DataSet%208/EFTA00039022.pdf,extracted,35064,847fdc7a8f601196c64b62df5366f3d23916233d2e7feac82239bc7db2d0ae9a,1,1,683,0,0,1,5,0,False,unclassified,69,55
