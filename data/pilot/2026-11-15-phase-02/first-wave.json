@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "status": "planned_not_downloaded",
+  "parent_selection": "data/pilot/2026-11-15-phase-02/selection.json",
+  "parent_selection_sha256": "d9eefb80104861bf979ee3905e593f72029c94e4532a0265b30452df76fa8207",
+  "dataset": 9,
+  "files": [
+    {
+      "dataset": 9,
+      "file_id": "EFTA00039156",
+      "filename": "EFTA00039156.pdf",
+      "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00039156.pdf",
+      "first_seen": "2026-11-01T23:00:32.2262877Z",
+      "last_seen": "2026-11-07T18:42:01.626644+00:00",
+      "listing_pages_observed": "0",
+      "download_status": "not_downloaded",
+      "bytes": "",
+      "source_sha256": "",
+      "pdf_pages": "",
+      "extraction_status": "not_processed",
+      "first_observed_listing_page": 0,
+      "observed_pool_size": 3006,
+      "zero_based_pool_position": 0,
+      "listing_evidence": {
+        "dataset": "9",
+        "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00039156.pdf",
+        "listing_page": "0",
+        "html_sha256": "a4c8390ce5f1009b25fa0952566da59d98078f52f50561765f3d756582cd0c32",
+        "observed_at": "2026-11-07T18:42:01.626644+00:00"
+      }
+    },
+    {
+      "dataset": 9,
+      "file_id": "EFTA00065579",
+      "filename": "EFTA00065579.pdf",
+      "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00065579.pdf",
+      "first_seen": "2026-11-07T19:29:49.247Z",
+      "last_seen": "2026-11-07T19:29:49.247Z",
+      "listing_pages_observed": "15",
+      "download_status": "not_downloaded",
+      "bytes": "",
+      "source_sha256": "",
+      "pdf_pages": "",
+      "extraction_status": "not_processed",
+      "first_observed_listing_page": 15,
+      "observed_pool_size": 3006,
+      "zero_based_pool_position": 751,
+      "listing_evidence": {
+        "dataset": "9",
+        "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00065579.pdf",
+        "listing_page": "15",
+        "html_sha256": "cbc32a5ba36b9b9e5e79d055da3ecd51015ba9cbbd4871a9ad8c2196bbafbbdd",
+        "observed_at": "2026-11-07T19:29:49.247Z"
+      }
+    },
+    {
+      "dataset": 9,
+      "file_id": "EFTA00072576",
+      "filename": "EFTA00072576.pdf",
+      "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00072576.pdf",
+      "first_seen": "2026-11-07T19:30:04.979Z",
+      "last_seen": "2026-11-07T19:30:04.979Z",
+      "listing_pages_observed": "30",
+      "download_status": "not_downloaded",
+      "bytes": "",
+      "source_sha256": "",
+      "pdf_pages": "",
+      "extraction_status": "not_processed",
+      "first_observed_listing_page": 30,
+      "observed_pool_size": 3006,
+      "zero_based_pool_position": 1502,
+      "listing_evidence": {
+        "dataset": "9",
+        "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00072576.pdf",
+        "listing_page": "30",
+        "html_sha256": "b51ad926fdb60481a5e23f903b833639ca7f84ccc2291cf54683e7d04d0cf8b2",
+        "observed_at": "2026-11-07T19:30:04.979Z"
+      }
+    },
+    {
+      "dataset": 9,
+      "file_id": "EFTA00077515",
+      "filename": "EFTA00077515.pdf",
+      "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00077515.pdf",
+      "first_seen": "2026-11-07T19:30:27.487Z",
+      "last_seen": "2026-11-07T19:30:27.487Z",
+      "listing_pages_observed": "45",
+      "download_status": "not_downloaded",
+      "bytes": "",
+      "source_sha256": "",
+      "pdf_pages": "",
+      "extraction_status": "not_processed",
+      "first_observed_listing_page": 45,
+      "observed_pool_size": 3006,
+      "zero_based_pool_position": 2253,
+      "listing_evidence": {
+        "dataset": "9",
+        "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00077515.pdf",
+        "listing_page": "45",
+        "html_sha256": "1af948fcc72936bbe3efe3d578ceb7e676627929acdf2d21c31bd688bca3026f",
+        "observed_at": "2026-11-07T19:30:27.487Z"
+      }
+    },
+    {
+      "dataset": 9,
+      "file_id": "EFTA00082124",
+      "filename": "EFTA00082124.pdf",
+      "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00082124.pdf",
+      "first_seen": "2026-11-07T19:30:54.657Z",
+      "last_seen": "2026-11-07T19:30:54.657Z",
+      "listing_pages_observed": "60",
+      "download_status": "not_downloaded",
+      "bytes": "",
+      "source_sha256": "",
+      "pdf_pages": "",
+      "extraction_status": "not_processed",
+      "first_observed_listing_page": 60,
+      "observed_pool_size": 3006,
+      "zero_based_pool_position": 3005,
+      "listing_evidence": {
+        "dataset": "9",
+        "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00082124.pdf",
+        "listing_page": "60",
+        "html_sha256": "0d2f361537ab41b0fba035b95612d801db420d2ce1b75c989b046ea3baf12d10",
+        "observed_at": "2026-11-07T19:30:54.657Z"
+      }
+    }
+  ]
+}

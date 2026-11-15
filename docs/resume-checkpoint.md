@@ -104,3 +104,15 @@ and verification suffix2026-11-14-wave-10-dates. Docs/wave-10-dates.md. Original
 100-document expansion review pass complete; next plan coverage-led expansion
 beyond200pilot, maintaining private evidence/cache/quality gates. Older caches
 were restored for builds; evidence remains below2GiB restore cap.
+
+
+Phase02 expansion plan frozen - November15,2026:25newobservedPDFs,5each datasets
+8-12, excluding all200processedURLs with pinned selections/catalog/provenance.
+Plan data/pilot/2026-11-15-phase-02/selection.json; first-wave.json selects5dataset9
+PDFs: EFTA00039156/65579/72576/77515/82124 (full IDs in docs/phase-02-expansion.md).
+No downloads or website changes. First wave normal-browser acquisition next,
+then native/source/correspondence quality review and verified privateR2 backup.
+Historical catalog limits remain explicit:9/10/11 resume listingpage61 later.
+Limits64MiB/file,128MiB/wave,512MiB/expansion,2GiBcache. Preserve prior selections.
+Live remains200/2836,72dated/68uncertain/60unreviewed. Plan validation passed25unique
+provenance-backedURLs,no200overlap,exclusion/sourcehashes and first-wave parenthash.
