@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-15",
+  "method": "Bounded PDFium source-render comparison with native UTF-8 extraction: 14 explicitly listed pages of 65. Acquisition quality triage only; not complete correspondence/date review or independent authentication.",
+  "selected_files": 5,
+  "downloaded_files": 5,
+  "bytes": 4733705,
+  "pages": 65,
+  "low_text_pages": 1,
+  "visually_inspected_pages": 14,
+  "native_header_candidates": 10,
+  "parsed_email_occurrences": 11,
+  "parser_version": "email-pilot-1",
+  "date_parser_version": "email-date-2",
+  "unique_messages": null,
+  "ocr_performed": false,
+  "public_site_integrated": false,
+  "files": [
+    {
+      "file_id": "EFTA00039156",
+      "source_sha256": "92fc557f488e7c16a81c6121b909daaf336f381de47470e9567ef37cb50104d8",
+      "pages": 34,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1,
+        17,
+        34
+      ],
+      "inspected_page_text_sha256": {
+        "1": "22737cd3d8c5201227ea2e818b8e292ed1b878cc3bd9444e083b914b3b9bfa57",
+        "17": "f1f1c4428afab4b377d01ffd06e26a321f192187c0e3910d4cf97ce236b5e9f2",
+        "34": "96f8365f3dbbdf1587e169bf737fc4457bc59026fd799ea8b176bbc49974146b"
+      },
+      "notes": "Program statement on employee conduct; sampled first, middle and final pages only. Native text broadly tracks sampled prose; final disciplinary table has flattened reading order. Not a complete 34-page content review. Header dates remain unadjudicated.",
+      "source_assisted_ocr_review_needed": false,
+      "date_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00065579",
+      "source_sha256": "4def1d9b3a023166ce94297f96ded4c808566ca0769c03f576cc166a66ad00d2",
+      "pages": 2,
+      "low_text_pdf_pages": [
+        1
+      ],
+      "native_header_candidates": 0,
+      "parsed_email_occurrences": 0,
+      "visually_inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "inspected_page_text_sha256": {
+        "1": "a5eb28b0088456610b469ec01a20f9bc779f02a4613acddeedd4ba47e4330409",
+        "2": "471d63b0bc396b0c28433bf3bd1d8839fe1f78c134ff66349260c2f7e9cebe33"
+      },
+      "notes": "Sparse Exhibit N cover is expected. Letter on page 2 has native recognition errors in date and subject heading, including December C 2020. Source-assisted OCR assessment needed on page 2 before date/name interpretation; no correction accepted here. Statements in letter are attributed to its author, not independently verified.",
+      "source_assisted_ocr_review_needed": true,
+      "date_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00072576",
+      "source_sha256": "acb851b6446a3f0fdd43ae48aca35faab0a364f93d740cced462ee7aa51f04b3",
+      "pages": 1,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 1,
+      "parsed_email_occurrences": 1,
+      "visually_inspected_pdf_pages": [
+        1
+      ],
+      "inspected_page_text_sha256": {
+        "1": "f2ef89492cc6eb6e55e5b88de5430455319085f07e54fd1182ca94692c065c73"
+      },
+      "notes": "Single email with redacted sender and recipient. Preserve unavailable identities and redactions. One parser occurrence remains unreviewed; no contact identity or primary date inferred.",
+      "source_assisted_ocr_review_needed": false,
+      "date_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00077515",
+      "source_sha256": "f9b5f768f3e7230d62aca7faae53365e9a152ee05ded2178034986ff0d1533aa",
+      "pages": 24,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 1,
+      "parsed_email_occurrences": 2,
+      "visually_inspected_pdf_pages": [
+        1,
+        3,
+        12,
+        24
+      ],
+      "inspected_page_text_sha256": {
+        "1": "5edce5476f9c89ba3e7ee9ca590ad23e2101a8d33fb9d0647df76ef20a68ffe8",
+        "3": "225f6f84b867d3646c2e49262cede66c2f4f3bb8e420836d9a3e0e1d5f7a5350",
+        "12": "7aeeebf21907e7448c5c79bc43f6cabca08c3b846dc91b33f9b8836fb83ae36c",
+        "24": "d59174ea08f91de827f222f0e63437cd43a5e640bb30af9656875dba7c1f29f3"
+      },
+      "notes": "Forwarded news-clipping email with a second embedded header on page 3. Sampled pages 12 and 24 are news attachment prose. Separate quoted reporting and attachment content from email authorship and message events. Four-page visual scope, not full 24-page review.",
+      "source_assisted_ocr_review_needed": false,
+      "date_review_status": "unreviewed"
+    },
+    {
+      "file_id": "EFTA00082124",
+      "source_sha256": "20aca3b83ef88805f0af668f305511e2ca09af5f85f9fbdc0e4169dfa96f3bc7",
+      "pages": 4,
+      "low_text_pdf_pages": [],
+      "native_header_candidates": 8,
+      "parsed_email_occurrences": 8,
+      "visually_inspected_pdf_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "inspected_page_text_sha256": {
+        "1": "3537bacb7a90da849679339ce0b8b6f76b672f5bfa6b319b3de4fef2995fd17b",
+        "2": "f0c7d3d2efd05f500553e2fe3efad6fd95458015b9c247ff1be7dde7133119e3",
+        "3": "7bbfaa04aff3d14cc57ebda2848670b77f832f0d92c0e58babd65eaa8bc4dabe",
+        "4": "7d6f552abb76ef263c0612d11407f6081ca18db2c6c8d5bc45ca93a08e316824"
+      },
+      "notes": "Four-page nested scheduling thread with redacted participants, repeated signature images and disclaimers. Native extraction joins some header labels; quoted headers span page boundaries. Eight parser occurrences are not eight independently established unique messages. Source-assisted header/boundary review needed; no identity inference or timezone normalization accepted.",
+      "source_assisted_ocr_review_needed": false,
+      "date_review_status": "unreviewed"
+    }
+  ]
+}

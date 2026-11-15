@@ -127,3 +127,6 @@ downloads, extraction or publication performed. On return verify originals in
 Downloads, copy to ignored wave11/cache with signatures/hashes/64MiB-perfile and
 128MiB-wave limits, native analyze, source-quality triage and privateR2 backup.
 Live unchanged200/2836. Do not regenerate phase02 or wave11 selections.
+
+
+Wave 11 acquisition saved - November 15, 2026: five dataset 9 PDFs / 65 pages / 4,733,705 source bytes. Native extraction complete; ten header candidates and eleven unreviewed parser occurrences. Bounded 14-page visual quality review, with letter heading/date recognition errors flagged for source-assisted OCR assessment. Private R2 snapshot and restored SHA-256 verification cover all 16 batch files (5,186,584 bytes); originals retained. See docs/wave-11-acquisition.md. Public viewer remains 200 PDFs / 2,836 pages; acquired total 205. Phase 02: five acquired, twenty pending, zero integrated. Next: scoped correspondence header/body/attachment review and letter OCR assessment, then integration and separate date review. No Pages deployment needed for this metadata-only milestone.

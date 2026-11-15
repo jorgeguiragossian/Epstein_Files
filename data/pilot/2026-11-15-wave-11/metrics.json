@@ -1,0 +1,1272 @@
+{
+  "updated_at_utc": "2026-11-15T14:55:42.764116+00:00",
+  "method": "pypdf native text only; low-text threshold <80 substantive alphanumeric characters/page, excluding EFTA stamps. Dates and email blocks are unverified candidates, never established document dates or unique messages.",
+  "files": [
+    {
+      "dataset": 9,
+      "file_id": "EFTA00039156",
+      "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00039156.pdf",
+      "sha256": "92fc557f488e7c16a81c6121b909daaf336f381de47470e9567ef37cb50104d8",
+      "bytes": 2125916,
+      "status": "extracted",
+      "pypdf_version": "6.21.4",
+      "page_count": 34,
+      "pages_processed": 34,
+      "characters": 59325,
+      "low_text_pages": 0,
+      "zero_text_pages": 0,
+      "pages_with_image_xobjects": 34,
+      "date_candidate_count": 51,
+      "date_candidates": [
+        {
+          "page": 1,
+          "line": 5,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 2,
+          "line": 7,
+          "raw": "2/05/99",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 2,
+          "line": 30,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 3,
+          "line": 30,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 4,
+          "line": 30,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 5,
+          "line": 33,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 6,
+          "line": 30,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 7,
+          "line": 29,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 8,
+          "line": 29,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 9,
+          "line": 30,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 10,
+          "line": 30,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 11,
+          "line": 32,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 12,
+          "line": 27,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 13,
+          "line": 31,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 14,
+          "line": 30,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 15,
+          "line": 30,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 16,
+          "line": 28,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 17,
+          "line": 31,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 18,
+          "line": 27,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 19,
+          "line": 3,
+          "raw": "3/31/06",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 19,
+          "line": 4,
+          "raw": "3/23/04",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 19,
+          "line": 5,
+          "raw": "6/30/97",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 19,
+          "line": 6,
+          "raw": "7/17/13",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 19,
+          "line": 7,
+          "raw": "6/01/99",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 19,
+          "line": 8,
+          "raw": "10/10/03",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 19,
+          "line": 10,
+          "raw": "7/7/13",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 19,
+          "line": 11,
+          "raw": "9/01/99",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 19,
+          "line": 38,
+          "raw": "8/7/92",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 19,
+          "line": 39,
+          "raw": "12/30/93",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 19,
+          "line": 40,
+          "raw": "1/28/92",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 19,
+          "line": 42,
+          "raw": "5/02/97",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 19,
+          "line": 44,
+          "raw": "4/9/90",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 19,
+          "line": 48,
+          "raw": "8/25/98",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 19,
+          "line": 49,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 20,
+          "line": 11,
+          "raw": "2/07/87",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 20,
+          "line": 12,
+          "raw": "8/2/83",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 20,
+          "line": 21,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 21,
+          "line": 35,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 22,
+          "line": 113,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 23,
+          "line": 82,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 24,
+          "line": 82,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 25,
+          "line": 89,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 26,
+          "line": 86,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 27,
+          "line": 86,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 28,
+          "line": 100,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 29,
+          "line": 87,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 30,
+          "line": 75,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 31,
+          "line": 81,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 32,
+          "line": 103,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 33,
+          "line": 106,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 34,
+          "line": 71,
+          "raw": "12/6/2013",
+          "role": "unclassified_mention",
+          "validated": false
+        }
+      ],
+      "email_header_candidate_count": 0,
+      "candidate_document_type": "unclassified",
+      "document_date": null,
+      "document_date_status": "requires_context_review",
+      "ocr_performed": false,
+      "ocr_review_needed": false,
+      "unique_words": 1387,
+      "word_tokens": 6297,
+      "page_metrics": [
+        {
+          "page": 1,
+          "characters": 1221,
+          "alphanumeric_characters": 977,
+          "substantive_alphanumeric_characters": 965,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 2,
+          "characters": 1974,
+          "alphanumeric_characters": 1613,
+          "substantive_alphanumeric_characters": 1601,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 3,
+          "characters": 2061,
+          "alphanumeric_characters": 1646,
+          "substantive_alphanumeric_characters": 1634,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 4,
+          "characters": 2394,
+          "alphanumeric_characters": 1951,
+          "substantive_alphanumeric_characters": 1939,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 5,
+          "characters": 2451,
+          "alphanumeric_characters": 1987,
+          "substantive_alphanumeric_characters": 1975,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 6,
+          "characters": 1859,
+          "alphanumeric_characters": 1490,
+          "substantive_alphanumeric_characters": 1478,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 7,
+          "characters": 2252,
+          "alphanumeric_characters": 1815,
+          "substantive_alphanumeric_characters": 1803,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 8,
+          "characters": 2249,
+          "alphanumeric_characters": 1831,
+          "substantive_alphanumeric_characters": 1819,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 9,
+          "characters": 2289,
+          "alphanumeric_characters": 1856,
+          "substantive_alphanumeric_characters": 1844,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 10,
+          "characters": 2178,
+          "alphanumeric_characters": 1771,
+          "substantive_alphanumeric_characters": 1759,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 11,
+          "characters": 2245,
+          "alphanumeric_characters": 1827,
+          "substantive_alphanumeric_characters": 1815,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 12,
+          "characters": 1947,
+          "alphanumeric_characters": 1557,
+          "substantive_alphanumeric_characters": 1545,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 13,
+          "characters": 2319,
+          "alphanumeric_characters": 1834,
+          "substantive_alphanumeric_characters": 1822,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 14,
+          "characters": 1915,
+          "alphanumeric_characters": 1529,
+          "substantive_alphanumeric_characters": 1517,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 15,
+          "characters": 2280,
+          "alphanumeric_characters": 1835,
+          "substantive_alphanumeric_characters": 1823,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 16,
+          "characters": 2098,
+          "alphanumeric_characters": 1684,
+          "substantive_alphanumeric_characters": 1672,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 17,
+          "characters": 2332,
+          "alphanumeric_characters": 1887,
+          "substantive_alphanumeric_characters": 1875,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 18,
+          "characters": 2110,
+          "alphanumeric_characters": 1720,
+          "substantive_alphanumeric_characters": 1708,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 19,
+          "characters": 1545,
+          "alphanumeric_characters": 1173,
+          "substantive_alphanumeric_characters": 1161,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 20,
+          "characters": 771,
+          "alphanumeric_characters": 630,
+          "substantive_alphanumeric_characters": 618,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 21,
+          "characters": 2852,
+          "alphanumeric_characters": 2320,
+          "substantive_alphanumeric_characters": 2308,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 22,
+          "characters": 1488,
+          "alphanumeric_characters": 1113,
+          "substantive_alphanumeric_characters": 1101,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 23,
+          "characters": 1163,
+          "alphanumeric_characters": 887,
+          "substantive_alphanumeric_characters": 875,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 24,
+          "characters": 1177,
+          "alphanumeric_characters": 887,
+          "substantive_alphanumeric_characters": 875,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 25,
+          "characters": 1280,
+          "alphanumeric_characters": 964,
+          "substantive_alphanumeric_characters": 952,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 26,
+          "characters": 1229,
+          "alphanumeric_characters": 914,
+          "substantive_alphanumeric_characters": 902,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 27,
+          "characters": 1158,
+          "alphanumeric_characters": 865,
+          "substantive_alphanumeric_characters": 853,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 28,
+          "characters": 1419,
+          "alphanumeric_characters": 1076,
+          "substantive_alphanumeric_characters": 1064,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 29,
+          "characters": 1234,
+          "alphanumeric_characters": 936,
+          "substantive_alphanumeric_characters": 924,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 30,
+          "characters": 1120,
+          "alphanumeric_characters": 852,
+          "substantive_alphanumeric_characters": 840,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 31,
+          "characters": 1088,
+          "alphanumeric_characters": 818,
+          "substantive_alphanumeric_characters": 806,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 32,
+          "characters": 1324,
+          "alphanumeric_characters": 993,
+          "substantive_alphanumeric_characters": 981,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 33,
+          "characters": 1336,
+          "alphanumeric_characters": 995,
+          "substantive_alphanumeric_characters": 983,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 34,
+          "characters": 967,
+          "alphanumeric_characters": 732,
+          "substantive_alphanumeric_characters": 720,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        }
+      ],
+      "extraction_path": "extractions/ds09-EFTA00039156.json"
+    },
+    {
+      "dataset": 9,
+      "file_id": "EFTA00065579",
+      "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00065579.pdf",
+      "sha256": "4def1d9b3a023166ce94297f96ded4c808566ca0769c03f576cc166a66ad00d2",
+      "bytes": 99989,
+      "status": "extracted",
+      "pypdf_version": "6.21.4",
+      "page_count": 2,
+      "pages_processed": 2,
+      "characters": 1600,
+      "low_text_pages": 1,
+      "zero_text_pages": 0,
+      "pages_with_image_xobjects": 2,
+      "date_candidate_count": 0,
+      "date_candidates": [],
+      "email_header_candidate_count": 0,
+      "candidate_document_type": "unclassified",
+      "document_date": null,
+      "document_date_status": "requires_context_review",
+      "ocr_performed": false,
+      "ocr_review_needed": true,
+      "unique_words": 154,
+      "word_tokens": 204,
+      "page_metrics": [
+        {
+          "page": 1,
+          "characters": 23,
+          "alphanumeric_characters": 20,
+          "substantive_alphanumeric_characters": 8,
+          "low_text_candidate": true,
+          "image_xobjects": 1
+        },
+        {
+          "page": 2,
+          "characters": 1577,
+          "alphanumeric_characters": 1250,
+          "substantive_alphanumeric_characters": 1238,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        }
+      ],
+      "extraction_path": "extractions/ds09-EFTA00065579.json"
+    },
+    {
+      "dataset": 9,
+      "file_id": "EFTA00072576",
+      "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00072576.pdf",
+      "sha256": "acb851b6446a3f0fdd43ae48aca35faab0a364f93d740cced462ee7aa51f04b3",
+      "bytes": 27016,
+      "status": "extracted",
+      "pypdf_version": "6.21.4",
+      "page_count": 1,
+      "pages_processed": 1,
+      "characters": 582,
+      "low_text_pages": 0,
+      "zero_text_pages": 0,
+      "pages_with_image_xobjects": 1,
+      "date_candidate_count": 1,
+      "date_candidates": [
+        {
+          "page": 1,
+          "line": 4,
+          "raw": "07 Oct 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        }
+      ],
+      "email_header_candidate_count": 1,
+      "candidate_document_type": "email_headers_detected",
+      "document_date": null,
+      "document_date_status": "requires_context_review",
+      "ocr_performed": false,
+      "ocr_review_needed": false,
+      "unique_words": 58,
+      "word_tokens": 67,
+      "page_metrics": [
+        {
+          "page": 1,
+          "characters": 582,
+          "alphanumeric_characters": 443,
+          "substantive_alphanumeric_characters": 431,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        }
+      ],
+      "extraction_path": "extractions/ds09-EFTA00072576.json"
+    },
+    {
+      "dataset": 9,
+      "file_id": "EFTA00077515",
+      "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00077515.pdf",
+      "sha256": "f9b5f768f3e7230d62aca7faae53365e9a152ee05ded2178034986ff0d1533aa",
+      "bytes": 2246363,
+      "status": "extracted",
+      "pypdf_version": "6.21.4",
+      "page_count": 24,
+      "pages_processed": 24,
+      "characters": 72065,
+      "low_text_pages": 0,
+      "zero_text_pages": 0,
+      "pages_with_image_xobjects": 24,
+      "date_candidate_count": 24,
+      "date_candidates": [
+        {
+          "page": 1,
+          "line": 3,
+          "raw": "August 19, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 1,
+          "line": 4,
+          "raw": "19 Aug 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 1,
+          "line": 11,
+          "raw": "8/18/19",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 2,
+          "line": 11,
+          "raw": "Dec. 10, 2010",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 3,
+          "line": 3,
+          "raw": "August 19, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 3,
+          "line": 5,
+          "raw": "August 19, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 3,
+          "line": 7,
+          "raw": "August 19, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 3,
+          "line": 30,
+          "raw": "8/16/19",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 4,
+          "line": 22,
+          "raw": "8/16/19",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 5,
+          "line": 23,
+          "raw": "8/17/19",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 10,
+          "line": 11,
+          "raw": "8/18/19",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 11,
+          "line": 11,
+          "raw": "Dec. 10, 2010",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 12,
+          "line": 5,
+          "raw": "8/19/19",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 13,
+          "line": 25,
+          "raw": "8/18/19",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 14,
+          "line": 20,
+          "raw": "8/17/19",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 15,
+          "line": 21,
+          "raw": "8/17/19",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 16,
+          "line": 4,
+          "raw": "8/18/19",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 18,
+          "line": 18,
+          "raw": "8/16/19",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 19,
+          "line": 24,
+          "raw": "8/16/19",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 20,
+          "line": 16,
+          "raw": "8/18/19",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 21,
+          "line": 9,
+          "raw": "8/19/19",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 21,
+          "line": 18,
+          "raw": "July 17, 2014",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 23,
+          "line": 11,
+          "raw": "July 17, 2014",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 23,
+          "line": 30,
+          "raw": "8/19/19",
+          "role": "unclassified_mention",
+          "validated": false
+        }
+      ],
+      "email_header_candidate_count": 1,
+      "candidate_document_type": "email_headers_detected",
+      "document_date": null,
+      "document_date_status": "requires_context_review",
+      "ocr_performed": false,
+      "ocr_review_needed": false,
+      "unique_words": 2509,
+      "word_tokens": 9215,
+      "page_metrics": [
+        {
+          "page": 1,
+          "characters": 2966,
+          "alphanumeric_characters": 2377,
+          "substantive_alphanumeric_characters": 2365,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 2,
+          "characters": 3534,
+          "alphanumeric_characters": 2815,
+          "substantive_alphanumeric_characters": 2803,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 3,
+          "characters": 1349,
+          "alphanumeric_characters": 1054,
+          "substantive_alphanumeric_characters": 1042,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 4,
+          "characters": 2833,
+          "alphanumeric_characters": 2290,
+          "substantive_alphanumeric_characters": 2278,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 5,
+          "characters": 2982,
+          "alphanumeric_characters": 2380,
+          "substantive_alphanumeric_characters": 2368,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 6,
+          "characters": 3249,
+          "alphanumeric_characters": 2570,
+          "substantive_alphanumeric_characters": 2558,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 7,
+          "characters": 3293,
+          "alphanumeric_characters": 2645,
+          "substantive_alphanumeric_characters": 2633,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 8,
+          "characters": 2934,
+          "alphanumeric_characters": 2331,
+          "substantive_alphanumeric_characters": 2319,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 9,
+          "characters": 3063,
+          "alphanumeric_characters": 2407,
+          "substantive_alphanumeric_characters": 2395,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 10,
+          "characters": 3301,
+          "alphanumeric_characters": 2656,
+          "substantive_alphanumeric_characters": 2644,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 11,
+          "characters": 3534,
+          "alphanumeric_characters": 2815,
+          "substantive_alphanumeric_characters": 2803,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 12,
+          "characters": 2633,
+          "alphanumeric_characters": 2058,
+          "substantive_alphanumeric_characters": 2046,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 13,
+          "characters": 2490,
+          "alphanumeric_characters": 1896,
+          "substantive_alphanumeric_characters": 1884,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 14,
+          "characters": 2835,
+          "alphanumeric_characters": 2298,
+          "substantive_alphanumeric_characters": 2286,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 15,
+          "characters": 2658,
+          "alphanumeric_characters": 2134,
+          "substantive_alphanumeric_characters": 2122,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 16,
+          "characters": 3251,
+          "alphanumeric_characters": 2644,
+          "substantive_alphanumeric_characters": 2632,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 17,
+          "characters": 3708,
+          "alphanumeric_characters": 3013,
+          "substantive_alphanumeric_characters": 3001,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 18,
+          "characters": 3410,
+          "alphanumeric_characters": 2764,
+          "substantive_alphanumeric_characters": 2752,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 19,
+          "characters": 3081,
+          "alphanumeric_characters": 2479,
+          "substantive_alphanumeric_characters": 2467,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 20,
+          "characters": 2944,
+          "alphanumeric_characters": 2376,
+          "substantive_alphanumeric_characters": 2364,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 21,
+          "characters": 3492,
+          "alphanumeric_characters": 2764,
+          "substantive_alphanumeric_characters": 2752,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 22,
+          "characters": 3553,
+          "alphanumeric_characters": 2836,
+          "substantive_alphanumeric_characters": 2824,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 23,
+          "characters": 3152,
+          "alphanumeric_characters": 2547,
+          "substantive_alphanumeric_characters": 2535,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 24,
+          "characters": 1820,
+          "alphanumeric_characters": 1467,
+          "substantive_alphanumeric_characters": 1455,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        }
+      ],
+      "extraction_path": "extractions/ds09-EFTA00077515.json"
+    },
+    {
+      "dataset": 9,
+      "file_id": "EFTA00082124",
+      "url": "https://www.justice.gov/epstein/files/DataSet%209/EFTA00082124.pdf",
+      "sha256": "20aca3b83ef88805f0af668f305511e2ca09af5f85f9fbdc0e4169dfa96f3bc7",
+      "bytes": 234421,
+      "status": "extracted",
+      "pypdf_version": "6.21.4",
+      "page_count": 4,
+      "pages_processed": 4,
+      "characters": 5371,
+      "low_text_pages": 0,
+      "zero_text_pages": 0,
+      "pages_with_image_xobjects": 4,
+      "date_candidate_count": 10,
+      "date_candidates": [
+        {
+          "page": 1,
+          "line": 3,
+          "raw": "14 Aug 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 1,
+          "line": 16,
+          "raw": "August 14, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 1,
+          "line": 24,
+          "raw": "August 13, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 2,
+          "line": 12,
+          "raw": "August 13, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 2,
+          "line": 18,
+          "raw": "Aug 13, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 2,
+          "line": 21,
+          "raw": "Aug 13, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 2,
+          "line": 26,
+          "raw": "August 12, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 3,
+          "line": 16,
+          "raw": "August 9, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 3,
+          "line": 23,
+          "raw": "August 9, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        },
+        {
+          "page": 3,
+          "line": 37,
+          "raw": "August 9, 2019",
+          "role": "unclassified_mention",
+          "validated": false
+        }
+      ],
+      "email_header_candidate_count": 8,
+      "candidate_document_type": "email_headers_detected",
+      "document_date": null,
+      "document_date_status": "requires_context_review",
+      "ocr_performed": false,
+      "ocr_review_needed": false,
+      "unique_words": 204,
+      "word_tokens": 637,
+      "page_metrics": [
+        {
+          "page": 1,
+          "characters": 770,
+          "alphanumeric_characters": 559,
+          "substantive_alphanumeric_characters": 547,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 2,
+          "characters": 890,
+          "alphanumeric_characters": 649,
+          "substantive_alphanumeric_characters": 637,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 3,
+          "characters": 1402,
+          "alphanumeric_characters": 1047,
+          "substantive_alphanumeric_characters": 1035,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        },
+        {
+          "page": 4,
+          "characters": 2309,
+          "alphanumeric_characters": 1862,
+          "substantive_alphanumeric_characters": 1850,
+          "low_text_candidate": false,
+          "image_xobjects": 1
+        }
+      ],
+      "extraction_path": "extractions/ds09-EFTA00082124.json"
+    }
+  ]
+}
