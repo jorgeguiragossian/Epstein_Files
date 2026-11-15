@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-15",
+  "reviewer": "Codex",
+  "file_id": "EFTA00009747",
+  "dataset": 8,
+  "source_sha256": "732a558942835b6557adb22ee10e207a6bdda8d62659fe1d21e669e6d3f4e352",
+  "native_extraction_sha256": "f67cab4f31978798054865e7a3279f80cdcb421385e9331efec8f055f8226fb1",
+  "method": "Two local Windows.Media.Ocr en-US attempts on PDFium scale-3 full page 20 and bottom crop. Source/native comparison; no external service.",
+  "ocr_attempts": [
+    {
+      "pdf_page": 20,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/EFTA00009747-page-20.png",
+      "image_sha256": "1bf6d4ac0e9bb3190917c651ba09ab6d9d03f8af126d30ae8b32bfc52ed6e47c",
+      "result_path": "extractions/ocr-review/EFTA00009747-page-20.json",
+      "result_sha256": "4aa70ea715e5c550ee7e28b9782fe50579403cdcf5884b9fc7036eaae9adeca6",
+      "recognized_lines": 16,
+      "recognized_characters": 349,
+      "crop_pixels_on_rotated_full_render": null,
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    },
+    {
+      "pdf_page": 20,
+      "clockwise_rotation_degrees": 0,
+      "render_scale": 3,
+      "image_path": "extractions/ocr-review/EFTA00009747-page-20-bottom.png",
+      "image_sha256": "3ce8f418e5b2db47af99832232075383967d053185da674dce4760fabebc0847",
+      "result_path": "extractions/ocr-review/EFTA00009747-page-20-bottom.json",
+      "result_sha256": "dd35bd5b5a9c4d7c9e305eb8d931068807da137a0215c8c98f021f24aa0a7bf9",
+      "recognized_lines": 1,
+      "recognized_characters": 12,
+      "crop_pixels_on_rotated_full_render": [
+        0,
+        1652,
+        1836,
+        2430
+      ],
+      "engine": "Windows.Media.Ocr",
+      "language": "en-US"
+    }
+  ],
+  "page_findings": [
+    {
+      "pdf_page": 20,
+      "native_text_sha256": "d9aacb0a877cddfad0ad56880dc391ae26d082dd7ce24f569202cb7040fb5350",
+      "finding": "Full-page local OCR omits handwritten annotation and signature material, and corrupts the printed filing-header date. Bottom crop recognizes only the EFTA page stamp despite visible handwriting. Native annotation recognition is also noisy. No correction, literal transcription, identity or date promotion accepted."
+    }
+  ],
+  "eligibility": {
+    "primary_date_assignment": false,
+    "verified_transactions": false,
+    "identity_inference": false,
+    "native_text_replacement": false,
+    "verified_media_contents": false
+  },
+  "transcription_layer": {
+    "local_path": "extractions/ocr-review/EFTA00009747-editorial-readings.json",
+    "sha256": "2893cc4aac894d5ee29f6becfacb34b8c99434d40232ca3e179fb8b66046aeb1"
+  },
+  "reviewed_fields": [],
+  "ocr_improvement_accepted": false,
+  "independent_verification": false,
+  "remaining_uncertainties": [
+    "Handwriting untranscribed; OCR misses visible annotations",
+    "Printed filing date, handwriting annotation date and alleged event dates require separate date-role review",
+    "Indictment allegations are not verified findings"
+  ],
+  "publication": "Raw OCR/images remain ignored private evidence; findings and source hashes only."
+}

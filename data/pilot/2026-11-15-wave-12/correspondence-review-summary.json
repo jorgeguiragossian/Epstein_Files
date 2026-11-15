@@ -1,0 +1,18 @@
+{
+  "candidate_occurrences": 7,
+  "reviewed_candidates": 7,
+  "unreviewed_candidates": 0,
+  "body_partitions": 7,
+  "header_status_counts": {
+    "redacted_or_native_layout_errors": 7
+  },
+  "boundary_status_counts": {
+    "scoped_lossless_partition": 7
+  },
+  "unique_messages": null,
+  "contact_rankings_ready": false,
+  "public_site_integration": false,
+  "parser_version": "email-pilot-1",
+  "date_parser_version": "email-date-2",
+  "scope": "All seven detected headers and complete detected bodies reviewed; seven lossless partitions. Redacted identities remain unavailable; no unique-message/contact/date promotion."
+}

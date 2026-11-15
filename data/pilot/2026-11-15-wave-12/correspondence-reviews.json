@@ -1,0 +1,337 @@
+{
+  "schema_version": 1,
+  "parser_version": "email-pilot-1",
+  "date_parser_version": "email-date-2",
+  "method": "Codex visual comparison of both email source pages against UTF-8 native extraction; same-assistant editorial review, not independent authentication.",
+  "scope": "All seven detected headers and complete detected bodies reviewed; seven lossless partitions. Redacted identities remain unavailable; no unique-message/contact/date promotion.",
+  "reviews": [
+    {
+      "file_id": "EFTA00019484",
+      "source_sha256": "d4a6264c03f72ec3b5ed9ed3094be56442b32a5b1777cf0c40ebe5662a4b5fa5",
+      "source_page": 1,
+      "source_line": 1,
+      "visible_fingerprint": "3cc18c0fed21f80542c1947741dc7d0fbd81861dc0eb4fe57f0a09f2535626bb",
+      "record_id": "97855785440d5774bdbf",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-15",
+      "scope": "Detected header and body pages; native text preserved",
+      "review_status": "source_assisted_editorial_review",
+      "header_status": "redacted_or_native_layout_errors",
+      "boundary_status": "scoped_lossless_partition",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Source email chain has redacted participant names/addresses; organizational fragments do not identify individuals. Preserve native header fields and dates without repair or timezone inference. Attachment references do not verify attachment contents or availability. Attachment metadata remains in detected body and is separated from the short authored-text candidate; filename recognition is imperfect.",
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "d9238ca155583806ef954728cb09f43707fe1dc7992358a51e1aefd6097c87e4",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "d46449cc893c8aec986ea6910f568a0de663fed3b8724697e1832ab4aa0af330"
+        }
+      ],
+      "spans": [
+        {
+          "id": "97855785440d5774bdbf-span-1",
+          "page": 1,
+          "line_start": 6,
+          "line_end": 6,
+          "kind": "uncertain_header_continuation",
+          "text_sha256": "16917b0eed695020e8b932f2a6df30882977ccfb21c7ebee9befe20d8541b20d"
+        },
+        {
+          "id": "97855785440d5774bdbf-span-2",
+          "page": 1,
+          "line_start": 7,
+          "line_end": 7,
+          "kind": "authored_text_candidate",
+          "text_sha256": "aacab201f0e6b6bf89c5bf89461ca9641071576543486fa4b433b10dbda7f08e"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00019484",
+      "source_sha256": "d4a6264c03f72ec3b5ed9ed3094be56442b32a5b1777cf0c40ebe5662a4b5fa5",
+      "source_page": 1,
+      "source_line": 8,
+      "visible_fingerprint": "62f98e887d38849b2d008c6fc6510facaf8e9ca92a66d65d6e1894d7824415d1",
+      "record_id": "95f52c30c3b7a1c60625",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-15",
+      "scope": "Detected header and body pages; native text preserved",
+      "review_status": "source_assisted_editorial_review",
+      "header_status": "redacted_or_native_layout_errors",
+      "boundary_status": "scoped_lossless_partition",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Source email chain has redacted participant names/addresses; organizational fragments do not identify individuals. Preserve native header fields and dates without repair or timezone inference. Attachment references do not verify attachment contents or availability. Short text is separated from any trailing displaced header fragments. Earlier quoted blocks are candidate occurrences, not independently verified unique messages.",
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "66bbcc0228737a34d220e67ff09ef417bf388ba2523c85c2ecf6c798882eaa6c",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "d46449cc893c8aec986ea6910f568a0de663fed3b8724697e1832ab4aa0af330"
+        }
+      ],
+      "spans": [
+        {
+          "id": "95f52c30c3b7a1c60625-span-1",
+          "page": 1,
+          "line_start": 11,
+          "line_end": 14,
+          "kind": "uncertain_header_continuation",
+          "text_sha256": "d1d69a6b97da46156afecb59dc18137ddcb80ffb0697abd7ca5a668a3b254c95"
+        },
+        {
+          "id": "95f52c30c3b7a1c60625-span-2",
+          "page": 1,
+          "line_start": 15,
+          "line_end": 15,
+          "kind": "authored_text_candidate",
+          "text_sha256": "9fddff1f69f2c3fe1dc62f2557649567f72e565ccbfd31516d1433619e1112fb"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00019484",
+      "source_sha256": "d4a6264c03f72ec3b5ed9ed3094be56442b32a5b1777cf0c40ebe5662a4b5fa5",
+      "source_page": 1,
+      "source_line": 16,
+      "visible_fingerprint": "660d5fdc00726747fa7b5e30bb40fc788fe8791ef33878dbc3c68da4a5f2948f",
+      "record_id": "573dd045bb75f9bf2381",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-15",
+      "scope": "Detected header and body pages; native text preserved",
+      "review_status": "source_assisted_editorial_review",
+      "header_status": "redacted_or_native_layout_errors",
+      "boundary_status": "scoped_lossless_partition",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Source email chain has redacted participant names/addresses; organizational fragments do not identify individuals. Preserve native header fields and dates without repair or timezone inference. Attachment references do not verify attachment contents or availability. Short text is separated from any trailing displaced header fragments. Earlier quoted blocks are candidate occurrences, not independently verified unique messages.",
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "82e028b9b34e3c4399dffc26a777ddf8e145c7b8106fec4909eabfce284e4540",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "d46449cc893c8aec986ea6910f568a0de663fed3b8724697e1832ab4aa0af330"
+        }
+      ],
+      "spans": [
+        {
+          "id": "573dd045bb75f9bf2381-span-1",
+          "page": 1,
+          "line_start": 19,
+          "line_end": 21,
+          "kind": "uncertain_header_continuation",
+          "text_sha256": "9fc3c71abd921238a3c880a9cc06e8eef72b77d336bba98a9c0d03d2c72d8d71"
+        },
+        {
+          "id": "573dd045bb75f9bf2381-span-2",
+          "page": 1,
+          "line_start": 22,
+          "line_end": 23,
+          "kind": "authored_text_candidate",
+          "text_sha256": "f6f58ad90ac124ebef689a38897174376ef7f2d54b0e667c4a387ea789e9b886"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00019484",
+      "source_sha256": "d4a6264c03f72ec3b5ed9ed3094be56442b32a5b1777cf0c40ebe5662a4b5fa5",
+      "source_page": 1,
+      "source_line": 24,
+      "visible_fingerprint": "6b78a9b1c72dfb123e53d3d75713caa8ba9c504109908c1b0f2bcd60cb7291ef",
+      "record_id": "a2cf0e59c505ecf4383b",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-15",
+      "scope": "Detected header and body pages; native text preserved",
+      "review_status": "source_assisted_editorial_review",
+      "header_status": "redacted_or_native_layout_errors",
+      "boundary_status": "scoped_lossless_partition",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Source email chain has redacted participant names/addresses; organizational fragments do not identify individuals. Preserve native header fields and dates without repair or timezone inference. Attachment references do not verify attachment contents or availability. Short text is separated from any trailing displaced header fragments. Earlier quoted blocks are candidate occurrences, not independently verified unique messages.",
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "fb7111e6a9e8d25ca5771a8666a7cc82069a53d3af03c428ca1fcf3f69a41257",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "d46449cc893c8aec986ea6910f568a0de663fed3b8724697e1832ab4aa0af330"
+        }
+      ],
+      "spans": [
+        {
+          "id": "a2cf0e59c505ecf4383b-span-1",
+          "page": 1,
+          "line_start": 27,
+          "line_end": 29,
+          "kind": "uncertain_header_continuation",
+          "text_sha256": "b1aef2a9f8a08235deb8465e190513f7668f78e2f1a48704cd0e041183c4f5cb"
+        },
+        {
+          "id": "a2cf0e59c505ecf4383b-span-2",
+          "page": 1,
+          "line_start": 30,
+          "line_end": 30,
+          "kind": "authored_text_candidate",
+          "text_sha256": "740a9527c83eeecbdadccdad834119798d58dcd6dbf86770af46ce5588cad154"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00019484",
+      "source_sha256": "d4a6264c03f72ec3b5ed9ed3094be56442b32a5b1777cf0c40ebe5662a4b5fa5",
+      "source_page": 1,
+      "source_line": 31,
+      "visible_fingerprint": "0d0f74ca95e85fcad46ef6cadfdfe5882dc3a8c179a416d853adf6656dcf2bf9",
+      "record_id": "625352ead29036d65307",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-15",
+      "scope": "Detected header and body pages; native text preserved",
+      "review_status": "source_assisted_editorial_review",
+      "header_status": "redacted_or_native_layout_errors",
+      "boundary_status": "scoped_lossless_partition",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Source email chain has redacted participant names/addresses; organizational fragments do not identify individuals. Preserve native header fields and dates without repair or timezone inference. Attachment references do not verify attachment contents or availability. Body continues at top of page 2; page-1 trailing punctuation is displaced header material. No inferred reply relationship.",
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "278e454bb5cc431853f82e5e58c870eb119d8766e33cd9b41d576ebe192bc91c",
+      "page_evidence": [
+        {
+          "pdf_page": 1,
+          "native_text_sha256": "d46449cc893c8aec986ea6910f568a0de663fed3b8724697e1832ab4aa0af330"
+        },
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "c6da971c3c0fb5793f065d2b10906e2ac26970f4aff943ffb303ed49b4f16aa1"
+        }
+      ],
+      "spans": [
+        {
+          "id": "625352ead29036d65307-span-1",
+          "page": 1,
+          "line_start": 34,
+          "line_end": 37,
+          "kind": "uncertain_header_continuation",
+          "text_sha256": "13bb256bf0e16bed75ca369ebac2ee4c3d3b8928f139c38aff40deb499f63194"
+        },
+        {
+          "id": "625352ead29036d65307-span-2",
+          "page": 2,
+          "line_start": 1,
+          "line_end": 2,
+          "kind": "authored_text_candidate",
+          "text_sha256": "aca3dd525a05c2e2b7ff94d467d20321cb1b4f733a0c9f3057059a6d7f0f55a2"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00019484",
+      "source_sha256": "d4a6264c03f72ec3b5ed9ed3094be56442b32a5b1777cf0c40ebe5662a4b5fa5",
+      "source_page": 2,
+      "source_line": 3,
+      "visible_fingerprint": "f597661b7aece2420b188a4d67ee9e70cafb29f4bbffa13e49b321b4bc42f7a0",
+      "record_id": "f59855983df584d30a2f",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-15",
+      "scope": "Detected header and body pages; native text preserved",
+      "review_status": "source_assisted_editorial_review",
+      "header_status": "redacted_or_native_layout_errors",
+      "boundary_status": "scoped_lossless_partition",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Source email chain has redacted participant names/addresses; organizational fragments do not identify individuals. Preserve native header fields and dates without repair or timezone inference. Attachment references do not verify attachment contents or availability. Short text is separated from any trailing displaced header fragments. Earlier quoted blocks are candidate occurrences, not independently verified unique messages.",
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "28ab4d05656568a4fea3b3fc7112b1f57d609965d13f7c0c1e856f855fbae654",
+      "page_evidence": [
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "c6da971c3c0fb5793f065d2b10906e2ac26970f4aff943ffb303ed49b4f16aa1"
+        }
+      ],
+      "spans": [
+        {
+          "id": "f59855983df584d30a2f-span-1",
+          "page": 2,
+          "line_start": 6,
+          "line_end": 9,
+          "kind": "uncertain_header_continuation",
+          "text_sha256": "6d8374ec3425eedd9e2701f97eb5e8d94dd97a3a1e9b6ec051f44fa6b5c7cd79"
+        },
+        {
+          "id": "f59855983df584d30a2f-span-2",
+          "page": 2,
+          "line_start": 10,
+          "line_end": 10,
+          "kind": "authored_text_candidate",
+          "text_sha256": "11dfba8f980e7ce31e5de46e0d0bb05246dee4e9ce923cc145ec0f661d608269"
+        }
+      ]
+    },
+    {
+      "file_id": "EFTA00019484",
+      "source_sha256": "d4a6264c03f72ec3b5ed9ed3094be56442b32a5b1777cf0c40ebe5662a4b5fa5",
+      "source_page": 2,
+      "source_line": 11,
+      "visible_fingerprint": "9911b314249a8a999c27331e7f4367c3474b4fe42e1505d80d246bea81403323",
+      "record_id": "9923a42e3c34110dcf5a",
+      "reviewer": "Codex",
+      "reviewed_on": "2026-11-15",
+      "scope": "Detected header and body pages; native text preserved",
+      "review_status": "source_assisted_editorial_review",
+      "header_status": "redacted_or_native_layout_errors",
+      "boundary_status": "scoped_lossless_partition",
+      "date_status": "not_adjudicated",
+      "unique_message_verified": false,
+      "contact_count_eligible": false,
+      "notes": "Source email chain has redacted participant names/addresses; organizational fragments do not identify individuals. Preserve native header fields and dates without repair or timezone inference. Attachment references do not verify attachment contents or availability. Native lines 20\u201322 follow the greeting but correspond to displaced participant/header fragments, not authored substantive prose. Keep fragments explicitly uncertain; no identity reconstructed.",
+      "coverage": "detected_header_and_body_pages",
+      "detected_body_sha256": "49d82a0ae2e590c471d7f7056747eb77a98005e785b8e4c5d675b732c5edb3fb",
+      "page_evidence": [
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "c6da971c3c0fb5793f065d2b10906e2ac26970f4aff943ffb303ed49b4f16aa1"
+        }
+      ],
+      "spans": [
+        {
+          "id": "9923a42e3c34110dcf5a-span-1",
+          "page": 2,
+          "line_start": 14,
+          "line_end": 18,
+          "kind": "uncertain_header_continuation",
+          "text_sha256": "7b6171c8af05f6db005d3db6507b9efcda120fe3829875ae98e5b25e23cb5df6"
+        },
+        {
+          "id": "9923a42e3c34110dcf5a-span-2",
+          "page": 2,
+          "line_start": 19,
+          "line_end": 19,
+          "kind": "authored_text_candidate",
+          "text_sha256": "f83bb1ca5c874c8332c31a0b925930450406f1a199d779de19f386e1f0ed90f1"
+        },
+        {
+          "id": "9923a42e3c34110dcf5a-span-3",
+          "page": 2,
+          "line_start": 20,
+          "line_end": 22,
+          "kind": "uncertain_header_continuation",
+          "text_sha256": "d31ee47e9687351dcda14d4eaa3be2e7a9a8406bab35a1e8840446337c09edcb"
+        },
+        {
+          "id": "9923a42e3c34110dcf5a-span-4",
+          "page": 2,
+          "line_start": 23,
+          "line_end": 26,
+          "kind": "authored_text_candidate",
+          "text_sha256": "8732aa542fc8e9b75460c781f7291f553c914a121e2a4c91a83fb062987683c8"
+        }
+      ]
+    }
+  ]
+}

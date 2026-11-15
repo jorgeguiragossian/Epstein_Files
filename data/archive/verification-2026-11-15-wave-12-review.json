@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "bucket": "epstein-files-archive",
+  "status": "complete_inventory_restore_verified",
+  "completed_at_utc": "2026-11-15T17:17:39.674979+00:00",
+  "manifest_sha256": "d85a16a148c67e185385eca886bade84f0c2b658f0f050b2715311062d73169d",
+  "remote_manifest_key": "manifests/sha256/d85a16a148c67e185385eca886bade84f0c2b658f0f050b2715311062d73169d.json",
+  "files": 25,
+  "bytes": 3886190,
+  "unique_objects": 25,
+  "originals_preserved": true,
+  "verification": "Every unique evidence object restored to temporary disk and SHA-256 checked; complete local inventory revalidated after transfer; remote manifest checked byte-for-byte.",
+  "objects": [
+    {
+      "object_key": "evidence/sha256/1450261184a0bead1654567b276107261aa157f4041b6635156e24b60f382367",
+      "bytes": 28829,
+      "sha256": "1450261184a0bead1654567b276107261aa157f4041b6635156e24b60f382367"
+    },
+    {
+      "object_key": "evidence/sha256/1bf6d4ac0e9bb3190917c651ba09ab6d9d03f8af126d30ae8b32bfc52ed6e47c",
+      "bytes": 352287,
+      "sha256": "1bf6d4ac0e9bb3190917c651ba09ab6d9d03f8af126d30ae8b32bfc52ed6e47c"
+    },
+    {
+      "object_key": "evidence/sha256/2893cc4aac894d5ee29f6becfacb34b8c99434d40232ca3e179fb8b66046aeb1",
+      "bytes": 152,
+      "sha256": "2893cc4aac894d5ee29f6becfacb34b8c99434d40232ca3e179fb8b66046aeb1"
+    },
+    {
+      "object_key": "evidence/sha256/3ce8f418e5b2db47af99832232075383967d053185da674dce4760fabebc0847",
+      "bytes": 83510,
+      "sha256": "3ce8f418e5b2db47af99832232075383967d053185da674dce4760fabebc0847"
+    },
+    {
+      "object_key": "evidence/sha256/460e7ea838a68ffbbad2a5910bbb1eb10ee44cbb47e5896d7b128ab36f2d0a74",
+      "bytes": 5828,
+      "sha256": "460e7ea838a68ffbbad2a5910bbb1eb10ee44cbb47e5896d7b128ab36f2d0a74"
+    },
+    {
+      "object_key": "evidence/sha256/4aa70ea715e5c550ee7e28b9782fe50579403cdcf5884b9fc7036eaae9adeca6",
+      "bytes": 23197,
+      "sha256": "4aa70ea715e5c550ee7e28b9782fe50579403cdcf5884b9fc7036eaae9adeca6"
+    },
+    {
+      "object_key": "evidence/sha256/4cbad8458cb3f5b151977b3ce814f5f64768a8f5f3193e14dd03b300a17b9b96",
+      "bytes": 13044,
+      "sha256": "4cbad8458cb3f5b151977b3ce814f5f64768a8f5f3193e14dd03b300a17b9b96"
+    },
+    {
+      "object_key": "evidence/sha256/62a68267df488d70c4bfc6c3a89c1b37e0ae48153c42c2c8a1787758a9390263",
+      "bytes": 6853,
+      "sha256": "62a68267df488d70c4bfc6c3a89c1b37e0ae48153c42c2c8a1787758a9390263"
+    },
+    {
+      "object_key": "evidence/sha256/732a558942835b6557adb22ee10e207a6bdda8d62659fe1d21e669e6d3f4e352",
+      "bytes": 1609472,
+      "sha256": "732a558942835b6557adb22ee10e207a6bdda8d62659fe1d21e669e6d3f4e352"
+    },
+    {
+      "object_key": "evidence/sha256/75eba386374890882d6675d8a59d386ce79e8a80329f4403af7ad6644da5eef7",
+      "bytes": 78144,
+      "sha256": "75eba386374890882d6675d8a59d386ce79e8a80329f4403af7ad6644da5eef7"
+    },
+    {
+      "object_key": "evidence/sha256/76f87bb967b200c12a270c056ee45dbcbd908b2ee281c3be5cf1dbf0fd00fd4d",
+      "bytes": 4749,
+      "sha256": "76f87bb967b200c12a270c056ee45dbcbd908b2ee281c3be5cf1dbf0fd00fd4d"
+    },
+    {
+      "object_key": "evidence/sha256/7cafd4fd6d3e62ca5ec4d63608ee089943fd327ea57f60e4dee5219ec10b2b2f",
+      "bytes": 1320,
+      "sha256": "7cafd4fd6d3e62ca5ec4d63608ee089943fd327ea57f60e4dee5219ec10b2b2f"
+    },
+    {
+      "object_key": "evidence/sha256/847fdc7a8f601196c64b62df5366f3d23916233d2e7feac82239bc7db2d0ae9a",
+      "bytes": 35064,
+      "sha256": "847fdc7a8f601196c64b62df5366f3d23916233d2e7feac82239bc7db2d0ae9a"
+    },
+    {
+      "object_key": "evidence/sha256/a0ac15d82d587f4c8cc96a9c3539ca247a02419162da6b51b7278e529105bb0e",
+      "bytes": 13024,
+      "sha256": "a0ac15d82d587f4c8cc96a9c3539ca247a02419162da6b51b7278e529105bb0e"
+    },
+    {
+      "object_key": "evidence/sha256/a841a7553a3db2034de9a77f845b2a4d51a0c74aea3e3463abfecc32610283c6",
+      "bytes": 1399346,
+      "sha256": "a841a7553a3db2034de9a77f845b2a4d51a0c74aea3e3463abfecc32610283c6"
+    },
+    {
+      "object_key": "evidence/sha256/bd38a0568b809d16d46f25c47f167626ac8911430dbf3df919942598e9bf158d",
+      "bytes": 3194,
+      "sha256": "bd38a0568b809d16d46f25c47f167626ac8911430dbf3df919942598e9bf158d"
+    },
+    {
+      "object_key": "evidence/sha256/c5e35d9b41bebc096e8b491b2299dd38c9e57b455c680e4a3b2472fabe0ac89a",
+      "bytes": 39832,
+      "sha256": "c5e35d9b41bebc096e8b491b2299dd38c9e57b455c680e4a3b2472fabe0ac89a"
+    },
+    {
+      "object_key": "evidence/sha256/cbb7d0d6422ecba82fa7b9d226e06e9529998a2db5231cc032bd3e8f01a9e36b",
+      "bytes": 8476,
+      "sha256": "cbb7d0d6422ecba82fa7b9d226e06e9529998a2db5231cc032bd3e8f01a9e36b"
+    },
+    {
+      "object_key": "evidence/sha256/d4253b5026de8a7eb56f020fb6e140b0f50cf77045071f71d995779ca60315ef",
+      "bytes": 2311,
+      "sha256": "d4253b5026de8a7eb56f020fb6e140b0f50cf77045071f71d995779ca60315ef"
+    },
+    {
+      "object_key": "evidence/sha256/d4a6264c03f72ec3b5ed9ed3094be56442b32a5b1777cf0c40ebe5662a4b5fa5",
+      "bytes": 85070,
+      "sha256": "d4a6264c03f72ec3b5ed9ed3094be56442b32a5b1777cf0c40ebe5662a4b5fa5"
+    },
+    {
+      "object_key": "evidence/sha256/dca7a24e83e2270ef62ecd864bbbdbcb57061bb7c9067ce640b8a5e69a28e5c8",
+      "bytes": 16294,
+      "sha256": "dca7a24e83e2270ef62ecd864bbbdbcb57061bb7c9067ce640b8a5e69a28e5c8"
+    },
+    {
+      "object_key": "evidence/sha256/dd35bd5b5a9c4d7c9e305eb8d931068807da137a0215c8c98f021f24aa0a7bf9",
+      "bytes": 879,
+      "sha256": "dd35bd5b5a9c4d7c9e305eb8d931068807da137a0215c8c98f021f24aa0a7bf9"
+    },
+    {
+      "object_key": "evidence/sha256/f67cab4f31978798054865e7a3279f80cdcb421385e9331efec8f055f8226fb1",
+      "bytes": 63070,
+      "sha256": "f67cab4f31978798054865e7a3279f80cdcb421385e9331efec8f055f8226fb1"
+    },
+    {
+      "object_key": "evidence/sha256/fb355ce933e369d3092699f258efe3218046cbf3ab34baf32104baac4be72c1c",
+      "bytes": 11602,
+      "sha256": "fb355ce933e369d3092699f258efe3218046cbf3ab34baf32104baac4be72c1c"
+    },
+    {
+      "object_key": "evidence/sha256/fc2c77d7f2675d01107014fc63ce8e3a9e28af6accb98d7bfe52d087917a204b",
+      "bytes": 643,
+      "sha256": "fc2c77d7f2675d01107014fc63ce8e3a9e28af6accb98d7bfe52d087917a204b"
+    }
+  ]
+}
