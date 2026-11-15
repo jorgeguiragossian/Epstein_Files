@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "status": "native_search_with_scoped_correspondence_and_indexed_ocr_quality",
+  "selected_files": 5,
+  "downloaded_files": 5,
+  "native_extracted_files": 5,
+  "pdf_pages": 52,
+  "public_search_integration": true,
+  "reviewed_candidates": 7,
+  "lossless_body_partitions": 7,
+  "document_date_status": "unreviewed",
+  "remaining_review_items": [
+    "Primary dates unreviewed",
+    "No unique-message or contact verification",
+    "Indictment/transcript content review bounded",
+    "Handwriting OCR inadequate; native text preserved",
+    "Calendar event and observation interval are distinct date roles"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-15",
+  "scope": "Two local attempts on indictment page 20; handwriting not recovered, no replacement accepted.",
+  "reviews": [
+    {
+      "file_id": "EFTA00009747",
+      "review_file": "ocr-review-EFTA00009747.json",
+      "review_sha256": "bd38a0568b809d16d46f25c47f167626ac8911430dbf3df919942598e9bf158d"
+    }
+  ]
+}

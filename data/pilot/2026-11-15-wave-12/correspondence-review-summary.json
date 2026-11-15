@@ -11,7 +11,7 @@
   },
   "unique_messages": null,
   "contact_rankings_ready": false,
-  "public_site_integration": false,
+  "public_site_integration": true,
   "parser_version": "email-pilot-1",
   "date_parser_version": "email-date-2",
   "scope": "All seven detected headers and complete detected bodies reviewed; seven lossless partitions. Redacted identities remain unavailable; no unique-message/contact/date promotion."
