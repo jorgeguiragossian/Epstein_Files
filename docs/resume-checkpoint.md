@@ -116,3 +116,14 @@ Historical catalog limits remain explicit:9/10/11 resume listingpage61 later.
 Limits64MiB/file,128MiB/wave,512MiB/expansion,2GiBcache. Preserve prior selections.
 Live remains200/2836,72dated/68uncertain/60unreviewed. Plan validation passed25unique
 provenance-backedURLs,no200overlap,exclusion/sourcehashes and first-wave parenthash.
+
+
+Phase02 first acquisition wave prepared - November15,2026: five dataset9 URLs
+from the frozen first-wave plan copied to data/pilot/2026-11-15-wave-11/selection.json
+with parent hash checked. None present in Downloads. Browser-control tools are
+unavailable in this session; manual normal-browser download handoff supplied for
+EFTA00039156, EFTA00065579, EFTA00072576, EFTA00077515, EFTA00082124. No source
+downloads, extraction or publication performed. On return verify originals in
+Downloads, copy to ignored wave11/cache with signatures/hashes/64MiB-perfile and
+128MiB-wave limits, native analyze, source-quality triage and privateR2 backup.
+Live unchanged200/2836. Do not regenerate phase02 or wave11 selections.
