@@ -41,6 +41,25 @@ class BatchTests(unittest.TestCase):
             self.assertEqual(len(prepared),1)
             self.assertEqual(loaded,records)
             dispatch.assert_called_once_with('check-wave-correspondence')
+            # Combined mode must retain reviewed messages and attach OCR scope,
+            # while rejecting missing assessment coverage.
+            quality_row=dict(file_id=metric['file_id'],source_sha256=sha,
+                inspected_page_text_sha256={'1':hashlib.sha256(text.encode()).hexdigest()},
+                visually_inspected_pdf_pages=[1],notes='Scoped fixture',source_assisted_ocr_review_needed=True)
+            save('quality-review.json',dict(method='Fixture scope',files=[quality_row]))
+            entry=registry['batches'][0]
+            entry['quality_mode']='indexed_ocr_quality_v1'
+            entry['evidence_sha256']['quality-review.json']=hashlib.sha256((folder/'quality-review.json').read_bytes()).hexdigest()
+            (root/'data/pilot/viewer-batches.json').write_text(json.dumps(registry))
+            assessment=dict(notes=['OCR incomplete'],inspected_pdf_pages=[1],native_replacement_accepted=False)
+            with patch.object(batches,'ROOT',root),patch.object(batches,'script',return_value=helper),patch.object(batches,'load_ocr_assessments',return_value={metric['file_id']:assessment}):
+                combined,loaded=batches.load_expansions()
+            self.assertEqual(loaded,records)
+            self.assertEqual(combined[0][0]['source_quality_review']['ocr_assessment'],assessment)
+            with patch.object(batches,'ROOT',root),patch.object(batches,'script',return_value=helper),patch.object(batches,'load_ocr_assessments',return_value={}):
+                with self.assertRaisesRegex(ValueError,'coverage changed'):
+                    batches.load_expansions()
+            del entry['quality_mode']
             quality=dict(file_id=metric['file_id'],notes='Fixture table review',date_observations=[])
             save('table-date-role-reviews.json',dict(reviews=[quality]))
             registry['batches'][0].update(review_mode='native_layout_review_v1',evidence_sha256={

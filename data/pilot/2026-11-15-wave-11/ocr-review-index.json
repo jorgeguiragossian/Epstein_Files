@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-15",
+  "scope": "One local page-2 letter OCR assessment; no accepted replacement.",
+  "reviews": [
+    {
+      "file_id": "EFTA00065579",
+      "review_file": "ocr-review-EFTA00065579.json",
+      "review_sha256": "2d4c6e71fdaba3c15a40cade9f4bd69a9cfbf48c07f432eb120df95e0a6705c6"
+    }
+  ]
+}

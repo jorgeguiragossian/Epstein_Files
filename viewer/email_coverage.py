@@ -1,6 +1,6 @@
 """Candidate-level review coverage, never message or contact counts."""
 
-BOUNDARY={'contains_unseparated_quote','forwarding_wrapper_only','continuation_unverified','source_order_mismatch','unresolved_trailing_material'}
+BOUNDARY={'contains_unseparated_quote','forwarding_wrapper_only','continuation_unverified','source_order_mismatch','unresolved_trailing_material','attachment_body_not_fully_reviewed'}
 DATE_FLAGS={'date_missing','date_unparsed','date_ambiguous_numeric'}
 FIELDS=('documents','documents_with_candidates','documents_with_reviews','candidates','reviewed','unreviewed',
         'boundary','sender_unresolved','recipient_unresolved','date_unresolved','breakdowns','adjacent_checks',

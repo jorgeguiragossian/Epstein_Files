@@ -121,6 +121,22 @@ def load_expansions():
             except ImportError:
                 from source_quality import attach_quality
             attach_quality(current, read(folder/'quality-review.json'), read(folder/'component-layout-review.json'))
+        elif batch.get('quality_mode') == 'indexed_ocr_quality_v1':
+            if 'quality-review.json' not in batch['evidence_sha256']:
+                raise ValueError('Combined quality review requires pinned evidence')
+            assessments = load_ocr_assessments(folder, batch['evidence_sha256'])
+            quality = read(folder/'quality-review.json')
+            needed = {r['file_id'] for r in quality['files'] if r.get('source_assisted_ocr_review_needed')}
+            if set(assessments) != needed:
+                raise ValueError('Indexed OCR review coverage changed')
+            try:
+                from .source_quality import attach_quality
+            except ImportError:
+                from source_quality import attach_quality
+            attach_quality(current, quality)
+            for metric, _, _, _ in current:
+                if metric['file_id'] in assessments:
+                    metric['source_quality_review']['ocr_assessment'] = assessments[metric['file_id']]
         checked = {}
         for record in reviewed['records']:
             checked.setdefault(record['file_id'], []).append(record)
